@@ -9,4 +9,4 @@ Try this:
 4.) In android Studio:   VCS> Get from version Control > Login to your github account and add the URL and clone
 ```
 Photos:
-![Optional Text](C:\Users\Sean\Documents\ProfessionalWork\AndroidASU\ReadMePhotos\GitHubURL.JPG)
+![Optional Text](C:\Users\Sean\Documents\ProfessionalWork\AndroidASU\ReadMePhotos\Android.JPG)
