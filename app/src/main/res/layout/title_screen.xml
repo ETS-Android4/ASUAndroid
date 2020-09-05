@@ -10,17 +10,20 @@
         android:id="@+id/Symbol"
         android:layout_width="166dp"
         android:layout_height="178dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.077"
         app:srcCompat="@drawable/ic_launcher_foreground"
-        tools:layout_editor_absoluteY="73dp"
         tools:src="@tools:sample/avatars" />
 
     <Button
         android:id="@+id/New_Uniform"
-        android:layout_width="341dp"
-        android:layout_height="43dp"
-        android:text="New Uniform"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="@string/new_uniform"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.471"
@@ -29,13 +32,13 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="336dp"
-        android:layout_height="51dp"
-        android:text="Closet"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="@string/closet"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintHorizontal_bias="0.475"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.62" />
+        app:layout_constraintVertical_bias="0.593" />
 </androidx.constraintlayout.widget.ConstraintLayout>
