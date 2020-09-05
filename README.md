@@ -8,3 +8,6 @@ Try this:
 3.) Enable Hypervisor for windows 10
 4.) In android Studio:   VCS> Get from version Control > Login to your github account and add the URL and clone
 ```
+Photos:
+```
+![alt text](http:\Users\Sean\Documents\ProfessionalWork\AndroidASU\ReadMePhotos\GitHubURL.jpg)
