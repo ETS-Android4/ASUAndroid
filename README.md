@@ -10,4 +10,5 @@ Try this:
 ```
 Photos:
 ```
-![alt text](http:\Users\Sean\Documents\ProfessionalWork\AndroidASU\ReadMePhotos\GitHubURL.jpg)
+![Optional Text](C:\Users\Sean\Documents\ProfessionalWork\AndroidASU\ReadMePhotos\GitHubURL.jpg)
+```
