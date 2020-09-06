@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/HomeScreen"
-        android:name="com.example.asuandroid.FirstFragment"
+        android:name="com.example.asuandroid.HomeScreen"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/title_screen">
+        tools:layout="@layout/fragment_home_screen">
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
@@ -22,9 +22,9 @@
     </fragment>
     <fragment
         android:id="@+id/NewUniformPrompt"
-        android:name="com.example.asuandroid.SecondFragment"
+        android:name="com.example.asuandroid.NewUniformPrompt"
         android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        tools:layout="@layout/fragment_new_uniform_prompt">
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
