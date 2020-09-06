@@ -1,12 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">ASUAndroid</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
-    <string name="ToUniform">New Uniform</string>
+    <string name="new_uniform">New Uniform</string>
+    <string name="closet">Closet</string>
+    <string name="main_screen_image">primaryScreen</string>
     <string name="previous">Previous</string>
-
+    <string name="rank">Rank</string>
+    <string name="branch">Branch</string>
+    <string name="gender">Gender</string>
     <string name="whatever_you_want">Sup</string>
     <string name="This">Page 2</string>
+
+    <string-array name="ranks_array">
+        <item>Private</item>
+        <item>Private First Class</item>
+        <item>Corporal</item>
+        <item>Specialist</item>
+        <item>Sergeant</item>
+        <item>Staff Sergeant</item>
+        <item>Sergeant First Class</item>
+        <item>First Sergeant</item>
+    </string-array>
+    <string-array name="fragments">
+        <item>Fragment One</item>
+        <item>Fragment Two</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
