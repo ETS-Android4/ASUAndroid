@@ -26,12 +26,29 @@ public class NewUniformPrompt extends Fragment implements AdapterView.OnItemSele
     ) {
         // Inflate the layout for this fragment
        View view = inflater.inflate(R.layout.fragment_new_uniform_prompt, container, false);
+
+       //rankSpinner
        Spinner rankSpinner = (Spinner) view.findViewById(R.id.rankSpinner);
        rankSpinner.setOnItemSelectedListener(this);
-       ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity(), R.array.ranks_array, android.R.layout.simple_spinner_item);
-       adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-       rankSpinner.setAdapter(adapter);
-       return view;
+       ArrayAdapter<CharSequence> rankadapter = ArrayAdapter.createFromResource(getActivity(), R.array.ranks_array, android.R.layout.simple_spinner_item);
+       rankadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+       rankSpinner.setAdapter(rankadapter);
+
+       //branchSpinner
+        Spinner branchSpinner = (Spinner) view.findViewById(R.id.spinnerBranch);
+        rankSpinner.setOnItemSelectedListener(this);
+        ArrayAdapter<CharSequence> branchadapter = ArrayAdapter.createFromResource(getActivity(), R.array.branch_array, android.R.layout.simple_spinner_item);
+        branchadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        branchSpinner.setAdapter(branchadapter);
+
+       //genderSpinner
+        Spinner genderSpinner = (Spinner) view.findViewById(R.id.spinnerGender);
+        rankSpinner.setOnItemSelectedListener(this);
+        ArrayAdapter<CharSequence> genderadapter = ArrayAdapter.createFromResource(getActivity(), R.array.gender_array, android.R.layout.simple_spinner_item);
+        branchadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        genderSpinner.setAdapter(genderadapter);
+        return view;
+
     }
     public void onItemSelected(AdapterView<?> parent, View view, int pos, long id){
         // An item was selected. You can retrieve the selected item using
@@ -40,7 +57,6 @@ public class NewUniformPrompt extends Fragment implements AdapterView.OnItemSele
         Toast.makeText(parent.getContext(), text, Toast.LENGTH_SHORT).show();
     }
     public void onNothingSelected(AdapterView<?> parent){
-
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
