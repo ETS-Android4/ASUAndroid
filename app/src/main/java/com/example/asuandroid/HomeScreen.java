@@ -1,35 +1,33 @@
 package com.example.asuandroid;
 
 import android.os.Bundle;
-import android.widget.Button;
-
-import androidx.fragment.app.Fragment;
-import androidx.navigation.Navigation;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.navigation.fragment.NavHostFragment;
 
+public class HomeScreen extends Fragment {
 
-public class HomeScreen extends Fragment implements View.OnClickListener {
-    Button btn_gotoFragment2;
     @Override
-    public void onCreate(Bundle savedInstanceState){
-        super.onCreate(savedInstanceState);
-    }
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(
+            LayoutInflater inflater, ViewGroup container,
+            Bundle savedInstanceState
+    ) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_home_screen, container, false);
-
-        btn_gotoFragment2 = getView().findViewById(R.id.action_FirstFragment_to_SecondFragment);
-        btn_gotoFragment2.setOnClickListener(this);
-
-        return view;
+        return inflater.inflate(R.layout.fragment_home_screen, container, false);
     }
-    @Override
-    public void onClick(View view) {
-        Navigation.findNavController(view).navigate(R.id.action_FirstFragment_to_SecondFragment);
+
+    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        view.findViewById(R.id.btn_gotoFragment2).setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                NavHostFragment.findNavController(HomeScreen.this)
+                        .navigate(R.id.action_FirstFragment_to_SecondFragment);
+            }
+        });
     }
 }
