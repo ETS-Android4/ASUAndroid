@@ -73,5 +73,12 @@ public class OutfitFragment extends Fragment {
                         .navigate(R.id.action_uniformFragment_to_identificationBadgeFragment);
             }
         });
+        view.findViewById(R.id.btn_build_uniform).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(OutfitFragment.this)
+                        .navigate(R.id.action_uniformFragment_to_uniformPresentationFragment);
+            }
+        });
     }
 }

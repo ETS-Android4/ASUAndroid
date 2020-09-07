@@ -68,6 +68,9 @@
         <action
             android:id="@+id/action_uniformFragment_to_regimentalInsigniaFragment"
             app:destination="@id/regimentalInsigniaFragment" />
+        <action
+            android:id="@+id/action_uniformFragment_to_uniformPresentationFragment"
+            app:destination="@id/uniformPresentationFragment" />
     </fragment>
     <fragment
         android:id="@+id/awardFragment"
@@ -131,5 +134,14 @@
         <action
             android:id="@+id/action_regimentalInsigniaFragment_to_uniformFragment"
             app:destination="@id/uniformFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/uniformPresentationFragment"
+        android:name="com.example.asuandroid.UniformPresentationFragment"
+        android:label="fragment_uniform_presentation"
+        tools:layout="@layout/fragment_uniform_presentation" >
+        <action
+            android:id="@+id/action_uniformPresentationFragment_to_HomeScreen"
+            app:destination="@id/HomeScreen" />
     </fragment>
 </navigation>

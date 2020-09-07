@@ -32,14 +32,14 @@ public class NewUniformPromptFragment extends Fragment implements AdapterView.On
 
        //branchSpinner
         Spinner branchSpinner = (Spinner) view.findViewById(R.id.spinnerBranch);
-        rankSpinner.setOnItemSelectedListener(this);
+        branchSpinner.setOnItemSelectedListener(this);
         ArrayAdapter<CharSequence> branchadapter = ArrayAdapter.createFromResource(getActivity(), R.array.branch_array, android.R.layout.simple_spinner_item);
         branchadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         branchSpinner.setAdapter(branchadapter);
 
        //genderSpinner
         Spinner genderSpinner = (Spinner) view.findViewById(R.id.spinnerGender);
-        rankSpinner.setOnItemSelectedListener(this);
+        genderSpinner.setOnItemSelectedListener(this);
         ArrayAdapter<CharSequence> genderadapter = ArrayAdapter.createFromResource(getActivity(), R.array.gender_array, android.R.layout.simple_spinner_item);
         branchadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         genderSpinner.setAdapter(genderadapter);
@@ -49,9 +49,22 @@ public class NewUniformPromptFragment extends Fragment implements AdapterView.On
     public void onItemSelected(AdapterView<?> parent, View view, int pos, long id){
         // An item was selected. You can retrieve the selected item using
         // parent.getItemAtPosition(pos)
-        String text = parent.getItemAtPosition(pos).toString();
-        Toast.makeText(parent.getContext(), text, Toast.LENGTH_SHORT).show();
+        switch(parent.getId()){
+            case R.id.rankSpinner:
+                String ranksText = parent.getItemAtPosition(pos).toString();
+                Toast.makeText(parent.getContext(), ranksText, Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.spinnerBranch:
+                String branchText = parent.getItemAtPosition(pos).toString();
+                Toast.makeText(parent.getContext(), branchText, Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.spinnerGender:
+                String genderText = parent.getItemAtPosition(pos).toString();
+                Toast.makeText(parent.getContext(), genderText, Toast.LENGTH_SHORT).show();
+                break;
+        }
     }
+
     public void onNothingSelected(AdapterView<?> parent){
     }
 
