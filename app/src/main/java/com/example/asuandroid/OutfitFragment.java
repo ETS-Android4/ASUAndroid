@@ -1,0 +1,77 @@
+package com.example.asuandroid;
+
+import android.os.Bundle;
+
+import androidx.fragment.app.Fragment;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import androidx.annotation.NonNull;
+import androidx.navigation.fragment.NavHostFragment;
+
+
+public class OutfitFragment extends Fragment {
+
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_uniform, container, false);
+    }
+    //prompt to awards
+    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        view.findViewById(R.id.btn_ribbons).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(OutfitFragment.this)
+                        .navigate(R.id.action_uniformFragment_to_awardFragment);
+            }
+        });
+        view.findViewById(R.id.btn_badges).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(OutfitFragment.this)
+                        .navigate(R.id.action_uniformFragment_to_badgeFragment);
+            }
+        });
+        view.findViewById(R.id.btn_combatService).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(OutfitFragment.this)
+                        .navigate(R.id.action_uniformFragment_to_combatServiceFragment);
+            }
+        });
+        view.findViewById(R.id.btn_overseas).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(OutfitFragment.this)
+                        .navigate(R.id.action_uniformFragment_to_overSeasServiceFragment);
+            }
+        });
+        view.findViewById(R.id.btn_serviceStripes).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(OutfitFragment.this)
+                        .navigate(R.id.action_uniformFragment_to_serviceStripes);
+            }
+        });
+        view.findViewById(R.id.btn_insignia).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(OutfitFragment.this)
+                        .navigate(R.id.action_uniformFragment_to_regimentalInsigniaFragment);
+            }
+        });
+        view.findViewById(R.id.btn_identificationbadge).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(OutfitFragment.this)
+                        .navigate(R.id.action_uniformFragment_to_identificationBadgeFragment);
+            }
+        });
+    }
+}

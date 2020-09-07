@@ -22,7 +22,7 @@
     </fragment>
     <fragment
         android:id="@+id/NewUniformPrompt"
-        android:name="com.example.asuandroid.NewUniformPrompt"
+        android:name="com.example.asuandroid.NewUniformPromptFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_new_uniform_prompt">
 
@@ -35,14 +35,101 @@
             app:popExitAnim="@anim/nav_default_pop_exit_anim"
             app:popUpTo="@id/HomeScreen" />
         <action
-            android:id="@+id/second_fragment_to_third"
+            android:id="@+id/action_second_fragment_to_third"
             app:destination="@id/uniformFragment"
             app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
             app:popUpTo="@id/uniformFragment" />
     </fragment>
     <fragment
         android:id="@+id/uniformFragment"
-        android:name="com.example.asuandroid.UniformFragment"
+        android:name="com.example.asuandroid.OutfitFragment"
         android:label="fragment_uniform"
-        tools:layout="@layout/fragment_uniform" />
+        tools:layout="@layout/fragment_uniform" >
+        <action
+            android:id="@+id/action_uniformFragment_to_awardFragment"
+            app:destination="@id/awardFragment"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+        <action
+            android:id="@+id/action_uniformFragment_to_badgeFragment"
+            app:destination="@id/badgeFragment" />
+        <action
+            android:id="@+id/action_uniformFragment_to_combatServiceFragment"
+            app:destination="@id/combatServiceFragment" />
+        <action
+            android:id="@+id/action_uniformFragment_to_identificationBadgeFragment"
+            app:destination="@id/identificationBadgeFragment" />
+        <action
+            android:id="@+id/action_uniformFragment_to_overSeasServiceFragment"
+            app:destination="@id/overSeasServiceFragment" />
+        <action
+            android:id="@+id/action_uniformFragment_to_serviceStripes"
+            app:destination="@id/serviceStripes" />
+        <action
+            android:id="@+id/action_uniformFragment_to_regimentalInsigniaFragment"
+            app:destination="@id/regimentalInsigniaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/awardFragment"
+        android:name="com.example.asuandroid.outfitfragments.AwardFragment"
+        android:label="fragment_award"
+        tools:layout="@layout/fragment_award" >
+        <action
+            android:id="@+id/action_awardFragment_to_uniformFragment"
+            app:destination="@id/uniformFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/badgeFragment"
+        android:name="com.example.asuandroid.outfitfragments.BadgeFragment"
+        android:label="fragment_badge"
+        tools:layout="@layout/fragment_badge" >
+        <action
+            android:id="@+id/action_badgeFragment_to_uniformFragment"
+            app:destination="@id/uniformFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/combatServiceFragment"
+        android:name="com.example.asuandroid.outfitfragments.CombatServiceFragment"
+        android:label="fragment_combat_service"
+        tools:layout="@layout/fragment_combat_service" >
+        <action
+            android:id="@+id/action_combatServiceFragment_to_uniformFragment"
+            app:destination="@id/uniformFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/identificationBadgeFragment"
+        android:name="com.example.asuandroid.outfitfragments.IdentificationBadgeFragment"
+        android:label="fragment_identification_badge"
+        tools:layout="@layout/fragment_identification_badge" >
+        <action
+            android:id="@+id/action_identificationBadgeFragment_to_uniformFragment"
+            app:destination="@id/uniformFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/overSeasServiceFragment"
+        android:name="com.example.asuandroid.outfitfragments.OverSeasServiceFragment"
+        android:label="fragment_over_seas_service"
+        tools:layout="@layout/fragment_over_seas_service" >
+        <action
+            android:id="@+id/action_overSeasServiceFragment_to_uniformFragment"
+            app:destination="@id/uniformFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/serviceStripes"
+        android:name="com.example.asuandroid.outfitfragments.ServiceStripesFragment"
+        android:label="fragment_service_stripes"
+        tools:layout="@layout/fragment_service_stripes" >
+        <action
+            android:id="@+id/action_serviceStripes_to_uniformFragment"
+            app:destination="@id/uniformFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/regimentalInsigniaFragment"
+        android:name="com.example.asuandroid.outfitfragments.RegimentalInsigniaFragment"
+        android:label="fragment_regimental_insignia"
+        tools:layout="@layout/fragment_regimental_insignia" >
+        <action
+            android:id="@+id/action_regimentalInsigniaFragment_to_uniformFragment"
+            app:destination="@id/uniformFragment" />
+    </fragment>
 </navigation>

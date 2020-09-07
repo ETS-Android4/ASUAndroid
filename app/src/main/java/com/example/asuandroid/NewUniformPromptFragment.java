@@ -1,6 +1,5 @@
 package com.example.asuandroid;
 
-import android.app.Activity;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -14,10 +13,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import java.lang.reflect.Array;
 
-
-public class NewUniformPrompt extends Fragment implements AdapterView.OnItemSelectedListener {
+public class NewUniformPromptFragment extends Fragment implements AdapterView.OnItemSelectedListener {
     @Override
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container,
@@ -60,11 +57,17 @@ public class NewUniformPrompt extends Fragment implements AdapterView.OnItemSele
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
+        view.findViewById(R.id.btn_tothirdFragment).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(NewUniformPromptFragment.this)
+                        .navigate(R.id.action_second_fragment_to_third);
+            }
+        });
         view.findViewById(R.id.button_second).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(NewUniformPrompt.this)
+                NavHostFragment.findNavController(NewUniformPromptFragment.this)
                         .navigate(R.id.action_SecondFragment_to_FirstFragment);
             }
         });
