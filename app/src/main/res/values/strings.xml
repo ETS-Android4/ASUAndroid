@@ -8,7 +8,7 @@
     <string name="new_uniform">New Uniform</string>
     <string name="closet">Closet</string>
     <string name="main_screen_image">primaryScreen</string>
-    <string name="previous">Previous</string>
+    <string name="previous">Back</string>
     <string name="rank">Rank</string>
     <string name="branch">Branch</string>
     <string name="gender">Gender</string>
@@ -24,7 +24,29 @@
         <item>Staff Sergeant</item>
         <item>Sergeant First Class</item>
         <item>First Sergeant</item>
+        <item>Sergeant Major</item>
+        <item>2nd Lieutenant</item>
+        <item>1st Lieutenant</item>
+        <item>Captain</item>
+        <item>Major</item>
+        <item>Leutinent Colonol</item>
+        <item>Colonol</item>
     </string-array>
+
+    <string-array name="branch_array">
+        <item>Combat Arms Branches</item>
+        <item>Combat Support Branches</item>
+        <item>Combat Services Support Branches</item>
+        <item>Special Branches</item>
+    </string-array>
+
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Prefer Not To Say</item>
+        <item>Gender Non Binary</item>
+    </string-array>
+
     <string-array name="fragments">
         <item>Fragment One</item>
         <item>Fragment Two</item>
