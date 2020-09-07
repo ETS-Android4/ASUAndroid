@@ -34,5 +34,15 @@
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
             app:popExitAnim="@anim/nav_default_pop_exit_anim"
             app:popUpTo="@id/HomeScreen" />
+        <action
+            android:id="@+id/second_fragment_to_third"
+            app:destination="@id/uniformFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:popUpTo="@id/uniformFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/uniformFragment"
+        android:name="com.example.asuandroid.UniformFragment"
+        android:label="fragment_uniform"
+        tools:layout="@layout/fragment_uniform" />
 </navigation>
