@@ -6,6 +6,7 @@
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="new_uniform">New Uniform</string>
+    <string name="continue_to_third">Continue</string>
     <string name="closet">Closet</string>
     <string name="main_screen_image">primaryScreen</string>
     <string name="previous">Back</string>
@@ -14,6 +15,14 @@
     <string name="gender">Gender</string>
     <string name="whatever_you_want">Sup</string>
     <string name="This">Page 2</string>
+    <string name="Awards">Ribbons And Awards  -></string>
+    <string name="Badges">Badges  -></string>
+    <string name="CombatService">Combat Service ID Badge -></string>
+    <string name="ServiceStripes">Service Stripes -></string>
+    <string name="OverSeas">Overseas service bars -></string>
+    <string name="Regimental">Regimental Insignia -></string>
+    <string name="IdentificationBadge">Identification Badge -></string>
+
 
     <string-array name="ranks_array">
         <item>Private</item>
