@@ -15,6 +15,7 @@ public class HomeScreen extends Fragment {
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
+            //final Context contextThemeWrapper = new ContextThemeWrapper(getActivity(), R.styles.yourCustomTheme);
     ) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home_screen, container, false);

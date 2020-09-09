@@ -6,7 +6,9 @@
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="new_uniform">New Uniform</string>
+    <string name="Build">Build Uniform</string>
     <string name="continue_to_third">Continue</string>
+    <string name="return_home">Return Home</string>
     <string name="closet">Closet</string>
     <string name="main_screen_image">primaryScreen</string>
     <string name="previous">Back</string>
