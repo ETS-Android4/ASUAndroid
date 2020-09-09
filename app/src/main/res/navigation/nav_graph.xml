@@ -79,7 +79,9 @@
         tools:layout="@layout/fragment_award" >
         <action
             android:id="@+id/action_awardFragment_to_uniformFragment"
-            app:destination="@id/uniformFragment" />
+            app:destination="@id/uniformFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit" />
     </fragment>
     <fragment
         android:id="@+id/badgeFragment"
