@@ -5,40 +5,35 @@
     android:id= "@+id/first_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#848c8e"
     tools:context=".HomeScreen">
 
-    <Button
+    <ImageButton
         android:id="@+id/btn_gotoFragment2"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
-        android:text="@string/new_uniform"
+        style="@style/Widget.MaterialComponents.MaterialCalendar.HeaderToggleButton"
+        android:layout_width="178dp"
+        android:layout_height="194dp"
+        android:contentDescription="@string/new_uniform"
+        android:src="@drawable/ic_3d1e416aba9acea7617e62ccd7b3148f"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.471"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
-        android:text="@string/closet"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintHorizontal_bias="0.068"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.593" />
+        app:layout_constraintVertical_bias="0.286" />
 
     <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/main_screen_image"
-        android:src="@drawable/pylon"
+        android:id="@+id/btn_gotoWardrobe"
+        style="@style/Widget.MaterialComponents.MaterialCalendar.HeaderToggleButton"
+        android:layout_width="178dp"
+        android:layout_height="194dp"
+        android:contentDescription="@string/new_uniform"
+        android:src="@drawable/ic_86c00acc71f819b4d821ec961680e37f"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.931"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/pylon" />
+        app:layout_constraintVertical_bias="0.286" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
