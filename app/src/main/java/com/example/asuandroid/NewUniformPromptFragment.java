@@ -68,6 +68,13 @@ public class NewUniformPromptFragment extends Fragment implements AdapterView.On
         branchadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         genderSpinner.setAdapter(genderadapter);
 
+        //yearsSpinner
+        Spinner yearsSpinner = (Spinner) view.findViewById(R.id.yearsSpinner);
+        yearsSpinner.setOnItemSelectedListener(this);
+        ArrayAdapter<CharSequence> yearsadapter = ArrayAdapter.createFromResource(getActivity(), R.array.years_array, android.R.layout.simple_spinner_item);
+        branchadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        yearsSpinner.setAdapter(yearsadapter);
+
         view.findViewById(R.id.btn_tothirdFragment).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick (View view){

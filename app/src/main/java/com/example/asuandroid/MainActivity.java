@@ -19,7 +19,6 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -33,17 +32,6 @@ public class MainActivity extends AppCompatActivity {
         //Toolbar toolbar = findViewById(R.id.toolbar);
         setContentView(R.layout.activity_main);
         //setSupportActionBar(toolbar);
-
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-
-        }
-    );
     }
     public void onFragmentSetSpinnerArray(ArrayList<String> spinnerFromFrag){
         input = spinnerFromFrag;

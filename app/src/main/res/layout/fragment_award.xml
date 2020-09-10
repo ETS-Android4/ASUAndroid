@@ -35,6 +35,82 @@
             android:orientation="vertical" >
 
             <ImageButton
+                android:id="@+id/ribbon_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_menu_send" />
+
+            <ImageButton
+                android:id="@+id/ribbon_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/Awards"
+                android:src="@android:drawable/ic_menu_send" />
+
+            <ImageButton
+                android:id="@+id/ribbon_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/Awards"
+                android:src="@android:drawable/ic_menu_send" />
+
+            <ImageButton
+                android:id="@+id/ribbon_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/Awards"
+                android:src="@android:drawable/ic_menu_send" />
+
+            <ImageButton
+                android:id="@+id/ribbon_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/Awards"
+                android:src="@android:drawable/ic_menu_send" />
+
+            <ImageButton
+                android:id="@+id/ribbon_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/Awards"
+                android:src="@android:drawable/ic_menu_send" />
+
+            <ImageButton
+                android:id="@+id/ribbon_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/Awards"
+                android:src="@android:drawable/ic_menu_send" />
+
+            <ImageButton
+                android:id="@+id/ribbon_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/Awards"
+                android:src="@android:drawable/ic_menu_send" />
+
+            <ImageButton
+                android:id="@+id/ribbon_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/Awards"
+                android:src="@android:drawable/ic_menu_send" />
+
+            <ImageButton
+                android:id="@+id/ribbon_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/Awards"
+                android:src="@android:drawable/ic_menu_send" />
+
+            <ImageButton
+                android:id="@+id/ribbon_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/Awards"
+                android:src="@android:drawable/ic_menu_send" />
+
+            <ImageButton
                 android:id="@+id/ribbon_12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -113,87 +189,12 @@
                 android:src="@android:drawable/ic_menu_send" />
 
             <ImageButton
-                android:id="@+id/ribbon_2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/Awards"
-                android:src="@android:drawable/ic_menu_send" />
-
-            <ImageButton
-                android:id="@+id/ribbon_3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/Awards"
-                android:src="@android:drawable/ic_menu_send" />
-
-            <ImageButton
-                android:id="@+id/ribbon_4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/Awards"
-                android:src="@android:drawable/ic_menu_send" />
-
-            <ImageButton
-                android:id="@+id/ribbon_5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/Awards"
-                android:src="@android:drawable/ic_menu_send" />
-
-            <ImageButton
-                android:id="@+id/ribbon_6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/Awards"
-                android:src="@android:drawable/ic_menu_send" />
-
-            <ImageButton
-                android:id="@+id/ribbon_7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/Awards"
-                android:src="@android:drawable/ic_menu_send" />
-
-            <ImageButton
-                android:id="@+id/ribbon_8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/Awards"
-                android:src="@android:drawable/ic_menu_send" />
-
-            <ImageButton
-                android:id="@+id/ribbon_9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/Awards"
-                android:src="@android:drawable/ic_menu_send" />
-
-            <ImageButton
-                android:id="@+id/ribbon_10"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/Awards"
-                android:src="@android:drawable/ic_menu_send" />
-
-            <ImageButton
-                android:id="@+id/ribbon_11"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/Awards"
-                android:src="@android:drawable/ic_menu_send" />
-
-            <ImageButton
                 android:id="@+id/ribbon_"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/Awards"
                 android:src="@android:drawable/ic_menu_send" />
 
-            <ImageButton
-                android:id="@+id/ribbon_1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@android:drawable/ic_menu_send" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
