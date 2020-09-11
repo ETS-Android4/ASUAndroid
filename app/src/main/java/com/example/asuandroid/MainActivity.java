@@ -29,9 +29,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        //Toolbar toolbar = findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setContentView(R.layout.activity_main);
-        //setSupportActionBar(toolbar);
+        setSupportActionBar(toolbar);
     }
     public void onFragmentSetSpinnerArray(ArrayList<String> spinnerFromFrag){
         input = spinnerFromFrag;
