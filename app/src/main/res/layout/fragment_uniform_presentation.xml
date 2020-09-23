@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/frameLayout9"
@@ -7,29 +7,29 @@
     android:layout_height="match_parent"
     tools:context=".UniformPresentationFragment">
 
-    <ImageButton
-        android:id="@+id/btn_return_home"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:contentDescription="@string/return_home"
-        android:src="?attr/actionModeCloseDrawable"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.044"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_below="@+id/imageView"
+        android:background="#333">
 
-    <view
-        android:id="@+id/view3"
-        class="com.google.android.material.imageview.ShapeableImageView"
-        android:layout_width="334dp"
-        android:layout_height="588dp"
-        android:progressDrawable="@drawable/uniform_vector"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.297" />
+        <ImageButton
+            android:id="@+id/btn_return_home"
+            android:layout_width="76dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?"
+            android:contentDescription="@string/return_home"
+            android:src="?attr/actionModeCloseDrawable" />
+    </RelativeLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="665dp"
+        android:scrollbarDefaultDelayBeforeFade="300"
+        android:scrollbarFadeDuration="250"
+        android:scrollbarSize="10dip"
+        android:src="@drawable/pylon" />
+
+</RelativeLayout>
