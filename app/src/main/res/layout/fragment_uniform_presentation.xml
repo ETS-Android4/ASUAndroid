@@ -7,29 +7,9 @@
     android:layout_height="match_parent"
     tools:context=".UniformPresentationFragment">
 
-    <RelativeLayout
-        android:id="@+id/footer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView"
-        android:background="#333">
 
-        <ImageButton
-            android:id="@+id/btn_return_home"
-            android:layout_width="76dp"
-            android:layout_height="match_parent"
-            android:layout_marginTop="?"
-            android:contentDescription="@string/return_home"
-            android:src="?attr/actionModeCloseDrawable" />
-    </RelativeLayout>
-
-    <ImageView
+    <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="665dp"
-        android:scrollbarDefaultDelayBeforeFade="300"
-        android:scrollbarFadeDuration="250"
-        android:scrollbarSize="10dip"
-        android:src="@drawable/pylon" />
-
+        android:layout_height="match_parent"/>
 </RelativeLayout>
