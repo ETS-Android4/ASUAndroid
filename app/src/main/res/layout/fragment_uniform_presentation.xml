@@ -5,7 +5,7 @@
     android:id="@+id/frameLayout9"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UniformPresentationFragment" >
+    tools:context=".UniformPresentationFragment">
 
     <ImageButton
         android:id="@+id/btn_return_home"
@@ -19,12 +19,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/spinner_array"
-        android:layout_width="164dp"
-        android:layout_height="220dp"
+    <view
+        android:id="@+id/view3"
+        class="com.google.android.material.imageview.ShapeableImageView"
+        android:layout_width="334dp"
+        android:layout_height="588dp"
+        android:progressDrawable="@drawable/uniform_vector"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.297" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
