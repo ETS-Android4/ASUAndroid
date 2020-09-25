@@ -49,7 +49,8 @@
         <action
             android:id="@+id/action_uniformFragment_to_awardFragment"
             app:destination="@id/awardFragment"
-            app:enterAnim="@anim/nav_default_enter_anim" />
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
         <action
             android:id="@+id/action_uniformFragment_to_badgeFragment"
             app:destination="@id/badgeFragment" />
