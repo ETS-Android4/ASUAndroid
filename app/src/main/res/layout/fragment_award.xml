@@ -7,6 +7,15 @@
     android:layout_height="match_parent"
     tools:context=".outfitfragments.AwardFragment">
 
+    <ImageButton
+        android:id="@+id/btn_award_to_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/previous"
+        android:src="?attr/actionModeCloseDrawable" />
+
+
     <ScrollView
         android:layout_width="406dp"
         android:layout_height="662dp">
@@ -442,11 +451,13 @@
                 android:layout_height="wrap_content"
                 android:text="@string/A12" />
 
+
             <Button
                 android:id="@+id/btn_award_to_prompt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Button" />
+
 
         </LinearLayout>
     </ScrollView>
