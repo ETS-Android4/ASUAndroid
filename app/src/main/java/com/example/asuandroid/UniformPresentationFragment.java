@@ -15,20 +15,12 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 
-import com.davemorrissey.labs.subscaleview.ImageSource;
-import com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView;
-import com.davemorrissey.labs.subscaleview.decoder.CompatDecoderFactory;
-import com.davemorrissey.labs.subscaleview.decoder.ImageDecoder;
-import com.davemorrissey.labs.subscaleview.decoder.ImageRegionDecoder;
-import com.davemorrissey.labs.subscaleview.decoder.SkiaImageDecoder;
-import com.davemorrissey.labs.subscaleview.decoder.SkiaImageRegionDecoder;
-
 
 public class UniformPresentationFragment extends Fragment {
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
-        SubsamplingScaleImageView imageView = (SubsamplingScaleImageView)findViewById(id.imageView);
-        imageView.setImage(ImageSource.resource(R.drawable.pylon));
+        //SubsamplingScaleImageView imageView = (SubsamplingScaleImageView)findViewById(id.imageView);
+        //imageView.setImage(ImageSource.resource(R.drawable.pylon));
         super.onViewCreated(view, savedInstanceState);
         view.findViewById(R.id.btn_return_home).setOnClickListener(new View.OnClickListener() {
             @Override
