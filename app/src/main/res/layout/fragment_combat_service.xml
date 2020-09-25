@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/frameLayout4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".outfitfragments.CombatServiceFragment" >
+    tools:context=".outfitfragments.CombatServiceFragment">
 
     <ImageButton
         android:id="@+id/btn_combat_to_prompt"
@@ -13,9 +13,5 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:contentDescription="@string/previous"
-        android:src="?attr/actionModeCloseDrawable"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.044"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:src="?attr/actionModeCloseDrawable" />
+</RelativeLayout>
