@@ -102,8 +102,6 @@ Silver Star Medal</string>
     <string name="V71">Vietnam Technical Service Medal</string>
 
 
-
-
     <string-array name="ranks_array">
         <item>Private</item>
         <item>Private First Class</item>

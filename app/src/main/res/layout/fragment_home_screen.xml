@@ -35,7 +35,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="12dp"
-        android:src="@drawable/ic_3d1e416aba9acea7617e62ccd7b3148f"
+        android:src="@drawable/ic_uniform"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
@@ -46,7 +46,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="12dp"
-        android:src="@drawable/ic_3d1e416aba9acea7617e62ccd7b3148f"
+        android:src="@drawable/ic_uniform"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/btn_gotoFragment2" />
 
@@ -57,7 +57,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="12dp"
-        android:src="@drawable/ic_3d1e416aba9acea7617e62ccd7b3148f"
+        android:src="@drawable/ic_uniform"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/btn_gotoFragment21" />
 
@@ -68,7 +68,7 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="12dp"
         android:layout_marginRight="16dp"
-        android:src="@drawable/ic_3d1e416aba9acea7617e62ccd7b3148f"
+        android:src="@drawable/ic_uniform"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toBottomOf="@+id/btn_gotoFragment23" />
 
@@ -79,7 +79,7 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="12dp"
         android:layout_marginRight="16dp"
-        android:src="@drawable/ic_86c00acc71f819b4d821ec961680e37f"
+        android:src="@drawable/ic_wardrobe"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
@@ -90,7 +90,7 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="12dp"
         android:layout_marginRight="16dp"
-        android:src="@drawable/ic_3d1e416aba9acea7617e62ccd7b3148f"
+        android:src="@drawable/ic_uniform"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toBottomOf="@+id/btn_gotoFragment20" />
 
