@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #7d7d7d;
+        stroke: url(#linear-gradient-1);
+        stroke-linejoin: round;
+        stroke-width: 8px;
+        filter: url(#drop-shadow-1);
+      }
+    </style>
+
+    <linearGradient id="linear-gradient-1" gradientUnits="userSpaceOnUse" x1="512" y1="506" x2="512" y2="316">
+      <stop offset="-0.25"/>
+      <stop offset="1.25" stop-color="#fff"/>
+    </linearGradient>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dy="8" in="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.646" result="dropBlur"/>
+      <feFlood flood-opacity="0.35"/>
+      <feComposite operator="in" in2="dropBlur" result="dropShadowComp"/>
+      <feComposite in="SourceGraphic" result="shadowed"/>
+    </filter>
+  </defs>
+  <g style="fill: #7d7d7d; filter: url(#drop-shadow-1)">
+    <rect x="24" y="316" width="976" height="190" rx="10" ry="10" id="rect-1" style="stroke: inherit; filter: none; fill: inherit" class="cls-1"/>
+  </g>
+  <use xlink:href="#rect-1" style="stroke: url(#linear-gradient-1); filter: none; fill: none"/>
+</svg>
