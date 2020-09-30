@@ -27,7 +27,7 @@
                 android:id="@+id/imageView3"
                 android:layout_width="match_parent"
                 android:layout_height="122dp"
-                android:src="@drawable/ic_ribbon_horizontal_banner_design" />
+                app:srcCompat="@drawable/ic_ribbon_horizontal_banner_design" />
 
             <Button
                 android:id="@+id/button81"
