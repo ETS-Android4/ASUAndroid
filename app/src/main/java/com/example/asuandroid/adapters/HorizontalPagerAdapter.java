@@ -13,22 +13,30 @@ import com.example.asuandroid.utils.Utils;
 import static com.example.asuandroid.utils.Utils.setupItem;
 
 /**
- * Created by GIGAMOLE on 7/27/16.
+ * Created by Sean on 10/1/2020.
  */
 public class HorizontalPagerAdapter extends PagerAdapter {
 
     private final Utils.LibraryObject[] TWO_WAY_LIBRARIES = new Utils.LibraryObject[]{
             new Utils.LibraryObject(
-                    R.drawable.ic_uniform,
+                    R.mipmap.ic_airforce_foreground,
                     ""
             ),
             new Utils.LibraryObject(
-                    R.drawable.ic_george_washington,
-                    "George Washington"
+                    R.mipmap.ic_army1_foreground,
+                    ""
             ),
             new Utils.LibraryObject(
-                    R.drawable.ic_frederickthegreat,
-                    "Frederick The Great"
+                    R.mipmap.ic_army2_foreground,
+                    ""
+            ),
+            new Utils.LibraryObject(
+                    R.mipmap.ic_army3_foreground,
+                    ""
+            ),
+            new Utils.LibraryObject(
+                    R.mipmap.ic_army4_foreground,
+                    ""
             )
     };
 

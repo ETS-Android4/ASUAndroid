@@ -7,5 +7,4 @@
     android:layout_gravity="center"
     android:clipChildren="false">
 
-
 </com.example.asuandroid.utils.SquareFrameLayout>
