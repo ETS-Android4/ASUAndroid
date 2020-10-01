@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.viewpager.widget.ViewPager;
 
-import com.gigamole.infinitecycleviewpager.HorizontalInfiniteCycleViewPager;
+import com.knightly.infinitecycleviewpager.HorizontalInfiniteCycleViewPager;
 import com.example.asuandroid.adapters.HorizontalPagerAdapter;
 
 /**

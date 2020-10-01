@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.gigamole.infinitecycleviewpager.HorizontalInfiniteCycleViewPager
+    <com.knightly.infinitecycleviewpager.HorizontalInfiniteCycleViewPager
         android:id="@+id/carousel"
         android:layout_width="354dp"
         android:layout_height="593dp"
@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/ic_launcher_foreground"
             android:cacheColorHint="#00000000" />
-    </com.gigamole.infinitecycleviewpager.HorizontalInfiniteCycleViewPager>
+    </com.knightly.infinitecycleviewpager.HorizontalInfiniteCycleViewPager>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline20"
