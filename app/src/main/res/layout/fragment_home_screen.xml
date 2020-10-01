@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    tools:context=".HomeScreen">
+    tools:context=".screens.HomeScreen">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -73,7 +73,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_gotoFragment23" />
 
     <ImageButton
-        android:id="@+id/btn_gotoFragment20"
+        android:id="@+id/btn_gotoCloset"
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:layout_marginTop="12dp"
@@ -92,7 +92,7 @@
         android:layout_marginRight="16dp"
         app:srcCompat="@drawable/ic_uniform"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toBottomOf="@+id/btn_gotoFragment20" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_gotoCloset" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"

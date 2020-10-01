@@ -1,4 +1,4 @@
-package com.example.asuandroid;
+package com.example.asuandroid.screens;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
+
+import com.example.asuandroid.R;
 
 public class HomeScreen extends Fragment {
 
@@ -30,5 +32,12 @@ public class HomeScreen extends Fragment {
                         .navigate(R.id.action_FirstFragment_to_SecondFragment);
             }
         });
+        view.findViewById(R.id.btn_gotoCloset).setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                NavHostFragment.findNavController(HomeScreen.this)
+                        .navigate(R.id.action_HomeScreen_to_wardrobeScreen);
+            }
+        });
+
     }
 }

@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/HomeScreen"
-        android:name="com.example.asuandroid.HomeScreen"
+        android:name="com.example.asuandroid.screens.HomeScreen"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_home_screen">
 
@@ -19,10 +19,13 @@
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
             app:popExitAnim="@anim/nav_default_pop_exit_anim"
             app:popUpTo="@id/NewUniformPrompt" />
+        <action
+            android:id="@+id/action_HomeScreen_to_wardrobeScreen"
+            app:destination="@id/wardrobeScreen" />
     </fragment>
     <fragment
         android:id="@+id/NewUniformPrompt"
-        android:name="com.example.asuandroid.NewUniformPromptFragment"
+        android:name="com.example.asuandroid.screens.NewUniformPromptFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_new_uniform_prompt">
 
@@ -43,7 +46,7 @@
     </fragment>
     <fragment
         android:id="@+id/uniformFragment"
-        android:name="com.example.asuandroid.OutfitFragment"
+        android:name="com.example.asuandroid.screens.OutfitFragment"
         android:label="fragment_uniform"
         tools:layout="@layout/fragment_uniform" >
         <action
@@ -140,11 +143,20 @@
     </fragment>
     <fragment
         android:id="@+id/uniformPresentationFragment"
-        android:name="com.example.asuandroid.UniformPresentationFragment"
+        android:name="com.example.asuandroid.screens.UniformPresentationFragment"
         android:label="fragment_uniform_presentation"
         tools:layout="@layout/fragment_uniform_presentation" >
         <action
             android:id="@+id/action_uniformPresentationFragment_to_HomeScreen"
+            app:destination="@id/HomeScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/wardrobeScreen"
+        android:name="com.example.asuandroid.screens.wardrobeScreen"
+        android:label="fragment_wardrobe_screen"
+        tools:layout="@layout/fragment_wardrobe_screen" >
+        <action
+            android:id="@+id/action_wardrobeScreen_to_HomeScreen"
             app:destination="@id/HomeScreen" />
     </fragment>
 </navigation>

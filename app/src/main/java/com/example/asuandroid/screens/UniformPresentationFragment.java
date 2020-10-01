@@ -1,20 +1,13 @@
-package com.example.asuandroid;
+package com.example.asuandroid.screens;
 
-import android.content.Context;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.annotation.NonNull;
 import androidx.navigation.fragment.NavHostFragment;
-import android.view.LayoutInflater;
+
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Spinner;
-import android.widget.Toast;
-import java.util.ArrayList;
 
-
+import com.example.asuandroid.R;
 
 
 public class UniformPresentationFragment extends Fragment {

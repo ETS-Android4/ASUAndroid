@@ -11,7 +11,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import com.example.asuandroid.OutfitFragment;
 import com.example.asuandroid.R;
 
 public class AwardFragment extends Fragment implements View.OnClickListener {

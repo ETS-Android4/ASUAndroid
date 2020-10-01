@@ -1,24 +1,13 @@
-package com.example.asuandroid;
-        import android.content.SharedPreferences;
-        import android.os.Bundle;
+package com.example.asuandroid.screens;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import java.util.ArrayList;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.viewpager.widget.ViewPager;
 
-        import android.view.Menu;
-        import android.view.MenuItem;
-        import android.view.View;
-        import android.widget.Adapter;
-        import android.widget.AdapterView;
-        import android.widget.ArrayAdapter;
-        import android.widget.Spinner;
-        import android.widget.Toast;
-        import android.widget.AdapterView.OnItemSelectedListener;
-        import java.util.ArrayList;
-        import androidx.appcompat.app.AppCompatActivity;
-        import androidx.appcompat.widget.Toolbar;
-        import androidx.fragment.app.FragmentActivity;
-        import androidx.fragment.app.FragmentManager;
-        import androidx.fragment.app.FragmentTransaction;
-
-        import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.example.asuandroid.R;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -32,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setContentView(R.layout.activity_main);
         setSupportActionBar(toolbar);
+
+
     }
     public void onFragmentSetSpinnerArray(ArrayList<String> spinnerFromFrag){
         input = spinnerFromFrag;

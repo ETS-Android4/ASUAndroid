@@ -1,4 +1,4 @@
-package com.example.asuandroid;
+package com.example.asuandroid.screens;
 
 import android.os.Bundle;
 
@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.navigation.fragment.NavHostFragment;
+
+import com.example.asuandroid.R;
 
 
 public class OutfitFragment extends Fragment {
