@@ -98,7 +98,6 @@ public class NewUniformPromptFragment extends Fragment implements AdapterView.On
     public void onNothingSelected(AdapterView<?> parent){
     }
 
-
     @Override
     public void onDetach() {
         super.onDetach();
