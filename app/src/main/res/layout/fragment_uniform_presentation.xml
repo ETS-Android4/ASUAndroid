@@ -7,14 +7,30 @@
     android:layout_height="match_parent"
     tools:context=".screens.UniformPresentationFragment">
 
-
-    <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
-        android:id="@+id/imageView"
+    <com.zoomage.ZoomageView
+        android:id="@+id/demoView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        app:srcCompat="@mipmap/ic_airforce1"
+        app:zoomage_restrictBounds="false"
+        app:zoomage_animateOnReset="true"
+        app:zoomage_autoResetMode="UNDER"
+        app:zoomage_autoCenter="true"
+        app:zoomage_zoomable="true"
+        app:zoomage_translatable="true"
+        app:zoomage_minScale="0.6"
+        app:zoomage_maxScale="8"
+        />
+    <include
+        android:id="@+id/optionsView"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/zoomage_options" />
 
     <Button
-        android:id="@+id/btn_return_home"
+        android:id="@+id/btn_return_home_fromPresentation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button" />
