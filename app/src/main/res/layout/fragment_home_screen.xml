@@ -5,7 +5,7 @@
     android:id="@+id/first_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@color/colorPrimaryDark"
     tools:context=".screens.HomeScreen">
 
     <androidx.constraintlayout.widget.Guideline
@@ -36,6 +36,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="12dp"
         app:srcCompat="@drawable/ic_uniform"
+        android:background="@drawable/home_screen_button"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
@@ -47,6 +48,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="12dp"
         app:srcCompat="@drawable/ic_uniform"
+        android:background="@drawable/home_screen_button"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/btn_gotoFragment2" />
 
@@ -58,6 +60,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="12dp"
         app:srcCompat="@drawable/ic_uniform"
+        android:background="@drawable/home_screen_button"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/btn_gotoFragment21" />
 
@@ -69,6 +72,7 @@
         android:layout_marginEnd="12dp"
         android:layout_marginRight="16dp"
         app:srcCompat="@drawable/ic_uniform"
+        android:background="@drawable/home_screen_button"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toBottomOf="@+id/btn_gotoFragment23" />
 
@@ -80,6 +84,7 @@
         android:layout_marginEnd="12dp"
         android:layout_marginRight="16dp"
         app:srcCompat="@drawable/ic_wardrobe"
+        android:background="@drawable/home_screen_button"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
@@ -91,6 +96,7 @@
         android:layout_marginEnd="12dp"
         android:layout_marginRight="16dp"
         app:srcCompat="@drawable/ic_uniform"
+        android:background="@drawable/home_screen_button"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toBottomOf="@+id/btn_gotoCloset" />
 
