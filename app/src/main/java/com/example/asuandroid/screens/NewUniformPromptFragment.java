@@ -61,14 +61,14 @@ public class NewUniformPromptFragment extends Fragment implements AdapterView.On
         yearsSpinner.setAdapter(yearsadapter);
 
         view.findViewById(R.id.btn_tothirdFragment).setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick (View view){
-                    ArrayList<String> input = spinnerAr;
-                    NavHostFragment.findNavController(NewUniformPromptFragment.this)
-                            .navigate(R.id.action_second_fragment_to_third);
-                    //listener.onInputNewUniformPromptSent(input);
-                }
-            }
+                                                                                             @Override
+                                                                                             public void onClick (View view){
+                                                                                                 ArrayList<String> input = spinnerAr;
+                                                                                                 NavHostFragment.findNavController(NewUniformPromptFragment.this)
+                                                                                                         .navigate(R.id.action_second_fragment_to_third);
+                                                                                                 //listener.onInputNewUniformPromptSent(input);
+                                                                                             }
+                                                                                         }
         );
         return view;
     }
@@ -79,17 +79,14 @@ public class NewUniformPromptFragment extends Fragment implements AdapterView.On
             case R.id.rankSpinner:
                 String ranksText = parent.getItemAtPosition(pos).toString();
                 spinnerAr.add(ranksText);
-                Toast.makeText(parent.getContext(), ranksText, Toast.LENGTH_SHORT).show();
                 break;
             case R.id.spinnerBranch:
                 String branchText = parent.getItemAtPosition(pos).toString();
                 spinnerAr.add(branchText);
-                Toast.makeText(parent.getContext(), branchText, Toast.LENGTH_SHORT).show();
                 break;
             case R.id.spinnerGender:
                 String genderText = parent.getItemAtPosition(pos).toString();
                 spinnerAr.add(genderText);
-                Toast.makeText(parent.getContext(), genderText, Toast.LENGTH_SHORT).show();
                 break;
         }
     }
