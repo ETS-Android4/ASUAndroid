@@ -180,6 +180,11 @@ Silver Star Medal</string>
         <item>Fragment One</item>
         <item>Fragment Two</item>
     </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="select_badges">SELECT YOUR BADGES</string>
+    <string name="select_ribbons">SELECT YOUR RIBBONS</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
