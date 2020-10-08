@@ -14,13 +14,11 @@ import android.widget.CompoundButton;
 import com.example.asuandroid.R;
 import com.zoomage.ZoomageView;
 
-
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, CompoundButton.OnCheckedChangeListener{
     public ArrayList<String> fromSpinner;
     private ZoomageView demoView;
     private View optionsView;
     private AlertDialog optionsDialog;
-
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -30,7 +28,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setSupportActionBar(toolbar);
         fromSpinner = NewUniformPromptFragment.spinnerAr;
     }
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -49,7 +46,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         return super.onOptionsItemSelected(item);
     }
-
     @Override
     public void onCheckedChanged(final CompoundButton buttonView, final boolean isChecked) {
         switch (buttonView.getId()) {
@@ -90,7 +86,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 demoView.setAutoResetMode(which);
             }
         });
-
         builder.create().show();
     }
 }

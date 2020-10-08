@@ -109,8 +109,6 @@ public class NewUniformPromptFragment extends Fragment implements AdapterView.On
         return spinnerAr;
     }
 
-
-
     public void onNothingSelected(AdapterView<?> parent){
     }
 
