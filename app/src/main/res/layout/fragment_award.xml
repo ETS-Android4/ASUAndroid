@@ -30,92 +30,289 @@
                 android:layout_height="122dp"
                 app:srcCompat="@drawable/ic_ribbon_horizontal_banner_design" />
 
-            <Button
-                android:id="@+id/button81"
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/medalOfHonorSwitch"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-
+                android:layout_height="56dp"
+                android:background="@drawable/button_ribbon"
                 android:drawableStart="@drawable/ic_national_defense_service_medal_ribbon"
                 android:drawableLeft="@drawable/ic_national_defense_service_medal_ribbon"
-                android:text="Button" />
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                app:track="@drawable/track" />
 
-            <Button
-                android:id="@+id/button82"
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/medalOfHonorSwitch2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_height="56dp"
+                android:background="@drawable/button_ribbon"
+                android:drawableStart="@drawable/ic_national_defense_service_medal_ribbon"
+                android:drawableLeft="@drawable/ic_national_defense_service_medal_ribbon"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                app:track="@drawable/track" />
 
-            <Button
-                android:id="@+id/button83"
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/medalOfHonorSwitch3"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_height="56dp"
+                android:background="@drawable/button_ribbon"
+                android:drawableStart="@drawable/ic_national_defense_service_medal_ribbon"
+                android:drawableLeft="@drawable/ic_national_defense_service_medal_ribbon"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                app:track="@drawable/track" />
 
-            <Button
-                android:id="@+id/button84"
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/medalOfHonorSwitch4"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_height="56dp"
+                android:background="@drawable/button_ribbon"
+                android:drawableStart="@drawable/ic_national_defense_service_medal_ribbon"
+                android:drawableLeft="@drawable/ic_national_defense_service_medal_ribbon"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                app:track="@drawable/track" />
 
-            <Button
-                android:id="@+id/button85"
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/medalOfHonorSwitch5"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_height="56dp"
+                android:background="@drawable/button_ribbon"
+                android:drawableStart="@drawable/ic_national_defense_service_medal_ribbon"
+                android:drawableLeft="@drawable/ic_national_defense_service_medal_ribbon"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                app:track="@drawable/track" />
 
-            <Button
-                android:id="@+id/button86"
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/medalOfHonorSwitch6"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_height="56dp"
+                android:background="@drawable/button_ribbon"
+                android:drawableStart="@drawable/ic_national_defense_service_medal_ribbon"
+                android:drawableLeft="@drawable/ic_national_defense_service_medal_ribbon"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/I34"
+                app:track="@drawable/track" />
 
-            <Button
-                android:id="@+id/button87"
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/medalOfHonorSwitch7"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_height="56dp"
+                android:background="@drawable/button_ribbon"
+                android:drawableStart="@drawable/ic_national_defense_service_medal_ribbon"
+                android:drawableLeft="@drawable/ic_national_defense_service_medal_ribbon"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/I34"
+                app:track="@drawable/track" />
 
-            <Button
-                android:id="@+id/button88"
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/medalOfHonorSwitch8"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_height="56dp"
+                android:background="@drawable/button_ribbon"
+                android:drawableStart="@drawable/ic_national_defense_service_medal_ribbon"
+                android:drawableLeft="@drawable/ic_national_defense_service_medal_ribbon"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/I34"
+                app:track="@drawable/track" />
 
-            <Button
-                android:id="@+id/button89"
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/medalOfHonorSwitch9"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_height="56dp"
+                android:background="@drawable/button_ribbon"
+                android:drawableStart="@drawable/ic_national_defense_service_medal_ribbon"
+                android:drawableLeft="@drawable/ic_national_defense_service_medal_ribbon"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/I34"
+                app:track="@drawable/track" />
 
-            <Button
-                android:id="@+id/button90"
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/medalOfHonorSwitch10"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_height="56dp"
+                android:background="@drawable/button_ribbon"
+                android:drawableStart="@drawable/ic_national_defense_service_medal_ribbon"
+                android:drawableLeft="@drawable/ic_national_defense_service_medal_ribbon"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/I34"
+                app:track="@drawable/track" />
 
-            <Button
-                android:id="@+id/button91"
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/medalOfHonorSwitch11"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_height="56dp"
+                android:background="@drawable/button_ribbon"
+                android:drawableStart="@drawable/ic_national_defense_service_medal_ribbon"
+                android:drawableLeft="@drawable/ic_national_defense_service_medal_ribbon"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/I34"
+                app:track="@drawable/track" />
 
-            <Button
-                android:id="@+id/button92"
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/medalOfHonorSwitch12"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_height="56dp"
+                android:background="@drawable/button_ribbon"
+                android:drawableStart="@drawable/ic_national_defense_service_medal_ribbon"
+                android:drawableLeft="@drawable/ic_national_defense_service_medal_ribbon"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/I34"
+                app:track="@drawable/track" />
 
-            <Button
-                android:id="@+id/button93"
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/medalOfHonorSwitch13"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_height="56dp"
+                android:background="@drawable/button_ribbon"
+                android:drawableStart="@drawable/ic_national_defense_service_medal_ribbon"
+                android:drawableLeft="@drawable/ic_national_defense_service_medal_ribbon"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/I34"
+                app:track="@drawable/track" />
 
-            <Button
-                android:id="@+id/button94"
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/medalOfHonorSwitch14"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_height="56dp"
+                android:background="@drawable/button_ribbon"
+                android:drawableStart="@drawable/ic_national_defense_service_medal_ribbon"
+                android:drawableLeft="@drawable/ic_national_defense_service_medal_ribbon"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/I34"
+                app:track="@drawable/track" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/medalOfHonorSwitch15"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/button_ribbon"
+                android:drawableStart="@drawable/ic_national_defense_service_medal_ribbon"
+                android:drawableLeft="@drawable/ic_national_defense_service_medal_ribbon"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/I34"
+                app:track="@drawable/track" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/medalOfHonorSwitch16"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/button_ribbon"
+                android:drawableStart="@drawable/ic_national_defense_service_medal_ribbon"
+                android:drawableLeft="@drawable/ic_national_defense_service_medal_ribbon"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/I34"
+                app:track="@drawable/track" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/medalOfHonorSwitch17"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/button_ribbon"
+                android:drawableStart="@drawable/ic_national_defense_service_medal_ribbon"
+                android:drawableLeft="@drawable/ic_national_defense_service_medal_ribbon"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/I34"
+                app:track="@drawable/track" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/medalOfHonorSwitch18"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/button_ribbon"
+                android:drawableStart="@drawable/ic_national_defense_service_medal_ribbon"
+                android:drawableLeft="@drawable/ic_national_defense_service_medal_ribbon"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/I34"
+                app:track="@drawable/track" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/medalOfHonorSwitch19"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/button_ribbon"
+                android:drawableStart="@drawable/ic_national_defense_service_medal_ribbon"
+                android:drawableLeft="@drawable/ic_national_defense_service_medal_ribbon"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/I34"
+                app:track="@drawable/track" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/medalOfHonorSwitch20"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/button_ribbon"
+                android:drawableStart="@drawable/ic_national_defense_service_medal_ribbon"
+                android:drawableLeft="@drawable/ic_national_defense_service_medal_ribbon"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/I34"
+                app:track="@drawable/track" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/medalOfHonorSwitch21"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/button_ribbon"
+                android:drawableStart="@drawable/ic_national_defense_service_medal_ribbon"
+                android:drawableLeft="@drawable/ic_national_defense_service_medal_ribbon"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/I34"
+                app:track="@drawable/track" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/medalOfHonorSwitch22"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/button_ribbon"
+                android:drawableStart="@drawable/ic_national_defense_service_medal_ribbon"
+                android:drawableLeft="@drawable/ic_national_defense_service_medal_ribbon"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/I34"
+                app:track="@drawable/track" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/medalOfHonorSwitch23"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/button_ribbon"
+                android:drawableStart="@drawable/ic_national_defense_service_medal_ribbon"
+                android:drawableLeft="@drawable/ic_national_defense_service_medal_ribbon"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/I34"
+                app:track="@drawable/track" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/medalOfHonorSwitch24"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/button_ribbon"
+                android:drawableStart="@drawable/ic_national_defense_service_medal_ribbon"
+                android:drawableLeft="@drawable/ic_national_defense_service_medal_ribbon"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/I34"
+                app:track="@drawable/track" />
+
         </LinearLayout>
     </ScrollView>
 
@@ -124,14 +321,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_end="21dp" />
+        app:layout_constraintGuide_end="26dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp" />
+        app:layout_constraintGuide_begin="25dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline13"
