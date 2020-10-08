@@ -39,13 +39,13 @@
             app:popUpTo="@id/HomeScreen" />
         <action
             android:id="@+id/action_second_fragment_to_third"
-            app:destination="@id/uniformFragment"
+            app:destination="@id/OufitFragment"
             app:enterAnim="@anim/nav_default_enter_anim"
             app:exitAnim="@anim/nav_default_exit_anim"
-            app:popUpTo="@id/uniformFragment" />
+            app:popUpTo="@id/OufitFragment" />
     </fragment>
     <fragment
-        android:id="@+id/uniformFragment"
+        android:id="@+id/OufitFragment"
         android:name="com.example.asuandroid.screens.OutfitFragment"
         android:label="fragment_uniform"
         tools:layout="@layout/fragment_uniform" >
@@ -83,7 +83,7 @@
         tools:layout="@layout/fragment_award" >
         <action
             android:id="@+id/action_awardFragment_to_uniformFragment"
-            app:destination="@id/uniformFragment"
+            app:destination="@id/OufitFragment"
             app:enterAnim="@anim/fragment_open_enter"
             app:exitAnim="@anim/fragment_open_exit" />
     </fragment>
@@ -94,7 +94,7 @@
         tools:layout="@layout/fragment_badge" >
         <action
             android:id="@+id/action_badgeFragment_to_uniformFragment"
-            app:destination="@id/uniformFragment" />
+            app:destination="@id/OufitFragment" />
     </fragment>
     <fragment
         android:id="@+id/combatServiceFragment"
@@ -103,7 +103,7 @@
         tools:layout="@layout/fragment_combat_service" >
         <action
             android:id="@+id/action_combatServiceFragment_to_uniformFragment"
-            app:destination="@id/uniformFragment" />
+            app:destination="@id/OufitFragment" />
     </fragment>
     <fragment
         android:id="@+id/identificationBadgeFragment"
@@ -112,7 +112,7 @@
         tools:layout="@layout/fragment_identification_badge" >
         <action
             android:id="@+id/action_identificationBadgeFragment_to_uniformFragment"
-            app:destination="@id/uniformFragment" />
+            app:destination="@id/OufitFragment" />
     </fragment>
     <fragment
         android:id="@+id/overSeasServiceFragment"
@@ -121,7 +121,7 @@
         tools:layout="@layout/fragment_over_seas_service" >
         <action
             android:id="@+id/action_overSeasServiceFragment_to_uniformFragment"
-            app:destination="@id/uniformFragment" />
+            app:destination="@id/OufitFragment" />
     </fragment>
     <fragment
         android:id="@+id/serviceStripes"
@@ -130,7 +130,7 @@
         tools:layout="@layout/fragment_service_stripes" >
         <action
             android:id="@+id/action_serviceStripes_to_uniformFragment"
-            app:destination="@id/uniformFragment" />
+            app:destination="@id/OufitFragment" />
     </fragment>
     <fragment
         android:id="@+id/regimentalInsigniaFragment"
@@ -139,7 +139,7 @@
         tools:layout="@layout/fragment_regimental_insignia" >
         <action
             android:id="@+id/action_regimentalInsigniaFragment_to_uniformFragment"
-            app:destination="@id/uniformFragment" />
+            app:destination="@id/OufitFragment" />
     </fragment>
     <fragment
         android:id="@+id/uniformPresentationFragment"

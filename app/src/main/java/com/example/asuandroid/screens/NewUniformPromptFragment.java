@@ -1,6 +1,10 @@
 package com.example.asuandroid.screens;
 
+import android.content.Context;
 import android.os.Bundle;
+import com.google.gson.Gson;
+
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.annotation.NonNull;
 import androidx.navigation.fragment.NavHostFragment;
@@ -12,18 +16,25 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.io.Serializable;
+
+
 import com.example.asuandroid.R;
 
 import java.util.ArrayList;
 
+import kotlin.text.UStringsKt;
 
-public class NewUniformPromptFragment extends Fragment implements AdapterView.OnItemSelectedListener {
-    public ArrayList<String> spinnerAr = new ArrayList<String>();
+
+public class NewUniformPromptFragment extends Fragment implements AdapterView.OnItemSelectedListener, Serializable {
+    public static ArrayList<String> spinnerAr = new ArrayList<String>();
     private FragmentNewUniformPromptListener listener;
-
     public interface FragmentNewUniformPromptListener {
         void onInputNewUniformPromptSent(ArrayList<String> input);
     }
+    @Nullable
     @Override
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container,
@@ -31,6 +42,7 @@ public class NewUniformPromptFragment extends Fragment implements AdapterView.On
     ) {
         // Inflate the layout for this fragment
        View view = inflater.inflate(R.layout.fragment_new_uniform_prompt, container, false);
+
 
        //rankSpinner
        Spinner rankSpinner = (Spinner) view.findViewById(R.id.rankSpinner);
@@ -61,17 +73,20 @@ public class NewUniformPromptFragment extends Fragment implements AdapterView.On
         yearsSpinner.setAdapter(yearsadapter);
 
         view.findViewById(R.id.btn_tothirdFragment).setOnClickListener(new View.OnClickListener() {
-                                                                                             @Override
-                                                                                             public void onClick (View view){
-                                                                                                 ArrayList<String> input = spinnerAr;
-                                                                                                 NavHostFragment.findNavController(NewUniformPromptFragment.this)
-                                                                                                         .navigate(R.id.action_second_fragment_to_third);
-                                                                                                 //listener.onInputNewUniformPromptSent(input);
-                                                                                             }
-                                                                                         }
+             @Override
+             public void onClick (View view){
+                 NavHostFragment.findNavController(NewUniformPromptFragment.this)
+                         .navigate(R.id.action_second_fragment_to_third);
+                  // TEST
+                 System.out.println("This is spinner array on NewUniformPrompt"+ spinnerAr);
+                 System.out.println("This is the all list on new Uniform Promt" + spinnerAr);
+             }
+         }
         );
         return view;
     }
+
+
     public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
         // An item was selected. You can retrieve the selected item using
         // parent.getItemAtPosition(pos)
@@ -90,19 +105,15 @@ public class NewUniformPromptFragment extends Fragment implements AdapterView.On
                 break;
         }
     }
-    public void updateSpinnerValues(String spinnerValue){
-        spinnerAr.add(spinnerValue);
+    public ArrayList<String> getSpinnerAr(Bundle savedInstanceState){
+        return spinnerAr;
     }
+
 
 
     public void onNothingSelected(AdapterView<?> parent){
     }
 
-    @Override
-    public void onDetach() {
-        super.onDetach();
-        listener = null;
-    }
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         view.findViewById(R.id.button_second).setOnClickListener(new View.OnClickListener() {

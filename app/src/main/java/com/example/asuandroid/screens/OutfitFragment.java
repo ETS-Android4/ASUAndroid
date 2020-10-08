@@ -1,25 +1,42 @@
 package com.example.asuandroid.screens;
 
+import android.content.Context;
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-
+import com.example.asuandroid.screens.NewUniformPromptFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import com.google.gson.Gson;
+import com.example.asuandroid.screens.MainActivity;
 
 import androidx.annotation.NonNull;
 import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.asuandroid.R;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.io.*;
+import java.io.Serializable;
+import java.util.Objects;
+
 
 public class OutfitFragment extends Fragment {
 
+    public ArrayList<String> fromSpinner;
 
+    public void getSpinnerAr(Bundle savedInstanceBundle){
+        super.onCreate(savedInstanceBundle);
+        fromSpinner = NewUniformPromptFragment.spinnerAr;
+        System.out.println(fromSpinner);
+    }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_uniform, container, false);
     }
@@ -31,6 +48,7 @@ public class OutfitFragment extends Fragment {
             public void onClick(View view) {
                 NavHostFragment.findNavController(OutfitFragment.this)
                         .navigate(R.id.action_uniformFragment_to_awardFragment);
+
             }
         });
         view.findViewById(R.id.btn_badges).setOnClickListener(new View.OnClickListener() {
@@ -78,9 +96,12 @@ public class OutfitFragment extends Fragment {
         view.findViewById(R.id.btn_build_uniform).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 NavHostFragment.findNavController(OutfitFragment.this)
                         .navigate(R.id.action_uniformFragment_to_uniformPresentationFragment);
+                getSpinnerAr(savedInstanceState);
             }
+
         });
     }
 }

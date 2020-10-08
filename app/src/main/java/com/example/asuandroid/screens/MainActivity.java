@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -14,10 +16,7 @@ import com.zoomage.ZoomageView;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, CompoundButton.OnCheckedChangeListener{
-    private ArrayList<String> input;
-    private NewUniformPromptFragment newUniformPromptFragment;
-    private UniformPresentationFragment uniformPresentationFragment;
-
+    public ArrayList<String> fromSpinner;
     private ZoomageView demoView;
     private View optionsView;
     private AlertDialog optionsDialog;
@@ -29,10 +28,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         demoView = findViewById(R.id.demoView);
         setSupportActionBar(toolbar);
+        fromSpinner = NewUniformPromptFragment.spinnerAr;
     }
-    public void onFragmentSetSpinnerArray(ArrayList<String> spinnerFromFrag){
-        input = spinnerFromFrag;
-    }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
