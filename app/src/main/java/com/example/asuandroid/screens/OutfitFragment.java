@@ -1,27 +1,15 @@
 package com.example.asuandroid.screens;
 
-import android.content.Context;
 import android.os.Bundle;
-
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import com.example.asuandroid.screens.NewUniformPromptFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import com.google.gson.Gson;
-import com.example.asuandroid.screens.MainActivity;
 
 import androidx.annotation.NonNull;
 import androidx.navigation.fragment.NavHostFragment;
-
 import com.example.asuandroid.R;
-
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.io.*;
-import java.io.Serializable;
-import java.util.Objects;
 
 
 public class OutfitFragment extends Fragment {
