@@ -11,7 +11,7 @@ import androidx.navigation.fragment.NavHostFragment;
 import androidx.viewpager.widget.ViewPager;
 
 import com.knightly.infinitecycleviewpager.HorizontalInfiniteCycleViewPager;
-import com.example.asuandroid.adapters.HorizontalPagerAdapter;
+import com.example.asuandroid.cycleViewerAdapters.HorizontalPagerAdapter;
 
 /**
  * Created by GIGAMOLE on 8/18/16.
