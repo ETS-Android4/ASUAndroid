@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.0"
+   width="106"
+   height="30.000101"
+   id="svg2">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient3241">
+      <stop
+         style="stop-color:#800080;stop-opacity:1"
+         offset="0"
+         id="stop3243" />
+      <stop
+         style="stop-color:#3131ce;stop-opacity:1"
+         offset="0.1"
+         id="stop3257" />
+      <stop
+         style="stop-color:#008000;stop-opacity:1"
+         offset="0.2"
+         id="stop3259" />
+      <stop
+         style="stop-color:#ffff00;stop-opacity:1"
+         offset="0.30000001"
+         id="stop3261" />
+      <stop
+         style="stop-color:#ff6600;stop-opacity:1"
+         offset="0.40000001"
+         id="stop3263" />
+      <stop
+         style="stop-color:#ff0000;stop-opacity:1"
+         offset="0.5"
+         id="stop3265" />
+      <stop
+         style="stop-color:#ff6600;stop-opacity:1"
+         offset="0.60000002"
+         id="stop3255" />
+      <stop
+         style="stop-color:#ffff00;stop-opacity:1"
+         offset="0.69999999"
+         id="stop3251" />
+      <stop
+         style="stop-color:#008000;stop-opacity:1"
+         offset="0.80000001"
+         id="stop3249" />
+      <stop
+         style="stop-color:#3131ce;stop-opacity:1"
+         offset="0.89999998"
+         id="stop3253" />
+      <stop
+         style="stop-color:#800080;stop-opacity:1"
+         offset="1"
+         id="stop3245" />
+    </linearGradient>
+    <linearGradient
+       x1="0"
+       y1="15.000103"
+       x2="105.99999"
+       y2="15.000103"
+       id="linearGradient3247"
+       xlink:href="#linearGradient3241"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="scale(0.2856862,1)" />
+    <linearGradient
+       x1="0"
+       y1="15.000103"
+       x2="105.99999"
+       y2="15.000103"
+       id="linearGradient3337"
+       xlink:href="#linearGradient3241"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.2856505,0,0,1,75.72105,0)" />
+  </defs>
+  <g
+     id="layer3">
+    <path
+       d="M 0,0.00010481948 L 106,0.00010481948 L 106,30.000101 L 0,30.000101 L 0,0.00010481948 z "
+       style="fill:#0000ad;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path3311" />
+    <path
+       d="M 5.03125,0.00010481948 L 100.94502,0.00010481948 L 100.94502,30.000101 L 5.03125,30.000101 L 5.03125,0.00010481948 z "
+       style="fill:#ef0404;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path2300" />
+    <path
+       d="M 44.398438,0.00010481948 L 47.375,0.00010481948 L 47.375,30.000101 L 44.398438,30.000101 L 44.398438,0.00010481948 z "
+       style="fill:#fcfcfc;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path2332" />
+    <path
+       d="M 49.442446,0.00010481948 L 52.472656,0.00010481948 L 52.472656,30.000101 L 49.442446,30.000101 L 49.442446,0.00010481948 z "
+       style="fill:#fcfcfc;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path2334" />
+    <path
+       d="M 54.488281,0.00010481948 L 57.507882,0.00010481948 L 57.507882,30.000101 L 54.488281,30.000101 L 54.488281,0.00010481948 z "
+       style="fill:#fcfcfc;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path2336" />
+    <path
+       d="M 59.529766,0.00010481948 L 62.568115,0.00010481948 L 62.568115,30.000101 L 59.529766,30.000101 L 59.529766,0.00010481948 z "
+       style="fill:#fcfcfc;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path2338" />
+  </g>
+  <g
+     id="layer4">
+    <g
+       id="layer1">
+      <g
+         id="g2179">
+        <g
+           transform="translate(0,1.0108948e-4)"
+           id="g2329">
+          <path
+             d="M 0,29 L 106,29 L 106,30 L 0,30 L 0,29 z "
+             style="opacity:0.25;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             id="path3508" />
+          <path
+             d="M 0,27 L 106,27 L 106,28 L 0,28 L 0,27 z "
+             style="opacity:0.25;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             id="path3510" />
+          <path
+             d="M 0,25 L 106,25 L 106,26 L 0,26 L 0,25 z "
+             style="opacity:0.25;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             id="path3512" />
+          <path
+             d="M 0,23 L 106,23 L 106,24 L 0,24 L 0,23 z "
+             style="opacity:0.25;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             id="path3514" />
+          <path
+             d="M 0,21 L 106,21 L 106,22 L 0,22 L 0,21 z "
+             style="opacity:0.25;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             id="path3516" />
+          <path
+             d="M 0,19 L 106,19 L 106,20 L 0,20 L 0,19 z "
+             style="opacity:0.25;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             id="path3518" />
+          <path
+             d="M 0,17 L 106,17 L 106,18 L 0,18 L 0,17 z "
+             style="opacity:0.25;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             id="path3520" />
+          <path
+             d="M 0,15 L 106,15 L 106,16 L 0,16 L 0,15 z "
+             style="opacity:0.25;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             id="path3522" />
+          <path
+             d="M 0,13 L 106,13 L 106,14 L 0,14 L 0,13 z "
+             style="opacity:0.25;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             id="path3524" />
+          <path
+             d="M 0,11 L 106,11 L 106,12 L 0,12 L 0,11 z "
+             style="opacity:0.25;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             id="path3526" />
+          <path
+             d="M 0,9 L 106,9 L 106,10 L 0,10 L 0,9 z "
+             style="opacity:0.25;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             id="path3528" />
+          <path
+             d="M 0,7 L 106,7 L 106,8 L 0,8 L 0,7 z "
+             style="opacity:0.25;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             id="path3530" />
+          <path
+             d="M 0,5 L 106,5 L 106,6 L 0,6 L 0,5 z "
+             style="opacity:0.25;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             id="path3532" />
+          <path
+             d="M 0,3 L 106,3 L 106,4 L 0,4 L 0,3 z "
+             style="opacity:0.25;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             id="path3534" />
+          <path
+             d="M 0,1 L 106,1 L 106,2 L 0,2 L 0,1 z "
+             style="opacity:0.25;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             id="path3536" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

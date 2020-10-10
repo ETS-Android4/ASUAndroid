@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="1024" height="279">
+<path style="fill:#00263a" d="M0,0h1024v279H0z"/>
+<path d="M512,09.641v279" fill="none" stroke="#000" stroke-width="1024" stroke-dasharray="9.641" opacity=".25"/>
+<path style="fill:#00263a" d="M24,0v279h976V0z"/>
+<path style="fill:#64a70b" d="M117,0h23v279h-23zM884,0h23v279h-23z"/>
+<path d="M512,0v279" fill="none" stroke="#000" stroke-width="976" stroke-dasharray="9.641" opacity=".25"/>
+</svg>

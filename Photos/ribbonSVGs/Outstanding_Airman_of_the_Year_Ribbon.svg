@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+	Standard dimensions are 1 3/8" x 3/8" = 88/64" x 24/64" (1px = 1/64")
+	Since an exact spec cannot be found, proportions of the stripes are based 
+	on rounding proportions from the image at http://www.afpc.af.mil/shared/media/ggallery/hires/afg-050214-031.jpg
+	to those found in other "normal" ribbon descriptions, resulting in the following stripes:
+	3/8"	Light blue
+	3/32"	Red
+	3/32"	Dark blue
+	1/4"	White
+	3/32"	Dark blue
+	3/32"	Red
+	3/8"	Light blue
+	:w:en:AlanM1	2014-02-23
+-->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="88"
+   height="24"
+   id="svg2">
+  <defs
+     id="defs4" />
+  <g
+     id="layer2">
+    <path
+       d="M 0,0 L 88,0 L 88,24 L 0,24 L 0,0 z "
+       style="fill:#53749d;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path2207" />
+    <path
+       d="M 24,0 L 30,0 L 30,24 L 24,24 L 24,0 z "
+       style="fill:#e67272;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path2406" />
+    <path
+       d="M 30,0 L 36,0 L 36,24 L 30,24 L 30,0 z "
+       style="fill:#2f3b77;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path2410" />
+    <path
+       d="M 36,0 L 52,0 L 52,24 L 36,24 L 36,0 z "
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path2420" />
+    <path
+       d="M 52,0 L 58,0 L 58,24 L 52,24 L 52,0 z "
+       style="fill:#2f3b77;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path2460" />
+    <path
+       d="M 58,0 L 64,0 L 64,24 L 58,24 L 58,0 z "
+       style="fill:#e67272;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path2470" />
+  </g>
+  <g
+     id="layer1">
+    <path
+       d="M 0,23 L 88,23 L 88,24 L 0,24 L 0,23 z "
+       style="opacity:0.10;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path3514" />
+    <path
+       d="M 0,21 L 88,21 L 88,22 L 0,22 L 0,21 z "
+       style="opacity:0.10;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path3516" />
+    <path
+       d="M 0,19 L 88,19 L 88,20 L 0,20 L 0,19 z "
+       style="opacity:0.10;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path3518" />
+    <path
+       d="M 0,17 L 88,17 L 88,18 L 0,18 L 0,17 z "
+       style="opacity:0.10;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path3520" />
+    <path
+       d="M 0,15 L 88,15 L 88,16 L 0,16 L 0,15 z "
+       style="opacity:0.10;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path3522" />
+    <path
+       d="M 0,13 L 88,13 L 88,14 L 0,14 L 0,13 z "
+       style="opacity:0.10;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path3524" />
+    <path
+       d="M 0,11 L 88,11 L 88,12 L 0,12 L 0,11 z "
+       style="opacity:0.10;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path3526" />
+    <path
+       d="M 0,9 L 88,9 L 88,10 L 0,10 L 0,9 z "
+       style="opacity:0.10;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path3528" />
+    <path
+       d="M 0,7 L 88,7 L 88,8 L 0,8 L 0,7 z "
+       style="opacity:0.10;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path3530" />
+    <path
+       d="M 0,5 L 88,5 L 88,6 L 0,6 L 0,5 z "
+       style="opacity:0.10;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path3532" />
+    <path
+       d="M 0,3 L 88,3 L 88,4 L 0,4 L 0,3 z "
+       style="opacity:0.10;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path3534" />
+    <path
+       d="M 0,1 L 88,1 L 88,2 L 0,2 L 0,1 z "
+       style="opacity:0.10;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path3536" />
+  </g>
+</svg>

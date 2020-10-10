@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="218" height="60">
+<rect fill="#E00" width="218" height="60"/>
+<path stroke="#007" stroke-width="44" d="m34,0v60m150,0V0"/>
+<path stroke="#000" stroke-width="218" stroke-dasharray="2.07" opacity=".3" d="m109,0v60"/>
+</svg>
