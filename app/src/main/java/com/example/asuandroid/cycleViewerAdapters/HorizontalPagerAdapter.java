@@ -1,4 +1,4 @@
-package com.example.asuandroid.adapters;
+package com.example.asuandroid.cycleViewerAdapters;
 
 import android.content.Context;
 

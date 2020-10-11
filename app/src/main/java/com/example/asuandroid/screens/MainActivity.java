@@ -4,29 +4,45 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-
-import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+
 import android.content.DialogInterface;
+import android.widget.ArrayAdapter;
 import android.widget.CompoundButton;
+import android.widget.ListView;
+
 import com.example.asuandroid.R;
+import com.example.asuandroid.outfitAdapters.AwardAdapter;
+import com.example.asuandroid.outfitfragments.AwardFragment;
+import com.example.asuandroid.outfitfragments.AwardItem;
 import com.zoomage.ZoomageView;
 
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, CompoundButton.OnCheckedChangeListener{
+    private ArrayList<AwardItem> mAwardList;
     public ArrayList<String> fromSpinner;
     private ZoomageView demoView;
-    private View optionsView;
-    private AlertDialog optionsDialog;
+    private String[] mArrayNames = new String[]{"Daryl", "Rick", "Abraham", "Eugene"};
+
     @Override
-    protected void onCreate(Bundle savedInstanceState){
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setContentView(R.layout.activity_main);
         demoView = findViewById(R.id.demoView);
         setSupportActionBar(toolbar);
         fromSpinner = NewUniformPromptFragment.spinnerAr;
+
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -34,6 +50,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
+
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -47,6 +65,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return super.onOptionsItemSelected(item);
     }
     @Override
+    //zoomage
     public void onCheckedChanged(final CompoundButton buttonView, final boolean isChecked) {
         switch (buttonView.getId()) {
             case R.id.zoomable:
@@ -66,6 +85,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
         }
     }
+
+    //Zoomage
     @Override
     public void onClick(final View v) {
         if (v.getId() == R.id.reset) {
@@ -75,6 +96,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             showResetOptions();
         }
     }
+    //Zoomage
     private void showResetOptions() {
         CharSequence[] options = new CharSequence[]{"Under", "Over", "Always", "Never"};
 
