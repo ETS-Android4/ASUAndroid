@@ -22,10 +22,14 @@ import com.example.asuandroid.outfitAdapters.AwardAdapter;
 import com.example.asuandroid.screens.MainActivity;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 
 
 public class AwardFragment extends Fragment {
     private ArrayList<AwardItem> mAwardList;
+    private AwardAdapter mRecyclerViewAdapter;
 
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -38,6 +42,7 @@ public class AwardFragment extends Fragment {
 
         final FragmentActivity c = getActivity();
         final RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
+        mRecyclerViewAdapter = new AwardAdapter(mAwardList);
         LinearLayoutManager layoutManager = new LinearLayoutManager(c);
         recyclerView.setLayoutManager(layoutManager);
 
@@ -49,6 +54,7 @@ public class AwardFragment extends Fragment {
                 c.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
+                        sortArrayList();
                         recyclerView.setAdapter(adapter);
                     }
                 });
@@ -82,6 +88,15 @@ public class AwardFragment extends Fragment {
         mAwardList.add(new AwardItem(R.drawable.ic_air_medal_ribbon, "Abraham", "Ford"));
         mAwardList.add(new AwardItem(R.drawable.ic_soldiers_medal_ribbon, "Eugene", "Porter"));
 
+    }
+    private void sortArrayList() {
+        Collections.sort(mAwardList, new Comparator<AwardItem>() {
+            @Override
+            public int compare(AwardItem o1, AwardItem o2) {
+                return o1.getText1().compareTo(o2.getText1());
+            }
+        });
+        mRecyclerViewAdapter.notifyDataSetChanged();
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {

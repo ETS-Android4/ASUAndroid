@@ -10,7 +10,7 @@
     <ScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
-        android:layout_height="639dp"
+        android:layout_height="532dp"
         android:layout_marginTop="108dp">
 
         <androidx.recyclerview.widget.RecyclerView
@@ -28,7 +28,8 @@
     <Button
         android:id="@+id/btn_sort"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="95dp"
         android:text="Button" />
+
 
 </LinearLayout>
