@@ -68,25 +68,7 @@ public class AwardFragment extends Fragment {
     public void createAwardList() {
         mAwardList = new ArrayList<>();
         mAwardList.add(new AwardItem(R.drawable.ic_medal_of_honor_ribbon, "Medal of Honor", "Dixon"));
-        mAwardList.add(new AwardItem(R.drawable.ic_medal_for_humane_action_ribbon, "Rick", "Grimes"));
-        mAwardList.add(new AwardItem(R.drawable.ic_air_medal_ribbon, "Abraham", "Ford"));
-        mAwardList.add(new AwardItem(R.drawable.ic_soldiers_medal_ribbon, "Eugene", "Porter"));
-        mAwardList.add(new AwardItem(R.drawable.ic_medal_of_honor_ribbon, "Medal of Honor", "Dixon"));
-        mAwardList.add(new AwardItem(R.drawable.ic_medal_for_humane_action_ribbon, "Rick", "Grimes"));
-        mAwardList.add(new AwardItem(R.drawable.ic_air_medal_ribbon, "Abraham", "Ford"));
-        mAwardList.add(new AwardItem(R.drawable.ic_soldiers_medal_ribbon, "Eugene", "Porter"));
-        mAwardList.add(new AwardItem(R.drawable.ic_medal_of_honor_ribbon, "Medal of Honor", "Dixon"));
-        mAwardList.add(new AwardItem(R.drawable.ic_medal_for_humane_action_ribbon, "Rick", "Grimes"));
-        mAwardList.add(new AwardItem(R.drawable.ic_air_medal_ribbon, "Abraham", "Ford"));
-        mAwardList.add(new AwardItem(R.drawable.ic_soldiers_medal_ribbon, "Eugene", "Porter"));
-        mAwardList.add(new AwardItem(R.drawable.ic_medal_of_honor_ribbon, "Medal of Honor", "Dixon"));
-        mAwardList.add(new AwardItem(R.drawable.ic_medal_for_humane_action_ribbon, "Rick", "Grimes"));
-        mAwardList.add(new AwardItem(R.drawable.ic_air_medal_ribbon, "Abraham", "Ford"));
-        mAwardList.add(new AwardItem(R.drawable.ic_soldiers_medal_ribbon, "Eugene", "Porter"));
-        mAwardList.add(new AwardItem(R.drawable.ic_medal_of_honor_ribbon, "Medal of Honor", "Dixon"));
-        mAwardList.add(new AwardItem(R.drawable.ic_medal_for_humane_action_ribbon, "Rick", "Grimes"));
-        mAwardList.add(new AwardItem(R.drawable.ic_air_medal_ribbon, "Abraham", "Ford"));
-        mAwardList.add(new AwardItem(R.drawable.ic_soldiers_medal_ribbon, "Eugene", "Porter"));
+
 
     }
     private void sortArrayList() {
