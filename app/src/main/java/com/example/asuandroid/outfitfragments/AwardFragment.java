@@ -1,11 +1,10 @@
 package com.example.asuandroid.outfitfragments;
 
-import android.app.Activity;
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
-import androidx.annotation.MainThread;
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SwitchCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.navigation.fragment.NavHostFragment;
@@ -15,21 +14,21 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
+import android.widget.CompoundButton;
 
 import com.example.asuandroid.R;
 import com.example.asuandroid.outfitAdapters.AwardAdapter;
-import com.example.asuandroid.screens.MainActivity;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
-
 
 public class AwardFragment extends Fragment {
     private ArrayList<AwardItem> mAwardList;
     private AwardAdapter mRecyclerViewAdapter;
+    public SwitchCompat switchRibbon;
+    private ArrayList<String> ribbonValues;
+
 
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -178,7 +177,20 @@ public class AwardFragment extends Fragment {
         });
         mRecyclerViewAdapter.notifyDataSetChanged();
     }
+    public void setButtons(View view){
+        switchRibbon = view.findViewById(R.id.switchRibbon);
 
+        switchRibbon.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            ArrayList<String> mRibbonList = new ArrayList<String>();
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
+                if(isChecked){
+                    System.out.println(mRibbonList);
+                } else {
+                }
+            }
+        });
+    }
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         //back to outfit prompt
