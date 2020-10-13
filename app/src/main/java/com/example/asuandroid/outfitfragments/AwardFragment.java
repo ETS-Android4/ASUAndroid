@@ -1,6 +1,5 @@
 package com.example.asuandroid.outfitfragments;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -14,56 +13,48 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.CompoundButton;
+import android.widget.Toast;
 
 import com.example.asuandroid.R;
 import com.example.asuandroid.outfitAdapters.AwardAdapter;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 
 public class AwardFragment extends Fragment {
     private ArrayList<AwardItem> mAwardList;
     private AwardAdapter mRecyclerViewAdapter;
+    private RecyclerView mRecyclerView;
     public SwitchCompat switchRibbon;
-    private ArrayList<String> ribbonValues;
+    private ArrayList<String> ribbonValues = new ArrayList<String>();
 
 
+    public void addRibbon(String ribbon){
+    }
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         createAwardList();
-        System.out.println(mAwardList);
         //buildRecyclerView(container.findViewById(R.id.recyclerView));
         // Inflate the layout for this fragment
         final View view = inflater.inflate(R.layout.fragment_award, container, false);
-
         final FragmentActivity c = getActivity();
         final RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
+        AwardAdapter mAdapter = new AwardAdapter(mAwardList);
         mRecyclerViewAdapter = new AwardAdapter(mAwardList);
         LinearLayoutManager layoutManager = new LinearLayoutManager(c);
         recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setAdapter(mAdapter);
+        mAdapter.setOnItemClickListener(new AwardAdapter.OnItemClickListener() {
 
-        new Thread(new Runnable() {
             @Override
-            public void run() {
-                final AwardAdapter adapter = new AwardAdapter(mAwardList);
+            public void onAddRibbonClick(String ribbon) {
                 assert c != null;
-                c.runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        sortArrayList();
-                        recyclerView.setAdapter(adapter);
-                    }
-                });
+                Toast.makeText(c.getApplicationContext(), ribbon, Toast.LENGTH_LONG).show();
+                ribbonValues.add(ribbon);
             }
-        }).start();
-
+        });
         return view;
-
     }
-
     public void createAwardList() {
         mAwardList = new ArrayList<>();
         mAwardList.add(new AwardItem(R.drawable.ic_medal_of_honor_ribbon, "Medal of Honor", "Dixon"));
@@ -168,35 +159,19 @@ public class AwardFragment extends Fragment {
     */
 
     }
-    private void sortArrayList() {
-        Collections.sort(mAwardList, new Comparator<AwardItem>() {
-            @Override
-            public int compare(AwardItem o1, AwardItem o2) {
-                return o1.getText1().compareTo(o2.getText1());
-            }
-        });
-        mRecyclerViewAdapter.notifyDataSetChanged();
-    }
-    public void setButtons(View view){
-        switchRibbon = view.findViewById(R.id.switchRibbon);
 
-        switchRibbon.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            ArrayList<String> mRibbonList = new ArrayList<String>();
-            @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
-                if(isChecked){
-                    System.out.println(mRibbonList);
-                } else {
-                }
-            }
-        });
+    public void setButtons() {
+
     }
+
+
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         //back to outfit prompt
         view.findViewById(R.id.btn_sort).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                System.out.println(ribbonValues);
                 NavHostFragment.findNavController(AwardFragment.this)
                         .navigate(R.id.action_awardFragment_to_uniformFragment);
             }

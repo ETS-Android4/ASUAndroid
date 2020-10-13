@@ -1,6 +1,7 @@
 package com.example.asuandroid.outfitfragments;
 
 public class AwardItem {
+
     private int mImageResource;
     private String mText1;
     private String mText2;
@@ -9,6 +10,10 @@ public class AwardItem {
         mImageResource = imageResource;
         mText1 = text1;
         mText2 = text2;
+
+    }
+    public void storeText1(String text){
+
     }
     public int getImageResource() {
         return mImageResource;
