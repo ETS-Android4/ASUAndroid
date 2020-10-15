@@ -6,7 +6,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.view.View;
 import com.example.asuandroid.R;
-import com.example.asuandroid.outfitfragments.AwardItem;
+import com.example.asuandroid.outfitfragments.BadgeItem;
 
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -15,7 +15,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.ArrayList;
 
 public class BadgesAdapter extends RecyclerView.Adapter<BadgesAdapter.BadgeViewHolder> {
-    private ArrayList<AwardItem> mBadgeList;
+    private ArrayList<BadgeItem> mBadgeList;
 
     public static class BadgeViewHolder extends RecyclerView.ViewHolder {
         public ImageView mImageView;
@@ -28,7 +28,7 @@ public class BadgesAdapter extends RecyclerView.Adapter<BadgesAdapter.BadgeViewH
             mTextView2 = itemView.findViewById(R.id.textView2);
         }
     }
-    public void BadgeAdapter(ArrayList<AwardItem> badgeList) {
+    public void BadgeAdapter(ArrayList<BadgeItem> badgeList) {
         mBadgeList = badgeList;
     }
     @NotNull
@@ -40,7 +40,7 @@ public class BadgesAdapter extends RecyclerView.Adapter<BadgesAdapter.BadgeViewH
     }
     @Override
     public void onBindViewHolder(BadgeViewHolder holder, int position) {
-        AwardItem currentItem = (AwardItem) mBadgeList.get(position);
+        BadgeItem currentItem = (BadgeItem) mBadgeList.get(position);
         holder.mImageView.setImageResource(currentItem.getImageResource());
         holder.mTextView1.setText(currentItem.getText1());
         holder.mTextView2.setText(currentItem.getText2());

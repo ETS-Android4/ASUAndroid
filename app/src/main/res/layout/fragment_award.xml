@@ -18,7 +18,7 @@
             android:orientation="horizontal">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView"
+            android:id="@+id/recyclerViewAward"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/darker_gray"
@@ -27,7 +27,7 @@
 
         </androidx.recyclerview.widget.RecyclerView>
         <Button
-            android:id="@+id/btn_addRibbon"
+            android:id="@+id/btn_addBadges"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="add" />
@@ -36,7 +36,7 @@
     </ScrollView>
 
     <Button
-        android:id="@+id/btn_sort"
+        android:id="@+id/btn_badge_to_prompt"
         android:layout_width="match_parent"
         android:layout_height="95dp"
         android:text="Button" />
