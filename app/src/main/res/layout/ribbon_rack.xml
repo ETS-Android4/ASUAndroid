@@ -1,9 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"/>
+    android:id="@+id/ribbonRack"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ribbon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
+
+        <ImageView
+            android:id="@+id/ribbon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toEndOf="@+id/ribbon1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
+
+        <ImageView
+            android:id="@+id/ribbon3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toEndOf="@+id/ribbon2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
+
+        <ImageView
+            android:id="@+id/ribbon4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ribbon1"
+            app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
+
+        <ImageView
+            android:id="@+id/ribbon5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/ribbon4"
+            app:layout_constraintTop_toBottomOf="@+id/ribbon2"
+            app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
+
+        <ImageView
+            android:id="@+id/ribbon6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/ribbon5"
+            app:layout_constraintTop_toBottomOf="@+id/ribbon3"
+            app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
+
+        <ImageView
+            android:id="@+id/ribbon7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ribbon4"
+            app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
+
+        <ImageView
+            android:id="@+id/ribbon8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/ribbon7"
+            app:layout_constraintTop_toBottomOf="@+id/ribbon5"
+            app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
+
+        <ImageView
+            android:id="@+id/ribbon9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/ribbon8"
+            app:layout_constraintTop_toBottomOf="@+id/ribbon6"
+            app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
+
+        <ImageView
+            android:id="@+id/ribbon10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ribbon7"
+            app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
+
+        <ImageView
+            android:id="@+id/ribbon11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            app:layout_constraintStart_toEndOf="@+id/ribbon10"
+            app:layout_constraintTop_toTopOf="@+id/ribbon8"
+            app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
+
+        <ImageView
+            android:id="@+id/ribbon12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/ribbon11"
+            app:layout_constraintTop_toBottomOf="@+id/ribbon9"
+            app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
+
+
 
 

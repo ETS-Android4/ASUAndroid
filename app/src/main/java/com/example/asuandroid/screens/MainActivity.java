@@ -1,5 +1,6 @@
 package com.example.asuandroid.screens;
 import android.app.AlertDialog;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -19,6 +20,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.DialogInterface;
 import android.widget.ArrayAdapter;
 import android.widget.CompoundButton;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 
 import com.example.asuandroid.R;
@@ -42,7 +45,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         demoView = findViewById(R.id.demoView);
         setSupportActionBar(toolbar);
         fromSpinner = NewUniformPromptFragment.spinnerAr;
-
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

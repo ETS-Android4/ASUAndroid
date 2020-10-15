@@ -31,7 +31,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="650dp"
                     android:background="@color/colorPrimaryDark"
-                    app:srcCompat="@mipmap/ic_army4"
                     app:zoomage_animateOnReset="true"
                     app:zoomage_autoCenter="true"
                     app:zoomage_autoResetMode="UNDER"
@@ -40,6 +39,7 @@
                     app:zoomage_restrictBounds="false"
                     app:zoomage_translatable="true"
                     app:zoomage_zoomable="true" />
+
             </LinearLayout>
         </ScrollView>
 
