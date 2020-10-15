@@ -38,7 +38,7 @@ public class AwardFragment extends Fragment {
         // Inflate the layout for this fragment
         final View view = inflater.inflate(R.layout.fragment_award, container, false);
         final FragmentActivity c = getActivity();
-        final RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
+        final RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recyclerViewAward);
         AwardAdapter mAdapter = new AwardAdapter(mAwardList);
         mRecyclerViewAdapter = new AwardAdapter(mAwardList);
         LinearLayoutManager layoutManager = new LinearLayoutManager(c);
@@ -168,7 +168,7 @@ public class AwardFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         //back to outfit prompt
-        view.findViewById(R.id.btn_sort).setOnClickListener(new View.OnClickListener() {
+        view.findViewById(R.id.btn_badge_to_prompt).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 System.out.println(ribbonValues);
