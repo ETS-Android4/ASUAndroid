@@ -27,44 +27,47 @@ public class AwardAdapter extends RecyclerView.Adapter<AwardAdapter.AwardViewHol
         mListener = listener;
     }
 
-        public static class AwardViewHolder extends RecyclerView.ViewHolder {
-            public ImageView mImageView;
-            public TextView mTextView1;
-            public TextView mTextView2;
-            public ImageView mRibbonAdd;
+    public static class AwardViewHolder extends RecyclerView.ViewHolder {
+        public ImageView mImageView;
+        public TextView mTextView1;
+        public TextView mTextView2;
+        public ImageView mRibbonAdd;
 
-            @SuppressLint("ClickableViewAccessibility")
-            public AwardViewHolder(View itemView, OnItemClickListener listener) {
-                super(itemView);
-                mImageView = itemView.findViewById(R.id.imageView);
-                mTextView1 = itemView.findViewById(R.id.textView);
-                mTextView2 = itemView.findViewById(R.id.textView2);
-                mRibbonAdd = itemView.findViewById(R.id.img_addRibbon);
+        @SuppressLint("ClickableViewAccessibility")
+        public AwardViewHolder(View itemView, OnItemClickListener listener) {
+            super(itemView);
+            mImageView = itemView.findViewById(R.id.imageView);
+            mTextView1 = itemView.findViewById(R.id.textView);
+            mTextView2 = itemView.findViewById(R.id.textView2);
+            mRibbonAdd = itemView.findViewById(R.id.img_addRibbon);
 
-                mRibbonAdd.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        if (listener != null) {
-                            int position = getAdapterPosition();
-                            String ribbon = mTextView1.getText().toString();
-                            if (position != RecyclerView.NO_POSITION) {
-                                listener.onAddRibbonClick(ribbon);
-                            }
-                            System.out.println("youclickedme" + ribbon);
+            mRibbonAdd.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (listener != null) {
+                        int position = getAdapterPosition();
+                        String ribbon = mTextView1.getText().toString();
+                        if (position != RecyclerView.NO_POSITION) {
+                            listener.onAddRibbonClick(ribbon);
                         }
+                        System.out.println("youclickedme" + ribbon);
                     }
-                });
-            }
+                }
+            });
         }
+    }
+
     public AwardAdapter(ArrayList<AwardItem> awardList) {
         mAwardList = awardList;
     }
+
     @Override
     public AwardViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.award_item, parent, false);
         AwardViewHolder evh = new AwardViewHolder(v, mListener);
         return evh;
     }
+
     @Override
     public void onBindViewHolder(AwardViewHolder holder, int position) {
         AwardItem currentItem = (AwardItem) mAwardList.get(position);
@@ -73,9 +76,15 @@ public class AwardAdapter extends RecyclerView.Adapter<AwardAdapter.AwardViewHol
         holder.mTextView2.setText(currentItem.getText2());
         //holder.mRibbonSwitch.setChecked(currentItem.getSwitch1(position).isChecked());
     }
+
     @Override
     public int getItemCount() {
         return mAwardList.size();
     }
 
+
+    public void filterList(ArrayList<AwardItem> filteredList) {
+        mAwardList = filteredList;
+        notifyDataSetChanged();
+    }
 }

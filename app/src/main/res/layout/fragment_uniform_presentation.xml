@@ -31,6 +31,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="650dp"
                     android:background="@color/colorPrimaryDark"
+                    app:srcCompat="@drawable/ic_add_box"
                     app:zoomage_animateOnReset="true"
                     app:zoomage_autoCenter="true"
                     app:zoomage_autoResetMode="UNDER"
