@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setContentView(R.layout.activity_main);
-        demoView = findViewById(R.id.demoView);
+        //demoView = findViewById(R.id.demoView);
         setSupportActionBar(toolbar);
         fromSpinner = NewUniformPromptFragment.spinnerAr;
     }

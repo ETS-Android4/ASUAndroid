@@ -27,7 +27,6 @@ public class AwardFragment extends Fragment {
     public SwitchCompat switchRibbon;
     private ArrayList<String> ribbonValues = new ArrayList<String>();
 
-
     public void addRibbon(String ribbon){
     }
 
@@ -55,6 +54,11 @@ public class AwardFragment extends Fragment {
         });
         return view;
     }
+
+    public void createRibbonRackList(){
+
+    }
+
     public void createAwardList() {
         mAwardList = new ArrayList<>();
         mAwardList.add(new AwardItem(R.drawable.ic_medal_of_honor_ribbon, "Medal of Honor", ""));
@@ -162,7 +166,6 @@ public class AwardFragment extends Fragment {
     public void setButtons() {
 
     }
-
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
