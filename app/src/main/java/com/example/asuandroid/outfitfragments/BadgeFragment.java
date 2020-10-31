@@ -25,7 +25,7 @@ public class BadgeFragment extends Fragment {
     private AwardAdapter mRecyclerViewAdapter;
     private RecyclerView mRecyclerView;
     public SwitchCompat switchRibbon;
-    private ArrayList<String> badgeValues = new ArrayList<String>();
+    public static ArrayList<String> badgeImages = new ArrayList<String>();
 
 
     public void addRibbon(String ribbon){
@@ -50,7 +50,7 @@ public class BadgeFragment extends Fragment {
             public void onAddRibbonClick(String ribbon) {
                 assert c != null;
                 Toast.makeText(c.getApplicationContext(), ribbon, Toast.LENGTH_LONG).show();
-                badgeValues.add(ribbon);
+                badgeImages.add(ribbon);
             }
         });
         return view;

@@ -11,11 +11,11 @@ import com.example.asuandroid.outfitfragments.AwardItem;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.text.BreakIterator;
 import java.util.ArrayList;
 
 public class AwardAdapter extends RecyclerView.Adapter<AwardAdapter.AwardViewHolder> {
     private ArrayList<AwardItem> mAwardList;
+    public static ArrayList<Integer> awardImageList = new ArrayList<>();
     //private CompoundButton.OnCheckedChangeListener;
     private OnItemClickListener mListener;
 
@@ -47,6 +47,13 @@ public class AwardAdapter extends RecyclerView.Adapter<AwardAdapter.AwardViewHol
                         if (listener != null) {
                             int position = getAdapterPosition();
                             String ribbon = mTextView1.getText().toString();
+                            String reference = "R.drawable.";
+                            try{
+                                awardImageList.add(Integer.parseInt(reference + ribbon));
+                            } catch(NumberFormatException e) {
+                                System.out.println("It doesnt like your string");
+                            }
+
                             if (position != RecyclerView.NO_POSITION) {
                                 listener.onAddRibbonClick(ribbon);
                             }

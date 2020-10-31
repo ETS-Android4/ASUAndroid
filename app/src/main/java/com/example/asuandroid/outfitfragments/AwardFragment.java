@@ -10,18 +10,13 @@ import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
-import android.widget.Toast;
 
 import com.example.asuandroid.R;
 import com.example.asuandroid.outfitAdapters.AwardAdapter;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class AwardFragment extends Fragment {
@@ -29,10 +24,10 @@ public class AwardFragment extends Fragment {
     private AwardAdapter mRecyclerViewAdapter;
     private RecyclerView mRecyclerView;
     public SwitchCompat switchRibbon;
-    public static ArrayList<String> ribbonValues = new ArrayList<String>();
+    public static ArrayList<String> ribbonImages = new ArrayList<String>();
 
 
-    public void addRibbon(String ribbon){
+    public void addRibbon(Integer ribbon){
     }
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -53,8 +48,8 @@ public class AwardFragment extends Fragment {
             @Override
             public void onAddRibbonClick(String ribbon) {
                 assert c != null;
-                Toast.makeText(c.getApplicationContext(), ribbon, Toast.LENGTH_LONG).show();
-                ribbonValues.add(ribbon);
+                //Toast.makeText(c.getApplicationContext(), ribbon, Toast.LENGTH_LONG).show();
+                ribbonImages.add(ribbon);
             }
         });
         return view;
@@ -63,7 +58,6 @@ public class AwardFragment extends Fragment {
     public void createAwardList() {
         mAwardList = new ArrayList<>();
         mAwardList.add(new AwardItem(R.drawable.ic_medal_of_honor_ribbon, "Medal of Honor", "Dixon"));
-        mAwardList.add(new AwardItem(R.drawable.ic_medal_of_honor_ribbon, "Medal of Honor", ""));
         mAwardList.add(new AwardItem(R.drawable.ic_distinguished_service_cross_ribbon, " Army Distinguished Service Cross", ""));
         mAwardList.add(new AwardItem(R.drawable.ic_defense_distinguished_service_medal_ribbon, " Defense Distinguished Service", ""));
         mAwardList.add(new AwardItem(R.drawable.ic_homeland_security_distinguished_service_medal_ribbon, " Homeland Security Distinguished Service Medal", ""));
@@ -176,7 +170,7 @@ public class AwardFragment extends Fragment {
         view.findViewById(R.id.btn_badge_to_prompt).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                System.out.println(ribbonValues);
+                System.out.println(ribbonImages);
                 NavHostFragment.findNavController(AwardFragment.this)
                         .navigate(R.id.action_awardFragment_to_uniformFragment);
             }

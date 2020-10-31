@@ -4,17 +4,18 @@ import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.view.View;
 import com.example.asuandroid.R;
 import com.example.asuandroid.outfitfragments.RibbonItem;
 
+import androidx.collection.ArraySet;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
 public class RibbonAdapter extends RecyclerView.Adapter<RibbonAdapter.RibbonViewHolder> {
     private ArrayList<RibbonItem> mRibbonList;
+    public static ArraySet<ImageView> images = new ArraySet<>();
     //private CompoundButton.OnCheckedChangeListener;
     private OnItemClickListener mListener;
 
@@ -27,6 +28,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RibbonAdapter.RibbonView
     }
 
     public static class RibbonViewHolder extends RecyclerView.ViewHolder {
+        private final ArraySet<ImageView> images;
         public ImageView mImageView1;
         public ImageView mImageView2;
         public ImageView mImageView3;
@@ -41,20 +43,33 @@ public class RibbonAdapter extends RecyclerView.Adapter<RibbonAdapter.RibbonView
         public ImageView mImageView12;
 
         @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public RibbonViewHolder(View itemView, OnItemClickListener listener) {
+        public RibbonViewHolder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
             super(itemView);
+            this.images = images;
             mImageView1 = itemView.findViewById(R.id.ribbon1);
+            this.images.add(mImageView1);
             mImageView2 = itemView.findViewById(R.id.ribbon2);
+            this.images.add(mImageView2);
             mImageView3 = itemView.findViewById(R.id.ribbon3);
+            this.images.add(mImageView3);
             mImageView4 = itemView.findViewById(R.id.ribbon4);
+            this.images.add(mImageView4);
             mImageView5 = itemView.findViewById(R.id.ribbon5);
+            this.images.add(mImageView5);
             mImageView6 = itemView.findViewById(R.id.ribbon6);
+            this.images.add(mImageView6);
             mImageView7 = itemView.findViewById(R.id.ribbon7);
+            this.images.add(mImageView7);
             mImageView8 = itemView.findViewById(R.id.ribbon8);
+            this.images.add(mImageView8);
             mImageView9 = itemView.findViewById(R.id.ribbon9);
+            this.images.add(mImageView9);
             mImageView10 = itemView.findViewById(R.id.ribbon10);
+            this.images.add(mImageView10);
             mImageView11 = itemView.findViewById(R.id.ribbon11);
+            this.images.add(mImageView11);
             mImageView12 = itemView.findViewById(R.id.ribbon12);
+            this.images.add(mImageView12);
         }
     }
     public RibbonAdapter(ArrayList<RibbonItem> ribbonList) {
@@ -64,7 +79,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RibbonAdapter.RibbonView
     @Override
     public RibbonViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item, parent, false);
-        RibbonViewHolder evh = new RibbonViewHolder(v, mListener);
+        RibbonViewHolder evh = new RibbonViewHolder(v, mListener, images);
         return evh;
     }
 
