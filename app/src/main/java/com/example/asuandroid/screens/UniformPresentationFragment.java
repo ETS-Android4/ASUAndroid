@@ -20,16 +20,20 @@ import android.widget.LinearLayout;
 import com.example.asuandroid.R;
 import com.example.asuandroid.outfitAdapters.AwardAdapter;
 import com.example.asuandroid.outfitAdapters.RibbonAdapter;
+import com.example.asuandroid.outfitfragments.AwardFragment;
 import com.example.asuandroid.outfitfragments.AwardItem;
 import com.example.asuandroid.outfitfragments.RibbonItem;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class UniformPresentationFragment extends Fragment{
     private ArrayList<RibbonItem> mRibbonList;
     private RecyclerView mRecyclerView;
     private RibbonAdapter mRecyclerViewAdapter;
+//    public ArrayList<String> fromAward = AwardFragment.ribbonValues;
+
 
 
     @Override
@@ -57,9 +61,11 @@ public class UniformPresentationFragment extends Fragment{
         super.onViewCreated(view, savedInstanceState);
         view.findViewById(R.id.btn_return_home_fromPresentation).setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
+                //System.out.println(fromAward);
                 NavHostFragment.findNavController(UniformPresentationFragment.this)
                         .navigate(R.id.action_uniformPresentationFragment_to_HomeScreen);
             }
+
         });
     }
 }

@@ -27,7 +27,7 @@
     <string name="Regimental">Regimental Insignia </string>
     <string name="IdentificationBadge">Identification Badge </string>
     <!-- Strings used ribbons -->
-    <string name="r1">  Medal of Honor</string>
+    <string name="r1"> ic_medal_of_honor_ribbon</string>
     <string name="r2">Army Distinguished Service Cross</string>
     <string name="r3">Defense Distinguished Service</string>
     <string name="r4">Homeland Security Distinguished Service Medal</string>

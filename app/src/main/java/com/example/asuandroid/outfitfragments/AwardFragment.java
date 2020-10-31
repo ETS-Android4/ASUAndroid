@@ -21,11 +21,13 @@ import com.example.asuandroid.outfitAdapters.AwardAdapter;
 import java.util.ArrayList;
 
 public class AwardFragment extends Fragment {
+    private ArrayList<String> ribbonValues;
     private ArrayList<AwardItem> mAwardList;
     private AwardAdapter mRecyclerViewAdapter;
     private RecyclerView mRecyclerView;
     public SwitchCompat switchRibbon;
-    private ArrayList<String> ribbonValues = new ArrayList<String>();
+
+
 
     public void addRibbon(String ribbon){
     }
