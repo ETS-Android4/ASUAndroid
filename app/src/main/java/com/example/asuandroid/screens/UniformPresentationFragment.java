@@ -32,9 +32,7 @@ public class UniformPresentationFragment extends Fragment{
     private ArrayList<RibbonItem> mRibbonList;
     private RecyclerView mRecyclerView;
     private RibbonAdapter mRecyclerViewAdapter;
-//    public ArrayList<String> fromAward = AwardFragment.ribbonValues;
-
-
+    public ArrayList<String> fromAward = AwardFragment.ribbonValues;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -54,14 +52,14 @@ public class UniformPresentationFragment extends Fragment{
 
     public void createRibbonList() {
         mRibbonList = new ArrayList<>();
-        mRibbonList.add(new RibbonItem(R.drawable.ic_medal_of_honor_ribbon, R.drawable.ic_afghanistan_campaign_medal_ribbon, R.drawable.ic_air_medal_ribbon, R.drawable.ic_american_campaign_medal_ribbon, R.drawable.ic_antarctica_service_medal_ribbon, R.drawable.ic_army_achievement_medal_ribbon, R.drawable.ic_armed_forces_expeditionary_medal_ribbon, R.drawable.ic_army_overseas_service_ribbon, R.drawable.ic_army_service_ribbon, R.drawable.ic_medal_of_honor_ribbon, R.drawable.ic_medal_of_honor_ribbon, R.drawable.ic_medal_of_honor_ribbon));
+        mRibbonList.add(new RibbonItem(R.drawable.ic_medal_of_honor_ribbon, R.drawable.ic_afghanistan_campaign_medal_ribbon, R.drawable.ic_air_medal_ribbon, R.drawable.ic_american_campaign_medal_ribbon, R.drawable.ic_antarctica_service_medal_ribbon, R.drawable.ic_army_achievement_medal_ribbon, R.drawable.ic_armed_forces_expeditionary_medal_ribbon, R.drawable.ic_army_overseas_service_ribbon, R.drawable.ic_army_service_ribbon, R.drawable.ic_armed_forces_service_medal_ribbon, R.drawable.ic_legion_of_merit_ribbon, R.drawable.ic_navy_arctic_service_ribbon));
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         view.findViewById(R.id.btn_return_home_fromPresentation).setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                //System.out.println(fromAward);
+                System.out.println(fromAward);
                 NavHostFragment.findNavController(UniformPresentationFragment.this)
                         .navigate(R.id.action_uniformPresentationFragment_to_HomeScreen);
             }

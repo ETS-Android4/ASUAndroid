@@ -32,73 +32,25 @@
         android:id="@+id/btn_gotoFragment2"
         android:layout_width="160dp"
         android:layout_height="160dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="12dp"
-        app:srcCompat="@drawable/ic_uniform"
+        android:layout_marginStart="104dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/home_screen_button"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="@+id/guideline3" />
-
-    <ImageButton
-        android:id="@+id/btn_gotoFragment21"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="12dp"
-        app:srcCompat="@drawable/ic_uniform"
-        android:background="@drawable/home_screen_button"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/btn_gotoFragment2" />
-
-    <ImageButton
-        android:id="@+id/btn_gotoFragment22"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="12dp"
-        app:srcCompat="@drawable/ic_uniform"
-        android:background="@drawable/home_screen_button"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/btn_gotoFragment21" />
-
-    <ImageButton
-        android:id="@+id/btn_gotoFragment24"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginRight="16dp"
-        app:srcCompat="@drawable/ic_uniform"
-        android:background="@drawable/home_screen_button"
-        app:layout_constraintEnd_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toBottomOf="@+id/btn_gotoFragment23" />
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:srcCompat="@drawable/ic_uniform" />
 
     <ImageButton
         android:id="@+id/btn_gotoCloset"
         android:layout_width="160dp"
         android:layout_height="160dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginRight="16dp"
-        app:srcCompat="@drawable/ic_wardrobe"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginRight="104dp"
         android:background="@drawable/home_screen_button"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toTopOf="@+id/guideline3" />
-
-    <ImageButton
-        android:id="@+id/btn_gotoFragment23"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginRight="16dp"
-        app:srcCompat="@drawable/ic_uniform"
-        android:background="@drawable/home_screen_button"
-        app:layout_constraintEnd_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toBottomOf="@+id/btn_gotoCloset" />
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:srcCompat="@drawable/ic_wardrobe" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"

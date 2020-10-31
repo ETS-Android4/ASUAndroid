@@ -29,7 +29,7 @@ public class AwardFragment extends Fragment {
     private AwardAdapter mRecyclerViewAdapter;
     private RecyclerView mRecyclerView;
     public SwitchCompat switchRibbon;
-    private ArrayList<String> ribbonValues = new ArrayList<String>();
+    public static ArrayList<String> ribbonValues = new ArrayList<String>();
 
 
     public void addRibbon(String ribbon){
@@ -59,7 +59,7 @@ public class AwardFragment extends Fragment {
         });
         return view;
     }
-    
+
     public void createAwardList() {
         mAwardList = new ArrayList<>();
         mAwardList.add(new AwardItem(R.drawable.ic_medal_of_honor_ribbon, "Medal of Honor", "Dixon"));
