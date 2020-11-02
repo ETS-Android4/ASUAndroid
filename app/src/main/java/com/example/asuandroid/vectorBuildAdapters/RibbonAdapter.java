@@ -1,4 +1,4 @@
-package com.example.asuandroid.outfitAdapters;
+package com.example.asuandroid.vectorBuildAdapters;
 
 import android.annotation.SuppressLint;
 import android.view.LayoutInflater;

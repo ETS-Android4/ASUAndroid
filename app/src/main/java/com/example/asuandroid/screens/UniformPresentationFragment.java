@@ -16,7 +16,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.example.asuandroid.R;
-import com.example.asuandroid.outfitAdapters.RibbonAdapter;
+import com.example.asuandroid.vectorBuildAdapters.RibbonAdapter;
 import com.example.asuandroid.outfitfragments.AwardFragment;
 import com.example.asuandroid.outfitfragments.RibbonItem;
 
