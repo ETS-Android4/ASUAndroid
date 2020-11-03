@@ -1,9 +1,11 @@
 package com.example.asuandroid.screens;
 
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -25,6 +27,9 @@ public class HomeScreen extends Fragment {
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        ImageView rocketImage = (ImageView) view.findViewById(R.id.ribbonAnim);
+        rocketImage.setBackgroundResource(R.drawable.ribbon_anim);
+        AnimationDrawable rocketAnimation = (AnimationDrawable) rocketImage.getBackground();
 
         view.findViewById(R.id.btn_gotoFragment2).setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
@@ -36,6 +41,11 @@ public class HomeScreen extends Fragment {
             public void onClick(View view) {
                 NavHostFragment.findNavController(HomeScreen.this)
                         .navigate(R.id.action_HomeScreen_to_wardrobeScreen);
+            }
+        });
+        view.findViewById(R.id.ribbonAnim).setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                rocketAnimation.start();
             }
         });
 

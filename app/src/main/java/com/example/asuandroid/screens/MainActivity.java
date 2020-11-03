@@ -1,6 +1,7 @@
 package com.example.asuandroid.screens;
 import android.app.AlertDialog;
 import android.graphics.Bitmap;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private String[] mArrayNames = new String[]{"Daryl", "Rick", "Abraham", "Eugene"};
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setContentView(R.layout.activity_main);
