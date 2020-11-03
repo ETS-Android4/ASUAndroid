@@ -48,8 +48,6 @@ public class AwardAdapter extends RecyclerView.Adapter<AwardAdapter.AwardViewHol
                 mTextView2 = itemView.findViewById(R.id.textView2);
                 mRibbonAdd = itemView.findViewById(R.id.img_addRibbon);
 
-
-
                 mRibbonAdd.setOnClickListener(new View.OnClickListener() {
                     public boolean isChecked;
                     @Override
