@@ -47,7 +47,7 @@ public class BadgeFragment extends Fragment {
         mAdapter.setOnItemClickListener(new AwardAdapter.OnItemClickListener() {
 
             @Override
-            public void onAddRibbonClick(String ribbon) {
+            public void onAddRibbonClick(String ribbon, int position) {
                 assert c != null;
                 Toast.makeText(c.getApplicationContext(), ribbon, Toast.LENGTH_LONG).show();
                 badgeImages.add(ribbon);
@@ -58,8 +58,8 @@ public class BadgeFragment extends Fragment {
 
     private void createAwardList() {
         mBadgeList = new ArrayList<>();
-        mBadgeList.add(new AwardItem(R.drawable.ic_combat_action_badge, "Combat Action Badge", ""));
-        mBadgeList.add(new AwardItem(R.drawable.ic_combat_infantry_badge, "Combat Action Badge", ""));
+        mBadgeList.add(new AwardItem(R.drawable.ic_combat_action_badge, "Combat Action Badge", "", R.drawable.ic_frame00));
+        mBadgeList.add(new AwardItem(R.drawable.ic_combat_infantry_badge, "Combat Action Badge", "", R.drawable.ic_frame00));
     }
 
 

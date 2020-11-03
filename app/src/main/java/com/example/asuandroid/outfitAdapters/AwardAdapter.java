@@ -1,6 +1,9 @@
 package com.example.asuandroid.outfitAdapters;
 
 import android.annotation.SuppressLint;
+import android.app.Notification;
+import android.graphics.drawable.AnimationDrawable;
+import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -9,18 +12,22 @@ import android.view.View;
 import com.example.asuandroid.R;
 import com.example.asuandroid.outfitfragments.AwardItem;
 
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
+import static com.stanko.tools.ResHelper.getDrawable;
+
 public class AwardAdapter extends RecyclerView.Adapter<AwardAdapter.AwardViewHolder> {
+    //private ImageView mRibbonAdd;
     private ArrayList<AwardItem> mAwardList;
     public static ArrayList<Integer> awardImageList = new ArrayList<>();
     //private CompoundButton.OnCheckedChangeListener;
     private OnItemClickListener mListener;
 
     public interface OnItemClickListener {
-        void onAddRibbonClick(String ribbon);
+        void onAddRibbonClick(String ribbon, int position);
     }
 
     public void setOnItemClickListener(OnItemClickListener listener) {
@@ -41,21 +48,27 @@ public class AwardAdapter extends RecyclerView.Adapter<AwardAdapter.AwardViewHol
                 mTextView2 = itemView.findViewById(R.id.textView2);
                 mRibbonAdd = itemView.findViewById(R.id.img_addRibbon);
 
+
+
                 mRibbonAdd.setOnClickListener(new View.OnClickListener() {
+                    public boolean isChecked;
                     @Override
                     public void onClick(View v) {
                         if (listener != null) {
                             int position = getAdapterPosition();
                             String ribbon = mTextView1.getText().toString();
                             String reference = "R.drawable.";
+                            ImageView rocketImage = (ImageView) v.findViewById(R.id.img_addRibbon);
+                            rocketImage.setBackgroundResource(R.drawable.ribbon_anim);
+                            AnimationDrawable rocketAnimation = (AnimationDrawable) rocketImage.getBackground();
+                            rocketAnimation.start();
                             try{
                                 awardImageList.add(Integer.parseInt(reference + ribbon));
                             } catch(NumberFormatException e) {
                                 System.out.println("It doesnt like your string");
                             }
-
                             if (position != RecyclerView.NO_POSITION) {
-                                listener.onAddRibbonClick(ribbon);
+                                listener.onAddRibbonClick(ribbon, position);
                             }
                             System.out.println("youclickedme" + ribbon);
                         }

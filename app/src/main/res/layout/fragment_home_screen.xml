@@ -33,10 +33,15 @@
         android:layout_width="360dp"
         android:layout_height="120dp"
         android:layout_marginTop="72dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
         android:background="@drawable/home_screen_button"
+        app:layout_constraintBottom_toTopOf="@+id/btn_gotoCloset"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ic_uniform" />
 
     <ImageButton
@@ -47,11 +52,23 @@
         android:layout_marginEnd="4dp"
         android:layout_marginRight="4dp"
         android:background="@drawable/home_screen_button"
+        app:layout_constraintBottom_toTopOf="@+id/ribbonAnim"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ic_wardrobe" />
+    <ImageView
+        android:id="@+id/ribbonAnim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="88dp"
+        android:background="@drawable/ic_frame00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"
@@ -59,5 +76,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_end="21dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
