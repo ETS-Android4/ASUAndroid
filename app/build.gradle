@@ -35,6 +35,13 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    sourceSets {
+        main {
+            res {
+                srcDirs 'src/main/res', 'src/main/res/layout/ribbons', 'src/main/res/layout/fragments', 'src/main/res/layout/fragmentItems', 'src\\main\\res', 'src\\main\\res\\layouts\\ribbonTemplates', 'src\\main\\res\\layouts\\fragments', 'src\\main\\res\\fragmentItems', 'src\\main\\res\\layouts\\fragmentItems', 'src\\main\\res\\drawables\\ribbons', 'src\\main\\res\\drawables\\badges', 'src\\main\\res\\drawables\\fragmentButtons', 'src\\main\\res\\drawables\\anim', 'src\\main\\res\\drawables\\uniformVectors', 'src\\main\\res\\drawables\\fragmentImages'
+            }
+        }
+    }
 }
 
 dependencies {

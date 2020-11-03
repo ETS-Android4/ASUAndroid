@@ -29,6 +29,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RibbonAdapter.RibbonView
 
     public static class RibbonViewHolder extends RecyclerView.ViewHolder {
         private final ArraySet<ImageView> images;
+
         public ImageView mImageView1;
         public ImageView mImageView2;
         public ImageView mImageView3;
