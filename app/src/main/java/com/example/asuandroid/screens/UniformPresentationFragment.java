@@ -18,7 +18,8 @@ import android.widget.ImageView;
 import com.example.asuandroid.R;
 import com.example.asuandroid.vectorBuildAdapters.RibbonAdapter;
 import com.example.asuandroid.outfitfragments.AwardFragment;
-import com.example.asuandroid.outfitfragments.RibbonItem;
+import com.example.asuandroid.vectorBuildAdapters.RibbonItem;
+
 
 import java.util.ArrayList;
 
@@ -48,7 +49,7 @@ public class UniformPresentationFragment extends Fragment{
     public void createRibbonList() {
         mRibbonList = new ArrayList<>();
         //for(int i = 0; i < fromAward.size(); i++)
-        mRibbonList.add(new RibbonItem(R.drawable.ic_european_african_middle_eastern_campaign_ribbon, R.drawable.ic_afghanistan_campaign_medal_ribbon, R.drawable.ic_air_medal_ribbon, R.drawable.ic_american_campaign_medal_ribbon, R.drawable.ic_antarctica_service_medal_ribbon, R.drawable.ic_army_achievement_medal_ribbon, R.drawable.ic_armed_forces_expeditionary_medal_ribbon, R.drawable.ic_army_overseas_service_ribbon, R.drawable.ic_army_service_ribbon, R.drawable.ic_armed_forces_service_medal_ribbon, R.drawable.ic_legion_of_merit_ribbon, R.drawable.ic_navy_arctic_service_ribbon));
+        mRibbonList.add(new RibbonItem.RibbonItem4(R.drawable.ic_european_african_middle_eastern_campaign_ribbon, R.drawable.ic_air_medal_ribbon, R.drawable.ic_american_campaign_medal_ribbon, R.drawable.ic_afghanistan_campaign_medal_ribbon));
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
