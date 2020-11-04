@@ -1,14 +1,12 @@
 package com.example.asuandroid.outfitfragments;
 
-import android.graphics.drawable.AnimationDrawable;
-import android.os.Build;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.widget.SwitchCompat;
-import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.navigation.fragment.NavHostFragment;
@@ -23,10 +21,11 @@ import android.widget.ImageView;
 import com.example.asuandroid.R;
 import com.example.asuandroid.outfitAdapters.AwardAdapter;
 
+import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.List;
 
-
-import static com.stanko.tools.ResHelper.getDrawable;
+import static com.stanko.tools.SharedPrefsHelper.getSharedPreferences;
 
 public class AwardFragment extends Fragment {
     private ArrayList<AwardItem> mAwardList;
@@ -35,15 +34,17 @@ public class AwardFragment extends Fragment {
     public SwitchCompat switchRibbon;
     public static ArrayList<String> ribbonImages = new ArrayList<String>();
     ImageView ribbonAdd;
-
-    public void addRibbon(Integer ribbon){
-    }
+    private ArrayList<AwardItem> awardData;
 
 
-
+    @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        createAwardList();
+        if(savedInstanceState != null){
+            mAwardList = awardData;
+        } else if(savedInstanceState == null) {
+            createAwardList();
+        }
         //buildRecyclerView(container.findViewById(R.id.recyclerView));
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_award, container, false);
@@ -56,17 +57,26 @@ public class AwardFragment extends Fragment {
         recyclerView.setAdapter(mAdapter);
         mAdapter.setOnItemClickListener(new AwardAdapter.OnItemClickListener() {
             @Override
-            public void onAddRibbonClick(String ribbon, int position) {
+            public void onAddRibbonClick(String ribbon, int position, boolean isRibbonOn) {
                 assert c != null;
-                ribbonImages.add(ribbon);
+                if(isRibbonOn){
+                    ribbonImages.add(ribbon);
+                } else if (!isRibbonOn){
+                    ribbonImages.remove(ribbon);
+                }
             }
         });
         return view;
     }
+    @Override
+    public void onSaveInstanceState(final Bundle savedInstanceState){
+        super.onSaveInstanceState(savedInstanceState);
+        awardData = mAwardList;
+        savedInstanceState.putAll(savedInstanceState);
+    }
 
     public void createAwardList() {
         mAwardList = new ArrayList<>();
-        mAwardList.add(new AwardItem(R.drawable.ic_distinguished_service_cross_ribbon, " Army Distinguished Service Cross", "",R.drawable.ic_frame00));
         mAwardList.add(new AwardItem(R.drawable.ic_medal_of_honor_ribbon, "Medal of Honor", "Dixon", R.drawable.ic_frame00));
         mAwardList.add(new AwardItem(R.drawable.ic_distinguished_service_cross_ribbon, " Army Distinguished Service Cross", "",R.drawable.ic_frame00));
         mAwardList.add(new AwardItem(R.drawable.ic_defense_distinguished_service_medal_ribbon, " Defense Distinguished Service", "",R.drawable.ic_frame00));
@@ -182,6 +192,7 @@ public class AwardFragment extends Fragment {
         view.findViewById(R.id.btn_badge_to_prompt).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 System.out.println(ribbonImages);
                 NavHostFragment.findNavController(AwardFragment.this)
                         .navigate(R.id.action_awardFragment_to_uniformFragment);

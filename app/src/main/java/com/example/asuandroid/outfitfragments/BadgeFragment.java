@@ -47,7 +47,7 @@ public class BadgeFragment extends Fragment {
         mAdapter.setOnItemClickListener(new AwardAdapter.OnItemClickListener() {
 
             @Override
-            public void onAddRibbonClick(String ribbon, int position) {
+            public void onAddRibbonClick(String ribbon, int position, boolean isRibbonOn) {
                 assert c != null;
                 Toast.makeText(c.getApplicationContext(), ribbon, Toast.LENGTH_LONG).show();
                 badgeImages.add(ribbon);

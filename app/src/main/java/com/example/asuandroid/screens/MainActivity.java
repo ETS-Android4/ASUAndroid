@@ -14,6 +14,7 @@ import java.util.Comparator;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -37,16 +38,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public ArrayList<String> fromSpinner;
     private ZoomageView demoView;
     private String[] mArrayNames = new String[]{"Daryl", "Rick", "Abraham", "Eugene"};
+    private Fragment AwardFragment;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setContentView(R.layout.activity_main);
         demoView = findViewById(R.id.myZoomageView);
         setSupportActionBar(toolbar);
         fromSpinner = NewUniformPromptFragment.spinnerAr;
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

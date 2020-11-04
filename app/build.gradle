@@ -47,6 +47,7 @@ android {
 dependencies {
 
     implementation "androidx.viewpager2:viewpager2:1.0.0"
+    implementation "com.google.code.gson:gson:2.8.5"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     //implementation 'com.github.devlight:infinitecycleviewpager:1.0.2'
     implementation 'com.davemorrissey.labs:subsampling-scale-image-view:3.10.0'
