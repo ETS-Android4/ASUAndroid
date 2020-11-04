@@ -1,8 +1,10 @@
-package com.example.asuandroid.outfitfragments;
+package com.example.asuandroid.vectorBuildAdapters;
+
+import androidx.annotation.Nullable;
 
 import java.util.List;
 
-public class RibbonItem {
+public class RibbonItem12 {
 
     private int mRibbon1Resource;
     private int mRibbon2Resource;
@@ -18,7 +20,7 @@ public class RibbonItem {
     private int mRibbon12Resource;
 
 
-    public RibbonItem(int Ribbon1Resource, int Ribbon2Resource, int Ribbon3Resource, int Ribbon4Resource, int Ribbon5Resource, int Ribbon6Resource, int Ribbon7Resource, int Ribbon8Resource, int Ribbon9Resource, int Ribbon10Resource, int Ribbon11Resource, int Ribbon12Resource) {
+    public RibbonItem12(int Ribbon1Resource, int Ribbon2Resource, int Ribbon3Resource, int Ribbon4Resource, int Ribbon5Resource, int Ribbon6Resource, int Ribbon7Resource, int Ribbon8Resource, int Ribbon9Resource, int Ribbon10Resource, int Ribbon11Resource, int Ribbon12Resource) {
         mRibbon1Resource = Ribbon1Resource;
         mRibbon2Resource = Ribbon2Resource;
         mRibbon3Resource = Ribbon3Resource;
@@ -44,5 +46,6 @@ public class RibbonItem {
     public int getImageResource10() { return mRibbon10Resource; }
     public int getImageResource11() { return mRibbon11Resource; }
     public int getImageResource12() { return mRibbon12Resource; }
+
 
 }
