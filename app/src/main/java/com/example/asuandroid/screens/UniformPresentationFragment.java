@@ -1,5 +1,9 @@
 package com.example.asuandroid.screens;
 
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
 import androidx.collection.ArraySet;
@@ -10,6 +14,7 @@ import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.os.Environment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,8 +24,10 @@ import com.example.asuandroid.R;
 import com.example.asuandroid.vectorBuildAdapters.RibbonAdapter;
 import com.example.asuandroid.outfitfragments.AwardFragment;
 import com.example.asuandroid.vectorBuildAdapters.RibbonItem;
+import com.zoomage.ZoomageView;
 
 
+import java.io.File;
 import java.util.ArrayList;
 
 public class UniformPresentationFragment extends Fragment{
@@ -79,11 +86,33 @@ public class UniformPresentationFragment extends Fragment{
 
     }
 
+    private Bitmap getBitmapFromView(View view) {
+        //Define a bitmap with the same size as the view
+        Bitmap returnedBitmap = Bitmap.createBitmap(view.getWidth(), view.getHeight(),Bitmap.Config.ARGB_8888);
+        //Bind a canvas to it
+        Canvas canvas = new Canvas(returnedBitmap);
+        //Get the view's background
+        Drawable bgDrawable =view.getBackground();
+        if (bgDrawable!=null) {
+            //has background drawable, then draw it on the canvas
+            bgDrawable.draw(canvas);
+        }   else{
+            //does not have background drawable, then draw white background on the canvas
+            canvas.drawColor(Color.WHITE);
+        }
+        // draw the view on the canvas
+        view.draw(canvas);
+        //return the bitmap
+        return returnedBitmap;
+    }
+
+
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         view.findViewById(R.id.btn_return_home_fromPresentation).setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 fromAward.removeAll(fromAward);
+                View layout_view = view.findViewById(R.id.ribbonRack);
                 System.out.println("FromawardSize"+ fromAward.size());
                 NavHostFragment.findNavController(UniformPresentationFragment.this)
                         .navigate(R.id.action_uniformPresentationFragment_to_HomeScreen);

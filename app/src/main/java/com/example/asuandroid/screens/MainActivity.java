@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setContentView(R.layout.activity_main);
-        demoView = findViewById(R.id.myZoomageView);
+        //demoView = findViewById(R.id.myZoomageView);
         setSupportActionBar(toolbar);
         fromSpinner = NewUniformPromptFragment.spinnerAr;
     }
