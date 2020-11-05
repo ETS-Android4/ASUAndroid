@@ -1,13 +1,7 @@
 package com.example.asuandroid.outfitfragments;
 
 import android.graphics.drawable.AnimationDrawable;
-import android.media.Image;
-import android.view.View;
 import android.widget.ImageView;
-
-import com.example.asuandroid.R;
-
-import static com.stanko.tools.ResHelper.getDrawable;
 
 public class AwardItem {
     public static AnimationDrawable rocketAnimation;

@@ -1,20 +1,17 @@
 package com.example.asuandroid.outfitfragments;
 
-import android.graphics.drawable.AnimationDrawable;
-import android.os.Build;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.widget.SwitchCompat;
-import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.ArraySet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,23 +21,22 @@ import com.example.asuandroid.R;
 import com.example.asuandroid.outfitAdapters.AwardAdapter;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
-
-import static com.stanko.tools.ResHelper.getDrawable;
+import static com.stanko.tools.SharedPrefsHelper.getSharedPreferences;
 
 public class AwardFragment extends Fragment {
     private ArrayList<AwardItem> mAwardList;
     private AwardAdapter mRecyclerViewAdapter;
     private RecyclerView mRecyclerView;
     public SwitchCompat switchRibbon;
-    public static ArrayList<String> ribbonImages = new ArrayList<String>();
+    public static ArrayList<Integer> ribbonImages = new ArrayList<>();
+    public static ArrayList<Integer> finalExport = new ArrayList<>();
     ImageView ribbonAdd;
-
-    public void addRibbon(Integer ribbon){
-    }
+    private ArrayList<AwardItem> awardData;
 
 
-
+    @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         createAwardList();
@@ -56,22 +52,27 @@ public class AwardFragment extends Fragment {
         recyclerView.setAdapter(mAdapter);
         mAdapter.setOnItemClickListener(new AwardAdapter.OnItemClickListener() {
             @Override
-            public void onAddRibbonClick(String ribbon, int position) {
+            public void onAddRibbonClick(int ribbon, int position, boolean isRibbonOn) {
                 assert c != null;
-                ribbonImages.add(ribbon);
+                if(isRibbonOn){
+                    ribbonImages.add(ribbon);
+                } else if (!isRibbonOn){
+                    System.out.println(ribbonImages.size());
+                    ribbonImages.removeAll(Arrays.asList(ribbon));
+                }
             }
         });
         return view;
     }
 
     public void createAwardList() {
+        ribbonImages.removeAll(ribbonImages);
         mAwardList = new ArrayList<>();
-        mAwardList.add(new AwardItem(R.drawable.ic_distinguished_service_cross_ribbon, " Army Distinguished Service Cross", "",R.drawable.ic_frame00));
-        mAwardList.add(new AwardItem(R.drawable.ic_medal_of_honor_ribbon, "Medal of Honor", "Dixon", R.drawable.ic_frame00));
-        mAwardList.add(new AwardItem(R.drawable.ic_distinguished_service_cross_ribbon, " Army Distinguished Service Cross", "",R.drawable.ic_frame00));
-        mAwardList.add(new AwardItem(R.drawable.ic_defense_distinguished_service_medal_ribbon, " Defense Distinguished Service", "",R.drawable.ic_frame00));
-        mAwardList.add(new AwardItem(R.drawable.ic_homeland_security_distinguished_service_medal_ribbon, " Homeland Security Distinguished Service Medal", "",R.drawable.ic_frame00));
-
+        mAwardList.add(new AwardItem(R.drawable.ic_medal_of_honor_ribbon, "Medal of Honor", "ic_medal_of_honor_ribbon", R.drawable.ic_frame00));
+        mAwardList.add(new AwardItem(R.drawable.ic_distinguished_service_cross_ribbon, " Army Distinguished Service Cross", "ic_distinguished_service_cross_ribbon" ,R.drawable.ic_frame00));
+        mAwardList.add(new AwardItem(R.drawable.ic_defense_distinguished_service_medal_ribbon, " Defense Distinguished Service", "ic_defense_distinguished_service_medal_ribbon" ,R.drawable.ic_frame00));
+        mAwardList.add(new AwardItem(R.drawable.ic_homeland_security_distinguished_service_medal_ribbon, " Homeland Security Distinguished Service Medal", "ic_homeland_security_distinguished_service_medal_ribbon" ,R.drawable.ic_frame00));
+        /*
         mAwardList.add(new AwardItem(R.drawable.ic_army_distinguished_service_medal_ribbon, " Army Distinguished Service", "",R.drawable.ic_frame00));
         mAwardList.add(new AwardItem(R.drawable.ic_army_silver_star_medal_ribbon, " Silver Star", "",R.drawable.ic_frame00));
         mAwardList.add(new AwardItem(R.drawable.ic_defense_superior_service_medal_ribbon, " Defense Superior Service", "",R.drawable.ic_frame00));
@@ -182,6 +183,11 @@ public class AwardFragment extends Fragment {
         view.findViewById(R.id.btn_badge_to_prompt).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                System.out.println(ribbonImages.size());
+                ribbonImages.trimToSize();
+                System.out.println(ribbonImages.size());
+                finalExport = ribbonImages;
+                System.out.println("Heres the size of ribbonImages" + ribbonImages.size());
                 System.out.println(ribbonImages);
                 NavHostFragment.findNavController(AwardFragment.this)
                         .navigate(R.id.action_awardFragment_to_uniformFragment);

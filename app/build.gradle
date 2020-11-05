@@ -38,7 +38,7 @@ android {
     sourceSets {
         main {
             res {
-                srcDirs 'src/main/res', 'src/main/res/layout/ribbons', 'src/main/res/layout/fragments', 'src/main/res/layout/fragmentItems', 'src\\main\\res', 'src\\main\\res\\layouts\\ribbonTemplates', 'src\\main\\res\\layouts\\fragments', 'src\\main\\res\\fragmentItems', 'src\\main\\res\\layouts\\fragmentItems', 'src\\main\\res\\drawables\\ribbons', 'src\\main\\res\\drawables\\badges', 'src\\main\\res\\drawables\\fragmentButtons', 'src\\main\\res\\drawables\\anim', 'src\\main\\res\\drawables\\uniformVectors', 'src\\main\\res\\drawables\\fragmentImages'
+                srcDirs 'src/main/res', 'src/main/res/layout/ribbons', 'src/main/res/layout/fragments', 'src/main/res/layout/fragmentItems', 'src\\main\\res', 'src\\main\\res\\layouts\\ribbonTemplates', 'src\\main\\res\\layouts\\fragments', 'src\\main\\res\\fragmentItems', 'src\\main\\res\\layouts\\fragmentItems', 'src\\main\\res\\drawables\\ribbons', 'src\\main\\res\\drawables\\badges', 'src\\main\\res\\drawables\\fragmentButtons', 'src\\main\\res\\drawables\\anim', 'src\\main\\res\\drawables\\uniformVectors', 'src\\main\\res\\drawables\\fragmentImages', 'src\\main\\res\\layouts\\uniformTemplates'
             }
         }
     }
@@ -47,6 +47,7 @@ android {
 dependencies {
 
     implementation "androidx.viewpager2:viewpager2:1.0.0"
+    implementation "com.google.code.gson:gson:2.8.5"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     //implementation 'com.github.devlight:infinitecycleviewpager:1.0.2'
     implementation 'com.davemorrissey.labs:subsampling-scale-image-view:3.10.0'
