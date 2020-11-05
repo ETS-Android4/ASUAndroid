@@ -2,6 +2,7 @@ package com.example.asuandroid.outfitAdapters;
 
 import android.annotation.SuppressLint;
 import android.graphics.drawable.AnimationDrawable;
+import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -12,27 +13,29 @@ import com.example.asuandroid.outfitfragments.AwardItem;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.net.CookieHandler;
 import java.util.ArrayList;
 
 public class AwardAdapter extends RecyclerView.Adapter<AwardAdapter.AwardViewHolder> {
     //private ImageView mRibbonAdd;
-    private ArrayList<AwardItem> mAwardList;
+    public ArrayList<AwardItem> mAwardList;
     private boolean isRibbonOn = false;
     public static ArrayList<Integer> awardImageList = new ArrayList<>();
     //private CompoundButton.OnCheckedChangeListener;
     private OnItemClickListener mListener;
 
     public interface OnItemClickListener {
-        void onAddRibbonClick(String ribbon, int position, boolean isRibbonOn);
+        void onAddRibbonClick(int ribbon, int position, boolean isRibbonOn);
     }
 
     public void setOnItemClickListener(OnItemClickListener listener) {
         mListener = listener;
     }
 
-        public static class AwardViewHolder extends RecyclerView.ViewHolder {
+        public class AwardViewHolder extends RecyclerView.ViewHolder {
             public boolean isRibbonOn = false;
             public ImageView mImageView;
+            public int ribbonPath;
             public TextView mTextView1;
             public TextView mTextView2;
             public ImageView mRibbonAdd;
@@ -67,7 +70,7 @@ public class AwardAdapter extends RecyclerView.Adapter<AwardAdapter.AwardViewHol
                         {
                             if ((listener != null)) {
                                 int position = getAdapterPosition();
-                                String ribbon = mTextView1.getText().toString();
+                                int ribbon = mAwardList.get(position).getImageResource();
                                 if (position != RecyclerView.NO_POSITION) {
                                     listener.onAddRibbonClick(ribbon, position, isRibbonOn);
                                 }

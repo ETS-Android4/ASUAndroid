@@ -1,61 +1,69 @@
 package com.example.asuandroid.vectorBuildAdapters;
 
-public class RibbonItem {
+import android.widget.ImageView;
 
+import androidx.collection.ArraySet;
+
+import com.example.asuandroid.screens.UniformPresentationFragment;
+
+import java.util.ArrayList;
+
+public class RibbonItem {
+    public ArrayList<Integer> fromAward = UniformPresentationFragment.fromAward;
     public int mRibbon1Resource;
     public int mRibbon2Resource;
     public int mRibbon3Resource;
     public int mRibbon4Resource;
     public int mRibbon5Resource;
-    private int mRibbon6Resource;
-    private int mRibbon7Resource;
-    private int mRibbon8Resource;
-    private int mRibbon9Resource;
-    private int mRibbon10Resource;
-    private int mRibbon11Resource;
-    private int mRibbon12Resource;
+    public int mRibbon6Resource;
+    public int mRibbon7Resource;
+    public int mRibbon8Resource;
+    public int mRibbon9Resource;
+    public int mRibbon10Resource;
+    public int mRibbon11Resource;
+    public int mRibbon12Resource;
 
     public static class RibbonItem1 extends RibbonItem {
-        public RibbonItem1(int Ribbon1Resource) {
+        public RibbonItem1(ArrayList<Integer> images) {
             super();
-            mRibbon1Resource = Ribbon1Resource;
+            mRibbon1Resource = images.get(0);
         }
     }
     public static class RibbonItem2 extends RibbonItem {
-        public RibbonItem2(int Ribbon1Resource, int Ribbon2Resource) {
+        public RibbonItem2(ArrayList<Integer> images) {
             super();
-            mRibbon1Resource = Ribbon1Resource;
-            mRibbon2Resource = Ribbon2Resource;
+            mRibbon1Resource = images.get(0);
+            mRibbon2Resource = images.get(1);
         }
     }
     public static class RibbonItem3 extends RibbonItem {
-        public RibbonItem3(int Ribbon1Resource, int Ribbon2Resource, int Ribbon3Resource) {
+        public RibbonItem3(ArrayList<Integer> images) {
             super();
-            mRibbon1Resource = Ribbon1Resource;
-            mRibbon2Resource = Ribbon2Resource;
-            mRibbon3Resource = Ribbon3Resource;
+            //wRibbon1Resource = fromAward.valueAt(0);
+            mRibbon1Resource = images.get(0);
+            mRibbon2Resource = images.get(1);
+            mRibbon3Resource = images.get(2);
         }
     }
     public static class RibbonItem4 extends RibbonItem {
-
-        public RibbonItem4(int Ribbon1Resource, int Ribbon2Resource, int Ribbon3Resource, int Ribbon4Resource) {
+        public RibbonItem4(ArrayList<Integer> images) {
             super();
-            mRibbon1Resource = Ribbon1Resource;
-            mRibbon2Resource = Ribbon2Resource;
-            mRibbon3Resource = Ribbon3Resource;
-            mRibbon4Resource = Ribbon4Resource;
+            //wRibbon1Resource = fromAward.valueAt(0);
+            mRibbon1Resource = images.get(0);
+            mRibbon2Resource = images.get(1);
+            mRibbon3Resource = images.get(2);
+            mRibbon4Resource = images.get(3);
         }
     }
     public static class RibbonItem5 extends RibbonItem {
-
-        public RibbonItem5(int Ribbon1Resource, int Ribbon2Resource, int Ribbon3Resource, int Ribbon4Resource, int Ribbon5Resource) {
+        public RibbonItem5(ArrayList<Integer> images) {
             super();
-            mRibbon1Resource = Ribbon1Resource;
-            mRibbon2Resource = Ribbon2Resource;
-            mRibbon3Resource = Ribbon3Resource;
-            mRibbon4Resource = Ribbon4Resource;
-            mRibbon5Resource = Ribbon5Resource;
-
+            //wRibbon1Resource = fromAward.valueAt(0);
+            mRibbon1Resource = images.get(0);
+            mRibbon2Resource = images.get(1);
+            mRibbon3Resource = images.get(2);
+            mRibbon4Resource = images.get(3);
+            mRibbon5Resource = images.get(4);
         }
     }
 
@@ -68,6 +76,7 @@ public class RibbonItem {
     public int getImageResource4() {return mRibbon4Resource; }
 
     public int getImageResource5() {return mRibbon5Resource; }
-}
+
+    }
 
 

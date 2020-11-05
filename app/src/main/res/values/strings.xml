@@ -26,8 +26,14 @@
     <string name="OverSeas">Overseas service bars </string>
     <string name="Regimental">Regimental Insignia </string>
     <string name="IdentificationBadge">Identification Badge </string>
+
     <!-- String for ribbonReference objects -->
-    <string name="ref1">ic_</string>
+    <string name="ref1">ic_medal_of_honor_ribbon</string>
+    <string name="ref2">ic_distinguished_service_cross_ribbon</string>
+    <string name="ref3">ic_defense_distinguished_service_medal_ribbon</string>
+    <string name="ref4">ic_homeland_security_distinguished_service_medal_ribbon</string>
+    <string name="ref5">ic_army_distinguished_service_medal_ribbon</string>
+
     <!-- Strings used ribbons -->
     <string name="r1"> Medal of Honor</string>
     <string name="r2">Army Distinguished Service Cross</string>

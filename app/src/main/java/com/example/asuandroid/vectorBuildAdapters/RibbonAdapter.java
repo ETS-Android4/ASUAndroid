@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     public ArrayList<RibbonItem> mRibbonList;
-    public static ArraySet<ImageView> images = new ArraySet<>();
+    public static ArraySet<ImageView> images = new ArraySet<ImageView>();
     //private CompoundButton.OnCheckedChangeListener;
     private OnItemClickListener mListener;
 
@@ -99,7 +99,6 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
                 this.images.add(mImageView4);
                 mImageView4 = itemView.findViewById(R.id.ribbon4);
                 this.images.add(mImageView4);
-
             }
         }
         public static class RibbonFifthHolder extends RecyclerView.ViewHolder {

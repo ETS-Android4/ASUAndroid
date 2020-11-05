@@ -13,7 +13,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import com.example.asuandroid.R;
 import com.example.asuandroid.outfitAdapters.AwardAdapter;
@@ -25,7 +24,7 @@ public class BadgeFragment extends Fragment {
     private AwardAdapter mRecyclerViewAdapter;
     private RecyclerView mRecyclerView;
     public SwitchCompat switchRibbon;
-    public static ArrayList<String> badgeImages = new ArrayList<String>();
+    public static ArrayList<Integer> badgeImages = new ArrayList<Integer>();
 
 
     public void addRibbon(String ribbon){
@@ -47,9 +46,9 @@ public class BadgeFragment extends Fragment {
         mAdapter.setOnItemClickListener(new AwardAdapter.OnItemClickListener() {
 
             @Override
-            public void onAddRibbonClick(String ribbon, int position, boolean isRibbonOn) {
+            public void onAddRibbonClick(int ribbon, int position, boolean isRibbonOn) {
                 assert c != null;
-                Toast.makeText(c.getApplicationContext(), ribbon, Toast.LENGTH_LONG).show();
+                //Toast.makeText(c.getApplicationContext(), ribbon, Toast.LENGTH_LONG).show();
                 badgeImages.add(ribbon);
             }
         });
@@ -58,8 +57,8 @@ public class BadgeFragment extends Fragment {
 
     private void createAwardList() {
         mBadgeList = new ArrayList<>();
-        mBadgeList.add(new AwardItem(R.drawable.ic_combat_action_badge, "Combat Action Badge", "", R.drawable.ic_frame00));
-        mBadgeList.add(new AwardItem(R.drawable.ic_combat_infantry_badge, "Combat Action Badge", "", R.drawable.ic_frame00));
+        mBadgeList.add(new AwardItem(R.drawable.ic_combat_action_badge, "Combat Action Badge", "hello", R.drawable.ic_frame00));
+        mBadgeList.add(new AwardItem(R.drawable.ic_combat_infantry_badge, "Combat Action Badge", "R.string.ref2", R.drawable.ic_frame00));
     }
 
 

@@ -24,11 +24,11 @@ import com.example.asuandroid.vectorBuildAdapters.RibbonItem;
 import java.util.ArrayList;
 
 public class UniformPresentationFragment extends Fragment{
+    public static ArrayList<Integer> fromAward = AwardFragment.finalExport;
     private ArrayList<RibbonItem> mRibbonList;
     private RecyclerView mRecyclerView;
     private RibbonAdapter mRecyclerViewAdapter;
-    public ArrayList<String> fromAward = AwardFragment.ribbonImages;
-    public ArraySet<ImageView> images = RibbonAdapter.images;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -49,15 +49,42 @@ public class UniformPresentationFragment extends Fragment{
     public void createRibbonList() {
         mRibbonList = new ArrayList<>();
         //for(int i = 0; i < fromAward.size(); i++)
-        mRibbonList.add(new RibbonItem.RibbonItem4(R.drawable.ic_european_african_middle_eastern_campaign_ribbon, R.drawable.ic_air_medal_ribbon, R.drawable.ic_american_campaign_medal_ribbon, R.drawable.ic_afghanistan_campaign_medal_ribbon));
+        System.out.println(fromAward);
+        fromAward.trimToSize();
+        System.out.println(fromAward);
+
+        int tots = fromAward.size();
+        System.out.println("Size of tots"  + tots);
+        /*
+        if(fromAward.size() == 1){
+            mRibbonList.add(new RibbonItem.RibbonItem1(fromAward));
+        } else if(fromAward.size() ==2){
+            mRibbonList.add(new RibbonItem.RibbonItem2(fromAward));
+        }
+        */
+        switch(tots) {
+            case 1:
+                mRibbonList.add(new RibbonItem.RibbonItem1(fromAward));
+                break;
+            case 2:
+                mRibbonList.add(new RibbonItem.RibbonItem2(fromAward));
+                break;
+            case 3:
+                mRibbonList.add(new RibbonItem.RibbonItem3(fromAward));
+                break;
+            case 4:
+                mRibbonList.add(new RibbonItem.RibbonItem4(fromAward));
+                break;
+        }
+
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         view.findViewById(R.id.btn_return_home_fromPresentation).setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                System.out.println(fromAward);
-                System.out.println(images);
+                fromAward.removeAll(fromAward);
+                System.out.println("FromawardSize"+ fromAward.size());
                 NavHostFragment.findNavController(UniformPresentationFragment.this)
                         .navigate(R.id.action_uniformPresentationFragment_to_HomeScreen);
             }
