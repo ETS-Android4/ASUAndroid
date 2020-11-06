@@ -1,22 +1,16 @@
 package com.example.asuandroid.outfitAdapters;
 
 import android.annotation.SuppressLint;
-import android.graphics.Color;
 import android.graphics.drawable.AnimationDrawable;
-import android.graphics.drawable.Drawable;
 import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.view.View;
-import android.widget.Toast;
-
 import com.example.asuandroid.R;
 import com.example.asuandroid.outfitfragments.AwardItem;
 
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.net.CookieHandler;
@@ -29,11 +23,6 @@ public class AwardAdapter extends RecyclerView.Adapter<AwardAdapter.AwardViewHol
     public static ArrayList<Integer> awardImageList = new ArrayList<>();
     //private CompoundButton.OnCheckedChangeListener;
     private OnItemClickListener mListener;
-    int selectedPosition=-1;
-
-    public AwardAdapter(ArrayList<AwardItem> awardList) {
-        mAwardList = awardList;
-    }
 
     public interface OnItemClickListener {
         void onAddRibbonClick(int ribbon, int position, boolean isRibbonOn);
@@ -43,59 +32,75 @@ public class AwardAdapter extends RecyclerView.Adapter<AwardAdapter.AwardViewHol
         mListener = listener;
     }
 
+    public class AwardViewHolder extends RecyclerView.ViewHolder {
+        public boolean isRibbonOn = false;
+        public ImageView mImageView;
+        public int ribbonPath;
+        public TextView mTextView1;
+        public TextView mTextView2;
+        public ImageView mRibbonAdd;
+
+        @SuppressLint("ClickableViewAccessibility")
+        public AwardViewHolder(View itemView, OnItemClickListener listener) {
+            super(itemView);
+            mImageView = itemView.findViewById(R.id.imageView);
+            mTextView1 = itemView.findViewById(R.id.textView);
+            mTextView2 = itemView.findViewById(R.id.textView2);
+            mRibbonAdd = itemView.findViewById(R.id.img_addRibbon);
+            mRibbonAdd.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (!isRibbonOn) {
+                        System.out.println(isRibbonOn);
+                        isRibbonOn = true;
+                        System.out.println(isRibbonOn);
+                        mRibbonAdd.setBackgroundResource(R.drawable.ribbon_anim);
+                        AnimationDrawable rocketAnimation = (AnimationDrawable) mRibbonAdd.getBackground();
+                        rocketAnimation.start();
+                    } else if (isRibbonOn = true) {
+                        System.out.println(isRibbonOn);
+                        isRibbonOn = false;
+                        System.out.println(isRibbonOn);
+                        mRibbonAdd.setBackgroundResource(R.drawable.ribbon_anim_return);
+                        AnimationDrawable rocketAnimation = (AnimationDrawable) mRibbonAdd.getBackground();
+                        rocketAnimation.start();
+                    }
+                    {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mAwardList.get(position).getImageResource();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onAddRibbonClick(ribbon, position, isRibbonOn);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                }
+            });
+        }
+    }
+
+    public AwardAdapter(ArrayList<AwardItem> awardList) {
+        mAwardList = awardList;
+    }
     @Override
     public AwardViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.award_item, parent, false);
         AwardViewHolder evh = new AwardViewHolder(v, mListener);
         return evh;
     }
-
     @Override
     public void onBindViewHolder(AwardViewHolder holder, int position) {
-        final AwardItem currentItem = (AwardItem) mAwardList.get(position);
+        AwardItem currentItem = (AwardItem) mAwardList.get(position);
         holder.setIsRecyclable(false);
         holder.mImageView.setImageResource(currentItem.getImageResource());
         holder.mTextView1.setText(currentItem.getText1());
         holder.mTextView2.setText(currentItem.getText2());
-        //holder.itemView.setBackgroundColor(AwardItem.isSelected() ? Color.YELLOW: Color.WHITE);
-        //holder.mRibbonAnim.setImageResource(currentItem.getmRibbonAddResource());
-        holder.mTextView1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                currentItem.setSelected(!currentItem.isSelected());
-                holder.itemView.setBackgroundColor(currentItem.isSelected() ? Color.YELLOW : Color.WHITE);
-            }
-        });
+        //holder.mRibbonSwitch.setChecked(currentItem.getSwitch1(position).isChecked());
     }
-
     @Override
     public int getItemCount() {
         return mAwardList.size();
     }
-
-        public class AwardViewHolder extends RecyclerView.ViewHolder {
-            public boolean isRibbonOn = false;
-            public ImageView mImageView;
-            public int ribbonPath;
-            public TextView mTextView1;
-            public TextView mTextView2;
-            //public ImageView mRibbonAdd;
-            public ImageView mRibbonAnim;
-            public int mAnimate;
-
-
-
-            @SuppressLint("ClickableViewAccessibility")
-            public AwardViewHolder(View itemView, OnItemClickListener listener) {
-                super(itemView);
-                mImageView = itemView.findViewById(R.id.imageView);
-                mTextView1 = itemView.findViewById(R.id.textView);
-                mTextView2 = itemView.findViewById(R.id.textView2);
-                mRibbonAnim = itemView.findViewById(R.id.img_addRibbon);
-                mAnimate = R.drawable.ribbon_anim;
-                }
-            }
-
-
 
 }
