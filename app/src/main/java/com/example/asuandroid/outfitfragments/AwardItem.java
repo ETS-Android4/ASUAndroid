@@ -14,17 +14,13 @@ public class AwardItem {
     private String mText2;
     private int mImageAnim;
 
-
-
-    public AwardItem(int imageResource, String text1, String text2) {
+    public AwardItem(int imageResource, String text1, String text2, int mRibbonAddResource) {
         mImageResource = imageResource;
         mText1 = text1;
         mText2 = text2;
-
-
     }
 
-    public void setSelected(boolean selected) {
+    public static void setSelected(boolean selected) {
         isSelected = selected;
     }
 
@@ -41,5 +37,6 @@ public class AwardItem {
     public String getText2() {
         return mText2;
     }
-    public int getmRibbonAddResource() { return mRibbonAddResource; };
+    public int getmRibbonAddResource() { return mRibbonAddResource; }
+    public int getmImageAnim() {return mImageAnim;}
 }

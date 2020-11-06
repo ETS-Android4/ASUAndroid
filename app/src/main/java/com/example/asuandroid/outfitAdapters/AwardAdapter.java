@@ -1,6 +1,7 @@
 package com.example.asuandroid.outfitAdapters;
 
 import android.annotation.SuppressLint;
+import android.graphics.Color;
 import android.graphics.drawable.AnimationDrawable;
 import android.media.Image;
 import android.view.LayoutInflater;
@@ -11,6 +12,7 @@ import android.view.View;
 import com.example.asuandroid.R;
 import com.example.asuandroid.outfitfragments.AwardItem;
 
+import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.net.CookieHandler;
@@ -25,7 +27,7 @@ public class AwardAdapter extends RecyclerView.Adapter<AwardAdapter.AwardViewHol
     private OnItemClickListener mListener;
 
     public interface OnItemClickListener {
-        void onAddRibbonClick(int ribbon, int position, boolean isRibbonOn);
+        void onAddRibbonClick(int ribbon, int position, boolean isRibbonOn, ImageView mRibbonAdd);
     }
 
     public void setOnItemClickListener(OnItemClickListener listener) {
@@ -33,7 +35,6 @@ public class AwardAdapter extends RecyclerView.Adapter<AwardAdapter.AwardViewHol
     }
 
     public class AwardViewHolder extends RecyclerView.ViewHolder {
-        public boolean isRibbonOn = false;
         public ImageView mImageView;
         public int ribbonPath;
         public TextView mTextView1;
@@ -50,27 +51,18 @@ public class AwardAdapter extends RecyclerView.Adapter<AwardAdapter.AwardViewHol
             mRibbonAdd.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    if (!isRibbonOn) {
-                        System.out.println(isRibbonOn);
-                        isRibbonOn = true;
-                        System.out.println(isRibbonOn);
-                        mRibbonAdd.setBackgroundResource(R.drawable.ribbon_anim);
-                        AnimationDrawable rocketAnimation = (AnimationDrawable) mRibbonAdd.getBackground();
-                        rocketAnimation.start();
-                    } else if (isRibbonOn = true) {
-                        System.out.println(isRibbonOn);
-                        isRibbonOn = false;
-                        System.out.println(isRibbonOn);
-                        mRibbonAdd.setBackgroundResource(R.drawable.ribbon_anim_return);
-                        AnimationDrawable rocketAnimation = (AnimationDrawable) mRibbonAdd.getBackground();
-                        rocketAnimation.start();
-                    }
                     {
                         if ((listener != null)) {
+                            if(!isRibbonOn){
+                                isRibbonOn = true;
+
+                            } else if( isRibbonOn){
+                                isRibbonOn = false;
+                            }
                             int position = getAdapterPosition();
                             int ribbon = mAwardList.get(position).getImageResource();
                             if (position != RecyclerView.NO_POSITION) {
-                                listener.onAddRibbonClick(ribbon, position, isRibbonOn);
+                                listener.onAddRibbonClick(ribbon, position, isRibbonOn, mRibbonAdd);
                             }
                             System.out.println("youclickedme" + ribbon);
                         }
@@ -80,6 +72,7 @@ public class AwardAdapter extends RecyclerView.Adapter<AwardAdapter.AwardViewHol
         }
     }
 
+
     public AwardAdapter(ArrayList<AwardItem> awardList) {
         mAwardList = awardList;
     }
@@ -87,16 +80,22 @@ public class AwardAdapter extends RecyclerView.Adapter<AwardAdapter.AwardViewHol
     public AwardViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.award_item, parent, false);
         AwardViewHolder evh = new AwardViewHolder(v, mListener);
+        evh.setIsRecyclable(false);
         return evh;
     }
     @Override
     public void onBindViewHolder(AwardViewHolder holder, int position) {
         AwardItem currentItem = (AwardItem) mAwardList.get(position);
-        holder.setIsRecyclable(false);
         holder.mImageView.setImageResource(currentItem.getImageResource());
         holder.mTextView1.setText(currentItem.getText1());
         holder.mTextView2.setText(currentItem.getText2());
+
+        holder.mRibbonAdd.setImageResource(currentItem.getmRibbonAddResource());
+
         //holder.mRibbonSwitch.setChecked(currentItem.getSwitch1(position).isChecked());
+
+
+
     }
     @Override
     public int getItemCount() {

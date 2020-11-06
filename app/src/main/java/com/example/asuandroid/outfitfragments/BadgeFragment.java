@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.example.asuandroid.R;
 import com.example.asuandroid.outfitAdapters.AwardAdapter;
@@ -46,7 +47,7 @@ public class BadgeFragment extends Fragment {
         mAdapter.setOnItemClickListener(new AwardAdapter.OnItemClickListener() {
 
             @Override
-            public void onAddRibbonClick(int ribbon, int position, boolean isRibbonOn) {
+            public void onAddRibbonClick(int ribbon, int position, boolean isRibbonOn, ImageView mRibbonAdd) {
                 assert c != null;
                 //Toast.makeText(c.getApplicationContext(), ribbon, Toast.LENGTH_LONG).show();
                 badgeImages.add(ribbon);
