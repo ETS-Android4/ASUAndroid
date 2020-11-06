@@ -89,6 +89,7 @@ public class AwardAdapter extends RecyclerView.Adapter<AwardAdapter.AwardViewHol
     public AwardViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.award_item, parent, false);
         AwardViewHolder evh = new AwardViewHolder(v, mListener);
+        //evh.setIsRecyclable(false);
         return evh;
     }
     @Override
@@ -102,6 +103,16 @@ public class AwardAdapter extends RecyclerView.Adapter<AwardAdapter.AwardViewHol
     @Override
     public int getItemCount() {
         return mAwardList.size();
+    }
+
+    @Override
+    public int getItemViewType(int position) {
+        return position;
+    }
+
+    @Override
+    public long getItemId(int position) {
+        return position;
     }
 
 }
