@@ -1,5 +1,6 @@
 package com.example.asuandroid.outfitfragments;
 
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -68,23 +69,23 @@ public class AwardFragment extends Fragment {
     public void createAwardList() {
         ribbonImages.removeAll(ribbonImages);
         mAwardList = new ArrayList<>();
-        mAwardList.add(new AwardItem(R.drawable.ic_medal_of_honor_ribbon, "Medal of Honor", "ic_medal_of_honor_ribbon", R.drawable.ic_frame00));
-        mAwardList.add(new AwardItem(R.drawable.ic_distinguished_service_cross_ribbon, " Army Distinguished Service Cross", "ic_distinguished_service_cross_ribbon" ,R.drawable.ic_frame00));
-        mAwardList.add(new AwardItem(R.drawable.ic_defense_distinguished_service_medal_ribbon, " Defense Distinguished Service", "ic_defense_distinguished_service_medal_ribbon" ,R.drawable.ic_frame00));
-        mAwardList.add(new AwardItem(R.drawable.ic_homeland_security_distinguished_service_medal_ribbon, " Homeland Security Distinguished Service Medal", "ic_homeland_security_distinguished_service_medal_ribbon" ,R.drawable.ic_frame00));
+        mAwardList.add(new AwardItem(R.drawable.ic_medal_of_honor_ribbon, "Medal of Honor", "ic_medal_of_honor_ribbon"));
+        mAwardList.add(new AwardItem(R.drawable.ic_distinguished_service_cross_ribbon, " Army Distinguished Service Cross", "ic_distinguished_service_cross_ribbon"));
+        mAwardList.add(new AwardItem(R.drawable.ic_defense_distinguished_service_medal_ribbon, " Defense Distinguished Service", "ic_defense_distinguished_service_medal_ribbon" ));
+        mAwardList.add(new AwardItem(R.drawable.ic_homeland_security_distinguished_service_medal_ribbon, " Homeland Security Distinguished Service Medal", "ic_homeland_security_distinguished_service_medal_ribbon"));
+        mAwardList.add(new AwardItem(R.drawable.ic_army_distinguished_service_medal_ribbon, " Army Distinguished Service", ""));
+        mAwardList.add(new AwardItem(R.drawable.ic_army_silver_star_medal_ribbon, " Silver Star", ""));
+        mAwardList.add(new AwardItem(R.drawable.ic_defense_superior_service_medal_ribbon, " Defense Superior Service", ""));
+        mAwardList.add(new AwardItem(R.drawable.ic_legion_of_merit_ribbon, " Legion of Merit", ""));
+        mAwardList.add(new AwardItem(R.drawable.ic_distinguished_flying_cross_ribbon, " Distinguished Flying Cross", ""));
+        mAwardList.add(new AwardItem(R.drawable.ic_soldiers_medal_ribbon, " Soldiers Medal", ""));
+        mAwardList.add(new AwardItem(R.drawable.ic_bronze_star_medal_ribbon, " Bronze Star", ""));
+        mAwardList.add(new AwardItem(R.drawable.ic_purple_heart_ribbon, " Purple Heart", ""));
+        mAwardList.add(new AwardItem(R.drawable.ic_defense_meritorious_service_medal_ribbon, " Defense Meritorious Service", ""));
+        mAwardList.add(new AwardItem(R.drawable.ic_meritorious_service_medal_ribbon, " Meritorious Service", ""));
+        mAwardList.add(new AwardItem(R.drawable.ic_air_medal_ribbon, " Air Medal", ""));
+        mAwardList.add(new AwardItem(R.drawable.ic_joint_service_commendation_medal_ribbon, " Joint Service Commendation", ""));
         /*
-        mAwardList.add(new AwardItem(R.drawable.ic_army_distinguished_service_medal_ribbon, " Army Distinguished Service", "",R.drawable.ic_frame00));
-        mAwardList.add(new AwardItem(R.drawable.ic_army_silver_star_medal_ribbon, " Silver Star", "",R.drawable.ic_frame00));
-        mAwardList.add(new AwardItem(R.drawable.ic_defense_superior_service_medal_ribbon, " Defense Superior Service", "",R.drawable.ic_frame00));
-        mAwardList.add(new AwardItem(R.drawable.ic_legion_of_merit_ribbon, " Legion of Merit", "",R.drawable.ic_frame00));
-        mAwardList.add(new AwardItem(R.drawable.ic_distinguished_flying_cross_ribbon, " Distinguished Flying Cross", "",R.drawable.ic_frame00));
-        mAwardList.add(new AwardItem(R.drawable.ic_soldiers_medal_ribbon, " Soldiers Medal", "",R.drawable.ic_frame00));
-        mAwardList.add(new AwardItem(R.drawable.ic_bronze_star_medal_ribbon, " Bronze Star", "",R.drawable.ic_frame00));
-        mAwardList.add(new AwardItem(R.drawable.ic_purple_heart_ribbon, " Purple Heart", "",R.drawable.ic_frame00));
-        mAwardList.add(new AwardItem(R.drawable.ic_defense_meritorious_service_medal_ribbon, " Defense Meritorious Service", "",R.drawable.ic_frame00));
-        mAwardList.add(new AwardItem(R.drawable.ic_meritorious_service_medal_ribbon, " Meritorious Service", "",R.drawable.ic_frame00));
-        mAwardList.add(new AwardItem(R.drawable.ic_air_medal_ribbon, " Air Medal", "",R.drawable.ic_frame00));
-        mAwardList.add(new AwardItem(R.drawable.ic_joint_service_commendation_medal_ribbon, " Joint Service Commendation", "",R.drawable.ic_frame00));
         mAwardList.add(new AwardItem(R.drawable.ic_army_commendation_medal_ribbon, " Army Commendation", "",R.drawable.ic_frame00));
         mAwardList.add(new AwardItem(R.drawable.ic_joint_service_achievement_medal_ribbon, " Joint Service Achievement", "",R.drawable.ic_frame00));
         mAwardList.add(new AwardItem(R.drawable.ic_army_achievement_medal_ribbon, " Army Achievement", "",R.drawable.ic_frame00));
@@ -125,6 +126,7 @@ public class AwardFragment extends Fragment {
         mAwardList.add(new AwardItem(R.drawable.ic_navy_arctic_service_ribbon, " Arctic Service", "",R.drawable.ic_frame00));
         mAwardList.add(new AwardItem(R.drawable.ic_army_overseas_service_ribbon, " Army Overseas Service", "",R.drawable.ic_frame00));
         mAwardList.add(new AwardItem(R.drawable.ic_army_reserve_overseas_training_ribbon, " Army Reserve Componenets Overseas", "",R.drawable.ic_frame00));
+        System.out.println(mAwardList.size());
         /*mAwardList.add(new AwardItem(R.drawable.ic_vietnam_gallantry_cross_unit_award_wpalm, " Vietnam Gallantry Cross", "",R.drawable.ic_frame00));
         mAwardList.add(new AwardItem(R.drawable., " Vietnam Armed Forces Honor 1C", "",R.drawable.ic_frame00));
         mAwardList.add(new AwardItem(R.drawable., " Vietnam Armed Forces Honor 2C", "",R.drawable.ic_frame00));

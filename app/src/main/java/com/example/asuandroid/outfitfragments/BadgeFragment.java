@@ -57,8 +57,8 @@ public class BadgeFragment extends Fragment {
 
     private void createAwardList() {
         mBadgeList = new ArrayList<>();
-        mBadgeList.add(new AwardItem(R.drawable.ic_combat_action_badge, "Combat Action Badge", "hello", R.drawable.ic_frame00));
-        mBadgeList.add(new AwardItem(R.drawable.ic_combat_infantry_badge, "Combat Action Badge", "R.string.ref2", R.drawable.ic_frame00));
+       // mBadgeList.add(new AwardItem(R.drawable.ic_combat_action_badge, "Combat Action Badge", "hello", R.drawable.ic_frame00));
+       // mBadgeList.add(new AwardItem(R.drawable.ic_combat_infantry_badge, "Combat Action Badge", "R.string.ref2", R.drawable.ic_frame00));
     }
 
 
