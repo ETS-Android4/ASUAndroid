@@ -27,10 +27,6 @@ public class HomeScreen extends Fragment {
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        ImageView rocketImage = (ImageView) view.findViewById(R.id.ribbonAnim);
-        rocketImage.setBackgroundResource(R.drawable.ribbon_anim);
-        AnimationDrawable rocketAnimation = (AnimationDrawable) rocketImage.getBackground();
-
         view.findViewById(R.id.btn_gotoFragment2).setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 NavHostFragment.findNavController(HomeScreen.this)
@@ -41,11 +37,6 @@ public class HomeScreen extends Fragment {
             public void onClick(View view) {
                 NavHostFragment.findNavController(HomeScreen.this)
                         .navigate(R.id.action_HomeScreen_to_wardrobeScreen);
-            }
-        });
-        view.findViewById(R.id.ribbonAnim).setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                rocketAnimation.start();
             }
         });
 
