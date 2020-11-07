@@ -1,7 +1,10 @@
 package com.example.asuandroid.outfitAdapters;
 
 import android.annotation.SuppressLint;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.Paint;
 import android.graphics.drawable.AnimationDrawable;
 import android.media.Image;
 import android.view.LayoutInflater;
@@ -105,6 +108,7 @@ public class AwardAdapter extends RecyclerView.Adapter<AwardAdapter.AwardViewHol
         //holder.mRibbonSwitch.setChecked(currentItem.getSwitch1(position).isChecked());
 
     }
+
     @Override
     public int getItemCount() {
         return mAwardList.size();

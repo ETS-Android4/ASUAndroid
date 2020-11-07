@@ -46,7 +46,6 @@ public class AwardFragment extends Fragment {
         final FragmentActivity c = getActivity();
         final RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recyclerViewAward);
         AwardAdapter mAdapter = new AwardAdapter(mAwardList);
-        ImageView rocketImage = (ImageView) view.findViewById(R.id.img_addRibbon);
         LinearLayoutManager layoutManager = new LinearLayoutManager(c);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(mAdapter);

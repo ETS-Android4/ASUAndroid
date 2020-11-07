@@ -1,5 +1,7 @@
 package com.example.asuandroid.utils;
 
+import android.graphics.Bitmap;
+import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -16,15 +18,15 @@ public class Utils {
         txt.setText(libraryObject.getTitle());
 
         final ImageView img = (ImageView) view.findViewById(R.id.img_item);
-        img.setImageResource(libraryObject.getRes());
+        img.setImageDrawable(libraryObject.getRes());
     }
 
     public static class LibraryObject {
 
         private String mTitle;
-        private int mRes;
+        private Drawable mRes;
 
-        public LibraryObject(final int res, final String title) {
+        public LibraryObject(final Drawable res, final String title) {
             mRes = res;
             mTitle = title;
         }
@@ -37,12 +39,14 @@ public class Utils {
             mTitle = title;
         }
 
-        public int getRes() {
+        public Drawable getRes() {
             return mRes;
         }
 
-        public void setRes(final int res) {
+        public void setRes(final Drawable res) {
             mRes = res;
         }
+
+
     }
 }
