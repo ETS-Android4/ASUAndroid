@@ -47,7 +47,7 @@
             android:id="@+id/ribbon5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toEndOf="@+id/ribbon4"
+            app:layout_constraintStart_toEndOf="@+id/ribbon1"
             app:layout_constraintTop_toBottomOf="@+id/ribbon2"
             app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
 
@@ -64,7 +64,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ribbon4"
+            app:layout_constraintTop_toBottomOf="@+id/ribbon1"
             app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
 
         <ImageView

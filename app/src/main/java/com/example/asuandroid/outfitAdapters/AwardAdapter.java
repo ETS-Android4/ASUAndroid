@@ -55,7 +55,7 @@ public class AwardAdapter extends RecyclerView.Adapter<AwardAdapter.AwardViewHol
                         System.out.println(isRibbonOn);
                         isRibbonOn = true;
                         System.out.println(isRibbonOn);
-                        itemView.setBackgroundColor(Color.GRAY);
+                        itemView.setBackgroundColor(Color.CYAN);
                         ImageView rocketImage = (ImageView) v.findViewById(R.id.img_addRibbon);
                         rocketImage.setBackgroundResource(R.drawable.ribbon_anim);
                         AnimationDrawable rocketAnimation = (AnimationDrawable) rocketImage.getBackground();
@@ -64,6 +64,7 @@ public class AwardAdapter extends RecyclerView.Adapter<AwardAdapter.AwardViewHol
                         System.out.println(isRibbonOn);
                         isRibbonOn = false;
                         System.out.println(isRibbonOn);
+
                         itemView.setBackgroundColor(Color.WHITE);
                         ImageView rocketImage = (ImageView) v.findViewById(R.id.img_addRibbon);
                         rocketImage.setBackgroundResource(R.drawable.ribbon_anim_return);

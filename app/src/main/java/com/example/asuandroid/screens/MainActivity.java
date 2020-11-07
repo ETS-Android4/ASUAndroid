@@ -1,4 +1,6 @@
 package com.example.asuandroid.screens;
+import android.annotation.SuppressLint;
+import android.app.ActionBar;
 import android.app.AlertDialog;
 import android.graphics.Bitmap;
 import android.graphics.drawable.AnimationDrawable;
@@ -10,8 +12,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.Objects;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
@@ -32,22 +36,21 @@ import com.example.asuandroid.outfitfragments.AwardFragment;
 import com.example.asuandroid.outfitfragments.AwardItem;
 import com.zoomage.ZoomageView;
 
+import static android.app.ActionBar.DISPLAY_SHOW_CUSTOM;
+
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, CompoundButton.OnCheckedChangeListener{
-    private ArrayList<AwardItem> mAwardList;
     public ArrayList<String> fromSpinner;
     private ZoomageView demoView;
-    private String[] mArrayNames = new String[]{"Daryl", "Rick", "Abraham", "Eugene"};
-    private Fragment AwardFragment;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        Toolbar toolbar = findViewById(R.id.toolbar);
+        //Toolbar myToolbar = (Toolbar) findViewById(R.id.tool_bar);
+        //setSupportActionBar(myToolbar);
         setContentView(R.layout.activity_main);
         //demoView = findViewById(R.id.myZoomageView);
-        setSupportActionBar(toolbar);
+
         fromSpinner = NewUniformPromptFragment.spinnerAr;
     }
 

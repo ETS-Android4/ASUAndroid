@@ -35,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toTopOf="@+id/ribbon6"
-            app:layout_constraintEnd_toStartOf="@+id/ribbon4"
+            app:layout_constraintEnd_toStartOf="@+id/ribbon1"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/ribbon2"
             app:layout_constraintTop_toBottomOf="@+id/ribbon1"

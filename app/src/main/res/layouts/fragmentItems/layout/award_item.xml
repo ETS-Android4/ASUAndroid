@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/ribbon_card"
+    app:cardBackgroundColor="@color/colorWhite"
     android:layout_width="@dimen/card_width"
     android:layout_height="@dimen/card_height"
     app:cardPreventCornerOverlap="false"
@@ -13,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="4dp"
-        >
+        android:background="@drawable/button_ribbon">
 
         <ImageView
             android:id="@+id/imageView"
@@ -31,7 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:text="@string/r1"
-            android:textColor="@android:color/black"
+            android:textColor="@color/colorPrimary"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constrainedWidth="true"

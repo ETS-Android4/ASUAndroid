@@ -59,7 +59,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/ribbon4"
+            app:layout_constraintStart_toEndOf="@+id/ribbon1"
             app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
