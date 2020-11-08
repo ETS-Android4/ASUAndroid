@@ -99,8 +99,8 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             mImageView2 = itemView.findViewById(R.id.ribbon2);
             this.images.add(mImageView2);
             mImageView3 = itemView.findViewById(R.id.ribbon3);
-            this.images.add(mImageView4);
-            mImageView4 = itemView.findViewById(R.id.ribbon1);
+            this.images.add(mImageView3);
+            mImageView4 = itemView.findViewById(R.id.ribbon4);
             this.images.add(mImageView4);
         }
     }
@@ -123,9 +123,9 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             this.images.add(mImageView2);
             mImageView3 = itemView.findViewById(R.id.ribbon3);
             this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon1);
+            mImageView4 = itemView.findViewById(R.id.ribbon4);
             this.images.add(mImageView4);
-            mImageView5 = itemView.findViewById(R.id.ribbon3);
+            mImageView5 = itemView.findViewById(R.id.ribbon5);
             this.images.add(mImageView5);
 
         }
@@ -151,7 +151,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             this.images.add(mImageView2);
             mImageView3 = itemView.findViewById(R.id.ribbon3);
             this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon1);
+            mImageView4 = itemView.findViewById(R.id.ribbon4);
             this.images.add(mImageView4);
             mImageView5 = itemView.findViewById(R.id.ribbon5);
             this.images.add(mImageView5);
@@ -182,7 +182,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             this.images.add(mImageView2);
             mImageView3 = itemView.findViewById(R.id.ribbon3);
             this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon1);
+            mImageView4 = itemView.findViewById(R.id.ribbon4);
             this.images.add(mImageView4);
             mImageView5 = itemView.findViewById(R.id.ribbon5);
             this.images.add(mImageView5);
@@ -216,7 +216,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             this.images.add(mImageView2);
             mImageView3 = itemView.findViewById(R.id.ribbon3);
             this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon1);
+            mImageView4 = itemView.findViewById(R.id.ribbon4);
             this.images.add(mImageView4);
             mImageView5 = itemView.findViewById(R.id.ribbon5);
             this.images.add(mImageView5);
@@ -226,7 +226,6 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             this.images.add(mImageView7);
             mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
-
         }
     }
 
@@ -253,7 +252,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             this.images.add(mImageView2);
             mImageView3 = itemView.findViewById(R.id.ribbon3);
             this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon1);
+            mImageView4 = itemView.findViewById(R.id.ribbon4);
             this.images.add(mImageView4);
             mImageView5 = itemView.findViewById(R.id.ribbon5);
             this.images.add(mImageView5);
@@ -293,7 +292,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             this.images.add(mImageView2);
             mImageView3 = itemView.findViewById(R.id.ribbon3);
             this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon1);
+            mImageView4 = itemView.findViewById(R.id.ribbon4);
             this.images.add(mImageView4);
             mImageView5 = itemView.findViewById(R.id.ribbon5);
             this.images.add(mImageView5);
@@ -336,7 +335,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             this.images.add(mImageView2);
             mImageView3 = itemView.findViewById(R.id.ribbon3);
             this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon1);
+            mImageView4 = itemView.findViewById(R.id.ribbon4);
             this.images.add(mImageView4);
             mImageView5 = itemView.findViewById(R.id.ribbon5);
             this.images.add(mImageView5);
@@ -382,55 +381,6 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             this.images.add(mImageView2);
             mImageView3 = itemView.findViewById(R.id.ribbon3);
             this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon1);
-            this.images.add(mImageView4);
-            mImageView5 = itemView.findViewById(R.id.ribbon5);
-            this.images.add(mImageView5);
-            mImageView6 = itemView.findViewById(R.id.ribbon6);
-            this.images.add(mImageView6);
-            mImageView7 = itemView.findViewById(R.id.ribbon7);
-            this.images.add(mImageView7);
-            mImageView8 = itemView.findViewById(R.id.ribbon8);
-            this.images.add(mImageView8);
-            mImageView9 = itemView.findViewById(R.id.ribbon9);
-            this.images.add(mImageView9);
-            mImageView10 = itemView.findViewById(R.id.ribbon10);
-            this.images.add(mImageView10);
-            mImageView11 = itemView.findViewById(R.id.ribbon11);
-            this.images.add(mImageView11);
-            mImageView12 = itemView.findViewById(R.id.ribbon12);
-            this.images.add(mImageView12);
-
-        }
-    }
-/*
-    public static class Ribbon13Holder extends RecyclerView.ViewHolder {
-        private final ArraySet<ImageView> images;
-        public ImageView mImageView1;
-        public ImageView mImageView2;
-        public ImageView mImageView3;
-        public ImageView mImageView4;
-        public ImageView mImageView5;
-        public ImageView mImageView6;
-        public ImageView mImageView7;
-        public ImageView mImageView8;
-        public ImageView mImageView9;
-        public ImageView mImageView10;
-        public ImageView mImageView11;
-        public ImageView mImageView12;
-        public ImageView mImageView13;
-
-
-        @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon13Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
-            super(itemView);
-            this.images = images;
-            mImageView1 = itemView.findViewById(R.id.ribbon1);
-            this.images.add(mImageView1);
-            mImageView2 = itemView.findViewById(R.id.ribbon2);
-            this.images.add(mImageView2);
-            mImageView3 = itemView.findViewById(R.id.ribbon3);
-            this.images.add(mImageView3);
             mImageView4 = itemView.findViewById(R.id.ribbon4);
             this.images.add(mImageView4);
             mImageView5 = itemView.findViewById(R.id.ribbon5);
@@ -449,4011 +399,4058 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             this.images.add(mImageView11);
             mImageView12 = itemView.findViewById(R.id.ribbon12);
             this.images.add(mImageView12);
-            mImageView13 = itemView.findViewById(R.id.ribbon13);
-            this.images.add(mImageView13);
 
         }
     }
 
-    public static class Ribbon14Holder extends RecyclerView.ViewHolder {
-        private final ArraySet<ImageView> images;
-        public ImageView mImageView1;
-        public ImageView mImageView2;
-        public ImageView mImageView3;
-        public ImageView mImageView4;
-        public ImageView mImageView5;
-        public ImageView mImageView6;
-        public ImageView mImageView7;
-        public ImageView mImageView8;
-        public ImageView mImageView9;
-        public ImageView mImageView10;
-        public ImageView mImageView11;
-        public ImageView mImageView12;
-        public ImageView mImageView13;
-        public ImageView mImageView14;
+        public static class Ribbon13Holder extends RecyclerView.ViewHolder {
+            private final ArraySet<ImageView> images;
+            public ImageView mImageView1;
+            public ImageView mImageView2;
+            public ImageView mImageView3;
+            public ImageView mImageView4;
+            public ImageView mImageView5;
+            public ImageView mImageView6;
+            public ImageView mImageView7;
+            public ImageView mImageView8;
+            public ImageView mImageView9;
+            public ImageView mImageView10;
+            public ImageView mImageView11;
+            public ImageView mImageView12;
+            public ImageView mImageView13;
 
 
-        @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon14Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
-            super(itemView);
-            this.images = images;
-            mImageView1 = itemView.findViewById(R.id.ribbon1);
-            this.images.add(mImageView1);
-            mImageView2 = itemView.findViewById(R.id.ribbon2);
-            this.images.add(mImageView2);
-            mImageView3 = itemView.findViewById(R.id.ribbon3);
-            this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon4);
-            this.images.add(mImageView4);
-            mImageView5 = itemView.findViewById(R.id.ribbon5);
-            this.images.add(mImageView5);
-            mImageView6 = itemView.findViewById(R.id.ribbon6);
-            this.images.add(mImageView6);
-            mImageView7 = itemView.findViewById(R.id.ribbon7);
-            this.images.add(mImageView7);
-            mImageView8 = itemView.findViewById(R.id.ribbon8);
-            this.images.add(mImageView8);
-            mImageView9 = itemView.findViewById(R.id.ribbon9);
-            this.images.add(mImageView9);
-            mImageView10 = itemView.findViewById(R.id.ribbon10);
-            this.images.add(mImageView10);
-            mImageView11 = itemView.findViewById(R.id.ribbon11);
-            this.images.add(mImageView11);
-            mImageView12 = itemView.findViewById(R.id.ribbon12);
-            this.images.add(mImageView12);
-            mImageView13 = itemView.findViewById(R.id.ribbon13);
-            this.images.add(mImageView13);
-            mImageView14 = itemView.findViewById(R.id.ribbon14);
-            this.images.add(mImageView14);
+            @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
+            public Ribbon13Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+                super(itemView);
+                this.images = images;
+                mImageView1 = itemView.findViewById(R.id.ribbon1);
+                this.images.add(mImageView1);
+                mImageView2 = itemView.findViewById(R.id.ribbon2);
+                this.images.add(mImageView2);
+                mImageView3 = itemView.findViewById(R.id.ribbon3);
+                this.images.add(mImageView3);
+                mImageView4 = itemView.findViewById(R.id.ribbon4);
+                this.images.add(mImageView4);
+                mImageView5 = itemView.findViewById(R.id.ribbon5);
+                this.images.add(mImageView5);
+                mImageView6 = itemView.findViewById(R.id.ribbon6);
+                this.images.add(mImageView6);
+                mImageView7 = itemView.findViewById(R.id.ribbon7);
+                this.images.add(mImageView7);
+                mImageView8 = itemView.findViewById(R.id.ribbon8);
+                this.images.add(mImageView8);
+                mImageView9 = itemView.findViewById(R.id.ribbon9);
+                this.images.add(mImageView9);
+                mImageView10 = itemView.findViewById(R.id.ribbon10);
+                this.images.add(mImageView10);
+                mImageView11 = itemView.findViewById(R.id.ribbon11);
+                this.images.add(mImageView11);
+                mImageView12 = itemView.findViewById(R.id.ribbon12);
+                this.images.add(mImageView12);
+                mImageView13 = itemView.findViewById(R.id.ribbon13);
+                this.images.add(mImageView13);
 
+            }
+        }
+
+        public static class Ribbon14Holder extends RecyclerView.ViewHolder {
+            private final ArraySet<ImageView> images;
+            public ImageView mImageView1;
+            public ImageView mImageView2;
+            public ImageView mImageView3;
+            public ImageView mImageView4;
+            public ImageView mImageView5;
+            public ImageView mImageView6;
+            public ImageView mImageView7;
+            public ImageView mImageView8;
+            public ImageView mImageView9;
+            public ImageView mImageView10;
+            public ImageView mImageView11;
+            public ImageView mImageView12;
+            public ImageView mImageView13;
+            public ImageView mImageView14;
+
+
+            @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
+            public Ribbon14Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+                super(itemView);
+                this.images = images;
+                mImageView1 = itemView.findViewById(R.id.ribbon1);
+                this.images.add(mImageView1);
+                mImageView2 = itemView.findViewById(R.id.ribbon2);
+                this.images.add(mImageView2);
+                mImageView3 = itemView.findViewById(R.id.ribbon3);
+                this.images.add(mImageView3);
+                mImageView4 = itemView.findViewById(R.id.ribbon4);
+                this.images.add(mImageView4);
+                mImageView5 = itemView.findViewById(R.id.ribbon5);
+                this.images.add(mImageView5);
+                mImageView6 = itemView.findViewById(R.id.ribbon6);
+                this.images.add(mImageView6);
+                mImageView7 = itemView.findViewById(R.id.ribbon7);
+                this.images.add(mImageView7);
+                mImageView8 = itemView.findViewById(R.id.ribbon8);
+                this.images.add(mImageView8);
+                mImageView9 = itemView.findViewById(R.id.ribbon9);
+                this.images.add(mImageView9);
+                mImageView10 = itemView.findViewById(R.id.ribbon10);
+                this.images.add(mImageView10);
+                mImageView11 = itemView.findViewById(R.id.ribbon11);
+                this.images.add(mImageView11);
+                mImageView12 = itemView.findViewById(R.id.ribbon12);
+                this.images.add(mImageView12);
+                mImageView13 = itemView.findViewById(R.id.ribbon13);
+                this.images.add(mImageView13);
+                mImageView14 = itemView.findViewById(R.id.ribbon14);
+                this.images.add(mImageView14);
+
+            }
+        }
+
+        public static class Ribbon15Holder extends RecyclerView.ViewHolder {
+            private final ArraySet<ImageView> images;
+            public ImageView mImageView1;
+            public ImageView mImageView2;
+            public ImageView mImageView3;
+            public ImageView mImageView4;
+            public ImageView mImageView5;
+            public ImageView mImageView6;
+            public ImageView mImageView7;
+            public ImageView mImageView8;
+            public ImageView mImageView9;
+            public ImageView mImageView10;
+            public ImageView mImageView11;
+            public ImageView mImageView12;
+            public ImageView mImageView13;
+            public ImageView mImageView14;
+            public ImageView mImageView15;
+
+
+            @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
+            public Ribbon15Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+                super(itemView);
+                this.images = images;
+                mImageView1 = itemView.findViewById(R.id.ribbon1);
+                this.images.add(mImageView1);
+                mImageView2 = itemView.findViewById(R.id.ribbon2);
+                this.images.add(mImageView2);
+                mImageView3 = itemView.findViewById(R.id.ribbon3);
+                this.images.add(mImageView3);
+                mImageView4 = itemView.findViewById(R.id.ribbon4);
+                this.images.add(mImageView4);
+                mImageView5 = itemView.findViewById(R.id.ribbon5);
+                this.images.add(mImageView5);
+                mImageView6 = itemView.findViewById(R.id.ribbon6);
+                this.images.add(mImageView6);
+                mImageView7 = itemView.findViewById(R.id.ribbon7);
+                this.images.add(mImageView7);
+                mImageView8 = itemView.findViewById(R.id.ribbon8);
+                this.images.add(mImageView8);
+                mImageView9 = itemView.findViewById(R.id.ribbon9);
+                this.images.add(mImageView9);
+                mImageView10 = itemView.findViewById(R.id.ribbon10);
+                this.images.add(mImageView10);
+                mImageView11 = itemView.findViewById(R.id.ribbon11);
+                this.images.add(mImageView11);
+                mImageView12 = itemView.findViewById(R.id.ribbon12);
+                this.images.add(mImageView12);
+                mImageView13 = itemView.findViewById(R.id.ribbon13);
+                this.images.add(mImageView13);
+                mImageView14 = itemView.findViewById(R.id.ribbon14);
+                this.images.add(mImageView14);
+                mImageView15 = itemView.findViewById(R.id.ribbon15);
+                this.images.add(mImageView15);
+
+            }
+        }
+
+        public static class Ribbon16Holder extends RecyclerView.ViewHolder {
+            private final ArraySet<ImageView> images;
+            public ImageView mImageView1;
+            public ImageView mImageView2;
+            public ImageView mImageView3;
+            public ImageView mImageView4;
+            public ImageView mImageView5;
+            public ImageView mImageView6;
+            public ImageView mImageView7;
+            public ImageView mImageView8;
+            public ImageView mImageView9;
+            public ImageView mImageView10;
+            public ImageView mImageView11;
+            public ImageView mImageView12;
+            public ImageView mImageView13;
+            public ImageView mImageView14;
+            public ImageView mImageView15;
+            public ImageView mImageView16;
+
+
+            @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
+            public Ribbon16Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+                super(itemView);
+                this.images = images;
+                mImageView1 = itemView.findViewById(R.id.ribbon1);
+                this.images.add(mImageView1);
+                mImageView2 = itemView.findViewById(R.id.ribbon2);
+                this.images.add(mImageView2);
+                mImageView3 = itemView.findViewById(R.id.ribbon3);
+                this.images.add(mImageView3);
+                mImageView4 = itemView.findViewById(R.id.ribbon4);
+                this.images.add(mImageView4);
+                mImageView5 = itemView.findViewById(R.id.ribbon5);
+                this.images.add(mImageView5);
+                mImageView6 = itemView.findViewById(R.id.ribbon6);
+                this.images.add(mImageView6);
+                mImageView7 = itemView.findViewById(R.id.ribbon7);
+                this.images.add(mImageView7);
+                mImageView8 = itemView.findViewById(R.id.ribbon8);
+                this.images.add(mImageView8);
+                mImageView9 = itemView.findViewById(R.id.ribbon9);
+                this.images.add(mImageView9);
+                mImageView10 = itemView.findViewById(R.id.ribbon10);
+                this.images.add(mImageView10);
+                mImageView11 = itemView.findViewById(R.id.ribbon11);
+                this.images.add(mImageView11);
+                mImageView12 = itemView.findViewById(R.id.ribbon12);
+                this.images.add(mImageView12);
+                mImageView13 = itemView.findViewById(R.id.ribbon13);
+                this.images.add(mImageView13);
+                mImageView14 = itemView.findViewById(R.id.ribbon14);
+                this.images.add(mImageView14);
+                mImageView15 = itemView.findViewById(R.id.ribbon15);
+                this.images.add(mImageView15);
+                mImageView16 = itemView.findViewById(R.id.ribbon16);
+                this.images.add(mImageView16);
+
+            }
+        }
+
+        public static class Ribbon17Holder extends RecyclerView.ViewHolder {
+            private final ArraySet<ImageView> images;
+            public ImageView mImageView1;
+            public ImageView mImageView2;
+            public ImageView mImageView3;
+            public ImageView mImageView4;
+            public ImageView mImageView5;
+            public ImageView mImageView6;
+            public ImageView mImageView7;
+            public ImageView mImageView8;
+            public ImageView mImageView9;
+            public ImageView mImageView10;
+            public ImageView mImageView11;
+            public ImageView mImageView12;
+            public ImageView mImageView13;
+            public ImageView mImageView14;
+            public ImageView mImageView15;
+            public ImageView mImageView16;
+            public ImageView mImageView17;
+
+
+            @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
+            public Ribbon17Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+                super(itemView);
+                this.images = images;
+                mImageView1 = itemView.findViewById(R.id.ribbon1);
+                this.images.add(mImageView1);
+                mImageView2 = itemView.findViewById(R.id.ribbon2);
+                this.images.add(mImageView2);
+                mImageView3 = itemView.findViewById(R.id.ribbon3);
+                this.images.add(mImageView3);
+                mImageView4 = itemView.findViewById(R.id.ribbon4);
+                this.images.add(mImageView4);
+                mImageView5 = itemView.findViewById(R.id.ribbon5);
+                this.images.add(mImageView5);
+                mImageView6 = itemView.findViewById(R.id.ribbon6);
+                this.images.add(mImageView6);
+                mImageView7 = itemView.findViewById(R.id.ribbon7);
+                this.images.add(mImageView7);
+                mImageView8 = itemView.findViewById(R.id.ribbon8);
+                this.images.add(mImageView8);
+                mImageView9 = itemView.findViewById(R.id.ribbon9);
+                this.images.add(mImageView9);
+                mImageView10 = itemView.findViewById(R.id.ribbon10);
+                this.images.add(mImageView10);
+                mImageView11 = itemView.findViewById(R.id.ribbon11);
+                this.images.add(mImageView11);
+                mImageView12 = itemView.findViewById(R.id.ribbon12);
+                this.images.add(mImageView12);
+                mImageView13 = itemView.findViewById(R.id.ribbon13);
+                this.images.add(mImageView13);
+                mImageView14 = itemView.findViewById(R.id.ribbon14);
+                this.images.add(mImageView14);
+                mImageView15 = itemView.findViewById(R.id.ribbon15);
+                this.images.add(mImageView15);
+                mImageView16 = itemView.findViewById(R.id.ribbon16);
+                this.images.add(mImageView16);
+                mImageView17 = itemView.findViewById(R.id.ribbon17);
+                this.images.add(mImageView17);
+
+            }
+        }
+
+        public static class Ribbon18Holder extends RecyclerView.ViewHolder {
+            private final ArraySet<ImageView> images;
+            public ImageView mImageView1;
+            public ImageView mImageView2;
+            public ImageView mImageView3;
+            public ImageView mImageView4;
+            public ImageView mImageView5;
+            public ImageView mImageView6;
+            public ImageView mImageView7;
+            public ImageView mImageView8;
+            public ImageView mImageView9;
+            public ImageView mImageView10;
+            public ImageView mImageView11;
+            public ImageView mImageView12;
+            public ImageView mImageView13;
+            public ImageView mImageView14;
+            public ImageView mImageView15;
+            public ImageView mImageView16;
+            public ImageView mImageView17;
+            public ImageView mImageView18;
+
+
+            @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
+            public Ribbon18Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+                super(itemView);
+                this.images = images;
+                mImageView1 = itemView.findViewById(R.id.ribbon1);
+                this.images.add(mImageView1);
+                mImageView2 = itemView.findViewById(R.id.ribbon2);
+                this.images.add(mImageView2);
+                mImageView3 = itemView.findViewById(R.id.ribbon3);
+                this.images.add(mImageView3);
+                mImageView4 = itemView.findViewById(R.id.ribbon4);
+                this.images.add(mImageView4);
+                mImageView5 = itemView.findViewById(R.id.ribbon5);
+                this.images.add(mImageView5);
+                mImageView6 = itemView.findViewById(R.id.ribbon6);
+                this.images.add(mImageView6);
+                mImageView7 = itemView.findViewById(R.id.ribbon7);
+                this.images.add(mImageView7);
+                mImageView8 = itemView.findViewById(R.id.ribbon8);
+                this.images.add(mImageView8);
+                mImageView9 = itemView.findViewById(R.id.ribbon9);
+                this.images.add(mImageView9);
+                mImageView10 = itemView.findViewById(R.id.ribbon10);
+                this.images.add(mImageView10);
+                mImageView11 = itemView.findViewById(R.id.ribbon11);
+                this.images.add(mImageView11);
+                mImageView12 = itemView.findViewById(R.id.ribbon12);
+                this.images.add(mImageView12);
+                mImageView13 = itemView.findViewById(R.id.ribbon13);
+                this.images.add(mImageView13);
+                mImageView14 = itemView.findViewById(R.id.ribbon14);
+                this.images.add(mImageView14);
+                mImageView15 = itemView.findViewById(R.id.ribbon15);
+                this.images.add(mImageView15);
+                mImageView16 = itemView.findViewById(R.id.ribbon16);
+                this.images.add(mImageView16);
+                mImageView17 = itemView.findViewById(R.id.ribbon17);
+                this.images.add(mImageView17);
+                mImageView18 = itemView.findViewById(R.id.ribbon18);
+                this.images.add(mImageView18);
+
+
+            }
+        }
+
+        public static class Ribbon19Holder extends RecyclerView.ViewHolder {
+            private final ArraySet<ImageView> images;
+            public ImageView mImageView1;
+            public ImageView mImageView2;
+            public ImageView mImageView3;
+            public ImageView mImageView4;
+            public ImageView mImageView5;
+            public ImageView mImageView6;
+            public ImageView mImageView7;
+            public ImageView mImageView8;
+            public ImageView mImageView9;
+            public ImageView mImageView10;
+            public ImageView mImageView11;
+            public ImageView mImageView12;
+            public ImageView mImageView13;
+            public ImageView mImageView14;
+            public ImageView mImageView15;
+            public ImageView mImageView16;
+            public ImageView mImageView17;
+            public ImageView mImageView18;
+            public ImageView mImageView19;
+
+
+            @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
+            public Ribbon19Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+                super(itemView);
+                this.images = images;
+                mImageView1 = itemView.findViewById(R.id.ribbon1);
+                this.images.add(mImageView1);
+                mImageView2 = itemView.findViewById(R.id.ribbon2);
+                this.images.add(mImageView2);
+                mImageView3 = itemView.findViewById(R.id.ribbon3);
+                this.images.add(mImageView3);
+                mImageView4 = itemView.findViewById(R.id.ribbon4);
+                this.images.add(mImageView4);
+                mImageView5 = itemView.findViewById(R.id.ribbon5);
+                this.images.add(mImageView5);
+                mImageView6 = itemView.findViewById(R.id.ribbon6);
+                this.images.add(mImageView6);
+                mImageView7 = itemView.findViewById(R.id.ribbon7);
+                this.images.add(mImageView7);
+                mImageView8 = itemView.findViewById(R.id.ribbon8);
+                this.images.add(mImageView8);
+                mImageView9 = itemView.findViewById(R.id.ribbon9);
+                this.images.add(mImageView9);
+                mImageView10 = itemView.findViewById(R.id.ribbon10);
+                this.images.add(mImageView10);
+                mImageView11 = itemView.findViewById(R.id.ribbon11);
+                this.images.add(mImageView11);
+                mImageView12 = itemView.findViewById(R.id.ribbon12);
+                this.images.add(mImageView12);
+                mImageView13 = itemView.findViewById(R.id.ribbon13);
+                this.images.add(mImageView13);
+                mImageView14 = itemView.findViewById(R.id.ribbon14);
+                this.images.add(mImageView14);
+                mImageView15 = itemView.findViewById(R.id.ribbon15);
+                this.images.add(mImageView15);
+                mImageView16 = itemView.findViewById(R.id.ribbon16);
+                this.images.add(mImageView16);
+                mImageView17 = itemView.findViewById(R.id.ribbon17);
+                this.images.add(mImageView17);
+                mImageView18 = itemView.findViewById(R.id.ribbon18);
+                this.images.add(mImageView18);
+                mImageView19 = itemView.findViewById(R.id.ribbon19);
+                this.images.add(mImageView19);
+
+            }
+        }
+
+        public static class Ribbon20Holder extends RecyclerView.ViewHolder {
+            private final ArraySet<ImageView> images;
+            public ImageView mImageView1;
+            public ImageView mImageView2;
+            public ImageView mImageView3;
+            public ImageView mImageView4;
+            public ImageView mImageView5;
+            public ImageView mImageView6;
+            public ImageView mImageView7;
+            public ImageView mImageView8;
+            public ImageView mImageView9;
+            public ImageView mImageView10;
+            public ImageView mImageView11;
+            public ImageView mImageView12;
+            public ImageView mImageView13;
+            public ImageView mImageView14;
+            public ImageView mImageView15;
+            public ImageView mImageView16;
+            public ImageView mImageView17;
+            public ImageView mImageView18;
+            public ImageView mImageView19;
+            public ImageView mImageView20;
+
+
+            @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
+            public Ribbon20Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+                super(itemView);
+                this.images = images;
+                mImageView1 = itemView.findViewById(R.id.ribbon1);
+                this.images.add(mImageView1);
+                mImageView2 = itemView.findViewById(R.id.ribbon2);
+                this.images.add(mImageView2);
+                mImageView3 = itemView.findViewById(R.id.ribbon3);
+                this.images.add(mImageView3);
+                mImageView4 = itemView.findViewById(R.id.ribbon4);
+                this.images.add(mImageView4);
+                mImageView5 = itemView.findViewById(R.id.ribbon5);
+                this.images.add(mImageView5);
+                mImageView6 = itemView.findViewById(R.id.ribbon6);
+                this.images.add(mImageView6);
+                mImageView7 = itemView.findViewById(R.id.ribbon7);
+                this.images.add(mImageView7);
+                mImageView8 = itemView.findViewById(R.id.ribbon8);
+                this.images.add(mImageView8);
+                mImageView9 = itemView.findViewById(R.id.ribbon9);
+                this.images.add(mImageView9);
+                mImageView10 = itemView.findViewById(R.id.ribbon10);
+                this.images.add(mImageView10);
+                mImageView11 = itemView.findViewById(R.id.ribbon11);
+                this.images.add(mImageView11);
+                mImageView12 = itemView.findViewById(R.id.ribbon12);
+                this.images.add(mImageView12);
+                mImageView13 = itemView.findViewById(R.id.ribbon13);
+                this.images.add(mImageView13);
+                mImageView14 = itemView.findViewById(R.id.ribbon14);
+                this.images.add(mImageView14);
+                mImageView15 = itemView.findViewById(R.id.ribbon15);
+                this.images.add(mImageView15);
+                mImageView16 = itemView.findViewById(R.id.ribbon16);
+                this.images.add(mImageView16);
+                mImageView17 = itemView.findViewById(R.id.ribbon17);
+                this.images.add(mImageView17);
+                mImageView18 = itemView.findViewById(R.id.ribbon18);
+                this.images.add(mImageView18);
+                mImageView19 = itemView.findViewById(R.id.ribbon19);
+                this.images.add(mImageView19);
+                mImageView20 = itemView.findViewById(R.id.ribbon20);
+                this.images.add(mImageView20);
+
+            }
+        }
+
+        public static class Ribbon21Holder extends RecyclerView.ViewHolder {
+            private final ArraySet<ImageView> images;
+            public ImageView mImageView1;
+            public ImageView mImageView2;
+            public ImageView mImageView3;
+            public ImageView mImageView4;
+            public ImageView mImageView5;
+            public ImageView mImageView6;
+            public ImageView mImageView7;
+            public ImageView mImageView8;
+            public ImageView mImageView9;
+            public ImageView mImageView10;
+            public ImageView mImageView11;
+            public ImageView mImageView12;
+            public ImageView mImageView13;
+            public ImageView mImageView14;
+            public ImageView mImageView15;
+            public ImageView mImageView16;
+            public ImageView mImageView17;
+            public ImageView mImageView18;
+            public ImageView mImageView19;
+            public ImageView mImageView20;
+            public ImageView mImageView21;
+
+
+            @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
+            public Ribbon21Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+                super(itemView);
+                this.images = images;
+                mImageView1 = itemView.findViewById(R.id.ribbon1);
+                this.images.add(mImageView1);
+                mImageView2 = itemView.findViewById(R.id.ribbon2);
+                this.images.add(mImageView2);
+                mImageView3 = itemView.findViewById(R.id.ribbon3);
+                this.images.add(mImageView3);
+                mImageView4 = itemView.findViewById(R.id.ribbon4);
+                this.images.add(mImageView4);
+                mImageView5 = itemView.findViewById(R.id.ribbon5);
+                this.images.add(mImageView5);
+                mImageView6 = itemView.findViewById(R.id.ribbon6);
+                this.images.add(mImageView6);
+                mImageView7 = itemView.findViewById(R.id.ribbon7);
+                this.images.add(mImageView7);
+                mImageView8 = itemView.findViewById(R.id.ribbon8);
+                this.images.add(mImageView8);
+                mImageView9 = itemView.findViewById(R.id.ribbon9);
+                this.images.add(mImageView9);
+                mImageView10 = itemView.findViewById(R.id.ribbon10);
+                this.images.add(mImageView10);
+                mImageView11 = itemView.findViewById(R.id.ribbon11);
+                this.images.add(mImageView11);
+                mImageView12 = itemView.findViewById(R.id.ribbon12);
+                this.images.add(mImageView12);
+                mImageView13 = itemView.findViewById(R.id.ribbon13);
+                this.images.add(mImageView13);
+                mImageView14 = itemView.findViewById(R.id.ribbon14);
+                this.images.add(mImageView14);
+                mImageView15 = itemView.findViewById(R.id.ribbon15);
+                this.images.add(mImageView15);
+                mImageView16 = itemView.findViewById(R.id.ribbon16);
+                this.images.add(mImageView16);
+                mImageView17 = itemView.findViewById(R.id.ribbon17);
+                this.images.add(mImageView17);
+                mImageView18 = itemView.findViewById(R.id.ribbon18);
+                this.images.add(mImageView18);
+                mImageView19 = itemView.findViewById(R.id.ribbon19);
+                this.images.add(mImageView19);
+                mImageView20 = itemView.findViewById(R.id.ribbon20);
+                this.images.add(mImageView20);
+                mImageView21 = itemView.findViewById(R.id.ribbon21);
+                this.images.add(mImageView21);
+
+            }
+        }
+
+        public static class Ribbon22Holder extends RecyclerView.ViewHolder {
+            private final ArraySet<ImageView> images;
+            public ImageView mImageView1;
+            public ImageView mImageView2;
+            public ImageView mImageView3;
+            public ImageView mImageView4;
+            public ImageView mImageView5;
+            public ImageView mImageView6;
+            public ImageView mImageView7;
+            public ImageView mImageView8;
+            public ImageView mImageView9;
+            public ImageView mImageView10;
+            public ImageView mImageView11;
+            public ImageView mImageView12;
+            public ImageView mImageView13;
+            public ImageView mImageView14;
+            public ImageView mImageView15;
+            public ImageView mImageView16;
+            public ImageView mImageView17;
+            public ImageView mImageView18;
+            public ImageView mImageView19;
+            public ImageView mImageView20;
+            public ImageView mImageView21;
+            public ImageView mImageView22;
+
+
+            @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
+            public Ribbon22Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+                super(itemView);
+                this.images = images;
+                mImageView1 = itemView.findViewById(R.id.ribbon1);
+                this.images.add(mImageView1);
+                mImageView2 = itemView.findViewById(R.id.ribbon2);
+                this.images.add(mImageView2);
+                mImageView3 = itemView.findViewById(R.id.ribbon3);
+                this.images.add(mImageView3);
+                mImageView4 = itemView.findViewById(R.id.ribbon4);
+                this.images.add(mImageView4);
+                mImageView5 = itemView.findViewById(R.id.ribbon5);
+                this.images.add(mImageView5);
+                mImageView6 = itemView.findViewById(R.id.ribbon6);
+                this.images.add(mImageView6);
+                mImageView7 = itemView.findViewById(R.id.ribbon7);
+                this.images.add(mImageView7);
+                mImageView8 = itemView.findViewById(R.id.ribbon8);
+                this.images.add(mImageView8);
+                mImageView9 = itemView.findViewById(R.id.ribbon9);
+                this.images.add(mImageView9);
+                mImageView10 = itemView.findViewById(R.id.ribbon10);
+                this.images.add(mImageView10);
+                mImageView11 = itemView.findViewById(R.id.ribbon11);
+                this.images.add(mImageView11);
+                mImageView12 = itemView.findViewById(R.id.ribbon12);
+                this.images.add(mImageView12);
+                mImageView13 = itemView.findViewById(R.id.ribbon13);
+                this.images.add(mImageView13);
+                mImageView14 = itemView.findViewById(R.id.ribbon14);
+                this.images.add(mImageView14);
+                mImageView15 = itemView.findViewById(R.id.ribbon15);
+                this.images.add(mImageView15);
+                mImageView16 = itemView.findViewById(R.id.ribbon16);
+                this.images.add(mImageView16);
+                mImageView17 = itemView.findViewById(R.id.ribbon17);
+                this.images.add(mImageView17);
+                mImageView18 = itemView.findViewById(R.id.ribbon18);
+                this.images.add(mImageView18);
+                mImageView19 = itemView.findViewById(R.id.ribbon19);
+                this.images.add(mImageView19);
+                mImageView20 = itemView.findViewById(R.id.ribbon20);
+                this.images.add(mImageView20);
+                mImageView21 = itemView.findViewById(R.id.ribbon21);
+                this.images.add(mImageView21);
+                mImageView22 = itemView.findViewById(R.id.ribbon22);
+                this.images.add(mImageView22);
+
+            }
+        }
+
+        public static class Ribbon23Holder extends RecyclerView.ViewHolder {
+            private final ArraySet<ImageView> images;
+            public ImageView mImageView1;
+            public ImageView mImageView2;
+            public ImageView mImageView3;
+            public ImageView mImageView4;
+            public ImageView mImageView5;
+            public ImageView mImageView6;
+            public ImageView mImageView7;
+            public ImageView mImageView8;
+            public ImageView mImageView9;
+            public ImageView mImageView10;
+            public ImageView mImageView11;
+            public ImageView mImageView12;
+            public ImageView mImageView13;
+            public ImageView mImageView14;
+            public ImageView mImageView15;
+            public ImageView mImageView16;
+            public ImageView mImageView17;
+            public ImageView mImageView18;
+            public ImageView mImageView19;
+            public ImageView mImageView20;
+            public ImageView mImageView21;
+            public ImageView mImageView22;
+            public ImageView mImageView23;
+
+
+            @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
+            public Ribbon23Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+                super(itemView);
+                this.images = images;
+                mImageView1 = itemView.findViewById(R.id.ribbon1);
+                this.images.add(mImageView1);
+                mImageView2 = itemView.findViewById(R.id.ribbon2);
+                this.images.add(mImageView2);
+                mImageView3 = itemView.findViewById(R.id.ribbon3);
+                this.images.add(mImageView3);
+                mImageView4 = itemView.findViewById(R.id.ribbon4);
+                this.images.add(mImageView4);
+                mImageView5 = itemView.findViewById(R.id.ribbon5);
+                this.images.add(mImageView5);
+                mImageView6 = itemView.findViewById(R.id.ribbon6);
+                this.images.add(mImageView6);
+                mImageView7 = itemView.findViewById(R.id.ribbon7);
+                this.images.add(mImageView7);
+                mImageView8 = itemView.findViewById(R.id.ribbon8);
+                this.images.add(mImageView8);
+                mImageView9 = itemView.findViewById(R.id.ribbon9);
+                this.images.add(mImageView9);
+                mImageView10 = itemView.findViewById(R.id.ribbon10);
+                this.images.add(mImageView10);
+                mImageView11 = itemView.findViewById(R.id.ribbon11);
+                this.images.add(mImageView11);
+                mImageView12 = itemView.findViewById(R.id.ribbon12);
+                this.images.add(mImageView12);
+                mImageView13 = itemView.findViewById(R.id.ribbon13);
+                this.images.add(mImageView13);
+                mImageView14 = itemView.findViewById(R.id.ribbon14);
+                this.images.add(mImageView14);
+                mImageView15 = itemView.findViewById(R.id.ribbon15);
+                this.images.add(mImageView15);
+                mImageView16 = itemView.findViewById(R.id.ribbon16);
+                this.images.add(mImageView16);
+                mImageView17 = itemView.findViewById(R.id.ribbon17);
+                this.images.add(mImageView17);
+                mImageView18 = itemView.findViewById(R.id.ribbon18);
+                this.images.add(mImageView18);
+                mImageView19 = itemView.findViewById(R.id.ribbon19);
+                this.images.add(mImageView19);
+                mImageView20 = itemView.findViewById(R.id.ribbon20);
+                this.images.add(mImageView20);
+                mImageView21 = itemView.findViewById(R.id.ribbon21);
+                this.images.add(mImageView21);
+                mImageView22 = itemView.findViewById(R.id.ribbon22);
+                this.images.add(mImageView22);
+                mImageView23 = itemView.findViewById(R.id.ribbon23);
+                this.images.add(mImageView23);
+
+            }
+        }
+
+        public static class Ribbon24Holder extends RecyclerView.ViewHolder {
+            private final ArraySet<ImageView> images;
+            public ImageView mImageView1;
+            public ImageView mImageView2;
+            public ImageView mImageView3;
+            public ImageView mImageView4;
+            public ImageView mImageView5;
+            public ImageView mImageView6;
+            public ImageView mImageView7;
+            public ImageView mImageView8;
+            public ImageView mImageView9;
+            public ImageView mImageView10;
+            public ImageView mImageView11;
+            public ImageView mImageView12;
+            public ImageView mImageView13;
+            public ImageView mImageView14;
+            public ImageView mImageView15;
+            public ImageView mImageView16;
+            public ImageView mImageView17;
+            public ImageView mImageView18;
+            public ImageView mImageView19;
+            public ImageView mImageView20;
+            public ImageView mImageView21;
+            public ImageView mImageView22;
+            public ImageView mImageView23;
+            public ImageView mImageView24;
+
+
+            @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
+            public Ribbon24Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+                super(itemView);
+                this.images = images;
+                mImageView1 = itemView.findViewById(R.id.ribbon1);
+                this.images.add(mImageView1);
+                mImageView2 = itemView.findViewById(R.id.ribbon2);
+                this.images.add(mImageView2);
+                mImageView3 = itemView.findViewById(R.id.ribbon3);
+                this.images.add(mImageView3);
+                mImageView4 = itemView.findViewById(R.id.ribbon4);
+                this.images.add(mImageView4);
+                mImageView5 = itemView.findViewById(R.id.ribbon5);
+                this.images.add(mImageView5);
+                mImageView6 = itemView.findViewById(R.id.ribbon6);
+                this.images.add(mImageView6);
+                mImageView7 = itemView.findViewById(R.id.ribbon7);
+                this.images.add(mImageView7);
+                mImageView8 = itemView.findViewById(R.id.ribbon8);
+                this.images.add(mImageView8);
+                mImageView9 = itemView.findViewById(R.id.ribbon9);
+                this.images.add(mImageView9);
+                mImageView10 = itemView.findViewById(R.id.ribbon10);
+                this.images.add(mImageView10);
+                mImageView11 = itemView.findViewById(R.id.ribbon11);
+                this.images.add(mImageView11);
+                mImageView12 = itemView.findViewById(R.id.ribbon12);
+                this.images.add(mImageView12);
+                mImageView13 = itemView.findViewById(R.id.ribbon13);
+                this.images.add(mImageView13);
+                mImageView14 = itemView.findViewById(R.id.ribbon14);
+                this.images.add(mImageView14);
+                mImageView15 = itemView.findViewById(R.id.ribbon15);
+                this.images.add(mImageView15);
+                mImageView16 = itemView.findViewById(R.id.ribbon16);
+                this.images.add(mImageView16);
+                mImageView17 = itemView.findViewById(R.id.ribbon17);
+                this.images.add(mImageView17);
+                mImageView18 = itemView.findViewById(R.id.ribbon18);
+                this.images.add(mImageView18);
+                mImageView19 = itemView.findViewById(R.id.ribbon19);
+                this.images.add(mImageView19);
+                mImageView20 = itemView.findViewById(R.id.ribbon20);
+                this.images.add(mImageView20);
+                mImageView21 = itemView.findViewById(R.id.ribbon21);
+                this.images.add(mImageView21);
+                mImageView22 = itemView.findViewById(R.id.ribbon22);
+                this.images.add(mImageView22);
+                mImageView23 = itemView.findViewById(R.id.ribbon23);
+                this.images.add(mImageView23);
+                mImageView24 = itemView.findViewById(R.id.ribbon24);
+                this.images.add(mImageView24);
+
+            }
+        }
+
+        public static class Ribbon25Holder extends RecyclerView.ViewHolder {
+            private final ArraySet<ImageView> images;
+            public ImageView mImageView1;
+            public ImageView mImageView2;
+            public ImageView mImageView3;
+            public ImageView mImageView4;
+            public ImageView mImageView5;
+            public ImageView mImageView6;
+            public ImageView mImageView7;
+            public ImageView mImageView8;
+            public ImageView mImageView9;
+            public ImageView mImageView10;
+            public ImageView mImageView11;
+            public ImageView mImageView12;
+            public ImageView mImageView13;
+            public ImageView mImageView14;
+            public ImageView mImageView15;
+            public ImageView mImageView16;
+            public ImageView mImageView17;
+            public ImageView mImageView18;
+            public ImageView mImageView19;
+            public ImageView mImageView20;
+            public ImageView mImageView21;
+            public ImageView mImageView22;
+            public ImageView mImageView23;
+            public ImageView mImageView24;
+            public ImageView mImageView25;
+
+
+            @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
+            public Ribbon25Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+                super(itemView);
+                this.images = images;
+                mImageView1 = itemView.findViewById(R.id.ribbon1);
+                this.images.add(mImageView1);
+                mImageView2 = itemView.findViewById(R.id.ribbon2);
+                this.images.add(mImageView2);
+                mImageView3 = itemView.findViewById(R.id.ribbon3);
+                this.images.add(mImageView3);
+                mImageView4 = itemView.findViewById(R.id.ribbon4);
+                this.images.add(mImageView4);
+                mImageView5 = itemView.findViewById(R.id.ribbon5);
+                this.images.add(mImageView5);
+                mImageView6 = itemView.findViewById(R.id.ribbon6);
+                this.images.add(mImageView6);
+                mImageView7 = itemView.findViewById(R.id.ribbon7);
+                this.images.add(mImageView7);
+                mImageView8 = itemView.findViewById(R.id.ribbon8);
+                this.images.add(mImageView8);
+                mImageView9 = itemView.findViewById(R.id.ribbon9);
+                this.images.add(mImageView9);
+                mImageView10 = itemView.findViewById(R.id.ribbon10);
+                this.images.add(mImageView10);
+                mImageView11 = itemView.findViewById(R.id.ribbon11);
+                this.images.add(mImageView11);
+                mImageView12 = itemView.findViewById(R.id.ribbon12);
+                this.images.add(mImageView12);
+                mImageView13 = itemView.findViewById(R.id.ribbon13);
+                this.images.add(mImageView13);
+                mImageView14 = itemView.findViewById(R.id.ribbon14);
+                this.images.add(mImageView14);
+                mImageView15 = itemView.findViewById(R.id.ribbon15);
+                this.images.add(mImageView15);
+                mImageView16 = itemView.findViewById(R.id.ribbon16);
+                this.images.add(mImageView16);
+                mImageView17 = itemView.findViewById(R.id.ribbon17);
+                this.images.add(mImageView17);
+                mImageView18 = itemView.findViewById(R.id.ribbon18);
+                this.images.add(mImageView18);
+                mImageView19 = itemView.findViewById(R.id.ribbon19);
+                this.images.add(mImageView19);
+                mImageView20 = itemView.findViewById(R.id.ribbon20);
+                this.images.add(mImageView20);
+                mImageView21 = itemView.findViewById(R.id.ribbon21);
+                this.images.add(mImageView21);
+                mImageView22 = itemView.findViewById(R.id.ribbon22);
+                this.images.add(mImageView22);
+                mImageView23 = itemView.findViewById(R.id.ribbon23);
+                this.images.add(mImageView23);
+                mImageView24 = itemView.findViewById(R.id.ribbon24);
+                this.images.add(mImageView24);
+                mImageView25 = itemView.findViewById(R.id.ribbon25);
+                this.images.add(mImageView25);
+
+            }
+        }
+
+        public static class Ribbon26Holder extends RecyclerView.ViewHolder {
+            private final ArraySet<ImageView> images;
+            public ImageView mImageView1;
+            public ImageView mImageView2;
+            public ImageView mImageView3;
+            public ImageView mImageView4;
+            public ImageView mImageView5;
+            public ImageView mImageView6;
+            public ImageView mImageView7;
+            public ImageView mImageView8;
+            public ImageView mImageView9;
+            public ImageView mImageView10;
+            public ImageView mImageView11;
+            public ImageView mImageView12;
+            public ImageView mImageView13;
+            public ImageView mImageView14;
+            public ImageView mImageView15;
+            public ImageView mImageView16;
+            public ImageView mImageView17;
+            public ImageView mImageView18;
+            public ImageView mImageView19;
+            public ImageView mImageView20;
+            public ImageView mImageView21;
+            public ImageView mImageView22;
+            public ImageView mImageView23;
+            public ImageView mImageView24;
+            public ImageView mImageView25;
+            public ImageView mImageView26;
+
+
+            @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
+            public Ribbon26Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+                super(itemView);
+                this.images = images;
+                mImageView1 = itemView.findViewById(R.id.ribbon1);
+                this.images.add(mImageView1);
+                mImageView2 = itemView.findViewById(R.id.ribbon2);
+                this.images.add(mImageView2);
+                mImageView3 = itemView.findViewById(R.id.ribbon3);
+                this.images.add(mImageView3);
+                mImageView4 = itemView.findViewById(R.id.ribbon4);
+                this.images.add(mImageView4);
+                mImageView5 = itemView.findViewById(R.id.ribbon5);
+                this.images.add(mImageView5);
+                mImageView6 = itemView.findViewById(R.id.ribbon6);
+                this.images.add(mImageView6);
+                mImageView7 = itemView.findViewById(R.id.ribbon7);
+                this.images.add(mImageView7);
+                mImageView8 = itemView.findViewById(R.id.ribbon8);
+                this.images.add(mImageView8);
+                mImageView9 = itemView.findViewById(R.id.ribbon9);
+                this.images.add(mImageView9);
+                mImageView10 = itemView.findViewById(R.id.ribbon10);
+                this.images.add(mImageView10);
+                mImageView11 = itemView.findViewById(R.id.ribbon11);
+                this.images.add(mImageView11);
+                mImageView12 = itemView.findViewById(R.id.ribbon12);
+                this.images.add(mImageView12);
+                mImageView13 = itemView.findViewById(R.id.ribbon13);
+                this.images.add(mImageView13);
+                mImageView14 = itemView.findViewById(R.id.ribbon14);
+                this.images.add(mImageView14);
+                mImageView15 = itemView.findViewById(R.id.ribbon15);
+                this.images.add(mImageView15);
+                mImageView16 = itemView.findViewById(R.id.ribbon16);
+                this.images.add(mImageView16);
+                mImageView17 = itemView.findViewById(R.id.ribbon17);
+                this.images.add(mImageView17);
+                mImageView18 = itemView.findViewById(R.id.ribbon18);
+                this.images.add(mImageView18);
+                mImageView19 = itemView.findViewById(R.id.ribbon19);
+                this.images.add(mImageView19);
+                mImageView20 = itemView.findViewById(R.id.ribbon20);
+                this.images.add(mImageView20);
+                mImageView21 = itemView.findViewById(R.id.ribbon21);
+                this.images.add(mImageView21);
+                mImageView22 = itemView.findViewById(R.id.ribbon22);
+                this.images.add(mImageView22);
+                mImageView23 = itemView.findViewById(R.id.ribbon23);
+                this.images.add(mImageView23);
+                mImageView24 = itemView.findViewById(R.id.ribbon24);
+                this.images.add(mImageView24);
+                mImageView25 = itemView.findViewById(R.id.ribbon25);
+                this.images.add(mImageView25);
+                mImageView26 = itemView.findViewById(R.id.ribbon26);
+                this.images.add(mImageView26);
+
+            }
+        }
+
+        public static class Ribbon27Holder extends RecyclerView.ViewHolder {
+            private final ArraySet<ImageView> images;
+            public ImageView mImageView1;
+            public ImageView mImageView2;
+            public ImageView mImageView3;
+            public ImageView mImageView4;
+            public ImageView mImageView5;
+            public ImageView mImageView6;
+            public ImageView mImageView7;
+            public ImageView mImageView8;
+            public ImageView mImageView9;
+            public ImageView mImageView10;
+            public ImageView mImageView11;
+            public ImageView mImageView12;
+            public ImageView mImageView13;
+            public ImageView mImageView14;
+            public ImageView mImageView15;
+            public ImageView mImageView16;
+            public ImageView mImageView17;
+            public ImageView mImageView18;
+            public ImageView mImageView19;
+            public ImageView mImageView20;
+            public ImageView mImageView21;
+            public ImageView mImageView22;
+            public ImageView mImageView23;
+            public ImageView mImageView24;
+            public ImageView mImageView25;
+            public ImageView mImageView26;
+            public ImageView mImageView27;
+
+
+            @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
+            public Ribbon27Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+                super(itemView);
+                this.images = images;
+                mImageView1 = itemView.findViewById(R.id.ribbon1);
+                this.images.add(mImageView1);
+                mImageView2 = itemView.findViewById(R.id.ribbon2);
+                this.images.add(mImageView2);
+                mImageView3 = itemView.findViewById(R.id.ribbon3);
+                this.images.add(mImageView3);
+                mImageView4 = itemView.findViewById(R.id.ribbon4);
+                this.images.add(mImageView4);
+                mImageView5 = itemView.findViewById(R.id.ribbon5);
+                this.images.add(mImageView5);
+                mImageView6 = itemView.findViewById(R.id.ribbon6);
+                this.images.add(mImageView6);
+                mImageView7 = itemView.findViewById(R.id.ribbon7);
+                this.images.add(mImageView7);
+                mImageView8 = itemView.findViewById(R.id.ribbon8);
+                this.images.add(mImageView8);
+                mImageView9 = itemView.findViewById(R.id.ribbon9);
+                this.images.add(mImageView9);
+                mImageView10 = itemView.findViewById(R.id.ribbon10);
+                this.images.add(mImageView10);
+                mImageView11 = itemView.findViewById(R.id.ribbon11);
+                this.images.add(mImageView11);
+                mImageView12 = itemView.findViewById(R.id.ribbon12);
+                this.images.add(mImageView12);
+                mImageView13 = itemView.findViewById(R.id.ribbon13);
+                this.images.add(mImageView13);
+                mImageView14 = itemView.findViewById(R.id.ribbon14);
+                this.images.add(mImageView14);
+                mImageView15 = itemView.findViewById(R.id.ribbon15);
+                this.images.add(mImageView15);
+                mImageView16 = itemView.findViewById(R.id.ribbon16);
+                this.images.add(mImageView16);
+                mImageView17 = itemView.findViewById(R.id.ribbon17);
+                this.images.add(mImageView17);
+                mImageView18 = itemView.findViewById(R.id.ribbon18);
+                this.images.add(mImageView18);
+                mImageView19 = itemView.findViewById(R.id.ribbon19);
+                this.images.add(mImageView19);
+                mImageView20 = itemView.findViewById(R.id.ribbon20);
+                this.images.add(mImageView20);
+                mImageView21 = itemView.findViewById(R.id.ribbon21);
+                this.images.add(mImageView21);
+                mImageView22 = itemView.findViewById(R.id.ribbon22);
+                this.images.add(mImageView22);
+                mImageView23 = itemView.findViewById(R.id.ribbon23);
+                this.images.add(mImageView23);
+                mImageView24 = itemView.findViewById(R.id.ribbon24);
+                this.images.add(mImageView24);
+                mImageView25 = itemView.findViewById(R.id.ribbon25);
+                this.images.add(mImageView25);
+                mImageView26 = itemView.findViewById(R.id.ribbon26);
+                this.images.add(mImageView26);
+                mImageView27 = itemView.findViewById(R.id.ribbon27);
+                this.images.add(mImageView27);
+
+            }
+        }
+
+        public static class Ribbon28Holder extends RecyclerView.ViewHolder {
+            private final ArraySet<ImageView> images;
+            public ImageView mImageView1;
+            public ImageView mImageView2;
+            public ImageView mImageView3;
+            public ImageView mImageView4;
+            public ImageView mImageView5;
+            public ImageView mImageView6;
+            public ImageView mImageView7;
+            public ImageView mImageView8;
+            public ImageView mImageView9;
+            public ImageView mImageView10;
+            public ImageView mImageView11;
+            public ImageView mImageView12;
+            public ImageView mImageView13;
+            public ImageView mImageView14;
+            public ImageView mImageView15;
+            public ImageView mImageView16;
+            public ImageView mImageView17;
+            public ImageView mImageView18;
+            public ImageView mImageView19;
+            public ImageView mImageView20;
+            public ImageView mImageView21;
+            public ImageView mImageView22;
+            public ImageView mImageView23;
+            public ImageView mImageView24;
+            public ImageView mImageView25;
+            public ImageView mImageView26;
+            public ImageView mImageView27;
+            public ImageView mImageView28;
+
+
+            @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
+            public Ribbon28Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+                super(itemView);
+                this.images = images;
+                mImageView1 = itemView.findViewById(R.id.ribbon1);
+                this.images.add(mImageView1);
+                mImageView2 = itemView.findViewById(R.id.ribbon2);
+                this.images.add(mImageView2);
+                mImageView3 = itemView.findViewById(R.id.ribbon3);
+                this.images.add(mImageView3);
+                mImageView4 = itemView.findViewById(R.id.ribbon4);
+                this.images.add(mImageView4);
+                mImageView5 = itemView.findViewById(R.id.ribbon5);
+                this.images.add(mImageView5);
+                mImageView6 = itemView.findViewById(R.id.ribbon6);
+                this.images.add(mImageView6);
+                mImageView7 = itemView.findViewById(R.id.ribbon7);
+                this.images.add(mImageView7);
+                mImageView8 = itemView.findViewById(R.id.ribbon8);
+                this.images.add(mImageView8);
+                mImageView9 = itemView.findViewById(R.id.ribbon9);
+                this.images.add(mImageView9);
+                mImageView10 = itemView.findViewById(R.id.ribbon10);
+                this.images.add(mImageView10);
+                mImageView11 = itemView.findViewById(R.id.ribbon11);
+                this.images.add(mImageView11);
+                mImageView12 = itemView.findViewById(R.id.ribbon12);
+                this.images.add(mImageView12);
+                mImageView13 = itemView.findViewById(R.id.ribbon13);
+                this.images.add(mImageView13);
+                mImageView14 = itemView.findViewById(R.id.ribbon14);
+                this.images.add(mImageView14);
+                mImageView15 = itemView.findViewById(R.id.ribbon15);
+                this.images.add(mImageView15);
+                mImageView16 = itemView.findViewById(R.id.ribbon16);
+                this.images.add(mImageView16);
+                mImageView17 = itemView.findViewById(R.id.ribbon17);
+                this.images.add(mImageView17);
+                mImageView18 = itemView.findViewById(R.id.ribbon18);
+                this.images.add(mImageView18);
+                mImageView19 = itemView.findViewById(R.id.ribbon19);
+                this.images.add(mImageView19);
+                mImageView20 = itemView.findViewById(R.id.ribbon20);
+                this.images.add(mImageView20);
+                mImageView21 = itemView.findViewById(R.id.ribbon21);
+                this.images.add(mImageView21);
+                mImageView22 = itemView.findViewById(R.id.ribbon22);
+                this.images.add(mImageView22);
+                mImageView23 = itemView.findViewById(R.id.ribbon23);
+                this.images.add(mImageView23);
+                mImageView24 = itemView.findViewById(R.id.ribbon24);
+                this.images.add(mImageView24);
+                mImageView25 = itemView.findViewById(R.id.ribbon25);
+                this.images.add(mImageView25);
+                mImageView26 = itemView.findViewById(R.id.ribbon26);
+                this.images.add(mImageView26);
+                mImageView27 = itemView.findViewById(R.id.ribbon27);
+                this.images.add(mImageView27);
+                mImageView28 = itemView.findViewById(R.id.ribbon28);
+                this.images.add(mImageView28);
+
+            }
+        }
+
+        public static class Ribbon29Holder extends RecyclerView.ViewHolder {
+            private final ArraySet<ImageView> images;
+            public ImageView mImageView1;
+            public ImageView mImageView2;
+            public ImageView mImageView3;
+            public ImageView mImageView4;
+            public ImageView mImageView5;
+            public ImageView mImageView6;
+            public ImageView mImageView7;
+            public ImageView mImageView8;
+            public ImageView mImageView9;
+            public ImageView mImageView10;
+            public ImageView mImageView11;
+            public ImageView mImageView12;
+            public ImageView mImageView13;
+            public ImageView mImageView14;
+            public ImageView mImageView15;
+            public ImageView mImageView16;
+            public ImageView mImageView17;
+            public ImageView mImageView18;
+            public ImageView mImageView19;
+            public ImageView mImageView20;
+            public ImageView mImageView21;
+            public ImageView mImageView22;
+            public ImageView mImageView23;
+            public ImageView mImageView24;
+            public ImageView mImageView25;
+            public ImageView mImageView26;
+            public ImageView mImageView27;
+            public ImageView mImageView28;
+            public ImageView mImageView29;
+
+
+            @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
+            public Ribbon29Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+                super(itemView);
+                this.images = images;
+                mImageView1 = itemView.findViewById(R.id.ribbon1);
+                this.images.add(mImageView1);
+                mImageView2 = itemView.findViewById(R.id.ribbon2);
+                this.images.add(mImageView2);
+                mImageView3 = itemView.findViewById(R.id.ribbon3);
+                this.images.add(mImageView3);
+                mImageView4 = itemView.findViewById(R.id.ribbon4);
+                this.images.add(mImageView4);
+                mImageView5 = itemView.findViewById(R.id.ribbon5);
+                this.images.add(mImageView5);
+                mImageView6 = itemView.findViewById(R.id.ribbon6);
+                this.images.add(mImageView6);
+                mImageView7 = itemView.findViewById(R.id.ribbon7);
+                this.images.add(mImageView7);
+                mImageView8 = itemView.findViewById(R.id.ribbon8);
+                this.images.add(mImageView8);
+                mImageView9 = itemView.findViewById(R.id.ribbon9);
+                this.images.add(mImageView9);
+                mImageView10 = itemView.findViewById(R.id.ribbon10);
+                this.images.add(mImageView10);
+                mImageView11 = itemView.findViewById(R.id.ribbon11);
+                this.images.add(mImageView11);
+                mImageView12 = itemView.findViewById(R.id.ribbon12);
+                this.images.add(mImageView12);
+                mImageView13 = itemView.findViewById(R.id.ribbon13);
+                this.images.add(mImageView13);
+                mImageView14 = itemView.findViewById(R.id.ribbon14);
+                this.images.add(mImageView14);
+                mImageView15 = itemView.findViewById(R.id.ribbon15);
+                this.images.add(mImageView15);
+                mImageView16 = itemView.findViewById(R.id.ribbon16);
+                this.images.add(mImageView16);
+                mImageView17 = itemView.findViewById(R.id.ribbon17);
+                this.images.add(mImageView17);
+                mImageView18 = itemView.findViewById(R.id.ribbon18);
+                this.images.add(mImageView18);
+                mImageView19 = itemView.findViewById(R.id.ribbon19);
+                this.images.add(mImageView19);
+                mImageView20 = itemView.findViewById(R.id.ribbon20);
+                this.images.add(mImageView20);
+                mImageView21 = itemView.findViewById(R.id.ribbon21);
+                this.images.add(mImageView21);
+                mImageView22 = itemView.findViewById(R.id.ribbon22);
+                this.images.add(mImageView22);
+                mImageView23 = itemView.findViewById(R.id.ribbon23);
+                this.images.add(mImageView23);
+                mImageView24 = itemView.findViewById(R.id.ribbon24);
+                this.images.add(mImageView24);
+                mImageView25 = itemView.findViewById(R.id.ribbon25);
+                this.images.add(mImageView25);
+                mImageView26 = itemView.findViewById(R.id.ribbon26);
+                this.images.add(mImageView26);
+                mImageView27 = itemView.findViewById(R.id.ribbon27);
+                this.images.add(mImageView27);
+                mImageView28 = itemView.findViewById(R.id.ribbon28);
+                this.images.add(mImageView28);
+                mImageView29 = itemView.findViewById(R.id.ribbon29);
+                this.images.add(mImageView29);
+
+            }
+        }
+
+        public static class Ribbon30Holder extends RecyclerView.ViewHolder {
+            private final ArraySet<ImageView> images;
+            public ImageView mImageView1;
+            public ImageView mImageView2;
+            public ImageView mImageView3;
+            public ImageView mImageView4;
+            public ImageView mImageView5;
+            public ImageView mImageView6;
+            public ImageView mImageView7;
+            public ImageView mImageView8;
+            public ImageView mImageView9;
+            public ImageView mImageView10;
+            public ImageView mImageView11;
+            public ImageView mImageView12;
+            public ImageView mImageView13;
+            public ImageView mImageView14;
+            public ImageView mImageView15;
+            public ImageView mImageView16;
+            public ImageView mImageView17;
+            public ImageView mImageView18;
+            public ImageView mImageView19;
+            public ImageView mImageView20;
+            public ImageView mImageView21;
+            public ImageView mImageView22;
+            public ImageView mImageView23;
+            public ImageView mImageView24;
+            public ImageView mImageView25;
+            public ImageView mImageView26;
+            public ImageView mImageView27;
+            public ImageView mImageView28;
+            public ImageView mImageView29;
+            public ImageView mImageView30;
+
+
+            @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
+            public Ribbon30Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+                super(itemView);
+                this.images = images;
+                mImageView1 = itemView.findViewById(R.id.ribbon1);
+                this.images.add(mImageView1);
+                mImageView2 = itemView.findViewById(R.id.ribbon2);
+                this.images.add(mImageView2);
+                mImageView3 = itemView.findViewById(R.id.ribbon3);
+                this.images.add(mImageView3);
+                mImageView4 = itemView.findViewById(R.id.ribbon4);
+                this.images.add(mImageView4);
+                mImageView5 = itemView.findViewById(R.id.ribbon5);
+                this.images.add(mImageView5);
+                mImageView6 = itemView.findViewById(R.id.ribbon6);
+                this.images.add(mImageView6);
+                mImageView7 = itemView.findViewById(R.id.ribbon7);
+                this.images.add(mImageView7);
+                mImageView8 = itemView.findViewById(R.id.ribbon8);
+                this.images.add(mImageView8);
+                mImageView9 = itemView.findViewById(R.id.ribbon9);
+                this.images.add(mImageView9);
+                mImageView10 = itemView.findViewById(R.id.ribbon10);
+                this.images.add(mImageView10);
+                mImageView11 = itemView.findViewById(R.id.ribbon11);
+                this.images.add(mImageView11);
+                mImageView12 = itemView.findViewById(R.id.ribbon12);
+                this.images.add(mImageView12);
+                mImageView13 = itemView.findViewById(R.id.ribbon13);
+                this.images.add(mImageView13);
+                mImageView14 = itemView.findViewById(R.id.ribbon14);
+                this.images.add(mImageView14);
+                mImageView15 = itemView.findViewById(R.id.ribbon15);
+                this.images.add(mImageView15);
+                mImageView16 = itemView.findViewById(R.id.ribbon16);
+                this.images.add(mImageView16);
+                mImageView17 = itemView.findViewById(R.id.ribbon17);
+                this.images.add(mImageView17);
+                mImageView18 = itemView.findViewById(R.id.ribbon18);
+                this.images.add(mImageView18);
+                mImageView19 = itemView.findViewById(R.id.ribbon19);
+                this.images.add(mImageView19);
+                mImageView20 = itemView.findViewById(R.id.ribbon20);
+                this.images.add(mImageView20);
+                mImageView21 = itemView.findViewById(R.id.ribbon21);
+                this.images.add(mImageView21);
+                mImageView22 = itemView.findViewById(R.id.ribbon22);
+                this.images.add(mImageView22);
+                mImageView23 = itemView.findViewById(R.id.ribbon23);
+                this.images.add(mImageView23);
+                mImageView24 = itemView.findViewById(R.id.ribbon24);
+                this.images.add(mImageView24);
+                mImageView25 = itemView.findViewById(R.id.ribbon25);
+                this.images.add(mImageView25);
+                mImageView26 = itemView.findViewById(R.id.ribbon26);
+                this.images.add(mImageView26);
+                mImageView27 = itemView.findViewById(R.id.ribbon27);
+                this.images.add(mImageView27);
+                mImageView28 = itemView.findViewById(R.id.ribbon28);
+                this.images.add(mImageView28);
+                mImageView29 = itemView.findViewById(R.id.ribbon29);
+                this.images.add(mImageView29);
+                mImageView30 = itemView.findViewById(R.id.ribbon30);
+                this.images.add(mImageView30);
+
+            }
+        }
+
+        public static class Ribbon31Holder extends RecyclerView.ViewHolder {
+            private final ArraySet<ImageView> images;
+            public ImageView mImageView1;
+            public ImageView mImageView2;
+            public ImageView mImageView3;
+            public ImageView mImageView4;
+            public ImageView mImageView5;
+            public ImageView mImageView6;
+            public ImageView mImageView7;
+            public ImageView mImageView8;
+            public ImageView mImageView9;
+            public ImageView mImageView10;
+            public ImageView mImageView11;
+            public ImageView mImageView12;
+            public ImageView mImageView13;
+            public ImageView mImageView14;
+            public ImageView mImageView15;
+            public ImageView mImageView16;
+            public ImageView mImageView17;
+            public ImageView mImageView18;
+            public ImageView mImageView19;
+            public ImageView mImageView20;
+            public ImageView mImageView21;
+            public ImageView mImageView22;
+            public ImageView mImageView23;
+            public ImageView mImageView24;
+            public ImageView mImageView25;
+            public ImageView mImageView26;
+            public ImageView mImageView27;
+            public ImageView mImageView28;
+            public ImageView mImageView29;
+            public ImageView mImageView30;
+            public ImageView mImageView31;
+
+
+            @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
+            public Ribbon31Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+                super(itemView);
+                this.images = images;
+                mImageView1 = itemView.findViewById(R.id.ribbon1);
+                this.images.add(mImageView1);
+                mImageView2 = itemView.findViewById(R.id.ribbon2);
+                this.images.add(mImageView2);
+                mImageView3 = itemView.findViewById(R.id.ribbon3);
+                this.images.add(mImageView3);
+                mImageView4 = itemView.findViewById(R.id.ribbon4);
+                this.images.add(mImageView4);
+                mImageView5 = itemView.findViewById(R.id.ribbon5);
+                this.images.add(mImageView5);
+                mImageView6 = itemView.findViewById(R.id.ribbon6);
+                this.images.add(mImageView6);
+                mImageView7 = itemView.findViewById(R.id.ribbon7);
+                this.images.add(mImageView7);
+                mImageView8 = itemView.findViewById(R.id.ribbon8);
+                this.images.add(mImageView8);
+                mImageView9 = itemView.findViewById(R.id.ribbon9);
+                this.images.add(mImageView9);
+                mImageView10 = itemView.findViewById(R.id.ribbon10);
+                this.images.add(mImageView10);
+                mImageView11 = itemView.findViewById(R.id.ribbon11);
+                this.images.add(mImageView11);
+                mImageView12 = itemView.findViewById(R.id.ribbon12);
+                this.images.add(mImageView12);
+                mImageView13 = itemView.findViewById(R.id.ribbon13);
+                this.images.add(mImageView13);
+                mImageView14 = itemView.findViewById(R.id.ribbon14);
+                this.images.add(mImageView14);
+                mImageView15 = itemView.findViewById(R.id.ribbon15);
+                this.images.add(mImageView15);
+                mImageView16 = itemView.findViewById(R.id.ribbon16);
+                this.images.add(mImageView16);
+                mImageView17 = itemView.findViewById(R.id.ribbon17);
+                this.images.add(mImageView17);
+                mImageView18 = itemView.findViewById(R.id.ribbon18);
+                this.images.add(mImageView18);
+                mImageView19 = itemView.findViewById(R.id.ribbon19);
+                this.images.add(mImageView19);
+                mImageView20 = itemView.findViewById(R.id.ribbon20);
+                this.images.add(mImageView20);
+                mImageView21 = itemView.findViewById(R.id.ribbon21);
+                this.images.add(mImageView21);
+                mImageView22 = itemView.findViewById(R.id.ribbon22);
+                this.images.add(mImageView22);
+                mImageView23 = itemView.findViewById(R.id.ribbon23);
+                this.images.add(mImageView23);
+                mImageView24 = itemView.findViewById(R.id.ribbon24);
+                this.images.add(mImageView24);
+                mImageView25 = itemView.findViewById(R.id.ribbon25);
+                this.images.add(mImageView25);
+                mImageView26 = itemView.findViewById(R.id.ribbon26);
+                this.images.add(mImageView26);
+                mImageView27 = itemView.findViewById(R.id.ribbon27);
+                this.images.add(mImageView27);
+                mImageView28 = itemView.findViewById(R.id.ribbon28);
+                this.images.add(mImageView28);
+                mImageView29 = itemView.findViewById(R.id.ribbon29);
+                this.images.add(mImageView29);
+                mImageView30 = itemView.findViewById(R.id.ribbon30);
+                this.images.add(mImageView30);
+                mImageView31 = itemView.findViewById(R.id.ribbon31);
+                this.images.add(mImageView31);
+
+            }
+        }
+
+        public static class Ribbon32Holder extends RecyclerView.ViewHolder {
+            private final ArraySet<ImageView> images;
+            public ImageView mImageView1;
+            public ImageView mImageView2;
+            public ImageView mImageView3;
+            public ImageView mImageView4;
+            public ImageView mImageView5;
+            public ImageView mImageView6;
+            public ImageView mImageView7;
+            public ImageView mImageView8;
+            public ImageView mImageView9;
+            public ImageView mImageView10;
+            public ImageView mImageView11;
+            public ImageView mImageView12;
+            public ImageView mImageView13;
+            public ImageView mImageView14;
+            public ImageView mImageView15;
+            public ImageView mImageView16;
+            public ImageView mImageView17;
+            public ImageView mImageView18;
+            public ImageView mImageView19;
+            public ImageView mImageView20;
+            public ImageView mImageView21;
+            public ImageView mImageView22;
+            public ImageView mImageView23;
+            public ImageView mImageView24;
+            public ImageView mImageView25;
+            public ImageView mImageView26;
+            public ImageView mImageView27;
+            public ImageView mImageView28;
+            public ImageView mImageView29;
+            public ImageView mImageView30;
+            public ImageView mImageView31;
+            public ImageView mImageView32;
+
+
+            @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
+            public Ribbon32Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+                super(itemView);
+                this.images = images;
+                mImageView1 = itemView.findViewById(R.id.ribbon1);
+                this.images.add(mImageView1);
+                mImageView2 = itemView.findViewById(R.id.ribbon2);
+                this.images.add(mImageView2);
+                mImageView3 = itemView.findViewById(R.id.ribbon3);
+                this.images.add(mImageView3);
+                mImageView4 = itemView.findViewById(R.id.ribbon4);
+                this.images.add(mImageView4);
+                mImageView5 = itemView.findViewById(R.id.ribbon5);
+                this.images.add(mImageView5);
+                mImageView6 = itemView.findViewById(R.id.ribbon6);
+                this.images.add(mImageView6);
+                mImageView7 = itemView.findViewById(R.id.ribbon7);
+                this.images.add(mImageView7);
+                mImageView8 = itemView.findViewById(R.id.ribbon8);
+                this.images.add(mImageView8);
+                mImageView9 = itemView.findViewById(R.id.ribbon9);
+                this.images.add(mImageView9);
+                mImageView10 = itemView.findViewById(R.id.ribbon10);
+                this.images.add(mImageView10);
+                mImageView11 = itemView.findViewById(R.id.ribbon11);
+                this.images.add(mImageView11);
+                mImageView12 = itemView.findViewById(R.id.ribbon12);
+                this.images.add(mImageView12);
+                mImageView13 = itemView.findViewById(R.id.ribbon13);
+                this.images.add(mImageView13);
+                mImageView14 = itemView.findViewById(R.id.ribbon14);
+                this.images.add(mImageView14);
+                mImageView15 = itemView.findViewById(R.id.ribbon15);
+                this.images.add(mImageView15);
+                mImageView16 = itemView.findViewById(R.id.ribbon16);
+                this.images.add(mImageView16);
+                mImageView17 = itemView.findViewById(R.id.ribbon17);
+                this.images.add(mImageView17);
+                mImageView18 = itemView.findViewById(R.id.ribbon18);
+                this.images.add(mImageView18);
+                mImageView19 = itemView.findViewById(R.id.ribbon19);
+                this.images.add(mImageView19);
+                mImageView20 = itemView.findViewById(R.id.ribbon20);
+                this.images.add(mImageView20);
+                mImageView21 = itemView.findViewById(R.id.ribbon21);
+                this.images.add(mImageView21);
+                mImageView22 = itemView.findViewById(R.id.ribbon22);
+                this.images.add(mImageView22);
+                mImageView23 = itemView.findViewById(R.id.ribbon23);
+                this.images.add(mImageView23);
+                mImageView24 = itemView.findViewById(R.id.ribbon24);
+                this.images.add(mImageView24);
+                mImageView25 = itemView.findViewById(R.id.ribbon25);
+                this.images.add(mImageView25);
+                mImageView26 = itemView.findViewById(R.id.ribbon26);
+                this.images.add(mImageView26);
+                mImageView27 = itemView.findViewById(R.id.ribbon27);
+                this.images.add(mImageView27);
+                mImageView28 = itemView.findViewById(R.id.ribbon28);
+                this.images.add(mImageView28);
+                mImageView29 = itemView.findViewById(R.id.ribbon29);
+                this.images.add(mImageView29);
+                mImageView30 = itemView.findViewById(R.id.ribbon30);
+                this.images.add(mImageView30);
+                mImageView31 = itemView.findViewById(R.id.ribbon31);
+                this.images.add(mImageView31);
+                mImageView32 = itemView.findViewById(R.id.ribbon32);
+                this.images.add(mImageView32);
+
+            }
+        }
+
+        public static class Ribbon33Holder extends RecyclerView.ViewHolder {
+            private final ArraySet<ImageView> images;
+            public ImageView mImageView1;
+            public ImageView mImageView2;
+            public ImageView mImageView3;
+            public ImageView mImageView4;
+            public ImageView mImageView5;
+            public ImageView mImageView6;
+            public ImageView mImageView7;
+            public ImageView mImageView8;
+            public ImageView mImageView9;
+            public ImageView mImageView10;
+            public ImageView mImageView11;
+            public ImageView mImageView12;
+            public ImageView mImageView13;
+            public ImageView mImageView14;
+            public ImageView mImageView15;
+            public ImageView mImageView16;
+            public ImageView mImageView17;
+            public ImageView mImageView18;
+            public ImageView mImageView19;
+            public ImageView mImageView20;
+            public ImageView mImageView21;
+            public ImageView mImageView22;
+            public ImageView mImageView23;
+            public ImageView mImageView24;
+            public ImageView mImageView25;
+            public ImageView mImageView26;
+            public ImageView mImageView27;
+            public ImageView mImageView28;
+            public ImageView mImageView29;
+            public ImageView mImageView30;
+            public ImageView mImageView31;
+            public ImageView mImageView32;
+            public ImageView mImageView33;
+
+
+            @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
+            public Ribbon33Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+                super(itemView);
+                this.images = images;
+                mImageView1 = itemView.findViewById(R.id.ribbon1);
+                this.images.add(mImageView1);
+                mImageView2 = itemView.findViewById(R.id.ribbon2);
+                this.images.add(mImageView2);
+                mImageView3 = itemView.findViewById(R.id.ribbon3);
+                this.images.add(mImageView3);
+                mImageView4 = itemView.findViewById(R.id.ribbon4);
+                this.images.add(mImageView4);
+                mImageView5 = itemView.findViewById(R.id.ribbon5);
+                this.images.add(mImageView5);
+                mImageView6 = itemView.findViewById(R.id.ribbon6);
+                this.images.add(mImageView6);
+                mImageView7 = itemView.findViewById(R.id.ribbon7);
+                this.images.add(mImageView7);
+                mImageView8 = itemView.findViewById(R.id.ribbon8);
+                this.images.add(mImageView8);
+                mImageView9 = itemView.findViewById(R.id.ribbon9);
+                this.images.add(mImageView9);
+                mImageView10 = itemView.findViewById(R.id.ribbon10);
+                this.images.add(mImageView10);
+                mImageView11 = itemView.findViewById(R.id.ribbon11);
+                this.images.add(mImageView11);
+                mImageView12 = itemView.findViewById(R.id.ribbon12);
+                this.images.add(mImageView12);
+                mImageView13 = itemView.findViewById(R.id.ribbon13);
+                this.images.add(mImageView13);
+                mImageView14 = itemView.findViewById(R.id.ribbon14);
+                this.images.add(mImageView14);
+                mImageView15 = itemView.findViewById(R.id.ribbon15);
+                this.images.add(mImageView15);
+                mImageView16 = itemView.findViewById(R.id.ribbon16);
+                this.images.add(mImageView16);
+                mImageView17 = itemView.findViewById(R.id.ribbon17);
+                this.images.add(mImageView17);
+                mImageView18 = itemView.findViewById(R.id.ribbon18);
+                this.images.add(mImageView18);
+                mImageView19 = itemView.findViewById(R.id.ribbon19);
+                this.images.add(mImageView19);
+                mImageView20 = itemView.findViewById(R.id.ribbon20);
+                this.images.add(mImageView20);
+                mImageView21 = itemView.findViewById(R.id.ribbon21);
+                this.images.add(mImageView21);
+                mImageView22 = itemView.findViewById(R.id.ribbon22);
+                this.images.add(mImageView22);
+                mImageView23 = itemView.findViewById(R.id.ribbon23);
+                this.images.add(mImageView23);
+                mImageView24 = itemView.findViewById(R.id.ribbon24);
+                this.images.add(mImageView24);
+                mImageView25 = itemView.findViewById(R.id.ribbon25);
+                this.images.add(mImageView25);
+                mImageView26 = itemView.findViewById(R.id.ribbon26);
+                this.images.add(mImageView26);
+                mImageView27 = itemView.findViewById(R.id.ribbon27);
+                this.images.add(mImageView27);
+                mImageView28 = itemView.findViewById(R.id.ribbon28);
+                this.images.add(mImageView28);
+                mImageView29 = itemView.findViewById(R.id.ribbon29);
+                this.images.add(mImageView29);
+                mImageView30 = itemView.findViewById(R.id.ribbon30);
+                this.images.add(mImageView30);
+                mImageView31 = itemView.findViewById(R.id.ribbon31);
+                this.images.add(mImageView31);
+                mImageView32 = itemView.findViewById(R.id.ribbon32);
+                this.images.add(mImageView32);
+                mImageView33 = itemView.findViewById(R.id.ribbon33);
+                this.images.add(mImageView33);
+
+            }
+        }
+
+        public static class Ribbon34Holder extends RecyclerView.ViewHolder {
+            private final ArraySet<ImageView> images;
+            public ImageView mImageView1;
+            public ImageView mImageView2;
+            public ImageView mImageView3;
+            public ImageView mImageView4;
+            public ImageView mImageView5;
+            public ImageView mImageView6;
+            public ImageView mImageView7;
+            public ImageView mImageView8;
+            public ImageView mImageView9;
+            public ImageView mImageView10;
+            public ImageView mImageView11;
+            public ImageView mImageView12;
+            public ImageView mImageView13;
+            public ImageView mImageView14;
+            public ImageView mImageView15;
+            public ImageView mImageView16;
+            public ImageView mImageView17;
+            public ImageView mImageView18;
+            public ImageView mImageView19;
+            public ImageView mImageView20;
+            public ImageView mImageView21;
+            public ImageView mImageView22;
+            public ImageView mImageView23;
+            public ImageView mImageView24;
+            public ImageView mImageView25;
+            public ImageView mImageView26;
+            public ImageView mImageView27;
+            public ImageView mImageView28;
+            public ImageView mImageView29;
+            public ImageView mImageView30;
+            public ImageView mImageView31;
+            public ImageView mImageView32;
+            public ImageView mImageView33;
+            public ImageView mImageView34;
+
+
+            @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
+            public Ribbon34Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+                super(itemView);
+                this.images = images;
+                mImageView1 = itemView.findViewById(R.id.ribbon1);
+                this.images.add(mImageView1);
+                mImageView2 = itemView.findViewById(R.id.ribbon2);
+                this.images.add(mImageView2);
+                mImageView3 = itemView.findViewById(R.id.ribbon3);
+                this.images.add(mImageView3);
+                mImageView4 = itemView.findViewById(R.id.ribbon4);
+                this.images.add(mImageView4);
+                mImageView5 = itemView.findViewById(R.id.ribbon5);
+                this.images.add(mImageView5);
+                mImageView6 = itemView.findViewById(R.id.ribbon6);
+                this.images.add(mImageView6);
+                mImageView7 = itemView.findViewById(R.id.ribbon7);
+                this.images.add(mImageView7);
+                mImageView8 = itemView.findViewById(R.id.ribbon8);
+                this.images.add(mImageView8);
+                mImageView9 = itemView.findViewById(R.id.ribbon9);
+                this.images.add(mImageView9);
+                mImageView10 = itemView.findViewById(R.id.ribbon10);
+                this.images.add(mImageView10);
+                mImageView11 = itemView.findViewById(R.id.ribbon11);
+                this.images.add(mImageView11);
+                mImageView12 = itemView.findViewById(R.id.ribbon12);
+                this.images.add(mImageView12);
+                mImageView13 = itemView.findViewById(R.id.ribbon13);
+                this.images.add(mImageView13);
+                mImageView14 = itemView.findViewById(R.id.ribbon14);
+                this.images.add(mImageView14);
+                mImageView15 = itemView.findViewById(R.id.ribbon15);
+                this.images.add(mImageView15);
+                mImageView16 = itemView.findViewById(R.id.ribbon16);
+                this.images.add(mImageView16);
+                mImageView17 = itemView.findViewById(R.id.ribbon17);
+                this.images.add(mImageView17);
+                mImageView18 = itemView.findViewById(R.id.ribbon18);
+                this.images.add(mImageView18);
+                mImageView19 = itemView.findViewById(R.id.ribbon19);
+                this.images.add(mImageView19);
+                mImageView20 = itemView.findViewById(R.id.ribbon20);
+                this.images.add(mImageView20);
+                mImageView21 = itemView.findViewById(R.id.ribbon21);
+                this.images.add(mImageView21);
+                mImageView22 = itemView.findViewById(R.id.ribbon22);
+                this.images.add(mImageView22);
+                mImageView23 = itemView.findViewById(R.id.ribbon23);
+                this.images.add(mImageView23);
+                mImageView24 = itemView.findViewById(R.id.ribbon24);
+                this.images.add(mImageView24);
+                mImageView25 = itemView.findViewById(R.id.ribbon25);
+                this.images.add(mImageView25);
+                mImageView26 = itemView.findViewById(R.id.ribbon26);
+                this.images.add(mImageView26);
+                mImageView27 = itemView.findViewById(R.id.ribbon27);
+                this.images.add(mImageView27);
+                mImageView28 = itemView.findViewById(R.id.ribbon28);
+                this.images.add(mImageView28);
+                mImageView29 = itemView.findViewById(R.id.ribbon29);
+                this.images.add(mImageView29);
+                mImageView30 = itemView.findViewById(R.id.ribbon30);
+                this.images.add(mImageView30);
+                mImageView31 = itemView.findViewById(R.id.ribbon31);
+                this.images.add(mImageView31);
+                mImageView32 = itemView.findViewById(R.id.ribbon32);
+                this.images.add(mImageView32);
+                mImageView33 = itemView.findViewById(R.id.ribbon33);
+                this.images.add(mImageView33);
+                mImageView34 = itemView.findViewById(R.id.ribbon34);
+                this.images.add(mImageView34);
+
+            }
+        }
+
+        public static class Ribbon35Holder extends RecyclerView.ViewHolder {
+            private final ArraySet<ImageView> images;
+            public ImageView mImageView1;
+            public ImageView mImageView2;
+            public ImageView mImageView3;
+            public ImageView mImageView4;
+            public ImageView mImageView5;
+            public ImageView mImageView6;
+            public ImageView mImageView7;
+            public ImageView mImageView8;
+            public ImageView mImageView9;
+            public ImageView mImageView10;
+            public ImageView mImageView11;
+            public ImageView mImageView12;
+            public ImageView mImageView13;
+            public ImageView mImageView14;
+            public ImageView mImageView15;
+            public ImageView mImageView16;
+            public ImageView mImageView17;
+            public ImageView mImageView18;
+            public ImageView mImageView19;
+            public ImageView mImageView20;
+            public ImageView mImageView21;
+            public ImageView mImageView22;
+            public ImageView mImageView23;
+            public ImageView mImageView24;
+            public ImageView mImageView25;
+            public ImageView mImageView26;
+            public ImageView mImageView27;
+            public ImageView mImageView28;
+            public ImageView mImageView29;
+            public ImageView mImageView30;
+            public ImageView mImageView31;
+            public ImageView mImageView32;
+            public ImageView mImageView33;
+            public ImageView mImageView34;
+            public ImageView mImageView35;
+
+
+            @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
+            public Ribbon35Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+                super(itemView);
+                this.images = images;
+                mImageView1 = itemView.findViewById(R.id.ribbon1);
+                this.images.add(mImageView1);
+                mImageView2 = itemView.findViewById(R.id.ribbon2);
+                this.images.add(mImageView2);
+                mImageView3 = itemView.findViewById(R.id.ribbon3);
+                this.images.add(mImageView3);
+                mImageView4 = itemView.findViewById(R.id.ribbon4);
+                this.images.add(mImageView4);
+                mImageView5 = itemView.findViewById(R.id.ribbon5);
+                this.images.add(mImageView5);
+                mImageView6 = itemView.findViewById(R.id.ribbon6);
+                this.images.add(mImageView6);
+                mImageView7 = itemView.findViewById(R.id.ribbon7);
+                this.images.add(mImageView7);
+                mImageView8 = itemView.findViewById(R.id.ribbon8);
+                this.images.add(mImageView8);
+                mImageView9 = itemView.findViewById(R.id.ribbon9);
+                this.images.add(mImageView9);
+                mImageView10 = itemView.findViewById(R.id.ribbon10);
+                this.images.add(mImageView10);
+                mImageView11 = itemView.findViewById(R.id.ribbon11);
+                this.images.add(mImageView11);
+                mImageView12 = itemView.findViewById(R.id.ribbon12);
+                this.images.add(mImageView12);
+                mImageView13 = itemView.findViewById(R.id.ribbon13);
+                this.images.add(mImageView13);
+                mImageView14 = itemView.findViewById(R.id.ribbon14);
+                this.images.add(mImageView14);
+                mImageView15 = itemView.findViewById(R.id.ribbon15);
+                this.images.add(mImageView15);
+                mImageView16 = itemView.findViewById(R.id.ribbon16);
+                this.images.add(mImageView16);
+                mImageView17 = itemView.findViewById(R.id.ribbon17);
+                this.images.add(mImageView17);
+                mImageView18 = itemView.findViewById(R.id.ribbon18);
+                this.images.add(mImageView18);
+                mImageView19 = itemView.findViewById(R.id.ribbon19);
+                this.images.add(mImageView19);
+                mImageView20 = itemView.findViewById(R.id.ribbon20);
+                this.images.add(mImageView20);
+                mImageView21 = itemView.findViewById(R.id.ribbon21);
+                this.images.add(mImageView21);
+                mImageView22 = itemView.findViewById(R.id.ribbon22);
+                this.images.add(mImageView22);
+                mImageView23 = itemView.findViewById(R.id.ribbon23);
+                this.images.add(mImageView23);
+                mImageView24 = itemView.findViewById(R.id.ribbon24);
+                this.images.add(mImageView24);
+                mImageView25 = itemView.findViewById(R.id.ribbon25);
+                this.images.add(mImageView25);
+                mImageView26 = itemView.findViewById(R.id.ribbon26);
+                this.images.add(mImageView26);
+                mImageView27 = itemView.findViewById(R.id.ribbon27);
+                this.images.add(mImageView27);
+                mImageView28 = itemView.findViewById(R.id.ribbon28);
+                this.images.add(mImageView28);
+                mImageView29 = itemView.findViewById(R.id.ribbon29);
+                this.images.add(mImageView29);
+                mImageView30 = itemView.findViewById(R.id.ribbon30);
+                this.images.add(mImageView30);
+                mImageView31 = itemView.findViewById(R.id.ribbon31);
+                this.images.add(mImageView31);
+                mImageView32 = itemView.findViewById(R.id.ribbon32);
+                this.images.add(mImageView32);
+                mImageView33 = itemView.findViewById(R.id.ribbon33);
+                this.images.add(mImageView33);
+                mImageView34 = itemView.findViewById(R.id.ribbon34);
+                this.images.add(mImageView34);
+                mImageView35 = itemView.findViewById(R.id.ribbon35);
+                this.images.add(mImageView35);
+
+            }
+        }
+
+        public static class Ribbon36Holder extends RecyclerView.ViewHolder {
+            private final ArraySet<ImageView> images;
+            public ImageView mImageView1;
+            public ImageView mImageView2;
+            public ImageView mImageView3;
+            public ImageView mImageView4;
+            public ImageView mImageView5;
+            public ImageView mImageView6;
+            public ImageView mImageView7;
+            public ImageView mImageView8;
+            public ImageView mImageView9;
+            public ImageView mImageView10;
+            public ImageView mImageView11;
+            public ImageView mImageView12;
+            public ImageView mImageView13;
+            public ImageView mImageView14;
+            public ImageView mImageView15;
+            public ImageView mImageView16;
+            public ImageView mImageView17;
+            public ImageView mImageView18;
+            public ImageView mImageView19;
+            public ImageView mImageView20;
+            public ImageView mImageView21;
+            public ImageView mImageView22;
+            public ImageView mImageView23;
+            public ImageView mImageView24;
+            public ImageView mImageView25;
+            public ImageView mImageView26;
+            public ImageView mImageView27;
+            public ImageView mImageView28;
+            public ImageView mImageView29;
+            public ImageView mImageView30;
+            public ImageView mImageView31;
+            public ImageView mImageView32;
+            public ImageView mImageView33;
+            public ImageView mImageView34;
+            public ImageView mImageView35;
+            public ImageView mImageView36;
+
+
+            @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
+            public Ribbon36Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+                super(itemView);
+                this.images = images;
+                mImageView1 = itemView.findViewById(R.id.ribbon1);
+                this.images.add(mImageView1);
+                mImageView2 = itemView.findViewById(R.id.ribbon2);
+                this.images.add(mImageView2);
+                mImageView3 = itemView.findViewById(R.id.ribbon3);
+                this.images.add(mImageView3);
+                mImageView4 = itemView.findViewById(R.id.ribbon4);
+                this.images.add(mImageView4);
+                mImageView5 = itemView.findViewById(R.id.ribbon5);
+                this.images.add(mImageView5);
+                mImageView6 = itemView.findViewById(R.id.ribbon6);
+                this.images.add(mImageView6);
+                mImageView7 = itemView.findViewById(R.id.ribbon7);
+                this.images.add(mImageView7);
+                mImageView8 = itemView.findViewById(R.id.ribbon8);
+                this.images.add(mImageView8);
+                mImageView9 = itemView.findViewById(R.id.ribbon9);
+                this.images.add(mImageView9);
+                mImageView10 = itemView.findViewById(R.id.ribbon10);
+                this.images.add(mImageView10);
+                mImageView11 = itemView.findViewById(R.id.ribbon11);
+                this.images.add(mImageView11);
+                mImageView12 = itemView.findViewById(R.id.ribbon12);
+                this.images.add(mImageView12);
+                mImageView13 = itemView.findViewById(R.id.ribbon13);
+                this.images.add(mImageView13);
+                mImageView14 = itemView.findViewById(R.id.ribbon14);
+                this.images.add(mImageView14);
+                mImageView15 = itemView.findViewById(R.id.ribbon15);
+                this.images.add(mImageView15);
+                mImageView16 = itemView.findViewById(R.id.ribbon16);
+                this.images.add(mImageView16);
+                mImageView17 = itemView.findViewById(R.id.ribbon17);
+                this.images.add(mImageView17);
+                mImageView18 = itemView.findViewById(R.id.ribbon18);
+                this.images.add(mImageView18);
+                mImageView19 = itemView.findViewById(R.id.ribbon19);
+                this.images.add(mImageView19);
+                mImageView20 = itemView.findViewById(R.id.ribbon20);
+                this.images.add(mImageView20);
+                mImageView21 = itemView.findViewById(R.id.ribbon21);
+                this.images.add(mImageView21);
+                mImageView22 = itemView.findViewById(R.id.ribbon22);
+                this.images.add(mImageView22);
+                mImageView23 = itemView.findViewById(R.id.ribbon23);
+                this.images.add(mImageView23);
+                mImageView24 = itemView.findViewById(R.id.ribbon24);
+                this.images.add(mImageView24);
+                mImageView25 = itemView.findViewById(R.id.ribbon25);
+                this.images.add(mImageView25);
+                mImageView26 = itemView.findViewById(R.id.ribbon26);
+                this.images.add(mImageView26);
+                mImageView27 = itemView.findViewById(R.id.ribbon27);
+                this.images.add(mImageView27);
+                mImageView28 = itemView.findViewById(R.id.ribbon28);
+                this.images.add(mImageView28);
+                mImageView29 = itemView.findViewById(R.id.ribbon29);
+                this.images.add(mImageView29);
+                mImageView30 = itemView.findViewById(R.id.ribbon30);
+                this.images.add(mImageView30);
+                mImageView31 = itemView.findViewById(R.id.ribbon31);
+                this.images.add(mImageView31);
+                mImageView32 = itemView.findViewById(R.id.ribbon32);
+                this.images.add(mImageView32);
+                mImageView33 = itemView.findViewById(R.id.ribbon33);
+                this.images.add(mImageView33);
+                mImageView34 = itemView.findViewById(R.id.ribbon34);
+                this.images.add(mImageView34);
+                mImageView35 = itemView.findViewById(R.id.ribbon35);
+                this.images.add(mImageView35);
+                mImageView36 = itemView.findViewById(R.id.ribbon36);
+                this.images.add(mImageView36);
+
+            }
+        }
+
+        public static class Ribbon37Holder extends RecyclerView.ViewHolder {
+            private final ArraySet<ImageView> images;
+            public ImageView mImageView1;
+            public ImageView mImageView2;
+            public ImageView mImageView3;
+            public ImageView mImageView4;
+            public ImageView mImageView5;
+            public ImageView mImageView6;
+            public ImageView mImageView7;
+            public ImageView mImageView8;
+            public ImageView mImageView9;
+            public ImageView mImageView10;
+            public ImageView mImageView11;
+            public ImageView mImageView12;
+            public ImageView mImageView13;
+            public ImageView mImageView14;
+            public ImageView mImageView15;
+            public ImageView mImageView16;
+            public ImageView mImageView17;
+            public ImageView mImageView18;
+            public ImageView mImageView19;
+            public ImageView mImageView20;
+            public ImageView mImageView21;
+            public ImageView mImageView22;
+            public ImageView mImageView23;
+            public ImageView mImageView24;
+            public ImageView mImageView25;
+            public ImageView mImageView26;
+            public ImageView mImageView27;
+            public ImageView mImageView28;
+            public ImageView mImageView29;
+            public ImageView mImageView30;
+            public ImageView mImageView31;
+            public ImageView mImageView32;
+            public ImageView mImageView33;
+            public ImageView mImageView34;
+            public ImageView mImageView35;
+            public ImageView mImageView36;
+            public ImageView mImageView37;
+
+
+            @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
+            public Ribbon37Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+                super(itemView);
+                this.images = images;
+                mImageView1 = itemView.findViewById(R.id.ribbon1);
+                this.images.add(mImageView1);
+                mImageView2 = itemView.findViewById(R.id.ribbon2);
+                this.images.add(mImageView2);
+                mImageView3 = itemView.findViewById(R.id.ribbon3);
+                this.images.add(mImageView3);
+                mImageView4 = itemView.findViewById(R.id.ribbon4);
+                this.images.add(mImageView4);
+                mImageView5 = itemView.findViewById(R.id.ribbon5);
+                this.images.add(mImageView5);
+                mImageView6 = itemView.findViewById(R.id.ribbon6);
+                this.images.add(mImageView6);
+                mImageView7 = itemView.findViewById(R.id.ribbon7);
+                this.images.add(mImageView7);
+                mImageView8 = itemView.findViewById(R.id.ribbon8);
+                this.images.add(mImageView8);
+                mImageView9 = itemView.findViewById(R.id.ribbon9);
+                this.images.add(mImageView9);
+                mImageView10 = itemView.findViewById(R.id.ribbon10);
+                this.images.add(mImageView10);
+                mImageView11 = itemView.findViewById(R.id.ribbon11);
+                this.images.add(mImageView11);
+                mImageView12 = itemView.findViewById(R.id.ribbon12);
+                this.images.add(mImageView12);
+                mImageView13 = itemView.findViewById(R.id.ribbon13);
+                this.images.add(mImageView13);
+                mImageView14 = itemView.findViewById(R.id.ribbon14);
+                this.images.add(mImageView14);
+                mImageView15 = itemView.findViewById(R.id.ribbon15);
+                this.images.add(mImageView15);
+                mImageView16 = itemView.findViewById(R.id.ribbon16);
+                this.images.add(mImageView16);
+                mImageView17 = itemView.findViewById(R.id.ribbon17);
+                this.images.add(mImageView17);
+                mImageView18 = itemView.findViewById(R.id.ribbon18);
+                this.images.add(mImageView18);
+                mImageView19 = itemView.findViewById(R.id.ribbon19);
+                this.images.add(mImageView19);
+                mImageView20 = itemView.findViewById(R.id.ribbon20);
+                this.images.add(mImageView20);
+                mImageView21 = itemView.findViewById(R.id.ribbon21);
+                this.images.add(mImageView21);
+                mImageView22 = itemView.findViewById(R.id.ribbon22);
+                this.images.add(mImageView22);
+                mImageView23 = itemView.findViewById(R.id.ribbon23);
+                this.images.add(mImageView23);
+                mImageView24 = itemView.findViewById(R.id.ribbon24);
+                this.images.add(mImageView24);
+                mImageView25 = itemView.findViewById(R.id.ribbon25);
+                this.images.add(mImageView25);
+                mImageView26 = itemView.findViewById(R.id.ribbon26);
+                this.images.add(mImageView26);
+                mImageView27 = itemView.findViewById(R.id.ribbon27);
+                this.images.add(mImageView27);
+                mImageView28 = itemView.findViewById(R.id.ribbon28);
+                this.images.add(mImageView28);
+                mImageView29 = itemView.findViewById(R.id.ribbon29);
+                this.images.add(mImageView29);
+                mImageView30 = itemView.findViewById(R.id.ribbon30);
+                this.images.add(mImageView30);
+                mImageView31 = itemView.findViewById(R.id.ribbon31);
+                this.images.add(mImageView31);
+                mImageView32 = itemView.findViewById(R.id.ribbon32);
+                this.images.add(mImageView32);
+                mImageView33 = itemView.findViewById(R.id.ribbon33);
+                this.images.add(mImageView33);
+                mImageView34 = itemView.findViewById(R.id.ribbon34);
+                this.images.add(mImageView34);
+                mImageView35 = itemView.findViewById(R.id.ribbon35);
+                this.images.add(mImageView35);
+                mImageView36 = itemView.findViewById(R.id.ribbon36);
+                this.images.add(mImageView36);
+                mImageView37 = itemView.findViewById(R.id.ribbon37);
+                this.images.add(mImageView37);
+
+            }
+        }
+
+        public static class Ribbon38Holder extends RecyclerView.ViewHolder {
+            private final ArraySet<ImageView> images;
+            public ImageView mImageView1;
+            public ImageView mImageView2;
+            public ImageView mImageView3;
+            public ImageView mImageView4;
+            public ImageView mImageView5;
+            public ImageView mImageView6;
+            public ImageView mImageView7;
+            public ImageView mImageView8;
+            public ImageView mImageView9;
+            public ImageView mImageView10;
+            public ImageView mImageView11;
+            public ImageView mImageView12;
+            public ImageView mImageView13;
+            public ImageView mImageView14;
+            public ImageView mImageView15;
+            public ImageView mImageView16;
+            public ImageView mImageView17;
+            public ImageView mImageView18;
+            public ImageView mImageView19;
+            public ImageView mImageView20;
+            public ImageView mImageView21;
+            public ImageView mImageView22;
+            public ImageView mImageView23;
+            public ImageView mImageView24;
+            public ImageView mImageView25;
+            public ImageView mImageView26;
+            public ImageView mImageView27;
+            public ImageView mImageView28;
+            public ImageView mImageView29;
+            public ImageView mImageView30;
+            public ImageView mImageView31;
+            public ImageView mImageView32;
+            public ImageView mImageView33;
+            public ImageView mImageView34;
+            public ImageView mImageView35;
+            public ImageView mImageView36;
+            public ImageView mImageView37;
+            public ImageView mImageView38;
+
+
+            @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
+            public Ribbon38Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+                super(itemView);
+                this.images = images;
+                mImageView1 = itemView.findViewById(R.id.ribbon1);
+                this.images.add(mImageView1);
+                mImageView2 = itemView.findViewById(R.id.ribbon2);
+                this.images.add(mImageView2);
+                mImageView3 = itemView.findViewById(R.id.ribbon3);
+                this.images.add(mImageView3);
+                mImageView4 = itemView.findViewById(R.id.ribbon4);
+                this.images.add(mImageView4);
+                mImageView5 = itemView.findViewById(R.id.ribbon5);
+                this.images.add(mImageView5);
+                mImageView6 = itemView.findViewById(R.id.ribbon6);
+                this.images.add(mImageView6);
+                mImageView7 = itemView.findViewById(R.id.ribbon7);
+                this.images.add(mImageView7);
+                mImageView8 = itemView.findViewById(R.id.ribbon8);
+                this.images.add(mImageView8);
+                mImageView9 = itemView.findViewById(R.id.ribbon9);
+                this.images.add(mImageView9);
+                mImageView10 = itemView.findViewById(R.id.ribbon10);
+                this.images.add(mImageView10);
+                mImageView11 = itemView.findViewById(R.id.ribbon11);
+                this.images.add(mImageView11);
+                mImageView12 = itemView.findViewById(R.id.ribbon12);
+                this.images.add(mImageView12);
+                mImageView13 = itemView.findViewById(R.id.ribbon13);
+                this.images.add(mImageView13);
+                mImageView14 = itemView.findViewById(R.id.ribbon14);
+                this.images.add(mImageView14);
+                mImageView15 = itemView.findViewById(R.id.ribbon15);
+                this.images.add(mImageView15);
+                mImageView16 = itemView.findViewById(R.id.ribbon16);
+                this.images.add(mImageView16);
+                mImageView17 = itemView.findViewById(R.id.ribbon17);
+                this.images.add(mImageView17);
+                mImageView18 = itemView.findViewById(R.id.ribbon18);
+                this.images.add(mImageView18);
+                mImageView19 = itemView.findViewById(R.id.ribbon19);
+                this.images.add(mImageView19);
+                mImageView20 = itemView.findViewById(R.id.ribbon20);
+                this.images.add(mImageView20);
+                mImageView21 = itemView.findViewById(R.id.ribbon21);
+                this.images.add(mImageView21);
+                mImageView22 = itemView.findViewById(R.id.ribbon22);
+                this.images.add(mImageView22);
+                mImageView23 = itemView.findViewById(R.id.ribbon23);
+                this.images.add(mImageView23);
+                mImageView24 = itemView.findViewById(R.id.ribbon24);
+                this.images.add(mImageView24);
+                mImageView25 = itemView.findViewById(R.id.ribbon25);
+                this.images.add(mImageView25);
+                mImageView26 = itemView.findViewById(R.id.ribbon26);
+                this.images.add(mImageView26);
+                mImageView27 = itemView.findViewById(R.id.ribbon27);
+                this.images.add(mImageView27);
+                mImageView28 = itemView.findViewById(R.id.ribbon28);
+                this.images.add(mImageView28);
+                mImageView29 = itemView.findViewById(R.id.ribbon29);
+                this.images.add(mImageView29);
+                mImageView30 = itemView.findViewById(R.id.ribbon30);
+                this.images.add(mImageView30);
+                mImageView31 = itemView.findViewById(R.id.ribbon31);
+                this.images.add(mImageView31);
+                mImageView32 = itemView.findViewById(R.id.ribbon32);
+                this.images.add(mImageView32);
+                mImageView33 = itemView.findViewById(R.id.ribbon33);
+                this.images.add(mImageView33);
+                mImageView34 = itemView.findViewById(R.id.ribbon34);
+                this.images.add(mImageView34);
+                mImageView35 = itemView.findViewById(R.id.ribbon35);
+                this.images.add(mImageView35);
+                mImageView36 = itemView.findViewById(R.id.ribbon36);
+                this.images.add(mImageView36);
+                mImageView37 = itemView.findViewById(R.id.ribbon37);
+                this.images.add(mImageView37);
+                mImageView38 = itemView.findViewById(R.id.ribbon38);
+                this.images.add(mImageView38);
+
+            }
+        }
+
+        public static class Ribbon39Holder extends RecyclerView.ViewHolder {
+            private final ArraySet<ImageView> images;
+            public ImageView mImageView1;
+            public ImageView mImageView2;
+            public ImageView mImageView3;
+            public ImageView mImageView4;
+            public ImageView mImageView5;
+            public ImageView mImageView6;
+            public ImageView mImageView7;
+            public ImageView mImageView8;
+            public ImageView mImageView9;
+            public ImageView mImageView10;
+            public ImageView mImageView11;
+            public ImageView mImageView12;
+            public ImageView mImageView13;
+            public ImageView mImageView14;
+            public ImageView mImageView15;
+            public ImageView mImageView16;
+            public ImageView mImageView17;
+            public ImageView mImageView18;
+            public ImageView mImageView19;
+            public ImageView mImageView20;
+            public ImageView mImageView21;
+            public ImageView mImageView22;
+            public ImageView mImageView23;
+            public ImageView mImageView24;
+            public ImageView mImageView25;
+            public ImageView mImageView26;
+            public ImageView mImageView27;
+            public ImageView mImageView28;
+            public ImageView mImageView29;
+            public ImageView mImageView30;
+            public ImageView mImageView31;
+            public ImageView mImageView32;
+            public ImageView mImageView33;
+            public ImageView mImageView34;
+            public ImageView mImageView35;
+            public ImageView mImageView36;
+            public ImageView mImageView37;
+            public ImageView mImageView38;
+            public ImageView mImageView39;
+
+
+            @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
+            public Ribbon39Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+                super(itemView);
+                this.images = images;
+                mImageView1 = itemView.findViewById(R.id.ribbon1);
+                this.images.add(mImageView1);
+                mImageView2 = itemView.findViewById(R.id.ribbon2);
+                this.images.add(mImageView2);
+                mImageView3 = itemView.findViewById(R.id.ribbon3);
+                this.images.add(mImageView3);
+                mImageView4 = itemView.findViewById(R.id.ribbon4);
+                this.images.add(mImageView4);
+                mImageView5 = itemView.findViewById(R.id.ribbon5);
+                this.images.add(mImageView5);
+                mImageView6 = itemView.findViewById(R.id.ribbon6);
+                this.images.add(mImageView6);
+                mImageView7 = itemView.findViewById(R.id.ribbon7);
+                this.images.add(mImageView7);
+                mImageView8 = itemView.findViewById(R.id.ribbon8);
+                this.images.add(mImageView8);
+                mImageView9 = itemView.findViewById(R.id.ribbon9);
+                this.images.add(mImageView9);
+                mImageView10 = itemView.findViewById(R.id.ribbon10);
+                this.images.add(mImageView10);
+                mImageView11 = itemView.findViewById(R.id.ribbon11);
+                this.images.add(mImageView11);
+                mImageView12 = itemView.findViewById(R.id.ribbon12);
+                this.images.add(mImageView12);
+                mImageView13 = itemView.findViewById(R.id.ribbon13);
+                this.images.add(mImageView13);
+                mImageView14 = itemView.findViewById(R.id.ribbon14);
+                this.images.add(mImageView14);
+                mImageView15 = itemView.findViewById(R.id.ribbon15);
+                this.images.add(mImageView15);
+                mImageView16 = itemView.findViewById(R.id.ribbon16);
+                this.images.add(mImageView16);
+                mImageView17 = itemView.findViewById(R.id.ribbon17);
+                this.images.add(mImageView17);
+                mImageView18 = itemView.findViewById(R.id.ribbon18);
+                this.images.add(mImageView18);
+                mImageView19 = itemView.findViewById(R.id.ribbon19);
+                this.images.add(mImageView19);
+                mImageView20 = itemView.findViewById(R.id.ribbon20);
+                this.images.add(mImageView20);
+                mImageView21 = itemView.findViewById(R.id.ribbon21);
+                this.images.add(mImageView21);
+                mImageView22 = itemView.findViewById(R.id.ribbon22);
+                this.images.add(mImageView22);
+                mImageView23 = itemView.findViewById(R.id.ribbon23);
+                this.images.add(mImageView23);
+                mImageView24 = itemView.findViewById(R.id.ribbon24);
+                this.images.add(mImageView24);
+                mImageView25 = itemView.findViewById(R.id.ribbon25);
+                this.images.add(mImageView25);
+                mImageView26 = itemView.findViewById(R.id.ribbon26);
+                this.images.add(mImageView26);
+                mImageView27 = itemView.findViewById(R.id.ribbon27);
+                this.images.add(mImageView27);
+                mImageView28 = itemView.findViewById(R.id.ribbon28);
+                this.images.add(mImageView28);
+                mImageView29 = itemView.findViewById(R.id.ribbon29);
+                this.images.add(mImageView29);
+                mImageView30 = itemView.findViewById(R.id.ribbon30);
+                this.images.add(mImageView30);
+                mImageView31 = itemView.findViewById(R.id.ribbon31);
+                this.images.add(mImageView31);
+                mImageView32 = itemView.findViewById(R.id.ribbon32);
+                this.images.add(mImageView32);
+                mImageView33 = itemView.findViewById(R.id.ribbon33);
+                this.images.add(mImageView33);
+                mImageView34 = itemView.findViewById(R.id.ribbon34);
+                this.images.add(mImageView34);
+                mImageView35 = itemView.findViewById(R.id.ribbon35);
+                this.images.add(mImageView35);
+                mImageView36 = itemView.findViewById(R.id.ribbon36);
+                this.images.add(mImageView36);
+                mImageView37 = itemView.findViewById(R.id.ribbon37);
+                this.images.add(mImageView37);
+                mImageView38 = itemView.findViewById(R.id.ribbon38);
+                this.images.add(mImageView38);
+                mImageView39 = itemView.findViewById(R.id.ribbon39);
+                this.images.add(mImageView39);
+
+            }
+        }
+
+        public static class Ribbon40Holder extends RecyclerView.ViewHolder {
+            private final ArraySet<ImageView> images;
+            public ImageView mImageView1;
+            public ImageView mImageView2;
+            public ImageView mImageView3;
+            public ImageView mImageView4;
+            public ImageView mImageView5;
+            public ImageView mImageView6;
+            public ImageView mImageView7;
+            public ImageView mImageView8;
+            public ImageView mImageView9;
+            public ImageView mImageView10;
+            public ImageView mImageView11;
+            public ImageView mImageView12;
+            public ImageView mImageView13;
+            public ImageView mImageView14;
+            public ImageView mImageView15;
+            public ImageView mImageView16;
+            public ImageView mImageView17;
+            public ImageView mImageView18;
+            public ImageView mImageView19;
+            public ImageView mImageView20;
+            public ImageView mImageView21;
+            public ImageView mImageView22;
+            public ImageView mImageView23;
+            public ImageView mImageView24;
+            public ImageView mImageView25;
+            public ImageView mImageView26;
+            public ImageView mImageView27;
+            public ImageView mImageView28;
+            public ImageView mImageView29;
+            public ImageView mImageView30;
+            public ImageView mImageView31;
+            public ImageView mImageView32;
+            public ImageView mImageView33;
+            public ImageView mImageView34;
+            public ImageView mImageView35;
+            public ImageView mImageView36;
+            public ImageView mImageView37;
+            public ImageView mImageView38;
+            public ImageView mImageView39;
+            public ImageView mImageView40;
+
+
+            @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
+            public Ribbon40Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+                super(itemView);
+                this.images = images;
+                mImageView1 = itemView.findViewById(R.id.ribbon1);
+                this.images.add(mImageView1);
+                mImageView2 = itemView.findViewById(R.id.ribbon2);
+                this.images.add(mImageView2);
+                mImageView3 = itemView.findViewById(R.id.ribbon3);
+                this.images.add(mImageView3);
+                mImageView4 = itemView.findViewById(R.id.ribbon4);
+                this.images.add(mImageView4);
+                mImageView5 = itemView.findViewById(R.id.ribbon5);
+                this.images.add(mImageView5);
+                mImageView6 = itemView.findViewById(R.id.ribbon6);
+                this.images.add(mImageView6);
+                mImageView7 = itemView.findViewById(R.id.ribbon7);
+                this.images.add(mImageView7);
+                mImageView8 = itemView.findViewById(R.id.ribbon8);
+                this.images.add(mImageView8);
+                mImageView9 = itemView.findViewById(R.id.ribbon9);
+                this.images.add(mImageView9);
+                mImageView10 = itemView.findViewById(R.id.ribbon10);
+                this.images.add(mImageView10);
+                mImageView11 = itemView.findViewById(R.id.ribbon11);
+                this.images.add(mImageView11);
+                mImageView12 = itemView.findViewById(R.id.ribbon12);
+                this.images.add(mImageView12);
+                mImageView13 = itemView.findViewById(R.id.ribbon13);
+                this.images.add(mImageView13);
+                mImageView14 = itemView.findViewById(R.id.ribbon14);
+                this.images.add(mImageView14);
+                mImageView15 = itemView.findViewById(R.id.ribbon15);
+                this.images.add(mImageView15);
+                mImageView16 = itemView.findViewById(R.id.ribbon16);
+                this.images.add(mImageView16);
+                mImageView17 = itemView.findViewById(R.id.ribbon17);
+                this.images.add(mImageView17);
+                mImageView18 = itemView.findViewById(R.id.ribbon18);
+                this.images.add(mImageView18);
+                mImageView19 = itemView.findViewById(R.id.ribbon19);
+                this.images.add(mImageView19);
+                mImageView20 = itemView.findViewById(R.id.ribbon20);
+                this.images.add(mImageView20);
+                mImageView21 = itemView.findViewById(R.id.ribbon21);
+                this.images.add(mImageView21);
+                mImageView22 = itemView.findViewById(R.id.ribbon22);
+                this.images.add(mImageView22);
+                mImageView23 = itemView.findViewById(R.id.ribbon23);
+                this.images.add(mImageView23);
+                mImageView24 = itemView.findViewById(R.id.ribbon24);
+                this.images.add(mImageView24);
+                mImageView25 = itemView.findViewById(R.id.ribbon25);
+                this.images.add(mImageView25);
+                mImageView26 = itemView.findViewById(R.id.ribbon26);
+                this.images.add(mImageView26);
+                mImageView27 = itemView.findViewById(R.id.ribbon27);
+                this.images.add(mImageView27);
+                mImageView28 = itemView.findViewById(R.id.ribbon28);
+                this.images.add(mImageView28);
+                mImageView29 = itemView.findViewById(R.id.ribbon29);
+                this.images.add(mImageView29);
+                mImageView30 = itemView.findViewById(R.id.ribbon30);
+                this.images.add(mImageView30);
+                mImageView31 = itemView.findViewById(R.id.ribbon31);
+                this.images.add(mImageView31);
+                mImageView32 = itemView.findViewById(R.id.ribbon32);
+                this.images.add(mImageView32);
+                mImageView33 = itemView.findViewById(R.id.ribbon33);
+                this.images.add(mImageView33);
+                mImageView34 = itemView.findViewById(R.id.ribbon34);
+                this.images.add(mImageView34);
+                mImageView35 = itemView.findViewById(R.id.ribbon35);
+                this.images.add(mImageView35);
+                mImageView36 = itemView.findViewById(R.id.ribbon36);
+                this.images.add(mImageView36);
+                mImageView37 = itemView.findViewById(R.id.ribbon37);
+                this.images.add(mImageView37);
+                mImageView38 = itemView.findViewById(R.id.ribbon38);
+                this.images.add(mImageView38);
+                mImageView39 = itemView.findViewById(R.id.ribbon39);
+                this.images.add(mImageView39);
+                mImageView40 = itemView.findViewById(R.id.ribbon40);
+                this.images.add(mImageView40);
+
+            }
+        }
+
+        public static class Ribbon41Holder extends RecyclerView.ViewHolder {
+            private final ArraySet<ImageView> images;
+            public ImageView mImageView1;
+            public ImageView mImageView2;
+            public ImageView mImageView3;
+            public ImageView mImageView4;
+            public ImageView mImageView5;
+            public ImageView mImageView6;
+            public ImageView mImageView7;
+            public ImageView mImageView8;
+            public ImageView mImageView9;
+            public ImageView mImageView10;
+            public ImageView mImageView11;
+            public ImageView mImageView12;
+            public ImageView mImageView13;
+            public ImageView mImageView14;
+            public ImageView mImageView15;
+            public ImageView mImageView16;
+            public ImageView mImageView17;
+            public ImageView mImageView18;
+            public ImageView mImageView19;
+            public ImageView mImageView20;
+            public ImageView mImageView21;
+            public ImageView mImageView22;
+            public ImageView mImageView23;
+            public ImageView mImageView24;
+            public ImageView mImageView25;
+            public ImageView mImageView26;
+            public ImageView mImageView27;
+            public ImageView mImageView28;
+            public ImageView mImageView29;
+            public ImageView mImageView30;
+            public ImageView mImageView31;
+            public ImageView mImageView32;
+            public ImageView mImageView33;
+            public ImageView mImageView34;
+            public ImageView mImageView35;
+            public ImageView mImageView36;
+            public ImageView mImageView37;
+            public ImageView mImageView38;
+            public ImageView mImageView39;
+            public ImageView mImageView40;
+            public ImageView mImageView41;
+
+
+            @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
+            public Ribbon41Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+                super(itemView);
+                this.images = images;
+                mImageView1 = itemView.findViewById(R.id.ribbon1);
+                this.images.add(mImageView1);
+                mImageView2 = itemView.findViewById(R.id.ribbon2);
+                this.images.add(mImageView2);
+                mImageView3 = itemView.findViewById(R.id.ribbon3);
+                this.images.add(mImageView3);
+                mImageView4 = itemView.findViewById(R.id.ribbon4);
+                this.images.add(mImageView4);
+                mImageView5 = itemView.findViewById(R.id.ribbon5);
+                this.images.add(mImageView5);
+                mImageView6 = itemView.findViewById(R.id.ribbon6);
+                this.images.add(mImageView6);
+                mImageView7 = itemView.findViewById(R.id.ribbon7);
+                this.images.add(mImageView7);
+                mImageView8 = itemView.findViewById(R.id.ribbon8);
+                this.images.add(mImageView8);
+                mImageView9 = itemView.findViewById(R.id.ribbon9);
+                this.images.add(mImageView9);
+                mImageView10 = itemView.findViewById(R.id.ribbon10);
+                this.images.add(mImageView10);
+                mImageView11 = itemView.findViewById(R.id.ribbon11);
+                this.images.add(mImageView11);
+                mImageView12 = itemView.findViewById(R.id.ribbon12);
+                this.images.add(mImageView12);
+                mImageView13 = itemView.findViewById(R.id.ribbon13);
+                this.images.add(mImageView13);
+                mImageView14 = itemView.findViewById(R.id.ribbon14);
+                this.images.add(mImageView14);
+                mImageView15 = itemView.findViewById(R.id.ribbon15);
+                this.images.add(mImageView15);
+                mImageView16 = itemView.findViewById(R.id.ribbon16);
+                this.images.add(mImageView16);
+                mImageView17 = itemView.findViewById(R.id.ribbon17);
+                this.images.add(mImageView17);
+                mImageView18 = itemView.findViewById(R.id.ribbon18);
+                this.images.add(mImageView18);
+                mImageView19 = itemView.findViewById(R.id.ribbon19);
+                this.images.add(mImageView19);
+                mImageView20 = itemView.findViewById(R.id.ribbon20);
+                this.images.add(mImageView20);
+                mImageView21 = itemView.findViewById(R.id.ribbon21);
+                this.images.add(mImageView21);
+                mImageView22 = itemView.findViewById(R.id.ribbon22);
+                this.images.add(mImageView22);
+                mImageView23 = itemView.findViewById(R.id.ribbon23);
+                this.images.add(mImageView23);
+                mImageView24 = itemView.findViewById(R.id.ribbon24);
+                this.images.add(mImageView24);
+                mImageView25 = itemView.findViewById(R.id.ribbon25);
+                this.images.add(mImageView25);
+                mImageView26 = itemView.findViewById(R.id.ribbon26);
+                this.images.add(mImageView26);
+                mImageView27 = itemView.findViewById(R.id.ribbon27);
+                this.images.add(mImageView27);
+                mImageView28 = itemView.findViewById(R.id.ribbon28);
+                this.images.add(mImageView28);
+                mImageView29 = itemView.findViewById(R.id.ribbon29);
+                this.images.add(mImageView29);
+                mImageView30 = itemView.findViewById(R.id.ribbon30);
+                this.images.add(mImageView30);
+                mImageView31 = itemView.findViewById(R.id.ribbon31);
+                this.images.add(mImageView31);
+                mImageView32 = itemView.findViewById(R.id.ribbon32);
+                this.images.add(mImageView32);
+                mImageView33 = itemView.findViewById(R.id.ribbon33);
+                this.images.add(mImageView33);
+                mImageView34 = itemView.findViewById(R.id.ribbon34);
+                this.images.add(mImageView34);
+                mImageView35 = itemView.findViewById(R.id.ribbon35);
+                this.images.add(mImageView35);
+                mImageView36 = itemView.findViewById(R.id.ribbon36);
+                this.images.add(mImageView36);
+                mImageView37 = itemView.findViewById(R.id.ribbon37);
+                this.images.add(mImageView37);
+                mImageView38 = itemView.findViewById(R.id.ribbon38);
+                this.images.add(mImageView38);
+                mImageView39 = itemView.findViewById(R.id.ribbon39);
+                this.images.add(mImageView39);
+                mImageView40 = itemView.findViewById(R.id.ribbon40);
+                this.images.add(mImageView40);
+                mImageView41 = itemView.findViewById(R.id.ribbon41);
+                this.images.add(mImageView41);
+
+            }
+        }
+
+        public static class Ribbon42Holder extends RecyclerView.ViewHolder {
+            private final ArraySet<ImageView> images;
+            public ImageView mImageView1;
+            public ImageView mImageView2;
+            public ImageView mImageView3;
+            public ImageView mImageView4;
+            public ImageView mImageView5;
+            public ImageView mImageView6;
+            public ImageView mImageView7;
+            public ImageView mImageView8;
+            public ImageView mImageView9;
+            public ImageView mImageView10;
+            public ImageView mImageView11;
+            public ImageView mImageView12;
+            public ImageView mImageView13;
+            public ImageView mImageView14;
+            public ImageView mImageView15;
+            public ImageView mImageView16;
+            public ImageView mImageView17;
+            public ImageView mImageView18;
+            public ImageView mImageView19;
+            public ImageView mImageView20;
+            public ImageView mImageView21;
+            public ImageView mImageView22;
+            public ImageView mImageView23;
+            public ImageView mImageView24;
+            public ImageView mImageView25;
+            public ImageView mImageView26;
+            public ImageView mImageView27;
+            public ImageView mImageView28;
+            public ImageView mImageView29;
+            public ImageView mImageView30;
+            public ImageView mImageView31;
+            public ImageView mImageView32;
+            public ImageView mImageView33;
+            public ImageView mImageView34;
+            public ImageView mImageView35;
+            public ImageView mImageView36;
+            public ImageView mImageView37;
+            public ImageView mImageView38;
+            public ImageView mImageView39;
+            public ImageView mImageView40;
+            public ImageView mImageView41;
+            public ImageView mImageView42;
+
+
+            @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
+            public Ribbon42Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+                super(itemView);
+                this.images = images;
+                mImageView1 = itemView.findViewById(R.id.ribbon1);
+                this.images.add(mImageView1);
+                mImageView2 = itemView.findViewById(R.id.ribbon2);
+                this.images.add(mImageView2);
+                mImageView3 = itemView.findViewById(R.id.ribbon3);
+                this.images.add(mImageView3);
+                mImageView4 = itemView.findViewById(R.id.ribbon4);
+                this.images.add(mImageView4);
+                mImageView5 = itemView.findViewById(R.id.ribbon5);
+                this.images.add(mImageView5);
+                mImageView6 = itemView.findViewById(R.id.ribbon6);
+                this.images.add(mImageView6);
+                mImageView7 = itemView.findViewById(R.id.ribbon7);
+                this.images.add(mImageView7);
+                mImageView8 = itemView.findViewById(R.id.ribbon8);
+                this.images.add(mImageView8);
+                mImageView9 = itemView.findViewById(R.id.ribbon9);
+                this.images.add(mImageView9);
+                mImageView10 = itemView.findViewById(R.id.ribbon10);
+                this.images.add(mImageView10);
+                mImageView11 = itemView.findViewById(R.id.ribbon11);
+                this.images.add(mImageView11);
+                mImageView12 = itemView.findViewById(R.id.ribbon12);
+                this.images.add(mImageView12);
+                mImageView13 = itemView.findViewById(R.id.ribbon13);
+                this.images.add(mImageView13);
+                mImageView14 = itemView.findViewById(R.id.ribbon14);
+                this.images.add(mImageView14);
+                mImageView15 = itemView.findViewById(R.id.ribbon15);
+                this.images.add(mImageView15);
+                mImageView16 = itemView.findViewById(R.id.ribbon16);
+                this.images.add(mImageView16);
+                mImageView17 = itemView.findViewById(R.id.ribbon17);
+                this.images.add(mImageView17);
+                mImageView18 = itemView.findViewById(R.id.ribbon18);
+                this.images.add(mImageView18);
+                mImageView19 = itemView.findViewById(R.id.ribbon19);
+                this.images.add(mImageView19);
+                mImageView20 = itemView.findViewById(R.id.ribbon20);
+                this.images.add(mImageView20);
+                mImageView21 = itemView.findViewById(R.id.ribbon21);
+                this.images.add(mImageView21);
+                mImageView22 = itemView.findViewById(R.id.ribbon22);
+                this.images.add(mImageView22);
+                mImageView23 = itemView.findViewById(R.id.ribbon23);
+                this.images.add(mImageView23);
+                mImageView24 = itemView.findViewById(R.id.ribbon24);
+                this.images.add(mImageView24);
+                mImageView25 = itemView.findViewById(R.id.ribbon25);
+                this.images.add(mImageView25);
+                mImageView26 = itemView.findViewById(R.id.ribbon26);
+                this.images.add(mImageView26);
+                mImageView27 = itemView.findViewById(R.id.ribbon27);
+                this.images.add(mImageView27);
+                mImageView28 = itemView.findViewById(R.id.ribbon28);
+                this.images.add(mImageView28);
+                mImageView29 = itemView.findViewById(R.id.ribbon29);
+                this.images.add(mImageView29);
+                mImageView30 = itemView.findViewById(R.id.ribbon30);
+                this.images.add(mImageView30);
+                mImageView31 = itemView.findViewById(R.id.ribbon31);
+                this.images.add(mImageView31);
+                mImageView32 = itemView.findViewById(R.id.ribbon32);
+                this.images.add(mImageView32);
+                mImageView33 = itemView.findViewById(R.id.ribbon33);
+                this.images.add(mImageView33);
+                mImageView34 = itemView.findViewById(R.id.ribbon34);
+                this.images.add(mImageView34);
+                mImageView35 = itemView.findViewById(R.id.ribbon35);
+                this.images.add(mImageView35);
+                mImageView36 = itemView.findViewById(R.id.ribbon36);
+                this.images.add(mImageView36);
+                mImageView37 = itemView.findViewById(R.id.ribbon37);
+                this.images.add(mImageView37);
+                mImageView38 = itemView.findViewById(R.id.ribbon38);
+                this.images.add(mImageView38);
+                mImageView39 = itemView.findViewById(R.id.ribbon39);
+                this.images.add(mImageView39);
+                mImageView40 = itemView.findViewById(R.id.ribbon40);
+                this.images.add(mImageView40);
+                mImageView41 = itemView.findViewById(R.id.ribbon41);
+                this.images.add(mImageView41);
+                mImageView42 = itemView.findViewById(R.id.ribbon42);
+                this.images.add(mImageView42);
+
+            }
+        }
+
+        public static class Ribbon43Holder extends RecyclerView.ViewHolder {
+            private final ArraySet<ImageView> images;
+            public ImageView mImageView1;
+            public ImageView mImageView2;
+            public ImageView mImageView3;
+            public ImageView mImageView4;
+            public ImageView mImageView5;
+            public ImageView mImageView6;
+            public ImageView mImageView7;
+            public ImageView mImageView8;
+            public ImageView mImageView9;
+            public ImageView mImageView10;
+            public ImageView mImageView11;
+            public ImageView mImageView12;
+            public ImageView mImageView13;
+            public ImageView mImageView14;
+            public ImageView mImageView15;
+            public ImageView mImageView16;
+            public ImageView mImageView17;
+            public ImageView mImageView18;
+            public ImageView mImageView19;
+            public ImageView mImageView20;
+            public ImageView mImageView21;
+            public ImageView mImageView22;
+            public ImageView mImageView23;
+            public ImageView mImageView24;
+            public ImageView mImageView25;
+            public ImageView mImageView26;
+            public ImageView mImageView27;
+            public ImageView mImageView28;
+            public ImageView mImageView29;
+            public ImageView mImageView30;
+            public ImageView mImageView31;
+            public ImageView mImageView32;
+            public ImageView mImageView33;
+            public ImageView mImageView34;
+            public ImageView mImageView35;
+            public ImageView mImageView36;
+            public ImageView mImageView37;
+            public ImageView mImageView38;
+            public ImageView mImageView39;
+            public ImageView mImageView40;
+            public ImageView mImageView41;
+            public ImageView mImageView42;
+            public ImageView mImageView43;
+
+
+            @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
+            public Ribbon43Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+                super(itemView);
+                this.images = images;
+                mImageView1 = itemView.findViewById(R.id.ribbon1);
+                this.images.add(mImageView1);
+                mImageView2 = itemView.findViewById(R.id.ribbon2);
+                this.images.add(mImageView2);
+                mImageView3 = itemView.findViewById(R.id.ribbon3);
+                this.images.add(mImageView3);
+                mImageView4 = itemView.findViewById(R.id.ribbon4);
+                this.images.add(mImageView4);
+                mImageView5 = itemView.findViewById(R.id.ribbon5);
+                this.images.add(mImageView5);
+                mImageView6 = itemView.findViewById(R.id.ribbon6);
+                this.images.add(mImageView6);
+                mImageView7 = itemView.findViewById(R.id.ribbon7);
+                this.images.add(mImageView7);
+                mImageView8 = itemView.findViewById(R.id.ribbon8);
+                this.images.add(mImageView8);
+                mImageView9 = itemView.findViewById(R.id.ribbon9);
+                this.images.add(mImageView9);
+                mImageView10 = itemView.findViewById(R.id.ribbon10);
+                this.images.add(mImageView10);
+                mImageView11 = itemView.findViewById(R.id.ribbon11);
+                this.images.add(mImageView11);
+                mImageView12 = itemView.findViewById(R.id.ribbon12);
+                this.images.add(mImageView12);
+                mImageView13 = itemView.findViewById(R.id.ribbon13);
+                this.images.add(mImageView13);
+                mImageView14 = itemView.findViewById(R.id.ribbon14);
+                this.images.add(mImageView14);
+                mImageView15 = itemView.findViewById(R.id.ribbon15);
+                this.images.add(mImageView15);
+                mImageView16 = itemView.findViewById(R.id.ribbon16);
+                this.images.add(mImageView16);
+                mImageView17 = itemView.findViewById(R.id.ribbon17);
+                this.images.add(mImageView17);
+                mImageView18 = itemView.findViewById(R.id.ribbon18);
+                this.images.add(mImageView18);
+                mImageView19 = itemView.findViewById(R.id.ribbon19);
+                this.images.add(mImageView19);
+                mImageView20 = itemView.findViewById(R.id.ribbon20);
+                this.images.add(mImageView20);
+                mImageView21 = itemView.findViewById(R.id.ribbon21);
+                this.images.add(mImageView21);
+                mImageView22 = itemView.findViewById(R.id.ribbon22);
+                this.images.add(mImageView22);
+                mImageView23 = itemView.findViewById(R.id.ribbon23);
+                this.images.add(mImageView23);
+                mImageView24 = itemView.findViewById(R.id.ribbon24);
+                this.images.add(mImageView24);
+                mImageView25 = itemView.findViewById(R.id.ribbon25);
+                this.images.add(mImageView25);
+                mImageView26 = itemView.findViewById(R.id.ribbon26);
+                this.images.add(mImageView26);
+                mImageView27 = itemView.findViewById(R.id.ribbon27);
+                this.images.add(mImageView27);
+                mImageView28 = itemView.findViewById(R.id.ribbon28);
+                this.images.add(mImageView28);
+                mImageView29 = itemView.findViewById(R.id.ribbon29);
+                this.images.add(mImageView29);
+                mImageView30 = itemView.findViewById(R.id.ribbon30);
+                this.images.add(mImageView30);
+                mImageView31 = itemView.findViewById(R.id.ribbon31);
+                this.images.add(mImageView31);
+                mImageView32 = itemView.findViewById(R.id.ribbon32);
+                this.images.add(mImageView32);
+                mImageView33 = itemView.findViewById(R.id.ribbon33);
+                this.images.add(mImageView33);
+                mImageView34 = itemView.findViewById(R.id.ribbon34);
+                this.images.add(mImageView34);
+                mImageView35 = itemView.findViewById(R.id.ribbon35);
+                this.images.add(mImageView35);
+                mImageView36 = itemView.findViewById(R.id.ribbon36);
+                this.images.add(mImageView36);
+                mImageView37 = itemView.findViewById(R.id.ribbon37);
+                this.images.add(mImageView37);
+                mImageView38 = itemView.findViewById(R.id.ribbon38);
+                this.images.add(mImageView38);
+                mImageView39 = itemView.findViewById(R.id.ribbon39);
+                this.images.add(mImageView39);
+                mImageView40 = itemView.findViewById(R.id.ribbon40);
+                this.images.add(mImageView40);
+                mImageView41 = itemView.findViewById(R.id.ribbon41);
+                this.images.add(mImageView41);
+                mImageView42 = itemView.findViewById(R.id.ribbon42);
+                this.images.add(mImageView42);
+                mImageView43 = itemView.findViewById(R.id.ribbon43);
+                this.images.add(mImageView43);
+
+            }
+        }
+
+        public static class Ribbon44Holder extends RecyclerView.ViewHolder {
+            private final ArraySet<ImageView> images;
+            public ImageView mImageView1;
+            public ImageView mImageView2;
+            public ImageView mImageView3;
+            public ImageView mImageView4;
+            public ImageView mImageView5;
+            public ImageView mImageView6;
+            public ImageView mImageView7;
+            public ImageView mImageView8;
+            public ImageView mImageView9;
+            public ImageView mImageView10;
+            public ImageView mImageView11;
+            public ImageView mImageView12;
+            public ImageView mImageView13;
+            public ImageView mImageView14;
+            public ImageView mImageView15;
+            public ImageView mImageView16;
+            public ImageView mImageView17;
+            public ImageView mImageView18;
+            public ImageView mImageView19;
+            public ImageView mImageView20;
+            public ImageView mImageView21;
+            public ImageView mImageView22;
+            public ImageView mImageView23;
+            public ImageView mImageView24;
+            public ImageView mImageView25;
+            public ImageView mImageView26;
+            public ImageView mImageView27;
+            public ImageView mImageView28;
+            public ImageView mImageView29;
+            public ImageView mImageView30;
+            public ImageView mImageView31;
+            public ImageView mImageView32;
+            public ImageView mImageView33;
+            public ImageView mImageView34;
+            public ImageView mImageView35;
+            public ImageView mImageView36;
+            public ImageView mImageView37;
+            public ImageView mImageView38;
+            public ImageView mImageView39;
+            public ImageView mImageView40;
+            public ImageView mImageView41;
+            public ImageView mImageView42;
+            public ImageView mImageView43;
+            public ImageView mImageView44;
+
+
+            @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
+            public Ribbon44Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+                super(itemView);
+                this.images = images;
+                mImageView1 = itemView.findViewById(R.id.ribbon1);
+                this.images.add(mImageView1);
+                mImageView2 = itemView.findViewById(R.id.ribbon2);
+                this.images.add(mImageView2);
+                mImageView3 = itemView.findViewById(R.id.ribbon3);
+                this.images.add(mImageView3);
+                mImageView4 = itemView.findViewById(R.id.ribbon4);
+                this.images.add(mImageView4);
+                mImageView5 = itemView.findViewById(R.id.ribbon5);
+                this.images.add(mImageView5);
+                mImageView6 = itemView.findViewById(R.id.ribbon6);
+                this.images.add(mImageView6);
+                mImageView7 = itemView.findViewById(R.id.ribbon7);
+                this.images.add(mImageView7);
+                mImageView8 = itemView.findViewById(R.id.ribbon8);
+                this.images.add(mImageView8);
+                mImageView9 = itemView.findViewById(R.id.ribbon9);
+                this.images.add(mImageView9);
+                mImageView10 = itemView.findViewById(R.id.ribbon10);
+                this.images.add(mImageView10);
+                mImageView11 = itemView.findViewById(R.id.ribbon11);
+                this.images.add(mImageView11);
+                mImageView12 = itemView.findViewById(R.id.ribbon12);
+                this.images.add(mImageView12);
+                mImageView13 = itemView.findViewById(R.id.ribbon13);
+                this.images.add(mImageView13);
+                mImageView14 = itemView.findViewById(R.id.ribbon14);
+                this.images.add(mImageView14);
+                mImageView15 = itemView.findViewById(R.id.ribbon15);
+                this.images.add(mImageView15);
+                mImageView16 = itemView.findViewById(R.id.ribbon16);
+                this.images.add(mImageView16);
+                mImageView17 = itemView.findViewById(R.id.ribbon17);
+                this.images.add(mImageView17);
+                mImageView18 = itemView.findViewById(R.id.ribbon18);
+                this.images.add(mImageView18);
+                mImageView19 = itemView.findViewById(R.id.ribbon19);
+                this.images.add(mImageView19);
+                mImageView20 = itemView.findViewById(R.id.ribbon20);
+                this.images.add(mImageView20);
+                mImageView21 = itemView.findViewById(R.id.ribbon21);
+                this.images.add(mImageView21);
+                mImageView22 = itemView.findViewById(R.id.ribbon22);
+                this.images.add(mImageView22);
+                mImageView23 = itemView.findViewById(R.id.ribbon23);
+                this.images.add(mImageView23);
+                mImageView24 = itemView.findViewById(R.id.ribbon24);
+                this.images.add(mImageView24);
+                mImageView25 = itemView.findViewById(R.id.ribbon25);
+                this.images.add(mImageView25);
+                mImageView26 = itemView.findViewById(R.id.ribbon26);
+                this.images.add(mImageView26);
+                mImageView27 = itemView.findViewById(R.id.ribbon27);
+                this.images.add(mImageView27);
+                mImageView28 = itemView.findViewById(R.id.ribbon28);
+                this.images.add(mImageView28);
+                mImageView29 = itemView.findViewById(R.id.ribbon29);
+                this.images.add(mImageView29);
+                mImageView30 = itemView.findViewById(R.id.ribbon30);
+                this.images.add(mImageView30);
+                mImageView31 = itemView.findViewById(R.id.ribbon31);
+                this.images.add(mImageView31);
+                mImageView32 = itemView.findViewById(R.id.ribbon32);
+                this.images.add(mImageView32);
+                mImageView33 = itemView.findViewById(R.id.ribbon33);
+                this.images.add(mImageView33);
+                mImageView34 = itemView.findViewById(R.id.ribbon34);
+                this.images.add(mImageView34);
+                mImageView35 = itemView.findViewById(R.id.ribbon35);
+                this.images.add(mImageView35);
+                mImageView36 = itemView.findViewById(R.id.ribbon36);
+                this.images.add(mImageView36);
+                mImageView37 = itemView.findViewById(R.id.ribbon37);
+                this.images.add(mImageView37);
+                mImageView38 = itemView.findViewById(R.id.ribbon38);
+                this.images.add(mImageView38);
+                mImageView39 = itemView.findViewById(R.id.ribbon39);
+                this.images.add(mImageView39);
+                mImageView40 = itemView.findViewById(R.id.ribbon40);
+                this.images.add(mImageView40);
+                mImageView41 = itemView.findViewById(R.id.ribbon41);
+                this.images.add(mImageView41);
+                mImageView42 = itemView.findViewById(R.id.ribbon42);
+                this.images.add(mImageView42);
+                mImageView43 = itemView.findViewById(R.id.ribbon43);
+                this.images.add(mImageView43);
+                mImageView44 = itemView.findViewById(R.id.ribbon44);
+                this.images.add(mImageView44);
+
+            }
+        }
+
+        public static class Ribbon45Holder extends RecyclerView.ViewHolder {
+            private final ArraySet<ImageView> images;
+            public ImageView mImageView1;
+            public ImageView mImageView2;
+            public ImageView mImageView3;
+            public ImageView mImageView4;
+            public ImageView mImageView5;
+            public ImageView mImageView6;
+            public ImageView mImageView7;
+            public ImageView mImageView8;
+            public ImageView mImageView9;
+            public ImageView mImageView10;
+            public ImageView mImageView11;
+            public ImageView mImageView12;
+            public ImageView mImageView13;
+            public ImageView mImageView14;
+            public ImageView mImageView15;
+            public ImageView mImageView16;
+            public ImageView mImageView17;
+            public ImageView mImageView18;
+            public ImageView mImageView19;
+            public ImageView mImageView20;
+            public ImageView mImageView21;
+            public ImageView mImageView22;
+            public ImageView mImageView23;
+            public ImageView mImageView24;
+            public ImageView mImageView25;
+            public ImageView mImageView26;
+            public ImageView mImageView27;
+            public ImageView mImageView28;
+            public ImageView mImageView29;
+            public ImageView mImageView30;
+            public ImageView mImageView31;
+            public ImageView mImageView32;
+            public ImageView mImageView33;
+            public ImageView mImageView34;
+            public ImageView mImageView35;
+            public ImageView mImageView36;
+            public ImageView mImageView37;
+            public ImageView mImageView38;
+            public ImageView mImageView39;
+            public ImageView mImageView40;
+            public ImageView mImageView41;
+            public ImageView mImageView42;
+            public ImageView mImageView43;
+            public ImageView mImageView44;
+            public ImageView mImageView45;
+
+
+            @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
+            public Ribbon45Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+                super(itemView);
+                this.images = images;
+                mImageView1 = itemView.findViewById(R.id.ribbon1);
+                this.images.add(mImageView1);
+                mImageView2 = itemView.findViewById(R.id.ribbon2);
+                this.images.add(mImageView2);
+                mImageView3 = itemView.findViewById(R.id.ribbon3);
+                this.images.add(mImageView3);
+                mImageView4 = itemView.findViewById(R.id.ribbon4);
+                this.images.add(mImageView4);
+                mImageView5 = itemView.findViewById(R.id.ribbon5);
+                this.images.add(mImageView5);
+                mImageView6 = itemView.findViewById(R.id.ribbon6);
+                this.images.add(mImageView6);
+                mImageView7 = itemView.findViewById(R.id.ribbon7);
+                this.images.add(mImageView7);
+                mImageView8 = itemView.findViewById(R.id.ribbon8);
+                this.images.add(mImageView8);
+                mImageView9 = itemView.findViewById(R.id.ribbon9);
+                this.images.add(mImageView9);
+                mImageView10 = itemView.findViewById(R.id.ribbon10);
+                this.images.add(mImageView10);
+                mImageView11 = itemView.findViewById(R.id.ribbon11);
+                this.images.add(mImageView11);
+                mImageView12 = itemView.findViewById(R.id.ribbon12);
+                this.images.add(mImageView12);
+                mImageView13 = itemView.findViewById(R.id.ribbon13);
+                this.images.add(mImageView13);
+                mImageView14 = itemView.findViewById(R.id.ribbon14);
+                this.images.add(mImageView14);
+                mImageView15 = itemView.findViewById(R.id.ribbon15);
+                this.images.add(mImageView15);
+                mImageView16 = itemView.findViewById(R.id.ribbon16);
+                this.images.add(mImageView16);
+                mImageView17 = itemView.findViewById(R.id.ribbon17);
+                this.images.add(mImageView17);
+                mImageView18 = itemView.findViewById(R.id.ribbon18);
+                this.images.add(mImageView18);
+                mImageView19 = itemView.findViewById(R.id.ribbon19);
+                this.images.add(mImageView19);
+                mImageView20 = itemView.findViewById(R.id.ribbon20);
+                this.images.add(mImageView20);
+                mImageView21 = itemView.findViewById(R.id.ribbon21);
+                this.images.add(mImageView21);
+                mImageView22 = itemView.findViewById(R.id.ribbon22);
+                this.images.add(mImageView22);
+                mImageView23 = itemView.findViewById(R.id.ribbon23);
+                this.images.add(mImageView23);
+                mImageView24 = itemView.findViewById(R.id.ribbon24);
+                this.images.add(mImageView24);
+                mImageView25 = itemView.findViewById(R.id.ribbon25);
+                this.images.add(mImageView25);
+                mImageView26 = itemView.findViewById(R.id.ribbon26);
+                this.images.add(mImageView26);
+                mImageView27 = itemView.findViewById(R.id.ribbon27);
+                this.images.add(mImageView27);
+                mImageView28 = itemView.findViewById(R.id.ribbon28);
+                this.images.add(mImageView28);
+                mImageView29 = itemView.findViewById(R.id.ribbon29);
+                this.images.add(mImageView29);
+                mImageView30 = itemView.findViewById(R.id.ribbon30);
+                this.images.add(mImageView30);
+                mImageView31 = itemView.findViewById(R.id.ribbon31);
+                this.images.add(mImageView31);
+                mImageView32 = itemView.findViewById(R.id.ribbon32);
+                this.images.add(mImageView32);
+                mImageView33 = itemView.findViewById(R.id.ribbon33);
+                this.images.add(mImageView33);
+                mImageView34 = itemView.findViewById(R.id.ribbon34);
+                this.images.add(mImageView34);
+                mImageView35 = itemView.findViewById(R.id.ribbon35);
+                this.images.add(mImageView35);
+                mImageView36 = itemView.findViewById(R.id.ribbon36);
+                this.images.add(mImageView36);
+                mImageView37 = itemView.findViewById(R.id.ribbon37);
+                this.images.add(mImageView37);
+                mImageView38 = itemView.findViewById(R.id.ribbon38);
+                this.images.add(mImageView38);
+                mImageView39 = itemView.findViewById(R.id.ribbon39);
+                this.images.add(mImageView39);
+                mImageView40 = itemView.findViewById(R.id.ribbon40);
+                this.images.add(mImageView40);
+                mImageView41 = itemView.findViewById(R.id.ribbon41);
+                this.images.add(mImageView41);
+                mImageView42 = itemView.findViewById(R.id.ribbon42);
+                this.images.add(mImageView42);
+                mImageView43 = itemView.findViewById(R.id.ribbon43);
+                this.images.add(mImageView43);
+                mImageView44 = itemView.findViewById(R.id.ribbon44);
+                this.images.add(mImageView44);
+                mImageView45 = itemView.findViewById(R.id.ribbon45);
+                this.images.add(mImageView45);
+
+            }
+        }
+
+        public static class Ribbon46Holder extends RecyclerView.ViewHolder {
+            private final ArraySet<ImageView> images;
+            public ImageView mImageView1;
+            public ImageView mImageView2;
+            public ImageView mImageView3;
+            public ImageView mImageView4;
+            public ImageView mImageView5;
+            public ImageView mImageView6;
+            public ImageView mImageView7;
+            public ImageView mImageView8;
+            public ImageView mImageView9;
+            public ImageView mImageView10;
+            public ImageView mImageView11;
+            public ImageView mImageView12;
+            public ImageView mImageView13;
+            public ImageView mImageView14;
+            public ImageView mImageView15;
+            public ImageView mImageView16;
+            public ImageView mImageView17;
+            public ImageView mImageView18;
+            public ImageView mImageView19;
+            public ImageView mImageView20;
+            public ImageView mImageView21;
+            public ImageView mImageView22;
+            public ImageView mImageView23;
+            public ImageView mImageView24;
+            public ImageView mImageView25;
+            public ImageView mImageView26;
+            public ImageView mImageView27;
+            public ImageView mImageView28;
+            public ImageView mImageView29;
+            public ImageView mImageView30;
+            public ImageView mImageView31;
+            public ImageView mImageView32;
+            public ImageView mImageView33;
+            public ImageView mImageView34;
+            public ImageView mImageView35;
+            public ImageView mImageView36;
+            public ImageView mImageView37;
+            public ImageView mImageView38;
+            public ImageView mImageView39;
+            public ImageView mImageView40;
+            public ImageView mImageView41;
+            public ImageView mImageView42;
+            public ImageView mImageView43;
+            public ImageView mImageView44;
+            public ImageView mImageView45;
+            public ImageView mImageView46;
+
+
+            @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
+            public Ribbon46Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+                super(itemView);
+                this.images = images;
+                mImageView1 = itemView.findViewById(R.id.ribbon1);
+                this.images.add(mImageView1);
+                mImageView2 = itemView.findViewById(R.id.ribbon2);
+                this.images.add(mImageView2);
+                mImageView3 = itemView.findViewById(R.id.ribbon3);
+                this.images.add(mImageView3);
+                mImageView4 = itemView.findViewById(R.id.ribbon4);
+                this.images.add(mImageView4);
+                mImageView5 = itemView.findViewById(R.id.ribbon5);
+                this.images.add(mImageView5);
+                mImageView6 = itemView.findViewById(R.id.ribbon6);
+                this.images.add(mImageView6);
+                mImageView7 = itemView.findViewById(R.id.ribbon7);
+                this.images.add(mImageView7);
+                mImageView8 = itemView.findViewById(R.id.ribbon8);
+                this.images.add(mImageView8);
+                mImageView9 = itemView.findViewById(R.id.ribbon9);
+                this.images.add(mImageView9);
+                mImageView10 = itemView.findViewById(R.id.ribbon10);
+                this.images.add(mImageView10);
+                mImageView11 = itemView.findViewById(R.id.ribbon11);
+                this.images.add(mImageView11);
+                mImageView12 = itemView.findViewById(R.id.ribbon12);
+                this.images.add(mImageView12);
+                mImageView13 = itemView.findViewById(R.id.ribbon13);
+                this.images.add(mImageView13);
+                mImageView14 = itemView.findViewById(R.id.ribbon14);
+                this.images.add(mImageView14);
+                mImageView15 = itemView.findViewById(R.id.ribbon15);
+                this.images.add(mImageView15);
+                mImageView16 = itemView.findViewById(R.id.ribbon16);
+                this.images.add(mImageView16);
+                mImageView17 = itemView.findViewById(R.id.ribbon17);
+                this.images.add(mImageView17);
+                mImageView18 = itemView.findViewById(R.id.ribbon18);
+                this.images.add(mImageView18);
+                mImageView19 = itemView.findViewById(R.id.ribbon19);
+                this.images.add(mImageView19);
+                mImageView20 = itemView.findViewById(R.id.ribbon20);
+                this.images.add(mImageView20);
+                mImageView21 = itemView.findViewById(R.id.ribbon21);
+                this.images.add(mImageView21);
+                mImageView22 = itemView.findViewById(R.id.ribbon22);
+                this.images.add(mImageView22);
+                mImageView23 = itemView.findViewById(R.id.ribbon23);
+                this.images.add(mImageView23);
+                mImageView24 = itemView.findViewById(R.id.ribbon24);
+                this.images.add(mImageView24);
+                mImageView25 = itemView.findViewById(R.id.ribbon25);
+                this.images.add(mImageView25);
+                mImageView26 = itemView.findViewById(R.id.ribbon26);
+                this.images.add(mImageView26);
+                mImageView27 = itemView.findViewById(R.id.ribbon27);
+                this.images.add(mImageView27);
+                mImageView28 = itemView.findViewById(R.id.ribbon28);
+                this.images.add(mImageView28);
+                mImageView29 = itemView.findViewById(R.id.ribbon29);
+                this.images.add(mImageView29);
+                mImageView30 = itemView.findViewById(R.id.ribbon30);
+                this.images.add(mImageView30);
+                mImageView31 = itemView.findViewById(R.id.ribbon31);
+                this.images.add(mImageView31);
+                mImageView32 = itemView.findViewById(R.id.ribbon32);
+                this.images.add(mImageView32);
+                mImageView33 = itemView.findViewById(R.id.ribbon33);
+                this.images.add(mImageView33);
+                mImageView34 = itemView.findViewById(R.id.ribbon34);
+                this.images.add(mImageView34);
+                mImageView35 = itemView.findViewById(R.id.ribbon35);
+                this.images.add(mImageView35);
+                mImageView36 = itemView.findViewById(R.id.ribbon36);
+                this.images.add(mImageView36);
+                mImageView37 = itemView.findViewById(R.id.ribbon37);
+                this.images.add(mImageView37);
+                mImageView38 = itemView.findViewById(R.id.ribbon38);
+                this.images.add(mImageView38);
+                mImageView39 = itemView.findViewById(R.id.ribbon39);
+                this.images.add(mImageView39);
+                mImageView40 = itemView.findViewById(R.id.ribbon40);
+                this.images.add(mImageView40);
+                mImageView41 = itemView.findViewById(R.id.ribbon41);
+                this.images.add(mImageView41);
+                mImageView42 = itemView.findViewById(R.id.ribbon42);
+                this.images.add(mImageView42);
+                mImageView43 = itemView.findViewById(R.id.ribbon43);
+                this.images.add(mImageView43);
+                mImageView44 = itemView.findViewById(R.id.ribbon44);
+                this.images.add(mImageView44);
+                mImageView45 = itemView.findViewById(R.id.ribbon45);
+                this.images.add(mImageView45);
+                mImageView46 = itemView.findViewById(R.id.ribbon46);
+                this.images.add(mImageView46);
+
+            }
+        }
+
+        public static class Ribbon47Holder extends RecyclerView.ViewHolder {
+            private final ArraySet<ImageView> images;
+            public ImageView mImageView1;
+            public ImageView mImageView2;
+            public ImageView mImageView3;
+            public ImageView mImageView4;
+            public ImageView mImageView5;
+            public ImageView mImageView6;
+            public ImageView mImageView7;
+            public ImageView mImageView8;
+            public ImageView mImageView9;
+            public ImageView mImageView10;
+            public ImageView mImageView11;
+            public ImageView mImageView12;
+            public ImageView mImageView13;
+            public ImageView mImageView14;
+            public ImageView mImageView15;
+            public ImageView mImageView16;
+            public ImageView mImageView17;
+            public ImageView mImageView18;
+            public ImageView mImageView19;
+            public ImageView mImageView20;
+            public ImageView mImageView21;
+            public ImageView mImageView22;
+            public ImageView mImageView23;
+            public ImageView mImageView24;
+            public ImageView mImageView25;
+            public ImageView mImageView26;
+            public ImageView mImageView27;
+            public ImageView mImageView28;
+            public ImageView mImageView29;
+            public ImageView mImageView30;
+            public ImageView mImageView31;
+            public ImageView mImageView32;
+            public ImageView mImageView33;
+            public ImageView mImageView34;
+            public ImageView mImageView35;
+            public ImageView mImageView36;
+            public ImageView mImageView37;
+            public ImageView mImageView38;
+            public ImageView mImageView39;
+            public ImageView mImageView40;
+            public ImageView mImageView41;
+            public ImageView mImageView42;
+            public ImageView mImageView43;
+            public ImageView mImageView44;
+            public ImageView mImageView45;
+            public ImageView mImageView46;
+            public ImageView mImageView47;
+
+
+            @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
+            public Ribbon47Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+                super(itemView);
+                this.images = images;
+                mImageView1 = itemView.findViewById(R.id.ribbon1);
+                this.images.add(mImageView1);
+                mImageView2 = itemView.findViewById(R.id.ribbon2);
+                this.images.add(mImageView2);
+                mImageView3 = itemView.findViewById(R.id.ribbon3);
+                this.images.add(mImageView3);
+                mImageView4 = itemView.findViewById(R.id.ribbon4);
+                this.images.add(mImageView4);
+                mImageView5 = itemView.findViewById(R.id.ribbon5);
+                this.images.add(mImageView5);
+                mImageView6 = itemView.findViewById(R.id.ribbon6);
+                this.images.add(mImageView6);
+                mImageView7 = itemView.findViewById(R.id.ribbon7);
+                this.images.add(mImageView7);
+                mImageView8 = itemView.findViewById(R.id.ribbon8);
+                this.images.add(mImageView8);
+                mImageView9 = itemView.findViewById(R.id.ribbon9);
+                this.images.add(mImageView9);
+                mImageView10 = itemView.findViewById(R.id.ribbon10);
+                this.images.add(mImageView10);
+                mImageView11 = itemView.findViewById(R.id.ribbon11);
+                this.images.add(mImageView11);
+                mImageView12 = itemView.findViewById(R.id.ribbon12);
+                this.images.add(mImageView12);
+                mImageView13 = itemView.findViewById(R.id.ribbon13);
+                this.images.add(mImageView13);
+                mImageView14 = itemView.findViewById(R.id.ribbon14);
+                this.images.add(mImageView14);
+                mImageView15 = itemView.findViewById(R.id.ribbon15);
+                this.images.add(mImageView15);
+                mImageView16 = itemView.findViewById(R.id.ribbon16);
+                this.images.add(mImageView16);
+                mImageView17 = itemView.findViewById(R.id.ribbon17);
+                this.images.add(mImageView17);
+                mImageView18 = itemView.findViewById(R.id.ribbon18);
+                this.images.add(mImageView18);
+                mImageView19 = itemView.findViewById(R.id.ribbon19);
+                this.images.add(mImageView19);
+                mImageView20 = itemView.findViewById(R.id.ribbon20);
+                this.images.add(mImageView20);
+                mImageView21 = itemView.findViewById(R.id.ribbon21);
+                this.images.add(mImageView21);
+                mImageView22 = itemView.findViewById(R.id.ribbon22);
+                this.images.add(mImageView22);
+                mImageView23 = itemView.findViewById(R.id.ribbon23);
+                this.images.add(mImageView23);
+                mImageView24 = itemView.findViewById(R.id.ribbon24);
+                this.images.add(mImageView24);
+                mImageView25 = itemView.findViewById(R.id.ribbon25);
+                this.images.add(mImageView25);
+                mImageView26 = itemView.findViewById(R.id.ribbon26);
+                this.images.add(mImageView26);
+                mImageView27 = itemView.findViewById(R.id.ribbon27);
+                this.images.add(mImageView27);
+                mImageView28 = itemView.findViewById(R.id.ribbon28);
+                this.images.add(mImageView28);
+                mImageView29 = itemView.findViewById(R.id.ribbon29);
+                this.images.add(mImageView29);
+                mImageView30 = itemView.findViewById(R.id.ribbon30);
+                this.images.add(mImageView30);
+                mImageView31 = itemView.findViewById(R.id.ribbon31);
+                this.images.add(mImageView31);
+                mImageView32 = itemView.findViewById(R.id.ribbon32);
+                this.images.add(mImageView32);
+                mImageView33 = itemView.findViewById(R.id.ribbon33);
+                this.images.add(mImageView33);
+                mImageView34 = itemView.findViewById(R.id.ribbon34);
+                this.images.add(mImageView34);
+                mImageView35 = itemView.findViewById(R.id.ribbon35);
+                this.images.add(mImageView35);
+                mImageView36 = itemView.findViewById(R.id.ribbon36);
+                this.images.add(mImageView36);
+                mImageView37 = itemView.findViewById(R.id.ribbon37);
+                this.images.add(mImageView37);
+                mImageView38 = itemView.findViewById(R.id.ribbon38);
+                this.images.add(mImageView38);
+                mImageView39 = itemView.findViewById(R.id.ribbon39);
+                this.images.add(mImageView39);
+                mImageView40 = itemView.findViewById(R.id.ribbon40);
+                this.images.add(mImageView40);
+                mImageView41 = itemView.findViewById(R.id.ribbon41);
+                this.images.add(mImageView41);
+                mImageView42 = itemView.findViewById(R.id.ribbon42);
+                this.images.add(mImageView42);
+                mImageView43 = itemView.findViewById(R.id.ribbon43);
+                this.images.add(mImageView43);
+                mImageView44 = itemView.findViewById(R.id.ribbon44);
+                this.images.add(mImageView44);
+                mImageView45 = itemView.findViewById(R.id.ribbon45);
+                this.images.add(mImageView45);
+                mImageView46 = itemView.findViewById(R.id.ribbon46);
+                this.images.add(mImageView46);
+                mImageView47 = itemView.findViewById(R.id.ribbon47);
+                this.images.add(mImageView47);
+
+            }
+        }
+
+        public static class Ribbon48Holder extends RecyclerView.ViewHolder {
+            private final ArraySet<ImageView> images;
+            public ImageView mImageView1;
+            public ImageView mImageView2;
+            public ImageView mImageView3;
+            public ImageView mImageView4;
+            public ImageView mImageView5;
+            public ImageView mImageView6;
+            public ImageView mImageView7;
+            public ImageView mImageView8;
+            public ImageView mImageView9;
+            public ImageView mImageView10;
+            public ImageView mImageView11;
+            public ImageView mImageView12;
+            public ImageView mImageView13;
+            public ImageView mImageView14;
+            public ImageView mImageView15;
+            public ImageView mImageView16;
+            public ImageView mImageView17;
+            public ImageView mImageView18;
+            public ImageView mImageView19;
+            public ImageView mImageView20;
+            public ImageView mImageView21;
+            public ImageView mImageView22;
+            public ImageView mImageView23;
+            public ImageView mImageView24;
+            public ImageView mImageView25;
+            public ImageView mImageView26;
+            public ImageView mImageView27;
+            public ImageView mImageView28;
+            public ImageView mImageView29;
+            public ImageView mImageView30;
+            public ImageView mImageView31;
+            public ImageView mImageView32;
+            public ImageView mImageView33;
+            public ImageView mImageView34;
+            public ImageView mImageView35;
+            public ImageView mImageView36;
+            public ImageView mImageView37;
+            public ImageView mImageView38;
+            public ImageView mImageView39;
+            public ImageView mImageView40;
+            public ImageView mImageView41;
+            public ImageView mImageView42;
+            public ImageView mImageView43;
+            public ImageView mImageView44;
+            public ImageView mImageView45;
+            public ImageView mImageView46;
+            public ImageView mImageView47;
+            public ImageView mImageView48;
+
+
+            @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
+            public Ribbon48Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+                super(itemView);
+                this.images = images;
+                mImageView1 = itemView.findViewById(R.id.ribbon1);
+                this.images.add(mImageView1);
+                mImageView2 = itemView.findViewById(R.id.ribbon2);
+                this.images.add(mImageView2);
+                mImageView3 = itemView.findViewById(R.id.ribbon3);
+                this.images.add(mImageView3);
+                mImageView4 = itemView.findViewById(R.id.ribbon4);
+                this.images.add(mImageView4);
+                mImageView5 = itemView.findViewById(R.id.ribbon5);
+                this.images.add(mImageView5);
+                mImageView6 = itemView.findViewById(R.id.ribbon6);
+                this.images.add(mImageView6);
+                mImageView7 = itemView.findViewById(R.id.ribbon7);
+                this.images.add(mImageView7);
+                mImageView8 = itemView.findViewById(R.id.ribbon8);
+                this.images.add(mImageView8);
+                mImageView9 = itemView.findViewById(R.id.ribbon9);
+                this.images.add(mImageView9);
+                mImageView10 = itemView.findViewById(R.id.ribbon10);
+                this.images.add(mImageView10);
+                mImageView11 = itemView.findViewById(R.id.ribbon11);
+                this.images.add(mImageView11);
+                mImageView12 = itemView.findViewById(R.id.ribbon12);
+                this.images.add(mImageView12);
+                mImageView13 = itemView.findViewById(R.id.ribbon13);
+                this.images.add(mImageView13);
+                mImageView14 = itemView.findViewById(R.id.ribbon14);
+                this.images.add(mImageView14);
+                mImageView15 = itemView.findViewById(R.id.ribbon15);
+                this.images.add(mImageView15);
+                mImageView16 = itemView.findViewById(R.id.ribbon16);
+                this.images.add(mImageView16);
+                mImageView17 = itemView.findViewById(R.id.ribbon17);
+                this.images.add(mImageView17);
+                mImageView18 = itemView.findViewById(R.id.ribbon18);
+                this.images.add(mImageView18);
+                mImageView19 = itemView.findViewById(R.id.ribbon19);
+                this.images.add(mImageView19);
+                mImageView20 = itemView.findViewById(R.id.ribbon20);
+                this.images.add(mImageView20);
+                mImageView21 = itemView.findViewById(R.id.ribbon21);
+                this.images.add(mImageView21);
+                mImageView22 = itemView.findViewById(R.id.ribbon22);
+                this.images.add(mImageView22);
+                mImageView23 = itemView.findViewById(R.id.ribbon23);
+                this.images.add(mImageView23);
+                mImageView24 = itemView.findViewById(R.id.ribbon24);
+                this.images.add(mImageView24);
+                mImageView25 = itemView.findViewById(R.id.ribbon25);
+                this.images.add(mImageView25);
+                mImageView26 = itemView.findViewById(R.id.ribbon26);
+                this.images.add(mImageView26);
+                mImageView27 = itemView.findViewById(R.id.ribbon27);
+                this.images.add(mImageView27);
+                mImageView28 = itemView.findViewById(R.id.ribbon28);
+                this.images.add(mImageView28);
+                mImageView29 = itemView.findViewById(R.id.ribbon29);
+                this.images.add(mImageView29);
+                mImageView30 = itemView.findViewById(R.id.ribbon30);
+                this.images.add(mImageView30);
+                mImageView31 = itemView.findViewById(R.id.ribbon31);
+                this.images.add(mImageView31);
+                mImageView32 = itemView.findViewById(R.id.ribbon32);
+                this.images.add(mImageView32);
+                mImageView33 = itemView.findViewById(R.id.ribbon33);
+                this.images.add(mImageView33);
+                mImageView34 = itemView.findViewById(R.id.ribbon34);
+                this.images.add(mImageView34);
+                mImageView35 = itemView.findViewById(R.id.ribbon35);
+                this.images.add(mImageView35);
+                mImageView36 = itemView.findViewById(R.id.ribbon36);
+                this.images.add(mImageView36);
+                mImageView37 = itemView.findViewById(R.id.ribbon37);
+                this.images.add(mImageView37);
+                mImageView38 = itemView.findViewById(R.id.ribbon38);
+                this.images.add(mImageView38);
+                mImageView39 = itemView.findViewById(R.id.ribbon39);
+                this.images.add(mImageView39);
+                mImageView40 = itemView.findViewById(R.id.ribbon40);
+                this.images.add(mImageView40);
+                mImageView41 = itemView.findViewById(R.id.ribbon41);
+                this.images.add(mImageView41);
+                mImageView42 = itemView.findViewById(R.id.ribbon42);
+                this.images.add(mImageView42);
+                mImageView43 = itemView.findViewById(R.id.ribbon43);
+                this.images.add(mImageView43);
+                mImageView44 = itemView.findViewById(R.id.ribbon44);
+                this.images.add(mImageView44);
+                mImageView45 = itemView.findViewById(R.id.ribbon45);
+                this.images.add(mImageView45);
+                mImageView46 = itemView.findViewById(R.id.ribbon46);
+                this.images.add(mImageView46);
+                mImageView47 = itemView.findViewById(R.id.ribbon47);
+                this.images.add(mImageView47);
+                mImageView48 = itemView.findViewById(R.id.ribbon48);
+                this.images.add(mImageView48);
+
+            }
+        }
+
+        public static class Ribbon49Holder extends RecyclerView.ViewHolder {
+            private final ArraySet<ImageView> images;
+            public ImageView mImageView1;
+            public ImageView mImageView2;
+            public ImageView mImageView3;
+            public ImageView mImageView4;
+            public ImageView mImageView5;
+            public ImageView mImageView6;
+            public ImageView mImageView7;
+            public ImageView mImageView8;
+            public ImageView mImageView9;
+            public ImageView mImageView10;
+            public ImageView mImageView11;
+            public ImageView mImageView12;
+            public ImageView mImageView13;
+            public ImageView mImageView14;
+            public ImageView mImageView15;
+            public ImageView mImageView16;
+            public ImageView mImageView17;
+            public ImageView mImageView18;
+            public ImageView mImageView19;
+            public ImageView mImageView20;
+            public ImageView mImageView21;
+            public ImageView mImageView22;
+            public ImageView mImageView23;
+            public ImageView mImageView24;
+            public ImageView mImageView25;
+            public ImageView mImageView26;
+            public ImageView mImageView27;
+            public ImageView mImageView28;
+            public ImageView mImageView29;
+            public ImageView mImageView30;
+            public ImageView mImageView31;
+            public ImageView mImageView32;
+            public ImageView mImageView33;
+            public ImageView mImageView34;
+            public ImageView mImageView35;
+            public ImageView mImageView36;
+            public ImageView mImageView37;
+            public ImageView mImageView38;
+            public ImageView mImageView39;
+            public ImageView mImageView40;
+            public ImageView mImageView41;
+            public ImageView mImageView42;
+            public ImageView mImageView43;
+            public ImageView mImageView44;
+            public ImageView mImageView45;
+            public ImageView mImageView46;
+            public ImageView mImageView47;
+            public ImageView mImageView48;
+            public ImageView mImageView49;
+
+
+            @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
+            public Ribbon49Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+                super(itemView);
+                this.images = images;
+                mImageView1 = itemView.findViewById(R.id.ribbon1);
+                this.images.add(mImageView1);
+                mImageView2 = itemView.findViewById(R.id.ribbon2);
+                this.images.add(mImageView2);
+                mImageView3 = itemView.findViewById(R.id.ribbon3);
+                this.images.add(mImageView3);
+                mImageView4 = itemView.findViewById(R.id.ribbon4);
+                this.images.add(mImageView4);
+                mImageView5 = itemView.findViewById(R.id.ribbon5);
+                this.images.add(mImageView5);
+                mImageView6 = itemView.findViewById(R.id.ribbon6);
+                this.images.add(mImageView6);
+                mImageView7 = itemView.findViewById(R.id.ribbon7);
+                this.images.add(mImageView7);
+                mImageView8 = itemView.findViewById(R.id.ribbon8);
+                this.images.add(mImageView8);
+                mImageView9 = itemView.findViewById(R.id.ribbon9);
+                this.images.add(mImageView9);
+                mImageView10 = itemView.findViewById(R.id.ribbon10);
+                this.images.add(mImageView10);
+                mImageView11 = itemView.findViewById(R.id.ribbon11);
+                this.images.add(mImageView11);
+                mImageView12 = itemView.findViewById(R.id.ribbon12);
+                this.images.add(mImageView12);
+                mImageView13 = itemView.findViewById(R.id.ribbon13);
+                this.images.add(mImageView13);
+                mImageView14 = itemView.findViewById(R.id.ribbon14);
+                this.images.add(mImageView14);
+                mImageView15 = itemView.findViewById(R.id.ribbon15);
+                this.images.add(mImageView15);
+                mImageView16 = itemView.findViewById(R.id.ribbon16);
+                this.images.add(mImageView16);
+                mImageView17 = itemView.findViewById(R.id.ribbon17);
+                this.images.add(mImageView17);
+                mImageView18 = itemView.findViewById(R.id.ribbon18);
+                this.images.add(mImageView18);
+                mImageView19 = itemView.findViewById(R.id.ribbon19);
+                this.images.add(mImageView19);
+                mImageView20 = itemView.findViewById(R.id.ribbon20);
+                this.images.add(mImageView20);
+                mImageView21 = itemView.findViewById(R.id.ribbon21);
+                this.images.add(mImageView21);
+                mImageView22 = itemView.findViewById(R.id.ribbon22);
+                this.images.add(mImageView22);
+                mImageView23 = itemView.findViewById(R.id.ribbon23);
+                this.images.add(mImageView23);
+                mImageView24 = itemView.findViewById(R.id.ribbon24);
+                this.images.add(mImageView24);
+                mImageView25 = itemView.findViewById(R.id.ribbon25);
+                this.images.add(mImageView25);
+                mImageView26 = itemView.findViewById(R.id.ribbon26);
+                this.images.add(mImageView26);
+                mImageView27 = itemView.findViewById(R.id.ribbon27);
+                this.images.add(mImageView27);
+                mImageView28 = itemView.findViewById(R.id.ribbon28);
+                this.images.add(mImageView28);
+                mImageView29 = itemView.findViewById(R.id.ribbon29);
+                this.images.add(mImageView29);
+                mImageView30 = itemView.findViewById(R.id.ribbon30);
+                this.images.add(mImageView30);
+                mImageView31 = itemView.findViewById(R.id.ribbon31);
+                this.images.add(mImageView31);
+                mImageView32 = itemView.findViewById(R.id.ribbon32);
+                this.images.add(mImageView32);
+                mImageView33 = itemView.findViewById(R.id.ribbon33);
+                this.images.add(mImageView33);
+                mImageView34 = itemView.findViewById(R.id.ribbon34);
+                this.images.add(mImageView34);
+                mImageView35 = itemView.findViewById(R.id.ribbon35);
+                this.images.add(mImageView35);
+                mImageView36 = itemView.findViewById(R.id.ribbon36);
+                this.images.add(mImageView36);
+                mImageView37 = itemView.findViewById(R.id.ribbon37);
+                this.images.add(mImageView37);
+                mImageView38 = itemView.findViewById(R.id.ribbon38);
+                this.images.add(mImageView38);
+                mImageView39 = itemView.findViewById(R.id.ribbon39);
+                this.images.add(mImageView39);
+                mImageView40 = itemView.findViewById(R.id.ribbon40);
+                this.images.add(mImageView40);
+                mImageView41 = itemView.findViewById(R.id.ribbon41);
+                this.images.add(mImageView41);
+                mImageView42 = itemView.findViewById(R.id.ribbon42);
+                this.images.add(mImageView42);
+                mImageView43 = itemView.findViewById(R.id.ribbon43);
+                this.images.add(mImageView43);
+                mImageView44 = itemView.findViewById(R.id.ribbon44);
+                this.images.add(mImageView44);
+                mImageView45 = itemView.findViewById(R.id.ribbon45);
+                this.images.add(mImageView45);
+                mImageView46 = itemView.findViewById(R.id.ribbon46);
+                this.images.add(mImageView46);
+                mImageView47 = itemView.findViewById(R.id.ribbon47);
+                this.images.add(mImageView47);
+                mImageView48 = itemView.findViewById(R.id.ribbon48);
+                this.images.add(mImageView48);
+                mImageView49 = itemView.findViewById(R.id.ribbon49);
+                this.images.add(mImageView49);
+
+            }
+        }
+
+        public static class Ribbon50Holder extends RecyclerView.ViewHolder {
+            private final ArraySet<ImageView> images;
+            public ImageView mImageView1;
+            public ImageView mImageView2;
+            public ImageView mImageView3;
+            public ImageView mImageView4;
+            public ImageView mImageView5;
+            public ImageView mImageView6;
+            public ImageView mImageView7;
+            public ImageView mImageView8;
+            public ImageView mImageView9;
+            public ImageView mImageView10;
+            public ImageView mImageView11;
+            public ImageView mImageView12;
+            public ImageView mImageView13;
+            public ImageView mImageView14;
+            public ImageView mImageView15;
+            public ImageView mImageView16;
+            public ImageView mImageView17;
+            public ImageView mImageView18;
+            public ImageView mImageView19;
+            public ImageView mImageView20;
+            public ImageView mImageView21;
+            public ImageView mImageView22;
+            public ImageView mImageView23;
+            public ImageView mImageView24;
+            public ImageView mImageView25;
+            public ImageView mImageView26;
+            public ImageView mImageView27;
+            public ImageView mImageView28;
+            public ImageView mImageView29;
+            public ImageView mImageView30;
+            public ImageView mImageView31;
+            public ImageView mImageView32;
+            public ImageView mImageView33;
+            public ImageView mImageView34;
+            public ImageView mImageView35;
+            public ImageView mImageView36;
+            public ImageView mImageView37;
+            public ImageView mImageView38;
+            public ImageView mImageView39;
+            public ImageView mImageView40;
+            public ImageView mImageView41;
+            public ImageView mImageView42;
+            public ImageView mImageView43;
+            public ImageView mImageView44;
+            public ImageView mImageView45;
+            public ImageView mImageView46;
+            public ImageView mImageView47;
+            public ImageView mImageView48;
+            public ImageView mImageView49;
+            public ImageView mImageView50;
+
+
+            @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
+            public Ribbon50Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+                super(itemView);
+                this.images = images;
+                mImageView1 = itemView.findViewById(R.id.ribbon1);
+                this.images.add(mImageView1);
+                mImageView2 = itemView.findViewById(R.id.ribbon2);
+                this.images.add(mImageView2);
+                mImageView3 = itemView.findViewById(R.id.ribbon3);
+                this.images.add(mImageView3);
+                mImageView4 = itemView.findViewById(R.id.ribbon4);
+                this.images.add(mImageView4);
+                mImageView5 = itemView.findViewById(R.id.ribbon5);
+                this.images.add(mImageView5);
+                mImageView6 = itemView.findViewById(R.id.ribbon6);
+                this.images.add(mImageView6);
+                mImageView7 = itemView.findViewById(R.id.ribbon7);
+                this.images.add(mImageView7);
+                mImageView8 = itemView.findViewById(R.id.ribbon8);
+                this.images.add(mImageView8);
+                mImageView9 = itemView.findViewById(R.id.ribbon9);
+                this.images.add(mImageView9);
+                mImageView10 = itemView.findViewById(R.id.ribbon10);
+                this.images.add(mImageView10);
+                mImageView11 = itemView.findViewById(R.id.ribbon11);
+                this.images.add(mImageView11);
+                mImageView12 = itemView.findViewById(R.id.ribbon12);
+                this.images.add(mImageView12);
+                mImageView13 = itemView.findViewById(R.id.ribbon13);
+                this.images.add(mImageView13);
+                mImageView14 = itemView.findViewById(R.id.ribbon14);
+                this.images.add(mImageView14);
+                mImageView15 = itemView.findViewById(R.id.ribbon15);
+                this.images.add(mImageView15);
+                mImageView16 = itemView.findViewById(R.id.ribbon16);
+                this.images.add(mImageView16);
+                mImageView17 = itemView.findViewById(R.id.ribbon17);
+                this.images.add(mImageView17);
+                mImageView18 = itemView.findViewById(R.id.ribbon18);
+                this.images.add(mImageView18);
+                mImageView19 = itemView.findViewById(R.id.ribbon19);
+                this.images.add(mImageView19);
+                mImageView20 = itemView.findViewById(R.id.ribbon20);
+                this.images.add(mImageView20);
+                mImageView21 = itemView.findViewById(R.id.ribbon21);
+                this.images.add(mImageView21);
+                mImageView22 = itemView.findViewById(R.id.ribbon22);
+                this.images.add(mImageView22);
+                mImageView23 = itemView.findViewById(R.id.ribbon23);
+                this.images.add(mImageView23);
+                mImageView24 = itemView.findViewById(R.id.ribbon24);
+                this.images.add(mImageView24);
+                mImageView25 = itemView.findViewById(R.id.ribbon25);
+                this.images.add(mImageView25);
+                mImageView26 = itemView.findViewById(R.id.ribbon26);
+                this.images.add(mImageView26);
+                mImageView27 = itemView.findViewById(R.id.ribbon27);
+                this.images.add(mImageView27);
+                mImageView28 = itemView.findViewById(R.id.ribbon28);
+                this.images.add(mImageView28);
+                mImageView29 = itemView.findViewById(R.id.ribbon29);
+                this.images.add(mImageView29);
+                mImageView30 = itemView.findViewById(R.id.ribbon30);
+                this.images.add(mImageView30);
+                mImageView31 = itemView.findViewById(R.id.ribbon31);
+                this.images.add(mImageView31);
+                mImageView32 = itemView.findViewById(R.id.ribbon32);
+                this.images.add(mImageView32);
+                mImageView33 = itemView.findViewById(R.id.ribbon33);
+                this.images.add(mImageView33);
+                mImageView34 = itemView.findViewById(R.id.ribbon34);
+                this.images.add(mImageView34);
+                mImageView35 = itemView.findViewById(R.id.ribbon35);
+                this.images.add(mImageView35);
+                mImageView36 = itemView.findViewById(R.id.ribbon36);
+                this.images.add(mImageView36);
+                mImageView37 = itemView.findViewById(R.id.ribbon37);
+                this.images.add(mImageView37);
+                mImageView38 = itemView.findViewById(R.id.ribbon38);
+                this.images.add(mImageView38);
+                mImageView39 = itemView.findViewById(R.id.ribbon39);
+                this.images.add(mImageView39);
+                mImageView40 = itemView.findViewById(R.id.ribbon40);
+                this.images.add(mImageView40);
+                mImageView41 = itemView.findViewById(R.id.ribbon41);
+                this.images.add(mImageView41);
+                mImageView42 = itemView.findViewById(R.id.ribbon42);
+                this.images.add(mImageView42);
+                mImageView43 = itemView.findViewById(R.id.ribbon43);
+                this.images.add(mImageView43);
+                mImageView44 = itemView.findViewById(R.id.ribbon44);
+                this.images.add(mImageView44);
+                mImageView45 = itemView.findViewById(R.id.ribbon45);
+                this.images.add(mImageView45);
+                mImageView46 = itemView.findViewById(R.id.ribbon46);
+                this.images.add(mImageView46);
+                mImageView47 = itemView.findViewById(R.id.ribbon47);
+                this.images.add(mImageView47);
+                mImageView48 = itemView.findViewById(R.id.ribbon48);
+                this.images.add(mImageView48);
+                mImageView49 = itemView.findViewById(R.id.ribbon49);
+                this.images.add(mImageView49);
+                mImageView50 = itemView.findViewById(R.id.ribbon50);
+                this.images.add(mImageView50);
+
+            }
         }
     }
-
-    public static class Ribbon15Holder extends RecyclerView.ViewHolder {
-        private final ArraySet<ImageView> images;
-        public ImageView mImageView1;
-        public ImageView mImageView2;
-        public ImageView mImageView3;
-        public ImageView mImageView4;
-        public ImageView mImageView5;
-        public ImageView mImageView6;
-        public ImageView mImageView7;
-        public ImageView mImageView8;
-        public ImageView mImageView9;
-        public ImageView mImageView10;
-        public ImageView mImageView11;
-        public ImageView mImageView12;
-        public ImageView mImageView13;
-        public ImageView mImageView14;
-        public ImageView mImageView15;
-
-
-        @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon15Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
-            super(itemView);
-            this.images = images;
-            mImageView1 = itemView.findViewById(R.id.ribbon1);
-            this.images.add(mImageView1);
-            mImageView2 = itemView.findViewById(R.id.ribbon2);
-            this.images.add(mImageView2);
-            mImageView3 = itemView.findViewById(R.id.ribbon3);
-            this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon4);
-            this.images.add(mImageView4);
-            mImageView5 = itemView.findViewById(R.id.ribbon5);
-            this.images.add(mImageView5);
-            mImageView6 = itemView.findViewById(R.id.ribbon6);
-            this.images.add(mImageView6);
-            mImageView7 = itemView.findViewById(R.id.ribbon7);
-            this.images.add(mImageView7);
-            mImageView8 = itemView.findViewById(R.id.ribbon8);
-            this.images.add(mImageView8);
-            mImageView9 = itemView.findViewById(R.id.ribbon9);
-            this.images.add(mImageView9);
-            mImageView10 = itemView.findViewById(R.id.ribbon10);
-            this.images.add(mImageView10);
-            mImageView11 = itemView.findViewById(R.id.ribbon11);
-            this.images.add(mImageView11);
-            mImageView12 = itemView.findViewById(R.id.ribbon12);
-            this.images.add(mImageView12);
-            mImageView13 = itemView.findViewById(R.id.ribbon13);
-            this.images.add(mImageView13);
-            mImageView14 = itemView.findViewById(R.id.ribbon14);
-            this.images.add(mImageView14);
-            mImageView15 = itemView.findViewById(R.id.ribbon15);
-            this.images.add(mImageView15);
-
-        }
-    }
-
-    public static class Ribbon16Holder extends RecyclerView.ViewHolder {
-        private final ArraySet<ImageView> images;
-        public ImageView mImageView1;
-        public ImageView mImageView2;
-        public ImageView mImageView3;
-        public ImageView mImageView4;
-        public ImageView mImageView5;
-        public ImageView mImageView6;
-        public ImageView mImageView7;
-        public ImageView mImageView8;
-        public ImageView mImageView9;
-        public ImageView mImageView10;
-        public ImageView mImageView11;
-        public ImageView mImageView12;
-        public ImageView mImageView13;
-        public ImageView mImageView14;
-        public ImageView mImageView15;
-        public ImageView mImageView16;
-
-
-        @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon16Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
-            super(itemView);
-            this.images = images;
-            mImageView1 = itemView.findViewById(R.id.ribbon1);
-            this.images.add(mImageView1);
-            mImageView2 = itemView.findViewById(R.id.ribbon2);
-            this.images.add(mImageView2);
-            mImageView3 = itemView.findViewById(R.id.ribbon3);
-            this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon4);
-            this.images.add(mImageView4);
-            mImageView5 = itemView.findViewById(R.id.ribbon5);
-            this.images.add(mImageView5);
-            mImageView6 = itemView.findViewById(R.id.ribbon6);
-            this.images.add(mImageView6);
-            mImageView7 = itemView.findViewById(R.id.ribbon7);
-            this.images.add(mImageView7);
-            mImageView8 = itemView.findViewById(R.id.ribbon8);
-            this.images.add(mImageView8);
-            mImageView9 = itemView.findViewById(R.id.ribbon9);
-            this.images.add(mImageView9);
-            mImageView10 = itemView.findViewById(R.id.ribbon10);
-            this.images.add(mImageView10);
-            mImageView11 = itemView.findViewById(R.id.ribbon11);
-            this.images.add(mImageView11);
-            mImageView12 = itemView.findViewById(R.id.ribbon12);
-            this.images.add(mImageView12);
-            mImageView13 = itemView.findViewById(R.id.ribbon13);
-            this.images.add(mImageView13);
-            mImageView14 = itemView.findViewById(R.id.ribbon14);
-            this.images.add(mImageView14);
-            mImageView15 = itemView.findViewById(R.id.ribbon15);
-            this.images.add(mImageView15);
-            mImageView16 = itemView.findViewById(R.id.ribbon16);
-            this.images.add(mImageView16);
-
-        }
-    }
-
-    public static class Ribbon17Holder extends RecyclerView.ViewHolder {
-        private final ArraySet<ImageView> images;
-        public ImageView mImageView1;
-        public ImageView mImageView2;
-        public ImageView mImageView3;
-        public ImageView mImageView4;
-        public ImageView mImageView5;
-        public ImageView mImageView6;
-        public ImageView mImageView7;
-        public ImageView mImageView8;
-        public ImageView mImageView9;
-        public ImageView mImageView10;
-        public ImageView mImageView11;
-        public ImageView mImageView12;
-        public ImageView mImageView13;
-        public ImageView mImageView14;
-        public ImageView mImageView15;
-        public ImageView mImageView16;
-        public ImageView mImageView17;
-
-
-        @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon17Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
-            super(itemView);
-            this.images = images;
-            mImageView1 = itemView.findViewById(R.id.ribbon1);
-            this.images.add(mImageView1);
-            mImageView2 = itemView.findViewById(R.id.ribbon2);
-            this.images.add(mImageView2);
-            mImageView3 = itemView.findViewById(R.id.ribbon3);
-            this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon4);
-            this.images.add(mImageView4);
-            mImageView5 = itemView.findViewById(R.id.ribbon5);
-            this.images.add(mImageView5);
-            mImageView6 = itemView.findViewById(R.id.ribbon6);
-            this.images.add(mImageView6);
-            mImageView7 = itemView.findViewById(R.id.ribbon7);
-            this.images.add(mImageView7);
-            mImageView8 = itemView.findViewById(R.id.ribbon8);
-            this.images.add(mImageView8);
-            mImageView9 = itemView.findViewById(R.id.ribbon9);
-            this.images.add(mImageView9);
-            mImageView10 = itemView.findViewById(R.id.ribbon10);
-            this.images.add(mImageView10);
-            mImageView11 = itemView.findViewById(R.id.ribbon11);
-            this.images.add(mImageView11);
-            mImageView12 = itemView.findViewById(R.id.ribbon12);
-            this.images.add(mImageView12);
-            mImageView13 = itemView.findViewById(R.id.ribbon13);
-            this.images.add(mImageView13);
-            mImageView14 = itemView.findViewById(R.id.ribbon14);
-            this.images.add(mImageView14);
-            mImageView15 = itemView.findViewById(R.id.ribbon15);
-            this.images.add(mImageView15);
-            mImageView16 = itemView.findViewById(R.id.ribbon16);
-            this.images.add(mImageView16);
-            mImageView17 = itemView.findViewById(R.id.ribbon17);
-            this.images.add(mImageView17);
-
-        }
-    }
-
-    public static class Ribbon18Holder extends RecyclerView.ViewHolder {
-        private final ArraySet<ImageView> images;
-        public ImageView mImageView1;
-        public ImageView mImageView2;
-        public ImageView mImageView3;
-        public ImageView mImageView4;
-        public ImageView mImageView5;
-        public ImageView mImageView6;
-        public ImageView mImageView7;
-        public ImageView mImageView8;
-        public ImageView mImageView9;
-        public ImageView mImageView10;
-        public ImageView mImageView11;
-        public ImageView mImageView12;
-        public ImageView mImageView13;
-        public ImageView mImageView14;
-        public ImageView mImageView15;
-        public ImageView mImageView16;
-        public ImageView mImageView17;
-        public ImageView mImageView18;
-
-
-        @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon18Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
-            super(itemView);
-            this.images = images;
-            mImageView1 = itemView.findViewById(R.id.ribbon1);
-            this.images.add(mImageView1);
-            mImageView2 = itemView.findViewById(R.id.ribbon2);
-            this.images.add(mImageView2);
-            mImageView3 = itemView.findViewById(R.id.ribbon3);
-            this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon4);
-            this.images.add(mImageView4);
-            mImageView5 = itemView.findViewById(R.id.ribbon5);
-            this.images.add(mImageView5);
-            mImageView6 = itemView.findViewById(R.id.ribbon6);
-            this.images.add(mImageView6);
-            mImageView7 = itemView.findViewById(R.id.ribbon7);
-            this.images.add(mImageView7);
-            mImageView8 = itemView.findViewById(R.id.ribbon8);
-            this.images.add(mImageView8);
-            mImageView9 = itemView.findViewById(R.id.ribbon9);
-            this.images.add(mImageView9);
-            mImageView10 = itemView.findViewById(R.id.ribbon10);
-            this.images.add(mImageView10);
-            mImageView11 = itemView.findViewById(R.id.ribbon11);
-            this.images.add(mImageView11);
-            mImageView12 = itemView.findViewById(R.id.ribbon12);
-            this.images.add(mImageView12);
-            mImageView13 = itemView.findViewById(R.id.ribbon13);
-            this.images.add(mImageView13);
-            mImageView14 = itemView.findViewById(R.id.ribbon14);
-            this.images.add(mImageView14);
-            mImageView15 = itemView.findViewById(R.id.ribbon15);
-            this.images.add(mImageView15);
-            mImageView16 = itemView.findViewById(R.id.ribbon16);
-            this.images.add(mImageView16);
-            mImageView17 = itemView.findViewById(R.id.ribbon17);
-            this.images.add(mImageView17);
-            mImageView18 = itemView.findViewById(R.id.ribbon18);
-            this.images.add(mImageView18);
-
-
-
-        }
-    }
-
-    public static class Ribbon19Holder extends RecyclerView.ViewHolder {
-        private final ArraySet<ImageView> images;
-        public ImageView mImageView1;
-        public ImageView mImageView2;
-        public ImageView mImageView3;
-        public ImageView mImageView4;
-        public ImageView mImageView5;
-        public ImageView mImageView6;
-        public ImageView mImageView7;
-        public ImageView mImageView8;
-        public ImageView mImageView9;
-        public ImageView mImageView10;
-        public ImageView mImageView11;
-        public ImageView mImageView12;
-        public ImageView mImageView13;
-        public ImageView mImageView14;
-        public ImageView mImageView15;
-        public ImageView mImageView16;
-        public ImageView mImageView17;
-        public ImageView mImageView18;
-        public ImageView mImageView19;
-
-
-        @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon19Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
-            super(itemView);
-            this.images = images;
-            mImageView1 = itemView.findViewById(R.id.ribbon1);
-            this.images.add(mImageView1);
-            mImageView2 = itemView.findViewById(R.id.ribbon2);
-            this.images.add(mImageView2);
-            mImageView3 = itemView.findViewById(R.id.ribbon3);
-            this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon4);
-            this.images.add(mImageView4);
-            mImageView5 = itemView.findViewById(R.id.ribbon5);
-            this.images.add(mImageView5);
-            mImageView6 = itemView.findViewById(R.id.ribbon6);
-            this.images.add(mImageView6);
-            mImageView7 = itemView.findViewById(R.id.ribbon7);
-            this.images.add(mImageView7);
-            mImageView8 = itemView.findViewById(R.id.ribbon8);
-            this.images.add(mImageView8);
-            mImageView9 = itemView.findViewById(R.id.ribbon9);
-            this.images.add(mImageView9);
-            mImageView10 = itemView.findViewById(R.id.ribbon10);
-            this.images.add(mImageView10);
-            mImageView11 = itemView.findViewById(R.id.ribbon11);
-            this.images.add(mImageView11);
-            mImageView12 = itemView.findViewById(R.id.ribbon12);
-            this.images.add(mImageView12);
-            mImageView13 = itemView.findViewById(R.id.ribbon13);
-            this.images.add(mImageView13);
-            mImageView14 = itemView.findViewById(R.id.ribbon14);
-            this.images.add(mImageView14);
-            mImageView15 = itemView.findViewById(R.id.ribbon15);
-            this.images.add(mImageView15);
-            mImageView16 = itemView.findViewById(R.id.ribbon16);
-            this.images.add(mImageView16);
-            mImageView17 = itemView.findViewById(R.id.ribbon17);
-            this.images.add(mImageView17);
-            mImageView18 = itemView.findViewById(R.id.ribbon18);
-            this.images.add(mImageView18);
-            mImageView19 = itemView.findViewById(R.id.ribbon19);
-            this.images.add(mImageView19);
-
-        }
-    }
-
-    public static class Ribbon20Holder extends RecyclerView.ViewHolder {
-        private final ArraySet<ImageView> images;
-        public ImageView mImageView1;
-        public ImageView mImageView2;
-        public ImageView mImageView3;
-        public ImageView mImageView4;
-        public ImageView mImageView5;
-        public ImageView mImageView6;
-        public ImageView mImageView7;
-        public ImageView mImageView8;
-        public ImageView mImageView9;
-        public ImageView mImageView10;
-        public ImageView mImageView11;
-        public ImageView mImageView12;
-        public ImageView mImageView13;
-        public ImageView mImageView14;
-        public ImageView mImageView15;
-        public ImageView mImageView16;
-        public ImageView mImageView17;
-        public ImageView mImageView18;
-        public ImageView mImageView19;
-        public ImageView mImageView20;
-
-
-        @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon20Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
-            super(itemView);
-            this.images = images;
-            mImageView1 = itemView.findViewById(R.id.ribbon1);
-            this.images.add(mImageView1);
-            mImageView2 = itemView.findViewById(R.id.ribbon2);
-            this.images.add(mImageView2);
-            mImageView3 = itemView.findViewById(R.id.ribbon3);
-            this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon4);
-            this.images.add(mImageView4);
-            mImageView5 = itemView.findViewById(R.id.ribbon5);
-            this.images.add(mImageView5);
-            mImageView6 = itemView.findViewById(R.id.ribbon6);
-            this.images.add(mImageView6);
-            mImageView7 = itemView.findViewById(R.id.ribbon7);
-            this.images.add(mImageView7);
-            mImageView8 = itemView.findViewById(R.id.ribbon8);
-            this.images.add(mImageView8);
-            mImageView9 = itemView.findViewById(R.id.ribbon9);
-            this.images.add(mImageView9);
-            mImageView10 = itemView.findViewById(R.id.ribbon10);
-            this.images.add(mImageView10);
-            mImageView11 = itemView.findViewById(R.id.ribbon11);
-            this.images.add(mImageView11);
-            mImageView12 = itemView.findViewById(R.id.ribbon12);
-            this.images.add(mImageView12);
-            mImageView13 = itemView.findViewById(R.id.ribbon13);
-            this.images.add(mImageView13);
-            mImageView14 = itemView.findViewById(R.id.ribbon14);
-            this.images.add(mImageView14);
-            mImageView15 = itemView.findViewById(R.id.ribbon15);
-            this.images.add(mImageView15);
-            mImageView16 = itemView.findViewById(R.id.ribbon16);
-            this.images.add(mImageView16);
-            mImageView17 = itemView.findViewById(R.id.ribbon17);
-            this.images.add(mImageView17);
-            mImageView18 = itemView.findViewById(R.id.ribbon18);
-            this.images.add(mImageView18);
-            mImageView19 = itemView.findViewById(R.id.ribbon19);
-            this.images.add(mImageView19);
-            mImageView20 = itemView.findViewById(R.id.ribbon20);
-            this.images.add(mImageView20);
-
-        }
-    }
-
-    public static class Ribbon21Holder extends RecyclerView.ViewHolder {
-        private final ArraySet<ImageView> images;
-        public ImageView mImageView1;
-        public ImageView mImageView2;
-        public ImageView mImageView3;
-        public ImageView mImageView4;
-        public ImageView mImageView5;
-        public ImageView mImageView6;
-        public ImageView mImageView7;
-        public ImageView mImageView8;
-        public ImageView mImageView9;
-        public ImageView mImageView10;
-        public ImageView mImageView11;
-        public ImageView mImageView12;
-        public ImageView mImageView13;
-        public ImageView mImageView14;
-        public ImageView mImageView15;
-        public ImageView mImageView16;
-        public ImageView mImageView17;
-        public ImageView mImageView18;
-        public ImageView mImageView19;
-        public ImageView mImageView20;
-        public ImageView mImageView21;
-
-
-        @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon21Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
-            super(itemView);
-            this.images = images;
-            mImageView1 = itemView.findViewById(R.id.ribbon1);
-            this.images.add(mImageView1);
-            mImageView2 = itemView.findViewById(R.id.ribbon2);
-            this.images.add(mImageView2);
-            mImageView3 = itemView.findViewById(R.id.ribbon3);
-            this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon4);
-            this.images.add(mImageView4);
-            mImageView5 = itemView.findViewById(R.id.ribbon5);
-            this.images.add(mImageView5);
-            mImageView6 = itemView.findViewById(R.id.ribbon6);
-            this.images.add(mImageView6);
-            mImageView7 = itemView.findViewById(R.id.ribbon7);
-            this.images.add(mImageView7);
-            mImageView8 = itemView.findViewById(R.id.ribbon8);
-            this.images.add(mImageView8);
-            mImageView9 = itemView.findViewById(R.id.ribbon9);
-            this.images.add(mImageView9);
-            mImageView10 = itemView.findViewById(R.id.ribbon10);
-            this.images.add(mImageView10);
-            mImageView11 = itemView.findViewById(R.id.ribbon11);
-            this.images.add(mImageView11);
-            mImageView12 = itemView.findViewById(R.id.ribbon12);
-            this.images.add(mImageView12);
-            mImageView13 = itemView.findViewById(R.id.ribbon13);
-            this.images.add(mImageView13);
-            mImageView14 = itemView.findViewById(R.id.ribbon14);
-            this.images.add(mImageView14);
-            mImageView15 = itemView.findViewById(R.id.ribbon15);
-            this.images.add(mImageView15);
-            mImageView16 = itemView.findViewById(R.id.ribbon16);
-            this.images.add(mImageView16);
-            mImageView17 = itemView.findViewById(R.id.ribbon17);
-            this.images.add(mImageView17);
-            mImageView18 = itemView.findViewById(R.id.ribbon18);
-            this.images.add(mImageView18);
-            mImageView19 = itemView.findViewById(R.id.ribbon19);
-            this.images.add(mImageView19);
-            mImageView20 = itemView.findViewById(R.id.ribbon20);
-            this.images.add(mImageView20);
-            mImageView21 = itemView.findViewById(R.id.ribbon21);
-            this.images.add(mImageView21);
-
-        }
-    }
-
-    public static class Ribbon22Holder extends RecyclerView.ViewHolder {
-        private final ArraySet<ImageView> images;
-        public ImageView mImageView1;
-        public ImageView mImageView2;
-        public ImageView mImageView3;
-        public ImageView mImageView4;
-        public ImageView mImageView5;
-        public ImageView mImageView6;
-        public ImageView mImageView7;
-        public ImageView mImageView8;
-        public ImageView mImageView9;
-        public ImageView mImageView10;
-        public ImageView mImageView11;
-        public ImageView mImageView12;
-        public ImageView mImageView13;
-        public ImageView mImageView14;
-        public ImageView mImageView15;
-        public ImageView mImageView16;
-        public ImageView mImageView17;
-        public ImageView mImageView18;
-        public ImageView mImageView19;
-        public ImageView mImageView20;
-        public ImageView mImageView21;
-        public ImageView mImageView22;
-
-
-        @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon22Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
-            super(itemView);
-            this.images = images;
-            mImageView1 = itemView.findViewById(R.id.ribbon1);
-            this.images.add(mImageView1);
-            mImageView2 = itemView.findViewById(R.id.ribbon2);
-            this.images.add(mImageView2);
-            mImageView3 = itemView.findViewById(R.id.ribbon3);
-            this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon4);
-            this.images.add(mImageView4);
-            mImageView5 = itemView.findViewById(R.id.ribbon5);
-            this.images.add(mImageView5);
-            mImageView6 = itemView.findViewById(R.id.ribbon6);
-            this.images.add(mImageView6);
-            mImageView7 = itemView.findViewById(R.id.ribbon7);
-            this.images.add(mImageView7);
-            mImageView8 = itemView.findViewById(R.id.ribbon8);
-            this.images.add(mImageView8);
-            mImageView9 = itemView.findViewById(R.id.ribbon9);
-            this.images.add(mImageView9);
-            mImageView10 = itemView.findViewById(R.id.ribbon10);
-            this.images.add(mImageView10);
-            mImageView11 = itemView.findViewById(R.id.ribbon11);
-            this.images.add(mImageView11);
-            mImageView12 = itemView.findViewById(R.id.ribbon12);
-            this.images.add(mImageView12);
-            mImageView13 = itemView.findViewById(R.id.ribbon13);
-            this.images.add(mImageView13);
-            mImageView14 = itemView.findViewById(R.id.ribbon14);
-            this.images.add(mImageView14);
-            mImageView15 = itemView.findViewById(R.id.ribbon15);
-            this.images.add(mImageView15);
-            mImageView16 = itemView.findViewById(R.id.ribbon16);
-            this.images.add(mImageView16);
-            mImageView17 = itemView.findViewById(R.id.ribbon17);
-            this.images.add(mImageView17);
-            mImageView18 = itemView.findViewById(R.id.ribbon18);
-            this.images.add(mImageView18);
-            mImageView19 = itemView.findViewById(R.id.ribbon19);
-            this.images.add(mImageView19);
-            mImageView20 = itemView.findViewById(R.id.ribbon20);
-            this.images.add(mImageView20);
-            mImageView21 = itemView.findViewById(R.id.ribbon21);
-            this.images.add(mImageView21);
-            mImageView22 = itemView.findViewById(R.id.ribbon22);
-            this.images.add(mImageView22);
-
-        }
-    }
-
-    public static class Ribbon23Holder extends RecyclerView.ViewHolder {
-        private final ArraySet<ImageView> images;
-        public ImageView mImageView1;
-        public ImageView mImageView2;
-        public ImageView mImageView3;
-        public ImageView mImageView4;
-        public ImageView mImageView5;
-        public ImageView mImageView6;
-        public ImageView mImageView7;
-        public ImageView mImageView8;
-        public ImageView mImageView9;
-        public ImageView mImageView10;
-        public ImageView mImageView11;
-        public ImageView mImageView12;
-        public ImageView mImageView13;
-        public ImageView mImageView14;
-        public ImageView mImageView15;
-        public ImageView mImageView16;
-        public ImageView mImageView17;
-        public ImageView mImageView18;
-        public ImageView mImageView19;
-        public ImageView mImageView20;
-        public ImageView mImageView21;
-        public ImageView mImageView22;
-        public ImageView mImageView23;
-
-
-        @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon23Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
-            super(itemView);
-            this.images = images;
-            mImageView1 = itemView.findViewById(R.id.ribbon1);
-            this.images.add(mImageView1);
-            mImageView2 = itemView.findViewById(R.id.ribbon2);
-            this.images.add(mImageView2);
-            mImageView3 = itemView.findViewById(R.id.ribbon3);
-            this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon4);
-            this.images.add(mImageView4);
-            mImageView5 = itemView.findViewById(R.id.ribbon5);
-            this.images.add(mImageView5);
-            mImageView6 = itemView.findViewById(R.id.ribbon6);
-            this.images.add(mImageView6);
-            mImageView7 = itemView.findViewById(R.id.ribbon7);
-            this.images.add(mImageView7);
-            mImageView8 = itemView.findViewById(R.id.ribbon8);
-            this.images.add(mImageView8);
-            mImageView9 = itemView.findViewById(R.id.ribbon9);
-            this.images.add(mImageView9);
-            mImageView10 = itemView.findViewById(R.id.ribbon10);
-            this.images.add(mImageView10);
-            mImageView11 = itemView.findViewById(R.id.ribbon11);
-            this.images.add(mImageView11);
-            mImageView12 = itemView.findViewById(R.id.ribbon12);
-            this.images.add(mImageView12);
-            mImageView13 = itemView.findViewById(R.id.ribbon13);
-            this.images.add(mImageView13);
-            mImageView14 = itemView.findViewById(R.id.ribbon14);
-            this.images.add(mImageView14);
-            mImageView15 = itemView.findViewById(R.id.ribbon15);
-            this.images.add(mImageView15);
-            mImageView16 = itemView.findViewById(R.id.ribbon16);
-            this.images.add(mImageView16);
-            mImageView17 = itemView.findViewById(R.id.ribbon17);
-            this.images.add(mImageView17);
-            mImageView18 = itemView.findViewById(R.id.ribbon18);
-            this.images.add(mImageView18);
-            mImageView19 = itemView.findViewById(R.id.ribbon19);
-            this.images.add(mImageView19);
-            mImageView20 = itemView.findViewById(R.id.ribbon20);
-            this.images.add(mImageView20);
-            mImageView21 = itemView.findViewById(R.id.ribbon21);
-            this.images.add(mImageView21);
-            mImageView22 = itemView.findViewById(R.id.ribbon22);
-            this.images.add(mImageView22);
-            mImageView23 = itemView.findViewById(R.id.ribbon23);
-            this.images.add(mImageView23);
-
-        }
-    }
-
-    public static class Ribbon24Holder extends RecyclerView.ViewHolder {
-        private final ArraySet<ImageView> images;
-        public ImageView mImageView1;
-        public ImageView mImageView2;
-        public ImageView mImageView3;
-        public ImageView mImageView4;
-        public ImageView mImageView5;
-        public ImageView mImageView6;
-        public ImageView mImageView7;
-        public ImageView mImageView8;
-        public ImageView mImageView9;
-        public ImageView mImageView10;
-        public ImageView mImageView11;
-        public ImageView mImageView12;
-        public ImageView mImageView13;
-        public ImageView mImageView14;
-        public ImageView mImageView15;
-        public ImageView mImageView16;
-        public ImageView mImageView17;
-        public ImageView mImageView18;
-        public ImageView mImageView19;
-        public ImageView mImageView20;
-        public ImageView mImageView21;
-        public ImageView mImageView22;
-        public ImageView mImageView23;
-        public ImageView mImageView24;
-
-
-        @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon24Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
-            super(itemView);
-            this.images = images;
-            mImageView1 = itemView.findViewById(R.id.ribbon1);
-            this.images.add(mImageView1);
-            mImageView2 = itemView.findViewById(R.id.ribbon2);
-            this.images.add(mImageView2);
-            mImageView3 = itemView.findViewById(R.id.ribbon3);
-            this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon4);
-            this.images.add(mImageView4);
-            mImageView5 = itemView.findViewById(R.id.ribbon5);
-            this.images.add(mImageView5);
-            mImageView6 = itemView.findViewById(R.id.ribbon6);
-            this.images.add(mImageView6);
-            mImageView7 = itemView.findViewById(R.id.ribbon7);
-            this.images.add(mImageView7);
-            mImageView8 = itemView.findViewById(R.id.ribbon8);
-            this.images.add(mImageView8);
-            mImageView9 = itemView.findViewById(R.id.ribbon9);
-            this.images.add(mImageView9);
-            mImageView10 = itemView.findViewById(R.id.ribbon10);
-            this.images.add(mImageView10);
-            mImageView11 = itemView.findViewById(R.id.ribbon11);
-            this.images.add(mImageView11);
-            mImageView12 = itemView.findViewById(R.id.ribbon12);
-            this.images.add(mImageView12);
-            mImageView13 = itemView.findViewById(R.id.ribbon13);
-            this.images.add(mImageView13);
-            mImageView14 = itemView.findViewById(R.id.ribbon14);
-            this.images.add(mImageView14);
-            mImageView15 = itemView.findViewById(R.id.ribbon15);
-            this.images.add(mImageView15);
-            mImageView16 = itemView.findViewById(R.id.ribbon16);
-            this.images.add(mImageView16);
-            mImageView17 = itemView.findViewById(R.id.ribbon17);
-            this.images.add(mImageView17);
-            mImageView18 = itemView.findViewById(R.id.ribbon18);
-            this.images.add(mImageView18);
-            mImageView19 = itemView.findViewById(R.id.ribbon19);
-            this.images.add(mImageView19);
-            mImageView20 = itemView.findViewById(R.id.ribbon20);
-            this.images.add(mImageView20);
-            mImageView21 = itemView.findViewById(R.id.ribbon21);
-            this.images.add(mImageView21);
-            mImageView22 = itemView.findViewById(R.id.ribbon22);
-            this.images.add(mImageView22);
-            mImageView23 = itemView.findViewById(R.id.ribbon23);
-            this.images.add(mImageView23);
-            mImageView24 = itemView.findViewById(R.id.ribbon24);
-            this.images.add(mImageView24);
-
-        }
-    }
-
-    public static class Ribbon25Holder extends RecyclerView.ViewHolder {
-        private final ArraySet<ImageView> images;
-        public ImageView mImageView1;
-        public ImageView mImageView2;
-        public ImageView mImageView3;
-        public ImageView mImageView4;
-        public ImageView mImageView5;
-        public ImageView mImageView6;
-        public ImageView mImageView7;
-        public ImageView mImageView8;
-        public ImageView mImageView9;
-        public ImageView mImageView10;
-        public ImageView mImageView11;
-        public ImageView mImageView12;
-        public ImageView mImageView13;
-        public ImageView mImageView14;
-        public ImageView mImageView15;
-        public ImageView mImageView16;
-        public ImageView mImageView17;
-        public ImageView mImageView18;
-        public ImageView mImageView19;
-        public ImageView mImageView20;
-        public ImageView mImageView21;
-        public ImageView mImageView22;
-        public ImageView mImageView23;
-        public ImageView mImageView24;
-        public ImageView mImageView25;
-
-
-        @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon25Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
-            super(itemView);
-            this.images = images;
-            mImageView1 = itemView.findViewById(R.id.ribbon1);
-            this.images.add(mImageView1);
-            mImageView2 = itemView.findViewById(R.id.ribbon2);
-            this.images.add(mImageView2);
-            mImageView3 = itemView.findViewById(R.id.ribbon3);
-            this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon4);
-            this.images.add(mImageView4);
-            mImageView5 = itemView.findViewById(R.id.ribbon5);
-            this.images.add(mImageView5);
-            mImageView6 = itemView.findViewById(R.id.ribbon6);
-            this.images.add(mImageView6);
-            mImageView7 = itemView.findViewById(R.id.ribbon7);
-            this.images.add(mImageView7);
-            mImageView8 = itemView.findViewById(R.id.ribbon8);
-            this.images.add(mImageView8);
-            mImageView9 = itemView.findViewById(R.id.ribbon9);
-            this.images.add(mImageView9);
-            mImageView10 = itemView.findViewById(R.id.ribbon10);
-            this.images.add(mImageView10);
-            mImageView11 = itemView.findViewById(R.id.ribbon11);
-            this.images.add(mImageView11);
-            mImageView12 = itemView.findViewById(R.id.ribbon12);
-            this.images.add(mImageView12);
-            mImageView13 = itemView.findViewById(R.id.ribbon13);
-            this.images.add(mImageView13);
-            mImageView14 = itemView.findViewById(R.id.ribbon14);
-            this.images.add(mImageView14);
-            mImageView15 = itemView.findViewById(R.id.ribbon15);
-            this.images.add(mImageView15);
-            mImageView16 = itemView.findViewById(R.id.ribbon16);
-            this.images.add(mImageView16);
-            mImageView17 = itemView.findViewById(R.id.ribbon17);
-            this.images.add(mImageView17);
-            mImageView18 = itemView.findViewById(R.id.ribbon18);
-            this.images.add(mImageView18);
-            mImageView19 = itemView.findViewById(R.id.ribbon19);
-            this.images.add(mImageView19);
-            mImageView20 = itemView.findViewById(R.id.ribbon20);
-            this.images.add(mImageView20);
-            mImageView21 = itemView.findViewById(R.id.ribbon21);
-            this.images.add(mImageView21);
-            mImageView22 = itemView.findViewById(R.id.ribbon22);
-            this.images.add(mImageView22);
-            mImageView23 = itemView.findViewById(R.id.ribbon23);
-            this.images.add(mImageView23);
-            mImageView24 = itemView.findViewById(R.id.ribbon24);
-            this.images.add(mImageView24);
-            mImageView25 = itemView.findViewById(R.id.ribbon25);
-            this.images.add(mImageView25);
-
-        }
-    }
-
-    public static class Ribbon26Holder extends RecyclerView.ViewHolder {
-        private final ArraySet<ImageView> images;
-        public ImageView mImageView1;
-        public ImageView mImageView2;
-        public ImageView mImageView3;
-        public ImageView mImageView4;
-        public ImageView mImageView5;
-        public ImageView mImageView6;
-        public ImageView mImageView7;
-        public ImageView mImageView8;
-        public ImageView mImageView9;
-        public ImageView mImageView10;
-        public ImageView mImageView11;
-        public ImageView mImageView12;
-        public ImageView mImageView13;
-        public ImageView mImageView14;
-        public ImageView mImageView15;
-        public ImageView mImageView16;
-        public ImageView mImageView17;
-        public ImageView mImageView18;
-        public ImageView mImageView19;
-        public ImageView mImageView20;
-        public ImageView mImageView21;
-        public ImageView mImageView22;
-        public ImageView mImageView23;
-        public ImageView mImageView24;
-        public ImageView mImageView25;
-        public ImageView mImageView26;
-
-
-        @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon26Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
-            super(itemView);
-            this.images = images;
-            mImageView1 = itemView.findViewById(R.id.ribbon1);
-            this.images.add(mImageView1);
-            mImageView2 = itemView.findViewById(R.id.ribbon2);
-            this.images.add(mImageView2);
-            mImageView3 = itemView.findViewById(R.id.ribbon3);
-            this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon4);
-            this.images.add(mImageView4);
-            mImageView5 = itemView.findViewById(R.id.ribbon5);
-            this.images.add(mImageView5);
-            mImageView6 = itemView.findViewById(R.id.ribbon6);
-            this.images.add(mImageView6);
-            mImageView7 = itemView.findViewById(R.id.ribbon7);
-            this.images.add(mImageView7);
-            mImageView8 = itemView.findViewById(R.id.ribbon8);
-            this.images.add(mImageView8);
-            mImageView9 = itemView.findViewById(R.id.ribbon9);
-            this.images.add(mImageView9);
-            mImageView10 = itemView.findViewById(R.id.ribbon10);
-            this.images.add(mImageView10);
-            mImageView11 = itemView.findViewById(R.id.ribbon11);
-            this.images.add(mImageView11);
-            mImageView12 = itemView.findViewById(R.id.ribbon12);
-            this.images.add(mImageView12);
-            mImageView13 = itemView.findViewById(R.id.ribbon13);
-            this.images.add(mImageView13);
-            mImageView14 = itemView.findViewById(R.id.ribbon14);
-            this.images.add(mImageView14);
-            mImageView15 = itemView.findViewById(R.id.ribbon15);
-            this.images.add(mImageView15);
-            mImageView16 = itemView.findViewById(R.id.ribbon16);
-            this.images.add(mImageView16);
-            mImageView17 = itemView.findViewById(R.id.ribbon17);
-            this.images.add(mImageView17);
-            mImageView18 = itemView.findViewById(R.id.ribbon18);
-            this.images.add(mImageView18);
-            mImageView19 = itemView.findViewById(R.id.ribbon19);
-            this.images.add(mImageView19);
-            mImageView20 = itemView.findViewById(R.id.ribbon20);
-            this.images.add(mImageView20);
-            mImageView21 = itemView.findViewById(R.id.ribbon21);
-            this.images.add(mImageView21);
-            mImageView22 = itemView.findViewById(R.id.ribbon22);
-            this.images.add(mImageView22);
-            mImageView23 = itemView.findViewById(R.id.ribbon23);
-            this.images.add(mImageView23);
-            mImageView24 = itemView.findViewById(R.id.ribbon24);
-            this.images.add(mImageView24);
-            mImageView25 = itemView.findViewById(R.id.ribbon25);
-            this.images.add(mImageView25);
-            mImageView26 = itemView.findViewById(R.id.ribbon26);
-            this.images.add(mImageView26);
-
-        }
-    }
-
-    public static class Ribbon27Holder extends RecyclerView.ViewHolder {
-        private final ArraySet<ImageView> images;
-        public ImageView mImageView1;
-        public ImageView mImageView2;
-        public ImageView mImageView3;
-        public ImageView mImageView4;
-        public ImageView mImageView5;
-        public ImageView mImageView6;
-        public ImageView mImageView7;
-        public ImageView mImageView8;
-        public ImageView mImageView9;
-        public ImageView mImageView10;
-        public ImageView mImageView11;
-        public ImageView mImageView12;
-        public ImageView mImageView13;
-        public ImageView mImageView14;
-        public ImageView mImageView15;
-        public ImageView mImageView16;
-        public ImageView mImageView17;
-        public ImageView mImageView18;
-        public ImageView mImageView19;
-        public ImageView mImageView20;
-        public ImageView mImageView21;
-        public ImageView mImageView22;
-        public ImageView mImageView23;
-        public ImageView mImageView24;
-        public ImageView mImageView25;
-        public ImageView mImageView26;
-        public ImageView mImageView27;
-
-
-        @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon27Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
-            super(itemView);
-            this.images = images;
-            mImageView1 = itemView.findViewById(R.id.ribbon1);
-            this.images.add(mImageView1);
-            mImageView2 = itemView.findViewById(R.id.ribbon2);
-            this.images.add(mImageView2);
-            mImageView3 = itemView.findViewById(R.id.ribbon3);
-            this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon4);
-            this.images.add(mImageView4);
-            mImageView5 = itemView.findViewById(R.id.ribbon5);
-            this.images.add(mImageView5);
-            mImageView6 = itemView.findViewById(R.id.ribbon6);
-            this.images.add(mImageView6);
-            mImageView7 = itemView.findViewById(R.id.ribbon7);
-            this.images.add(mImageView7);
-            mImageView8 = itemView.findViewById(R.id.ribbon8);
-            this.images.add(mImageView8);
-            mImageView9 = itemView.findViewById(R.id.ribbon9);
-            this.images.add(mImageView9);
-            mImageView10 = itemView.findViewById(R.id.ribbon10);
-            this.images.add(mImageView10);
-            mImageView11 = itemView.findViewById(R.id.ribbon11);
-            this.images.add(mImageView11);
-            mImageView12 = itemView.findViewById(R.id.ribbon12);
-            this.images.add(mImageView12);
-            mImageView13 = itemView.findViewById(R.id.ribbon13);
-            this.images.add(mImageView13);
-            mImageView14 = itemView.findViewById(R.id.ribbon14);
-            this.images.add(mImageView14);
-            mImageView15 = itemView.findViewById(R.id.ribbon15);
-            this.images.add(mImageView15);
-            mImageView16 = itemView.findViewById(R.id.ribbon16);
-            this.images.add(mImageView16);
-            mImageView17 = itemView.findViewById(R.id.ribbon17);
-            this.images.add(mImageView17);
-            mImageView18 = itemView.findViewById(R.id.ribbon18);
-            this.images.add(mImageView18);
-            mImageView19 = itemView.findViewById(R.id.ribbon19);
-            this.images.add(mImageView19);
-            mImageView20 = itemView.findViewById(R.id.ribbon20);
-            this.images.add(mImageView20);
-            mImageView21 = itemView.findViewById(R.id.ribbon21);
-            this.images.add(mImageView21);
-            mImageView22 = itemView.findViewById(R.id.ribbon22);
-            this.images.add(mImageView22);
-            mImageView23 = itemView.findViewById(R.id.ribbon23);
-            this.images.add(mImageView23);
-            mImageView24 = itemView.findViewById(R.id.ribbon24);
-            this.images.add(mImageView24);
-            mImageView25 = itemView.findViewById(R.id.ribbon25);
-            this.images.add(mImageView25);
-            mImageView26 = itemView.findViewById(R.id.ribbon26);
-            this.images.add(mImageView26);
-            mImageView27 = itemView.findViewById(R.id.ribbon27);
-            this.images.add(mImageView27);
-
-        }
-    }
-
-    public static class Ribbon28Holder extends RecyclerView.ViewHolder {
-        private final ArraySet<ImageView> images;
-        public ImageView mImageView1;
-        public ImageView mImageView2;
-        public ImageView mImageView3;
-        public ImageView mImageView4;
-        public ImageView mImageView5;
-        public ImageView mImageView6;
-        public ImageView mImageView7;
-        public ImageView mImageView8;
-        public ImageView mImageView9;
-        public ImageView mImageView10;
-        public ImageView mImageView11;
-        public ImageView mImageView12;
-        public ImageView mImageView13;
-        public ImageView mImageView14;
-        public ImageView mImageView15;
-        public ImageView mImageView16;
-        public ImageView mImageView17;
-        public ImageView mImageView18;
-        public ImageView mImageView19;
-        public ImageView mImageView20;
-        public ImageView mImageView21;
-        public ImageView mImageView22;
-        public ImageView mImageView23;
-        public ImageView mImageView24;
-        public ImageView mImageView25;
-        public ImageView mImageView26;
-        public ImageView mImageView27;
-        public ImageView mImageView28;
-
-
-        @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon28Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
-            super(itemView);
-            this.images = images;
-            mImageView1 = itemView.findViewById(R.id.ribbon1);
-            this.images.add(mImageView1);
-            mImageView2 = itemView.findViewById(R.id.ribbon2);
-            this.images.add(mImageView2);
-            mImageView3 = itemView.findViewById(R.id.ribbon3);
-            this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon4);
-            this.images.add(mImageView4);
-            mImageView5 = itemView.findViewById(R.id.ribbon5);
-            this.images.add(mImageView5);
-            mImageView6 = itemView.findViewById(R.id.ribbon6);
-            this.images.add(mImageView6);
-            mImageView7 = itemView.findViewById(R.id.ribbon7);
-            this.images.add(mImageView7);
-            mImageView8 = itemView.findViewById(R.id.ribbon8);
-            this.images.add(mImageView8);
-            mImageView9 = itemView.findViewById(R.id.ribbon9);
-            this.images.add(mImageView9);
-            mImageView10 = itemView.findViewById(R.id.ribbon10);
-            this.images.add(mImageView10);
-            mImageView11 = itemView.findViewById(R.id.ribbon11);
-            this.images.add(mImageView11);
-            mImageView12 = itemView.findViewById(R.id.ribbon12);
-            this.images.add(mImageView12);
-            mImageView13 = itemView.findViewById(R.id.ribbon13);
-            this.images.add(mImageView13);
-            mImageView14 = itemView.findViewById(R.id.ribbon14);
-            this.images.add(mImageView14);
-            mImageView15 = itemView.findViewById(R.id.ribbon15);
-            this.images.add(mImageView15);
-            mImageView16 = itemView.findViewById(R.id.ribbon16);
-            this.images.add(mImageView16);
-            mImageView17 = itemView.findViewById(R.id.ribbon17);
-            this.images.add(mImageView17);
-            mImageView18 = itemView.findViewById(R.id.ribbon18);
-            this.images.add(mImageView18);
-            mImageView19 = itemView.findViewById(R.id.ribbon19);
-            this.images.add(mImageView19);
-            mImageView20 = itemView.findViewById(R.id.ribbon20);
-            this.images.add(mImageView20);
-            mImageView21 = itemView.findViewById(R.id.ribbon21);
-            this.images.add(mImageView21);
-            mImageView22 = itemView.findViewById(R.id.ribbon22);
-            this.images.add(mImageView22);
-            mImageView23 = itemView.findViewById(R.id.ribbon23);
-            this.images.add(mImageView23);
-            mImageView24 = itemView.findViewById(R.id.ribbon24);
-            this.images.add(mImageView24);
-            mImageView25 = itemView.findViewById(R.id.ribbon25);
-            this.images.add(mImageView25);
-            mImageView26 = itemView.findViewById(R.id.ribbon26);
-            this.images.add(mImageView26);
-            mImageView27 = itemView.findViewById(R.id.ribbon27);
-            this.images.add(mImageView27);
-            mImageView28 = itemView.findViewById(R.id.ribbon28);
-            this.images.add(mImageView28);
-
-        }
-    }
-
-    public static class Ribbon29Holder extends RecyclerView.ViewHolder {
-        private final ArraySet<ImageView> images;
-        public ImageView mImageView1;
-        public ImageView mImageView2;
-        public ImageView mImageView3;
-        public ImageView mImageView4;
-        public ImageView mImageView5;
-        public ImageView mImageView6;
-        public ImageView mImageView7;
-        public ImageView mImageView8;
-        public ImageView mImageView9;
-        public ImageView mImageView10;
-        public ImageView mImageView11;
-        public ImageView mImageView12;
-        public ImageView mImageView13;
-        public ImageView mImageView14;
-        public ImageView mImageView15;
-        public ImageView mImageView16;
-        public ImageView mImageView17;
-        public ImageView mImageView18;
-        public ImageView mImageView19;
-        public ImageView mImageView20;
-        public ImageView mImageView21;
-        public ImageView mImageView22;
-        public ImageView mImageView23;
-        public ImageView mImageView24;
-        public ImageView mImageView25;
-        public ImageView mImageView26;
-        public ImageView mImageView27;
-        public ImageView mImageView28;
-        public ImageView mImageView29;
-
-
-        @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon29Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
-            super(itemView);
-            this.images = images;
-            mImageView1 = itemView.findViewById(R.id.ribbon1);
-            this.images.add(mImageView1);
-            mImageView2 = itemView.findViewById(R.id.ribbon2);
-            this.images.add(mImageView2);
-            mImageView3 = itemView.findViewById(R.id.ribbon3);
-            this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon4);
-            this.images.add(mImageView4);
-            mImageView5 = itemView.findViewById(R.id.ribbon5);
-            this.images.add(mImageView5);
-            mImageView6 = itemView.findViewById(R.id.ribbon6);
-            this.images.add(mImageView6);
-            mImageView7 = itemView.findViewById(R.id.ribbon7);
-            this.images.add(mImageView7);
-            mImageView8 = itemView.findViewById(R.id.ribbon8);
-            this.images.add(mImageView8);
-            mImageView9 = itemView.findViewById(R.id.ribbon9);
-            this.images.add(mImageView9);
-            mImageView10 = itemView.findViewById(R.id.ribbon10);
-            this.images.add(mImageView10);
-            mImageView11 = itemView.findViewById(R.id.ribbon11);
-            this.images.add(mImageView11);
-            mImageView12 = itemView.findViewById(R.id.ribbon12);
-            this.images.add(mImageView12);
-            mImageView13 = itemView.findViewById(R.id.ribbon13);
-            this.images.add(mImageView13);
-            mImageView14 = itemView.findViewById(R.id.ribbon14);
-            this.images.add(mImageView14);
-            mImageView15 = itemView.findViewById(R.id.ribbon15);
-            this.images.add(mImageView15);
-            mImageView16 = itemView.findViewById(R.id.ribbon16);
-            this.images.add(mImageView16);
-            mImageView17 = itemView.findViewById(R.id.ribbon17);
-            this.images.add(mImageView17);
-            mImageView18 = itemView.findViewById(R.id.ribbon18);
-            this.images.add(mImageView18);
-            mImageView19 = itemView.findViewById(R.id.ribbon19);
-            this.images.add(mImageView19);
-            mImageView20 = itemView.findViewById(R.id.ribbon20);
-            this.images.add(mImageView20);
-            mImageView21 = itemView.findViewById(R.id.ribbon21);
-            this.images.add(mImageView21);
-            mImageView22 = itemView.findViewById(R.id.ribbon22);
-            this.images.add(mImageView22);
-            mImageView23 = itemView.findViewById(R.id.ribbon23);
-            this.images.add(mImageView23);
-            mImageView24 = itemView.findViewById(R.id.ribbon24);
-            this.images.add(mImageView24);
-            mImageView25 = itemView.findViewById(R.id.ribbon25);
-            this.images.add(mImageView25);
-            mImageView26 = itemView.findViewById(R.id.ribbon26);
-            this.images.add(mImageView26);
-            mImageView27 = itemView.findViewById(R.id.ribbon27);
-            this.images.add(mImageView27);
-            mImageView28 = itemView.findViewById(R.id.ribbon28);
-            this.images.add(mImageView28);
-            mImageView29 = itemView.findViewById(R.id.ribbon29);
-            this.images.add(mImageView29);
-
-        }
-    }
-
-    public static class Ribbon30Holder extends RecyclerView.ViewHolder {
-        private final ArraySet<ImageView> images;
-        public ImageView mImageView1;
-        public ImageView mImageView2;
-        public ImageView mImageView3;
-        public ImageView mImageView4;
-        public ImageView mImageView5;
-        public ImageView mImageView6;
-        public ImageView mImageView7;
-        public ImageView mImageView8;
-        public ImageView mImageView9;
-        public ImageView mImageView10;
-        public ImageView mImageView11;
-        public ImageView mImageView12;
-        public ImageView mImageView13;
-        public ImageView mImageView14;
-        public ImageView mImageView15;
-        public ImageView mImageView16;
-        public ImageView mImageView17;
-        public ImageView mImageView18;
-        public ImageView mImageView19;
-        public ImageView mImageView20;
-        public ImageView mImageView21;
-        public ImageView mImageView22;
-        public ImageView mImageView23;
-        public ImageView mImageView24;
-        public ImageView mImageView25;
-        public ImageView mImageView26;
-        public ImageView mImageView27;
-        public ImageView mImageView28;
-        public ImageView mImageView29;
-        public ImageView mImageView30;
-
-
-        @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon30Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
-            super(itemView);
-            this.images = images;
-            mImageView1 = itemView.findViewById(R.id.ribbon1);
-            this.images.add(mImageView1);
-            mImageView2 = itemView.findViewById(R.id.ribbon2);
-            this.images.add(mImageView2);
-            mImageView3 = itemView.findViewById(R.id.ribbon3);
-            this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon4);
-            this.images.add(mImageView4);
-            mImageView5 = itemView.findViewById(R.id.ribbon5);
-            this.images.add(mImageView5);
-            mImageView6 = itemView.findViewById(R.id.ribbon6);
-            this.images.add(mImageView6);
-            mImageView7 = itemView.findViewById(R.id.ribbon7);
-            this.images.add(mImageView7);
-            mImageView8 = itemView.findViewById(R.id.ribbon8);
-            this.images.add(mImageView8);
-            mImageView9 = itemView.findViewById(R.id.ribbon9);
-            this.images.add(mImageView9);
-            mImageView10 = itemView.findViewById(R.id.ribbon10);
-            this.images.add(mImageView10);
-            mImageView11 = itemView.findViewById(R.id.ribbon11);
-            this.images.add(mImageView11);
-            mImageView12 = itemView.findViewById(R.id.ribbon12);
-            this.images.add(mImageView12);
-            mImageView13 = itemView.findViewById(R.id.ribbon13);
-            this.images.add(mImageView13);
-            mImageView14 = itemView.findViewById(R.id.ribbon14);
-            this.images.add(mImageView14);
-            mImageView15 = itemView.findViewById(R.id.ribbon15);
-            this.images.add(mImageView15);
-            mImageView16 = itemView.findViewById(R.id.ribbon16);
-            this.images.add(mImageView16);
-            mImageView17 = itemView.findViewById(R.id.ribbon17);
-            this.images.add(mImageView17);
-            mImageView18 = itemView.findViewById(R.id.ribbon18);
-            this.images.add(mImageView18);
-            mImageView19 = itemView.findViewById(R.id.ribbon19);
-            this.images.add(mImageView19);
-            mImageView20 = itemView.findViewById(R.id.ribbon20);
-            this.images.add(mImageView20);
-            mImageView21 = itemView.findViewById(R.id.ribbon21);
-            this.images.add(mImageView21);
-            mImageView22 = itemView.findViewById(R.id.ribbon22);
-            this.images.add(mImageView22);
-            mImageView23 = itemView.findViewById(R.id.ribbon23);
-            this.images.add(mImageView23);
-            mImageView24 = itemView.findViewById(R.id.ribbon24);
-            this.images.add(mImageView24);
-            mImageView25 = itemView.findViewById(R.id.ribbon25);
-            this.images.add(mImageView25);
-            mImageView26 = itemView.findViewById(R.id.ribbon26);
-            this.images.add(mImageView26);
-            mImageView27 = itemView.findViewById(R.id.ribbon27);
-            this.images.add(mImageView27);
-            mImageView28 = itemView.findViewById(R.id.ribbon28);
-            this.images.add(mImageView28);
-            mImageView29 = itemView.findViewById(R.id.ribbon29);
-            this.images.add(mImageView29);
-            mImageView30 = itemView.findViewById(R.id.ribbon30);
-            this.images.add(mImageView30);
-
-        }
-    }
-
-    public static class Ribbon31Holder extends RecyclerView.ViewHolder {
-        private final ArraySet<ImageView> images;
-        public ImageView mImageView1;
-        public ImageView mImageView2;
-        public ImageView mImageView3;
-        public ImageView mImageView4;
-        public ImageView mImageView5;
-        public ImageView mImageView6;
-        public ImageView mImageView7;
-        public ImageView mImageView8;
-        public ImageView mImageView9;
-        public ImageView mImageView10;
-        public ImageView mImageView11;
-        public ImageView mImageView12;
-        public ImageView mImageView13;
-        public ImageView mImageView14;
-        public ImageView mImageView15;
-        public ImageView mImageView16;
-        public ImageView mImageView17;
-        public ImageView mImageView18;
-        public ImageView mImageView19;
-        public ImageView mImageView20;
-        public ImageView mImageView21;
-        public ImageView mImageView22;
-        public ImageView mImageView23;
-        public ImageView mImageView24;
-        public ImageView mImageView25;
-        public ImageView mImageView26;
-        public ImageView mImageView27;
-        public ImageView mImageView28;
-        public ImageView mImageView29;
-        public ImageView mImageView30;
-        public ImageView mImageView31;
-
-
-        @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon31Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
-            super(itemView);
-            this.images = images;
-            mImageView1 = itemView.findViewById(R.id.ribbon1);
-            this.images.add(mImageView1);
-            mImageView2 = itemView.findViewById(R.id.ribbon2);
-            this.images.add(mImageView2);
-            mImageView3 = itemView.findViewById(R.id.ribbon3);
-            this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon4);
-            this.images.add(mImageView4);
-            mImageView5 = itemView.findViewById(R.id.ribbon5);
-            this.images.add(mImageView5);
-            mImageView6 = itemView.findViewById(R.id.ribbon6);
-            this.images.add(mImageView6);
-            mImageView7 = itemView.findViewById(R.id.ribbon7);
-            this.images.add(mImageView7);
-            mImageView8 = itemView.findViewById(R.id.ribbon8);
-            this.images.add(mImageView8);
-            mImageView9 = itemView.findViewById(R.id.ribbon9);
-            this.images.add(mImageView9);
-            mImageView10 = itemView.findViewById(R.id.ribbon10);
-            this.images.add(mImageView10);
-            mImageView11 = itemView.findViewById(R.id.ribbon11);
-            this.images.add(mImageView11);
-            mImageView12 = itemView.findViewById(R.id.ribbon12);
-            this.images.add(mImageView12);
-            mImageView13 = itemView.findViewById(R.id.ribbon13);
-            this.images.add(mImageView13);
-            mImageView14 = itemView.findViewById(R.id.ribbon14);
-            this.images.add(mImageView14);
-            mImageView15 = itemView.findViewById(R.id.ribbon15);
-            this.images.add(mImageView15);
-            mImageView16 = itemView.findViewById(R.id.ribbon16);
-            this.images.add(mImageView16);
-            mImageView17 = itemView.findViewById(R.id.ribbon17);
-            this.images.add(mImageView17);
-            mImageView18 = itemView.findViewById(R.id.ribbon18);
-            this.images.add(mImageView18);
-            mImageView19 = itemView.findViewById(R.id.ribbon19);
-            this.images.add(mImageView19);
-            mImageView20 = itemView.findViewById(R.id.ribbon20);
-            this.images.add(mImageView20);
-            mImageView21 = itemView.findViewById(R.id.ribbon21);
-            this.images.add(mImageView21);
-            mImageView22 = itemView.findViewById(R.id.ribbon22);
-            this.images.add(mImageView22);
-            mImageView23 = itemView.findViewById(R.id.ribbon23);
-            this.images.add(mImageView23);
-            mImageView24 = itemView.findViewById(R.id.ribbon24);
-            this.images.add(mImageView24);
-            mImageView25 = itemView.findViewById(R.id.ribbon25);
-            this.images.add(mImageView25);
-            mImageView26 = itemView.findViewById(R.id.ribbon26);
-            this.images.add(mImageView26);
-            mImageView27 = itemView.findViewById(R.id.ribbon27);
-            this.images.add(mImageView27);
-            mImageView28 = itemView.findViewById(R.id.ribbon28);
-            this.images.add(mImageView28);
-            mImageView29 = itemView.findViewById(R.id.ribbon29);
-            this.images.add(mImageView29);
-            mImageView30 = itemView.findViewById(R.id.ribbon30);
-            this.images.add(mImageView30);
-            mImageView31 = itemView.findViewById(R.id.ribbon31);
-            this.images.add(mImageView31);
-
-        }
-    }
-
-    public static class Ribbon32Holder extends RecyclerView.ViewHolder {
-        private final ArraySet<ImageView> images;
-        public ImageView mImageView1;
-        public ImageView mImageView2;
-        public ImageView mImageView3;
-        public ImageView mImageView4;
-        public ImageView mImageView5;
-        public ImageView mImageView6;
-        public ImageView mImageView7;
-        public ImageView mImageView8;
-        public ImageView mImageView9;
-        public ImageView mImageView10;
-        public ImageView mImageView11;
-        public ImageView mImageView12;
-        public ImageView mImageView13;
-        public ImageView mImageView14;
-        public ImageView mImageView15;
-        public ImageView mImageView16;
-        public ImageView mImageView17;
-        public ImageView mImageView18;
-        public ImageView mImageView19;
-        public ImageView mImageView20;
-        public ImageView mImageView21;
-        public ImageView mImageView22;
-        public ImageView mImageView23;
-        public ImageView mImageView24;
-        public ImageView mImageView25;
-        public ImageView mImageView26;
-        public ImageView mImageView27;
-        public ImageView mImageView28;
-        public ImageView mImageView29;
-        public ImageView mImageView30;
-        public ImageView mImageView31;
-        public ImageView mImageView32;
-
-
-        @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon32Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
-            super(itemView);
-            this.images = images;
-            mImageView1 = itemView.findViewById(R.id.ribbon1);
-            this.images.add(mImageView1);
-            mImageView2 = itemView.findViewById(R.id.ribbon2);
-            this.images.add(mImageView2);
-            mImageView3 = itemView.findViewById(R.id.ribbon3);
-            this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon4);
-            this.images.add(mImageView4);
-            mImageView5 = itemView.findViewById(R.id.ribbon5);
-            this.images.add(mImageView5);
-            mImageView6 = itemView.findViewById(R.id.ribbon6);
-            this.images.add(mImageView6);
-            mImageView7 = itemView.findViewById(R.id.ribbon7);
-            this.images.add(mImageView7);
-            mImageView8 = itemView.findViewById(R.id.ribbon8);
-            this.images.add(mImageView8);
-            mImageView9 = itemView.findViewById(R.id.ribbon9);
-            this.images.add(mImageView9);
-            mImageView10 = itemView.findViewById(R.id.ribbon10);
-            this.images.add(mImageView10);
-            mImageView11 = itemView.findViewById(R.id.ribbon11);
-            this.images.add(mImageView11);
-            mImageView12 = itemView.findViewById(R.id.ribbon12);
-            this.images.add(mImageView12);
-            mImageView13 = itemView.findViewById(R.id.ribbon13);
-            this.images.add(mImageView13);
-            mImageView14 = itemView.findViewById(R.id.ribbon14);
-            this.images.add(mImageView14);
-            mImageView15 = itemView.findViewById(R.id.ribbon15);
-            this.images.add(mImageView15);
-            mImageView16 = itemView.findViewById(R.id.ribbon16);
-            this.images.add(mImageView16);
-            mImageView17 = itemView.findViewById(R.id.ribbon17);
-            this.images.add(mImageView17);
-            mImageView18 = itemView.findViewById(R.id.ribbon18);
-            this.images.add(mImageView18);
-            mImageView19 = itemView.findViewById(R.id.ribbon19);
-            this.images.add(mImageView19);
-            mImageView20 = itemView.findViewById(R.id.ribbon20);
-            this.images.add(mImageView20);
-            mImageView21 = itemView.findViewById(R.id.ribbon21);
-            this.images.add(mImageView21);
-            mImageView22 = itemView.findViewById(R.id.ribbon22);
-            this.images.add(mImageView22);
-            mImageView23 = itemView.findViewById(R.id.ribbon23);
-            this.images.add(mImageView23);
-            mImageView24 = itemView.findViewById(R.id.ribbon24);
-            this.images.add(mImageView24);
-            mImageView25 = itemView.findViewById(R.id.ribbon25);
-            this.images.add(mImageView25);
-            mImageView26 = itemView.findViewById(R.id.ribbon26);
-            this.images.add(mImageView26);
-            mImageView27 = itemView.findViewById(R.id.ribbon27);
-            this.images.add(mImageView27);
-            mImageView28 = itemView.findViewById(R.id.ribbon28);
-            this.images.add(mImageView28);
-            mImageView29 = itemView.findViewById(R.id.ribbon29);
-            this.images.add(mImageView29);
-            mImageView30 = itemView.findViewById(R.id.ribbon30);
-            this.images.add(mImageView30);
-            mImageView31 = itemView.findViewById(R.id.ribbon31);
-            this.images.add(mImageView31);
-            mImageView32 = itemView.findViewById(R.id.ribbon32);
-            this.images.add(mImageView32);
-
-        }
-    }
-
-    public static class Ribbon33Holder extends RecyclerView.ViewHolder {
-        private final ArraySet<ImageView> images;
-        public ImageView mImageView1;
-        public ImageView mImageView2;
-        public ImageView mImageView3;
-        public ImageView mImageView4;
-        public ImageView mImageView5;
-        public ImageView mImageView6;
-        public ImageView mImageView7;
-        public ImageView mImageView8;
-        public ImageView mImageView9;
-        public ImageView mImageView10;
-        public ImageView mImageView11;
-        public ImageView mImageView12;
-        public ImageView mImageView13;
-        public ImageView mImageView14;
-        public ImageView mImageView15;
-        public ImageView mImageView16;
-        public ImageView mImageView17;
-        public ImageView mImageView18;
-        public ImageView mImageView19;
-        public ImageView mImageView20;
-        public ImageView mImageView21;
-        public ImageView mImageView22;
-        public ImageView mImageView23;
-        public ImageView mImageView24;
-        public ImageView mImageView25;
-        public ImageView mImageView26;
-        public ImageView mImageView27;
-        public ImageView mImageView28;
-        public ImageView mImageView29;
-        public ImageView mImageView30;
-        public ImageView mImageView31;
-        public ImageView mImageView32;
-        public ImageView mImageView33;
-
-
-        @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon33Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
-            super(itemView);
-            this.images = images;
-            mImageView1 = itemView.findViewById(R.id.ribbon1);
-            this.images.add(mImageView1);
-            mImageView2 = itemView.findViewById(R.id.ribbon2);
-            this.images.add(mImageView2);
-            mImageView3 = itemView.findViewById(R.id.ribbon3);
-            this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon4);
-            this.images.add(mImageView4);
-            mImageView5 = itemView.findViewById(R.id.ribbon5);
-            this.images.add(mImageView5);
-            mImageView6 = itemView.findViewById(R.id.ribbon6);
-            this.images.add(mImageView6);
-            mImageView7 = itemView.findViewById(R.id.ribbon7);
-            this.images.add(mImageView7);
-            mImageView8 = itemView.findViewById(R.id.ribbon8);
-            this.images.add(mImageView8);
-            mImageView9 = itemView.findViewById(R.id.ribbon9);
-            this.images.add(mImageView9);
-            mImageView10 = itemView.findViewById(R.id.ribbon10);
-            this.images.add(mImageView10);
-            mImageView11 = itemView.findViewById(R.id.ribbon11);
-            this.images.add(mImageView11);
-            mImageView12 = itemView.findViewById(R.id.ribbon12);
-            this.images.add(mImageView12);
-            mImageView13 = itemView.findViewById(R.id.ribbon13);
-            this.images.add(mImageView13);
-            mImageView14 = itemView.findViewById(R.id.ribbon14);
-            this.images.add(mImageView14);
-            mImageView15 = itemView.findViewById(R.id.ribbon15);
-            this.images.add(mImageView15);
-            mImageView16 = itemView.findViewById(R.id.ribbon16);
-            this.images.add(mImageView16);
-            mImageView17 = itemView.findViewById(R.id.ribbon17);
-            this.images.add(mImageView17);
-            mImageView18 = itemView.findViewById(R.id.ribbon18);
-            this.images.add(mImageView18);
-            mImageView19 = itemView.findViewById(R.id.ribbon19);
-            this.images.add(mImageView19);
-            mImageView20 = itemView.findViewById(R.id.ribbon20);
-            this.images.add(mImageView20);
-            mImageView21 = itemView.findViewById(R.id.ribbon21);
-            this.images.add(mImageView21);
-            mImageView22 = itemView.findViewById(R.id.ribbon22);
-            this.images.add(mImageView22);
-            mImageView23 = itemView.findViewById(R.id.ribbon23);
-            this.images.add(mImageView23);
-            mImageView24 = itemView.findViewById(R.id.ribbon24);
-            this.images.add(mImageView24);
-            mImageView25 = itemView.findViewById(R.id.ribbon25);
-            this.images.add(mImageView25);
-            mImageView26 = itemView.findViewById(R.id.ribbon26);
-            this.images.add(mImageView26);
-            mImageView27 = itemView.findViewById(R.id.ribbon27);
-            this.images.add(mImageView27);
-            mImageView28 = itemView.findViewById(R.id.ribbon28);
-            this.images.add(mImageView28);
-            mImageView29 = itemView.findViewById(R.id.ribbon29);
-            this.images.add(mImageView29);
-            mImageView30 = itemView.findViewById(R.id.ribbon30);
-            this.images.add(mImageView30);
-            mImageView31 = itemView.findViewById(R.id.ribbon31);
-            this.images.add(mImageView31);
-            mImageView32 = itemView.findViewById(R.id.ribbon32);
-            this.images.add(mImageView32);
-            mImageView33 = itemView.findViewById(R.id.ribbon33);
-            this.images.add(mImageView33);
-
-        }
-    }
-
-    public static class Ribbon34Holder extends RecyclerView.ViewHolder {
-        private final ArraySet<ImageView> images;
-        public ImageView mImageView1;
-        public ImageView mImageView2;
-        public ImageView mImageView3;
-        public ImageView mImageView4;
-        public ImageView mImageView5;
-        public ImageView mImageView6;
-        public ImageView mImageView7;
-        public ImageView mImageView8;
-        public ImageView mImageView9;
-        public ImageView mImageView10;
-        public ImageView mImageView11;
-        public ImageView mImageView12;
-        public ImageView mImageView13;
-        public ImageView mImageView14;
-        public ImageView mImageView15;
-        public ImageView mImageView16;
-        public ImageView mImageView17;
-        public ImageView mImageView18;
-        public ImageView mImageView19;
-        public ImageView mImageView20;
-        public ImageView mImageView21;
-        public ImageView mImageView22;
-        public ImageView mImageView23;
-        public ImageView mImageView24;
-        public ImageView mImageView25;
-        public ImageView mImageView26;
-        public ImageView mImageView27;
-        public ImageView mImageView28;
-        public ImageView mImageView29;
-        public ImageView mImageView30;
-        public ImageView mImageView31;
-        public ImageView mImageView32;
-        public ImageView mImageView33;
-        public ImageView mImageView34;
-
-
-        @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon34Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
-            super(itemView);
-            this.images = images;
-            mImageView1 = itemView.findViewById(R.id.ribbon1);
-            this.images.add(mImageView1);
-            mImageView2 = itemView.findViewById(R.id.ribbon2);
-            this.images.add(mImageView2);
-            mImageView3 = itemView.findViewById(R.id.ribbon3);
-            this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon4);
-            this.images.add(mImageView4);
-            mImageView5 = itemView.findViewById(R.id.ribbon5);
-            this.images.add(mImageView5);
-            mImageView6 = itemView.findViewById(R.id.ribbon6);
-            this.images.add(mImageView6);
-            mImageView7 = itemView.findViewById(R.id.ribbon7);
-            this.images.add(mImageView7);
-            mImageView8 = itemView.findViewById(R.id.ribbon8);
-            this.images.add(mImageView8);
-            mImageView9 = itemView.findViewById(R.id.ribbon9);
-            this.images.add(mImageView9);
-            mImageView10 = itemView.findViewById(R.id.ribbon10);
-            this.images.add(mImageView10);
-            mImageView11 = itemView.findViewById(R.id.ribbon11);
-            this.images.add(mImageView11);
-            mImageView12 = itemView.findViewById(R.id.ribbon12);
-            this.images.add(mImageView12);
-            mImageView13 = itemView.findViewById(R.id.ribbon13);
-            this.images.add(mImageView13);
-            mImageView14 = itemView.findViewById(R.id.ribbon14);
-            this.images.add(mImageView14);
-            mImageView15 = itemView.findViewById(R.id.ribbon15);
-            this.images.add(mImageView15);
-            mImageView16 = itemView.findViewById(R.id.ribbon16);
-            this.images.add(mImageView16);
-            mImageView17 = itemView.findViewById(R.id.ribbon17);
-            this.images.add(mImageView17);
-            mImageView18 = itemView.findViewById(R.id.ribbon18);
-            this.images.add(mImageView18);
-            mImageView19 = itemView.findViewById(R.id.ribbon19);
-            this.images.add(mImageView19);
-            mImageView20 = itemView.findViewById(R.id.ribbon20);
-            this.images.add(mImageView20);
-            mImageView21 = itemView.findViewById(R.id.ribbon21);
-            this.images.add(mImageView21);
-            mImageView22 = itemView.findViewById(R.id.ribbon22);
-            this.images.add(mImageView22);
-            mImageView23 = itemView.findViewById(R.id.ribbon23);
-            this.images.add(mImageView23);
-            mImageView24 = itemView.findViewById(R.id.ribbon24);
-            this.images.add(mImageView24);
-            mImageView25 = itemView.findViewById(R.id.ribbon25);
-            this.images.add(mImageView25);
-            mImageView26 = itemView.findViewById(R.id.ribbon26);
-            this.images.add(mImageView26);
-            mImageView27 = itemView.findViewById(R.id.ribbon27);
-            this.images.add(mImageView27);
-            mImageView28 = itemView.findViewById(R.id.ribbon28);
-            this.images.add(mImageView28);
-            mImageView29 = itemView.findViewById(R.id.ribbon29);
-            this.images.add(mImageView29);
-            mImageView30 = itemView.findViewById(R.id.ribbon30);
-            this.images.add(mImageView30);
-            mImageView31 = itemView.findViewById(R.id.ribbon31);
-            this.images.add(mImageView31);
-            mImageView32 = itemView.findViewById(R.id.ribbon32);
-            this.images.add(mImageView32);
-            mImageView33 = itemView.findViewById(R.id.ribbon33);
-            this.images.add(mImageView33);
-            mImageView34 = itemView.findViewById(R.id.ribbon34);
-            this.images.add(mImageView34);
-
-        }
-    }
-
-    public static class Ribbon35Holder extends RecyclerView.ViewHolder {
-        private final ArraySet<ImageView> images;
-        public ImageView mImageView1;
-        public ImageView mImageView2;
-        public ImageView mImageView3;
-        public ImageView mImageView4;
-        public ImageView mImageView5;
-        public ImageView mImageView6;
-        public ImageView mImageView7;
-        public ImageView mImageView8;
-        public ImageView mImageView9;
-        public ImageView mImageView10;
-        public ImageView mImageView11;
-        public ImageView mImageView12;
-        public ImageView mImageView13;
-        public ImageView mImageView14;
-        public ImageView mImageView15;
-        public ImageView mImageView16;
-        public ImageView mImageView17;
-        public ImageView mImageView18;
-        public ImageView mImageView19;
-        public ImageView mImageView20;
-        public ImageView mImageView21;
-        public ImageView mImageView22;
-        public ImageView mImageView23;
-        public ImageView mImageView24;
-        public ImageView mImageView25;
-        public ImageView mImageView26;
-        public ImageView mImageView27;
-        public ImageView mImageView28;
-        public ImageView mImageView29;
-        public ImageView mImageView30;
-        public ImageView mImageView31;
-        public ImageView mImageView32;
-        public ImageView mImageView33;
-        public ImageView mImageView34;
-        public ImageView mImageView35;
-
-
-        @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon35Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
-            super(itemView);
-            this.images = images;
-            mImageView1 = itemView.findViewById(R.id.ribbon1);
-            this.images.add(mImageView1);
-            mImageView2 = itemView.findViewById(R.id.ribbon2);
-            this.images.add(mImageView2);
-            mImageView3 = itemView.findViewById(R.id.ribbon3);
-            this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon4);
-            this.images.add(mImageView4);
-            mImageView5 = itemView.findViewById(R.id.ribbon5);
-            this.images.add(mImageView5);
-            mImageView6 = itemView.findViewById(R.id.ribbon6);
-            this.images.add(mImageView6);
-            mImageView7 = itemView.findViewById(R.id.ribbon7);
-            this.images.add(mImageView7);
-            mImageView8 = itemView.findViewById(R.id.ribbon8);
-            this.images.add(mImageView8);
-            mImageView9 = itemView.findViewById(R.id.ribbon9);
-            this.images.add(mImageView9);
-            mImageView10 = itemView.findViewById(R.id.ribbon10);
-            this.images.add(mImageView10);
-            mImageView11 = itemView.findViewById(R.id.ribbon11);
-            this.images.add(mImageView11);
-            mImageView12 = itemView.findViewById(R.id.ribbon12);
-            this.images.add(mImageView12);
-            mImageView13 = itemView.findViewById(R.id.ribbon13);
-            this.images.add(mImageView13);
-            mImageView14 = itemView.findViewById(R.id.ribbon14);
-            this.images.add(mImageView14);
-            mImageView15 = itemView.findViewById(R.id.ribbon15);
-            this.images.add(mImageView15);
-            mImageView16 = itemView.findViewById(R.id.ribbon16);
-            this.images.add(mImageView16);
-            mImageView17 = itemView.findViewById(R.id.ribbon17);
-            this.images.add(mImageView17);
-            mImageView18 = itemView.findViewById(R.id.ribbon18);
-            this.images.add(mImageView18);
-            mImageView19 = itemView.findViewById(R.id.ribbon19);
-            this.images.add(mImageView19);
-            mImageView20 = itemView.findViewById(R.id.ribbon20);
-            this.images.add(mImageView20);
-            mImageView21 = itemView.findViewById(R.id.ribbon21);
-            this.images.add(mImageView21);
-            mImageView22 = itemView.findViewById(R.id.ribbon22);
-            this.images.add(mImageView22);
-            mImageView23 = itemView.findViewById(R.id.ribbon23);
-            this.images.add(mImageView23);
-            mImageView24 = itemView.findViewById(R.id.ribbon24);
-            this.images.add(mImageView24);
-            mImageView25 = itemView.findViewById(R.id.ribbon25);
-            this.images.add(mImageView25);
-            mImageView26 = itemView.findViewById(R.id.ribbon26);
-            this.images.add(mImageView26);
-            mImageView27 = itemView.findViewById(R.id.ribbon27);
-            this.images.add(mImageView27);
-            mImageView28 = itemView.findViewById(R.id.ribbon28);
-            this.images.add(mImageView28);
-            mImageView29 = itemView.findViewById(R.id.ribbon29);
-            this.images.add(mImageView29);
-            mImageView30 = itemView.findViewById(R.id.ribbon30);
-            this.images.add(mImageView30);
-            mImageView31 = itemView.findViewById(R.id.ribbon31);
-            this.images.add(mImageView31);
-            mImageView32 = itemView.findViewById(R.id.ribbon32);
-            this.images.add(mImageView32);
-            mImageView33 = itemView.findViewById(R.id.ribbon33);
-            this.images.add(mImageView33);
-            mImageView34 = itemView.findViewById(R.id.ribbon34);
-            this.images.add(mImageView34);
-            mImageView35 = itemView.findViewById(R.id.ribbon35);
-            this.images.add(mImageView35);
-
-        }
-    }
-
-    public static class Ribbon36Holder extends RecyclerView.ViewHolder {
-        private final ArraySet<ImageView> images;
-        public ImageView mImageView1;
-        public ImageView mImageView2;
-        public ImageView mImageView3;
-        public ImageView mImageView4;
-        public ImageView mImageView5;
-        public ImageView mImageView6;
-        public ImageView mImageView7;
-        public ImageView mImageView8;
-        public ImageView mImageView9;
-        public ImageView mImageView10;
-        public ImageView mImageView11;
-        public ImageView mImageView12;
-        public ImageView mImageView13;
-        public ImageView mImageView14;
-        public ImageView mImageView15;
-        public ImageView mImageView16;
-        public ImageView mImageView17;
-        public ImageView mImageView18;
-        public ImageView mImageView19;
-        public ImageView mImageView20;
-        public ImageView mImageView21;
-        public ImageView mImageView22;
-        public ImageView mImageView23;
-        public ImageView mImageView24;
-        public ImageView mImageView25;
-        public ImageView mImageView26;
-        public ImageView mImageView27;
-        public ImageView mImageView28;
-        public ImageView mImageView29;
-        public ImageView mImageView30;
-        public ImageView mImageView31;
-        public ImageView mImageView32;
-        public ImageView mImageView33;
-        public ImageView mImageView34;
-        public ImageView mImageView35;
-        public ImageView mImageView36;
-
-
-        @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon36Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
-            super(itemView);
-            this.images = images;
-            mImageView1 = itemView.findViewById(R.id.ribbon1);
-            this.images.add(mImageView1);
-            mImageView2 = itemView.findViewById(R.id.ribbon2);
-            this.images.add(mImageView2);
-            mImageView3 = itemView.findViewById(R.id.ribbon3);
-            this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon4);
-            this.images.add(mImageView4);
-            mImageView5 = itemView.findViewById(R.id.ribbon5);
-            this.images.add(mImageView5);
-            mImageView6 = itemView.findViewById(R.id.ribbon6);
-            this.images.add(mImageView6);
-            mImageView7 = itemView.findViewById(R.id.ribbon7);
-            this.images.add(mImageView7);
-            mImageView8 = itemView.findViewById(R.id.ribbon8);
-            this.images.add(mImageView8);
-            mImageView9 = itemView.findViewById(R.id.ribbon9);
-            this.images.add(mImageView9);
-            mImageView10 = itemView.findViewById(R.id.ribbon10);
-            this.images.add(mImageView10);
-            mImageView11 = itemView.findViewById(R.id.ribbon11);
-            this.images.add(mImageView11);
-            mImageView12 = itemView.findViewById(R.id.ribbon12);
-            this.images.add(mImageView12);
-            mImageView13 = itemView.findViewById(R.id.ribbon13);
-            this.images.add(mImageView13);
-            mImageView14 = itemView.findViewById(R.id.ribbon14);
-            this.images.add(mImageView14);
-            mImageView15 = itemView.findViewById(R.id.ribbon15);
-            this.images.add(mImageView15);
-            mImageView16 = itemView.findViewById(R.id.ribbon16);
-            this.images.add(mImageView16);
-            mImageView17 = itemView.findViewById(R.id.ribbon17);
-            this.images.add(mImageView17);
-            mImageView18 = itemView.findViewById(R.id.ribbon18);
-            this.images.add(mImageView18);
-            mImageView19 = itemView.findViewById(R.id.ribbon19);
-            this.images.add(mImageView19);
-            mImageView20 = itemView.findViewById(R.id.ribbon20);
-            this.images.add(mImageView20);
-            mImageView21 = itemView.findViewById(R.id.ribbon21);
-            this.images.add(mImageView21);
-            mImageView22 = itemView.findViewById(R.id.ribbon22);
-            this.images.add(mImageView22);
-            mImageView23 = itemView.findViewById(R.id.ribbon23);
-            this.images.add(mImageView23);
-            mImageView24 = itemView.findViewById(R.id.ribbon24);
-            this.images.add(mImageView24);
-            mImageView25 = itemView.findViewById(R.id.ribbon25);
-            this.images.add(mImageView25);
-            mImageView26 = itemView.findViewById(R.id.ribbon26);
-            this.images.add(mImageView26);
-            mImageView27 = itemView.findViewById(R.id.ribbon27);
-            this.images.add(mImageView27);
-            mImageView28 = itemView.findViewById(R.id.ribbon28);
-            this.images.add(mImageView28);
-            mImageView29 = itemView.findViewById(R.id.ribbon29);
-            this.images.add(mImageView29);
-            mImageView30 = itemView.findViewById(R.id.ribbon30);
-            this.images.add(mImageView30);
-            mImageView31 = itemView.findViewById(R.id.ribbon31);
-            this.images.add(mImageView31);
-            mImageView32 = itemView.findViewById(R.id.ribbon32);
-            this.images.add(mImageView32);
-            mImageView33 = itemView.findViewById(R.id.ribbon33);
-            this.images.add(mImageView33);
-            mImageView34 = itemView.findViewById(R.id.ribbon34);
-            this.images.add(mImageView34);
-            mImageView35 = itemView.findViewById(R.id.ribbon35);
-            this.images.add(mImageView35);
-            mImageView36 = itemView.findViewById(R.id.ribbon36);
-            this.images.add(mImageView36);
-
-        }
-    }
-
-    public static class Ribbon37Holder extends RecyclerView.ViewHolder {
-        private final ArraySet<ImageView> images;
-        public ImageView mImageView1;
-        public ImageView mImageView2;
-        public ImageView mImageView3;
-        public ImageView mImageView4;
-        public ImageView mImageView5;
-        public ImageView mImageView6;
-        public ImageView mImageView7;
-        public ImageView mImageView8;
-        public ImageView mImageView9;
-        public ImageView mImageView10;
-        public ImageView mImageView11;
-        public ImageView mImageView12;
-        public ImageView mImageView13;
-        public ImageView mImageView14;
-        public ImageView mImageView15;
-        public ImageView mImageView16;
-        public ImageView mImageView17;
-        public ImageView mImageView18;
-        public ImageView mImageView19;
-        public ImageView mImageView20;
-        public ImageView mImageView21;
-        public ImageView mImageView22;
-        public ImageView mImageView23;
-        public ImageView mImageView24;
-        public ImageView mImageView25;
-        public ImageView mImageView26;
-        public ImageView mImageView27;
-        public ImageView mImageView28;
-        public ImageView mImageView29;
-        public ImageView mImageView30;
-        public ImageView mImageView31;
-        public ImageView mImageView32;
-        public ImageView mImageView33;
-        public ImageView mImageView34;
-        public ImageView mImageView35;
-        public ImageView mImageView36;
-        public ImageView mImageView37;
-
-
-        @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon37Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
-            super(itemView);
-            this.images = images;
-            mImageView1 = itemView.findViewById(R.id.ribbon1);
-            this.images.add(mImageView1);
-            mImageView2 = itemView.findViewById(R.id.ribbon2);
-            this.images.add(mImageView2);
-            mImageView3 = itemView.findViewById(R.id.ribbon3);
-            this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon4);
-            this.images.add(mImageView4);
-            mImageView5 = itemView.findViewById(R.id.ribbon5);
-            this.images.add(mImageView5);
-            mImageView6 = itemView.findViewById(R.id.ribbon6);
-            this.images.add(mImageView6);
-            mImageView7 = itemView.findViewById(R.id.ribbon7);
-            this.images.add(mImageView7);
-            mImageView8 = itemView.findViewById(R.id.ribbon8);
-            this.images.add(mImageView8);
-            mImageView9 = itemView.findViewById(R.id.ribbon9);
-            this.images.add(mImageView9);
-            mImageView10 = itemView.findViewById(R.id.ribbon10);
-            this.images.add(mImageView10);
-            mImageView11 = itemView.findViewById(R.id.ribbon11);
-            this.images.add(mImageView11);
-            mImageView12 = itemView.findViewById(R.id.ribbon12);
-            this.images.add(mImageView12);
-            mImageView13 = itemView.findViewById(R.id.ribbon13);
-            this.images.add(mImageView13);
-            mImageView14 = itemView.findViewById(R.id.ribbon14);
-            this.images.add(mImageView14);
-            mImageView15 = itemView.findViewById(R.id.ribbon15);
-            this.images.add(mImageView15);
-            mImageView16 = itemView.findViewById(R.id.ribbon16);
-            this.images.add(mImageView16);
-            mImageView17 = itemView.findViewById(R.id.ribbon17);
-            this.images.add(mImageView17);
-            mImageView18 = itemView.findViewById(R.id.ribbon18);
-            this.images.add(mImageView18);
-            mImageView19 = itemView.findViewById(R.id.ribbon19);
-            this.images.add(mImageView19);
-            mImageView20 = itemView.findViewById(R.id.ribbon20);
-            this.images.add(mImageView20);
-            mImageView21 = itemView.findViewById(R.id.ribbon21);
-            this.images.add(mImageView21);
-            mImageView22 = itemView.findViewById(R.id.ribbon22);
-            this.images.add(mImageView22);
-            mImageView23 = itemView.findViewById(R.id.ribbon23);
-            this.images.add(mImageView23);
-            mImageView24 = itemView.findViewById(R.id.ribbon24);
-            this.images.add(mImageView24);
-            mImageView25 = itemView.findViewById(R.id.ribbon25);
-            this.images.add(mImageView25);
-            mImageView26 = itemView.findViewById(R.id.ribbon26);
-            this.images.add(mImageView26);
-            mImageView27 = itemView.findViewById(R.id.ribbon27);
-            this.images.add(mImageView27);
-            mImageView28 = itemView.findViewById(R.id.ribbon28);
-            this.images.add(mImageView28);
-            mImageView29 = itemView.findViewById(R.id.ribbon29);
-            this.images.add(mImageView29);
-            mImageView30 = itemView.findViewById(R.id.ribbon30);
-            this.images.add(mImageView30);
-            mImageView31 = itemView.findViewById(R.id.ribbon31);
-            this.images.add(mImageView31);
-            mImageView32 = itemView.findViewById(R.id.ribbon32);
-            this.images.add(mImageView32);
-            mImageView33 = itemView.findViewById(R.id.ribbon33);
-            this.images.add(mImageView33);
-            mImageView34 = itemView.findViewById(R.id.ribbon34);
-            this.images.add(mImageView34);
-            mImageView35 = itemView.findViewById(R.id.ribbon35);
-            this.images.add(mImageView35);
-            mImageView36 = itemView.findViewById(R.id.ribbon36);
-            this.images.add(mImageView36);
-            mImageView37 = itemView.findViewById(R.id.ribbon37);
-            this.images.add(mImageView37);
-
-        }
-    }
-
-    public static class Ribbon38Holder extends RecyclerView.ViewHolder {
-        private final ArraySet<ImageView> images;
-        public ImageView mImageView1;
-        public ImageView mImageView2;
-        public ImageView mImageView3;
-        public ImageView mImageView4;
-        public ImageView mImageView5;
-        public ImageView mImageView6;
-        public ImageView mImageView7;
-        public ImageView mImageView8;
-        public ImageView mImageView9;
-        public ImageView mImageView10;
-        public ImageView mImageView11;
-        public ImageView mImageView12;
-        public ImageView mImageView13;
-        public ImageView mImageView14;
-        public ImageView mImageView15;
-        public ImageView mImageView16;
-        public ImageView mImageView17;
-        public ImageView mImageView18;
-        public ImageView mImageView19;
-        public ImageView mImageView20;
-        public ImageView mImageView21;
-        public ImageView mImageView22;
-        public ImageView mImageView23;
-        public ImageView mImageView24;
-        public ImageView mImageView25;
-        public ImageView mImageView26;
-        public ImageView mImageView27;
-        public ImageView mImageView28;
-        public ImageView mImageView29;
-        public ImageView mImageView30;
-        public ImageView mImageView31;
-        public ImageView mImageView32;
-        public ImageView mImageView33;
-        public ImageView mImageView34;
-        public ImageView mImageView35;
-        public ImageView mImageView36;
-        public ImageView mImageView37;
-        public ImageView mImageView38;
-
-
-        @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon38Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
-            super(itemView);
-            this.images = images;
-            mImageView1 = itemView.findViewById(R.id.ribbon1);
-            this.images.add(mImageView1);
-            mImageView2 = itemView.findViewById(R.id.ribbon2);
-            this.images.add(mImageView2);
-            mImageView3 = itemView.findViewById(R.id.ribbon3);
-            this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon4);
-            this.images.add(mImageView4);
-            mImageView5 = itemView.findViewById(R.id.ribbon5);
-            this.images.add(mImageView5);
-            mImageView6 = itemView.findViewById(R.id.ribbon6);
-            this.images.add(mImageView6);
-            mImageView7 = itemView.findViewById(R.id.ribbon7);
-            this.images.add(mImageView7);
-            mImageView8 = itemView.findViewById(R.id.ribbon8);
-            this.images.add(mImageView8);
-            mImageView9 = itemView.findViewById(R.id.ribbon9);
-            this.images.add(mImageView9);
-            mImageView10 = itemView.findViewById(R.id.ribbon10);
-            this.images.add(mImageView10);
-            mImageView11 = itemView.findViewById(R.id.ribbon11);
-            this.images.add(mImageView11);
-            mImageView12 = itemView.findViewById(R.id.ribbon12);
-            this.images.add(mImageView12);
-            mImageView13 = itemView.findViewById(R.id.ribbon13);
-            this.images.add(mImageView13);
-            mImageView14 = itemView.findViewById(R.id.ribbon14);
-            this.images.add(mImageView14);
-            mImageView15 = itemView.findViewById(R.id.ribbon15);
-            this.images.add(mImageView15);
-            mImageView16 = itemView.findViewById(R.id.ribbon16);
-            this.images.add(mImageView16);
-            mImageView17 = itemView.findViewById(R.id.ribbon17);
-            this.images.add(mImageView17);
-            mImageView18 = itemView.findViewById(R.id.ribbon18);
-            this.images.add(mImageView18);
-            mImageView19 = itemView.findViewById(R.id.ribbon19);
-            this.images.add(mImageView19);
-            mImageView20 = itemView.findViewById(R.id.ribbon20);
-            this.images.add(mImageView20);
-            mImageView21 = itemView.findViewById(R.id.ribbon21);
-            this.images.add(mImageView21);
-            mImageView22 = itemView.findViewById(R.id.ribbon22);
-            this.images.add(mImageView22);
-            mImageView23 = itemView.findViewById(R.id.ribbon23);
-            this.images.add(mImageView23);
-            mImageView24 = itemView.findViewById(R.id.ribbon24);
-            this.images.add(mImageView24);
-            mImageView25 = itemView.findViewById(R.id.ribbon25);
-            this.images.add(mImageView25);
-            mImageView26 = itemView.findViewById(R.id.ribbon26);
-            this.images.add(mImageView26);
-            mImageView27 = itemView.findViewById(R.id.ribbon27);
-            this.images.add(mImageView27);
-            mImageView28 = itemView.findViewById(R.id.ribbon28);
-            this.images.add(mImageView28);
-            mImageView29 = itemView.findViewById(R.id.ribbon29);
-            this.images.add(mImageView29);
-            mImageView30 = itemView.findViewById(R.id.ribbon30);
-            this.images.add(mImageView30);
-            mImageView31 = itemView.findViewById(R.id.ribbon31);
-            this.images.add(mImageView31);
-            mImageView32 = itemView.findViewById(R.id.ribbon32);
-            this.images.add(mImageView32);
-            mImageView33 = itemView.findViewById(R.id.ribbon33);
-            this.images.add(mImageView33);
-            mImageView34 = itemView.findViewById(R.id.ribbon34);
-            this.images.add(mImageView34);
-            mImageView35 = itemView.findViewById(R.id.ribbon35);
-            this.images.add(mImageView35);
-            mImageView36 = itemView.findViewById(R.id.ribbon36);
-            this.images.add(mImageView36);
-            mImageView37 = itemView.findViewById(R.id.ribbon37);
-            this.images.add(mImageView37);
-            mImageView38 = itemView.findViewById(R.id.ribbon38);
-            this.images.add(mImageView38);
-
-        }
-    }
-
-    public static class Ribbon39Holder extends RecyclerView.ViewHolder {
-        private final ArraySet<ImageView> images;
-        public ImageView mImageView1;
-        public ImageView mImageView2;
-        public ImageView mImageView3;
-        public ImageView mImageView4;
-        public ImageView mImageView5;
-        public ImageView mImageView6;
-        public ImageView mImageView7;
-        public ImageView mImageView8;
-        public ImageView mImageView9;
-        public ImageView mImageView10;
-        public ImageView mImageView11;
-        public ImageView mImageView12;
-        public ImageView mImageView13;
-        public ImageView mImageView14;
-        public ImageView mImageView15;
-        public ImageView mImageView16;
-        public ImageView mImageView17;
-        public ImageView mImageView18;
-        public ImageView mImageView19;
-        public ImageView mImageView20;
-        public ImageView mImageView21;
-        public ImageView mImageView22;
-        public ImageView mImageView23;
-        public ImageView mImageView24;
-        public ImageView mImageView25;
-        public ImageView mImageView26;
-        public ImageView mImageView27;
-        public ImageView mImageView28;
-        public ImageView mImageView29;
-        public ImageView mImageView30;
-        public ImageView mImageView31;
-        public ImageView mImageView32;
-        public ImageView mImageView33;
-        public ImageView mImageView34;
-        public ImageView mImageView35;
-        public ImageView mImageView36;
-        public ImageView mImageView37;
-        public ImageView mImageView38;
-        public ImageView mImageView39;
-
-
-        @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon39Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
-            super(itemView);
-            this.images = images;
-            mImageView1 = itemView.findViewById(R.id.ribbon1);
-            this.images.add(mImageView1);
-            mImageView2 = itemView.findViewById(R.id.ribbon2);
-            this.images.add(mImageView2);
-            mImageView3 = itemView.findViewById(R.id.ribbon3);
-            this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon4);
-            this.images.add(mImageView4);
-            mImageView5 = itemView.findViewById(R.id.ribbon5);
-            this.images.add(mImageView5);
-            mImageView6 = itemView.findViewById(R.id.ribbon6);
-            this.images.add(mImageView6);
-            mImageView7 = itemView.findViewById(R.id.ribbon7);
-            this.images.add(mImageView7);
-            mImageView8 = itemView.findViewById(R.id.ribbon8);
-            this.images.add(mImageView8);
-            mImageView9 = itemView.findViewById(R.id.ribbon9);
-            this.images.add(mImageView9);
-            mImageView10 = itemView.findViewById(R.id.ribbon10);
-            this.images.add(mImageView10);
-            mImageView11 = itemView.findViewById(R.id.ribbon11);
-            this.images.add(mImageView11);
-            mImageView12 = itemView.findViewById(R.id.ribbon12);
-            this.images.add(mImageView12);
-            mImageView13 = itemView.findViewById(R.id.ribbon13);
-            this.images.add(mImageView13);
-            mImageView14 = itemView.findViewById(R.id.ribbon14);
-            this.images.add(mImageView14);
-            mImageView15 = itemView.findViewById(R.id.ribbon15);
-            this.images.add(mImageView15);
-            mImageView16 = itemView.findViewById(R.id.ribbon16);
-            this.images.add(mImageView16);
-            mImageView17 = itemView.findViewById(R.id.ribbon17);
-            this.images.add(mImageView17);
-            mImageView18 = itemView.findViewById(R.id.ribbon18);
-            this.images.add(mImageView18);
-            mImageView19 = itemView.findViewById(R.id.ribbon19);
-            this.images.add(mImageView19);
-            mImageView20 = itemView.findViewById(R.id.ribbon20);
-            this.images.add(mImageView20);
-            mImageView21 = itemView.findViewById(R.id.ribbon21);
-            this.images.add(mImageView21);
-            mImageView22 = itemView.findViewById(R.id.ribbon22);
-            this.images.add(mImageView22);
-            mImageView23 = itemView.findViewById(R.id.ribbon23);
-            this.images.add(mImageView23);
-            mImageView24 = itemView.findViewById(R.id.ribbon24);
-            this.images.add(mImageView24);
-            mImageView25 = itemView.findViewById(R.id.ribbon25);
-            this.images.add(mImageView25);
-            mImageView26 = itemView.findViewById(R.id.ribbon26);
-            this.images.add(mImageView26);
-            mImageView27 = itemView.findViewById(R.id.ribbon27);
-            this.images.add(mImageView27);
-            mImageView28 = itemView.findViewById(R.id.ribbon28);
-            this.images.add(mImageView28);
-            mImageView29 = itemView.findViewById(R.id.ribbon29);
-            this.images.add(mImageView29);
-            mImageView30 = itemView.findViewById(R.id.ribbon30);
-            this.images.add(mImageView30);
-            mImageView31 = itemView.findViewById(R.id.ribbon31);
-            this.images.add(mImageView31);
-            mImageView32 = itemView.findViewById(R.id.ribbon32);
-            this.images.add(mImageView32);
-            mImageView33 = itemView.findViewById(R.id.ribbon33);
-            this.images.add(mImageView33);
-            mImageView34 = itemView.findViewById(R.id.ribbon34);
-            this.images.add(mImageView34);
-            mImageView35 = itemView.findViewById(R.id.ribbon35);
-            this.images.add(mImageView35);
-            mImageView36 = itemView.findViewById(R.id.ribbon36);
-            this.images.add(mImageView36);
-            mImageView37 = itemView.findViewById(R.id.ribbon37);
-            this.images.add(mImageView37);
-            mImageView38 = itemView.findViewById(R.id.ribbon38);
-            this.images.add(mImageView38);
-            mImageView39 = itemView.findViewById(R.id.ribbon39);
-            this.images.add(mImageView39);
-
-        }
-    }
-
-    public static class Ribbon40Holder extends RecyclerView.ViewHolder {
-        private final ArraySet<ImageView> images;
-        public ImageView mImageView1;
-        public ImageView mImageView2;
-        public ImageView mImageView3;
-        public ImageView mImageView4;
-        public ImageView mImageView5;
-        public ImageView mImageView6;
-        public ImageView mImageView7;
-        public ImageView mImageView8;
-        public ImageView mImageView9;
-        public ImageView mImageView10;
-        public ImageView mImageView11;
-        public ImageView mImageView12;
-        public ImageView mImageView13;
-        public ImageView mImageView14;
-        public ImageView mImageView15;
-        public ImageView mImageView16;
-        public ImageView mImageView17;
-        public ImageView mImageView18;
-        public ImageView mImageView19;
-        public ImageView mImageView20;
-        public ImageView mImageView21;
-        public ImageView mImageView22;
-        public ImageView mImageView23;
-        public ImageView mImageView24;
-        public ImageView mImageView25;
-        public ImageView mImageView26;
-        public ImageView mImageView27;
-        public ImageView mImageView28;
-        public ImageView mImageView29;
-        public ImageView mImageView30;
-        public ImageView mImageView31;
-        public ImageView mImageView32;
-        public ImageView mImageView33;
-        public ImageView mImageView34;
-        public ImageView mImageView35;
-        public ImageView mImageView36;
-        public ImageView mImageView37;
-        public ImageView mImageView38;
-        public ImageView mImageView39;
-        public ImageView mImageView40;
-
-
-        @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon40Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
-            super(itemView);
-            this.images = images;
-            mImageView1 = itemView.findViewById(R.id.ribbon1);
-            this.images.add(mImageView1);
-            mImageView2 = itemView.findViewById(R.id.ribbon2);
-            this.images.add(mImageView2);
-            mImageView3 = itemView.findViewById(R.id.ribbon3);
-            this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon4);
-            this.images.add(mImageView4);
-            mImageView5 = itemView.findViewById(R.id.ribbon5);
-            this.images.add(mImageView5);
-            mImageView6 = itemView.findViewById(R.id.ribbon6);
-            this.images.add(mImageView6);
-            mImageView7 = itemView.findViewById(R.id.ribbon7);
-            this.images.add(mImageView7);
-            mImageView8 = itemView.findViewById(R.id.ribbon8);
-            this.images.add(mImageView8);
-            mImageView9 = itemView.findViewById(R.id.ribbon9);
-            this.images.add(mImageView9);
-            mImageView10 = itemView.findViewById(R.id.ribbon10);
-            this.images.add(mImageView10);
-            mImageView11 = itemView.findViewById(R.id.ribbon11);
-            this.images.add(mImageView11);
-            mImageView12 = itemView.findViewById(R.id.ribbon12);
-            this.images.add(mImageView12);
-            mImageView13 = itemView.findViewById(R.id.ribbon13);
-            this.images.add(mImageView13);
-            mImageView14 = itemView.findViewById(R.id.ribbon14);
-            this.images.add(mImageView14);
-            mImageView15 = itemView.findViewById(R.id.ribbon15);
-            this.images.add(mImageView15);
-            mImageView16 = itemView.findViewById(R.id.ribbon16);
-            this.images.add(mImageView16);
-            mImageView17 = itemView.findViewById(R.id.ribbon17);
-            this.images.add(mImageView17);
-            mImageView18 = itemView.findViewById(R.id.ribbon18);
-            this.images.add(mImageView18);
-            mImageView19 = itemView.findViewById(R.id.ribbon19);
-            this.images.add(mImageView19);
-            mImageView20 = itemView.findViewById(R.id.ribbon20);
-            this.images.add(mImageView20);
-            mImageView21 = itemView.findViewById(R.id.ribbon21);
-            this.images.add(mImageView21);
-            mImageView22 = itemView.findViewById(R.id.ribbon22);
-            this.images.add(mImageView22);
-            mImageView23 = itemView.findViewById(R.id.ribbon23);
-            this.images.add(mImageView23);
-            mImageView24 = itemView.findViewById(R.id.ribbon24);
-            this.images.add(mImageView24);
-            mImageView25 = itemView.findViewById(R.id.ribbon25);
-            this.images.add(mImageView25);
-            mImageView26 = itemView.findViewById(R.id.ribbon26);
-            this.images.add(mImageView26);
-            mImageView27 = itemView.findViewById(R.id.ribbon27);
-            this.images.add(mImageView27);
-            mImageView28 = itemView.findViewById(R.id.ribbon28);
-            this.images.add(mImageView28);
-            mImageView29 = itemView.findViewById(R.id.ribbon29);
-            this.images.add(mImageView29);
-            mImageView30 = itemView.findViewById(R.id.ribbon30);
-            this.images.add(mImageView30);
-            mImageView31 = itemView.findViewById(R.id.ribbon31);
-            this.images.add(mImageView31);
-            mImageView32 = itemView.findViewById(R.id.ribbon32);
-            this.images.add(mImageView32);
-            mImageView33 = itemView.findViewById(R.id.ribbon33);
-            this.images.add(mImageView33);
-            mImageView34 = itemView.findViewById(R.id.ribbon34);
-            this.images.add(mImageView34);
-            mImageView35 = itemView.findViewById(R.id.ribbon35);
-            this.images.add(mImageView35);
-            mImageView36 = itemView.findViewById(R.id.ribbon36);
-            this.images.add(mImageView36);
-            mImageView37 = itemView.findViewById(R.id.ribbon37);
-            this.images.add(mImageView37);
-            mImageView38 = itemView.findViewById(R.id.ribbon38);
-            this.images.add(mImageView38);
-            mImageView39 = itemView.findViewById(R.id.ribbon39);
-            this.images.add(mImageView39);
-            mImageView40 = itemView.findViewById(R.id.ribbon40);
-            this.images.add(mImageView40);
-
-        }
-    }
-
-    public static class Ribbon41Holder extends RecyclerView.ViewHolder {
-        private final ArraySet<ImageView> images;
-        public ImageView mImageView1;
-        public ImageView mImageView2;
-        public ImageView mImageView3;
-        public ImageView mImageView4;
-        public ImageView mImageView5;
-        public ImageView mImageView6;
-        public ImageView mImageView7;
-        public ImageView mImageView8;
-        public ImageView mImageView9;
-        public ImageView mImageView10;
-        public ImageView mImageView11;
-        public ImageView mImageView12;
-        public ImageView mImageView13;
-        public ImageView mImageView14;
-        public ImageView mImageView15;
-        public ImageView mImageView16;
-        public ImageView mImageView17;
-        public ImageView mImageView18;
-        public ImageView mImageView19;
-        public ImageView mImageView20;
-        public ImageView mImageView21;
-        public ImageView mImageView22;
-        public ImageView mImageView23;
-        public ImageView mImageView24;
-        public ImageView mImageView25;
-        public ImageView mImageView26;
-        public ImageView mImageView27;
-        public ImageView mImageView28;
-        public ImageView mImageView29;
-        public ImageView mImageView30;
-        public ImageView mImageView31;
-        public ImageView mImageView32;
-        public ImageView mImageView33;
-        public ImageView mImageView34;
-        public ImageView mImageView35;
-        public ImageView mImageView36;
-        public ImageView mImageView37;
-        public ImageView mImageView38;
-        public ImageView mImageView39;
-        public ImageView mImageView40;
-        public ImageView mImageView41;
-
-
-        @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon41Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
-            super(itemView);
-            this.images = images;
-            mImageView1 = itemView.findViewById(R.id.ribbon1);
-            this.images.add(mImageView1);
-            mImageView2 = itemView.findViewById(R.id.ribbon2);
-            this.images.add(mImageView2);
-            mImageView3 = itemView.findViewById(R.id.ribbon3);
-            this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon4);
-            this.images.add(mImageView4);
-            mImageView5 = itemView.findViewById(R.id.ribbon5);
-            this.images.add(mImageView5);
-            mImageView6 = itemView.findViewById(R.id.ribbon6);
-            this.images.add(mImageView6);
-            mImageView7 = itemView.findViewById(R.id.ribbon7);
-            this.images.add(mImageView7);
-            mImageView8 = itemView.findViewById(R.id.ribbon8);
-            this.images.add(mImageView8);
-            mImageView9 = itemView.findViewById(R.id.ribbon9);
-            this.images.add(mImageView9);
-            mImageView10 = itemView.findViewById(R.id.ribbon10);
-            this.images.add(mImageView10);
-            mImageView11 = itemView.findViewById(R.id.ribbon11);
-            this.images.add(mImageView11);
-            mImageView12 = itemView.findViewById(R.id.ribbon12);
-            this.images.add(mImageView12);
-            mImageView13 = itemView.findViewById(R.id.ribbon13);
-            this.images.add(mImageView13);
-            mImageView14 = itemView.findViewById(R.id.ribbon14);
-            this.images.add(mImageView14);
-            mImageView15 = itemView.findViewById(R.id.ribbon15);
-            this.images.add(mImageView15);
-            mImageView16 = itemView.findViewById(R.id.ribbon16);
-            this.images.add(mImageView16);
-            mImageView17 = itemView.findViewById(R.id.ribbon17);
-            this.images.add(mImageView17);
-            mImageView18 = itemView.findViewById(R.id.ribbon18);
-            this.images.add(mImageView18);
-            mImageView19 = itemView.findViewById(R.id.ribbon19);
-            this.images.add(mImageView19);
-            mImageView20 = itemView.findViewById(R.id.ribbon20);
-            this.images.add(mImageView20);
-            mImageView21 = itemView.findViewById(R.id.ribbon21);
-            this.images.add(mImageView21);
-            mImageView22 = itemView.findViewById(R.id.ribbon22);
-            this.images.add(mImageView22);
-            mImageView23 = itemView.findViewById(R.id.ribbon23);
-            this.images.add(mImageView23);
-            mImageView24 = itemView.findViewById(R.id.ribbon24);
-            this.images.add(mImageView24);
-            mImageView25 = itemView.findViewById(R.id.ribbon25);
-            this.images.add(mImageView25);
-            mImageView26 = itemView.findViewById(R.id.ribbon26);
-            this.images.add(mImageView26);
-            mImageView27 = itemView.findViewById(R.id.ribbon27);
-            this.images.add(mImageView27);
-            mImageView28 = itemView.findViewById(R.id.ribbon28);
-            this.images.add(mImageView28);
-            mImageView29 = itemView.findViewById(R.id.ribbon29);
-            this.images.add(mImageView29);
-            mImageView30 = itemView.findViewById(R.id.ribbon30);
-            this.images.add(mImageView30);
-            mImageView31 = itemView.findViewById(R.id.ribbon31);
-            this.images.add(mImageView31);
-            mImageView32 = itemView.findViewById(R.id.ribbon32);
-            this.images.add(mImageView32);
-            mImageView33 = itemView.findViewById(R.id.ribbon33);
-            this.images.add(mImageView33);
-            mImageView34 = itemView.findViewById(R.id.ribbon34);
-            this.images.add(mImageView34);
-            mImageView35 = itemView.findViewById(R.id.ribbon35);
-            this.images.add(mImageView35);
-            mImageView36 = itemView.findViewById(R.id.ribbon36);
-            this.images.add(mImageView36);
-            mImageView37 = itemView.findViewById(R.id.ribbon37);
-            this.images.add(mImageView37);
-            mImageView38 = itemView.findViewById(R.id.ribbon38);
-            this.images.add(mImageView38);
-            mImageView39 = itemView.findViewById(R.id.ribbon39);
-            this.images.add(mImageView39);
-            mImageView40 = itemView.findViewById(R.id.ribbon40);
-            this.images.add(mImageView40);
-            mImageView41 = itemView.findViewById(R.id.ribbon41);
-            this.images.add(mImageView41);
-
-        }
-    }
-
-    public static class Ribbon42Holder extends RecyclerView.ViewHolder {
-        private final ArraySet<ImageView> images;
-        public ImageView mImageView1;
-        public ImageView mImageView2;
-        public ImageView mImageView3;
-        public ImageView mImageView4;
-        public ImageView mImageView5;
-        public ImageView mImageView6;
-        public ImageView mImageView7;
-        public ImageView mImageView8;
-        public ImageView mImageView9;
-        public ImageView mImageView10;
-        public ImageView mImageView11;
-        public ImageView mImageView12;
-        public ImageView mImageView13;
-        public ImageView mImageView14;
-        public ImageView mImageView15;
-        public ImageView mImageView16;
-        public ImageView mImageView17;
-        public ImageView mImageView18;
-        public ImageView mImageView19;
-        public ImageView mImageView20;
-        public ImageView mImageView21;
-        public ImageView mImageView22;
-        public ImageView mImageView23;
-        public ImageView mImageView24;
-        public ImageView mImageView25;
-        public ImageView mImageView26;
-        public ImageView mImageView27;
-        public ImageView mImageView28;
-        public ImageView mImageView29;
-        public ImageView mImageView30;
-        public ImageView mImageView31;
-        public ImageView mImageView32;
-        public ImageView mImageView33;
-        public ImageView mImageView34;
-        public ImageView mImageView35;
-        public ImageView mImageView36;
-        public ImageView mImageView37;
-        public ImageView mImageView38;
-        public ImageView mImageView39;
-        public ImageView mImageView40;
-        public ImageView mImageView41;
-        public ImageView mImageView42;
-
-
-        @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon42Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
-            super(itemView);
-            this.images = images;
-            mImageView1 = itemView.findViewById(R.id.ribbon1);
-            this.images.add(mImageView1);
-            mImageView2 = itemView.findViewById(R.id.ribbon2);
-            this.images.add(mImageView2);
-            mImageView3 = itemView.findViewById(R.id.ribbon3);
-            this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon4);
-            this.images.add(mImageView4);
-            mImageView5 = itemView.findViewById(R.id.ribbon5);
-            this.images.add(mImageView5);
-            mImageView6 = itemView.findViewById(R.id.ribbon6);
-            this.images.add(mImageView6);
-            mImageView7 = itemView.findViewById(R.id.ribbon7);
-            this.images.add(mImageView7);
-            mImageView8 = itemView.findViewById(R.id.ribbon8);
-            this.images.add(mImageView8);
-            mImageView9 = itemView.findViewById(R.id.ribbon9);
-            this.images.add(mImageView9);
-            mImageView10 = itemView.findViewById(R.id.ribbon10);
-            this.images.add(mImageView10);
-            mImageView11 = itemView.findViewById(R.id.ribbon11);
-            this.images.add(mImageView11);
-            mImageView12 = itemView.findViewById(R.id.ribbon12);
-            this.images.add(mImageView12);
-            mImageView13 = itemView.findViewById(R.id.ribbon13);
-            this.images.add(mImageView13);
-            mImageView14 = itemView.findViewById(R.id.ribbon14);
-            this.images.add(mImageView14);
-            mImageView15 = itemView.findViewById(R.id.ribbon15);
-            this.images.add(mImageView15);
-            mImageView16 = itemView.findViewById(R.id.ribbon16);
-            this.images.add(mImageView16);
-            mImageView17 = itemView.findViewById(R.id.ribbon17);
-            this.images.add(mImageView17);
-            mImageView18 = itemView.findViewById(R.id.ribbon18);
-            this.images.add(mImageView18);
-            mImageView19 = itemView.findViewById(R.id.ribbon19);
-            this.images.add(mImageView19);
-            mImageView20 = itemView.findViewById(R.id.ribbon20);
-            this.images.add(mImageView20);
-            mImageView21 = itemView.findViewById(R.id.ribbon21);
-            this.images.add(mImageView21);
-            mImageView22 = itemView.findViewById(R.id.ribbon22);
-            this.images.add(mImageView22);
-            mImageView23 = itemView.findViewById(R.id.ribbon23);
-            this.images.add(mImageView23);
-            mImageView24 = itemView.findViewById(R.id.ribbon24);
-            this.images.add(mImageView24);
-            mImageView25 = itemView.findViewById(R.id.ribbon25);
-            this.images.add(mImageView25);
-            mImageView26 = itemView.findViewById(R.id.ribbon26);
-            this.images.add(mImageView26);
-            mImageView27 = itemView.findViewById(R.id.ribbon27);
-            this.images.add(mImageView27);
-            mImageView28 = itemView.findViewById(R.id.ribbon28);
-            this.images.add(mImageView28);
-            mImageView29 = itemView.findViewById(R.id.ribbon29);
-            this.images.add(mImageView29);
-            mImageView30 = itemView.findViewById(R.id.ribbon30);
-            this.images.add(mImageView30);
-            mImageView31 = itemView.findViewById(R.id.ribbon31);
-            this.images.add(mImageView31);
-            mImageView32 = itemView.findViewById(R.id.ribbon32);
-            this.images.add(mImageView32);
-            mImageView33 = itemView.findViewById(R.id.ribbon33);
-            this.images.add(mImageView33);
-            mImageView34 = itemView.findViewById(R.id.ribbon34);
-            this.images.add(mImageView34);
-            mImageView35 = itemView.findViewById(R.id.ribbon35);
-            this.images.add(mImageView35);
-            mImageView36 = itemView.findViewById(R.id.ribbon36);
-            this.images.add(mImageView36);
-            mImageView37 = itemView.findViewById(R.id.ribbon37);
-            this.images.add(mImageView37);
-            mImageView38 = itemView.findViewById(R.id.ribbon38);
-            this.images.add(mImageView38);
-            mImageView39 = itemView.findViewById(R.id.ribbon39);
-            this.images.add(mImageView39);
-            mImageView40 = itemView.findViewById(R.id.ribbon40);
-            this.images.add(mImageView40);
-            mImageView41 = itemView.findViewById(R.id.ribbon41);
-            this.images.add(mImageView41);
-            mImageView42 = itemView.findViewById(R.id.ribbon42);
-            this.images.add(mImageView42);
-
-        }
-    }
-
-    public static class Ribbon43Holder extends RecyclerView.ViewHolder {
-        private final ArraySet<ImageView> images;
-        public ImageView mImageView1;
-        public ImageView mImageView2;
-        public ImageView mImageView3;
-        public ImageView mImageView4;
-        public ImageView mImageView5;
-        public ImageView mImageView6;
-        public ImageView mImageView7;
-        public ImageView mImageView8;
-        public ImageView mImageView9;
-        public ImageView mImageView10;
-        public ImageView mImageView11;
-        public ImageView mImageView12;
-        public ImageView mImageView13;
-        public ImageView mImageView14;
-        public ImageView mImageView15;
-        public ImageView mImageView16;
-        public ImageView mImageView17;
-        public ImageView mImageView18;
-        public ImageView mImageView19;
-        public ImageView mImageView20;
-        public ImageView mImageView21;
-        public ImageView mImageView22;
-        public ImageView mImageView23;
-        public ImageView mImageView24;
-        public ImageView mImageView25;
-        public ImageView mImageView26;
-        public ImageView mImageView27;
-        public ImageView mImageView28;
-        public ImageView mImageView29;
-        public ImageView mImageView30;
-        public ImageView mImageView31;
-        public ImageView mImageView32;
-        public ImageView mImageView33;
-        public ImageView mImageView34;
-        public ImageView mImageView35;
-        public ImageView mImageView36;
-        public ImageView mImageView37;
-        public ImageView mImageView38;
-        public ImageView mImageView39;
-        public ImageView mImageView40;
-        public ImageView mImageView41;
-        public ImageView mImageView42;
-        public ImageView mImageView43;
-
-
-        @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon43Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
-            super(itemView);
-            this.images = images;
-            mImageView1 = itemView.findViewById(R.id.ribbon1);
-            this.images.add(mImageView1);
-            mImageView2 = itemView.findViewById(R.id.ribbon2);
-            this.images.add(mImageView2);
-            mImageView3 = itemView.findViewById(R.id.ribbon3);
-            this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon4);
-            this.images.add(mImageView4);
-            mImageView5 = itemView.findViewById(R.id.ribbon5);
-            this.images.add(mImageView5);
-            mImageView6 = itemView.findViewById(R.id.ribbon6);
-            this.images.add(mImageView6);
-            mImageView7 = itemView.findViewById(R.id.ribbon7);
-            this.images.add(mImageView7);
-            mImageView8 = itemView.findViewById(R.id.ribbon8);
-            this.images.add(mImageView8);
-            mImageView9 = itemView.findViewById(R.id.ribbon9);
-            this.images.add(mImageView9);
-            mImageView10 = itemView.findViewById(R.id.ribbon10);
-            this.images.add(mImageView10);
-            mImageView11 = itemView.findViewById(R.id.ribbon11);
-            this.images.add(mImageView11);
-            mImageView12 = itemView.findViewById(R.id.ribbon12);
-            this.images.add(mImageView12);
-            mImageView13 = itemView.findViewById(R.id.ribbon13);
-            this.images.add(mImageView13);
-            mImageView14 = itemView.findViewById(R.id.ribbon14);
-            this.images.add(mImageView14);
-            mImageView15 = itemView.findViewById(R.id.ribbon15);
-            this.images.add(mImageView15);
-            mImageView16 = itemView.findViewById(R.id.ribbon16);
-            this.images.add(mImageView16);
-            mImageView17 = itemView.findViewById(R.id.ribbon17);
-            this.images.add(mImageView17);
-            mImageView18 = itemView.findViewById(R.id.ribbon18);
-            this.images.add(mImageView18);
-            mImageView19 = itemView.findViewById(R.id.ribbon19);
-            this.images.add(mImageView19);
-            mImageView20 = itemView.findViewById(R.id.ribbon20);
-            this.images.add(mImageView20);
-            mImageView21 = itemView.findViewById(R.id.ribbon21);
-            this.images.add(mImageView21);
-            mImageView22 = itemView.findViewById(R.id.ribbon22);
-            this.images.add(mImageView22);
-            mImageView23 = itemView.findViewById(R.id.ribbon23);
-            this.images.add(mImageView23);
-            mImageView24 = itemView.findViewById(R.id.ribbon24);
-            this.images.add(mImageView24);
-            mImageView25 = itemView.findViewById(R.id.ribbon25);
-            this.images.add(mImageView25);
-            mImageView26 = itemView.findViewById(R.id.ribbon26);
-            this.images.add(mImageView26);
-            mImageView27 = itemView.findViewById(R.id.ribbon27);
-            this.images.add(mImageView27);
-            mImageView28 = itemView.findViewById(R.id.ribbon28);
-            this.images.add(mImageView28);
-            mImageView29 = itemView.findViewById(R.id.ribbon29);
-            this.images.add(mImageView29);
-            mImageView30 = itemView.findViewById(R.id.ribbon30);
-            this.images.add(mImageView30);
-            mImageView31 = itemView.findViewById(R.id.ribbon31);
-            this.images.add(mImageView31);
-            mImageView32 = itemView.findViewById(R.id.ribbon32);
-            this.images.add(mImageView32);
-            mImageView33 = itemView.findViewById(R.id.ribbon33);
-            this.images.add(mImageView33);
-            mImageView34 = itemView.findViewById(R.id.ribbon34);
-            this.images.add(mImageView34);
-            mImageView35 = itemView.findViewById(R.id.ribbon35);
-            this.images.add(mImageView35);
-            mImageView36 = itemView.findViewById(R.id.ribbon36);
-            this.images.add(mImageView36);
-            mImageView37 = itemView.findViewById(R.id.ribbon37);
-            this.images.add(mImageView37);
-            mImageView38 = itemView.findViewById(R.id.ribbon38);
-            this.images.add(mImageView38);
-            mImageView39 = itemView.findViewById(R.id.ribbon39);
-            this.images.add(mImageView39);
-            mImageView40 = itemView.findViewById(R.id.ribbon40);
-            this.images.add(mImageView40);
-            mImageView41 = itemView.findViewById(R.id.ribbon41);
-            this.images.add(mImageView41);
-            mImageView42 = itemView.findViewById(R.id.ribbon42);
-            this.images.add(mImageView42);
-            mImageView43 = itemView.findViewById(R.id.ribbon43);
-            this.images.add(mImageView43);
-
-        }
-    }
-
-    public static class Ribbon44Holder extends RecyclerView.ViewHolder {
-        private final ArraySet<ImageView> images;
-        public ImageView mImageView1;
-        public ImageView mImageView2;
-        public ImageView mImageView3;
-        public ImageView mImageView4;
-        public ImageView mImageView5;
-        public ImageView mImageView6;
-        public ImageView mImageView7;
-        public ImageView mImageView8;
-        public ImageView mImageView9;
-        public ImageView mImageView10;
-        public ImageView mImageView11;
-        public ImageView mImageView12;
-        public ImageView mImageView13;
-        public ImageView mImageView14;
-        public ImageView mImageView15;
-        public ImageView mImageView16;
-        public ImageView mImageView17;
-        public ImageView mImageView18;
-        public ImageView mImageView19;
-        public ImageView mImageView20;
-        public ImageView mImageView21;
-        public ImageView mImageView22;
-        public ImageView mImageView23;
-        public ImageView mImageView24;
-        public ImageView mImageView25;
-        public ImageView mImageView26;
-        public ImageView mImageView27;
-        public ImageView mImageView28;
-        public ImageView mImageView29;
-        public ImageView mImageView30;
-        public ImageView mImageView31;
-        public ImageView mImageView32;
-        public ImageView mImageView33;
-        public ImageView mImageView34;
-        public ImageView mImageView35;
-        public ImageView mImageView36;
-        public ImageView mImageView37;
-        public ImageView mImageView38;
-        public ImageView mImageView39;
-        public ImageView mImageView40;
-        public ImageView mImageView41;
-        public ImageView mImageView42;
-        public ImageView mImageView43;
-        public ImageView mImageView44;
-
-
-        @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon44Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
-            super(itemView);
-            this.images = images;
-            mImageView1 = itemView.findViewById(R.id.ribbon1);
-            this.images.add(mImageView1);
-            mImageView2 = itemView.findViewById(R.id.ribbon2);
-            this.images.add(mImageView2);
-            mImageView3 = itemView.findViewById(R.id.ribbon3);
-            this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon4);
-            this.images.add(mImageView4);
-            mImageView5 = itemView.findViewById(R.id.ribbon5);
-            this.images.add(mImageView5);
-            mImageView6 = itemView.findViewById(R.id.ribbon6);
-            this.images.add(mImageView6);
-            mImageView7 = itemView.findViewById(R.id.ribbon7);
-            this.images.add(mImageView7);
-            mImageView8 = itemView.findViewById(R.id.ribbon8);
-            this.images.add(mImageView8);
-            mImageView9 = itemView.findViewById(R.id.ribbon9);
-            this.images.add(mImageView9);
-            mImageView10 = itemView.findViewById(R.id.ribbon10);
-            this.images.add(mImageView10);
-            mImageView11 = itemView.findViewById(R.id.ribbon11);
-            this.images.add(mImageView11);
-            mImageView12 = itemView.findViewById(R.id.ribbon12);
-            this.images.add(mImageView12);
-            mImageView13 = itemView.findViewById(R.id.ribbon13);
-            this.images.add(mImageView13);
-            mImageView14 = itemView.findViewById(R.id.ribbon14);
-            this.images.add(mImageView14);
-            mImageView15 = itemView.findViewById(R.id.ribbon15);
-            this.images.add(mImageView15);
-            mImageView16 = itemView.findViewById(R.id.ribbon16);
-            this.images.add(mImageView16);
-            mImageView17 = itemView.findViewById(R.id.ribbon17);
-            this.images.add(mImageView17);
-            mImageView18 = itemView.findViewById(R.id.ribbon18);
-            this.images.add(mImageView18);
-            mImageView19 = itemView.findViewById(R.id.ribbon19);
-            this.images.add(mImageView19);
-            mImageView20 = itemView.findViewById(R.id.ribbon20);
-            this.images.add(mImageView20);
-            mImageView21 = itemView.findViewById(R.id.ribbon21);
-            this.images.add(mImageView21);
-            mImageView22 = itemView.findViewById(R.id.ribbon22);
-            this.images.add(mImageView22);
-            mImageView23 = itemView.findViewById(R.id.ribbon23);
-            this.images.add(mImageView23);
-            mImageView24 = itemView.findViewById(R.id.ribbon24);
-            this.images.add(mImageView24);
-            mImageView25 = itemView.findViewById(R.id.ribbon25);
-            this.images.add(mImageView25);
-            mImageView26 = itemView.findViewById(R.id.ribbon26);
-            this.images.add(mImageView26);
-            mImageView27 = itemView.findViewById(R.id.ribbon27);
-            this.images.add(mImageView27);
-            mImageView28 = itemView.findViewById(R.id.ribbon28);
-            this.images.add(mImageView28);
-            mImageView29 = itemView.findViewById(R.id.ribbon29);
-            this.images.add(mImageView29);
-            mImageView30 = itemView.findViewById(R.id.ribbon30);
-            this.images.add(mImageView30);
-            mImageView31 = itemView.findViewById(R.id.ribbon31);
-            this.images.add(mImageView31);
-            mImageView32 = itemView.findViewById(R.id.ribbon32);
-            this.images.add(mImageView32);
-            mImageView33 = itemView.findViewById(R.id.ribbon33);
-            this.images.add(mImageView33);
-            mImageView34 = itemView.findViewById(R.id.ribbon34);
-            this.images.add(mImageView34);
-            mImageView35 = itemView.findViewById(R.id.ribbon35);
-            this.images.add(mImageView35);
-            mImageView36 = itemView.findViewById(R.id.ribbon36);
-            this.images.add(mImageView36);
-            mImageView37 = itemView.findViewById(R.id.ribbon37);
-            this.images.add(mImageView37);
-            mImageView38 = itemView.findViewById(R.id.ribbon38);
-            this.images.add(mImageView38);
-            mImageView39 = itemView.findViewById(R.id.ribbon39);
-            this.images.add(mImageView39);
-            mImageView40 = itemView.findViewById(R.id.ribbon40);
-            this.images.add(mImageView40);
-            mImageView41 = itemView.findViewById(R.id.ribbon41);
-            this.images.add(mImageView41);
-            mImageView42 = itemView.findViewById(R.id.ribbon42);
-            this.images.add(mImageView42);
-            mImageView43 = itemView.findViewById(R.id.ribbon43);
-            this.images.add(mImageView43);
-            mImageView44 = itemView.findViewById(R.id.ribbon44);
-            this.images.add(mImageView44);
-
-        }
-    }
-
-    public static class Ribbon45Holder extends RecyclerView.ViewHolder {
-        private final ArraySet<ImageView> images;
-        public ImageView mImageView1;
-        public ImageView mImageView2;
-        public ImageView mImageView3;
-        public ImageView mImageView4;
-        public ImageView mImageView5;
-        public ImageView mImageView6;
-        public ImageView mImageView7;
-        public ImageView mImageView8;
-        public ImageView mImageView9;
-        public ImageView mImageView10;
-        public ImageView mImageView11;
-        public ImageView mImageView12;
-        public ImageView mImageView13;
-        public ImageView mImageView14;
-        public ImageView mImageView15;
-        public ImageView mImageView16;
-        public ImageView mImageView17;
-        public ImageView mImageView18;
-        public ImageView mImageView19;
-        public ImageView mImageView20;
-        public ImageView mImageView21;
-        public ImageView mImageView22;
-        public ImageView mImageView23;
-        public ImageView mImageView24;
-        public ImageView mImageView25;
-        public ImageView mImageView26;
-        public ImageView mImageView27;
-        public ImageView mImageView28;
-        public ImageView mImageView29;
-        public ImageView mImageView30;
-        public ImageView mImageView31;
-        public ImageView mImageView32;
-        public ImageView mImageView33;
-        public ImageView mImageView34;
-        public ImageView mImageView35;
-        public ImageView mImageView36;
-        public ImageView mImageView37;
-        public ImageView mImageView38;
-        public ImageView mImageView39;
-        public ImageView mImageView40;
-        public ImageView mImageView41;
-        public ImageView mImageView42;
-        public ImageView mImageView43;
-        public ImageView mImageView44;
-        public ImageView mImageView45;
-
-
-        @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon45Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
-            super(itemView);
-            this.images = images;
-            mImageView1 = itemView.findViewById(R.id.ribbon1);
-            this.images.add(mImageView1);
-            mImageView2 = itemView.findViewById(R.id.ribbon2);
-            this.images.add(mImageView2);
-            mImageView3 = itemView.findViewById(R.id.ribbon3);
-            this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon4);
-            this.images.add(mImageView4);
-            mImageView5 = itemView.findViewById(R.id.ribbon5);
-            this.images.add(mImageView5);
-            mImageView6 = itemView.findViewById(R.id.ribbon6);
-            this.images.add(mImageView6);
-            mImageView7 = itemView.findViewById(R.id.ribbon7);
-            this.images.add(mImageView7);
-            mImageView8 = itemView.findViewById(R.id.ribbon8);
-            this.images.add(mImageView8);
-            mImageView9 = itemView.findViewById(R.id.ribbon9);
-            this.images.add(mImageView9);
-            mImageView10 = itemView.findViewById(R.id.ribbon10);
-            this.images.add(mImageView10);
-            mImageView11 = itemView.findViewById(R.id.ribbon11);
-            this.images.add(mImageView11);
-            mImageView12 = itemView.findViewById(R.id.ribbon12);
-            this.images.add(mImageView12);
-            mImageView13 = itemView.findViewById(R.id.ribbon13);
-            this.images.add(mImageView13);
-            mImageView14 = itemView.findViewById(R.id.ribbon14);
-            this.images.add(mImageView14);
-            mImageView15 = itemView.findViewById(R.id.ribbon15);
-            this.images.add(mImageView15);
-            mImageView16 = itemView.findViewById(R.id.ribbon16);
-            this.images.add(mImageView16);
-            mImageView17 = itemView.findViewById(R.id.ribbon17);
-            this.images.add(mImageView17);
-            mImageView18 = itemView.findViewById(R.id.ribbon18);
-            this.images.add(mImageView18);
-            mImageView19 = itemView.findViewById(R.id.ribbon19);
-            this.images.add(mImageView19);
-            mImageView20 = itemView.findViewById(R.id.ribbon20);
-            this.images.add(mImageView20);
-            mImageView21 = itemView.findViewById(R.id.ribbon21);
-            this.images.add(mImageView21);
-            mImageView22 = itemView.findViewById(R.id.ribbon22);
-            this.images.add(mImageView22);
-            mImageView23 = itemView.findViewById(R.id.ribbon23);
-            this.images.add(mImageView23);
-            mImageView24 = itemView.findViewById(R.id.ribbon24);
-            this.images.add(mImageView24);
-            mImageView25 = itemView.findViewById(R.id.ribbon25);
-            this.images.add(mImageView25);
-            mImageView26 = itemView.findViewById(R.id.ribbon26);
-            this.images.add(mImageView26);
-            mImageView27 = itemView.findViewById(R.id.ribbon27);
-            this.images.add(mImageView27);
-            mImageView28 = itemView.findViewById(R.id.ribbon28);
-            this.images.add(mImageView28);
-            mImageView29 = itemView.findViewById(R.id.ribbon29);
-            this.images.add(mImageView29);
-            mImageView30 = itemView.findViewById(R.id.ribbon30);
-            this.images.add(mImageView30);
-            mImageView31 = itemView.findViewById(R.id.ribbon31);
-            this.images.add(mImageView31);
-            mImageView32 = itemView.findViewById(R.id.ribbon32);
-            this.images.add(mImageView32);
-            mImageView33 = itemView.findViewById(R.id.ribbon33);
-            this.images.add(mImageView33);
-            mImageView34 = itemView.findViewById(R.id.ribbon34);
-            this.images.add(mImageView34);
-            mImageView35 = itemView.findViewById(R.id.ribbon35);
-            this.images.add(mImageView35);
-            mImageView36 = itemView.findViewById(R.id.ribbon36);
-            this.images.add(mImageView36);
-            mImageView37 = itemView.findViewById(R.id.ribbon37);
-            this.images.add(mImageView37);
-            mImageView38 = itemView.findViewById(R.id.ribbon38);
-            this.images.add(mImageView38);
-            mImageView39 = itemView.findViewById(R.id.ribbon39);
-            this.images.add(mImageView39);
-            mImageView40 = itemView.findViewById(R.id.ribbon40);
-            this.images.add(mImageView40);
-            mImageView41 = itemView.findViewById(R.id.ribbon41);
-            this.images.add(mImageView41);
-            mImageView42 = itemView.findViewById(R.id.ribbon42);
-            this.images.add(mImageView42);
-            mImageView43 = itemView.findViewById(R.id.ribbon43);
-            this.images.add(mImageView43);
-            mImageView44 = itemView.findViewById(R.id.ribbon44);
-            this.images.add(mImageView44);
-            mImageView45 = itemView.findViewById(R.id.ribbon45);
-            this.images.add(mImageView45);
-
-        }
-    }
-
-    public static class Ribbon46Holder extends RecyclerView.ViewHolder {
-        private final ArraySet<ImageView> images;
-        public ImageView mImageView1;
-        public ImageView mImageView2;
-        public ImageView mImageView3;
-        public ImageView mImageView4;
-        public ImageView mImageView5;
-        public ImageView mImageView6;
-        public ImageView mImageView7;
-        public ImageView mImageView8;
-        public ImageView mImageView9;
-        public ImageView mImageView10;
-        public ImageView mImageView11;
-        public ImageView mImageView12;
-        public ImageView mImageView13;
-        public ImageView mImageView14;
-        public ImageView mImageView15;
-        public ImageView mImageView16;
-        public ImageView mImageView17;
-        public ImageView mImageView18;        public ImageView mImageView34;
-        public ImageView mImageView35;
-        public ImageView mImageView36;
-        public ImageView mImageView37;
-        public ImageView mImageView38;
-        public ImageView mImageView39;
-        public ImageView mImageView40;
-        public ImageView mImageView41;
-        public ImageView mImageView42;
-        public ImageView mImageView43;
-        public ImageView mImageView44;
-        public ImageView mImageView45;
-        public ImageView mImageView46;
-
-
-        @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon46Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
-            super(itemView);
-            this.images = images;
-            mImageView1 = itemView.findViewById(R.id.ribbon1);
-            this.images.add(mImageView1);
-            mImageView2 = itemView.findViewById(R.id.ribbon2);
-            this.images.add(mImageView2);
-            mImageView3 = itemView.findViewById(R.id.ribbon3);
-            this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon4);
-            this.images.add(mImageView4);
-            mImageView5 = itemView.findViewById(R.id.ribbon5);
-            this.images.add(mImageView5);
-            mImageView6 = itemView.findViewById(R.id.ribbon6);
-            this.images.add(mImageView6);
-            mImageView7 = itemView.findViewById(R.id.ribbon7);
-            this.images.add(mImageView7);
-            mImageView8 = itemView.findViewById(R.id.ribbon8);
-            this.images.add(mImageView8);
-            mImageView9 = itemView.findViewById(R.id.ribbon9);
-            this.images.add(mImageView9);
-            mImageView10 = itemView.findViewById(R.id.ribbon10);
-            this.images.add(mImageView10);
-            mImageView11 = itemView.findViewById(R.id.ribbon11);
-            this.images.add(mImageView11);
-            mImageView12 = itemView.findViewById(R.id.ribbon12);
-            this.images.add(mImageView12);
-            mImageView13 = itemView.findViewById(R.id.ribbon13);
-            this.images.add(mImageView13);
-            mImageView14 = itemView.findViewById(R.id.ribbon14);
-            this.images.add(mImageView14);
-            mImageView15 = itemView.findViewById(R.id.ribbon15);
-            this.images.add(mImageView15);
-            mImageView16 = itemView.findViewById(R.id.ribbon16);
-            this.images.add(mImageView16);
-            mImageView17 = itemView.findViewById(R.id.ribbon17);
-            this.images.add(mImageView17);
-            mImageView18 = itemView.findViewById(R.id.ribbon18);
-            this.images.add(mImageView18);
-            mImageView19 = itemView.findViewById(R.id.ribbon19);
-            this.images.add(mImageView19);
-            mImageView20 = itemView.findViewById(R.id.ribbon20);
-            this.images.add(mImageView20);
-            mImageView21 = itemView.findViewById(R.id.ribbon21);
-            this.images.add(mImageView21);
-            mImageView22 = itemView.findViewById(R.id.ribbon22);
-            this.images.add(mImageView22);
-            mImageView23 = itemView.findViewById(R.id.ribbon23);
-            this.images.add(mImageView23);
-            mImageView24 = itemView.findViewById(R.id.ribbon24);
-            this.images.add(mImageView24);
-            mImageView25 = itemView.findViewById(R.id.ribbon25);
-            this.images.add(mImageView25);
-            mImageView26 = itemView.findViewById(R.id.ribbon26);
-            this.images.add(mImageView26);
-            mImageView27 = itemView.findViewById(R.id.ribbon27);
-            this.images.add(mImageView27);
-            mImageView28 = itemView.findViewById(R.id.ribbon28);
-            this.images.add(mImageView28);
-            mImageView29 = itemView.findViewById(R.id.ribbon29);
-            this.images.add(mImageView29);
-            mImageView30 = itemView.findViewById(R.id.ribbon30);
-            this.images.add(mImageView30);
-            mImageView31 = itemView.findViewById(R.id.ribbon31);
-            this.images.add(mImageView31);
-            mImageView32 = itemView.findViewById(R.id.ribbon32);
-            this.images.add(mImageView32);
-            mImageView33 = itemView.findViewById(R.id.ribbon33);
-            this.images.add(mImageView33);
-            mImageView34 = itemView.findViewById(R.id.ribbon34);
-            this.images.add(mImageView34);
-            mImageView35 = itemView.findViewById(R.id.ribbon35);
-            this.images.add(mImageView35);
-            mImageView36 = itemView.findViewById(R.id.ribbon36);
-            this.images.add(mImageView36);
-            mImageView37 = itemView.findViewById(R.id.ribbon37);
-            this.images.add(mImageView37);
-            mImageView38 = itemView.findViewById(R.id.ribbon38);
-            this.images.add(mImageView38);
-            mImageView39 = itemView.findViewById(R.id.ribbon39);
-            this.images.add(mImageView39);
-            mImageView40 = itemView.findViewById(R.id.ribbon40);
-            this.images.add(mImageView40);
-            mImageView41 = itemView.findViewById(R.id.ribbon41);
-            this.images.add(mImageView41);
-            mImageView42 = itemView.findViewById(R.id.ribbon42);
-            this.images.add(mImageView42);
-            mImageView43 = itemView.findViewById(R.id.ribbon43);
-            this.images.add(mImageView43);
-            mImageView44 = itemView.findViewById(R.id.ribbon44);
-            this.images.add(mImageView44);
-            mImageView45 = itemView.findViewById(R.id.ribbon45);
-            this.images.add(mImageView45);
-            mImageView46 = itemView.findViewById(R.id.ribbon46);
-            this.images.add(mImageView46);
-
-        }
-    }
-
-    public static class Ribbon47Holder extends RecyclerView.ViewHolder {
-        private final ArraySet<ImageView> images;
-        public ImageView mImageView1;
-        public ImageView mImageView2;
-        public ImageView mImageView3;
-        public ImageView mImageView4;
-        public ImageView mImageView5;
-        public ImageView mImageView6;
-        public ImageView mImageView7;
-        public ImageView mImageView8;
-        public ImageView mImageView9;
-        public ImageView mImageView10;
-        public ImageView mImageView11;
-        public ImageView mImageView12;
-        public ImageView mImageView13;
-        public ImageView mImageView14;
-        public ImageView mImageView15;
-        public ImageView mImageView16;
-        public ImageView mImageView17;
-        public ImageView mImageView18;
-        public ImageView mImageView19;
-        public ImageView mImageView20;
-        public ImageView mImageView21;
-        public ImageView mImageView22;
-        public ImageView mImageView23;
-        public ImageView mImageView24;
-        public ImageView mImageView25;
-        public ImageView mImageView26;
-        public ImageView mImageView27;
-        public ImageView mImageView28;
-        public ImageView mImageView29;
-        public ImageView mImageView30;
-        public ImageView mImageView31;
-        public ImageView mImageView32;
-        public ImageView mImageView33;
-        public ImageView mImageView34;
-        public ImageView mImageView35;
-        public ImageView mImageView36;
-        public ImageView mImageView37;
-        public ImageView mImageView38;
-        public ImageView mImageView39;
-        public ImageView mImageView40;
-        public ImageView mImageView41;
-        public ImageView mImageView42;
-        public ImageView mImageView43;
-        public ImageView mImageView44;
-        public ImageView mImageView45;
-        public ImageView mImageView46;
-        public ImageView mImageView47;
-
-
-        @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon47Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
-            super(itemView);
-            this.images = images;
-            mImageView1 = itemView.findViewById(R.id.ribbon1);
-            this.images.add(mImageView1);
-            mImageView2 = itemView.findViewById(R.id.ribbon2);
-            this.images.add(mImageView2);
-            mImageView3 = itemView.findViewById(R.id.ribbon3);
-            this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon4);
-            this.images.add(mImageView4);
-            mImageView5 = itemView.findViewById(R.id.ribbon5);
-            this.images.add(mImageView5);
-            mImageView6 = itemView.findViewById(R.id.ribbon6);
-            this.images.add(mImageView6);
-            mImageView7 = itemView.findViewById(R.id.ribbon7);
-            this.images.add(mImageView7);
-            mImageView8 = itemView.findViewById(R.id.ribbon8);
-            this.images.add(mImageView8);
-            mImageView9 = itemView.findViewById(R.id.ribbon9);
-            this.images.add(mImageView9);
-            mImageView10 = itemView.findViewById(R.id.ribbon10);
-            this.images.add(mImageView10);
-            mImageView11 = itemView.findViewById(R.id.ribbon11);
-            this.images.add(mImageView11);
-            mImageView12 = itemView.findViewById(R.id.ribbon12);
-            this.images.add(mImageView12);
-            mImageView13 = itemView.findViewById(R.id.ribbon13);
-            this.images.add(mImageView13);
-            mImageView14 = itemView.findViewById(R.id.ribbon14);
-            this.images.add(mImageView14);
-            mImageView15 = itemView.findViewById(R.id.ribbon15);
-            this.images.add(mImageView15);
-            mImageView16 = itemView.findViewById(R.id.ribbon16);
-            this.images.add(mImageView16);
-            mImageView17 = itemView.findViewById(R.id.ribbon17);
-            this.images.add(mImageView17);
-            mImageView18 = itemView.findViewById(R.id.ribbon18);
-            this.images.add(mImageView18);
-            mImageView19 = itemView.findViewById(R.id.ribbon19);
-            this.images.add(mImageView19);
-            mImageView20 = itemView.findViewById(R.id.ribbon20);
-            this.images.add(mImageView20);
-            mImageView21 = itemView.findViewById(R.id.ribbon21);
-            this.images.add(mImageView21);
-            mImageView22 = itemView.findViewById(R.id.ribbon22);
-            this.images.add(mImageView22);
-            mImageView23 = itemView.findViewById(R.id.ribbon23);
-            this.images.add(mImageView23);
-            mImageView24 = itemView.findViewById(R.id.ribbon24);
-            this.images.add(mImageView24);
-            mImageView25 = itemView.findViewById(R.id.ribbon25);
-            this.images.add(mImageView25);
-            mImageView26 = itemView.findViewById(R.id.ribbon26);
-            this.images.add(mImageView26);
-            mImageView27 = itemView.findViewById(R.id.ribbon27);
-            this.images.add(mImageView27);
-            mImageView28 = itemView.findViewById(R.id.ribbon28);
-            this.images.add(mImageView28);
-            mImageView29 = itemView.findViewById(R.id.ribbon29);
-            this.images.add(mImageView29);
-            mImageView30 = itemView.findViewById(R.id.ribbon30);
-            this.images.add(mImageView30);
-            mImageView31 = itemView.findViewById(R.id.ribbon31);
-            this.images.add(mImageView31);
-            mImageView32 = itemView.findViewById(R.id.ribbon32);
-            this.images.add(mImageView32);
-            mImageView33 = itemView.findViewById(R.id.ribbon33);
-            this.images.add(mImageView33);
-            mImageView34 = itemView.findViewById(R.id.ribbon34);
-            this.images.add(mImageView34);
-            mImageView35 = itemView.findViewById(R.id.ribbon35);
-            this.images.add(mImageView35);
-            mImageView36 = itemView.findViewById(R.id.ribbon36);
-            this.images.add(mImageView36);
-            mImageView37 = itemView.findViewById(R.id.ribbon37);
-            this.images.add(mImageView37);
-            mImageView38 = itemView.findViewById(R.id.ribbon38);
-            this.images.add(mImageView38);
-            mImageView39 = itemView.findViewById(R.id.ribbon39);
-            this.images.add(mImageView39);
-            mImageView40 = itemView.findViewById(R.id.ribbon40);
-            this.images.add(mImageView40);
-            mImageView41 = itemView.findViewById(R.id.ribbon41);
-            this.images.add(mImageView41);
-            mImageView42 = itemView.findViewById(R.id.ribbon42);
-            this.images.add(mImageView42);
-            mImageView43 = itemView.findViewById(R.id.ribbon43);
-            this.images.add(mImageView43);
-            mImageView44 = itemView.findViewById(R.id.ribbon44);
-            this.images.add(mImageView44);
-            mImageView45 = itemView.findViewById(R.id.ribbon45);
-            this.images.add(mImageView45);
-            mImageView46 = itemView.findViewById(R.id.ribbon46);
-            this.images.add(mImageView46);
-            mImageView47 = itemView.findViewById(R.id.ribbon47);
-            this.images.add(mImageView47);
-
-        }
-    }
-
-    public static class Ribbon48Holder extends RecyclerView.ViewHolder {
-        private final ArraySet<ImageView> images;
-        public ImageView mImageView1;
-        public ImageView mImageView2;
-        public ImageView mImageView3;
-        public ImageView mImageView4;
-        public ImageView mImageView5;
-        public ImageView mImageView6;
-        public ImageView mImageView7;
-        public ImageView mImageView8;
-        public ImageView mImageView9;
-        public ImageView mImageView10;
-        public ImageView mImageView11;
-        public ImageView mImageView12;
-        public ImageView mImageView13;
-        public ImageView mImageView14;
-        public ImageView mImageView15;
-        public ImageView mImageView16;
-        public ImageView mImageView17;
-        public ImageView mImageView18;
-        public ImageView mImageView19;
-        public ImageView mImageView20;
-        public ImageView mImageView21;
-        public ImageView mImageView22;
-        public ImageView mImageView23;
-        public ImageView mImageView24;
-        public ImageView mImageView25;
-        public ImageView mImageView26;
-        public ImageView mImageView27;
-        public ImageView mImageView28;
-        public ImageView mImageView29;
-        public ImageView mImageView30;
-        public ImageView mImageView31;
-        public ImageView mImageView32;
-        public ImageView mImageView33;
-        public ImageView mImageView34;
-        public ImageView mImageView35;
-        public ImageView mImageView36;
-        public ImageView mImageView37;
-        public ImageView mImageView38;
-        public ImageView mImageView39;
-        public ImageView mImageView40;
-        public ImageView mImageView41;
-        public ImageView mImageView42;
-        public ImageView mImageView43;
-        public ImageView mImageView44;
-        public ImageView mImageView45;
-        public ImageView mImageView46;
-        public ImageView mImageView47;
-        public ImageView mImageView48;
-
-
-        @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon48Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
-            super(itemView);
-            this.images = images;
-            mImageView1 = itemView.findViewById(R.id.ribbon1);
-            this.images.add(mImageView1);
-            mImageView2 = itemView.findViewById(R.id.ribbon2);
-            this.images.add(mImageView2);
-            mImageView3 = itemView.findViewById(R.id.ribbon3);
-            this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon4);
-            this.images.add(mImageView4);
-            mImageView5 = itemView.findViewById(R.id.ribbon5);
-            this.images.add(mImageView5);
-            mImageView6 = itemView.findViewById(R.id.ribbon6);
-            this.images.add(mImageView6);
-            mImageView7 = itemView.findViewById(R.id.ribbon7);
-            this.images.add(mImageView7);
-            mImageView8 = itemView.findViewById(R.id.ribbon8);
-            this.images.add(mImageView8);
-            mImageView9 = itemView.findViewById(R.id.ribbon9);
-            this.images.add(mImageView9);
-            mImageView10 = itemView.findViewById(R.id.ribbon10);
-            this.images.add(mImageView10);
-            mImageView11 = itemView.findViewById(R.id.ribbon11);
-            this.images.add(mImageView11);
-            mImageView12 = itemView.findViewById(R.id.ribbon12);
-            this.images.add(mImageView12);
-            mImageView13 = itemView.findViewById(R.id.ribbon13);
-            this.images.add(mImageView13);
-            mImageView14 = itemView.findViewById(R.id.ribbon14);
-            this.images.add(mImageView14);
-            mImageView15 = itemView.findViewById(R.id.ribbon15);
-            this.images.add(mImageView15);
-            mImageView16 = itemView.findViewById(R.id.ribbon16);
-            this.images.add(mImageView16);
-            mImageView17 = itemView.findViewById(R.id.ribbon17);
-            this.images.add(mImageView17);
-            mImageView18 = itemView.findViewById(R.id.ribbon18);
-            this.images.add(mImageView18);
-            mImageView19 = itemView.findViewById(R.id.ribbon19);
-            this.images.add(mImageView19);
-            mImageView20 = itemView.findViewById(R.id.ribbon20);
-            this.images.add(mImageView20);
-            mImageView21 = itemView.findViewById(R.id.ribbon21);
-            this.images.add(mImageView21);
-            mImageView22 = itemView.findViewById(R.id.ribbon22);
-            this.images.add(mImageView22);
-            mImageView23 = itemView.findViewById(R.id.ribbon23);
-            this.images.add(mImageView23);
-            mImageView24 = itemView.findViewById(R.id.ribbon24);
-            this.images.add(mImageView24);
-            mImageView25 = itemView.findViewById(R.id.ribbon25);
-            this.images.add(mImageView25);
-            mImageView26 = itemView.findViewById(R.id.ribbon26);
-            this.images.add(mImageView26);
-            mImageView27 = itemView.findViewById(R.id.ribbon27);
-            this.images.add(mImageView27);
-            mImageView28 = itemView.findViewById(R.id.ribbon28);
-            this.images.add(mImageView28);
-            mImageView29 = itemView.findViewById(R.id.ribbon29);
-            this.images.add(mImageView29);
-            mImageView30 = itemView.findViewById(R.id.ribbon30);
-            this.images.add(mImageView30);
-            mImageView31 = itemView.findViewById(R.id.ribbon31);
-            this.images.add(mImageView31);
-            mImageView32 = itemView.findViewById(R.id.ribbon32);
-            this.images.add(mImageView32);
-            mImageView33 = itemView.findViewById(R.id.ribbon33);
-            this.images.add(mImageView33);
-            mImageView34 = itemView.findViewById(R.id.ribbon34);
-            this.images.add(mImageView34);
-            mImageView35 = itemView.findViewById(R.id.ribbon35);
-            this.images.add(mImageView35);
-            mImageView36 = itemView.findViewById(R.id.ribbon36);
-            this.images.add(mImageView36);
-            mImageView37 = itemView.findViewById(R.id.ribbon37);
-            this.images.add(mImageView37);
-            mImageView38 = itemView.findViewById(R.id.ribbon38);
-            this.images.add(mImageView38);
-            mImageView39 = itemView.findViewById(R.id.ribbon39);
-            this.images.add(mImageView39);
-            mImageView40 = itemView.findViewById(R.id.ribbon40);
-            this.images.add(mImageView40);
-            mImageView41 = itemView.findViewById(R.id.ribbon41);
-            this.images.add(mImageView41);
-            mImageView42 = itemView.findViewById(R.id.ribbon42);
-            this.images.add(mImageView42);
-            mImageView43 = itemView.findViewById(R.id.ribbon43);
-            this.images.add(mImageView43);
-            mImageView44 = itemView.findViewById(R.id.ribbon44);
-            this.images.add(mImageView44);
-            mImageView45 = itemView.findViewById(R.id.ribbon45);
-            this.images.add(mImageView45);
-            mImageView46 = itemView.findViewById(R.id.ribbon46);
-            this.images.add(mImageView46);
-            mImageView47 = itemView.findViewById(R.id.ribbon47);
-            this.images.add(mImageView47);
-            mImageView48 = itemView.findViewById(R.id.ribbon48);
-            this.images.add(mImageView48);
-
-        }
-    }
-
-    public static class Ribbon49Holder extends RecyclerView.ViewHolder {
-        private final ArraySet<ImageView> images;
-        public ImageView mImageView1;
-        public ImageView mImageView2;
-        public ImageView mImageView3;
-        public ImageView mImageView4;
-        public ImageView mImageView5;
-        public ImageView mImageView6;
-        public ImageView mImageView7;
-        public ImageView mImageView8;
-        public ImageView mImageView9;
-        public ImageView mImageView10;
-        public ImageView mImageView11;
-        public ImageView mImageView12;
-        public ImageView mImageView13;
-        public ImageView mImageView14;
-        public ImageView mImageView15;
-        public ImageView mImageView16;
-        public ImageView mImageView17;
-        public ImageView mImageView18;
-        public ImageView mImageView19;
-        public ImageView mImageView20;
-        public ImageView mImageView21;
-        public ImageView mImageView22;
-        public ImageView mImageView23;
-        public ImageView mImageView24;
-        public ImageView mImageView25;
-        public ImageView mImageView26;
-        public ImageView mImageView27;
-        public ImageView mImageView28;
-        public ImageView mImageView29;
-        public ImageView mImageView30;
-        public ImageView mImageView31;
-        public ImageView mImageView32;
-        public ImageView mImageView33;
-        public ImageView mImageView34;
-        public ImageView mImageView35;
-        public ImageView mImageView36;
-        public ImageView mImageView37;
-        public ImageView mImageView38;
-        public ImageView mImageView39;
-        public ImageView mImageView40;
-        public ImageView mImageView41;
-        public ImageView mImageView42;
-        public ImageView mImageView43;
-        public ImageView mImageView44;
-        public ImageView mImageView45;
-        public ImageView mImageView46;
-        public ImageView mImageView47;
-        public ImageView mImageView48;
-        public ImageView mImageView49;
-
-
-        @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon49Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
-            super(itemView);
-            this.images = images;
-            mImageView1 = itemView.findViewById(R.id.ribbon1);
-            this.images.add(mImageView1);
-            mImageView2 = itemView.findViewById(R.id.ribbon2);
-            this.images.add(mImageView2);
-            mImageView3 = itemView.findViewById(R.id.ribbon3);
-            this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon4);
-            this.images.add(mImageView4);
-            mImageView5 = itemView.findViewById(R.id.ribbon5);
-            this.images.add(mImageView5);
-            mImageView6 = itemView.findViewById(R.id.ribbon6);
-            this.images.add(mImageView6);
-            mImageView7 = itemView.findViewById(R.id.ribbon7);
-            this.images.add(mImageView7);
-            mImageView8 = itemView.findViewById(R.id.ribbon8);
-            this.images.add(mImageView8);
-            mImageView9 = itemView.findViewById(R.id.ribbon9);
-            this.images.add(mImageView9);
-            mImageView10 = itemView.findViewById(R.id.ribbon10);
-            this.images.add(mImageView10);
-            mImageView11 = itemView.findViewById(R.id.ribbon11);
-            this.images.add(mImageView11);
-            mImageView12 = itemView.findViewById(R.id.ribbon12);
-            this.images.add(mImageView12);
-            mImageView13 = itemView.findViewById(R.id.ribbon13);
-            this.images.add(mImageView13);
-            mImageView14 = itemView.findViewById(R.id.ribbon14);
-            this.images.add(mImageView14);
-            mImageView15 = itemView.findViewById(R.id.ribbon15);
-            this.images.add(mImageView15);
-            mImageView16 = itemView.findViewById(R.id.ribbon16);
-            this.images.add(mImageView16);
-            mImageView17 = itemView.findViewById(R.id.ribbon17);
-            this.images.add(mImageView17);
-            mImageView18 = itemView.findViewById(R.id.ribbon18);
-            this.images.add(mImageView18);
-            mImageView19 = itemView.findViewById(R.id.ribbon19);
-            this.images.add(mImageView19);
-            mImageView20 = itemView.findViewById(R.id.ribbon20);
-            this.images.add(mImageView20);
-            mImageView21 = itemView.findViewById(R.id.ribbon21);
-            this.images.add(mImageView21);
-            mImageView22 = itemView.findViewById(R.id.ribbon22);
-            this.images.add(mImageView22);
-            mImageView23 = itemView.findViewById(R.id.ribbon23);
-            this.images.add(mImageView23);
-            mImageView24 = itemView.findViewById(R.id.ribbon24);
-            this.images.add(mImageView24);
-            mImageView25 = itemView.findViewById(R.id.ribbon25);
-            this.images.add(mImageView25);
-            mImageView26 = itemView.findViewById(R.id.ribbon26);
-            this.images.add(mImageView26);
-            mImageView27 = itemView.findViewById(R.id.ribbon27);
-            this.images.add(mImageView27);
-            mImageView28 = itemView.findViewById(R.id.ribbon28);
-            this.images.add(mImageView28);
-            mImageView29 = itemView.findViewById(R.id.ribbon29);
-            this.images.add(mImageView29);
-            mImageView30 = itemView.findViewById(R.id.ribbon30);
-            this.images.add(mImageView30);
-            mImageView31 = itemView.findViewById(R.id.ribbon31);
-            this.images.add(mImageView31);
-            mImageView32 = itemView.findViewById(R.id.ribbon32);
-            this.images.add(mImageView32);
-            mImageView33 = itemView.findViewById(R.id.ribbon33);
-            this.images.add(mImageView33);
-            mImageView34 = itemView.findViewById(R.id.ribbon34);
-            this.images.add(mImageView34);
-            mImageView35 = itemView.findViewById(R.id.ribbon35);
-            this.images.add(mImageView35);
-            mImageView36 = itemView.findViewById(R.id.ribbon36);
-            this.images.add(mImageView36);
-            mImageView37 = itemView.findViewById(R.id.ribbon37);
-            this.images.add(mImageView37);
-            mImageView38 = itemView.findViewById(R.id.ribbon38);
-            this.images.add(mImageView38);
-            mImageView39 = itemView.findViewById(R.id.ribbon39);
-            this.images.add(mImageView39);
-            mImageView40 = itemView.findViewById(R.id.ribbon40);
-            this.images.add(mImageView40);
-            mImageView41 = itemView.findViewById(R.id.ribbon41);
-            this.images.add(mImageView41);
-            mImageView42 = itemView.findViewById(R.id.ribbon42);
-            this.images.add(mImageView42);
-            mImageView43 = itemView.findViewById(R.id.ribbon43);
-            this.images.add(mImageView43);
-            mImageView44 = itemView.findViewById(R.id.ribbon44);
-            this.images.add(mImageView44);
-            mImageView45 = itemView.findViewById(R.id.ribbon45);
-            this.images.add(mImageView45);
-            mImageView46 = itemView.findViewById(R.id.ribbon46);
-            this.images.add(mImageView46);
-            mImageView47 = itemView.findViewById(R.id.ribbon47);
-            this.images.add(mImageView47);
-            mImageView48 = itemView.findViewById(R.id.ribbon48);
-            this.images.add(mImageView48);
-            mImageView49 = itemView.findViewById(R.id.ribbon49);
-            this.images.add(mImageView49);
-
-        }
-    }
-
-    public static class Ribbon50Holder extends RecyclerView.ViewHolder {
-        private final ArraySet<ImageView> images;
-        public ImageView mImageView1;
-        public ImageView mImageView2;
-        public ImageView mImageView3;
-        public ImageView mImageView4;
-        public ImageView mImageView5;
-        public ImageView mImageView6;
-        public ImageView mImageView7;
-        public ImageView mImageView8;
-        public ImageView mImageView9;
-        public ImageView mImageView10;
-        public ImageView mImageView11;
-        public ImageView mImageView12;
-        public ImageView mImageView13;
-        public ImageView mImageView14;
-        public ImageView mImageView15;
-        public ImageView mImageView16;
-        public ImageView mImageView17;
-        public ImageView mImageView18;
-        public ImageView mImageView19;
-        public ImageView mImageView20;
-        public ImageView mImageView21;
-        public ImageView mImageView22;
-        public ImageView mImageView23;
-        public ImageView mImageView24;
-        public ImageView mImageView25;
-        public ImageView mImageView26;
-        public ImageView mImageView27;
-        public ImageView mImageView28;
-        public ImageView mImageView29;
-        public ImageView mImageView30;
-        public ImageView mImageView31;
-        public ImageView mImageView32;
-        public ImageView mImageView33;
-        public ImageView mImageView34;
-        public ImageView mImageView35;
-        public ImageView mImageView36;
-        public ImageView mImageView37;
-        public ImageView mImageView38;
-        public ImageView mImageView39;
-        public ImageView mImageView40;
-        public ImageView mImageView41;
-        public ImageView mImageView42;
-        public ImageView mImageView43;
-        public ImageView mImageView44;
-        public ImageView mImageView45;
-        public ImageView mImageView46;
-        public ImageView mImageView47;
-        public ImageView mImageView48;
-        public ImageView mImageView49;
-        public ImageView mImageView50;
-
-
-        @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon50Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
-            super(itemView);
-            this.images = images;
-            mImageView1 = itemView.findViewById(R.id.ribbon1);
-            this.images.add(mImageView1);
-            mImageView2 = itemView.findViewById(R.id.ribbon2);
-            this.images.add(mImageView2);
-            mImageView3 = itemView.findViewById(R.id.ribbon3);
-            this.images.add(mImageView3);
-            mImageView4 = itemView.findViewById(R.id.ribbon4);
-            this.images.add(mImageView4);
-            mImageView5 = itemView.findViewById(R.id.ribbon5);
-            this.images.add(mImageView5);
-            mImageView6 = itemView.findViewById(R.id.ribbon6);
-            this.images.add(mImageView6);
-            mImageView7 = itemView.findViewById(R.id.ribbon7);
-            this.images.add(mImageView7);
-            mImageView8 = itemView.findViewById(R.id.ribbon8);
-            this.images.add(mImageView8);
-            mImageView9 = itemView.findViewById(R.id.ribbon9);
-            this.images.add(mImageView9);
-            mImageView10 = itemView.findViewById(R.id.ribbon10);
-            this.images.add(mImageView10);
-            mImageView11 = itemView.findViewById(R.id.ribbon11);
-            this.images.add(mImageView11);
-            mImageView12 = itemView.findViewById(R.id.ribbon12);
-            this.images.add(mImageView12);
-            mImageView13 = itemView.findViewById(R.id.ribbon13);
-            this.images.add(mImageView13);
-            mImageView14 = itemView.findViewById(R.id.ribbon14);
-            this.images.add(mImageView14);
-            mImageView15 = itemView.findViewById(R.id.ribbon15);
-            this.images.add(mImageView15);
-            mImageView16 = itemView.findViewById(R.id.ribbon16);
-            this.images.add(mImageView16);
-            mImageView17 = itemView.findViewById(R.id.ribbon17);
-            this.images.add(mImageView17);
-            mImageView18 = itemView.findViewById(R.id.ribbon18);
-            this.images.add(mImageView18);
-            mImageView19 = itemView.findViewById(R.id.ribbon19);
-            this.images.add(mImageView19);
-            mImageView20 = itemView.findViewById(R.id.ribbon20);
-            this.images.add(mImageView20);
-            mImageView21 = itemView.findViewById(R.id.ribbon21);
-            this.images.add(mImageView21);
-            mImageView22 = itemView.findViewById(R.id.ribbon22);
-            this.images.add(mImageView22);
-            mImageView23 = itemView.findViewById(R.id.ribbon23);
-            this.images.add(mImageView23);
-            mImageView24 = itemView.findViewById(R.id.ribbon24);
-            this.images.add(mImageView24);
-            mImageView25 = itemView.findViewById(R.id.ribbon25);
-            this.images.add(mImageView25);
-            mImageView26 = itemView.findViewById(R.id.ribbon26);
-            this.images.add(mImageView26);
-            mImageView27 = itemView.findViewById(R.id.ribbon27);
-            this.images.add(mImageView27);
-            mImageView28 = itemView.findViewById(R.id.ribbon28);
-            this.images.add(mImageView28);
-            mImageView29 = itemView.findViewById(R.id.ribbon29);
-            this.images.add(mImageView29);
-            mImageView30 = itemView.findViewById(R.id.ribbon30);
-            this.images.add(mImageView30);
-            mImageView31 = itemView.findViewById(R.id.ribbon31);
-            this.images.add(mImageView31);
-            mImageView32 = itemView.findViewById(R.id.ribbon32);
-            this.images.add(mImageView32);
-            mImageView33 = itemView.findViewById(R.id.ribbon33);
-            this.images.add(mImageView33);
-            mImageView34 = itemView.findViewById(R.id.ribbon34);
-            this.images.add(mImageView34);
-            mImageView35 = itemView.findViewById(R.id.ribbon35);
-            this.images.add(mImageView35);
-            mImageView36 = itemView.findViewById(R.id.ribbon36);
-            this.images.add(mImageView36);
-            mImageView37 = itemView.findViewById(R.id.ribbon37);
-            this.images.add(mImageView37);
-            mImageView38 = itemView.findViewById(R.id.ribbon38);
-            this.images.add(mImageView38);
-            mImageView39 = itemView.findViewById(R.id.ribbon39);
-            this.images.add(mImageView39);
-            mImageView40 = itemView.findViewById(R.id.ribbon40);
-            this.images.add(mImageView40);
-            mImageView41 = itemView.findViewById(R.id.ribbon41);
-            this.images.add(mImageView41);
-            mImageView42 = itemView.findViewById(R.id.ribbon42);
-            this.images.add(mImageView42);
-            mImageView43 = itemView.findViewById(R.id.ribbon43);
-            this.images.add(mImageView43);
-            mImageView44 = itemView.findViewById(R.id.ribbon44);
-            this.images.add(mImageView44);
-            mImageView45 = itemView.findViewById(R.id.ribbon45);
-            this.images.add(mImageView45);
-            mImageView46 = itemView.findViewById(R.id.ribbon46);
-            this.images.add(mImageView46);
-            mImageView47 = itemView.findViewById(R.id.ribbon47);
-            this.images.add(mImageView47);
-            mImageView48 = itemView.findViewById(R.id.ribbon48);
-            this.images.add(mImageView48);
-            mImageView49 = itemView.findViewById(R.id.ribbon49);
-            this.images.add(mImageView49);
-            mImageView50 = itemView.findViewById(R.id.ribbon50);
-            this.images.add(mImageView50);
-
-        }
-    }
-        public ImageView mImageView19;
-        public ImageView mImageView20;
-        public ImageView mImageView21;
-        public ImageView mImageView22;
-        public ImageView mImageView23;
-        public ImageView mImageView24;
-        public ImageView mImageView25;
-        public ImageView mImageView26;
-        public ImageView mImageView27;
-        public ImageView mImageView28;
-        public ImageView mImageView29;
-        public ImageView mImageView30;
-        public ImageView mImageView31;
-        public ImageView mImageView32;
-        public ImageView mImageView33;
-
-
- */
 
 
     public RibbonAdapter(ArrayList<RibbonItem> ribbonList) {
@@ -4481,249 +4478,201 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         }
         if (ViewType == 5) {
             view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item5, parent, false);
-            return new Ribbon4Holder(view, mListener, images);
+            return new Ribbon5Holder(view, mListener, images);
         }
         if (ViewType == 6) {
             view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item6, parent, false);
-            return new Ribbon5Holder(view, mListener, images);
-
-
+            return new Ribbon6Holder(view, mListener, images);
         }
         if (ViewType == 7) {
             view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item7, parent, false);
-            return new Ribbon6Holder(view, mListener, images);
-
-
+            return new Ribbon7Holder(view, mListener, images);
         }
         if (ViewType == 8) {
             view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item8, parent, false);
-            return new Ribbon7Holder(view, mListener, images);
-
-
+            return new Ribbon8Holder(view, mListener, images);
         }
         if (ViewType == 9) {
             view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item9, parent, false);
-            return new Ribbon8Holder(view, mListener, images);
-
-
-        }
-        return null;
-    }
-        /*
-        if (ViewType == 10) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item10, parent, false);
             return new Ribbon9Holder(view, mListener, images);
         }
-        return null;
-    }
-
-
-
-
-
-        } if (ViewType == 11) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item11, parent, false);
+        if (ViewType == 10) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item10, parent, false);
             return new Ribbon10Holder(view, mListener, images);
-
-
-        } if (ViewType == 12) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item12, parent, false);
+        }
+        if (ViewType == 11) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item11, parent, false);
             return new Ribbon11Holder(view, mListener, images);
-
-
-        } if (ViewType == 13) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item13, parent, false);
+        }
+        if (ViewType == 12) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item12, parent, false);
             return new Ribbon12Holder(view, mListener, images);
 
-
-        } if (ViewType == 14) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item14, parent, false);
+        }
+        if (ViewType == 13) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item13, parent, false);
             return new Ribbon13Holder(view, mListener, images);
-
-
-        } if (ViewType == 15) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item15, parent, false);
+        }
+        if (ViewType == 14) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item14, parent, false);
             return new Ribbon14Holder(view, mListener, images);
-
-
-        } if (ViewType == 16) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item16, parent, false);
+        }
+        if (ViewType == 15) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item15, parent, false);
             return new Ribbon15Holder(view, mListener, images);
-
-
-        } if (ViewType == 17) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item17, parent, false);
+        }
+        if (ViewType == 16) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item16, parent, false);
             return new Ribbon16Holder(view, mListener, images);
-
-
-        } if (ViewType == 18) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item18, parent, false);
+        }
+        if (ViewType == 17) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item17, parent, false);
             return new Ribbon17Holder(view, mListener, images);
 
 
-        } if (ViewType == 19) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item19, parent, false);
+        }
+        if (ViewType == 18) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item18, parent, false);
             return new Ribbon18Holder(view, mListener, images);
 
 
-        } if (ViewType == 20) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item20, parent, false);
+        }
+        if (ViewType == 19) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item19, parent, false);
             return new Ribbon19Holder(view, mListener, images);
 
 
-        } if (ViewType == 21) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item21, parent, false);
+        }
+        if (ViewType == 20) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item20, parent, false);
             return new Ribbon20Holder(view, mListener, images);
-
-
-        } if (ViewType == 22) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item22, parent, false);
+        }
+        if (ViewType == 21) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item21, parent, false);
             return new Ribbon21Holder(view, mListener, images);
-
-
-        } if (ViewType == 23) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item23, parent, false);
+        }
+        if (ViewType == 22) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item22, parent, false);
             return new Ribbon22Holder(view, mListener, images);
-
-
-        } if (ViewType == 24) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item24, parent, false);
+        }
+        if (ViewType == 23) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item23, parent, false);
             return new Ribbon23Holder(view, mListener, images);
-
-
-        } if (ViewType == 25) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item25, parent, false);
+        }
+        if (ViewType == 24) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item24, parent, false);
             return new Ribbon24Holder(view, mListener, images);
-
-
-        } if (ViewType == 26) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item26, parent, false);
+        }
+        if (ViewType == 25) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item25, parent, false);
             return new Ribbon25Holder(view, mListener, images);
-
-
-        } if (ViewType == 27) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item27, parent, false);
+        }
+        if (ViewType == 26) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item26, parent, false);
             return new Ribbon26Holder(view, mListener, images);
-
-
-        } if (ViewType == 28) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item28, parent, false);
+        }
+        if (ViewType == 27) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item27, parent, false);
             return new Ribbon27Holder(view, mListener, images);
-
-
-        } if (ViewType == 29) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item29, parent, false);
+        }
+        if (ViewType == 28) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item28, parent, false);
             return new Ribbon28Holder(view, mListener, images);
-
-
-        } if (ViewType == 30) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item30, parent, false);
+        }
+        if (ViewType == 29) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item29, parent, false);
             return new Ribbon29Holder(view, mListener, images);
-
-
-        } if (ViewType == 31) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item31, parent, false);
+        }
+        if (ViewType == 30) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item30, parent, false);
             return new Ribbon30Holder(view, mListener, images);
 
 
-        } if (ViewType == 32) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item32, parent, false);
+        }
+        if (ViewType == 31) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item31, parent, false);
             return new Ribbon31Holder(view, mListener, images);
-
-
-        } if (ViewType == 33) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item33, parent, false);
+        }
+        if (ViewType == 32) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item32, parent, false);
             return new Ribbon32Holder(view, mListener, images);
-
-
-        } if (ViewType == 34) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item34, parent, false);
+        }
+        if (ViewType == 33) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item33, parent, false);
             return new Ribbon33Holder(view, mListener, images);
-
-
-        } if (ViewType == 35) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item35, parent, false);
+        }
+        if (ViewType == 34) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item34, parent, false);
             return new Ribbon34Holder(view, mListener, images);
-
-
-        } if (ViewType == 36) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item36, parent, false);
+        }
+        if (ViewType == 35) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item35, parent, false);
             return new Ribbon35Holder(view, mListener, images);
-
-
-        } if (ViewType == 37) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item37, parent, false);
+        }
+        if (ViewType == 36) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item36, parent, false);
             return new Ribbon36Holder(view, mListener, images);
-
-
-        } if (ViewType == 38) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item38, parent, false);
+        }
+        if (ViewType == 37) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item37, parent, false);
             return new Ribbon37Holder(view, mListener, images);
-
-
-        } if (ViewType == 39) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item39, parent, false);
+        }
+        if (ViewType == 38) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item38, parent, false);
             return new Ribbon38Holder(view, mListener, images);
-
-
-        } if (ViewType == 40) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item40, parent, false);
+        }
+        if (ViewType == 39) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item39, parent, false);
             return new Ribbon39Holder(view, mListener, images);
-
-
-        } if (ViewType == 41) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item41, parent, false);
+        }
+        if (ViewType == 40) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item40, parent, false);
             return new Ribbon40Holder(view, mListener, images);
-
-
-        } if (ViewType == 42) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item42, parent, false);
+        }
+        if (ViewType == 41) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item41, parent, false);
             return new Ribbon41Holder(view, mListener, images);
-
-
-        } if (ViewType == 43) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item43, parent, false);
+        }
+        if (ViewType == 42) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item42, parent, false);
             return new Ribbon42Holder(view, mListener, images);
-
-
-        } if (ViewType == 44) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item44, parent, false);
+        }
+        if (ViewType == 43) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item43, parent, false);
             return new Ribbon43Holder(view, mListener, images);
-
-
-        } if (ViewType == 45) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item45, parent, false);
+        }
+        if (ViewType == 44) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item44, parent, false);
             return new Ribbon44Holder(view, mListener, images);
-
-
-        } if (ViewType == 46) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item46, parent, false);
+        }
+        if (ViewType == 45) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item45, parent, false);
             return new Ribbon45Holder(view, mListener, images);
-
-
-        } if (ViewType == 47) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item47, parent, false);
+        }
+        if (ViewType == 46) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item46, parent, false);
             return new Ribbon46Holder(view, mListener, images);
-
-
-        } if (ViewType == 48) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item48, parent, false);
+        }
+        if (ViewType == 47) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item47, parent, false);
             return new Ribbon47Holder(view, mListener, images);
-
-
-        } if (ViewType == 49) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item49, parent, false);
+        }
+        if (ViewType == 48) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item48, parent, false);
             return new Ribbon48Holder(view, mListener, images);
-
-
-        } if (ViewType == 50) {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item50, parent, false);
+        }
+        if (ViewType == 49) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item49, parent, false);
             return new Ribbon49Holder(view, mListener, images);
+        }
+        if (ViewType == 50) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item50, parent, false);
+            return new Ribbon50Holder(view, mListener, images);
+
         }
         return null;
     }
 
-         */
 
 
     @Override
@@ -4803,6 +4752,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             ((Ribbon10Holder) holder).mImageView8.setImageResource(currentItem.getImageResource8());
             ((Ribbon10Holder) holder).mImageView9.setImageResource(currentItem.getImageResource9());
             ((Ribbon10Holder) holder).mImageView10.setImageResource(currentItem.getImageResource10());
+
         } else if (holder instanceof Ribbon11Holder) {
             RibbonItem currentItem = (RibbonItem) mRibbonList.get(position);
             ((Ribbon11Holder) holder).mImageView1.setImageResource(currentItem.getImageResource1());
@@ -4831,8 +4781,6 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             ((Ribbon12Holder) holder).mImageView11.setImageResource(currentItem.getImageResource11());
             ((Ribbon12Holder) holder).mImageView12.setImageResource(currentItem.getImageResource12());
         }
-    }
-/*
 
         else if (holder instanceof Ribbon13Holder) {
             RibbonItem currentItem = (RibbonItem) mRibbonList.get(position);
@@ -4850,7 +4798,6 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             ((Ribbon13Holder)holder).mImageView12.setImageResource(currentItem.getImageResource12());
             ((Ribbon13Holder)holder).mImageView13.setImageResource(currentItem.getImageResource13());
         }
-
 
         else if (holder instanceof Ribbon14Holder) {
             RibbonItem currentItem = (RibbonItem) mRibbonList.get(position);
@@ -6220,7 +6167,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
 
     }
 
-
+/*
     @Override
     public void onBindViewHolder(RibbonViewHolder holder, int position) {
         RibbonItem currentItem = (RibbonItem) mRibbonList.get(position);
