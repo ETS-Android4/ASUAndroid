@@ -15,6 +15,7 @@ import java.util.Comparator;
 import java.util.Objects;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.Toolbar;
 import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -49,7 +50,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //Toolbar myToolbar = (Toolbar) findViewById(R.id.tool_bar);
         //setSupportActionBar(myToolbar);
         setContentView(R.layout.activity_main);
-        //demoView = findViewById(R.id.myZoomageView);
+        demoView = findViewById(R.id.myZoomageView);
+        AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
 
         fromSpinner = NewUniformPromptFragment.spinnerAr;
     }

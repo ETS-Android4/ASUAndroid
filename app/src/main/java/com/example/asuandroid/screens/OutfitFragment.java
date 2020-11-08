@@ -1,5 +1,9 @@
 package com.example.asuandroid.screens;
 
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
@@ -8,7 +12,11 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.navigation.fragment.NavHostFragment;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.example.asuandroid.R;
+import com.zoomage.ZoomageView;
+
 import java.util.ArrayList;
 
 
@@ -84,7 +92,6 @@ public class OutfitFragment extends Fragment {
         view.findViewById(R.id.btn_build_uniform).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 NavHostFragment.findNavController(OutfitFragment.this)
                         .navigate(R.id.action_uniformFragment_to_uniformPresentationFragment);
                 getSpinnerAr(savedInstanceState);

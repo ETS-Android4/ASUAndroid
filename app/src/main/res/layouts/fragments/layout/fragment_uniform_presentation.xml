@@ -8,6 +8,19 @@
     android:layout_height="match_parent"
     tools:context=".screens.UniformPresentationFragment">
 
+    <com.zoomage.ZoomageView
+        android:id="@+id/myZoomageView"
+        android:layout_width="415dp"
+        android:layout_height="503dp"
+        app:zoomage_animateOnReset="true"
+        app:zoomage_autoCenter="true"
+        app:zoomage_autoResetMode="UNDER"
+        app:zoomage_maxScale="8"
+        app:zoomage_minScale="0.6"
+        app:zoomage_restrictBounds="false"
+        app:zoomage_translatable="true"
+        app:zoomage_zoomable="true" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/uniform_constraint"
         android:layout_width="match_parent"
@@ -20,11 +33,9 @@
             android:background="@android:color/darker_gray"
             android:padding="4dp"
             android:scrollbars="vertical"
-            app:layout_constraintBottom_toTopOf="@+id/convertedHolder"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.473">
+            app:layout_constraintTop_toTopOf="parent">
 
         </androidx.recyclerview.widget.RecyclerView>
 
@@ -48,14 +59,6 @@
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <ImageView
-            android:id="@+id/convertedHolder"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@+id/btn_convertView"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:src="@tools:sample/avatars" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

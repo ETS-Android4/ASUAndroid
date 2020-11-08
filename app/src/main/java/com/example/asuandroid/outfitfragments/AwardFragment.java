@@ -18,6 +18,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.example.asuandroid.R;
+import com.example.asuandroid.dialogs.AwardDialog;
 import com.example.asuandroid.outfitAdapters.AwardAdapter;
 
 import java.util.ArrayList;
@@ -25,7 +26,7 @@ import java.util.Arrays;
 
 import static com.stanko.tools.SharedPrefsHelper.getSharedPreferences;
 
-public class AwardFragment extends Fragment {
+public class AwardFragment extends Fragment implements AwardDialog.AwardDialogListener{
     private ArrayList<AwardItem> mAwardList;
     private AwardAdapter mRecyclerViewAdapter;
     private RecyclerView mRecyclerView;
@@ -62,6 +63,33 @@ public class AwardFragment extends Fragment {
             }
         });
         return view;
+    }
+
+    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        //back to outfit prompt
+        view.findViewById(R.id.btn_badge_to_prompt).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                System.out.println(ribbonImages.size());
+                ribbonImages.trimToSize();
+                System.out.println(ribbonImages.size());
+                finalExport = ribbonImages;
+                System.out.println("Heres the size of ribbonImages" + ribbonImages.size());
+                System.out.println(ribbonImages);
+                NavHostFragment.findNavController(AwardFragment.this)
+                        .navigate(R.id.action_awardFragment_to_uniformFragment);
+            }
+        });
+    }
+
+    @Override
+    public void applyTexts(String username, String password) {
+
+    }
+    public void openDialog() {
+        AwardDialog awardDialog = new AwardDialog();
+        awardDialog.show(getParentFragmentManager(), "example dialog");
     }
 
     public void createAwardList() {
@@ -174,22 +202,4 @@ public class AwardFragment extends Fragment {
         mAwardList.get(position).changeImage(position, view.findViewById(R.id.img_addRibbon));
     }
 */
-
-    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-        //back to outfit prompt
-        view.findViewById(R.id.btn_badge_to_prompt).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                System.out.println(ribbonImages.size());
-                ribbonImages.trimToSize();
-                System.out.println(ribbonImages.size());
-                finalExport = ribbonImages;
-                System.out.println("Heres the size of ribbonImages" + ribbonImages.size());
-                System.out.println(ribbonImages);
-                NavHostFragment.findNavController(AwardFragment.this)
-                        .navigate(R.id.action_awardFragment_to_uniformFragment);
-            }
-        });
-    }
 }

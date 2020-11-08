@@ -59,12 +59,15 @@ public class UniformPresentationFragment extends Fragment{
         final FragmentActivity c = getActivity();
         RibbonAdapter mAdapter = new RibbonAdapter(mRibbonList);
         mRecyclerViewAdapter = new RibbonAdapter(mRibbonList);
-        final RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recyclerViewRibbonRack);
+        final RecyclerView recyclerView = view.findViewById(R.id.recyclerViewRibbonRack);
         LinearLayoutManager layoutManager = new LinearLayoutManager(c);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(mAdapter);
         // Inflate the layout for this fragment
         return view;
+    }
+    public void setDrawableZoomage() {
+
     }
 
     public void createRibbonList() {
@@ -369,20 +372,21 @@ public class UniformPresentationFragment extends Fragment{
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         RecyclerView recyclerView = view.findViewById(R.id.recyclerViewRibbonRack);
+        ZoomageView zoomageView = view.findViewById(R.id.myZoomageView);
         view.setDrawingCacheEnabled(true);
         //ConstraintLayout uniformConstraint = view.findViewById(R.id.uniform_constraint);
         Button convertView = view.findViewById(R.id.btn_convertView);
-        ImageView holderConvert = view.findViewById(R.id.convertedHolder);
+        //ImageView holderConvert = view.findViewById(R.id.convertedHolder);
         convertView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Bitmap bitmap = Bitmap.createBitmap(recyclerView.getWidth(), recyclerView.getHeight(), Bitmap.Config.ARGB_8888);
                 Canvas canvas = new Canvas(bitmap);
                 recyclerView.draw(canvas);
-                holderConvert.setImageBitmap(bitmap);
-                System.out.println(bitmapDrawableArray);
                 Drawable d = new BitmapDrawable(getResources(), bitmap);
-                bitmapDrawableArray.add(d);
+                zoomageView.setDrawableResource(d);
+                //bitmapDrawableArray.add(d);
+                System.out.println(bitmapDrawableArray);
                 //System.out.println(bitmap);
             }
         });

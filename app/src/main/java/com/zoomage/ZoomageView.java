@@ -365,9 +365,9 @@ public class ZoomageView extends AppCompatImageView implements OnScaleGestureLis
     /**
      * {@inheritDoc}
      */
-    @Override
-    public void setImageResource(int resId) {
-        super.setImageResource(resId);
+
+    public void setDrawableResource(Drawable drawable) {
+        super.setImageDrawable(drawable);
         setScaleType(startScaleType);
     }
 
@@ -899,6 +899,7 @@ public class ZoomageView extends AppCompatImageView implements OnScaleGestureLis
             return true;
         }
     };
+
 
     private class SimpleAnimatorListener implements Animator.AnimatorListener {
         @Override
