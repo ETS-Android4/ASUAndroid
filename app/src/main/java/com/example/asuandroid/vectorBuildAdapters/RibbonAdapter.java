@@ -4450,7 +4450,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
 
             }
         }
-    }
+
 
 
     public RibbonAdapter(ArrayList<RibbonItem> ribbonList) {
