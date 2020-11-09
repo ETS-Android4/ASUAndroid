@@ -27,6 +27,12 @@
     <string name="Regimental">Regimental Insignia </string>
     <string name="IdentificationBadge">Identification Badge </string>
 
+    <!--Award Fragment -->
+    <string name="toRackInspection">Continue </string>
+
+    <!--Uniform Presentation Fragment -->
+    <string name="saveUniform"> Save In My Wardrobe </string>
+
     <!-- String for ribbonReference objects -->
     <string name="ref1">ic_medal_of_honor_ribbon</string>
     <string name="ref2">ic_distinguished_service_cross_ribbon</string>

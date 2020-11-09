@@ -13,7 +13,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Objects;
-
+import androidx.fragment.app.DialogFragment;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.Toolbar;
@@ -32,6 +32,8 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 
 import com.example.asuandroid.R;
+
+import com.example.asuandroid.dialogs.Award2Dialog;
 import com.example.asuandroid.outfitAdapters.AwardAdapter;
 import com.example.asuandroid.outfitfragments.AwardFragment;
 import com.example.asuandroid.outfitfragments.AwardItem;
@@ -40,7 +42,7 @@ import com.zoomage.ZoomageView;
 import static android.app.ActionBar.DISPLAY_SHOW_CUSTOM;
 
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener, CompoundButton.OnCheckedChangeListener{
+public class MainActivity extends AppCompatActivity implements View.OnClickListener, CompoundButton.OnCheckedChangeListener, Award2Dialog.ExampleDialogListener {
     public ArrayList<String> fromSpinner;
     private ZoomageView demoView;
 
@@ -52,7 +54,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         demoView = findViewById(R.id.myZoomageView);
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
-
         fromSpinner = NewUniformPromptFragment.spinnerAr;
     }
 
@@ -121,6 +122,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
         builder.create().show();
+    }
+
+    @Override
+    public void applyTexts(String username, String password) {
+
     }
 }
 

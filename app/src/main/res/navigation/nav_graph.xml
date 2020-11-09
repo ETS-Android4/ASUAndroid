@@ -82,10 +82,8 @@
         android:label="fragment_award"
         tools:layout="@layout/fragment_award" >
         <action
-            android:id="@+id/action_awardFragment_to_uniformFragment"
-            app:destination="@id/OufitFragment"
-            app:enterAnim="@anim/fragment_open_enter"
-            app:exitAnim="@anim/fragment_open_exit" />
+            android:id="@+id/action_awardFragment_to_award2Fragment"
+            app:destination="@id/award2Fragment" />
     </fragment>
     <fragment
         android:id="@+id/badgeFragment"
@@ -159,4 +157,27 @@
             android:id="@+id/action_wardrobeScreen_to_HomeScreen"
             app:destination="@id/HomeScreen" />
     </fragment>
+
+    <fragment
+        android:id="@+id/award2Fragment"
+        android:name="com.example.asuandroid.outfitfragments.Award2Fragment"
+        android:label="fragment_award2"
+        tools:layout="@layout/fragment_award2" >
+        <action
+            android:id="@+id/action_award2Fragment_to_award2Dialog"
+            app:destination="@id/award2Dialog2" />
+    </fragment>
+    <dialog
+        android:id="@+id/award2Dialog2"
+        android:name="com.example.asuandroid.dialogs.Award2Dialog"
+        android:label="Award2Dialog" >
+        <action
+            android:id="@+id/action_award2Dialog2_to_award2Fragment"
+            app:destination="@id/award2Fragment" />
+        <action
+            android:id="@+id/action_award2Dialog2_to_OufitFragment"
+            app:destination="@id/OufitFragment" />
+    </dialog>
+
+
 </navigation>
