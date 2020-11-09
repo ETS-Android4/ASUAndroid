@@ -13,6 +13,7 @@ import androidx.core.content.ContextCompat;
 import androidx.viewpager.widget.PagerAdapter;
 
 import com.example.asuandroid.dialogs.Award2Dialog;
+import com.example.asuandroid.outfitfragments.Award2Fragment;
 import com.example.asuandroid.screens.UniformPresentationFragment;
 import com.example.asuandroid.utils.Utils;
 
@@ -27,13 +28,14 @@ import static com.stanko.tools.ResHelper.getDrawable;
  */
 public class HorizontalPagerAdapter extends PagerAdapter {
     public static ArrayList<Drawable> fromRibbonBuilds = new ArrayList<Drawable>();
+    public static ArrayList<Drawable> ribbonSave = Award2Dialog.toCloset;
     public static Utils.LibraryObject[] TWO_WAY_LIBRARIES;
     public static Drawable emptyCloset = getDrawable(R.drawable.ic_wardrobe);
     public void createLibrary() {
-        fromRibbonBuilds.add(emptyCloset);
         System.out.println(fromRibbonBuilds);
+        fromRibbonBuilds = ribbonSave;
         int tatters = fromRibbonBuilds.size();
-        if(tatters > 0) {
+        if (tatters > 0) {
             switch (tatters) {
                 case 1:
                     TWO_WAY_LIBRARIES = new Utils.LibraryObject[]{new Utils.LibraryObject(fromRibbonBuilds.get(0), "")};
@@ -51,10 +53,12 @@ public class HorizontalPagerAdapter extends PagerAdapter {
                     TWO_WAY_LIBRARIES = new Utils.LibraryObject[]{new Utils.LibraryObject(fromRibbonBuilds.get(0), ""), new Utils.LibraryObject(fromRibbonBuilds.get(1), ""), new Utils.LibraryObject(fromRibbonBuilds.get(2), ""), new Utils.LibraryObject(fromRibbonBuilds.get(3), ""), new Utils.LibraryObject(fromRibbonBuilds.get(4), "")};
                     break;
             }
-            }else if (tatters == 0){
-
-            }
+        } else if (tatters == 0) {
+            TWO_WAY_LIBRARIES = new Utils.LibraryObject[]{new Utils.LibraryObject(fromRibbonBuilds.get(0), "")};
         }
+    }
+
+
 
     private LayoutInflater mLayoutInflater;
 

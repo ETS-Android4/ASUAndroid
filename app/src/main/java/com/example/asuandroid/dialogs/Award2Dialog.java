@@ -26,6 +26,9 @@ public class Award2Dialog extends AppCompatDialogFragment {
 
     private ExampleDialogListener listener;
     public static ArrayList<Drawable> toCloset = new ArrayList<>();
+
+
+
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
