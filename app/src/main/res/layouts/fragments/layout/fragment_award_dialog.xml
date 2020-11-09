@@ -4,60 +4,62 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/uniform_relative"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
     tools:context=".screens.UniformPresentationFragment">
-
-    <com.zoomage.ZoomageView
-        android:id="@+id/myZoomageView"
-        android:layout_width="415dp"
-        android:layout_height="503dp"
-        app:zoomage_animateOnReset="true"
-        app:zoomage_autoCenter="true"
-        app:zoomage_autoResetMode="UNDER"
-        app:zoomage_maxScale="8"
-        app:zoomage_minScale="0.6"
-        app:zoomage_restrictBounds="false"
-        app:zoomage_translatable="true"
-        app:zoomage_zoomable="true" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/uniform_constraint"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerViewRibbonRack"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/darker_gray"
-            android:padding="4dp"
-            android:scrollbars="vertical"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+        <com.zoomage.ZoomageView
+            android:id="@+id/myZoomageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
 
-        </androidx.recyclerview.widget.RecyclerView>
-
-        <Button
-            android:id="@+id/btn_return_home_fromPresentation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Return"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            app:layout_constraintBottom_toTopOf="@+id/btn_backToAward2"
+            app:layout_constraintEnd_toEndOf="@id/uniform_constraint"
+            app:layout_constraintStart_toStartOf="@id/uniform_constraint"
+            app:layout_constraintTop_toTopOf="@id/uniform_constraint"
+            app:zoomage_animateOnReset="true"
+            app:zoomage_autoCenter="true"
+            app:zoomage_autoResetMode="UNDER"
+            app:zoomage_maxScale="8"
+            app:zoomage_minScale="0.6"
+            app:zoomage_restrictBounds="false"
+            app:zoomage_translatable="true"
+            app:zoomage_zoomable="true" />
 
         <Button
-            android:id="@+id/btn_convertView"
+            android:id="@+id/btn_saveRackToCloset"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
-            android:text="Convert View to Image"
-            app:layout_constraintBottom_toTopOf="@+id/btn_return_home_fromPresentation"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent" />
+            android:text="saveToCloset"
+            app:layout_constraintBottom_toBottomOf="@id/uniform_constraint"
+            app:layout_constraintEnd_toEndOf="@id/uniform_constraint"
+            app:layout_constraintStart_toStartOf="@id/uniform_constraint" />
+
+        <Button
+            android:id="@+id/btn_useForUniform"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Use for Uniform"
+            app:layout_constraintBottom_toTopOf="@+id/btn_saveRackToCloset"
+            app:layout_constraintEnd_toEndOf="@id/uniform_constraint"
+            app:layout_constraintStart_toStartOf="@id/uniform_constraint" />
+
+        <Button
+            android:id="@+id/btn_backToAward2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            app:layout_constraintBottom_toTopOf="@+id/btn_useForUniform"
+            app:layout_constraintEnd_toEndOf="@id/uniform_constraint"
+            app:layout_constraintStart_toStartOf="@id/uniform_constraint" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

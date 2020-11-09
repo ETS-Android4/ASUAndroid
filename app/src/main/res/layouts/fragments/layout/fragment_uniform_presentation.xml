@@ -8,19 +8,6 @@
     android:layout_height="match_parent"
     tools:context=".screens.UniformPresentationFragment">
 
-    <com.zoomage.ZoomageView
-        android:id="@+id/myZoomageView"
-        android:layout_width="415dp"
-        android:layout_height="503dp"
-        app:zoomage_animateOnReset="true"
-        app:zoomage_autoCenter="true"
-        app:zoomage_autoResetMode="UNDER"
-        app:zoomage_maxScale="8"
-        app:zoomage_minScale="0.6"
-        app:zoomage_restrictBounds="false"
-        app:zoomage_translatable="true"
-        app:zoomage_zoomable="true" />
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/uniform_constraint"
         android:layout_width="match_parent"
@@ -39,7 +26,7 @@
         </androidx.recyclerview.widget.RecyclerView>
 
         <Button
-            android:id="@+id/btn_return_home_fromPresentation"
+            android:id="@+id/btn_populateFromDialog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Return"
@@ -53,7 +40,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
             android:text="Convert View to Image"
-            app:layout_constraintBottom_toTopOf="@+id/btn_return_home_fromPresentation"
+            app:layout_constraintBottom_toTopOf="@+id/btn_populateFromDialog"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent" />

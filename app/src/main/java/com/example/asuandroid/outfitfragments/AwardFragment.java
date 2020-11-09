@@ -18,7 +18,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.example.asuandroid.R;
-import com.example.asuandroid.dialogs.AwardDialog;
+
 import com.example.asuandroid.outfitAdapters.AwardAdapter;
 
 import java.util.ArrayList;
@@ -26,7 +26,7 @@ import java.util.Arrays;
 
 import static com.stanko.tools.SharedPrefsHelper.getSharedPreferences;
 
-public class AwardFragment extends Fragment implements AwardDialog.AwardDialogListener{
+public class AwardFragment extends Fragment{
     private ArrayList<AwardItem> mAwardList;
     private AwardAdapter mRecyclerViewAdapter;
     private RecyclerView mRecyclerView;
@@ -35,6 +35,7 @@ public class AwardFragment extends Fragment implements AwardDialog.AwardDialogLi
     public static ArrayList<Integer> finalExport = new ArrayList<>();
     ImageView ribbonAdd;
     private ArrayList<AwardItem> awardData;
+
 
 
     @Override
@@ -78,19 +79,12 @@ public class AwardFragment extends Fragment implements AwardDialog.AwardDialogLi
                 System.out.println("Heres the size of ribbonImages" + ribbonImages.size());
                 System.out.println(ribbonImages);
                 NavHostFragment.findNavController(AwardFragment.this)
-                        .navigate(R.id.action_awardFragment_to_uniformFragment);
+                        .navigate(R.id.action_awardFragment_to_award2Fragment);
+
             }
         });
     }
 
-    @Override
-    public void applyTexts(String username, String password) {
-
-    }
-    public void openDialog() {
-        AwardDialog awardDialog = new AwardDialog();
-        awardDialog.show(getParentFragmentManager(), "example dialog");
-    }
 
     public void createAwardList() {
         ribbonImages.removeAll(ribbonImages);

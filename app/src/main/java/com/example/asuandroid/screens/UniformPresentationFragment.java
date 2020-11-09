@@ -1,19 +1,12 @@
 package com.example.asuandroid.screens;
 
 import android.content.Context;
-import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.Paint;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
-import android.media.Image;
 import android.os.Bundle;
 
-import androidx.cardview.widget.CardView;
-import androidx.collection.ArraySet;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.FragmentActivity;
@@ -21,23 +14,17 @@ import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.os.Environment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.RelativeLayout;
 
 import com.example.asuandroid.R;
-import com.example.asuandroid.outfitAdapters.AwardAdapter;
 import com.example.asuandroid.vectorBuildAdapters.RibbonAdapter;
 import com.example.asuandroid.outfitfragments.AwardFragment;
 import com.example.asuandroid.vectorBuildAdapters.RibbonItem;
-import com.zoomage.ZoomageView;
 
 
-import java.io.File;
 import java.util.ArrayList;
 
 public class UniformPresentationFragment extends Fragment{
@@ -342,7 +329,7 @@ public class UniformPresentationFragment extends Fragment{
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         RecyclerView recyclerView = view.findViewById(R.id.recyclerViewRibbonRack);
-        ZoomageView zoomageView = view.findViewById(R.id.myZoomageView);
+        //ZoomageView zoomageView = view.findViewById(R.id.myZoomageView);
         view.setDrawingCacheEnabled(true);
         //ConstraintLayout uniformConstraint = view.findViewById(R.id.uniform_constraint);
         Button convertView = view.findViewById(R.id.btn_convertView);
@@ -354,14 +341,14 @@ public class UniformPresentationFragment extends Fragment{
                 Canvas canvas = new Canvas(bpm);
                 recyclerView.draw(canvas);
                 Drawable d = new BitmapDrawable(getResources(), bpm);
-                zoomageView.setDrawableResource(d);
+                //zoomageView.setDrawableResource(d);
                 bitmapDrawableArray.add(d);
                 System.out.println(bitmapDrawableArray);
                 //System.out.println(bitmap);
             }
         });
 
-        view.findViewById(R.id.btn_return_home_fromPresentation).setOnClickListener(new View.OnClickListener() {
+        view.findViewById(R.id.btn_populateFromDialog).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 fromAward.removeAll(fromAward);

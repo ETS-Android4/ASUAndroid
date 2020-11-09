@@ -4668,7 +4668,6 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         if (ViewType == 50) {
             view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item50, parent, false);
             return new Ribbon50Holder(view, mListener, images);
-
         }
         return null;
     }
