@@ -27,8 +27,6 @@ public class Award2Dialog extends AppCompatDialogFragment {
     private ExampleDialogListener listener;
     public static ArrayList<Drawable> toCloset = new ArrayList<>();
 
-
-
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
@@ -45,6 +43,10 @@ public class Award2Dialog extends AppCompatDialogFragment {
             @Override
             public void onClick(View view) {
                 toCloset.add(Award2Fragment.bitmapDrawableArray.get(0));
+                Award2Fragment.bitmapDrawableArray.removeAll(Award2Fragment.bitmapDrawableArray);
+                System.out.println(toCloset);
+                NavHostFragment.findNavController(Award2Dialog.this)
+                        .navigate(R.id.action_award2Dialog2_to_HomeScreen);
             }
         });
         home.setOnClickListener(new View.OnClickListener() {

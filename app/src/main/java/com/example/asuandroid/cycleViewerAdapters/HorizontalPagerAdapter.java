@@ -27,13 +27,10 @@ import static com.stanko.tools.ResHelper.getDrawable;
  * Created by Sean on 10/1/2020.
  */
 public class HorizontalPagerAdapter extends PagerAdapter {
-    public static ArrayList<Drawable> fromRibbonBuilds = new ArrayList<Drawable>();
+    public static ArrayList<Drawable> fromRibbonBuilds = Award2Dialog.toCloset;
     public static ArrayList<Drawable> ribbonSave = Award2Dialog.toCloset;
     public static Utils.LibraryObject[] TWO_WAY_LIBRARIES;
-    public static Drawable emptyCloset = getDrawable(R.drawable.ic_wardrobe);
     public void createLibrary() {
-        System.out.println(fromRibbonBuilds);
-        fromRibbonBuilds = ribbonSave;
         int tatters = fromRibbonBuilds.size();
         if (tatters > 0) {
             switch (tatters) {
@@ -41,20 +38,18 @@ public class HorizontalPagerAdapter extends PagerAdapter {
                     TWO_WAY_LIBRARIES = new Utils.LibraryObject[]{new Utils.LibraryObject(fromRibbonBuilds.get(0), "")};
                     break;
                 case 2:
-                    TWO_WAY_LIBRARIES = new Utils.LibraryObject[]{new Utils.LibraryObject(fromRibbonBuilds.get(0), ""), new Utils.LibraryObject(fromRibbonBuilds.get(1), "")};
+                    TWO_WAY_LIBRARIES = new Utils.LibraryObject[]{new Utils.LibraryObject(fromRibbonBuilds.get(1), ""), new Utils.LibraryObject(fromRibbonBuilds.get(1), "")};
                     break;
                 case 3:
-                    TWO_WAY_LIBRARIES = new Utils.LibraryObject[]{new Utils.LibraryObject(fromRibbonBuilds.get(0), ""), new Utils.LibraryObject(fromRibbonBuilds.get(1), ""), new Utils.LibraryObject(fromRibbonBuilds.get(2), "")};
+                    TWO_WAY_LIBRARIES = new Utils.LibraryObject[]{new Utils.LibraryObject(fromRibbonBuilds.get(2), ""), new Utils.LibraryObject(fromRibbonBuilds.get(1), ""), new Utils.LibraryObject(fromRibbonBuilds.get(2), "")};
                     break;
                 case 4:
-                    TWO_WAY_LIBRARIES = new Utils.LibraryObject[]{new Utils.LibraryObject(fromRibbonBuilds.get(0), ""), new Utils.LibraryObject(fromRibbonBuilds.get(1), ""), new Utils.LibraryObject(fromRibbonBuilds.get(2), ""), new Utils.LibraryObject(fromRibbonBuilds.get(3), "")};
+                    TWO_WAY_LIBRARIES = new Utils.LibraryObject[]{new Utils.LibraryObject(fromRibbonBuilds.get(3), ""), new Utils.LibraryObject(fromRibbonBuilds.get(1), ""), new Utils.LibraryObject(fromRibbonBuilds.get(2), ""), new Utils.LibraryObject(fromRibbonBuilds.get(3), "")};
                     break;
                 case 5:
-                    TWO_WAY_LIBRARIES = new Utils.LibraryObject[]{new Utils.LibraryObject(fromRibbonBuilds.get(0), ""), new Utils.LibraryObject(fromRibbonBuilds.get(1), ""), new Utils.LibraryObject(fromRibbonBuilds.get(2), ""), new Utils.LibraryObject(fromRibbonBuilds.get(3), ""), new Utils.LibraryObject(fromRibbonBuilds.get(4), "")};
+                    TWO_WAY_LIBRARIES = new Utils.LibraryObject[]{new Utils.LibraryObject(fromRibbonBuilds.get(4), ""), new Utils.LibraryObject(fromRibbonBuilds.get(1), ""), new Utils.LibraryObject(fromRibbonBuilds.get(2), ""), new Utils.LibraryObject(fromRibbonBuilds.get(3), ""), new Utils.LibraryObject(fromRibbonBuilds.get(4), "")};
                     break;
             }
-        } else if (tatters == 0) {
-            TWO_WAY_LIBRARIES = new Utils.LibraryObject[]{new Utils.LibraryObject(fromRibbonBuilds.get(0), "")};
         }
     }
 
