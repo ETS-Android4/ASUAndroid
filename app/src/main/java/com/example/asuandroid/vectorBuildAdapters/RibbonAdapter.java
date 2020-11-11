@@ -4767,6 +4767,46 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         return null;
     }
 
+    public void showPopup(View v, @NonNull RecyclerView.ViewHolder holder, ArraySet<ImageView> oaks){
+        this.oaks = oaks;
+        //holder =
+        PopupMenu oakMenu = new PopupMenu(mContext,  v);
+        oakMenu.getMenuInflater().inflate(R.menu.oak_leaf_menu, oakMenu.getMenu());
+        oakMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                for (int i = 0; i < oaks.size(); i++) {
+                    holder.oaks.valueAt(i).setImageResource(android.R.color.transparent);
+                }
+                switch (item.getItemId()) {
+                    case R.id.item1:
+                        Toast.makeText(context, "Item 1 clicked", Toast.LENGTH_SHORT).show();
+                        System.out.println(oaks);
+                        ((Ribbon1Holder) holder).oaks.valueAt(0).setImageResource(R.drawable.ic_bronze_oakleaf_3d);
+                        return true;
+                    case R.id.item2:
+                        Toast.makeText(context, "Item 2 clicked", Toast.LENGTH_SHORT).show();
+                        System.out.println(oaks);
+                        holder.oaks.valueAt(1).setImageResource(R.drawable.ic_bronze_oakleaf_3d);
+                        holder.oaks.valueAt(2).setImageResource(R.drawable.ic_bronze_oakleaf_3d);
+                        return true;
+                    case R.id.item3:
+                        Toast.makeText(context, "Item 3 clicked", Toast.LENGTH_SHORT).show();
+                        holder.oaks.valueAt(0).setImageResource(R.drawable.ic_bronze_oakleaf_3d);
+                        holder.oaks.valueAt(5).setImageResource(R.drawable.ic_bronze_oakleaf_3d);
+                        holder.oaks.valueAt(6).setImageResource(R.drawable.ic_bronze_oakleaf_3d);
+                        return true;
+                    case R.id.item4:
+                        Toast.makeText(context, "Item 4 clicked", Toast.LENGTH_SHORT).show();
+                        return true;
+                    default:
+                        return false;
+                }
+            }
+        });
+        oakMenu.show();
+    }
+
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         if (holder instanceof Ribbon1Holder) {
@@ -4775,41 +4815,9 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             ((Ribbon1Holder) holder).mImageView1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    PopupMenu oakMenu = new PopupMenu(mContext,  view);
-                    oakMenu.getMenuInflater().inflate(R.menu.oak_leaf_menu, oakMenu.getMenu());
-                    oakMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-                        @Override
-                        public boolean onMenuItemClick(MenuItem item) {
-                            switch (item.getItemId()) {
-                                case R.id.item1:
-                                    Toast.makeText(context, "Item 1 clicked", Toast.LENGTH_SHORT).show();
-                                    System.out.println(oaks);
-                                    ((Ribbon1Holder) holder).mImageView1_2.setImageResource(R.drawable.ic_bronze_oakleaf_3d);
-                                    return true;
-                                case R.id.item2:
-                                    Toast.makeText(context, "Item 2 clicked", Toast.LENGTH_SHORT).show();
-                                    System.out.println(oaks);
-                                    ((Ribbon1Holder) holder).mImageView1_3.setImageResource(R.drawable.ic_bronze_oakleaf_3d);
-                                    ((Ribbon1Holder) holder).mImageView1_4.setImageResource(R.drawable.ic_bronze_oakleaf_3d);
-                                    return true;
-                                case R.id.item3:
-                                    Toast.makeText(context, "Item 3 clicked", Toast.LENGTH_SHORT).show();
-                                    ((Ribbon1Holder) holder).mImageView1_2.setImageResource(R.drawable.ic_bronze_oakleaf_3d);
-                                    ((Ribbon1Holder) holder).mImageView1_7.setImageResource(R.drawable.ic_bronze_oakleaf_3d);
-                                    ((Ribbon1Holder) holder).mImageView1_8.setImageResource(R.drawable.ic_bronze_oakleaf_3d);
-                                    return true;
-                                case R.id.item4:
-                                    Toast.makeText(context, "Item 4 clicked", Toast.LENGTH_SHORT).show();
-                                    return true;
-                                default:
-                                    return false;
-                            }
-                        }
-                    });
-                    oakMenu.show();
+                    showPopup(view, ((Ribbon1Holder) holder), oaks);
                 }
             });
-
         } else if (holder instanceof Ribbon2Holder) {
             RibbonItem currentItem = (RibbonItem) mRibbonList.get(position);
             ((Ribbon2Holder) holder).mImageView1.setImageResource(currentItem.getImageResource1());
@@ -4830,8 +4838,8 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
                                 case R.id.item2:
                                     Toast.makeText(context, "Item 2 clicked", Toast.LENGTH_SHORT).show();
                                     System.out.println(oaks);
-                                    oaks.valueAt(0).setImageResource(R.drawable.ic_bronze_oakleaf_3d);
-                                    oaks.valueAt(1).setImageResource(R.drawable.ic_bronze_oakleaf_3d);
+                                    oaks.valueAt(3).setImageResource(R.drawable.ic_bronze_oakleaf_3d);
+                                    oaks.valueAt(4).setImageResource(R.drawable.ic_bronze_oakleaf_3d);
                                     return true;
                                 case R.id.item3:
                                     Toast.makeText(context, "Item 3 clicked", Toast.LENGTH_SHORT).show();

@@ -15,12 +15,14 @@ import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.ArraySet;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.asuandroid.R;
@@ -61,7 +63,7 @@ public class Award2Fragment extends Fragment implements PopupMenu.OnMenuItemClic
             @Override
             public void onEditRibbonClick(int ribbon, int position) {
                 assert c != null;
-                showPopup(view);
+                //showPopup(view);
                 System.out.println(ribbon);
             }
         });
@@ -69,7 +71,7 @@ public class Award2Fragment extends Fragment implements PopupMenu.OnMenuItemClic
         return view;
     }
 
-    public void showPopup(View v) {
+    public void showPopup(View v, RecyclerView holder, ArraySet<ImageView> oaks) {
         PopupMenu oakMenu = new PopupMenu(context, v);
         oakMenu.getMenuInflater().inflate(R.menu.oak_leaf_menu, oakMenu.getMenu());
         oakMenu.setOnMenuItemClickListener(this);
