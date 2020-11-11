@@ -166,6 +166,9 @@
         <action
             android:id="@+id/action_award2Fragment_to_award2Dialog"
             app:destination="@id/award2Dialog2" />
+        <action
+            android:id="@+id/action_award2Fragment_to_oakLeafDialog"
+            app:destination="@id/oakLeafDialog" />
     </fragment>
     <dialog
         android:id="@+id/award2Dialog2"
@@ -180,6 +183,14 @@
         <action
             android:id="@+id/action_award2Dialog2_to_HomeScreen"
             app:destination="@id/HomeScreen" />
+    </dialog>
+    <dialog
+        android:id="@+id/oakLeafDialog"
+        android:name="com.example.asuandroid.dialogs.OakLeafDialog"
+        android:label="OakLeafDialog" >
+        <action
+            android:id="@+id/action_oakLeafDialog_to_award2Fragment"
+            app:destination="@id/award2Fragment" />
     </dialog>
 
 

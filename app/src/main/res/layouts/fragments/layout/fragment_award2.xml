@@ -16,6 +16,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="177dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="32dp"
+            android:text="Tap Ribbons to Add Oak Leaves"
+            app:layout_constraintBottom_toTopOf="@+id/recyclerViewRibbonRack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerViewRibbonRack"
             android:layout_width="wrap_content"
