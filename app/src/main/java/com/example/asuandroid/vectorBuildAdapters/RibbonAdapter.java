@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Color;
+import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -130,35 +131,22 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             mImageView1 = itemView.findViewById(R.id.ribbon1);
             this.images.add(mImageView1);
             mImageView1_2 = itemView.findViewById(R.id.ribbon1_2);
-            oaks.add(mImageView1_2);
             mImageView1_3 = itemView.findViewById(R.id.ribbon1_3);
-            oaks.add(mImageView1_3);
             mImageView1_4 = itemView.findViewById(R.id.ribbon1_4);
-            oaks.add(mImageView1_4);
             mImageView1_5 = itemView.findViewById(R.id.ribbon1_5);
-            oaks.add(mImageView1_5);
             mImageView1_6 = itemView.findViewById(R.id.ribbon1_6);
-            oaks.add(mImageView1_6);
             mImageView1_7 = itemView.findViewById(R.id.ribbon1_7);
-            oaks.add(mImageView1_7);
             mImageView1_8 = itemView.findViewById(R.id.ribbon1_8);
-            oaks.add(mImageView1_8);
             mImageView2 = itemView.findViewById(R.id.ribbon2);
             this.images.add(mImageView2);
             mImageView2_2 = itemView.findViewById(R.id.ribbon2_2);
-            oaks.add(mImageView2_2);
             mImageView2_3 = itemView.findViewById(R.id.ribbon2_3);
-            oaks.add(mImageView2_3);
             mImageView2_4 = itemView.findViewById(R.id.ribbon2_4);
-            oaks.add(mImageView2_4);
             mImageView2_5 = itemView.findViewById(R.id.ribbon2_5);
-            oaks.add(mImageView2_5);
             mImageView2_6 = itemView.findViewById(R.id.ribbon2_6);
-            oaks.add(mImageView2_6);
             mImageView2_7 = itemView.findViewById(R.id.ribbon2_7);
-            oaks.add(mImageView2_7);
             mImageView2_8 = itemView.findViewById(R.id.ribbon2_8);
-            oaks.add(mImageView2_8);
+
         }
 
     }
@@ -4767,34 +4755,32 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         return null;
     }
 
-    public void showPopup(View v, @NonNull RecyclerView.ViewHolder holder, ArraySet<ImageView> oaks){
-        this.oaks = oaks;
-        //holder =
-        PopupMenu oakMenu = new PopupMenu(mContext,  v);
+    public void showPopup(View v, RecyclerView holder, ArraySet<ImageView> oaks){
+        PopupMenu oakMenu = new PopupMenu(mContext, v);
         oakMenu.getMenuInflater().inflate(R.menu.oak_leaf_menu, oakMenu.getMenu());
         oakMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
-                for (int i = 0; i < oaks.size(); i++) {
-                    holder.oaks.valueAt(i).setImageResource(android.R.color.transparent);
+                for (int i = 0; i < RibbonAdapter.oaks.size(); i++) {
+                    oaks.valueAt(i).setImageResource(android.R.color.transparent);
                 }
                 switch (item.getItemId()) {
                     case R.id.item1:
                         Toast.makeText(context, "Item 1 clicked", Toast.LENGTH_SHORT).show();
-                        System.out.println(oaks);
-                        ((Ribbon1Holder) holder).oaks.valueAt(0).setImageResource(R.drawable.ic_bronze_oakleaf_3d);
+                        System.out.println(RibbonAdapter.oaks);
+                        oaks.valueAt(0).setImageResource(R.drawable.ic_bronze_oakleaf_3d);
                         return true;
                     case R.id.item2:
                         Toast.makeText(context, "Item 2 clicked", Toast.LENGTH_SHORT).show();
-                        System.out.println(oaks);
-                        holder.oaks.valueAt(1).setImageResource(R.drawable.ic_bronze_oakleaf_3d);
-                        holder.oaks.valueAt(2).setImageResource(R.drawable.ic_bronze_oakleaf_3d);
+                        System.out.println(RibbonAdapter.oaks);
+                        oaks.valueAt(1).setImageResource(R.drawable.ic_bronze_oakleaf_3d);
+                        oaks.valueAt(2).setImageResource(R.drawable.ic_bronze_oakleaf_3d);
                         return true;
                     case R.id.item3:
                         Toast.makeText(context, "Item 3 clicked", Toast.LENGTH_SHORT).show();
-                        holder.oaks.valueAt(0).setImageResource(R.drawable.ic_bronze_oakleaf_3d);
-                        holder.oaks.valueAt(5).setImageResource(R.drawable.ic_bronze_oakleaf_3d);
-                        holder.oaks.valueAt(6).setImageResource(R.drawable.ic_bronze_oakleaf_3d);
+                        oaks.valueAt(0).setImageResource(R.drawable.ic_bronze_oakleaf_3d);
+                        oaks.valueAt(5).setImageResource(R.drawable.ic_bronze_oakleaf_3d);
+                        oaks.valueAt(6).setImageResource(R.drawable.ic_bronze_oakleaf_3d);
                         return true;
                     case R.id.item4:
                         Toast.makeText(context, "Item 4 clicked", Toast.LENGTH_SHORT).show();
@@ -4806,7 +4792,6 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         });
         oakMenu.show();
     }
-
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         if (holder instanceof Ribbon1Holder) {
@@ -4815,7 +4800,41 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             ((Ribbon1Holder) holder).mImageView1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    showPopup(view, ((Ribbon1Holder) holder), oaks);
+                    for (int i = 0; i < oaks.size(); i++) {
+                        ((Ribbon1Holder) holder).oaks.valueAt(i).setImageResource(android.R.color.transparent);
+                    }
+                    PopupMenu oakMenu = new PopupMenu(mContext,  view);
+                    oakMenu.getMenuInflater().inflate(R.menu.oak_leaf_menu, oakMenu.getMenu());
+                    oakMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                        @Override
+                        public boolean onMenuItemClick(MenuItem item) {
+                            switch (item.getItemId()) {
+                                case R.id.item1:
+                                    Toast.makeText(context, "Item 1 clicked", Toast.LENGTH_SHORT).show();
+                                    System.out.println(RibbonAdapter.oaks);
+                                    ((Ribbon1Holder) holder).oaks.valueAt(0).setImageResource(R.drawable.ic_bronze_oakleaf_3d);
+                                    return true;
+                                case R.id.item2:
+                                    Toast.makeText(context, "Item 2 clicked", Toast.LENGTH_SHORT).show();
+                                    System.out.println(RibbonAdapter.oaks);
+                                    ((Ribbon1Holder) holder).oaks.valueAt(1).setImageResource(R.drawable.ic_bronze_oakleaf_3d);
+                                    ((Ribbon1Holder) holder).oaks.valueAt(2).setImageResource(R.drawable.ic_bronze_oakleaf_3d);
+                                    return true;
+                                case R.id.item3:
+                                    Toast.makeText(context, "Item 3 clicked", Toast.LENGTH_SHORT).show();
+                                    ((Ribbon1Holder) holder).oaks.valueAt(0).setImageResource(R.drawable.ic_bronze_oakleaf_3d);
+                                    ((Ribbon1Holder) holder).oaks.valueAt(5).setImageResource(R.drawable.ic_bronze_oakleaf_3d);
+                                    ((Ribbon1Holder) holder).oaks.valueAt(6).setImageResource(R.drawable.ic_bronze_oakleaf_3d);
+                                    return true;
+                                case R.id.item4:
+                                    Toast.makeText(context, "Item 4 clicked", Toast.LENGTH_SHORT).show();
+                                    return true;
+                                default:
+                                    return false;
+                            }
+                        }
+                    });
+                    oakMenu.show();
                 }
             });
         } else if (holder instanceof Ribbon2Holder) {
