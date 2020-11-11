@@ -1,23 +1,41 @@
 package com.example.asuandroid.vectorBuildAdapters;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
+import android.content.res.Resources;
+import android.graphics.Color;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.view.View;
+import android.widget.Toast;
+
 import com.example.asuandroid.R;
+import com.example.asuandroid.outfitfragments.Award2Fragment;
+import com.example.asuandroid.outfitfragments.AwardItem;
+import com.example.asuandroid.screens.MainActivity;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.widget.PopupMenu;
 import androidx.collection.ArraySet;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
+import static com.example.asuandroid.outfitfragments.Award2Fragment.context;
+import static java.security.AccessController.getContext;
+
 public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
-    public ArrayList<RibbonItem> mRibbonList;
+    public static ArrayList<RibbonItem> mRibbonList;
     public static ArraySet<ImageView> images = new ArraySet<ImageView>();
+    public static ArraySet<ImageView> oaks = new ArraySet<ImageView>();
     //private CompoundButton.OnCheckedChangeListener;
     private OnItemClickListener mListener;
+    private Context mContext = context;
+
 
 
     public ArrayList<RibbonItem> RibbonAdapter(ArrayList<RibbonItem> mRibbonList) {
@@ -26,7 +44,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
 
 
     public interface OnItemClickListener {
-        void onAddRibbonClick(String ribbon);
+        void onEditRibbonClick(int ribbon, int position);
     }
 
     public void setOnItemClickListener(OnItemClickListener listener) {
@@ -36,32 +54,113 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
     //first ViewHolder
     public static class Ribbon1Holder extends RecyclerView.ViewHolder {
         private final ArraySet<ImageView> images;
+        private final ArraySet<ImageView> oaks;
         public ImageView mImageView1;
-
+        public ImageView mImageView1_2;
+        public ImageView mImageView1_3;
+        public ImageView mImageView1_4;
+        public ImageView mImageView1_5;
+        public ImageView mImageView1_6;
+        public ImageView mImageView1_7;
+        public ImageView mImageView1_8;
 
         @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon1Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+        public Ribbon1Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images, ArraySet<ImageView> oaks, Context context) {
             super(itemView);
             this.images = images;
+            this.oaks = oaks;
             mImageView1 = itemView.findViewById(R.id.ribbon1);
             this.images.add(mImageView1);
+            mImageView1_2 = itemView.findViewById(R.id.ribbon1_2);
+            oaks.add(mImageView1_2);
+            mImageView1_3 = itemView.findViewById(R.id.ribbon1_3);
+            oaks.add(mImageView1_3);
+            mImageView1_4 = itemView.findViewById(R.id.ribbon1_4);
+            oaks.add(mImageView1_4);
+            mImageView1_5 = itemView.findViewById(R.id.ribbon1_5);
+            oaks.add(mImageView1_5);
+            mImageView1_6 = itemView.findViewById(R.id.ribbon1_6);
+            oaks.add(mImageView1_6);
+            mImageView1_7 = itemView.findViewById(R.id.ribbon1_7);
+            oaks.add(mImageView1_7);
+            mImageView1_8 = itemView.findViewById(R.id.ribbon1_8);
+            oaks.add(mImageView1_8);
+            mImageView1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if ((listener != null)) {
+                        int position = getAdapterPosition();
+                        int ribbon = mRibbonList.get(position).getImageResource1();
+                        if (position != RecyclerView.NO_POSITION) {
+                            listener.onEditRibbonClick(ribbon, position);
+                        }
+                        System.out.println("youclickedme" + ribbon);
+                    }
+                }
+            });
         }
+
     }
 
     public static class Ribbon2Holder extends RecyclerView.ViewHolder {
         private final ArraySet<ImageView> images;
+        private final ArraySet<ImageView> oaks;
         public ImageView mImageView1;
+        public ImageView mImageView1_2;
+        public ImageView mImageView1_3;
+        public ImageView mImageView1_4;
+        public ImageView mImageView1_5;
+        public ImageView mImageView1_6;
+        public ImageView mImageView1_7;
+        public ImageView mImageView1_8;
         public ImageView mImageView2;
+        public ImageView mImageView2_2;
+        public ImageView mImageView2_3;
+        public ImageView mImageView2_4;
+        public ImageView mImageView2_5;
+        public ImageView mImageView2_6;
+        public ImageView mImageView2_7;
+        public ImageView mImageView2_8;
 
         @SuppressLint({"ClickableViewAccessibility", "CutPasteId"})
-        public Ribbon2Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images) {
+        public Ribbon2Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images, ArraySet<ImageView> oaks) {
             super(itemView);
             this.images = images;
+            this.oaks = oaks;
             mImageView1 = itemView.findViewById(R.id.ribbon1);
             this.images.add(mImageView1);
+            mImageView1_2 = itemView.findViewById(R.id.ribbon1_2);
+            oaks.add(mImageView1_2);
+            mImageView1_3 = itemView.findViewById(R.id.ribbon1_3);
+            oaks.add(mImageView1_3);
+            mImageView1_4 = itemView.findViewById(R.id.ribbon1_4);
+            oaks.add(mImageView1_4);
+            mImageView1_5 = itemView.findViewById(R.id.ribbon1_5);
+            oaks.add(mImageView1_5);
+            mImageView1_6 = itemView.findViewById(R.id.ribbon1_6);
+            oaks.add(mImageView1_6);
+            mImageView1_7 = itemView.findViewById(R.id.ribbon1_7);
+            oaks.add(mImageView1_7);
+            mImageView1_8 = itemView.findViewById(R.id.ribbon1_8);
+            oaks.add(mImageView1_8);
             mImageView2 = itemView.findViewById(R.id.ribbon2);
             this.images.add(mImageView2);
+            mImageView2_2 = itemView.findViewById(R.id.ribbon2_2);
+            oaks.add(mImageView2_2);
+            mImageView2_3 = itemView.findViewById(R.id.ribbon2_3);
+            oaks.add(mImageView2_3);
+            mImageView2_4 = itemView.findViewById(R.id.ribbon2_4);
+            oaks.add(mImageView2_4);
+            mImageView2_5 = itemView.findViewById(R.id.ribbon2_5);
+            oaks.add(mImageView2_5);
+            mImageView2_6 = itemView.findViewById(R.id.ribbon2_6);
+            oaks.add(mImageView2_6);
+            mImageView2_7 = itemView.findViewById(R.id.ribbon2_7);
+            oaks.add(mImageView2_7);
+            mImageView2_8 = itemView.findViewById(R.id.ribbon2_8);
+            oaks.add(mImageView2_8);
         }
+
     }
 
     public static class Ribbon3Holder extends RecyclerView.ViewHolder {
@@ -4451,8 +4550,6 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             }
         }
 
-
-
     public RibbonAdapter(ArrayList<RibbonItem> ribbonList) {
         mRibbonList = ribbonList;
     }
@@ -4462,11 +4559,11 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         System.out.println("Here is the viewType" + ViewType);
         if (ViewType == 1) {
             view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item1, parent, false);
-            return new Ribbon1Holder(view, mListener, images);
+            return new Ribbon1Holder(view, mListener, images, oaks, mContext);
         }
         if (ViewType == 2) {
             view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item2, parent, false);
-            return new Ribbon2Holder(view, mListener, images);
+            return new Ribbon2Holder(view, mListener, images, oaks);
         }
         if (ViewType == 3) {
             view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item3, parent, false);
@@ -4586,8 +4683,6 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         if (ViewType == 30) {
             view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item30, parent, false);
             return new Ribbon30Holder(view, mListener, images);
-
-
         }
         if (ViewType == 31) {
             view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item31, parent, false);
@@ -4672,17 +4767,97 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         return null;
     }
 
-
-
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         if (holder instanceof Ribbon1Holder) {
             RibbonItem currentItem = (RibbonItem) mRibbonList.get(position);
             ((Ribbon1Holder) holder).mImageView1.setImageResource(currentItem.getImageResource1());
+            ((Ribbon1Holder) holder).mImageView1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    PopupMenu oakMenu = new PopupMenu(mContext,  view);
+                    oakMenu.getMenuInflater().inflate(R.menu.oak_leaf_menu, oakMenu.getMenu());
+                    oakMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                        @Override
+                        public boolean onMenuItemClick(MenuItem item) {
+                            switch (item.getItemId()) {
+                                case R.id.item1:
+                                    Toast.makeText(context, "Item 1 clicked", Toast.LENGTH_SHORT).show();
+                                    System.out.println(oaks);
+                                    ((Ribbon1Holder) holder).mImageView1_2.setImageResource(R.drawable.ic_bronze_oakleaf_3d);
+                                    return true;
+                                case R.id.item2:
+                                    Toast.makeText(context, "Item 2 clicked", Toast.LENGTH_SHORT).show();
+                                    System.out.println(oaks);
+                                    ((Ribbon1Holder) holder).mImageView1_3.setImageResource(R.drawable.ic_bronze_oakleaf_3d);
+                                    ((Ribbon1Holder) holder).mImageView1_4.setImageResource(R.drawable.ic_bronze_oakleaf_3d);
+                                    return true;
+                                case R.id.item3:
+                                    Toast.makeText(context, "Item 3 clicked", Toast.LENGTH_SHORT).show();
+                                    ((Ribbon1Holder) holder).mImageView1_2.setImageResource(R.drawable.ic_bronze_oakleaf_3d);
+                                    ((Ribbon1Holder) holder).mImageView1_7.setImageResource(R.drawable.ic_bronze_oakleaf_3d);
+                                    ((Ribbon1Holder) holder).mImageView1_8.setImageResource(R.drawable.ic_bronze_oakleaf_3d);
+                                    return true;
+                                case R.id.item4:
+                                    Toast.makeText(context, "Item 4 clicked", Toast.LENGTH_SHORT).show();
+                                    return true;
+                                default:
+                                    return false;
+                            }
+                        }
+                    });
+                    oakMenu.show();
+                }
+            });
+
         } else if (holder instanceof Ribbon2Holder) {
             RibbonItem currentItem = (RibbonItem) mRibbonList.get(position);
             ((Ribbon2Holder) holder).mImageView1.setImageResource(currentItem.getImageResource1());
+            ((Ribbon2Holder) holder).mImageView1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    PopupMenu oakMenu = new PopupMenu(mContext,  view);
+                    oakMenu.getMenuInflater().inflate(R.menu.oak_leaf_menu, oakMenu.getMenu());
+                    oakMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                        @Override
+                        public boolean onMenuItemClick(MenuItem item) {
+                            switch (item.getItemId()) {
+                                case R.id.item1:
+                                    Toast.makeText(context, "Item 1 clicked", Toast.LENGTH_SHORT).show();
+                                    System.out.println(oaks);
+                                    oaks.valueAt(0).setImageResource(R.drawable.ic_bronze_oakleaf_3d);
+                                    return true;
+                                case R.id.item2:
+                                    Toast.makeText(context, "Item 2 clicked", Toast.LENGTH_SHORT).show();
+                                    System.out.println(oaks);
+                                    oaks.valueAt(0).setImageResource(R.drawable.ic_bronze_oakleaf_3d);
+                                    oaks.valueAt(1).setImageResource(R.drawable.ic_bronze_oakleaf_3d);
+                                    return true;
+                                case R.id.item3:
+                                    Toast.makeText(context, "Item 3 clicked", Toast.LENGTH_SHORT).show();
+                                    oaks.valueAt(0).setImageResource(R.drawable.ic_bronze_oakleaf_3d);
+                                    oaks.valueAt(1).setImageResource(R.drawable.ic_bronze_oakleaf_3d);
+                                    oaks.valueAt(2).setImageResource(R.drawable.ic_bronze_oakleaf_3d);
+                                    return true;
+                                case R.id.item4:
+                                    Toast.makeText(context, "Item 4 clicked", Toast.LENGTH_SHORT).show();
+                                    return true;
+                                default:
+                                    return false;
+                            }
+                        }
+                    });
+                    oakMenu.show();
+                }
+            });
             ((Ribbon2Holder) holder).mImageView2.setImageResource(currentItem.getImageResource2());
+            ((Ribbon2Holder) holder).mImageView2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    System.out.println(oaks);
+                    //showPopup(view);
+                }
+            });
         } else if (holder instanceof Ribbon3Holder) {
             RibbonItem currentItem = (RibbonItem) mRibbonList.get(position);
             ((Ribbon3Holder) holder).mImageView1.setImageResource(currentItem.getImageResource1());
@@ -4728,17 +4903,81 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             ((Ribbon8Holder) holder).mImageView6.setImageResource(currentItem.getImageResource6());
             ((Ribbon8Holder) holder).mImageView7.setImageResource(currentItem.getImageResource7());
             ((Ribbon8Holder) holder).mImageView8.setImageResource(currentItem.getImageResource8());
+
         } else if (holder instanceof Ribbon9Holder) {
             RibbonItem currentItem = (RibbonItem) mRibbonList.get(position);
-            ((Ribbon9Holder) holder).mImageView1.setImageResource(currentItem.getImageResource1());
-            ((Ribbon9Holder) holder).mImageView2.setImageResource(currentItem.getImageResource2());
-            ((Ribbon9Holder) holder).mImageView3.setImageResource(currentItem.getImageResource3());
-            ((Ribbon9Holder) holder).mImageView4.setImageResource(currentItem.getImageResource4());
-            ((Ribbon9Holder) holder).mImageView5.setImageResource(currentItem.getImageResource5());
-            ((Ribbon9Holder) holder).mImageView6.setImageResource(currentItem.getImageResource6());
-            ((Ribbon9Holder) holder).mImageView7.setImageResource(currentItem.getImageResource7());
-            ((Ribbon9Holder) holder).mImageView8.setImageResource(currentItem.getImageResource8());
-            ((Ribbon9Holder) holder).mImageView9.setImageResource(currentItem.getImageResource9());
+            ((Ribbon9Holder)holder).mImageView1.setImageResource(currentItem.getImageResource1());
+            ((Ribbon9Holder) holder).mImageView1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    //showPopup(view);
+                    System.out.println("You clicked me@"+currentItem);
+                }
+            });
+            ((Ribbon9Holder)holder).mImageView2.setImageResource(currentItem.getImageResource2());
+            ((Ribbon9Holder) holder).mImageView2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    //showPopup(view);
+                    System.out.println("You clicked me@"+currentItem);
+                }
+            });
+            ((Ribbon9Holder)holder).mImageView3.setImageResource(currentItem.getImageResource3());
+            ((Ribbon9Holder) holder).mImageView3.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    //showPopup(view);
+                    System.out.println("You clicked me@"+currentItem);
+                }
+            });
+            ((Ribbon9Holder)holder).mImageView4.setImageResource(currentItem.getImageResource4());
+            ((Ribbon9Holder) holder).mImageView4.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    //showPopup(view);
+                    System.out.println("You clicked me@"+currentItem);
+                }
+            });
+            ((Ribbon9Holder)holder).mImageView5.setImageResource(currentItem.getImageResource5());
+            ((Ribbon9Holder) holder).mImageView5.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    //showPopup(view);
+                    System.out.println("You clicked me@"+currentItem);
+                }
+            });
+            ((Ribbon9Holder)holder).mImageView6.setImageResource(currentItem.getImageResource6());
+            ((Ribbon9Holder) holder).mImageView6.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    //showPopup(view);
+                    System.out.println("You clicked me@"+currentItem);
+                }
+            });
+            ((Ribbon9Holder)holder).mImageView7.setImageResource(currentItem.getImageResource7());
+            ((Ribbon9Holder) holder).mImageView7.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    //showPopup(view);
+                    System.out.println("You clicked me@"+currentItem);
+                }
+            });
+            ((Ribbon9Holder)holder).mImageView8.setImageResource(currentItem.getImageResource8());
+            ((Ribbon9Holder) holder).mImageView8.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    //showPopup(view);
+                    System.out.println("You clicked me@"+currentItem);
+                }
+            });
+            ((Ribbon9Holder)holder).mImageView9.setImageResource(currentItem.getImageResource9());
+            ((Ribbon9Holder) holder).mImageView9.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    //showPopup(view);
+                    System.out.println("You clicked me@"+currentItem);
+                }
+            });
         } else if (holder instanceof Ribbon10Holder) {
             RibbonItem currentItem = (RibbonItem) mRibbonList.get(position);
             ((Ribbon10Holder) holder).mImageView1.setImageResource(currentItem.getImageResource1());
@@ -6186,7 +6425,6 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
     }
 
          */
-
     @Override
     public int getItemViewType(int position) {
         RibbonItem currentItem = (RibbonItem) mRibbonList.get(position);

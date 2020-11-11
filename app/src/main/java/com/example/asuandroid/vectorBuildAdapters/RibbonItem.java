@@ -61,6 +61,7 @@ public class RibbonItem {
     public int mRibbon49Resource;
     public int mRibbon50Resource;
 
+
     public static class RibbonItem1 extends RibbonItem {
         public RibbonItem1(ArrayList<Integer> images) {
             super();
@@ -1776,5 +1777,6 @@ public class RibbonItem {
     public int getImageResource50() {return mRibbon50Resource; }
 
     }
+
 
 
