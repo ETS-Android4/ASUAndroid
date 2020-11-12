@@ -52,16 +52,12 @@ public class HorizontalPagerAdapter extends PagerAdapter {
             }
         }
     }
-
-
-
     private LayoutInflater mLayoutInflater;
 
     public HorizontalPagerAdapter(final Context context) {
         createLibrary();
         mLayoutInflater = LayoutInflater.from(context);
     }
-
     @Override
     public int getCount() {
         return TWO_WAY_LIBRARIES.length;
