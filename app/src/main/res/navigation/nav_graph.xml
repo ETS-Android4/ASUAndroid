@@ -183,6 +183,12 @@
         <action
             android:id="@+id/action_award2Dialog2_to_HomeScreen"
             app:destination="@id/HomeScreen" />
+        <action
+            android:id="@+id/action_award2Dialog2_self"
+            app:destination="@id/award2Dialog2" />
+        <action
+            android:id="@+id/action_award2Dialog2_to_award2Fragment3"
+            app:destination="@id/award2Fragment" />
     </dialog>
     <dialog
         android:id="@+id/oakLeafDialog"
