@@ -11,6 +11,7 @@ android {
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
 
         android.defaultConfig.vectorDrawables.useSupportLibrary = true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -49,6 +50,9 @@ dependencies {
     implementation "androidx.viewpager2:viewpager2:1.0.0"
     implementation 'com.google.code.gson:gson:2.8.6'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android:flexbox:2.0.1'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
     //implementation 'com.github.devlight:infinitecycleviewpager:1.0.2'
     implementation 'com.davemorrissey.labs:subsampling-scale-image-view:3.10.0'
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/uniform_relative"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_centerHorizontal="false"
+    android:layout_centerVertical="false"
     android:layout_gravity="center"
-    android:layout_centerHorizontal="true"
-    android:layout_centerVertical="true"
     tools:context=".screens.UniformPresentationFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/uniform_constraint"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter">
 
         <TextView
             android:id="@+id/textView5"
@@ -32,11 +32,12 @@
             android:id="@+id/recyclerViewRibbonRack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
+            android:layout_gravity="center"
             android:background="@android:color/transparent"
             android:padding="4dp"
+            android:scaleType="fitCenter"
             android:scrollbars="vertical"
             app:layout_constraintBottom_toTopOf="@+id/btn_populateFromDialog3"
             app:layout_constraintEnd_toEndOf="@id/uniform_constraint"
@@ -72,6 +73,7 @@
             app:layout_constraintEnd_toEndOf="@id/uniform_constraint"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@id/uniform_constraint" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

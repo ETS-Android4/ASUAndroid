@@ -11,10 +11,12 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.asuandroid.R;
+import com.example.asuandroid.outfitAdapters.AwardAdapter;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.PopupMenu;
 import androidx.collection.ArraySet;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -44099,7 +44101,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         System.out.println("Here is the viewType" + ViewType);
         if (ViewType == 1) {
             view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item1, parent, false);
-            return new Ribbon1Holder(view, mListener, images, oaks);
+            return new RibbonAdapter.Ribbon1Holder(view, mListener, images, oaks);
         }
         if (ViewType == 2) {
             view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item2, parent, false);
@@ -44107,7 +44109,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         }
         if (ViewType == 3) {
             view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item3, parent, false);
-            return new Ribbon3Holder(view, mListener, images, oaks);
+            return new RibbonAdapter.Ribbon3Holder(view, mListener, images, oaks);
         }
         if (ViewType == 4) {
             view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item4, parent, false);
@@ -52155,9 +52157,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         });
         oakMenu.show();
     }
-
 /*
-    @Override
     public void onBindViewHolder(RibbonViewHolder holder, int position) {
         RibbonItem currentItem = (RibbonItem) mRibbonList.get(position);
         holder.mImageView1.setImageResource(currentItem.getImageResource1());

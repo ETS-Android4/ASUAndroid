@@ -7,6 +7,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
+import androidx.appcompat.widget.LinearLayoutCompat;
 import androidx.appcompat.widget.PopupMenu;
 import androidx.fragment.app.Fragment;
 import androidx.annotation.NonNull;
@@ -27,9 +28,13 @@ import android.widget.Toast;
 
 import com.example.asuandroid.R;
 import com.example.asuandroid.dialogs.Award2Dialog;
+import com.example.asuandroid.utils.SpanningLinearLayoutManager;
 import com.example.asuandroid.vectorBuildAdapters.RibbonAdapter;
 import com.example.asuandroid.outfitfragments.AwardFragment;
 import com.example.asuandroid.vectorBuildAdapters.RibbonItem;
+import com.google.android.flexbox.FlexDirection;
+import com.google.android.flexbox.FlexboxLayoutManager;
+import com.google.android.flexbox.JustifyContent;
 
 
 import java.util.ArrayList;
@@ -56,8 +61,9 @@ public class Award2Fragment extends Fragment implements PopupMenu.OnMenuItemClic
         RibbonAdapter mAdapter = new RibbonAdapter(mRibbonList);
         mRecyclerViewAdapter = new RibbonAdapter(mRibbonList);
         final RecyclerView recyclerView = view.findViewById(R.id.recyclerViewRibbonRack);
-        LinearLayoutManager layoutManager = new LinearLayoutManager(c);
+        SpanningLinearLayoutManager layoutManager = new SpanningLinearLayoutManager(c);
         recyclerView.setLayoutManager(layoutManager);
+        layoutManager.setOrientation(RecyclerView.HORIZONTAL);
         recyclerView.setAdapter(mAdapter);
         mAdapter.setOnItemClickListener(new RibbonAdapter.OnItemClickListener() {
             @Override
