@@ -12,16 +12,11 @@
         tools:layout="@layout/fragment_home_screen">
 
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/NewUniformPrompt"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim"
-            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
-            app:popExitAnim="@anim/nav_default_pop_exit_anim"
-            app:popUpTo="@id/NewUniformPrompt" />
-        <action
             android:id="@+id/action_HomeScreen_to_wardrobeScreen"
             app:destination="@id/wardrobeScreen" />
+        <action
+            android:id="@+id/action_HomeScreen_to_OufitFragment"
+            app:destination="@id/OufitFragment" />
     </fragment>
     <fragment
         android:id="@+id/NewUniformPrompt"
@@ -29,14 +24,6 @@
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_new_uniform_prompt">
 
-        <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/HomeScreen"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim"
-            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
-            app:popExitAnim="@anim/nav_default_pop_exit_anim"
-            app:popUpTo="@id/HomeScreen" />
         <action
             android:id="@+id/action_second_fragment_to_third"
             app:destination="@id/OufitFragment"
@@ -169,6 +156,9 @@
         <action
             android:id="@+id/action_award2Fragment_to_oakLeafDialog"
             app:destination="@id/oakLeafDialog" />
+        <action
+            android:id="@+id/action_award2Fragment_to_badgeFragment"
+            app:destination="@id/badgeFragment" />
     </fragment>
     <dialog
         android:id="@+id/award2Dialog2"
