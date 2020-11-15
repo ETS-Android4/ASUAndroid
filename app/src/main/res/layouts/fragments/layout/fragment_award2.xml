@@ -55,10 +55,10 @@
             app:layout_constraintStart_toStartOf="@id/uniform_constraint" />
 
         <Button
-            android:id="@+id/btn_populateFromDialog2"
+            android:id="@+id/btn_award2_continue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="New Ribbon Rack"
+            android:text="Continue"
             app:layout_constraintBottom_toTopOf="@+id/btn_populateFromDialog"
             app:layout_constraintEnd_toEndOf="@id/uniform_constraint"
             app:layout_constraintStart_toStartOf="@id/uniform_constraint" />
@@ -68,7 +68,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Home"
-            app:layout_constraintBottom_toTopOf="@+id/btn_populateFromDialog2"
+            app:layout_constraintBottom_toTopOf="@+id/btn_award2_continue"
             app:layout_constraintEnd_toEndOf="@id/uniform_constraint"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@id/uniform_constraint" />

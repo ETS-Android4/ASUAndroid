@@ -32,7 +32,7 @@ public class wardrobeScreen extends Fragment {
                 (HorizontalInfiniteCycleViewPager) view.findViewById(R.id.carousel);
         horizontalInfiniteCycleViewPager.setAdapter(new HorizontalPagerAdapter(getContext()));
 
-        view.findViewById(R.id.btn_back_to_main).setOnClickListener(new View.OnClickListener() {
+        view.findViewById(R.id.btn_return_home).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(wardrobeScreen.this)

@@ -3,6 +3,8 @@ package com.example.asuandroid.dialogs;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
@@ -52,11 +54,11 @@ public class Award2Dialog extends AppCompatDialogFragment {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Award2Fragment.bitmapDrawableArray.removeAll(Award2Fragment.bitmapDrawableArray);
                 NavHostFragment.findNavController(Award2Dialog.this)
-                        .navigate(R.id.action_award2Dialog2_to_OufitFragment);
+                        .navigate(R.id.action_award2Dialog2_to_award2Fragment);
             }
         });
-
         return builder.create();
     }
     @Override

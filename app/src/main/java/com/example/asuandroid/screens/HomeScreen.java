@@ -37,7 +37,7 @@ public class HomeScreen extends Fragment {
         view.findViewById(R.id.btn_gotoFragment2).setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 NavHostFragment.findNavController(HomeScreen.this)
-                        .navigate(R.id.action_FirstFragment_to_SecondFragment);
+                        .navigate(R.id.action_HomeScreen_to_OufitFragment);
             }
         });
         view.findViewById(R.id.btn_gotoCloset).setOnClickListener(new View.OnClickListener() {

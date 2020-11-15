@@ -1,0 +1,2761 @@
+
+        } else if (holder instanceof Ribbon41Holder) {
+    RibbonItem currentItem = (RibbonItem) mRibbonList.get(position);
+     ((Ribbon41Holder) holder).mImageView1.setImageResource(currentItem.getImageResource1()); 
+                    ((Ribbon41Holder) holder).mImageView1.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 0);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView2.setImageResource(currentItem.getImageResource2()); 
+                    ((Ribbon41Holder) holder).mImageView2.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 1);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView3.setImageResource(currentItem.getImageResource3()); 
+                    ((Ribbon41Holder) holder).mImageView3.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 2);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView4.setImageResource(currentItem.getImageResource4()); 
+                    ((Ribbon41Holder) holder).mImageView4.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 3);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView5.setImageResource(currentItem.getImageResource5()); 
+                    ((Ribbon41Holder) holder).mImageView5.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 4);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView6.setImageResource(currentItem.getImageResource6()); 
+                    ((Ribbon41Holder) holder).mImageView6.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 5);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView7.setImageResource(currentItem.getImageResource7()); 
+                    ((Ribbon41Holder) holder).mImageView7.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 6);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView8.setImageResource(currentItem.getImageResource8()); 
+                    ((Ribbon41Holder) holder).mImageView8.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 7);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView9.setImageResource(currentItem.getImageResource9()); 
+                    ((Ribbon41Holder) holder).mImageView9.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 8);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView10.setImageResource(currentItem.getImageResource10()); 
+                    ((Ribbon41Holder) holder).mImageView10.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 9);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView11.setImageResource(currentItem.getImageResource11()); 
+                    ((Ribbon41Holder) holder).mImageView11.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 10);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView12.setImageResource(currentItem.getImageResource12()); 
+                    ((Ribbon41Holder) holder).mImageView12.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 11);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView13.setImageResource(currentItem.getImageResource13()); 
+                    ((Ribbon41Holder) holder).mImageView13.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 12);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView14.setImageResource(currentItem.getImageResource14()); 
+                    ((Ribbon41Holder) holder).mImageView14.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 13);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView15.setImageResource(currentItem.getImageResource15()); 
+                    ((Ribbon41Holder) holder).mImageView15.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 14);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView16.setImageResource(currentItem.getImageResource16()); 
+                    ((Ribbon41Holder) holder).mImageView16.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 15);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView17.setImageResource(currentItem.getImageResource17()); 
+                    ((Ribbon41Holder) holder).mImageView17.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 16);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView18.setImageResource(currentItem.getImageResource18()); 
+                    ((Ribbon41Holder) holder).mImageView18.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 17);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView19.setImageResource(currentItem.getImageResource19()); 
+                    ((Ribbon41Holder) holder).mImageView19.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 18);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView20.setImageResource(currentItem.getImageResource20()); 
+                    ((Ribbon41Holder) holder).mImageView20.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 19);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView21.setImageResource(currentItem.getImageResource21()); 
+                    ((Ribbon41Holder) holder).mImageView21.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 20);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView22.setImageResource(currentItem.getImageResource22()); 
+                    ((Ribbon41Holder) holder).mImageView22.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 21);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView23.setImageResource(currentItem.getImageResource23()); 
+                    ((Ribbon41Holder) holder).mImageView23.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 22);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView24.setImageResource(currentItem.getImageResource24()); 
+                    ((Ribbon41Holder) holder).mImageView24.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 23);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView25.setImageResource(currentItem.getImageResource25()); 
+                    ((Ribbon41Holder) holder).mImageView25.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 24);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView26.setImageResource(currentItem.getImageResource26()); 
+                    ((Ribbon41Holder) holder).mImageView26.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 25);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView27.setImageResource(currentItem.getImageResource27()); 
+                    ((Ribbon41Holder) holder).mImageView27.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 26);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView28.setImageResource(currentItem.getImageResource28()); 
+                    ((Ribbon41Holder) holder).mImageView28.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 27);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView29.setImageResource(currentItem.getImageResource29()); 
+                    ((Ribbon41Holder) holder).mImageView29.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 28);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView30.setImageResource(currentItem.getImageResource30()); 
+                    ((Ribbon41Holder) holder).mImageView30.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 29);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView31.setImageResource(currentItem.getImageResource31()); 
+                    ((Ribbon41Holder) holder).mImageView31.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 30);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView32.setImageResource(currentItem.getImageResource32()); 
+                    ((Ribbon41Holder) holder).mImageView32.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 31);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView33.setImageResource(currentItem.getImageResource33()); 
+                    ((Ribbon41Holder) holder).mImageView33.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 32);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView34.setImageResource(currentItem.getImageResource34()); 
+                    ((Ribbon41Holder) holder).mImageView34.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 33);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView35.setImageResource(currentItem.getImageResource35()); 
+                    ((Ribbon41Holder) holder).mImageView35.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 34);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView36.setImageResource(currentItem.getImageResource36()); 
+                    ((Ribbon41Holder) holder).mImageView36.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 35);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView37.setImageResource(currentItem.getImageResource37()); 
+                    ((Ribbon41Holder) holder).mImageView37.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 36);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView38.setImageResource(currentItem.getImageResource38()); 
+                    ((Ribbon41Holder) holder).mImageView38.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 37);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView39.setImageResource(currentItem.getImageResource39()); 
+                    ((Ribbon41Holder) holder).mImageView39.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 38);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView40.setImageResource(currentItem.getImageResource40()); 
+                    ((Ribbon41Holder) holder).mImageView40.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 39);
+                }
+            });
+             ((Ribbon41Holder) holder).mImageView41.setImageResource(currentItem.getImageResource41()); 
+                    ((Ribbon41Holder) holder).mImageView41.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 40);
+                }
+            });
+            
+        } else if (holder instanceof Ribbon42Holder) {
+    RibbonItem currentItem = (RibbonItem) mRibbonList.get(position);
+     ((Ribbon42Holder) holder).mImageView1.setImageResource(currentItem.getImageResource1()); 
+                    ((Ribbon42Holder) holder).mImageView1.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 0);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView2.setImageResource(currentItem.getImageResource2()); 
+                    ((Ribbon42Holder) holder).mImageView2.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 1);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView3.setImageResource(currentItem.getImageResource3()); 
+                    ((Ribbon42Holder) holder).mImageView3.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 2);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView4.setImageResource(currentItem.getImageResource4()); 
+                    ((Ribbon42Holder) holder).mImageView4.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 3);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView5.setImageResource(currentItem.getImageResource5()); 
+                    ((Ribbon42Holder) holder).mImageView5.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 4);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView6.setImageResource(currentItem.getImageResource6()); 
+                    ((Ribbon42Holder) holder).mImageView6.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 5);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView7.setImageResource(currentItem.getImageResource7()); 
+                    ((Ribbon42Holder) holder).mImageView7.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 6);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView8.setImageResource(currentItem.getImageResource8()); 
+                    ((Ribbon42Holder) holder).mImageView8.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 7);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView9.setImageResource(currentItem.getImageResource9()); 
+                    ((Ribbon42Holder) holder).mImageView9.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 8);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView10.setImageResource(currentItem.getImageResource10()); 
+                    ((Ribbon42Holder) holder).mImageView10.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 9);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView11.setImageResource(currentItem.getImageResource11()); 
+                    ((Ribbon42Holder) holder).mImageView11.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 10);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView12.setImageResource(currentItem.getImageResource12()); 
+                    ((Ribbon42Holder) holder).mImageView12.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 11);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView13.setImageResource(currentItem.getImageResource13()); 
+                    ((Ribbon42Holder) holder).mImageView13.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 12);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView14.setImageResource(currentItem.getImageResource14()); 
+                    ((Ribbon42Holder) holder).mImageView14.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 13);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView15.setImageResource(currentItem.getImageResource15()); 
+                    ((Ribbon42Holder) holder).mImageView15.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 14);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView16.setImageResource(currentItem.getImageResource16()); 
+                    ((Ribbon42Holder) holder).mImageView16.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 15);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView17.setImageResource(currentItem.getImageResource17()); 
+                    ((Ribbon42Holder) holder).mImageView17.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 16);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView18.setImageResource(currentItem.getImageResource18()); 
+                    ((Ribbon42Holder) holder).mImageView18.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 17);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView19.setImageResource(currentItem.getImageResource19()); 
+                    ((Ribbon42Holder) holder).mImageView19.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 18);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView20.setImageResource(currentItem.getImageResource20()); 
+                    ((Ribbon42Holder) holder).mImageView20.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 19);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView21.setImageResource(currentItem.getImageResource21()); 
+                    ((Ribbon42Holder) holder).mImageView21.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 20);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView22.setImageResource(currentItem.getImageResource22()); 
+                    ((Ribbon42Holder) holder).mImageView22.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 21);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView23.setImageResource(currentItem.getImageResource23()); 
+                    ((Ribbon42Holder) holder).mImageView23.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 22);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView24.setImageResource(currentItem.getImageResource24()); 
+                    ((Ribbon42Holder) holder).mImageView24.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 23);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView25.setImageResource(currentItem.getImageResource25()); 
+                    ((Ribbon42Holder) holder).mImageView25.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 24);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView26.setImageResource(currentItem.getImageResource26()); 
+                    ((Ribbon42Holder) holder).mImageView26.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 25);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView27.setImageResource(currentItem.getImageResource27()); 
+                    ((Ribbon42Holder) holder).mImageView27.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 26);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView28.setImageResource(currentItem.getImageResource28()); 
+                    ((Ribbon42Holder) holder).mImageView28.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 27);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView29.setImageResource(currentItem.getImageResource29()); 
+                    ((Ribbon42Holder) holder).mImageView29.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 28);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView30.setImageResource(currentItem.getImageResource30()); 
+                    ((Ribbon42Holder) holder).mImageView30.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 29);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView31.setImageResource(currentItem.getImageResource31()); 
+                    ((Ribbon42Holder) holder).mImageView31.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 30);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView32.setImageResource(currentItem.getImageResource32()); 
+                    ((Ribbon42Holder) holder).mImageView32.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 31);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView33.setImageResource(currentItem.getImageResource33()); 
+                    ((Ribbon42Holder) holder).mImageView33.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 32);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView34.setImageResource(currentItem.getImageResource34()); 
+                    ((Ribbon42Holder) holder).mImageView34.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 33);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView35.setImageResource(currentItem.getImageResource35()); 
+                    ((Ribbon42Holder) holder).mImageView35.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 34);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView36.setImageResource(currentItem.getImageResource36()); 
+                    ((Ribbon42Holder) holder).mImageView36.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 35);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView37.setImageResource(currentItem.getImageResource37()); 
+                    ((Ribbon42Holder) holder).mImageView37.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 36);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView38.setImageResource(currentItem.getImageResource38()); 
+                    ((Ribbon42Holder) holder).mImageView38.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 37);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView39.setImageResource(currentItem.getImageResource39()); 
+                    ((Ribbon42Holder) holder).mImageView39.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 38);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView40.setImageResource(currentItem.getImageResource40()); 
+                    ((Ribbon42Holder) holder).mImageView40.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 39);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView41.setImageResource(currentItem.getImageResource41()); 
+                    ((Ribbon42Holder) holder).mImageView41.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 40);
+                }
+            });
+             ((Ribbon42Holder) holder).mImageView42.setImageResource(currentItem.getImageResource42()); 
+                    ((Ribbon42Holder) holder).mImageView42.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 41);
+                }
+            });
+            
+        } else if (holder instanceof Ribbon43Holder) {
+    RibbonItem currentItem = (RibbonItem) mRibbonList.get(position);
+     ((Ribbon43Holder) holder).mImageView1.setImageResource(currentItem.getImageResource1()); 
+                    ((Ribbon43Holder) holder).mImageView1.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 0);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView2.setImageResource(currentItem.getImageResource2()); 
+                    ((Ribbon43Holder) holder).mImageView2.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 1);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView3.setImageResource(currentItem.getImageResource3()); 
+                    ((Ribbon43Holder) holder).mImageView3.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 2);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView4.setImageResource(currentItem.getImageResource4()); 
+                    ((Ribbon43Holder) holder).mImageView4.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 3);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView5.setImageResource(currentItem.getImageResource5()); 
+                    ((Ribbon43Holder) holder).mImageView5.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 4);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView6.setImageResource(currentItem.getImageResource6()); 
+                    ((Ribbon43Holder) holder).mImageView6.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 5);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView7.setImageResource(currentItem.getImageResource7()); 
+                    ((Ribbon43Holder) holder).mImageView7.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 6);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView8.setImageResource(currentItem.getImageResource8()); 
+                    ((Ribbon43Holder) holder).mImageView8.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 7);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView9.setImageResource(currentItem.getImageResource9()); 
+                    ((Ribbon43Holder) holder).mImageView9.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 8);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView10.setImageResource(currentItem.getImageResource10()); 
+                    ((Ribbon43Holder) holder).mImageView10.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 9);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView11.setImageResource(currentItem.getImageResource11()); 
+                    ((Ribbon43Holder) holder).mImageView11.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 10);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView12.setImageResource(currentItem.getImageResource12()); 
+                    ((Ribbon43Holder) holder).mImageView12.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 11);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView13.setImageResource(currentItem.getImageResource13()); 
+                    ((Ribbon43Holder) holder).mImageView13.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 12);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView14.setImageResource(currentItem.getImageResource14()); 
+                    ((Ribbon43Holder) holder).mImageView14.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 13);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView15.setImageResource(currentItem.getImageResource15()); 
+                    ((Ribbon43Holder) holder).mImageView15.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 14);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView16.setImageResource(currentItem.getImageResource16()); 
+                    ((Ribbon43Holder) holder).mImageView16.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 15);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView17.setImageResource(currentItem.getImageResource17()); 
+                    ((Ribbon43Holder) holder).mImageView17.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 16);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView18.setImageResource(currentItem.getImageResource18()); 
+                    ((Ribbon43Holder) holder).mImageView18.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 17);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView19.setImageResource(currentItem.getImageResource19()); 
+                    ((Ribbon43Holder) holder).mImageView19.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 18);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView20.setImageResource(currentItem.getImageResource20()); 
+                    ((Ribbon43Holder) holder).mImageView20.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 19);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView21.setImageResource(currentItem.getImageResource21()); 
+                    ((Ribbon43Holder) holder).mImageView21.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 20);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView22.setImageResource(currentItem.getImageResource22()); 
+                    ((Ribbon43Holder) holder).mImageView22.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 21);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView23.setImageResource(currentItem.getImageResource23()); 
+                    ((Ribbon43Holder) holder).mImageView23.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 22);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView24.setImageResource(currentItem.getImageResource24()); 
+                    ((Ribbon43Holder) holder).mImageView24.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 23);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView25.setImageResource(currentItem.getImageResource25()); 
+                    ((Ribbon43Holder) holder).mImageView25.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 24);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView26.setImageResource(currentItem.getImageResource26()); 
+                    ((Ribbon43Holder) holder).mImageView26.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 25);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView27.setImageResource(currentItem.getImageResource27()); 
+                    ((Ribbon43Holder) holder).mImageView27.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 26);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView28.setImageResource(currentItem.getImageResource28()); 
+                    ((Ribbon43Holder) holder).mImageView28.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 27);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView29.setImageResource(currentItem.getImageResource29()); 
+                    ((Ribbon43Holder) holder).mImageView29.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 28);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView30.setImageResource(currentItem.getImageResource30()); 
+                    ((Ribbon43Holder) holder).mImageView30.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 29);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView31.setImageResource(currentItem.getImageResource31()); 
+                    ((Ribbon43Holder) holder).mImageView31.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 30);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView32.setImageResource(currentItem.getImageResource32()); 
+                    ((Ribbon43Holder) holder).mImageView32.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 31);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView33.setImageResource(currentItem.getImageResource33()); 
+                    ((Ribbon43Holder) holder).mImageView33.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 32);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView34.setImageResource(currentItem.getImageResource34()); 
+                    ((Ribbon43Holder) holder).mImageView34.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 33);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView35.setImageResource(currentItem.getImageResource35()); 
+                    ((Ribbon43Holder) holder).mImageView35.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 34);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView36.setImageResource(currentItem.getImageResource36()); 
+                    ((Ribbon43Holder) holder).mImageView36.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 35);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView37.setImageResource(currentItem.getImageResource37()); 
+                    ((Ribbon43Holder) holder).mImageView37.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 36);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView38.setImageResource(currentItem.getImageResource38()); 
+                    ((Ribbon43Holder) holder).mImageView38.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 37);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView39.setImageResource(currentItem.getImageResource39()); 
+                    ((Ribbon43Holder) holder).mImageView39.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 38);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView40.setImageResource(currentItem.getImageResource40()); 
+                    ((Ribbon43Holder) holder).mImageView40.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 39);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView41.setImageResource(currentItem.getImageResource41()); 
+                    ((Ribbon43Holder) holder).mImageView41.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 40);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView42.setImageResource(currentItem.getImageResource42()); 
+                    ((Ribbon43Holder) holder).mImageView42.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 41);
+                }
+            });
+             ((Ribbon43Holder) holder).mImageView43.setImageResource(currentItem.getImageResource43()); 
+                    ((Ribbon43Holder) holder).mImageView43.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 42);
+                }
+            });
+            
+        } else if (holder instanceof Ribbon44Holder) {
+    RibbonItem currentItem = (RibbonItem) mRibbonList.get(position);
+     ((Ribbon44Holder) holder).mImageView1.setImageResource(currentItem.getImageResource1()); 
+                    ((Ribbon44Holder) holder).mImageView1.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 0);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView2.setImageResource(currentItem.getImageResource2()); 
+                    ((Ribbon44Holder) holder).mImageView2.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 1);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView3.setImageResource(currentItem.getImageResource3()); 
+                    ((Ribbon44Holder) holder).mImageView3.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 2);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView4.setImageResource(currentItem.getImageResource4()); 
+                    ((Ribbon44Holder) holder).mImageView4.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 3);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView5.setImageResource(currentItem.getImageResource5()); 
+                    ((Ribbon44Holder) holder).mImageView5.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 4);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView6.setImageResource(currentItem.getImageResource6()); 
+                    ((Ribbon44Holder) holder).mImageView6.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 5);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView7.setImageResource(currentItem.getImageResource7()); 
+                    ((Ribbon44Holder) holder).mImageView7.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 6);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView8.setImageResource(currentItem.getImageResource8()); 
+                    ((Ribbon44Holder) holder).mImageView8.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 7);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView9.setImageResource(currentItem.getImageResource9()); 
+                    ((Ribbon44Holder) holder).mImageView9.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 8);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView10.setImageResource(currentItem.getImageResource10()); 
+                    ((Ribbon44Holder) holder).mImageView10.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 9);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView11.setImageResource(currentItem.getImageResource11()); 
+                    ((Ribbon44Holder) holder).mImageView11.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 10);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView12.setImageResource(currentItem.getImageResource12()); 
+                    ((Ribbon44Holder) holder).mImageView12.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 11);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView13.setImageResource(currentItem.getImageResource13()); 
+                    ((Ribbon44Holder) holder).mImageView13.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 12);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView14.setImageResource(currentItem.getImageResource14()); 
+                    ((Ribbon44Holder) holder).mImageView14.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 13);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView15.setImageResource(currentItem.getImageResource15()); 
+                    ((Ribbon44Holder) holder).mImageView15.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 14);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView16.setImageResource(currentItem.getImageResource16()); 
+                    ((Ribbon44Holder) holder).mImageView16.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 15);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView17.setImageResource(currentItem.getImageResource17()); 
+                    ((Ribbon44Holder) holder).mImageView17.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 16);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView18.setImageResource(currentItem.getImageResource18()); 
+                    ((Ribbon44Holder) holder).mImageView18.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 17);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView19.setImageResource(currentItem.getImageResource19()); 
+                    ((Ribbon44Holder) holder).mImageView19.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 18);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView20.setImageResource(currentItem.getImageResource20()); 
+                    ((Ribbon44Holder) holder).mImageView20.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 19);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView21.setImageResource(currentItem.getImageResource21()); 
+                    ((Ribbon44Holder) holder).mImageView21.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 20);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView22.setImageResource(currentItem.getImageResource22()); 
+                    ((Ribbon44Holder) holder).mImageView22.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 21);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView23.setImageResource(currentItem.getImageResource23()); 
+                    ((Ribbon44Holder) holder).mImageView23.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 22);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView24.setImageResource(currentItem.getImageResource24()); 
+                    ((Ribbon44Holder) holder).mImageView24.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 23);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView25.setImageResource(currentItem.getImageResource25()); 
+                    ((Ribbon44Holder) holder).mImageView25.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 24);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView26.setImageResource(currentItem.getImageResource26()); 
+                    ((Ribbon44Holder) holder).mImageView26.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 25);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView27.setImageResource(currentItem.getImageResource27()); 
+                    ((Ribbon44Holder) holder).mImageView27.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 26);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView28.setImageResource(currentItem.getImageResource28()); 
+                    ((Ribbon44Holder) holder).mImageView28.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 27);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView29.setImageResource(currentItem.getImageResource29()); 
+                    ((Ribbon44Holder) holder).mImageView29.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 28);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView30.setImageResource(currentItem.getImageResource30()); 
+                    ((Ribbon44Holder) holder).mImageView30.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 29);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView31.setImageResource(currentItem.getImageResource31()); 
+                    ((Ribbon44Holder) holder).mImageView31.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 30);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView32.setImageResource(currentItem.getImageResource32()); 
+                    ((Ribbon44Holder) holder).mImageView32.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 31);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView33.setImageResource(currentItem.getImageResource33()); 
+                    ((Ribbon44Holder) holder).mImageView33.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 32);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView34.setImageResource(currentItem.getImageResource34()); 
+                    ((Ribbon44Holder) holder).mImageView34.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 33);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView35.setImageResource(currentItem.getImageResource35()); 
+                    ((Ribbon44Holder) holder).mImageView35.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 34);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView36.setImageResource(currentItem.getImageResource36()); 
+                    ((Ribbon44Holder) holder).mImageView36.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 35);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView37.setImageResource(currentItem.getImageResource37()); 
+                    ((Ribbon44Holder) holder).mImageView37.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 36);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView38.setImageResource(currentItem.getImageResource38()); 
+                    ((Ribbon44Holder) holder).mImageView38.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 37);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView39.setImageResource(currentItem.getImageResource39()); 
+                    ((Ribbon44Holder) holder).mImageView39.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 38);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView40.setImageResource(currentItem.getImageResource40()); 
+                    ((Ribbon44Holder) holder).mImageView40.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 39);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView41.setImageResource(currentItem.getImageResource41()); 
+                    ((Ribbon44Holder) holder).mImageView41.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 40);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView42.setImageResource(currentItem.getImageResource42()); 
+                    ((Ribbon44Holder) holder).mImageView42.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 41);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView43.setImageResource(currentItem.getImageResource43()); 
+                    ((Ribbon44Holder) holder).mImageView43.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 42);
+                }
+            });
+             ((Ribbon44Holder) holder).mImageView44.setImageResource(currentItem.getImageResource44()); 
+                    ((Ribbon44Holder) holder).mImageView44.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 43);
+                }
+            });
+            
+        } else if (holder instanceof Ribbon45Holder) {
+    RibbonItem currentItem = (RibbonItem) mRibbonList.get(position);
+     ((Ribbon45Holder) holder).mImageView1.setImageResource(currentItem.getImageResource1()); 
+                    ((Ribbon45Holder) holder).mImageView1.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 0);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView2.setImageResource(currentItem.getImageResource2()); 
+                    ((Ribbon45Holder) holder).mImageView2.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 1);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView3.setImageResource(currentItem.getImageResource3()); 
+                    ((Ribbon45Holder) holder).mImageView3.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 2);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView4.setImageResource(currentItem.getImageResource4()); 
+                    ((Ribbon45Holder) holder).mImageView4.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 3);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView5.setImageResource(currentItem.getImageResource5()); 
+                    ((Ribbon45Holder) holder).mImageView5.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 4);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView6.setImageResource(currentItem.getImageResource6()); 
+                    ((Ribbon45Holder) holder).mImageView6.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 5);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView7.setImageResource(currentItem.getImageResource7()); 
+                    ((Ribbon45Holder) holder).mImageView7.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 6);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView8.setImageResource(currentItem.getImageResource8()); 
+                    ((Ribbon45Holder) holder).mImageView8.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 7);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView9.setImageResource(currentItem.getImageResource9()); 
+                    ((Ribbon45Holder) holder).mImageView9.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 8);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView10.setImageResource(currentItem.getImageResource10()); 
+                    ((Ribbon45Holder) holder).mImageView10.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 9);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView11.setImageResource(currentItem.getImageResource11()); 
+                    ((Ribbon45Holder) holder).mImageView11.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 10);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView12.setImageResource(currentItem.getImageResource12()); 
+                    ((Ribbon45Holder) holder).mImageView12.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 11);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView13.setImageResource(currentItem.getImageResource13()); 
+                    ((Ribbon45Holder) holder).mImageView13.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 12);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView14.setImageResource(currentItem.getImageResource14()); 
+                    ((Ribbon45Holder) holder).mImageView14.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 13);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView15.setImageResource(currentItem.getImageResource15()); 
+                    ((Ribbon45Holder) holder).mImageView15.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 14);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView16.setImageResource(currentItem.getImageResource16()); 
+                    ((Ribbon45Holder) holder).mImageView16.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 15);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView17.setImageResource(currentItem.getImageResource17()); 
+                    ((Ribbon45Holder) holder).mImageView17.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 16);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView18.setImageResource(currentItem.getImageResource18()); 
+                    ((Ribbon45Holder) holder).mImageView18.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 17);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView19.setImageResource(currentItem.getImageResource19()); 
+                    ((Ribbon45Holder) holder).mImageView19.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 18);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView20.setImageResource(currentItem.getImageResource20()); 
+                    ((Ribbon45Holder) holder).mImageView20.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 19);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView21.setImageResource(currentItem.getImageResource21()); 
+                    ((Ribbon45Holder) holder).mImageView21.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 20);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView22.setImageResource(currentItem.getImageResource22()); 
+                    ((Ribbon45Holder) holder).mImageView22.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 21);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView23.setImageResource(currentItem.getImageResource23()); 
+                    ((Ribbon45Holder) holder).mImageView23.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 22);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView24.setImageResource(currentItem.getImageResource24()); 
+                    ((Ribbon45Holder) holder).mImageView24.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 23);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView25.setImageResource(currentItem.getImageResource25()); 
+                    ((Ribbon45Holder) holder).mImageView25.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 24);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView26.setImageResource(currentItem.getImageResource26()); 
+                    ((Ribbon45Holder) holder).mImageView26.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 25);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView27.setImageResource(currentItem.getImageResource27()); 
+                    ((Ribbon45Holder) holder).mImageView27.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 26);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView28.setImageResource(currentItem.getImageResource28()); 
+                    ((Ribbon45Holder) holder).mImageView28.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 27);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView29.setImageResource(currentItem.getImageResource29()); 
+                    ((Ribbon45Holder) holder).mImageView29.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 28);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView30.setImageResource(currentItem.getImageResource30()); 
+                    ((Ribbon45Holder) holder).mImageView30.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 29);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView31.setImageResource(currentItem.getImageResource31()); 
+                    ((Ribbon45Holder) holder).mImageView31.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 30);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView32.setImageResource(currentItem.getImageResource32()); 
+                    ((Ribbon45Holder) holder).mImageView32.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 31);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView33.setImageResource(currentItem.getImageResource33()); 
+                    ((Ribbon45Holder) holder).mImageView33.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 32);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView34.setImageResource(currentItem.getImageResource34()); 
+                    ((Ribbon45Holder) holder).mImageView34.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 33);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView35.setImageResource(currentItem.getImageResource35()); 
+                    ((Ribbon45Holder) holder).mImageView35.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 34);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView36.setImageResource(currentItem.getImageResource36()); 
+                    ((Ribbon45Holder) holder).mImageView36.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 35);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView37.setImageResource(currentItem.getImageResource37()); 
+                    ((Ribbon45Holder) holder).mImageView37.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 36);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView38.setImageResource(currentItem.getImageResource38()); 
+                    ((Ribbon45Holder) holder).mImageView38.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 37);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView39.setImageResource(currentItem.getImageResource39()); 
+                    ((Ribbon45Holder) holder).mImageView39.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 38);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView40.setImageResource(currentItem.getImageResource40()); 
+                    ((Ribbon45Holder) holder).mImageView40.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 39);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView41.setImageResource(currentItem.getImageResource41()); 
+                    ((Ribbon45Holder) holder).mImageView41.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 40);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView42.setImageResource(currentItem.getImageResource42()); 
+                    ((Ribbon45Holder) holder).mImageView42.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 41);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView43.setImageResource(currentItem.getImageResource43()); 
+                    ((Ribbon45Holder) holder).mImageView43.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 42);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView44.setImageResource(currentItem.getImageResource44()); 
+                    ((Ribbon45Holder) holder).mImageView44.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 43);
+                }
+            });
+             ((Ribbon45Holder) holder).mImageView45.setImageResource(currentItem.getImageResource45()); 
+                    ((Ribbon45Holder) holder).mImageView45.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 44);
+                }
+            });
+            
+        } else if (holder instanceof Ribbon46Holder) {
+    RibbonItem currentItem = (RibbonItem) mRibbonList.get(position);
+     ((Ribbon46Holder) holder).mImageView1.setImageResource(currentItem.getImageResource1()); 
+                    ((Ribbon46Holder) holder).mImageView1.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 0);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView2.setImageResource(currentItem.getImageResource2()); 
+                    ((Ribbon46Holder) holder).mImageView2.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 1);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView3.setImageResource(currentItem.getImageResource3()); 
+                    ((Ribbon46Holder) holder).mImageView3.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 2);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView4.setImageResource(currentItem.getImageResource4()); 
+                    ((Ribbon46Holder) holder).mImageView4.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 3);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView5.setImageResource(currentItem.getImageResource5()); 
+                    ((Ribbon46Holder) holder).mImageView5.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 4);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView6.setImageResource(currentItem.getImageResource6()); 
+                    ((Ribbon46Holder) holder).mImageView6.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 5);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView7.setImageResource(currentItem.getImageResource7()); 
+                    ((Ribbon46Holder) holder).mImageView7.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 6);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView8.setImageResource(currentItem.getImageResource8()); 
+                    ((Ribbon46Holder) holder).mImageView8.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 7);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView9.setImageResource(currentItem.getImageResource9()); 
+                    ((Ribbon46Holder) holder).mImageView9.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 8);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView10.setImageResource(currentItem.getImageResource10()); 
+                    ((Ribbon46Holder) holder).mImageView10.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 9);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView11.setImageResource(currentItem.getImageResource11()); 
+                    ((Ribbon46Holder) holder).mImageView11.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 10);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView12.setImageResource(currentItem.getImageResource12()); 
+                    ((Ribbon46Holder) holder).mImageView12.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 11);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView13.setImageResource(currentItem.getImageResource13()); 
+                    ((Ribbon46Holder) holder).mImageView13.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 12);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView14.setImageResource(currentItem.getImageResource14()); 
+                    ((Ribbon46Holder) holder).mImageView14.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 13);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView15.setImageResource(currentItem.getImageResource15()); 
+                    ((Ribbon46Holder) holder).mImageView15.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 14);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView16.setImageResource(currentItem.getImageResource16()); 
+                    ((Ribbon46Holder) holder).mImageView16.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 15);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView17.setImageResource(currentItem.getImageResource17()); 
+                    ((Ribbon46Holder) holder).mImageView17.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 16);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView18.setImageResource(currentItem.getImageResource18()); 
+                    ((Ribbon46Holder) holder).mImageView18.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 17);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView19.setImageResource(currentItem.getImageResource19()); 
+                    ((Ribbon46Holder) holder).mImageView19.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 18);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView20.setImageResource(currentItem.getImageResource20()); 
+                    ((Ribbon46Holder) holder).mImageView20.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 19);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView21.setImageResource(currentItem.getImageResource21()); 
+                    ((Ribbon46Holder) holder).mImageView21.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 20);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView22.setImageResource(currentItem.getImageResource22()); 
+                    ((Ribbon46Holder) holder).mImageView22.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 21);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView23.setImageResource(currentItem.getImageResource23()); 
+                    ((Ribbon46Holder) holder).mImageView23.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 22);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView24.setImageResource(currentItem.getImageResource24()); 
+                    ((Ribbon46Holder) holder).mImageView24.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 23);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView25.setImageResource(currentItem.getImageResource25()); 
+                    ((Ribbon46Holder) holder).mImageView25.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 24);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView26.setImageResource(currentItem.getImageResource26()); 
+                    ((Ribbon46Holder) holder).mImageView26.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 25);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView27.setImageResource(currentItem.getImageResource27()); 
+                    ((Ribbon46Holder) holder).mImageView27.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 26);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView28.setImageResource(currentItem.getImageResource28()); 
+                    ((Ribbon46Holder) holder).mImageView28.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 27);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView29.setImageResource(currentItem.getImageResource29()); 
+                    ((Ribbon46Holder) holder).mImageView29.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 28);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView30.setImageResource(currentItem.getImageResource30()); 
+                    ((Ribbon46Holder) holder).mImageView30.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 29);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView31.setImageResource(currentItem.getImageResource31()); 
+                    ((Ribbon46Holder) holder).mImageView31.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 30);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView32.setImageResource(currentItem.getImageResource32()); 
+                    ((Ribbon46Holder) holder).mImageView32.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 31);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView33.setImageResource(currentItem.getImageResource33()); 
+                    ((Ribbon46Holder) holder).mImageView33.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 32);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView34.setImageResource(currentItem.getImageResource34()); 
+                    ((Ribbon46Holder) holder).mImageView34.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 33);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView35.setImageResource(currentItem.getImageResource35()); 
+                    ((Ribbon46Holder) holder).mImageView35.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 34);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView36.setImageResource(currentItem.getImageResource36()); 
+                    ((Ribbon46Holder) holder).mImageView36.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 35);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView37.setImageResource(currentItem.getImageResource37()); 
+                    ((Ribbon46Holder) holder).mImageView37.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 36);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView38.setImageResource(currentItem.getImageResource38()); 
+                    ((Ribbon46Holder) holder).mImageView38.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 37);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView39.setImageResource(currentItem.getImageResource39()); 
+                    ((Ribbon46Holder) holder).mImageView39.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 38);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView40.setImageResource(currentItem.getImageResource40()); 
+                    ((Ribbon46Holder) holder).mImageView40.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 39);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView41.setImageResource(currentItem.getImageResource41()); 
+                    ((Ribbon46Holder) holder).mImageView41.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 40);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView42.setImageResource(currentItem.getImageResource42()); 
+                    ((Ribbon46Holder) holder).mImageView42.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 41);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView43.setImageResource(currentItem.getImageResource43()); 
+                    ((Ribbon46Holder) holder).mImageView43.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 42);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView44.setImageResource(currentItem.getImageResource44()); 
+                    ((Ribbon46Holder) holder).mImageView44.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 43);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView45.setImageResource(currentItem.getImageResource45()); 
+                    ((Ribbon46Holder) holder).mImageView45.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 44);
+                }
+            });
+             ((Ribbon46Holder) holder).mImageView46.setImageResource(currentItem.getImageResource46()); 
+                    ((Ribbon46Holder) holder).mImageView46.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 45);
+                }
+            });
+            
+        } else if (holder instanceof Ribbon47Holder) {
+    RibbonItem currentItem = (RibbonItem) mRibbonList.get(position);
+     ((Ribbon47Holder) holder).mImageView1.setImageResource(currentItem.getImageResource1()); 
+                    ((Ribbon47Holder) holder).mImageView1.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 0);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView2.setImageResource(currentItem.getImageResource2()); 
+                    ((Ribbon47Holder) holder).mImageView2.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 1);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView3.setImageResource(currentItem.getImageResource3()); 
+                    ((Ribbon47Holder) holder).mImageView3.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 2);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView4.setImageResource(currentItem.getImageResource4()); 
+                    ((Ribbon47Holder) holder).mImageView4.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 3);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView5.setImageResource(currentItem.getImageResource5()); 
+                    ((Ribbon47Holder) holder).mImageView5.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 4);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView6.setImageResource(currentItem.getImageResource6()); 
+                    ((Ribbon47Holder) holder).mImageView6.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 5);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView7.setImageResource(currentItem.getImageResource7()); 
+                    ((Ribbon47Holder) holder).mImageView7.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 6);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView8.setImageResource(currentItem.getImageResource8()); 
+                    ((Ribbon47Holder) holder).mImageView8.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 7);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView9.setImageResource(currentItem.getImageResource9()); 
+                    ((Ribbon47Holder) holder).mImageView9.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 8);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView10.setImageResource(currentItem.getImageResource10()); 
+                    ((Ribbon47Holder) holder).mImageView10.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 9);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView11.setImageResource(currentItem.getImageResource11()); 
+                    ((Ribbon47Holder) holder).mImageView11.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 10);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView12.setImageResource(currentItem.getImageResource12()); 
+                    ((Ribbon47Holder) holder).mImageView12.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 11);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView13.setImageResource(currentItem.getImageResource13()); 
+                    ((Ribbon47Holder) holder).mImageView13.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 12);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView14.setImageResource(currentItem.getImageResource14()); 
+                    ((Ribbon47Holder) holder).mImageView14.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 13);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView15.setImageResource(currentItem.getImageResource15()); 
+                    ((Ribbon47Holder) holder).mImageView15.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 14);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView16.setImageResource(currentItem.getImageResource16()); 
+                    ((Ribbon47Holder) holder).mImageView16.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 15);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView17.setImageResource(currentItem.getImageResource17()); 
+                    ((Ribbon47Holder) holder).mImageView17.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 16);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView18.setImageResource(currentItem.getImageResource18()); 
+                    ((Ribbon47Holder) holder).mImageView18.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 17);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView19.setImageResource(currentItem.getImageResource19()); 
+                    ((Ribbon47Holder) holder).mImageView19.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 18);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView20.setImageResource(currentItem.getImageResource20()); 
+                    ((Ribbon47Holder) holder).mImageView20.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 19);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView21.setImageResource(currentItem.getImageResource21()); 
+                    ((Ribbon47Holder) holder).mImageView21.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 20);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView22.setImageResource(currentItem.getImageResource22()); 
+                    ((Ribbon47Holder) holder).mImageView22.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 21);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView23.setImageResource(currentItem.getImageResource23()); 
+                    ((Ribbon47Holder) holder).mImageView23.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 22);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView24.setImageResource(currentItem.getImageResource24()); 
+                    ((Ribbon47Holder) holder).mImageView24.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 23);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView25.setImageResource(currentItem.getImageResource25()); 
+                    ((Ribbon47Holder) holder).mImageView25.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 24);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView26.setImageResource(currentItem.getImageResource26()); 
+                    ((Ribbon47Holder) holder).mImageView26.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 25);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView27.setImageResource(currentItem.getImageResource27()); 
+                    ((Ribbon47Holder) holder).mImageView27.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 26);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView28.setImageResource(currentItem.getImageResource28()); 
+                    ((Ribbon47Holder) holder).mImageView28.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 27);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView29.setImageResource(currentItem.getImageResource29()); 
+                    ((Ribbon47Holder) holder).mImageView29.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 28);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView30.setImageResource(currentItem.getImageResource30()); 
+                    ((Ribbon47Holder) holder).mImageView30.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 29);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView31.setImageResource(currentItem.getImageResource31()); 
+                    ((Ribbon47Holder) holder).mImageView31.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 30);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView32.setImageResource(currentItem.getImageResource32()); 
+                    ((Ribbon47Holder) holder).mImageView32.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 31);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView33.setImageResource(currentItem.getImageResource33()); 
+                    ((Ribbon47Holder) holder).mImageView33.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 32);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView34.setImageResource(currentItem.getImageResource34()); 
+                    ((Ribbon47Holder) holder).mImageView34.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 33);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView35.setImageResource(currentItem.getImageResource35()); 
+                    ((Ribbon47Holder) holder).mImageView35.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 34);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView36.setImageResource(currentItem.getImageResource36()); 
+                    ((Ribbon47Holder) holder).mImageView36.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 35);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView37.setImageResource(currentItem.getImageResource37()); 
+                    ((Ribbon47Holder) holder).mImageView37.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 36);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView38.setImageResource(currentItem.getImageResource38()); 
+                    ((Ribbon47Holder) holder).mImageView38.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 37);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView39.setImageResource(currentItem.getImageResource39()); 
+                    ((Ribbon47Holder) holder).mImageView39.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 38);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView40.setImageResource(currentItem.getImageResource40()); 
+                    ((Ribbon47Holder) holder).mImageView40.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 39);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView41.setImageResource(currentItem.getImageResource41()); 
+                    ((Ribbon47Holder) holder).mImageView41.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 40);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView42.setImageResource(currentItem.getImageResource42()); 
+                    ((Ribbon47Holder) holder).mImageView42.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 41);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView43.setImageResource(currentItem.getImageResource43()); 
+                    ((Ribbon47Holder) holder).mImageView43.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 42);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView44.setImageResource(currentItem.getImageResource44()); 
+                    ((Ribbon47Holder) holder).mImageView44.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 43);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView45.setImageResource(currentItem.getImageResource45()); 
+                    ((Ribbon47Holder) holder).mImageView45.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 44);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView46.setImageResource(currentItem.getImageResource46()); 
+                    ((Ribbon47Holder) holder).mImageView46.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 45);
+                }
+            });
+             ((Ribbon47Holder) holder).mImageView47.setImageResource(currentItem.getImageResource47()); 
+                    ((Ribbon47Holder) holder).mImageView47.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 46);
+                }
+            });
+            
+        } else if (holder instanceof Ribbon48Holder) {
+    RibbonItem currentItem = (RibbonItem) mRibbonList.get(position);
+     ((Ribbon48Holder) holder).mImageView1.setImageResource(currentItem.getImageResource1()); 
+                    ((Ribbon48Holder) holder).mImageView1.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 0);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView2.setImageResource(currentItem.getImageResource2()); 
+                    ((Ribbon48Holder) holder).mImageView2.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 1);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView3.setImageResource(currentItem.getImageResource3()); 
+                    ((Ribbon48Holder) holder).mImageView3.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 2);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView4.setImageResource(currentItem.getImageResource4()); 
+                    ((Ribbon48Holder) holder).mImageView4.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 3);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView5.setImageResource(currentItem.getImageResource5()); 
+                    ((Ribbon48Holder) holder).mImageView5.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 4);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView6.setImageResource(currentItem.getImageResource6()); 
+                    ((Ribbon48Holder) holder).mImageView6.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 5);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView7.setImageResource(currentItem.getImageResource7()); 
+                    ((Ribbon48Holder) holder).mImageView7.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 6);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView8.setImageResource(currentItem.getImageResource8()); 
+                    ((Ribbon48Holder) holder).mImageView8.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 7);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView9.setImageResource(currentItem.getImageResource9()); 
+                    ((Ribbon48Holder) holder).mImageView9.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 8);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView10.setImageResource(currentItem.getImageResource10()); 
+                    ((Ribbon48Holder) holder).mImageView10.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 9);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView11.setImageResource(currentItem.getImageResource11()); 
+                    ((Ribbon48Holder) holder).mImageView11.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 10);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView12.setImageResource(currentItem.getImageResource12()); 
+                    ((Ribbon48Holder) holder).mImageView12.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 11);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView13.setImageResource(currentItem.getImageResource13()); 
+                    ((Ribbon48Holder) holder).mImageView13.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 12);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView14.setImageResource(currentItem.getImageResource14()); 
+                    ((Ribbon48Holder) holder).mImageView14.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 13);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView15.setImageResource(currentItem.getImageResource15()); 
+                    ((Ribbon48Holder) holder).mImageView15.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 14);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView16.setImageResource(currentItem.getImageResource16()); 
+                    ((Ribbon48Holder) holder).mImageView16.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 15);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView17.setImageResource(currentItem.getImageResource17()); 
+                    ((Ribbon48Holder) holder).mImageView17.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 16);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView18.setImageResource(currentItem.getImageResource18()); 
+                    ((Ribbon48Holder) holder).mImageView18.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 17);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView19.setImageResource(currentItem.getImageResource19()); 
+                    ((Ribbon48Holder) holder).mImageView19.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 18);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView20.setImageResource(currentItem.getImageResource20()); 
+                    ((Ribbon48Holder) holder).mImageView20.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 19);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView21.setImageResource(currentItem.getImageResource21()); 
+                    ((Ribbon48Holder) holder).mImageView21.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 20);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView22.setImageResource(currentItem.getImageResource22()); 
+                    ((Ribbon48Holder) holder).mImageView22.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 21);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView23.setImageResource(currentItem.getImageResource23()); 
+                    ((Ribbon48Holder) holder).mImageView23.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 22);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView24.setImageResource(currentItem.getImageResource24()); 
+                    ((Ribbon48Holder) holder).mImageView24.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 23);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView25.setImageResource(currentItem.getImageResource25()); 
+                    ((Ribbon48Holder) holder).mImageView25.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 24);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView26.setImageResource(currentItem.getImageResource26()); 
+                    ((Ribbon48Holder) holder).mImageView26.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 25);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView27.setImageResource(currentItem.getImageResource27()); 
+                    ((Ribbon48Holder) holder).mImageView27.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 26);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView28.setImageResource(currentItem.getImageResource28()); 
+                    ((Ribbon48Holder) holder).mImageView28.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 27);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView29.setImageResource(currentItem.getImageResource29()); 
+                    ((Ribbon48Holder) holder).mImageView29.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 28);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView30.setImageResource(currentItem.getImageResource30()); 
+                    ((Ribbon48Holder) holder).mImageView30.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 29);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView31.setImageResource(currentItem.getImageResource31()); 
+                    ((Ribbon48Holder) holder).mImageView31.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 30);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView32.setImageResource(currentItem.getImageResource32()); 
+                    ((Ribbon48Holder) holder).mImageView32.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 31);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView33.setImageResource(currentItem.getImageResource33()); 
+                    ((Ribbon48Holder) holder).mImageView33.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 32);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView34.setImageResource(currentItem.getImageResource34()); 
+                    ((Ribbon48Holder) holder).mImageView34.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 33);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView35.setImageResource(currentItem.getImageResource35()); 
+                    ((Ribbon48Holder) holder).mImageView35.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 34);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView36.setImageResource(currentItem.getImageResource36()); 
+                    ((Ribbon48Holder) holder).mImageView36.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 35);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView37.setImageResource(currentItem.getImageResource37()); 
+                    ((Ribbon48Holder) holder).mImageView37.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 36);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView38.setImageResource(currentItem.getImageResource38()); 
+                    ((Ribbon48Holder) holder).mImageView38.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 37);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView39.setImageResource(currentItem.getImageResource39()); 
+                    ((Ribbon48Holder) holder).mImageView39.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 38);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView40.setImageResource(currentItem.getImageResource40()); 
+                    ((Ribbon48Holder) holder).mImageView40.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 39);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView41.setImageResource(currentItem.getImageResource41()); 
+                    ((Ribbon48Holder) holder).mImageView41.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 40);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView42.setImageResource(currentItem.getImageResource42()); 
+                    ((Ribbon48Holder) holder).mImageView42.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 41);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView43.setImageResource(currentItem.getImageResource43()); 
+                    ((Ribbon48Holder) holder).mImageView43.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 42);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView44.setImageResource(currentItem.getImageResource44()); 
+                    ((Ribbon48Holder) holder).mImageView44.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 43);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView45.setImageResource(currentItem.getImageResource45()); 
+                    ((Ribbon48Holder) holder).mImageView45.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 44);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView46.setImageResource(currentItem.getImageResource46()); 
+                    ((Ribbon48Holder) holder).mImageView46.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 45);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView47.setImageResource(currentItem.getImageResource47()); 
+                    ((Ribbon48Holder) holder).mImageView47.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 46);
+                }
+            });
+             ((Ribbon48Holder) holder).mImageView48.setImageResource(currentItem.getImageResource48()); 
+                    ((Ribbon48Holder) holder).mImageView48.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 47);
+                }
+            });
+            
+        } else if (holder instanceof Ribbon49Holder) {
+    RibbonItem currentItem = (RibbonItem) mRibbonList.get(position);
+     ((Ribbon49Holder) holder).mImageView1.setImageResource(currentItem.getImageResource1()); 
+                    ((Ribbon49Holder) holder).mImageView1.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 0);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView2.setImageResource(currentItem.getImageResource2()); 
+                    ((Ribbon49Holder) holder).mImageView2.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 1);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView3.setImageResource(currentItem.getImageResource3()); 
+                    ((Ribbon49Holder) holder).mImageView3.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 2);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView4.setImageResource(currentItem.getImageResource4()); 
+                    ((Ribbon49Holder) holder).mImageView4.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 3);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView5.setImageResource(currentItem.getImageResource5()); 
+                    ((Ribbon49Holder) holder).mImageView5.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 4);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView6.setImageResource(currentItem.getImageResource6()); 
+                    ((Ribbon49Holder) holder).mImageView6.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 5);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView7.setImageResource(currentItem.getImageResource7()); 
+                    ((Ribbon49Holder) holder).mImageView7.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 6);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView8.setImageResource(currentItem.getImageResource8()); 
+                    ((Ribbon49Holder) holder).mImageView8.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 7);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView9.setImageResource(currentItem.getImageResource9()); 
+                    ((Ribbon49Holder) holder).mImageView9.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 8);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView10.setImageResource(currentItem.getImageResource10()); 
+                    ((Ribbon49Holder) holder).mImageView10.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 9);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView11.setImageResource(currentItem.getImageResource11()); 
+                    ((Ribbon49Holder) holder).mImageView11.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 10);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView12.setImageResource(currentItem.getImageResource12()); 
+                    ((Ribbon49Holder) holder).mImageView12.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 11);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView13.setImageResource(currentItem.getImageResource13()); 
+                    ((Ribbon49Holder) holder).mImageView13.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 12);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView14.setImageResource(currentItem.getImageResource14()); 
+                    ((Ribbon49Holder) holder).mImageView14.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 13);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView15.setImageResource(currentItem.getImageResource15()); 
+                    ((Ribbon49Holder) holder).mImageView15.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 14);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView16.setImageResource(currentItem.getImageResource16()); 
+                    ((Ribbon49Holder) holder).mImageView16.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 15);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView17.setImageResource(currentItem.getImageResource17()); 
+                    ((Ribbon49Holder) holder).mImageView17.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 16);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView18.setImageResource(currentItem.getImageResource18()); 
+                    ((Ribbon49Holder) holder).mImageView18.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 17);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView19.setImageResource(currentItem.getImageResource19()); 
+                    ((Ribbon49Holder) holder).mImageView19.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 18);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView20.setImageResource(currentItem.getImageResource20()); 
+                    ((Ribbon49Holder) holder).mImageView20.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 19);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView21.setImageResource(currentItem.getImageResource21()); 
+                    ((Ribbon49Holder) holder).mImageView21.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 20);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView22.setImageResource(currentItem.getImageResource22()); 
+                    ((Ribbon49Holder) holder).mImageView22.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 21);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView23.setImageResource(currentItem.getImageResource23()); 
+                    ((Ribbon49Holder) holder).mImageView23.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 22);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView24.setImageResource(currentItem.getImageResource24()); 
+                    ((Ribbon49Holder) holder).mImageView24.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 23);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView25.setImageResource(currentItem.getImageResource25()); 
+                    ((Ribbon49Holder) holder).mImageView25.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 24);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView26.setImageResource(currentItem.getImageResource26()); 
+                    ((Ribbon49Holder) holder).mImageView26.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 25);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView27.setImageResource(currentItem.getImageResource27()); 
+                    ((Ribbon49Holder) holder).mImageView27.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 26);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView28.setImageResource(currentItem.getImageResource28()); 
+                    ((Ribbon49Holder) holder).mImageView28.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 27);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView29.setImageResource(currentItem.getImageResource29()); 
+                    ((Ribbon49Holder) holder).mImageView29.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 28);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView30.setImageResource(currentItem.getImageResource30()); 
+                    ((Ribbon49Holder) holder).mImageView30.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 29);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView31.setImageResource(currentItem.getImageResource31()); 
+                    ((Ribbon49Holder) holder).mImageView31.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 30);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView32.setImageResource(currentItem.getImageResource32()); 
+                    ((Ribbon49Holder) holder).mImageView32.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 31);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView33.setImageResource(currentItem.getImageResource33()); 
+                    ((Ribbon49Holder) holder).mImageView33.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 32);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView34.setImageResource(currentItem.getImageResource34()); 
+                    ((Ribbon49Holder) holder).mImageView34.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 33);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView35.setImageResource(currentItem.getImageResource35()); 
+                    ((Ribbon49Holder) holder).mImageView35.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 34);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView36.setImageResource(currentItem.getImageResource36()); 
+                    ((Ribbon49Holder) holder).mImageView36.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 35);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView37.setImageResource(currentItem.getImageResource37()); 
+                    ((Ribbon49Holder) holder).mImageView37.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 36);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView38.setImageResource(currentItem.getImageResource38()); 
+                    ((Ribbon49Holder) holder).mImageView38.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 37);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView39.setImageResource(currentItem.getImageResource39()); 
+                    ((Ribbon49Holder) holder).mImageView39.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 38);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView40.setImageResource(currentItem.getImageResource40()); 
+                    ((Ribbon49Holder) holder).mImageView40.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 39);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView41.setImageResource(currentItem.getImageResource41()); 
+                    ((Ribbon49Holder) holder).mImageView41.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 40);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView42.setImageResource(currentItem.getImageResource42()); 
+                    ((Ribbon49Holder) holder).mImageView42.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 41);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView43.setImageResource(currentItem.getImageResource43()); 
+                    ((Ribbon49Holder) holder).mImageView43.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 42);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView44.setImageResource(currentItem.getImageResource44()); 
+                    ((Ribbon49Holder) holder).mImageView44.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 43);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView45.setImageResource(currentItem.getImageResource45()); 
+                    ((Ribbon49Holder) holder).mImageView45.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 44);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView46.setImageResource(currentItem.getImageResource46()); 
+                    ((Ribbon49Holder) holder).mImageView46.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 45);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView47.setImageResource(currentItem.getImageResource47()); 
+                    ((Ribbon49Holder) holder).mImageView47.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 46);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView48.setImageResource(currentItem.getImageResource48()); 
+                    ((Ribbon49Holder) holder).mImageView48.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 47);
+                }
+            });
+             ((Ribbon49Holder) holder).mImageView49.setImageResource(currentItem.getImageResource49()); 
+                    ((Ribbon49Holder) holder).mImageView49.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 48);
+                }
+            });
+            
+        } else if (holder instanceof Ribbon50Holder) {
+    RibbonItem currentItem = (RibbonItem) mRibbonList.get(position);
+     ((Ribbon50Holder) holder).mImageView1.setImageResource(currentItem.getImageResource1()); 
+                    ((Ribbon50Holder) holder).mImageView1.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 0);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView2.setImageResource(currentItem.getImageResource2()); 
+                    ((Ribbon50Holder) holder).mImageView2.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 1);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView3.setImageResource(currentItem.getImageResource3()); 
+                    ((Ribbon50Holder) holder).mImageView3.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 2);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView4.setImageResource(currentItem.getImageResource4()); 
+                    ((Ribbon50Holder) holder).mImageView4.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 3);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView5.setImageResource(currentItem.getImageResource5()); 
+                    ((Ribbon50Holder) holder).mImageView5.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 4);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView6.setImageResource(currentItem.getImageResource6()); 
+                    ((Ribbon50Holder) holder).mImageView6.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 5);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView7.setImageResource(currentItem.getImageResource7()); 
+                    ((Ribbon50Holder) holder).mImageView7.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 6);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView8.setImageResource(currentItem.getImageResource8()); 
+                    ((Ribbon50Holder) holder).mImageView8.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 7);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView9.setImageResource(currentItem.getImageResource9()); 
+                    ((Ribbon50Holder) holder).mImageView9.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 8);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView10.setImageResource(currentItem.getImageResource10()); 
+                    ((Ribbon50Holder) holder).mImageView10.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 9);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView11.setImageResource(currentItem.getImageResource11()); 
+                    ((Ribbon50Holder) holder).mImageView11.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 10);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView12.setImageResource(currentItem.getImageResource12()); 
+                    ((Ribbon50Holder) holder).mImageView12.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 11);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView13.setImageResource(currentItem.getImageResource13()); 
+                    ((Ribbon50Holder) holder).mImageView13.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 12);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView14.setImageResource(currentItem.getImageResource14()); 
+                    ((Ribbon50Holder) holder).mImageView14.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 13);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView15.setImageResource(currentItem.getImageResource15()); 
+                    ((Ribbon50Holder) holder).mImageView15.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 14);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView16.setImageResource(currentItem.getImageResource16()); 
+                    ((Ribbon50Holder) holder).mImageView16.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 15);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView17.setImageResource(currentItem.getImageResource17()); 
+                    ((Ribbon50Holder) holder).mImageView17.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 16);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView18.setImageResource(currentItem.getImageResource18()); 
+                    ((Ribbon50Holder) holder).mImageView18.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 17);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView19.setImageResource(currentItem.getImageResource19()); 
+                    ((Ribbon50Holder) holder).mImageView19.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 18);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView20.setImageResource(currentItem.getImageResource20()); 
+                    ((Ribbon50Holder) holder).mImageView20.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 19);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView21.setImageResource(currentItem.getImageResource21()); 
+                    ((Ribbon50Holder) holder).mImageView21.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 20);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView22.setImageResource(currentItem.getImageResource22()); 
+                    ((Ribbon50Holder) holder).mImageView22.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 21);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView23.setImageResource(currentItem.getImageResource23()); 
+                    ((Ribbon50Holder) holder).mImageView23.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 22);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView24.setImageResource(currentItem.getImageResource24()); 
+                    ((Ribbon50Holder) holder).mImageView24.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 23);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView25.setImageResource(currentItem.getImageResource25()); 
+                    ((Ribbon50Holder) holder).mImageView25.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 24);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView26.setImageResource(currentItem.getImageResource26()); 
+                    ((Ribbon50Holder) holder).mImageView26.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 25);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView27.setImageResource(currentItem.getImageResource27()); 
+                    ((Ribbon50Holder) holder).mImageView27.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 26);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView28.setImageResource(currentItem.getImageResource28()); 
+                    ((Ribbon50Holder) holder).mImageView28.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 27);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView29.setImageResource(currentItem.getImageResource29()); 
+                    ((Ribbon50Holder) holder).mImageView29.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 28);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView30.setImageResource(currentItem.getImageResource30()); 
+                    ((Ribbon50Holder) holder).mImageView30.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 29);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView31.setImageResource(currentItem.getImageResource31()); 
+                    ((Ribbon50Holder) holder).mImageView31.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 30);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView32.setImageResource(currentItem.getImageResource32()); 
+                    ((Ribbon50Holder) holder).mImageView32.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 31);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView33.setImageResource(currentItem.getImageResource33()); 
+                    ((Ribbon50Holder) holder).mImageView33.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 32);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView34.setImageResource(currentItem.getImageResource34()); 
+                    ((Ribbon50Holder) holder).mImageView34.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 33);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView35.setImageResource(currentItem.getImageResource35()); 
+                    ((Ribbon50Holder) holder).mImageView35.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 34);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView36.setImageResource(currentItem.getImageResource36()); 
+                    ((Ribbon50Holder) holder).mImageView36.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 35);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView37.setImageResource(currentItem.getImageResource37()); 
+                    ((Ribbon50Holder) holder).mImageView37.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 36);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView38.setImageResource(currentItem.getImageResource38()); 
+                    ((Ribbon50Holder) holder).mImageView38.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 37);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView39.setImageResource(currentItem.getImageResource39()); 
+                    ((Ribbon50Holder) holder).mImageView39.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 38);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView40.setImageResource(currentItem.getImageResource40()); 
+                    ((Ribbon50Holder) holder).mImageView40.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 39);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView41.setImageResource(currentItem.getImageResource41()); 
+                    ((Ribbon50Holder) holder).mImageView41.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 40);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView42.setImageResource(currentItem.getImageResource42()); 
+                    ((Ribbon50Holder) holder).mImageView42.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 41);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView43.setImageResource(currentItem.getImageResource43()); 
+                    ((Ribbon50Holder) holder).mImageView43.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 42);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView44.setImageResource(currentItem.getImageResource44()); 
+                    ((Ribbon50Holder) holder).mImageView44.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 43);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView45.setImageResource(currentItem.getImageResource45()); 
+                    ((Ribbon50Holder) holder).mImageView45.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 44);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView46.setImageResource(currentItem.getImageResource46()); 
+                    ((Ribbon50Holder) holder).mImageView46.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 45);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView47.setImageResource(currentItem.getImageResource47()); 
+                    ((Ribbon50Holder) holder).mImageView47.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 46);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView48.setImageResource(currentItem.getImageResource48()); 
+                    ((Ribbon50Holder) holder).mImageView48.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 47);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView49.setImageResource(currentItem.getImageResource49()); 
+                    ((Ribbon50Holder) holder).mImageView49.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 48);
+                }
+            });
+             ((Ribbon50Holder) holder).mImageView50.setImageResource(currentItem.getImageResource50()); 
+                    ((Ribbon50Holder) holder).mImageView50.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            showPopup(view, oaks, 49);
+                }
+            });
+            

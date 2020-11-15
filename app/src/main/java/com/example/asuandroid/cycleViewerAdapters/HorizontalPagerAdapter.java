@@ -35,19 +35,19 @@ public class HorizontalPagerAdapter extends PagerAdapter {
         if (tatters > 0) {
             switch (tatters) {
                 case 1:
-                    TWO_WAY_LIBRARIES = new Utils.LibraryObject[]{new Utils.LibraryObject(fromRibbonBuilds.get(0), "")};
+                    //TWO_WAY_LIBRARIES = new Utils.LibraryObject[]{new Utils.LibraryObject(fromRibbonBuilds.get(0), "")};
                     break;
                 case 2:
-                    TWO_WAY_LIBRARIES = new Utils.LibraryObject[]{new Utils.LibraryObject(fromRibbonBuilds.get(1), ""), new Utils.LibraryObject(fromRibbonBuilds.get(1), "")};
+                    //TWO_WAY_LIBRARIES = new Utils.LibraryObject[]{new Utils.LibraryObject(fromRibbonBuilds.get(1), ""), new Utils.LibraryObject(fromRibbonBuilds.get(1), "")};
                     break;
                 case 3:
-                    TWO_WAY_LIBRARIES = new Utils.LibraryObject[]{new Utils.LibraryObject(fromRibbonBuilds.get(2), ""), new Utils.LibraryObject(fromRibbonBuilds.get(1), ""), new Utils.LibraryObject(fromRibbonBuilds.get(2), "")};
+                   // TWO_WAY_LIBRARIES = new Utils.LibraryObject[]{new Utils.LibraryObject(fromRibbonBuilds.get(2), ""), new Utils.LibraryObject(fromRibbonBuilds.get(1), ""), new Utils.LibraryObject(fromRibbonBuilds.get(2), "")};
                     break;
                 case 4:
-                    TWO_WAY_LIBRARIES = new Utils.LibraryObject[]{new Utils.LibraryObject(fromRibbonBuilds.get(3), ""), new Utils.LibraryObject(fromRibbonBuilds.get(1), ""), new Utils.LibraryObject(fromRibbonBuilds.get(2), ""), new Utils.LibraryObject(fromRibbonBuilds.get(3), "")};
+                    //TWO_WAY_LIBRARIES = new Utils.LibraryObject[]{new Utils.LibraryObject(fromRibbonBuilds.get(3), ""), new Utils.LibraryObject(fromRibbonBuilds.get(1), ""), new Utils.LibraryObject(fromRibbonBuilds.get(2), ""), new Utils.LibraryObject(fromRibbonBuilds.get(3), "")};
                     break;
                 case 5:
-                    TWO_WAY_LIBRARIES = new Utils.LibraryObject[]{new Utils.LibraryObject(fromRibbonBuilds.get(4), ""), new Utils.LibraryObject(fromRibbonBuilds.get(1), ""), new Utils.LibraryObject(fromRibbonBuilds.get(2), ""), new Utils.LibraryObject(fromRibbonBuilds.get(3), ""), new Utils.LibraryObject(fromRibbonBuilds.get(4), "")};
+                    //TWO_WAY_LIBRARIES = new Utils.LibraryObject[]{new Utils.LibraryObject(fromRibbonBuilds.get(4), ""), new Utils.LibraryObject(fromRibbonBuilds.get(1), ""), new Utils.LibraryObject(fromRibbonBuilds.get(2), ""), new Utils.LibraryObject(fromRibbonBuilds.get(3), ""), new Utils.LibraryObject(fromRibbonBuilds.get(4), "")};
                     break;
             }
         }
