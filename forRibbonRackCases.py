@@ -1,7 +1,7 @@
 
 #Case2:
 
-def GetXMLCase2(n):
+def GetXMLCase1(n):
     z = 3
     storeArr = []
     numRows = n // 3
@@ -111,7 +111,7 @@ def GetXMLCase2(n):
 
 
 
-def GetXMLCase3(n):
+def GetXMLCase2(n):
     z = 5
     storeArr = []
     numRows = n // 3
