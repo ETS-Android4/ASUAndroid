@@ -40,7 +40,7 @@ public class Award2Dialog extends AppCompatDialogFragment {
         Button home = view.findViewById(R.id.btn_backToAward2);
         Button saveForUniform = view.findViewById(R.id.btn_useForUniform);
         builder.setView(view)
-                .setTitle("Ribbon Rack");
+            .setTitle("Ribbon Rack");
         saveRack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -48,7 +48,7 @@ public class Award2Dialog extends AppCompatDialogFragment {
                 Award2Fragment.bitmapDrawableArray.removeAll(Award2Fragment.bitmapDrawableArray);
                 System.out.println(toCloset);
                 NavHostFragment.findNavController(Award2Dialog.this)
-                        .navigate(R.id.action_award2Dialog2_to_HomeScreen);
+                    .navigate(R.id.action_award2Dialog2_to_HomeScreen);
             }
         });
         home.setOnClickListener(new View.OnClickListener() {
@@ -56,7 +56,7 @@ public class Award2Dialog extends AppCompatDialogFragment {
             public void onClick(View view) {
                 Award2Fragment.bitmapDrawableArray.removeAll(Award2Fragment.bitmapDrawableArray);
                 NavHostFragment.findNavController(Award2Dialog.this)
-                        .navigate(R.id.action_award2Dialog2_to_award2Fragment);
+                    .navigate(R.id.action_award2Dialog2_to_award2Fragment);
             }
         });
         return builder.create();

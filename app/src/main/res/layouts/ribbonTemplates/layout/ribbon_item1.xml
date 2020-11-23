@@ -1,29 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/ribbonRack"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@android:color/transparent"
     android:orientation="vertical">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
         <ImageView
             android:id="@+id/ribbon1"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon"/>
+            app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
 
         <ImageView
             android:id="@+id/ribbon1_2"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
             app:layout_constraintBottom_toBottomOf="@id/ribbon1"
             app:layout_constraintEnd_toEndOf="@+id/ribbon1"
             app:layout_constraintStart_toStartOf="@id/ribbon1"
@@ -31,10 +29,10 @@
 
         <ImageView
             android:id="@+id/ribbon1_3"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginLeft="20dp"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
             app:layout_constraintBottom_toBottomOf="@id/ribbon1"
             app:layout_constraintEnd_toEndOf="@+id/ribbon1"
             app:layout_constraintStart_toStartOf="@id/ribbon1"
@@ -42,10 +40,10 @@
 
         <ImageView
             android:id="@+id/ribbon1_4"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginRight="20dp"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
             app:layout_constraintBottom_toBottomOf="@id/ribbon1"
             app:layout_constraintEnd_toEndOf="@+id/ribbon1"
             app:layout_constraintStart_toStartOf="@id/ribbon1"
@@ -53,10 +51,10 @@
 
         <ImageView
             android:id="@+id/ribbon1_5"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginLeft="32dp"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_32sdp"
+            android:layout_marginLeft="@dimen/_32sdp"
             app:layout_constraintBottom_toBottomOf="@id/ribbon1"
             app:layout_constraintEnd_toEndOf="@+id/ribbon1"
             app:layout_constraintStart_toStartOf="@id/ribbon1"
@@ -65,10 +63,10 @@
 
         <ImageView
             android:id="@+id/ribbon1_6"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_marginEnd="32dp"
-            android:layout_marginRight="32dp"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_32sdp"
+            android:layout_marginRight="@dimen/_32sdp"
             app:layout_constraintBottom_toBottomOf="@id/ribbon1"
             app:layout_constraintEnd_toEndOf="@+id/ribbon1"
             app:layout_constraintStart_toStartOf="@id/ribbon1"
@@ -76,10 +74,10 @@
 
         <ImageView
             android:id="@+id/ribbon1_7"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="44dp"
-            android:layout_marginLeft="44dp"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_44sdp"
+            android:layout_marginLeft="@dimen/_44sdp"
             app:layout_constraintBottom_toBottomOf="@id/ribbon1"
             app:layout_constraintEnd_toEndOf="@+id/ribbon1"
             app:layout_constraintHorizontal_bias=".50"
@@ -88,10 +86,10 @@
 
         <ImageView
             android:id="@+id/ribbon1_8"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_marginEnd="44dp"
-            android:layout_marginRight="44dp"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_44sdp"
+            android:layout_marginRight="@dimen/_44sdp"
             app:layout_constraintBottom_toBottomOf="@id/ribbon1"
             app:layout_constraintEnd_toEndOf="@+id/ribbon1"
             app:layout_constraintHorizontal_bias="0.50"
@@ -100,9 +98,9 @@
             app:layout_constraintVertical_bias="0.50" />
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
 
-</com.google.android.flexbox.FlexboxLayout>
+
 
 
 

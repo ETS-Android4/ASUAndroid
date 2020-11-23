@@ -22,5 +22,5 @@ def GetHolderOnClick(holderNum):
     print(listToStrList)
     file1 = open("this.txt","a")  
     file1.writelines(listToStrList)
-for i in range(41,51):
+for i in range(1,50):
     GetHolderOnClick(i)

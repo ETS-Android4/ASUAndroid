@@ -64,13 +64,13 @@
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/ribbon6"
+        app:layout_constraintEnd_toStartOf="@+id/ribbon7"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/ribbon4"
         app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
 
     <ImageView
-        android:id="@+id/ribbon6"
+        android:id="@+id/ribbon7"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"

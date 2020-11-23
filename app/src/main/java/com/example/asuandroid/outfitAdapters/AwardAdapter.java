@@ -46,47 +46,47 @@ public class AwardAdapter extends RecyclerView.Adapter<AwardAdapter.AwardViewHol
 
         @SuppressLint("ClickableViewAccessibility")
         public AwardViewHolder(View itemView, OnItemClickListener listener) {
-            super(itemView);
-            mImageView = itemView.findViewById(R.id.imageView);
-            mTextView1 = itemView.findViewById(R.id.textView);
-            mTextView2 = itemView.findViewById(R.id.textView2);
-            mRibbonAdd = itemView.findViewById(R.id.img_addRibbon);
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if (!isRibbonOn) {
-                        System.out.println(isRibbonOn);
-                        isRibbonOn = true;
-                        System.out.println(isRibbonOn);
-                        itemView.setBackgroundColor(Color.CYAN);
-                        ImageView rocketImage = (ImageView) v.findViewById(R.id.img_addRibbon);
-                        rocketImage.setBackgroundResource(R.drawable.ribbon_anim);
-                        AnimationDrawable rocketAnimation = (AnimationDrawable) rocketImage.getBackground();
-                        rocketAnimation.start();
-                    } else if (isRibbonOn = true) {
-                        System.out.println(isRibbonOn);
-                        isRibbonOn = false;
-                        System.out.println(isRibbonOn);
+        super(itemView);
+        mImageView = itemView.findViewById(R.id.imageView);
+        mTextView1 = itemView.findViewById(R.id.textView);
+        mTextView2 = itemView.findViewById(R.id.textView2);
+        mRibbonAdd = itemView.findViewById(R.id.img_addRibbon);
+        itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (!isRibbonOn) {
+                    System.out.println(isRibbonOn);
+                    isRibbonOn = true;
+                    System.out.println(isRibbonOn);
+                    itemView.setBackgroundColor(Color.CYAN);
+                    ImageView rocketImage = (ImageView) v.findViewById(R.id.img_addRibbon);
+                    rocketImage.setBackgroundResource(R.drawable.ribbon_anim);
+                    AnimationDrawable rocketAnimation = (AnimationDrawable) rocketImage.getBackground();
+                    rocketAnimation.start();
+                } else if (isRibbonOn = true) {
+                    System.out.println(isRibbonOn);
+                    isRibbonOn = false;
+                    System.out.println(isRibbonOn);
 
-                        itemView.setBackgroundColor(Color.WHITE);
-                        ImageView rocketImage = (ImageView) v.findViewById(R.id.img_addRibbon);
-                        rocketImage.setBackgroundResource(R.drawable.ribbon_anim_return);
-                        AnimationDrawable rocketAnimation = (AnimationDrawable) rocketImage.getBackground();
-                        rocketAnimation.start();
-                    }
-                    {
-                        if ((listener != null)) {
-                            int position = getAdapterPosition();
-                            int ribbon = mAwardList.get(position).getImageResource();
-                            if (position != RecyclerView.NO_POSITION) {
-                                listener.onAddRibbonClick(ribbon, position, isRibbonOn);
-                            }
-                            System.out.println("youclickedme" + ribbon);
+                    itemView.setBackgroundColor(Color.WHITE);
+                    ImageView rocketImage = (ImageView) v.findViewById(R.id.img_addRibbon);
+                    rocketImage.setBackgroundResource(R.drawable.ribbon_anim_return);
+                    AnimationDrawable rocketAnimation = (AnimationDrawable) rocketImage.getBackground();
+                    rocketAnimation.start();
+                }
+                {
+                    if ((listener != null)) {
+                        int position = getAdapterPosition();
+                        int ribbon = mAwardList.get(position).getImageResource();
+                        if (position != RecyclerView.NO_POSITION) {
+                            listener.onAddRibbonClick(ribbon, position, isRibbonOn);
                         }
+                        System.out.println("youclickedme" + ribbon);
                     }
                 }
-            });
-        }
+            }
+        });
+    }
     }
 
     public AwardAdapter(ArrayList<AwardItem> awardList) {

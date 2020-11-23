@@ -54,7 +54,7 @@
             app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
 
         <ImageView
-            android:id="@+id/ribbon6"
+            android:id="@+id/ribbon7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toEndOf="@+id/ribbon5"
@@ -70,7 +70,7 @@
             app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
 
         <ImageView
-            android:id="@+id/ribbon8"
+            android:id="@+id/ribbon6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toEndOf="@+id/ribbon7"
@@ -81,8 +81,8 @@
             android:id="@+id/ribbon9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toEndOf="@+id/ribbon8"
-            app:layout_constraintTop_toBottomOf="@+id/ribbon6"
+            app:layout_constraintStart_toEndOf="@+id/ribbon6"
+            app:layout_constraintTop_toBottomOf="@+id/ribbon7"
             app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
 
         <ImageView
@@ -98,7 +98,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toEndOf="@+id/ribbon10"
-            app:layout_constraintTop_toBottomOf="@+id/ribbon8"
+            app:layout_constraintTop_toBottomOf="@+id/ribbon6"
             app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
 
         <ImageView
@@ -772,10 +772,10 @@
             android:id="@+id/ribbon6_2"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            app:layout_constraintBottom_toBottomOf="@id/ribbon6"
-            app:layout_constraintEnd_toEndOf="@+id/ribbon6"
-            app:layout_constraintStart_toStartOf="@id/ribbon6"
-            app:layout_constraintTop_toTopOf="@id/ribbon6" />
+            app:layout_constraintBottom_toBottomOf="@id/ribbon7"
+            app:layout_constraintEnd_toEndOf="@+id/ribbon7"
+            app:layout_constraintStart_toStartOf="@id/ribbon7"
+            app:layout_constraintTop_toTopOf="@id/ribbon7" />
 
         <ImageView
             android:id="@+id/ribbon6_3"
@@ -783,10 +783,10 @@
             android:layout_height="35dp"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
-            app:layout_constraintBottom_toBottomOf="@id/ribbon6"
-            app:layout_constraintEnd_toEndOf="@+id/ribbon6"
-            app:layout_constraintStart_toStartOf="@id/ribbon6"
-            app:layout_constraintTop_toTopOf="@id/ribbon6" />
+            app:layout_constraintBottom_toBottomOf="@id/ribbon7"
+            app:layout_constraintEnd_toEndOf="@+id/ribbon7"
+            app:layout_constraintStart_toStartOf="@id/ribbon7"
+            app:layout_constraintTop_toTopOf="@id/ribbon7" />
 
         <ImageView
             android:id="@+id/ribbon6_4"
@@ -794,10 +794,10 @@
             android:layout_height="35dp"
             android:layout_marginEnd="20dp"
             android:layout_marginRight="20dp"
-            app:layout_constraintBottom_toBottomOf="@id/ribbon6"
-            app:layout_constraintEnd_toEndOf="@+id/ribbon6"
-            app:layout_constraintStart_toStartOf="@id/ribbon6"
-            app:layout_constraintTop_toTopOf="@id/ribbon6" />
+            app:layout_constraintBottom_toBottomOf="@id/ribbon7"
+            app:layout_constraintEnd_toEndOf="@+id/ribbon7"
+            app:layout_constraintStart_toStartOf="@id/ribbon7"
+            app:layout_constraintTop_toTopOf="@id/ribbon7" />
 
         <ImageView
             android:id="@+id/ribbon6_5"
@@ -805,10 +805,10 @@
             android:layout_height="35dp"
             android:layout_marginStart="40dp"
             android:layout_marginLeft="40dp"
-            app:layout_constraintBottom_toBottomOf="@id/ribbon6"
-            app:layout_constraintEnd_toEndOf="@+id/ribbon6"
-            app:layout_constraintStart_toStartOf="@id/ribbon6"
-            app:layout_constraintTop_toTopOf="@id/ribbon6"
+            app:layout_constraintBottom_toBottomOf="@id/ribbon7"
+            app:layout_constraintEnd_toEndOf="@+id/ribbon7"
+            app:layout_constraintStart_toStartOf="@id/ribbon7"
+            app:layout_constraintTop_toTopOf="@id/ribbon7"
             app:layout_constraintVertical_bias="0.555" />
 
         <ImageView
@@ -817,10 +817,10 @@
             android:layout_height="35dp"
             android:layout_marginEnd="40dp"
             android:layout_marginRight="40dp"
-            app:layout_constraintBottom_toBottomOf="@id/ribbon6"
-            app:layout_constraintEnd_toEndOf="@+id/ribbon6"
-            app:layout_constraintStart_toStartOf="@id/ribbon6"
-            app:layout_constraintTop_toTopOf="@id/ribbon6" />
+            app:layout_constraintBottom_toBottomOf="@id/ribbon7"
+            app:layout_constraintEnd_toEndOf="@+id/ribbon7"
+            app:layout_constraintStart_toStartOf="@id/ribbon7"
+            app:layout_constraintTop_toTopOf="@id/ribbon7" />
 
         <ImageView
             android:id="@+id/ribbon6_7"
@@ -828,11 +828,11 @@
             android:layout_height="35dp"
             android:layout_marginStart="60dp"
             android:layout_marginLeft="60dp"
-            app:layout_constraintBottom_toBottomOf="@id/ribbon6"
-            app:layout_constraintEnd_toEndOf="@+id/ribbon6"
+            app:layout_constraintBottom_toBottomOf="@id/ribbon7"
+            app:layout_constraintEnd_toEndOf="@+id/ribbon7"
             app:layout_constraintHorizontal_bias=".50"
-            app:layout_constraintStart_toStartOf="@id/ribbon6"
-            app:layout_constraintTop_toTopOf="@id/ribbon6" />
+            app:layout_constraintStart_toStartOf="@id/ribbon7"
+            app:layout_constraintTop_toTopOf="@id/ribbon7" />
 
         <ImageView
             android:id="@+id/ribbon6_8"
@@ -840,11 +840,11 @@
             android:layout_height="35dp"
             android:layout_marginEnd="60dp"
             android:layout_marginRight="60dp"
-            app:layout_constraintBottom_toBottomOf="@id/ribbon6"
-            app:layout_constraintEnd_toEndOf="@+id/ribbon6"
+            app:layout_constraintBottom_toBottomOf="@id/ribbon7"
+            app:layout_constraintEnd_toEndOf="@+id/ribbon7"
             app:layout_constraintHorizontal_bias="0.50"
-            app:layout_constraintStart_toStartOf="@id/ribbon6"
-            app:layout_constraintTop_toTopOf="@id/ribbon6"
+            app:layout_constraintStart_toStartOf="@id/ribbon7"
+            app:layout_constraintTop_toTopOf="@id/ribbon7"
             app:layout_constraintVertical_bias="0.50" />
 
         <ImageView
@@ -930,10 +930,10 @@
             android:id="@+id/ribbon8_2"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            app:layout_constraintBottom_toBottomOf="@id/ribbon8"
-            app:layout_constraintEnd_toEndOf="@+id/ribbon8"
-            app:layout_constraintStart_toStartOf="@id/ribbon8"
-            app:layout_constraintTop_toTopOf="@id/ribbon8" />
+            app:layout_constraintBottom_toBottomOf="@id/ribbon6"
+            app:layout_constraintEnd_toEndOf="@+id/ribbon6"
+            app:layout_constraintStart_toStartOf="@id/ribbon6"
+            app:layout_constraintTop_toTopOf="@id/ribbon6" />
 
         <ImageView
             android:id="@+id/ribbon8_3"
@@ -941,10 +941,10 @@
             android:layout_height="35dp"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
-            app:layout_constraintBottom_toBottomOf="@id/ribbon8"
-            app:layout_constraintEnd_toEndOf="@+id/ribbon8"
-            app:layout_constraintStart_toStartOf="@id/ribbon8"
-            app:layout_constraintTop_toTopOf="@id/ribbon8" />
+            app:layout_constraintBottom_toBottomOf="@id/ribbon6"
+            app:layout_constraintEnd_toEndOf="@+id/ribbon6"
+            app:layout_constraintStart_toStartOf="@id/ribbon6"
+            app:layout_constraintTop_toTopOf="@id/ribbon6" />
 
         <ImageView
             android:id="@+id/ribbon8_4"
@@ -952,10 +952,10 @@
             android:layout_height="35dp"
             android:layout_marginEnd="20dp"
             android:layout_marginRight="20dp"
-            app:layout_constraintBottom_toBottomOf="@id/ribbon8"
-            app:layout_constraintEnd_toEndOf="@+id/ribbon8"
-            app:layout_constraintStart_toStartOf="@id/ribbon8"
-            app:layout_constraintTop_toTopOf="@id/ribbon8" />
+            app:layout_constraintBottom_toBottomOf="@id/ribbon6"
+            app:layout_constraintEnd_toEndOf="@+id/ribbon6"
+            app:layout_constraintStart_toStartOf="@id/ribbon6"
+            app:layout_constraintTop_toTopOf="@id/ribbon6" />
 
         <ImageView
             android:id="@+id/ribbon8_5"
@@ -963,10 +963,10 @@
             android:layout_height="35dp"
             android:layout_marginStart="40dp"
             android:layout_marginLeft="40dp"
-            app:layout_constraintBottom_toBottomOf="@id/ribbon8"
-            app:layout_constraintEnd_toEndOf="@+id/ribbon8"
-            app:layout_constraintStart_toStartOf="@id/ribbon8"
-            app:layout_constraintTop_toTopOf="@id/ribbon8"
+            app:layout_constraintBottom_toBottomOf="@id/ribbon6"
+            app:layout_constraintEnd_toEndOf="@+id/ribbon6"
+            app:layout_constraintStart_toStartOf="@id/ribbon6"
+            app:layout_constraintTop_toTopOf="@id/ribbon6"
             app:layout_constraintVertical_bias="0.555" />
 
         <ImageView
@@ -975,10 +975,10 @@
             android:layout_height="35dp"
             android:layout_marginEnd="40dp"
             android:layout_marginRight="40dp"
-            app:layout_constraintBottom_toBottomOf="@id/ribbon8"
-            app:layout_constraintEnd_toEndOf="@+id/ribbon8"
-            app:layout_constraintStart_toStartOf="@id/ribbon8"
-            app:layout_constraintTop_toTopOf="@id/ribbon8" />
+            app:layout_constraintBottom_toBottomOf="@id/ribbon6"
+            app:layout_constraintEnd_toEndOf="@+id/ribbon6"
+            app:layout_constraintStart_toStartOf="@id/ribbon6"
+            app:layout_constraintTop_toTopOf="@id/ribbon6" />
 
         <ImageView
             android:id="@+id/ribbon8_7"
@@ -986,11 +986,11 @@
             android:layout_height="35dp"
             android:layout_marginStart="60dp"
             android:layout_marginLeft="60dp"
-            app:layout_constraintBottom_toBottomOf="@id/ribbon8"
-            app:layout_constraintEnd_toEndOf="@+id/ribbon8"
+            app:layout_constraintBottom_toBottomOf="@id/ribbon6"
+            app:layout_constraintEnd_toEndOf="@+id/ribbon6"
             app:layout_constraintHorizontal_bias=".50"
-            app:layout_constraintStart_toStartOf="@id/ribbon8"
-            app:layout_constraintTop_toTopOf="@id/ribbon8" />
+            app:layout_constraintStart_toStartOf="@id/ribbon6"
+            app:layout_constraintTop_toTopOf="@id/ribbon6" />
 
         <ImageView
             android:id="@+id/ribbon8_8"
@@ -998,11 +998,11 @@
             android:layout_height="35dp"
             android:layout_marginEnd="60dp"
             android:layout_marginRight="60dp"
-            app:layout_constraintBottom_toBottomOf="@id/ribbon8"
-            app:layout_constraintEnd_toEndOf="@+id/ribbon8"
+            app:layout_constraintBottom_toBottomOf="@id/ribbon6"
+            app:layout_constraintEnd_toEndOf="@+id/ribbon6"
             app:layout_constraintHorizontal_bias="0.50"
-            app:layout_constraintStart_toStartOf="@id/ribbon8"
-            app:layout_constraintTop_toTopOf="@id/ribbon8"
+            app:layout_constraintStart_toStartOf="@id/ribbon6"
+            app:layout_constraintTop_toTopOf="@id/ribbon6"
             app:layout_constraintVertical_bias="0.50" />
 
         <ImageView

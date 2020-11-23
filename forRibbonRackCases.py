@@ -112,42 +112,54 @@ def GetXMLCase1(n):
 
 
 def GetXMLCase2(n):
-    z = 5
+    z = 4
     storeArr = []
     numRows = n // 3
     print(numRows)
     for i in range(numRows):
         this = '''
-                <ImageView
-                    android:id="@+id/ribbon%s"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintStart_toEndOf="@+id/ribbon%s"
-                    app:layout_constraintTop_toBottomOf="@+id/ribbon%s"
-                    app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
-                '''%(z+2, z+1, z-1)
+            <ImageView
+                android:id="@+id/ribbon%s"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toStartOf="@+id/ribbon%s"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ribbon%s"
+                app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
+                '''%(z+1, z+2, z-2)
         that = '''
-                <ImageView
-                    android:id="@+id/ribbon%s"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintStart_toEndOf="@+id/ribbon%s"
-                    app:layout_constraintTop_toBottomOf="@+id/ribbon%s"
-                    app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
-                '''%(z+3, z+2, z)
+        <ImageView
+            android:id="@+id/ribbon%s"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toStartOf="@+id/ribbon%s"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/ribbon%s"
+            app:layout_constraintTop_toBottomOf="@+id/ribbon%s"
+            app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
+                '''%(z+2, z+3, z+1, z-1)
         theOther ='''        
-                    <ImageView
-                    android:id="@+id/ribbon%s"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintStart_toStartOf="%s"
-                    app:layout_constraintTop_toBottomOf="@+id/ribbon%s"
-                    app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
-                    '''%(z+1, "parent", z-2)
+            <ImageView
+                android:id="@+id/ribbon%s"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/ribbon%s"
+                app:layout_constraintTop_toBottomOf="@+id/ribbon%s"
+                app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
+                    '''%(z+3, z+2, z)
         z+=3
-        storeArr.append(theOther)
         storeArr.append(this)
         storeArr.append(that)
+        storeArr.append(theOther)
     for i in range(3):
         del storeArr[-1]
 
@@ -155,75 +167,187 @@ def GetXMLCase2(n):
         listToStrList = ' '.join([(elem) for elem in storeArr]) 
         listToStr = ' '.join([(elem) for elem in storeArr]) 
         outPut = '''
-        <ImageView
-            android:id="@+id/ribbon1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="66dp"
-            android:layout_marginLeft="66dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
+            <ImageView
+                android:id="@+id/placeholder1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                app:background="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/ribbon1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@android:color/transparent" />
 
-        <ImageView
-            android:id="@+id/ribbon2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="66dp"
-            android:layout_marginRight="66dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
+            <ImageView
+                android:id="@+id/placeholder2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toStartOf="@+id/ribbon1"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
 
-        <ImageView
-            android:id="@+id/ribbon3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ribbon1"
-            app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
+            <ImageView
+                android:id="@+id/ribbon1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toStartOf="@+id/placeholder1"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/placeholder2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
 
-        <ImageView
-            android:id="@+id/ribbon4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toEndOf="@+id/ribbon3"
-            app:layout_constraintTop_toBottomOf="@+id/ribbon2"
-            app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
+            <ImageView
+                android:id="@+id/ribbon2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toStartOf="@+id/ribbon3"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ribbon1"
+                app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
 
-        <ImageView
-            android:id="@+id/ribbon5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/ribbon4"
-            app:layout_constraintTop_toBottomOf="@+id/ribbon2"
-            app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
+            <ImageView
+                android:id="@+id/ribbon3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toStartOf="@+id/ribbon4"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/ribbon2"
+                app:layout_constraintTop_toBottomOf="@+id/ribbon1"
+                app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
+
+            <ImageView
+                android:id="@+id/ribbon4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/ribbon3"
+                app:layout_constraintTop_toBottomOf="@+id/ribbon1"
+                app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
             %s
             '''%(listToStr)
         final = '''
         <?xml version="1.0" encoding="utf-8"?>
-        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools"
             android:id="@+id/ribbonRack"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
-            android:orientation="vertical">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:adjustViewBounds="true">
+            android:orientation="vertical"
+            app:layout_constraintHorizontal_chainStyle="packed">
             %s
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </RelativeLayout>'''%(outPut)
+            </androidx.constraintlayout.widget.ConstraintLayout>'''%(outPut)
     print(final)
 
+def GetXMLBoundaries(n):
+   storeArr = []
+   z=1
+   for i in range(n):
+        this = '''
+                <ImageView
+                    android:id="@+id/ribbon%s_2"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    app:layout_constraintBottom_toBottomOf="@id/ribbon%s"
+                    app:layout_constraintEnd_toEndOf="@+id/ribbon%s"
+                    app:layout_constraintStart_toStartOf="@id/ribbon%s"
+                    app:layout_constraintTop_toTopOf="@id/ribbon%s" />
+
+                <ImageView
+                    android:id="@+id/ribbon%s_3"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    app:layout_constraintBottom_toBottomOf="@id/ribbon%s"
+                    app:layout_constraintEnd_toEndOf="@+id/ribbon%s"
+                    app:layout_constraintStart_toStartOf="@id/ribbon%s"
+                    app:layout_constraintTop_toTopOf="@id/ribbon%s" />
+
+                <ImageView
+                    android:id="@+id/ribbon%s_4"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    app:layout_constraintBottom_toBottomOf="@id/ribbon%s"
+                    app:layout_constraintEnd_toEndOf="@+id/ribbon%s"
+                    app:layout_constraintStart_toStartOf="@id/ribbon%s"
+                    app:layout_constraintTop_toTopOf="@id/ribbon%s" />
+
+                <ImageView
+                    android:id="@+id/ribbon%s_5"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    app:layout_constraintBottom_toBottomOf="@id/ribbon%s"
+                    app:layout_constraintEnd_toEndOf="@+id/ribbon%s"
+                    app:layout_constraintStart_toStartOf="@id/ribbon%s"
+                    app:layout_constraintTop_toTopOf="@id/ribbon%s"
+                    app:layout_constraintVertical_bias="0.555" />
+
+                <ImageView
+                    android:id="@+id/ribbon%s_6"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    app:layout_constraintBottom_toBottomOf="@id/ribbon%s"
+                    app:layout_constraintEnd_toEndOf="@+id/ribbon%s"
+                    app:layout_constraintStart_toStartOf="@id/ribbon%s"
+                    app:layout_constraintTop_toTopOf="@id/ribbon%s" />
+
+                <ImageView
+                    android:id="@+id/ribbon%s_7"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    app:layout_constraintBottom_toBottomOf="@id/ribbon%s"
+                    app:layout_constraintEnd_toEndOf="@+id/ribbon%s"
+                    app:layout_constraintHorizontal_bias=".50"
+                    app:layout_constraintStart_toStartOf="@id/ribbon%s"
+                    app:layout_constraintTop_toTopOf="@id/ribbon%s" />
+
+                <ImageView
+                    android:id="@+id/ribbon%s_8"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    app:layout_constraintBottom_toBottomOf="@id/ribbon%s"
+                    app:layout_constraintEnd_toEndOf="@+id/ribbon%s"
+                    app:layout_constraintHorizontal_bias="0.50"
+                    app:layout_constraintStart_toStartOf="@id/ribbon%s"
+                    app:layout_constraintTop_toTopOf="@id/ribbon%s"
+                    app:layout_constraintVertical_bias="0.50" />
+                    '''%(z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z)
+        print(this)
+        z+=1
+        file1 = open("this.txt","a")  
+        file1.writelines(this)
+
+
 #Case 1
-def GetXMLCase1(n):
+def GetXMLCase3(n):
     z = 5
     storeArr = []
     numRows = n // 3
@@ -260,7 +384,7 @@ def GetXMLCase1(n):
         storeArr.append(this)
         storeArr.append(that)
         storeArr.append(theOther)
-    for i in range(5):
+    for i in range(4):
         del storeArr[-1]
 
     for i in range(1):
@@ -331,7 +455,8 @@ def GetXMLCase1(n):
 
 
 #GetXMLCase1(48)
-GetXMLCase2(6)
+GetXMLCase2(7)
+GetXMLBoundaries(7)
 #GetXMLCase3(50)
 
 
