@@ -156,8 +156,8 @@
         android:id="@+id/ribbon1_5"
         android:layout_width="@dimen/_18sdp"
         android:layout_height="@dimen/_18sdp"
-        android:layout_marginStart="@dimen/_15sdp"
-        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_22sdp"
+        android:layout_marginRight="@dimen/_22sdp"
         android:rotation="-10"
         app:layout_constraintBottom_toBottomOf="@id/ribbon1"
         app:layout_constraintEnd_toEndOf="@+id/ribbon1"
@@ -169,8 +169,8 @@
         android:id="@+id/ribbon1_6"
         android:layout_width="@dimen/_18sdp"
         android:layout_height="@dimen/_18sdp"
-        android:layout_marginEnd="@dimen/_15sdp"
-        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_23sdp"
+        android:layout_marginRight="@dimen/_23sdp"
         android:rotation="-10"
         app:layout_constraintBottom_toBottomOf="@id/ribbon1"
         app:layout_constraintEnd_toEndOf="@+id/ribbon1"
@@ -202,6 +202,528 @@
         app:layout_constraintHorizontal_bias="0.50"
         app:layout_constraintStart_toStartOf="@id/ribbon1"
         app:layout_constraintTop_toTopOf="@id/ribbon1"
+        app:layout_constraintVertical_bias="0.50" />
+
+
+    <ImageView
+        android:id="@+id/ribbon2_2"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon2"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon2"
+        app:layout_constraintStart_toStartOf="@id/ribbon2"
+        app:layout_constraintTop_toTopOf="@id/ribbon2" />
+
+    <ImageView
+        android:id="@+id/ribbon2_3"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginStart="@dimen/_11sdp"
+        android:layout_marginLeft="@dimen/_11sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon2"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon2"
+        app:layout_constraintStart_toStartOf="@id/ribbon2"
+        app:layout_constraintTop_toTopOf="@id/ribbon2" />
+
+    <ImageView
+        android:id="@+id/ribbon2_4"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_11sdp"
+        android:layout_marginRight="@dimen/_11sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon2"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon2"
+        app:layout_constraintStart_toStartOf="@id/ribbon2"
+        app:layout_constraintTop_toTopOf="@id/ribbon2" />
+
+    <ImageView
+        android:id="@+id/ribbon2_5"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_22sdp"
+        android:layout_marginRight="@dimen/_22sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon2"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon2"
+        app:layout_constraintStart_toStartOf="@id/ribbon2"
+        app:layout_constraintTop_toTopOf="@id/ribbon2"
+        app:layout_constraintVertical_bias="0.555" />
+
+    <ImageView
+        android:id="@+id/ribbon2_6"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_23sdp"
+        android:layout_marginRight="@dimen/_23sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon2"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon2"
+        app:layout_constraintStart_toStartOf="@id/ribbon2"
+        app:layout_constraintTop_toTopOf="@id/ribbon2" />
+
+    <ImageView
+        android:id="@+id/ribbon2_7"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginStart="@dimen/_33sdp"
+        android:layout_marginLeft="@dimen/_33sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon2"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon2"
+        app:layout_constraintHorizontal_bias=".50"
+        app:layout_constraintStart_toStartOf="@id/ribbon2"
+        app:layout_constraintTop_toTopOf="@id/ribbon2" />
+
+    <ImageView
+        android:id="@+id/ribbon2_8"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_33sdp"
+        android:layout_marginRight="@dimen/_33sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon2"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon2"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="@id/ribbon2"
+        app:layout_constraintTop_toTopOf="@id/ribbon2"
+        app:layout_constraintVertical_bias="0.50" />
+
+
+    <ImageView
+        android:id="@+id/ribbon3_2"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon3"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon3"
+        app:layout_constraintStart_toStartOf="@id/ribbon3"
+        app:layout_constraintTop_toTopOf="@id/ribbon3" />
+
+    <ImageView
+        android:id="@+id/ribbon3_3"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginStart="@dimen/_11sdp"
+        android:layout_marginLeft="@dimen/_11sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon3"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon3"
+        app:layout_constraintStart_toStartOf="@id/ribbon3"
+        app:layout_constraintTop_toTopOf="@id/ribbon3" />
+
+    <ImageView
+        android:id="@+id/ribbon3_4"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_11sdp"
+        android:layout_marginRight="@dimen/_11sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon3"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon3"
+        app:layout_constraintStart_toStartOf="@id/ribbon3"
+        app:layout_constraintTop_toTopOf="@id/ribbon3" />
+
+    <ImageView
+        android:id="@+id/ribbon3_5"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_22sdp"
+        android:layout_marginRight="@dimen/_22sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon3"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon3"
+        app:layout_constraintStart_toStartOf="@id/ribbon3"
+        app:layout_constraintTop_toTopOf="@id/ribbon3"
+        app:layout_constraintVertical_bias="0.555" />
+
+    <ImageView
+        android:id="@+id/ribbon3_6"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_23sdp"
+        android:layout_marginRight="@dimen/_23sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon3"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon3"
+        app:layout_constraintStart_toStartOf="@id/ribbon3"
+        app:layout_constraintTop_toTopOf="@id/ribbon3" />
+
+    <ImageView
+        android:id="@+id/ribbon3_7"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginStart="@dimen/_33sdp"
+        android:layout_marginLeft="@dimen/_33sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon3"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon3"
+        app:layout_constraintHorizontal_bias=".50"
+        app:layout_constraintStart_toStartOf="@id/ribbon3"
+        app:layout_constraintTop_toTopOf="@id/ribbon3" />
+
+    <ImageView
+        android:id="@+id/ribbon3_8"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_33sdp"
+        android:layout_marginRight="@dimen/_33sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon3"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon3"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="@id/ribbon3"
+        app:layout_constraintTop_toTopOf="@id/ribbon3"
+        app:layout_constraintVertical_bias="0.50" />
+
+
+    <ImageView
+        android:id="@+id/ribbon4_2"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon4"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon4"
+        app:layout_constraintStart_toStartOf="@id/ribbon4"
+        app:layout_constraintTop_toTopOf="@id/ribbon4" />
+
+    <ImageView
+        android:id="@+id/ribbon4_3"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginStart="@dimen/_11sdp"
+        android:layout_marginLeft="@dimen/_11sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon4"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon4"
+        app:layout_constraintStart_toStartOf="@id/ribbon4"
+        app:layout_constraintTop_toTopOf="@id/ribbon4" />
+
+    <ImageView
+        android:id="@+id/ribbon4_4"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_11sdp"
+        android:layout_marginRight="@dimen/_11sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon4"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon4"
+        app:layout_constraintStart_toStartOf="@id/ribbon4"
+        app:layout_constraintTop_toTopOf="@id/ribbon4" />
+
+    <ImageView
+        android:id="@+id/ribbon4_5"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_22sdp"
+        android:layout_marginRight="@dimen/_22sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon4"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon4"
+        app:layout_constraintStart_toStartOf="@id/ribbon4"
+        app:layout_constraintTop_toTopOf="@id/ribbon4"
+        app:layout_constraintVertical_bias="0.555" />
+
+    <ImageView
+        android:id="@+id/ribbon4_6"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_23sdp"
+        android:layout_marginRight="@dimen/_23sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon4"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon4"
+        app:layout_constraintStart_toStartOf="@id/ribbon4"
+        app:layout_constraintTop_toTopOf="@id/ribbon4" />
+
+    <ImageView
+        android:id="@+id/ribbon4_7"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginStart="@dimen/_33sdp"
+        android:layout_marginLeft="@dimen/_33sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon4"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon4"
+        app:layout_constraintHorizontal_bias=".50"
+        app:layout_constraintStart_toStartOf="@id/ribbon4"
+        app:layout_constraintTop_toTopOf="@id/ribbon4" />
+
+    <ImageView
+        android:id="@+id/ribbon4_8"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_33sdp"
+        android:layout_marginRight="@dimen/_33sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon4"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon4"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="@id/ribbon4"
+        app:layout_constraintTop_toTopOf="@id/ribbon4"
+        app:layout_constraintVertical_bias="0.50" />
+
+
+    <ImageView
+        android:id="@+id/ribbon5_2"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon5"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon5"
+        app:layout_constraintStart_toStartOf="@id/ribbon5"
+        app:layout_constraintTop_toTopOf="@id/ribbon5" />
+
+    <ImageView
+        android:id="@+id/ribbon5_3"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginStart="@dimen/_11sdp"
+        android:layout_marginLeft="@dimen/_11sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon5"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon5"
+        app:layout_constraintStart_toStartOf="@id/ribbon5"
+        app:layout_constraintTop_toTopOf="@id/ribbon5" />
+
+    <ImageView
+        android:id="@+id/ribbon5_4"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_11sdp"
+        android:layout_marginRight="@dimen/_11sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon5"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon5"
+        app:layout_constraintStart_toStartOf="@id/ribbon5"
+        app:layout_constraintTop_toTopOf="@id/ribbon5" />
+
+    <ImageView
+        android:id="@+id/ribbon5_5"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_22sdp"
+        android:layout_marginRight="@dimen/_22sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon5"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon5"
+        app:layout_constraintStart_toStartOf="@id/ribbon5"
+        app:layout_constraintTop_toTopOf="@id/ribbon5"
+        app:layout_constraintVertical_bias="0.555" />
+
+    <ImageView
+        android:id="@+id/ribbon5_6"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_23sdp"
+        android:layout_marginRight="@dimen/_23sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon5"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon5"
+        app:layout_constraintStart_toStartOf="@id/ribbon5"
+        app:layout_constraintTop_toTopOf="@id/ribbon5" />
+
+    <ImageView
+        android:id="@+id/ribbon5_7"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginStart="@dimen/_33sdp"
+        android:layout_marginLeft="@dimen/_33sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon5"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon5"
+        app:layout_constraintHorizontal_bias=".50"
+        app:layout_constraintStart_toStartOf="@id/ribbon5"
+        app:layout_constraintTop_toTopOf="@id/ribbon5" />
+
+    <ImageView
+        android:id="@+id/ribbon5_8"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_33sdp"
+        android:layout_marginRight="@dimen/_33sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon5"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon5"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="@id/ribbon5"
+        app:layout_constraintTop_toTopOf="@id/ribbon5"
+        app:layout_constraintVertical_bias="0.50" />
+
+
+    <ImageView
+        android:id="@+id/ribbon6_2"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon6"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon6"
+        app:layout_constraintStart_toStartOf="@id/ribbon6"
+        app:layout_constraintTop_toTopOf="@id/ribbon6" />
+
+    <ImageView
+        android:id="@+id/ribbon6_3"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginStart="@dimen/_11sdp"
+        android:layout_marginLeft="@dimen/_11sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon6"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon6"
+        app:layout_constraintStart_toStartOf="@id/ribbon6"
+        app:layout_constraintTop_toTopOf="@id/ribbon6" />
+
+    <ImageView
+        android:id="@+id/ribbon6_4"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_11sdp"
+        android:layout_marginRight="@dimen/_11sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon6"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon6"
+        app:layout_constraintStart_toStartOf="@id/ribbon6"
+        app:layout_constraintTop_toTopOf="@id/ribbon6" />
+
+    <ImageView
+        android:id="@+id/ribbon6_5"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_22sdp"
+        android:layout_marginRight="@dimen/_22sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon6"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon6"
+        app:layout_constraintStart_toStartOf="@id/ribbon6"
+        app:layout_constraintTop_toTopOf="@id/ribbon6"
+        app:layout_constraintVertical_bias="0.555" />
+
+    <ImageView
+        android:id="@+id/ribbon6_6"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_23sdp"
+        android:layout_marginRight="@dimen/_23sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon6"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon6"
+        app:layout_constraintStart_toStartOf="@id/ribbon6"
+        app:layout_constraintTop_toTopOf="@id/ribbon6" />
+
+    <ImageView
+        android:id="@+id/ribbon6_7"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginStart="@dimen/_33sdp"
+        android:layout_marginLeft="@dimen/_33sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon6"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon6"
+        app:layout_constraintHorizontal_bias=".50"
+        app:layout_constraintStart_toStartOf="@id/ribbon6"
+        app:layout_constraintTop_toTopOf="@id/ribbon6" />
+
+    <ImageView
+        android:id="@+id/ribbon6_8"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_33sdp"
+        android:layout_marginRight="@dimen/_33sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon6"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon6"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="@id/ribbon6"
+        app:layout_constraintTop_toTopOf="@id/ribbon6"
+        app:layout_constraintVertical_bias="0.50" />
+
+
+    <ImageView
+        android:id="@+id/ribbon7_2"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon7"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon7"
+        app:layout_constraintStart_toStartOf="@id/ribbon7"
+        app:layout_constraintTop_toTopOf="@id/ribbon7" />
+
+    <ImageView
+        android:id="@+id/ribbon7_3"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginStart="@dimen/_11sdp"
+        android:layout_marginLeft="@dimen/_11sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon7"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon7"
+        app:layout_constraintStart_toStartOf="@id/ribbon7"
+        app:layout_constraintTop_toTopOf="@id/ribbon7" />
+
+    <ImageView
+        android:id="@+id/ribbon7_4"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_11sdp"
+        android:layout_marginRight="@dimen/_11sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon7"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon7"
+        app:layout_constraintStart_toStartOf="@id/ribbon7"
+        app:layout_constraintTop_toTopOf="@id/ribbon7" />
+
+    <ImageView
+        android:id="@+id/ribbon7_5"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_22sdp"
+        android:layout_marginRight="@dimen/_22sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon7"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon7"
+        app:layout_constraintStart_toStartOf="@id/ribbon7"
+        app:layout_constraintTop_toTopOf="@id/ribbon7"
+        app:layout_constraintVertical_bias="0.555" />
+
+    <ImageView
+        android:id="@+id/ribbon7_6"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_23sdp"
+        android:layout_marginRight="@dimen/_23sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon7"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon7"
+        app:layout_constraintStart_toStartOf="@id/ribbon7"
+        app:layout_constraintTop_toTopOf="@id/ribbon7" />
+
+    <ImageView
+        android:id="@+id/ribbon7_7"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginStart="@dimen/_33sdp"
+        android:layout_marginLeft="@dimen/_33sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon7"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon7"
+        app:layout_constraintHorizontal_bias=".50"
+        app:layout_constraintStart_toStartOf="@id/ribbon7"
+        app:layout_constraintTop_toTopOf="@id/ribbon7" />
+
+    <ImageView
+        android:id="@+id/ribbon7_8"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_33sdp"
+        android:layout_marginRight="@dimen/_33sdp"
+        android:rotation="-10"
+        app:layout_constraintBottom_toBottomOf="@id/ribbon7"
+        app:layout_constraintEnd_toEndOf="@+id/ribbon7"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="@id/ribbon7"
+        app:layout_constraintTop_toTopOf="@id/ribbon7"
         app:layout_constraintVertical_bias="0.50" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
