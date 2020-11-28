@@ -52114,6 +52114,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks.get(ribbonIndex).get(i).setImageResource(android.R.color.transparent);
         }
         System.out.println("oaks"+oaks);
+
         PopupMenu oakMenu = new PopupMenu(mContext, v);
         oakMenu.getMenuInflater().inflate(R.menu.oak_leaf_menu, oakMenu.getMenu());
         oakMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
