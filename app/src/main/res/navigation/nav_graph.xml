@@ -19,19 +19,6 @@
             app:destination="@id/OufitFragment" />
     </fragment>
     <fragment
-        android:id="@+id/NewUniformPrompt"
-        android:name="com.example.asuandroid.screens.NewUniformPromptFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_new_uniform_prompt">
-
-        <action
-            android:id="@+id/action_second_fragment_to_third"
-            app:destination="@id/OufitFragment"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim"
-            app:popUpTo="@id/OufitFragment" />
-    </fragment>
-    <fragment
         android:id="@+id/OufitFragment"
         android:name="com.example.asuandroid.screens.OutfitFragment"
         android:label="fragment_uniform"
