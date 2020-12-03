@@ -23,14 +23,6 @@ public class CombatServiceFragment extends Fragment {
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
         //back to outfit prompt
-        view.findViewById(R.id.btn_combat_to_prompt).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                NavHostFragment.findNavController(CombatServiceFragment.this)
-                        .navigate(R.id.action_combatServiceFragment_to_uniformFragment);
-            }
-        });
     }
 }

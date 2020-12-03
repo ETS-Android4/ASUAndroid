@@ -52133,8 +52133,8 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
                     case R.id.item3:
                         Toast.makeText(context, "Item 3 clicked", Toast.LENGTH_SHORT).show();
                         oaks.get(ribbonIndex).get(0).setImageResource(R.drawable.ic_bronze_oakleaf_3d);
-                        oaks.get(ribbonIndex).get(5).setImageResource(R.drawable.ic_bronze_oakleaf_3d);
-                        oaks.get(ribbonIndex).get(6).setImageResource(R.drawable.ic_bronze_oakleaf_3d);
+                        oaks.get(ribbonIndex).get(3).setImageResource(R.drawable.ic_bronze_oakleaf_3d);
+                        oaks.get(ribbonIndex).get(4).setImageResource(R.drawable.ic_bronze_oakleaf_3d);
                         return true;
                     case R.id.item4:
                         Toast.makeText(context, "Item 4 clicked", Toast.LENGTH_SHORT).show();

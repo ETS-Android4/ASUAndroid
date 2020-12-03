@@ -52,6 +52,97 @@ def GetXMLCase1(n):
         storeArr.append(theOther)
     for i in range(3):
         del storeArr[-1]
+    a = 1
+    for i in range(n):
+        xml = '''
+            <ImageView
+                android:id="@+id/ribbon%s_2"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:rotation="-10"
+                app:layout_constraintBottom_toBottomOf="@id/ribbon%s"
+                app:layout_constraintEnd_toEndOf="@+id/ribbon%s"
+                app:layout_constraintStart_toStartOf="@id/ribbon%s"
+                app:layout_constraintTop_toTopOf="@id/ribbon%s" />
+
+            <ImageView
+                android:id="@+id/ribbon%s_3"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginStart="@dimen/_11sdp"
+                android:layout_marginLeft="@dimen/_11sdp"
+                android:rotation="-10"
+                app:layout_constraintBottom_toBottomOf="@id/ribbon%s"
+                app:layout_constraintEnd_toEndOf="@+id/ribbon%s"
+                app:layout_constraintStart_toStartOf="@id/ribbon%s"
+                app:layout_constraintTop_toTopOf="@id/ribbon%s" />
+
+            <ImageView
+                android:id="@+id/ribbon%s_4"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_11sdp"
+                android:layout_marginRight="@dimen/_11sdp"
+                android:rotation="-10"
+                app:layout_constraintBottom_toBottomOf="@id/ribbon%s"
+                app:layout_constraintEnd_toEndOf="@+id/ribbon%s"
+                app:layout_constraintStart_toStartOf="@id/ribbon%s"
+                app:layout_constraintTop_toTopOf="@id/ribbon%s" />
+
+            <ImageView
+                android:id="@+id/ribbon%s_5"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_22sdp"
+                android:layout_marginRight="@dimen/_22sdp"
+                android:rotation="-10"
+                app:layout_constraintBottom_toBottomOf="@id/ribbon%s"
+                app:layout_constraintEnd_toEndOf="@+id/ribbon%s"
+                app:layout_constraintStart_toStartOf="@id/ribbon%s"
+                app:layout_constraintTop_toTopOf="@id/ribbon%s"
+                app:layout_constraintVertical_bias="0.555" />
+
+            <ImageView
+                android:id="@+id/ribbon%s_6"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginStart="@dimen/_22sdp"
+                android:layout_marginLeft="@dimen/_22sdp"
+                android:rotation="-10"
+                app:layout_constraintBottom_toBottomOf="@id/ribbon%s"
+                app:layout_constraintEnd_toEndOf="@+id/ribbon%s"
+                app:layout_constraintStart_toStartOf="@id/ribbon%s"
+                app:layout_constraintTop_toTopOf="@id/ribbon%s" />
+
+            <ImageView
+                android:id="@+id/ribbon%s_7"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginStart="@dimen/_33sdp"
+                android:layout_marginLeft="@dimen/_33sdp"
+                android:rotation="-10"
+                app:layout_constraintBottom_toBottomOf="@id/ribbon%s"
+                app:layout_constraintEnd_toEndOf="@+id/ribbon%s"
+                app:layout_constraintHorizontal_bias=".50"
+                app:layout_constraintStart_toStartOf="@id/ribbon%s"
+                app:layout_constraintTop_toTopOf="@id/ribbon%s" />
+
+            <ImageView
+                android:id="@+id/ribbon%s_8"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_33sdp"
+                android:layout_marginRight="@dimen/_33sdp"
+                android:rotation="-10"
+                app:layout_constraintBottom_toBottomOf="@id/ribbon%s"
+                app:layout_constraintEnd_toEndOf="@+id/ribbon%s"
+                app:layout_constraintHorizontal_bias="0.50"
+                app:layout_constraintStart_toStartOf="@id/ribbon%s"
+                app:layout_constraintTop_toTopOf="@id/ribbon%s"
+                app:layout_constraintVertical_bias="0.50" />
+                    '''%(a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a)
+        a+=1
+        storeArr.append(xml)
 
     for i in range(1):
         listToStrList = ' '.join([(elem) for elem in storeArr]) 
@@ -163,6 +254,98 @@ def GetXMLCase2(n):
         storeArr.append(theOther)
     for i in range(3):
         del storeArr[-1]
+    
+    a = 1
+    for i in range(n):
+        xml = '''
+            <ImageView
+                android:id="@+id/ribbon%s_2"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:rotation="-10"
+                app:layout_constraintBottom_toBottomOf="@id/ribbon%s"
+                app:layout_constraintEnd_toEndOf="@+id/ribbon%s"
+                app:layout_constraintStart_toStartOf="@id/ribbon%s"
+                app:layout_constraintTop_toTopOf="@id/ribbon%s" />
+
+            <ImageView
+                android:id="@+id/ribbon%s_3"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginStart="@dimen/_11sdp"
+                android:layout_marginLeft="@dimen/_11sdp"
+                android:rotation="-10"
+                app:layout_constraintBottom_toBottomOf="@id/ribbon%s"
+                app:layout_constraintEnd_toEndOf="@+id/ribbon%s"
+                app:layout_constraintStart_toStartOf="@id/ribbon%s"
+                app:layout_constraintTop_toTopOf="@id/ribbon%s" />
+
+            <ImageView
+                android:id="@+id/ribbon%s_4"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_11sdp"
+                android:layout_marginRight="@dimen/_11sdp"
+                android:rotation="-10"
+                app:layout_constraintBottom_toBottomOf="@id/ribbon%s"
+                app:layout_constraintEnd_toEndOf="@+id/ribbon%s"
+                app:layout_constraintStart_toStartOf="@id/ribbon%s"
+                app:layout_constraintTop_toTopOf="@id/ribbon%s" />
+
+            <ImageView
+                android:id="@+id/ribbon%s_5"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_22sdp"
+                android:layout_marginRight="@dimen/_22sdp"
+                android:rotation="-10"
+                app:layout_constraintBottom_toBottomOf="@id/ribbon%s"
+                app:layout_constraintEnd_toEndOf="@+id/ribbon%s"
+                app:layout_constraintStart_toStartOf="@id/ribbon%s"
+                app:layout_constraintTop_toTopOf="@id/ribbon%s"
+                app:layout_constraintVertical_bias="0.555" />
+
+            <ImageView
+                android:id="@+id/ribbon%s_6"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginStart="@dimen/_22sdp"
+                android:layout_marginLeft="@dimen/_22sdp"
+                android:rotation="-10"
+                app:layout_constraintBottom_toBottomOf="@id/ribbon%s"
+                app:layout_constraintEnd_toEndOf="@+id/ribbon%s"
+                app:layout_constraintStart_toStartOf="@id/ribbon%s"
+                app:layout_constraintTop_toTopOf="@id/ribbon%s" />
+
+            <ImageView
+                android:id="@+id/ribbon%s_7"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginStart="@dimen/_33sdp"
+                android:layout_marginLeft="@dimen/_33sdp"
+                android:rotation="-10"
+                app:layout_constraintBottom_toBottomOf="@id/ribbon%s"
+                app:layout_constraintEnd_toEndOf="@+id/ribbon%s"
+                app:layout_constraintHorizontal_bias=".50"
+                app:layout_constraintStart_toStartOf="@id/ribbon%s"
+                app:layout_constraintTop_toTopOf="@id/ribbon%s" />
+
+            <ImageView
+                android:id="@+id/ribbon%s_8"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_33sdp"
+                android:layout_marginRight="@dimen/_33sdp"
+                android:rotation="-10"
+                app:layout_constraintBottom_toBottomOf="@id/ribbon%s"
+                app:layout_constraintEnd_toEndOf="@+id/ribbon%s"
+                app:layout_constraintHorizontal_bias="0.50"
+                app:layout_constraintStart_toStartOf="@id/ribbon%s"
+                app:layout_constraintTop_toTopOf="@id/ribbon%s"
+                app:layout_constraintVertical_bias="0.50" />
+                    '''%(a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a)
+        a+=1
+        storeArr.append(xml)
 
     for i in range(1):
         listToStrList = ' '.join([(elem) for elem in storeArr]) 
@@ -259,96 +442,6 @@ def GetXMLCase2(n):
         file1.writelines(final)
     print(final)
 
-def GetXMLBoundaries(n):
-   storeArr = []
-   z=1
-   for i in range(n):
-        this = '''
-                <ImageView
-                    android:id="@+id/ribbon%s_2"
-                    android:layout_width="@dimen/_20sdp"
-                    android:layout_height="@dimen/_20sdp"
-                    app:layout_constraintBottom_toBottomOf="@id/ribbon%s"
-                    app:layout_constraintEnd_toEndOf="@+id/ribbon%s"
-                    app:layout_constraintStart_toStartOf="@id/ribbon%s"
-                    app:layout_constraintTop_toTopOf="@id/ribbon%s" />
-
-                <ImageView
-                    android:id="@+id/ribbon%s_3"
-                    android:layout_width="@dimen/_20sdp"
-                    android:layout_height="@dimen/_20sdp"
-                    android:layout_marginStart="@dimen/_5sdp"
-                    android:layout_marginLeft="@dimen/_5sdp"
-                    app:layout_constraintBottom_toBottomOf="@id/ribbon%s"
-                    app:layout_constraintEnd_toEndOf="@+id/ribbon%s"
-                    app:layout_constraintStart_toStartOf="@id/ribbon%s"
-                    app:layout_constraintTop_toTopOf="@id/ribbon%s" />
-
-                <ImageView
-                    android:id="@+id/ribbon%s_4"
-                    android:layout_width="@dimen/_20sdp"
-                    android:layout_height="@dimen/_20sdp"
-                    android:layout_marginEnd="@dimen/_5sdp"
-                    android:layout_marginRight="@dimen/_5sdp"
-                    app:layout_constraintBottom_toBottomOf="@id/ribbon%s"
-                    app:layout_constraintEnd_toEndOf="@+id/ribbon%s"
-                    app:layout_constraintStart_toStartOf="@id/ribbon%s"
-                    app:layout_constraintTop_toTopOf="@id/ribbon%s" />
-
-                <ImageView
-                    android:id="@+id/ribbon%s_5"
-                    android:layout_width="@dimen/_20sdp"
-                    android:layout_height="@dimen/_20sdp"
-                    android:layout_marginStart="@dimen/_10sdp"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    app:layout_constraintBottom_toBottomOf="@id/ribbon%s"
-                    app:layout_constraintEnd_toEndOf="@+id/ribbon%s"
-                    app:layout_constraintStart_toStartOf="@id/ribbon%s"
-                    app:layout_constraintTop_toTopOf="@id/ribbon%s"
-                    app:layout_constraintVertical_bias="0.555" />
-
-                <ImageView
-                    android:id="@+id/ribbon%s_6"
-                    android:layout_width="@dimen/_20sdp"
-                    android:layout_height="@dimen/_20sdp"
-                    android:layout_marginEnd="@dimen/_10sdp"
-                    android:layout_marginRight="@dimen/_10sdp"
-                    app:layout_constraintBottom_toBottomOf="@id/ribbon%s"
-                    app:layout_constraintEnd_toEndOf="@+id/ribbon%s"
-                    app:layout_constraintStart_toStartOf="@id/ribbon%s"
-                    app:layout_constraintTop_toTopOf="@id/ribbon%s" />
-
-                <ImageView
-                    android:id="@+id/ribbon%s_7"
-                    android:layout_width="@dimen/_20sdp"
-                    android:layout_height="@dimen/_20sdp"
-                    android:layout_marginStart="@dimen/_15sdp"
-                    android:layout_marginLeft="@dimen/_15sdp"
-                    app:layout_constraintBottom_toBottomOf="@id/ribbon%s"
-                    app:layout_constraintEnd_toEndOf="@+id/ribbon%s"
-                    app:layout_constraintHorizontal_bias=".50"
-                    app:layout_constraintStart_toStartOf="@id/ribbon%s"
-                    app:layout_constraintTop_toTopOf="@id/ribbon%s" />
-
-                <ImageView
-                    android:id="@+id/ribbon%s_8"
-                    android:layout_width="@dimen/_20sdp"
-                    android:layout_height="@dimen/_20sdp"
-                    android:layout_marginEnd="@dimen/_15sdp"
-                    android:layout_marginRight="@dimen/_15sdp"
-                    app:layout_constraintBottom_toBottomOf="@id/ribbon%s"
-                    app:layout_constraintEnd_toEndOf="@+id/ribbon%s"
-                    app:layout_constraintHorizontal_bias="0.50"
-                    app:layout_constraintStart_toStartOf="@id/ribbon%s"
-                    app:layout_constraintTop_toTopOf="@id/ribbon%s"
-                    app:layout_constraintVertical_bias="0.50" />
-                    '''%(z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z)
-        print(this)
-        z+=1
-        file1 = open("this.txt","a")  
-        file1.writelines(this)
-
-
 #Case 1
 def GetXMLCase3(n):
     z = 3
@@ -399,9 +492,100 @@ def GetXMLCase3(n):
         storeArr.append(this)
         storeArr.append(that)
         storeArr.append(theOther)
-    
     for i in range(3):
         del storeArr[-1]
+        z=1
+    a = 1
+    for i in range(n):
+        xml = '''
+            <ImageView
+                android:id="@+id/ribbon%s_2"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:rotation="-10"
+                app:layout_constraintBottom_toBottomOf="@id/ribbon%s"
+                app:layout_constraintEnd_toEndOf="@+id/ribbon%s"
+                app:layout_constraintStart_toStartOf="@id/ribbon%s"
+                app:layout_constraintTop_toTopOf="@id/ribbon%s" />
+
+            <ImageView
+                android:id="@+id/ribbon%s_3"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginStart="@dimen/_11sdp"
+                android:layout_marginLeft="@dimen/_11sdp"
+                android:rotation="-10"
+                app:layout_constraintBottom_toBottomOf="@id/ribbon%s"
+                app:layout_constraintEnd_toEndOf="@+id/ribbon%s"
+                app:layout_constraintStart_toStartOf="@id/ribbon%s"
+                app:layout_constraintTop_toTopOf="@id/ribbon%s" />
+
+            <ImageView
+                android:id="@+id/ribbon%s_4"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_11sdp"
+                android:layout_marginRight="@dimen/_11sdp"
+                android:rotation="-10"
+                app:layout_constraintBottom_toBottomOf="@id/ribbon%s"
+                app:layout_constraintEnd_toEndOf="@+id/ribbon%s"
+                app:layout_constraintStart_toStartOf="@id/ribbon%s"
+                app:layout_constraintTop_toTopOf="@id/ribbon%s" />
+
+            <ImageView
+                android:id="@+id/ribbon%s_5"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_22sdp"
+                android:layout_marginRight="@dimen/_22sdp"
+                android:rotation="-10"
+                app:layout_constraintBottom_toBottomOf="@id/ribbon%s"
+                app:layout_constraintEnd_toEndOf="@+id/ribbon%s"
+                app:layout_constraintStart_toStartOf="@id/ribbon%s"
+                app:layout_constraintTop_toTopOf="@id/ribbon%s"
+                app:layout_constraintVertical_bias="0.555" />
+
+            <ImageView
+                android:id="@+id/ribbon%s_6"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginStart="@dimen/_22sdp"
+                android:layout_marginLeft="@dimen/_22sdp"
+                android:rotation="-10"
+                app:layout_constraintBottom_toBottomOf="@id/ribbon%s"
+                app:layout_constraintEnd_toEndOf="@+id/ribbon%s"
+                app:layout_constraintStart_toStartOf="@id/ribbon%s"
+                app:layout_constraintTop_toTopOf="@id/ribbon%s" />
+
+            <ImageView
+                android:id="@+id/ribbon%s_7"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginStart="@dimen/_33sdp"
+                android:layout_marginLeft="@dimen/_33sdp"
+                android:rotation="-10"
+                app:layout_constraintBottom_toBottomOf="@id/ribbon%s"
+                app:layout_constraintEnd_toEndOf="@+id/ribbon%s"
+                app:layout_constraintHorizontal_bias=".50"
+                app:layout_constraintStart_toStartOf="@id/ribbon%s"
+                app:layout_constraintTop_toTopOf="@id/ribbon%s" />
+
+            <ImageView
+                android:id="@+id/ribbon%s_8"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_33sdp"
+                android:layout_marginRight="@dimen/_33sdp"
+                android:rotation="-10"
+                app:layout_constraintBottom_toBottomOf="@id/ribbon%s"
+                app:layout_constraintEnd_toEndOf="@+id/ribbon%s"
+                app:layout_constraintHorizontal_bias="0.50"
+                app:layout_constraintStart_toStartOf="@id/ribbon%s"
+                app:layout_constraintTop_toTopOf="@id/ribbon%s"
+                app:layout_constraintVertical_bias="0.50" />
+                    '''%(a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a)
+        a+=1
+        storeArr.append(xml)
     for i in range(1):
         listToStrList = ' '.join([(elem) for elem in storeArr]) 
         listToStr = ' '.join([(elem) for elem in storeArr]) 
@@ -492,7 +676,7 @@ def GetXMLCase3(n):
 
             <ImageView
                 android:id="@+id/imageView5"
-                android:layout_width="100dp"
+                android:layout_width="@dimen/_50sdp"
                 android:layout_height="0dp"
                 android:background="@android:color/transparent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -507,9 +691,9 @@ def GetXMLCase3(n):
     file1.writelines(final)
     print(final)
 
-#GetXMLCase1(48)
-#GetXMLCase2(49)
-GetXMLCase3(50)
+#GetXMLCase1(3)
+#GetXMLCase2(1)
+#GetXMLCase3(2)
 
 
 

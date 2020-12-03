@@ -72,17 +72,6 @@ public class NewUniformPromptFragment extends Fragment implements AdapterView.On
         branchadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         yearsSpinner.setAdapter(yearsadapter);
 
-        view.findViewById(R.id.btn_tothirdFragment).setOnClickListener(new View.OnClickListener() {
-             @Override
-             public void onClick (View view){
-                 NavHostFragment.findNavController(NewUniformPromptFragment.this)
-                         .navigate(R.id.action_second_fragment_to_third);
-                  // TEST
-                 System.out.println("This is spinner array on NewUniformPrompt"+ spinnerAr);
-                 System.out.println("This is the all list on new Uniform Promt" + spinnerAr);
-             }
-         }
-        );
         return view;
     }
 

@@ -96,8 +96,8 @@
         android:id="@+id/ribbon1_6"
         android:layout_width="@dimen/_18sdp"
         android:layout_height="@dimen/_18sdp"
-        android:layout_marginEnd="@dimen/_23sdp"
-        android:layout_marginRight="@dimen/_23sdp"
+        android:layout_marginStart="@dimen/_22sdp"
+        android:layout_marginLeft="@dimen/_22sdp"
         android:rotation="-10"
         app:layout_constraintBottom_toBottomOf="@id/ribbon1"
         app:layout_constraintEnd_toEndOf="@+id/ribbon1"
@@ -182,8 +182,8 @@
         android:id="@+id/ribbon2_6"
         android:layout_width="@dimen/_18sdp"
         android:layout_height="@dimen/_18sdp"
-        android:layout_marginEnd="@dimen/_23sdp"
-        android:layout_marginRight="@dimen/_23sdp"
+        android:layout_marginStart="@dimen/_22sdp"
+        android:layout_marginLeft="@dimen/_22sdp"
         android:rotation="-10"
         app:layout_constraintBottom_toBottomOf="@id/ribbon2"
         app:layout_constraintEnd_toEndOf="@+id/ribbon2"
@@ -268,8 +268,8 @@
         android:id="@+id/ribbon3_6"
         android:layout_width="@dimen/_18sdp"
         android:layout_height="@dimen/_18sdp"
-        android:layout_marginEnd="@dimen/_23sdp"
-        android:layout_marginRight="@dimen/_23sdp"
+        android:layout_marginStart="@dimen/_22sdp"
+        android:layout_marginLeft="@dimen/_22sdp"
         android:rotation="-10"
         app:layout_constraintBottom_toBottomOf="@id/ribbon3"
         app:layout_constraintEnd_toEndOf="@+id/ribbon3"
@@ -305,4 +305,3 @@
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
