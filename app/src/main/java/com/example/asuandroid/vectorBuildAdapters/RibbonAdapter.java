@@ -685,7 +685,6 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
 
         public Ribbon6Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images, ArrayList<List<ImageView>> oaks) {
             super(itemView);
-
             this.images = images;
             this.oaks = oaks;
             List<ImageView> oaks1 = new ArrayList<>();
@@ -754,7 +753,6 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks.add(oaks4);
             oaks.add(oaks5);
             oaks.add(oaks6);
-
             mImageView1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -768,7 +766,6 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
                     }
                 }
             });
-
             mImageView2.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -911,7 +908,6 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
 
         public Ribbon7Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images, ArrayList<List<ImageView>> oaks) {
             super(itemView);
-
             this.images = images;
             this.oaks = oaks;
             List<ImageView> oaks1 = new ArrayList<>();
@@ -1089,7 +1085,6 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
                     }
                 }
             });
-
         }
     }
 
