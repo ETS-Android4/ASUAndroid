@@ -1,38 +1,27 @@
 package com.example.asuandroid.outfitAdapters;
 
 import android.annotation.SuppressLint;
-import android.graphics.Bitmap;
-import android.graphics.Canvas;
 import android.graphics.Color;
-import android.graphics.Paint;
 import android.graphics.drawable.AnimationDrawable;
-import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.view.View;
 import com.example.asuandroid.R;
-import com.example.asuandroid.outfitfragments.AwardItem;
-import com.example.asuandroid.threads.MultithreadingDemo;
+import com.example.asuandroid.vectorItems.RibbonCardItem;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.net.CookieHandler;
 import java.util.ArrayList;
 
-public class AwardAdapter extends RecyclerView.Adapter<AwardAdapter.AwardViewHolder> {
+public class RibbonCardAdapter extends RecyclerView.Adapter<RibbonCardAdapter.AwardViewHolder> {
     //private ImageView mRibbonAdd;
-    public ArrayList<AwardItem> mAwardList;
-    private boolean isRibbonOn = false;
+    public ArrayList<RibbonCardItem> mAwardList;
     public static ArrayList<Integer> awardImageList = new ArrayList<>();
-    //private CompoundButton.OnCheckedChangeListener;
     private OnItemClickListener mListener;
 
-    public interface OnItemClickListener {
-        void onAddRibbonClick(int ribbon, int position, boolean isRibbonOn);
-    }
-
+    public interface OnItemClickListener { void onAddRibbonClick(int ribbon, int position, boolean isRibbonOn);}
     public void setOnItemClickListener(OnItemClickListener listener) {
         mListener = listener;
     }
@@ -40,11 +29,9 @@ public class AwardAdapter extends RecyclerView.Adapter<AwardAdapter.AwardViewHol
     public class AwardViewHolder extends RecyclerView.ViewHolder {
         public boolean isRibbonOn = false;
         public ImageView mImageView;
-        public int ribbonPath;
         public TextView mTextView1;
         public TextView mTextView2;
         public ImageView mRibbonAdd;
-
         @SuppressLint("ClickableViewAccessibility")
         public AwardViewHolder(View itemView, OnItemClickListener listener) {
         super(itemView);
@@ -88,9 +75,8 @@ public class AwardAdapter extends RecyclerView.Adapter<AwardAdapter.AwardViewHol
             }
         });
     }
-    }
-
-    public AwardAdapter(ArrayList<AwardItem> awardList) {
+}
+    public RibbonCardAdapter(ArrayList<RibbonCardItem> awardList) {
         mAwardList = awardList;
     }
     @Override
@@ -102,14 +88,12 @@ public class AwardAdapter extends RecyclerView.Adapter<AwardAdapter.AwardViewHol
     }
     @Override
     public void onBindViewHolder(AwardViewHolder holder, int position) {
-        AwardItem currentItem = (AwardItem) mAwardList.get(position);
+        RibbonCardItem currentItem = (RibbonCardItem) mAwardList.get(position);
         holder.mImageView.setImageResource(currentItem.getImageResource());
         holder.mTextView1.setText(currentItem.getText1());
         holder.mTextView2.setText(currentItem.getText2());
         //holder.mRibbonSwitch.setChecked(currentItem.getSwitch1(position).isChecked());
-
     }
-
     @Override
     public int getItemCount() {
         return mAwardList.size();

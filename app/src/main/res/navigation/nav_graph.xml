@@ -67,6 +67,9 @@
         <action
             android:id="@+id/action_badgeFragment_to_uniformFragment"
             app:destination="@id/OufitFragment" />
+        <action
+            android:id="@+id/action_badgeFragment_to_badge2Fragment"
+            app:destination="@id/badge2Fragment" />
     </fragment>
     <fragment
         android:id="@+id/combatServiceFragment"
@@ -175,6 +178,11 @@
             android:id="@+id/action_oakLeafDialog_to_award2Fragment"
             app:destination="@id/award2Fragment" />
     </dialog>
+    <fragment
+        android:id="@+id/badge2Fragment"
+        android:name="com.example.asuandroid.outfitfragments.Badge2Fragment"
+        android:label="fragment_badge2"
+        tools:layout="@layout/fragment_badge2" />
 
 
 </navigation>

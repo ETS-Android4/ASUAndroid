@@ -7,59 +7,61 @@ import androidx.appcompat.widget.SwitchCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.navigation.fragment.NavHostFragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 
 import com.example.asuandroid.R;
-import com.example.asuandroid.outfitAdapters.AwardAdapter;
+import com.example.asuandroid.outfitAdapters.BadgesCardAdapter;
+import com.example.asuandroid.vectorItems.BadgeCardItem;
+import com.google.android.flexbox.FlexWrap;
+import com.google.android.flexbox.FlexboxLayoutManager;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class BadgeFragment extends Fragment {
-    private ArrayList<AwardItem> mBadgeList;
-    private AwardAdapter mRecyclerViewAdapter;
+    private ArrayList<BadgeCardItem> mBadgeList;
+    private BadgesCardAdapter mRecyclerViewAdapter;
     private RecyclerView mRecyclerView;
     public SwitchCompat switchRibbon;
     public static ArrayList<Integer> badgeImages = new ArrayList<Integer>();
-
-
+    public static ArrayList<Integer> finalExport = new ArrayList<>();
     public void addRibbon(String ribbon){
     }
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        createAwardList();
-        //buildRecyclerView(container.findViewById(R.id.recyclerView));
-        // Inflate the layout for this fragment
+        createBadgesList();
         final View view = inflater.inflate(R.layout.fragment_badge, container, false);
         final FragmentActivity c = getActivity();
         final RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recyclerViewBadge);
-        AwardAdapter mAdapter = new AwardAdapter(mBadgeList);
-        mRecyclerViewAdapter = new AwardAdapter(mBadgeList);
-        LinearLayoutManager layoutManager = new LinearLayoutManager(c);
+        BadgesCardAdapter mAdapter = new BadgesCardAdapter(mBadgeList);
+        mRecyclerViewAdapter = new BadgesCardAdapter(mBadgeList);
+        FlexboxLayoutManager layoutManager = new FlexboxLayoutManager(c);
+        layoutManager.setFlexWrap(FlexWrap.WRAP);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(mAdapter);
-        mAdapter.setOnItemClickListener(new AwardAdapter.OnItemClickListener() {
-
+        mAdapter.setOnItemClickListener(new BadgesCardAdapter.OnItemClickListener() {
             @Override
-            public void onAddRibbonClick(int ribbon, int position, boolean isRibbonOn) {
+            public void onAddBadgesClick(int badge, int position, boolean isBadgeOn) {
                 assert c != null;
-                //Toast.makeText(c.getApplicationContext(), ribbon, Toast.LENGTH_LONG).show();
-                badgeImages.add(ribbon);
+                if(isBadgeOn){
+                    badgeImages.add(badge);
+                } else if (!isBadgeOn){
+                    System.out.println(badgeImages.size());
+                    badgeImages.removeAll(Arrays.asList(badge));
+                }
             }
         });
         return view;
     }
-
-    private void createAwardList() {
-        mBadgeList = new ArrayList<>();
-       mBadgeList.add(new AwardItem(R.drawable.ic_combat_action_badge, "Combat Action Badge", "hello", R.drawable.ic_frame00));
-       mBadgeList.add(new AwardItem(R.drawable.ic_combat_infantry_badge, "Combat Action Badge", "R.string.ref2", R.drawable.ic_frame00));
+    private void createBadgesList() {
+       mBadgeList = new ArrayList<>();
+       mBadgeList.add(new BadgeCardItem(R.drawable.ic_combat_action_badge, "Combat Action Badge", "hello", R.drawable.ic_frame00));
+       mBadgeList.add(new BadgeCardItem(R.drawable.ic_combat_infantry_badge, "Combat Action Badge", "R.string.ref2", R.drawable.ic_frame00));
     }
 
 
@@ -70,8 +72,14 @@ public class BadgeFragment extends Fragment {
         view.findViewById(R.id.btn_badge_to_prompt).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                System.out.println(badgeImages.size());
+                badgeImages.trimToSize();
+                System.out.println(badgeImages.size());
+                finalExport = badgeImages;
+                System.out.println("Heres the size of badgeImages" + badgeImages.size());
+                System.out.println(badgeImages);
                 NavHostFragment.findNavController(BadgeFragment.this)
-                        .navigate(R.id.action_badgeFragment_to_uniformFragment);
+                        .navigate(R.id.action_badgeFragment_to_badge2Fragment);
             }
         });
     }
