@@ -2,24 +2,24 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/ribbon_card"
+    android:id="@+id/badge_card"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:cardPreventCornerOverlap="false"
-    >
+    app:cardBackgroundColor="@color/colorWhite"
+    app:cardPreventCornerOverlap="false">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_margin="4dp"
         android:background="@drawable/button_ribbon">
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="102dp"
-            android:layout_height="59dp"
-            android:padding="2dp"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="49dp"
+            android:padding="6dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -27,13 +27,16 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
             android:text="@string/r1"
-            android:textColor="@android:color/black"
+            android:textColor="@color/colorPrimary"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintLeft_toRightOf="@+id/imageView"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toStartOf="@+id/img_addBadge"
+            app:layout_constraintHorizontal_bias="0.103"
             app:layout_constraintStart_toEndOf="@+id/imageView"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -41,21 +44,22 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
-            android:text="Line 2"
+            android:layout_marginStart="48dp"
+            android:layout_marginLeft="48dp"
             android:textSize="15sp"
+            app:layout_constraintEnd_toStartOf="@+id/img_addBadge"
+            app:layout_constraintHorizontal_bias="0.09"
             app:layout_constraintLeft_toRightOf="@+id/imageView"
             app:layout_constraintStart_toEndOf="@+id/imageView"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <ImageView
-            android:id="@+id/img_addRibbon"
+            android:id="@+id/img_addBadge"
             android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_height="35dp"
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
-            android:background="@drawable/ic_add_box"
+            android:background="@drawable/ic_frame00"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"

@@ -12,13 +12,10 @@ import androidx.fragment.app.Fragment;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.FragmentActivity;
 import androidx.navigation.fragment.NavHostFragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.util.ArraySet;
-import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,18 +24,13 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.asuandroid.R;
-import com.example.asuandroid.dialogs.Award2Dialog;
-import com.example.asuandroid.screens.MainActivity;
-import com.example.asuandroid.threads.MultithreadingDemo;
 import com.example.asuandroid.vectorBuildAdapters.RibbonAdapter;
-import com.example.asuandroid.outfitfragments.AwardFragment;
-import com.example.asuandroid.vectorBuildAdapters.RibbonItem;
+import com.example.asuandroid.vectorItems.RibbonItem;
 import com.google.android.flexbox.FlexWrap;
 import com.google.android.flexbox.FlexboxLayoutManager;
 
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Award2Fragment extends Fragment implements PopupMenu.OnMenuItemClickListener {
     public static ArrayList<Integer> fromAward = AwardFragment.finalExport;
@@ -48,7 +40,6 @@ public class Award2Fragment extends Fragment implements PopupMenu.OnMenuItemClic
     public static ArrayList<Drawable> bitmapDrawableArray = new ArrayList<Drawable>();
     RecyclerView.RecycledViewPool sharedPool = new RecyclerView.RecycledViewPool();
     public static Context context;
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -286,6 +277,7 @@ public class Award2Fragment extends Fragment implements PopupMenu.OnMenuItemClic
         view.setDrawingCacheEnabled(true);
         //ConstraintLayout uniformConstraint = view.findViewById(R.id.uniform_constraint);
         Button convertView = view.findViewById(R.id.btn_populateFromDialog);
+        Button continueToBadge = view.findViewById(R.id.btn_award2_continue);
         //ImageView holderConvert = view.findViewById(R.id.convertedHolder);
         convertView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -301,6 +293,20 @@ public class Award2Fragment extends Fragment implements PopupMenu.OnMenuItemClic
                     .navigate(R.id.action_award2Fragment_to_award2Dialog);
                 //System.out.println(bitmap);
             }
+        });
+        continueToBadge.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                        Bitmap bpm = Bitmap.createBitmap(recyclerView.getWidth(), recyclerView.getHeight(), Bitmap.Config.ARGB_8888);
+                        Canvas canvas = new Canvas(bpm);
+                        recyclerView.draw(canvas);
+                        Drawable d1 = new BitmapDrawable(getResources(), bpm);
+                        //zoomageView.setDrawableResource(d);
+                        bitmapDrawableArray.add(d1);
+                        System.out.println(bitmapDrawableArray);
+                        NavHostFragment.findNavController(Award2Fragment.this)
+                                .navigate(R.id.action_award2Fragment_to_badgeFragment);
+                };
         });
         /*
          */

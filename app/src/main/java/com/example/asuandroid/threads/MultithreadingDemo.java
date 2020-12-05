@@ -2,9 +2,7 @@ package com.example.asuandroid.threads;
 
 public class MultithreadingDemo {
     public MultithreadingDemo(Runnable runnable) {
-
     }
-
     public void run()
     {
         try
@@ -13,7 +11,6 @@ public class MultithreadingDemo {
             System.out.println ("Thread " +
                     Thread.currentThread().getId() +
                     " is running");
-
         }
         catch (Exception e)
         {
