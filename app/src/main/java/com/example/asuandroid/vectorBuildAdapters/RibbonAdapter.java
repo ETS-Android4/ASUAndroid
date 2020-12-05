@@ -2,6 +2,7 @@ package com.example.asuandroid.vectorBuildAdapters;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.ViewGroup;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.asuandroid.R;
+import com.example.asuandroid.threads.MultithreadingDemo;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.PopupMenu;
@@ -17,11 +19,19 @@ import androidx.collection.ArraySet;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Set;
 
 import static com.example.asuandroid.outfitfragments.Award2Fragment.context;
 
-public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>  {
+
     public static ArrayList<RibbonItem> mRibbonList;
     public static ArraySet<ImageView> images = new ArraySet<ImageView>();
     public static ArrayList<List<ImageView>> oaks = new ArrayList<>();
@@ -30,7 +40,6 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
     //private CompoundButton.OnCheckedChangeListener;
     private OnItemClickListener mListener;
     private static Context mContext = context;
-
 
     public ArrayList<RibbonItem> RibbonAdapter(ArrayList<RibbonItem> mRibbonList) {
         return mRibbonList;
@@ -63,8 +72,6 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             this.oaks = oaks;
             mImageView1 = itemView.findViewById(R.id.ribbon1);
             mImageView1_2 = itemView.findViewById(R.id.ribbon1_2);
-            mImageView1_2.getLayoutParams().height = mImageView1.getHeight();
-            mImageView1_2.getLayoutParams().width = mImageView1.getWidth()/20*100;
             mImageView1_3 = itemView.findViewById(R.id.ribbon1_3);
             mImageView1_4 = itemView.findViewById(R.id.ribbon1_4);
             mImageView1_5 = itemView.findViewById(R.id.ribbon1_5);
@@ -98,86 +105,85 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         }
     }
 
-        public static class Ribbon2Holder extends RecyclerView.ViewHolder {
-            private final ArraySet<ImageView> images;
-            private static ArrayList<List<ImageView>> oaks = new ArrayList<>();
-            private final ArraySet<ImageView> oaks1 = new ArraySet<>();
-            public ImageView mImageView1;
-            public ImageView mImageView1_2;
-            public ImageView mImageView1_3;
-            public ImageView mImageView1_4;
-            public ImageView mImageView1_5;
-            public ImageView mImageView1_6;
-            public ImageView mImageView1_7;
-            public ImageView mImageView1_8;
-            private final ArraySet<ImageView> oaks2 = new ArraySet<>();
-            public ImageView mImageView2;
-            public ImageView mImageView2_2;
-            public ImageView mImageView2_3;
-            public ImageView mImageView2_4;
-            public ImageView mImageView2_5;
-            public ImageView mImageView2_6;
-            public ImageView mImageView2_7;
-            public ImageView mImageView2_8;
+    public static class Ribbon2Holder extends RecyclerView.ViewHolder {
+        private final ArraySet<ImageView> images;
+        private static ArrayList<List<ImageView>> oaks = new ArrayList<>();
+        private final ArraySet<ImageView> oaks1 = new ArraySet<>();
+        public ImageView mImageView1;
+        public ImageView mImageView1_2;
+        public ImageView mImageView1_3;
+        public ImageView mImageView1_4;
+        public ImageView mImageView1_5;
+        public ImageView mImageView1_6;
+        public ImageView mImageView1_7;
+        public ImageView mImageView1_8;
+        private final ArraySet<ImageView> oaks2 = new ArraySet<>();
+        public ImageView mImageView2;
+        public ImageView mImageView2_2;
+        public ImageView mImageView2_3;
+        public ImageView mImageView2_4;
+        public ImageView mImageView2_5;
+        public ImageView mImageView2_6;
+        public ImageView mImageView2_7;
+        public ImageView mImageView2_8;
 
-            public Ribbon2Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images, ArrayList<List<ImageView>> oaks) {
-                super(itemView);
+        public Ribbon2Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images, ArrayList<List<ImageView>> oaks) {
+            super(itemView);
+            this.images = images;
+            this.oaks = oaks;
+            List<ImageView> oaks1 = new ArrayList<>();
+            mImageView1 = itemView.findViewById(R.id.ribbon1);
+            this.images.add(mImageView1);
+            oaks1.add(mImageView1_2 = itemView.findViewById(R.id.ribbon1_2));
+            oaks1.add(mImageView1_3 = itemView.findViewById(R.id.ribbon1_3));
+            oaks1.add(mImageView1_4 = itemView.findViewById(R.id.ribbon1_4));
+            oaks1.add(mImageView1_5 = itemView.findViewById(R.id.ribbon1_5));
+            oaks1.add(mImageView1_6 = itemView.findViewById(R.id.ribbon1_6));
+            oaks1.add(mImageView1_7 = itemView.findViewById(R.id.ribbon1_7));
+            oaks1.add(mImageView1_8 = itemView.findViewById(R.id.ribbon1_8));
+            List<ImageView> oaks2 = new ArrayList<>();
+            mImageView2 = itemView.findViewById(R.id.ribbon2);
+            this.images.add(mImageView2);
+            oaks2.add(mImageView2_2 = itemView.findViewById(R.id.ribbon2_2));
+            oaks2.add(mImageView2_3 = itemView.findViewById(R.id.ribbon2_3));
+            oaks2.add(mImageView2_4 = itemView.findViewById(R.id.ribbon2_4));
+            oaks2.add(mImageView2_5 = itemView.findViewById(R.id.ribbon2_5));
+            oaks2.add(mImageView2_6 = itemView.findViewById(R.id.ribbon2_6));
+            oaks2.add(mImageView2_7 = itemView.findViewById(R.id.ribbon2_7));
+            oaks2.add(mImageView2_8 = itemView.findViewById(R.id.ribbon2_8));
+            oaks.add(oaks1);
+            oaks.add(oaks2);
 
-                this.images = images;
-                this.oaks = oaks;
-                List<ImageView> oaks1 = new ArrayList<>();
-                mImageView1 = itemView.findViewById(R.id.ribbon1);
-                this.images.add(mImageView1);
-                oaks1.add(mImageView1_2 = itemView.findViewById(R.id.ribbon1_2));
-                oaks1.add(mImageView1_3 = itemView.findViewById(R.id.ribbon1_3));
-                oaks1.add(mImageView1_4 = itemView.findViewById(R.id.ribbon1_4));
-                oaks1.add(mImageView1_5 = itemView.findViewById(R.id.ribbon1_5));
-                oaks1.add(mImageView1_6 = itemView.findViewById(R.id.ribbon1_6));
-                oaks1.add(mImageView1_7 = itemView.findViewById(R.id.ribbon1_7));
-                oaks1.add(mImageView1_8 = itemView.findViewById(R.id.ribbon1_8));
-                List<ImageView> oaks2 = new ArrayList<>();
-                mImageView2 = itemView.findViewById(R.id.ribbon2);
-                this.images.add(mImageView2);
-                oaks2.add(mImageView2_2 = itemView.findViewById(R.id.ribbon2_2));
-                oaks2.add(mImageView2_3 = itemView.findViewById(R.id.ribbon2_3));
-                oaks2.add(mImageView2_4 = itemView.findViewById(R.id.ribbon2_4));
-                oaks2.add(mImageView2_5 = itemView.findViewById(R.id.ribbon2_5));
-                oaks2.add(mImageView2_6 = itemView.findViewById(R.id.ribbon2_6));
-                oaks2.add(mImageView2_7 = itemView.findViewById(R.id.ribbon2_7));
-                oaks2.add(mImageView2_8 = itemView.findViewById(R.id.ribbon2_8));
-                oaks.add(oaks1);
-                oaks.add(oaks2);
-
-                mImageView1.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        if ((listener != null)) {
-                            int position = getAdapterPosition();
-                            int ribbon = mRibbonList.get(position).getImageResource1();
-                            if (position != RecyclerView.NO_POSITION) {
-                                listener.onEditRibbonClick(ribbon, position);
-                            }
-                            System.out.println("youclickedme" + ribbon);
+            mImageView1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if ((listener != null)) {
+                        int position = getAdapterPosition();
+                        int ribbon = mRibbonList.get(position).getImageResource1();
+                        if (position != RecyclerView.NO_POSITION) {
+                            listener.onEditRibbonClick(ribbon, position);
                         }
+                        System.out.println("youclickedme" + ribbon);
                     }
-                });
+                }
+            });
 
-                mImageView2.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        if ((listener != null)) {
-                            int position = getAdapterPosition();
-                            int ribbon = mRibbonList.get(position).getImageResource1();
-                            if (position != RecyclerView.NO_POSITION) {
-                                listener.onEditRibbonClick(ribbon, position);
-                            }
-                            System.out.println("youclickedme" + ribbon);
+            mImageView2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if ((listener != null)) {
+                        int position = getAdapterPosition();
+                        int ribbon = mRibbonList.get(position).getImageResource1();
+                        if (position != RecyclerView.NO_POSITION) {
+                            listener.onEditRibbonClick(ribbon, position);
                         }
+                        System.out.println("youclickedme" + ribbon);
                     }
-                });
+                }
+            });
 
-            }
         }
+    }
 
     public static class Ribbon3Holder extends RecyclerView.ViewHolder {
         private final ArraySet<ImageView> images;
@@ -685,6 +691,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
 
         public Ribbon6Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images, ArrayList<List<ImageView>> oaks) {
             super(itemView);
+
             this.images = images;
             this.oaks = oaks;
             List<ImageView> oaks1 = new ArrayList<>();
@@ -738,7 +745,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -753,6 +760,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks.add(oaks4);
             oaks.add(oaks5);
             oaks.add(oaks6);
+
             mImageView1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -766,6 +774,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
                     }
                 }
             });
+
             mImageView2.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -908,6 +917,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
 
         public Ribbon7Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images, ArrayList<List<ImageView>> oaks) {
             super(itemView);
+
             this.images = images;
             this.oaks = oaks;
             List<ImageView> oaks1 = new ArrayList<>();
@@ -961,7 +971,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -1007,7 +1017,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
                 public void onClick(View view) {
                     if ((listener != null)) {
                         int position = getAdapterPosition();
-                        int ribbon = mRibbonList.get(position).getImageResource2();
+                        int ribbon = mRibbonList.get(position).getImageResource1();
                         if (position != RecyclerView.NO_POSITION) {
                             listener.onEditRibbonClick(ribbon, position);
                         }
@@ -1021,7 +1031,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
                 public void onClick(View view) {
                     if ((listener != null)) {
                         int position = getAdapterPosition();
-                        int ribbon = mRibbonList.get(position).getImageResource3();
+                        int ribbon = mRibbonList.get(position).getImageResource1();
                         if (position != RecyclerView.NO_POSITION) {
                             listener.onEditRibbonClick(ribbon, position);
                         }
@@ -1035,7 +1045,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
                 public void onClick(View view) {
                     if ((listener != null)) {
                         int position = getAdapterPosition();
-                        int ribbon = mRibbonList.get(position).getImageResource4();
+                        int ribbon = mRibbonList.get(position).getImageResource1();
                         if (position != RecyclerView.NO_POSITION) {
                             listener.onEditRibbonClick(ribbon, position);
                         }
@@ -1049,7 +1059,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
                 public void onClick(View view) {
                     if ((listener != null)) {
                         int position = getAdapterPosition();
-                        int ribbon = mRibbonList.get(position).getImageResource5();
+                        int ribbon = mRibbonList.get(position).getImageResource1();
                         if (position != RecyclerView.NO_POSITION) {
                             listener.onEditRibbonClick(ribbon, position);
                         }
@@ -1063,7 +1073,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
                 public void onClick(View view) {
                     if ((listener != null)) {
                         int position = getAdapterPosition();
-                        int ribbon = mRibbonList.get(position).getImageResource6();
+                        int ribbon = mRibbonList.get(position).getImageResource1();
                         if (position != RecyclerView.NO_POSITION) {
                             listener.onEditRibbonClick(ribbon, position);
                         }
@@ -1077,7 +1087,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
                 public void onClick(View view) {
                     if ((listener != null)) {
                         int position = getAdapterPosition();
-                        int ribbon = mRibbonList.get(position).getImageResource7();
+                        int ribbon = mRibbonList.get(position).getImageResource1();
                         if (position != RecyclerView.NO_POSITION) {
                             listener.onEditRibbonClick(ribbon, position);
                         }
@@ -1085,6 +1095,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
                     }
                 }
             });
+
         }
     }
 
@@ -1220,7 +1231,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -1240,7 +1251,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -1514,7 +1525,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -1534,7 +1545,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -1842,7 +1853,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -1862,7 +1873,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -2204,7 +2215,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -2224,7 +2235,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -2600,7 +2611,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -2620,7 +2631,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -3030,7 +3041,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -3050,7 +3061,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -3494,7 +3505,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -3514,7 +3525,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -3992,7 +4003,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -4012,7 +4023,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -4524,7 +4535,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -4544,7 +4555,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -5090,7 +5101,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -5110,7 +5121,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -5690,7 +5701,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -5710,7 +5721,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -6324,7 +6335,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -6344,7 +6355,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -6992,7 +7003,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -7012,7 +7023,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -7695,7 +7706,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -7715,7 +7726,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -8433,7 +8444,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -8453,7 +8464,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -9205,7 +9216,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -9225,7 +9236,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -10011,7 +10022,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -10031,7 +10042,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -10850,7 +10861,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -10870,7 +10881,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -11723,7 +11734,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -11743,7 +11754,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -12630,7 +12641,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -12650,7 +12661,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -13571,7 +13582,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -13591,7 +13602,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -14546,7 +14557,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -14566,7 +14577,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -15555,7 +15566,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -15575,7 +15586,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -16598,7 +16609,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -16618,7 +16629,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -17675,7 +17686,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -17695,7 +17706,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -18786,7 +18797,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -18806,7 +18817,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -19931,7 +19942,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -19951,7 +19962,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -21110,7 +21121,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -21130,7 +21141,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -22323,7 +22334,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -22343,7 +22354,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -23570,7 +23581,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -23590,7 +23601,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -24851,7 +24862,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -24871,7 +24882,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -26166,7 +26177,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -26186,7 +26197,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -27515,7 +27526,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -27535,7 +27546,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -28898,7 +28909,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -28918,7 +28929,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -30315,7 +30326,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -30335,7 +30346,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -31766,7 +31777,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -31786,7 +31797,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -33251,7 +33262,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -33271,7 +33282,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -34770,7 +34781,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -34790,7 +34801,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -36323,7 +36334,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -36343,7 +36354,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -37910,7 +37921,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -37930,7 +37941,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -39531,7 +39542,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -39551,7 +39562,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -41186,7 +41197,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -41206,7 +41217,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -42875,7 +42886,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
             oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
             List<ImageView> oaks6 = new ArrayList<>();
-            mImageView6 = itemView.findViewById(R.id.ribbon7);
+            mImageView6 = itemView.findViewById(R.id.ribbon6);
             this.images.add(mImageView6);
             oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
             oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
@@ -42895,7 +42906,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
             oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
             List<ImageView> oaks8 = new ArrayList<>();
-            mImageView8 = itemView.findViewById(R.id.ribbon6);
+            mImageView8 = itemView.findViewById(R.id.ribbon8);
             this.images.add(mImageView8);
             oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
             oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
@@ -44088,7 +44099,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         System.out.println("Here is the viewType" + ViewType);
         if (ViewType == 1) {
             view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item1, parent, false);
-            return new RibbonAdapter.Ribbon1Holder(view, mListener, images, oaks);
+            return new Ribbon1Holder(view, mListener, images, oaks);
         }
         if (ViewType == 2) {
             view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item2, parent, false);
@@ -44096,7 +44107,7 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         }
         if (ViewType == 3) {
             view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item3, parent, false);
-            return new RibbonAdapter.Ribbon3Holder(view, mListener, images, oaks);
+            return new Ribbon3Holder(view, mListener, images, oaks);
         }
         if (ViewType == 4) {
             view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ribbon_item4, parent, false);
@@ -52109,7 +52120,6 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             oaks.get(ribbonIndex).get(i).setImageResource(android.R.color.transparent);
         }
         System.out.println("oaks"+oaks);
-
         PopupMenu oakMenu = new PopupMenu(mContext, v);
         oakMenu.getMenuInflater().inflate(R.menu.oak_leaf_menu, oakMenu.getMenu());
         oakMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
@@ -52145,25 +52155,27 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         });
         oakMenu.show();
     }
-/*
-    public void onBindViewHolder(RibbonViewHolder holder, int position) {
-        RibbonItem currentItem = (RibbonItem) mRibbonList.get(position);
-        holder.mImageView1.setImageResource(currentItem.getImageResource1());
-        holder.mImageView2.setImageResource(currentItem.getImageResource2());
-        holder.mImageView3.setImageResource(currentItem.getImageResource3());
-        holder.mImageView4.setImageResource(currentItem.getImageResource4());
-        holder.mImageView5.setImageResource(currentItem.getImageResource5());
-        holder.mImageView6.setImageResource(currentItem.getImageResource6());
-        holder.mImageView7.setImageResource(currentItem.getImageResource7());
-        holder.mImageView8.setImageResource(currentItem.getImageResource8());
-        holder.mImageView9.setImageResource(currentItem.getImageResource9());
-        holder.mImageView10.setImageResource(currentItem.getImageResource10());
-        holder.mImageView11.setImageResource(currentItem.getImageResource11());
-        holder.mImageView12.setImageResource(currentItem.getImageResource12());
-        //holder.mRibbonSwitch.setChecked(currentItem.getSwitch1(position).isChecked());
-    }
 
-         */
+    /*
+        @Override
+        public void onBindViewHolder(RibbonViewHolder holder, int position) {
+            RibbonItem currentItem = (RibbonItem) mRibbonList.get(position);
+            holder.mImageView1.setImageResource(currentItem.getImageResource1());
+            holder.mImageView2.setImageResource(currentItem.getImageResource2());
+            holder.mImageView3.setImageResource(currentItem.getImageResource3());
+            holder.mImageView4.setImageResource(currentItem.getImageResource4());
+            holder.mImageView5.setImageResource(currentItem.getImageResource5());
+            holder.mImageView6.setImageResource(currentItem.getImageResource6());
+            holder.mImageView7.setImageResource(currentItem.getImageResource7());
+            holder.mImageView8.setImageResource(currentItem.getImageResource8());
+            holder.mImageView9.setImageResource(currentItem.getImageResource9());
+            holder.mImageView10.setImageResource(currentItem.getImageResource10());
+            holder.mImageView11.setImageResource(currentItem.getImageResource11());
+            holder.mImageView12.setImageResource(currentItem.getImageResource12());
+            //holder.mRibbonSwitch.setChecked(currentItem.getSwitch1(position).isChecked());
+        }
+
+             */
     @Override
     public int getItemViewType(int position) {
         RibbonItem currentItem = (RibbonItem) mRibbonList.get(position);
@@ -52219,7 +52231,6 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         if (currentItem instanceof RibbonItem.RibbonItem50) {return 50;}
         return 0;
     }
-
     @Override
     public int getItemCount() {
         return mRibbonList.size();

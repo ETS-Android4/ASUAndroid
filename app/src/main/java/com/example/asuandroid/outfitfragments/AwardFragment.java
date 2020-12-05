@@ -24,7 +24,7 @@ import com.example.asuandroid.outfitAdapters.AwardAdapter;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import static com.stanko.tools.SharedPrefsHelper.getSharedPreferences;
+
 
 public class AwardFragment extends Fragment{
     private ArrayList<AwardItem> mAwardList;

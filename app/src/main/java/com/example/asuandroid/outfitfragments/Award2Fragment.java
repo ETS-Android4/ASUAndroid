@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.util.ArraySet;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -27,6 +28,8 @@ import android.widget.Toast;
 
 import com.example.asuandroid.R;
 import com.example.asuandroid.dialogs.Award2Dialog;
+import com.example.asuandroid.screens.MainActivity;
+import com.example.asuandroid.threads.MultithreadingDemo;
 import com.example.asuandroid.vectorBuildAdapters.RibbonAdapter;
 import com.example.asuandroid.outfitfragments.AwardFragment;
 import com.example.asuandroid.vectorBuildAdapters.RibbonItem;
@@ -43,6 +46,7 @@ public class Award2Fragment extends Fragment implements PopupMenu.OnMenuItemClic
     private RecyclerView mRecyclerView;
     private RibbonAdapter mRecyclerViewAdapter;
     public static ArrayList<Drawable> bitmapDrawableArray = new ArrayList<Drawable>();
+    RecyclerView.RecycledViewPool sharedPool = new RecyclerView.RecycledViewPool();
     public static Context context;
 
 
@@ -62,23 +66,29 @@ public class Award2Fragment extends Fragment implements PopupMenu.OnMenuItemClic
         layoutManager.setFlexWrap(FlexWrap.WRAP);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(mAdapter);
+        recyclerView.setRecycledViewPool(sharedPool);
         mAdapter.setOnItemClickListener(new RibbonAdapter.OnItemClickListener() {
-            @Override
-            public void onEditRibbonClick(int ribbon, int position) {
-                assert c != null;
-                //showPopup(view);
-                System.out.println(ribbon);
-            }
-        });
+                                            @Override
+                                            public void onEditRibbonClick(int ribbon, int position) {
+                                                assert c != null;
+                                                //showPopup(view);
+                                                System.out.println(ribbon);
+                                            }
+                                        });
         // Inflate the layout for this fragment
         return view;
     }
+
     public void showPopup(View v, RecyclerView holder, ArraySet<ImageView> oaks) {
-        PopupMenu oakMenu = new PopupMenu(context, v);
-        oakMenu.getMenuInflater().inflate(R.menu.oak_leaf_menu, oakMenu.getMenu());
-        oakMenu.setOnMenuItemClickListener(this);
-        oakMenu.inflate(R.menu.oak_leaf_menu);
-        oakMenu.show();
+        new Thread() {
+            public void run() {
+                PopupMenu oakMenu = new PopupMenu(context, v);
+                oakMenu.getMenuInflater().inflate(R.menu.oak_leaf_menu, oakMenu.getMenu());
+                oakMenu.setOnMenuItemClickListener(Award2Fragment.this);
+                oakMenu.inflate(R.menu.oak_leaf_menu);
+                oakMenu.show();
+            }
+        };
     }
     @Override
     public boolean onMenuItemClick(MenuItem item) {
@@ -106,7 +116,6 @@ public class Award2Fragment extends Fragment implements PopupMenu.OnMenuItemClic
         System.out.println(fromAward);
         fromAward.trimToSize();
         System.out.println(fromAward);
-
         int tots = fromAward.size();
         System.out.println("Size of tots"  + tots);
         /*
@@ -293,12 +302,8 @@ public class Award2Fragment extends Fragment implements PopupMenu.OnMenuItemClic
                 //System.out.println(bitmap);
             }
         });
-
         /*
-
-
          */
     }
-
 
 }
