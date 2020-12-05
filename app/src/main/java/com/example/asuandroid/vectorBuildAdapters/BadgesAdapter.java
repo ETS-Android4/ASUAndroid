@@ -8,6 +8,7 @@ import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.collection.ArraySet;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.asuandroid.R;
@@ -36,11 +37,17 @@ public class BadgesAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
 
     public static class Badge1Holder extends RecyclerView.ViewHolder {
         private final ArraySet<ImageView> images;
+        public ImageView mImageViewRack;
+        public ConstraintLayout mConstraintBG;
         public static ImageView mImageView1;
 
         public Badge1Holder(View itemView, BadgesAdapter.OnItemClickListener listener, ArraySet<ImageView> images) {
             super(itemView);
             this.images = images;
+            mImageViewRack = itemView.findViewById(R.id.ribbonRackB);
+            mConstraintBG = itemView.findViewById(R.id.badgeConstraint);
+            mConstraintBG.setBackground(Award2Fragment.bitmapDrawableArray.get(1));
+            mImageViewRack.setImageDrawable(Award2Fragment.bitmapDrawableArray.get(0));
             mImageView1 = itemView.findViewById(R.id.badge1);
             this.images.add(mImageView1);
             mImageView1.setOnClickListener(new View.OnClickListener() {

@@ -1,13 +1,16 @@
 package com.example.asuandroid.outfitfragments;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
+import androidx.annotation.DrawableRes;
 import androidx.appcompat.widget.PopupMenu;
+import androidx.core.content.res.ResourcesCompat;
 import androidx.fragment.app.Fragment;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.FragmentActivity;
@@ -301,6 +304,8 @@ public class Award2Fragment extends Fragment implements PopupMenu.OnMenuItemClic
                         Canvas canvas = new Canvas(bpm);
                         recyclerView.draw(canvas);
                         Drawable d1 = new BitmapDrawable(getResources(), bpm);
+                        Resources res = context.getResources();
+                        //Drawable chosenUniform = ResourcesCompat.getDrawable(res, R.drawable.ic_denmark_army_uniform_m11_combat, null);
                         //zoomageView.setDrawableResource(d);
                         bitmapDrawableArray.add(d1);
                         System.out.println(bitmapDrawableArray);
@@ -308,8 +313,6 @@ public class Award2Fragment extends Fragment implements PopupMenu.OnMenuItemClic
                                 .navigate(R.id.action_award2Fragment_to_badgeFragment);
                 };
         });
-        /*
-         */
     }
 
 }
