@@ -39,8 +39,10 @@
             android:scrollbars="vertical"
             app:layout_constraintBottom_toTopOf="@+id/btn_populateFromDialog3"
             app:layout_constraintEnd_toEndOf="@id/uniform_constraint"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@id/uniform_constraint"
-            app:layout_constraintTop_toBottomOf="@+id/textView5">
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            app:layout_constraintVertical_bias="0.0">
 
         </androidx.recyclerview.widget.RecyclerView>
 
@@ -64,12 +66,11 @@
 
         <Button
             android:id="@+id/btn_populateFromDialog3"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Home"
             app:layout_constraintBottom_toTopOf="@+id/btn_award2_continue"
             app:layout_constraintEnd_toEndOf="@id/uniform_constraint"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@id/uniform_constraint" />
 
 

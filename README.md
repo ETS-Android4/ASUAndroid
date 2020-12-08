@@ -1,19 +1,22 @@
-# ASUAndroid
-ASU Application for Army Military Members
+<h1 align="center">Welcome to ASUAndroid 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-0.1-blue.svg?cacheSeconds=2592000" />
+  <a href="C:\Users\Sean\Documents\books\capstoneproject\SKnight_ProjectLegacyComp491Dec1.docx" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+</p>
 
-Try this:
-```
-1.) Install Android Studio
-2.) Enable SVM in BIOS
-3.) Enable Hypervisor for windows 10
-4.) In android Studio:   VCS> Get from version Control > Login to your github account and add the URL and clone
-```
+> Android application to assist solider with their uniform regulatory process
 
-If you are going to add new feature, this is how you start:
-```
-You should never be making any changes to code while you are on master branch
-1.) Select Git --> Master branch
-2.) VCS -> Git -> Pull
-3.) Create a new branch
-4.) Add new feature
-```
+## Author
+
+👤 **Sean Knight**
+
+* LinkedIn: [@https:\/\/www.linkedin.com\/in\/sean-knight-650b12177\/](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/sean-knight-650b12177\/)
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
