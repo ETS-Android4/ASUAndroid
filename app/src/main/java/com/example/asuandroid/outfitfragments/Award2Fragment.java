@@ -35,6 +35,7 @@ import com.google.android.flexbox.FlexboxLayoutManager;
 
 import java.util.ArrayList;
 
+
 public class Award2Fragment extends Fragment implements PopupMenu.OnMenuItemClickListener {
     public static ArrayList<Integer> fromAward = AwardFragment.finalExport;
     private ArrayList<RibbonItem> mRibbonList;
@@ -81,6 +82,8 @@ public class Award2Fragment extends Fragment implements PopupMenu.OnMenuItemClic
                 oakMenu.setOnMenuItemClickListener(Award2Fragment.this);
                 oakMenu.inflate(R.menu.oak_leaf_menu);
                 oakMenu.show();
+
+
             }
         };
     }

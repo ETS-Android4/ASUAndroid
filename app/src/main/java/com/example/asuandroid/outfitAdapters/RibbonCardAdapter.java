@@ -16,15 +16,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class RibbonCardAdapter extends RecyclerView.Adapter<RibbonCardAdapter.AwardViewHolder> {
-    //private ImageView mRibbonAdd;
     public ArrayList<RibbonCardItem> mAwardList;
-    public static ArrayList<Integer> awardImageList = new ArrayList<>();
     private OnItemClickListener mListener;
 
     public interface OnItemClickListener { void onAddRibbonClick(int ribbon, int position, boolean isRibbonOn);}
-    public void setOnItemClickListener(OnItemClickListener listener) {
-        mListener = listener;
-    }
+    public void setOnItemClickListener(OnItemClickListener listener) { mListener = listener; }
 
     public class AwardViewHolder extends RecyclerView.ViewHolder {
         public boolean isRibbonOn = false;
@@ -34,48 +30,45 @@ public class RibbonCardAdapter extends RecyclerView.Adapter<RibbonCardAdapter.Aw
         public ImageView mRibbonAdd;
         @SuppressLint("ClickableViewAccessibility")
         public AwardViewHolder(View itemView, OnItemClickListener listener) {
-        super(itemView);
-        mImageView = itemView.findViewById(R.id.imageView);
-        mTextView1 = itemView.findViewById(R.id.textView);
-        mTextView2 = itemView.findViewById(R.id.textView2);
-        mRibbonAdd = itemView.findViewById(R.id.img_addRibbon);
-        itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (!isRibbonOn) {
-                    System.out.println(isRibbonOn);
-                    isRibbonOn = true;
-                    System.out.println(isRibbonOn);
-                    itemView.setBackgroundColor(Color.CYAN);
-                    ImageView checkyImage = (ImageView) v.findViewById(R.id.img_addRibbon);
-                    checkyImage.setBackgroundResource(R.drawable.ribbon_anim);
-                    AnimationDrawable checkyAnimation = (AnimationDrawable) checkyImage.getBackground();
-                    checkyAnimation.start();
-                } else if (isRibbonOn = true) {
-                    System.out.println(isRibbonOn);
-                    isRibbonOn = false;
-                    System.out.println(isRibbonOn);
+            super(itemView);
+            mImageView = itemView.findViewById(R.id.imageView);
+            mTextView1 = itemView.findViewById(R.id.textView);
+            mTextView2 = itemView.findViewById(R.id.textView2);
+            mRibbonAdd = itemView.findViewById(R.id.img_addRibbon);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (!isRibbonOn) {
+                        isRibbonOn = true;
 
-                    itemView.setBackgroundColor(Color.WHITE);
-                    ImageView checkyImage = (ImageView) v.findViewById(R.id.img_addRibbon);
-                    checkyImage.setBackgroundResource(R.drawable.ribbon_anim_return);
-                    AnimationDrawable checkyAnimation = (AnimationDrawable) checkyImage.getBackground();
-                    checkyAnimation.start();
-                }
-                {
-                    if ((listener != null)) {
-                        int position = getAdapterPosition();
-                        int ribbon = mAwardList.get(position).getImageResource();
-                        if (position != RecyclerView.NO_POSITION) {
-                            listener.onAddRibbonClick(ribbon, position, isRibbonOn);
+                        itemView.setBackgroundColor(Color.CYAN);
+                        ImageView checkyImage = (ImageView) v.findViewById(R.id.img_addRibbon);
+                        checkyImage.setBackgroundResource(R.drawable.ribbon_anim);
+                        AnimationDrawable checkyAnimation = (AnimationDrawable) checkyImage.getBackground();
+                        checkyAnimation.start();
+                    } else if (isRibbonOn = true) {
+                        isRibbonOn = false;
+
+                        itemView.setBackgroundColor(Color.WHITE);
+                        ImageView checkyImage = (ImageView) v.findViewById(R.id.img_addRibbon);
+                        checkyImage.setBackgroundResource(R.drawable.ribbon_anim_return);
+                        AnimationDrawable checkyAnimation = (AnimationDrawable) checkyImage.getBackground();
+                        checkyAnimation.start();
+                    }
+                    {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mAwardList.get(position).getImageResource();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onAddRibbonClick(ribbon, position, isRibbonOn);
+                            }
+                            System.out.println("ribbon:" + ribbon);
                         }
-                        System.out.println("youclickedme" + ribbon);
                     }
                 }
-            }
-        });
+            });
+        }
     }
-}
     public RibbonCardAdapter(ArrayList<RibbonCardItem> awardList) {
         mAwardList = awardList;
     }

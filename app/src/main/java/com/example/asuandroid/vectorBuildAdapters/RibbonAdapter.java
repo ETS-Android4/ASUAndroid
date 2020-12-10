@@ -59,6 +59,15 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             super(itemView);
             List<ImageView> oaks1 = new ArrayList<>();
             List<ImageView> oaks2 = new ArrayList<>();
+            ArrayList<Integer> points = new ArrayList<>();
+            points.add(1);
+            points.add(2);
+            points.add(3);
+            points.add(4);
+            points.add(null);
+            points.remove(1);
+            points.remove(null);
+            System.out.println(points);
             this.images = images;
             this.oaks = oaks;
             mImageView1 = itemView.findViewById(R.id.ribbon1);
