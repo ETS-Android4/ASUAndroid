@@ -41,7 +41,6 @@ public class Badge2Fragment extends Fragment implements PopupMenu.OnMenuItemClic
     RecyclerView.RecycledViewPool sharedPool = new RecyclerView.RecycledViewPool();
     public static Context context;
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

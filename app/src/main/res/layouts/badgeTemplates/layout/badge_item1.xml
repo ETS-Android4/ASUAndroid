@@ -5,7 +5,7 @@
     android:id="@+id/badgeConstraint"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ic_denmark_army_uniform_m11_combat">
+    >
 
     <ImageView
         android:id="@+id/ribbonRackB"

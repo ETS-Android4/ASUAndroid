@@ -18,7 +18,6 @@ public class BadgesCardAdapter extends RecyclerView.Adapter<BadgesCardAdapter.Ba
     private OnItemClickListener mListener;
     public static ArrayList<Integer> badgeImageList = new ArrayList<>();
 
-
     public interface OnItemClickListener { void onAddBadgesClick(int badge, int position, boolean isBadgeOn);}
     public void setOnItemClickListener(BadgesCardAdapter.OnItemClickListener listener) { mListener = listener; }
 
