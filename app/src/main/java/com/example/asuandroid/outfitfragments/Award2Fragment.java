@@ -32,6 +32,7 @@ import com.example.asuandroid.screens.MainActivity;
 import com.example.asuandroid.threads.MultithreadingDemo;
 import com.example.asuandroid.vectorBuildAdapters.RibbonAdapter;
 import com.example.asuandroid.outfitfragments.AwardFragment;
+import com.example.asuandroid.vectorBuildAdapters.RibbonAdapter1;
 import com.example.asuandroid.vectorBuildAdapters.RibbonItem;
 import com.google.android.flexbox.FlexWrap;
 import com.google.android.flexbox.FlexboxLayoutManager;
@@ -53,28 +54,37 @@ public class Award2Fragment extends Fragment implements PopupMenu.OnMenuItemClic
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
         Bundle savedInstanceState) {
+        System.out.println(fromAward);
+        fromAward.trimToSize();
+        System.out.println(fromAward);
+        int tots = fromAward.size();
         assert container != null;
         context = container.getContext();
         createRibbonList();
         //View v = inflater.inflate(R.id.oak);
         final View view = inflater.inflate(R.layout.fragment_award2, container, false);
         final FragmentActivity c = getActivity();
-        RibbonAdapter mAdapter = new RibbonAdapter(mRibbonList);
-        mRecyclerViewAdapter = new RibbonAdapter(mRibbonList);
-        final RecyclerView recyclerView = view.findViewById(R.id.recyclerViewRibbonRack);
-        FlexboxLayoutManager layoutManager = new FlexboxLayoutManager(c);
-        layoutManager.setFlexWrap(FlexWrap.WRAP);
-        recyclerView.setLayoutManager(layoutManager);
-        recyclerView.setAdapter(mAdapter);
-        recyclerView.setRecycledViewPool(sharedPool);
-        mAdapter.setOnItemClickListener(new RibbonAdapter.OnItemClickListener() {
-                                            @Override
-                                            public void onEditRibbonClick(int ribbon, int position) {
-                                                assert c != null;
-                                                //showPopup(view);
-                                                System.out.println(ribbon);
-                                            }
-                                        });
+        switch (tots){
+            case 1:
+                RibbonAdapter1 mAdapter = new RibbonAdapter1(mRibbonList);
+                mRecyclerViewAdapter = new RibbonAdapter(mRibbonList);
+                final RecyclerView recyclerView = view.findViewById(R.id.recyclerViewRibbonRack);
+                FlexboxLayoutManager layoutManager = new FlexboxLayoutManager(c);
+                layoutManager.setFlexWrap(FlexWrap.WRAP);
+                recyclerView.setLayoutManager(layoutManager);
+                recyclerView.setAdapter(mAdapter);
+                recyclerView.setRecycledViewPool(sharedPool);
+                mAdapter.setOnItemClickListener(new RibbonAdapter1.OnItemClickListener() {
+                    @Override
+                    public void onEditRibbonClick(int ribbon, int position) {
+                        assert c != null;
+                        //showPopup(view);
+                        System.out.println(ribbon);
+                    }
+                });
+                break;
+        }
+
         // Inflate the layout for this fragment
         return view;
     }

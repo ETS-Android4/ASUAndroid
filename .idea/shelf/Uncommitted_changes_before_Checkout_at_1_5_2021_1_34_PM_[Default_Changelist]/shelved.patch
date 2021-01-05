@@ -1,0 +1,18 @@
+Index: app/src/main/java/com/example/asuandroid/vectorBuildAdapters/RibbonAdapter.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/asuandroid/vectorBuildAdapters/RibbonAdapter.java	(revision 92d308512c1eccbff34c58dec9e6e4a0ed0ad3ed)
++++ app/src/main/java/com/example/asuandroid/vectorBuildAdapters/RibbonAdapter.java	(date 1609791149530)
+@@ -34,9 +34,7 @@
+     public ArrayList<RibbonItem> RibbonAdapter(ArrayList<RibbonItem> mRibbonList) {
+         return mRibbonList;
+     }
+-    public interface OnItemClickListener {
+-        void onEditRibbonClick(int ribbon, int position);
+-    }
++    public interface OnItemClickListener { void onEditRibbonClick(int ribbon, int position);}
+     public void setOnItemClickListener(OnItemClickListener listener) {
+         mListener = listener;
+     }
