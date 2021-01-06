@@ -2,7 +2,6 @@ package com.example.asuandroid.vectorBuildAdapters;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.ViewGroup;
@@ -11,7 +10,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.asuandroid.R;
-import com.example.asuandroid.threads.MultithreadingDemo;
+import com.example.asuandroid.vectorItems.RibbonItem;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.PopupMenu;
@@ -19,19 +18,11 @@ import androidx.collection.ArraySet;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashSet;
-import java.util.LinkedHashSet;
 import java.util.List;
-import java.util.Set;
 
 import static com.example.asuandroid.outfitfragments.Award2Fragment.context;
 
 public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>  {
-
     public static ArrayList<RibbonItem> mRibbonList;
     public static ArraySet<ImageView> images = new ArraySet<ImageView>();
     public static ArrayList<List<ImageView>> oaks = new ArrayList<>();
@@ -68,6 +59,15 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             super(itemView);
             List<ImageView> oaks1 = new ArrayList<>();
             List<ImageView> oaks2 = new ArrayList<>();
+            ArrayList<Integer> points = new ArrayList<>();
+            points.add(1);
+            points.add(2);
+            points.add(3);
+            points.add(4);
+            points.add(null);
+            points.remove(1);
+            points.remove(null);
+            System.out.println(points);
             this.images = images;
             this.oaks = oaks;
             mImageView1 = itemView.findViewById(R.id.ribbon1);
@@ -52235,4 +52235,4 @@ public class RibbonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
     public int getItemCount() {
         return mRibbonList.size();
     }
-}
+    };

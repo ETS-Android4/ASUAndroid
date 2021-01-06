@@ -14,7 +14,6 @@
         android:layout_height="match_parent"
         android:layout_margin="4dp"
         android:background="@drawable/button_ribbon">
-
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="102dp"

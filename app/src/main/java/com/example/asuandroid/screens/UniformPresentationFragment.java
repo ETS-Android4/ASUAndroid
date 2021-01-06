@@ -22,7 +22,7 @@ import android.widget.Button;
 import com.example.asuandroid.R;
 import com.example.asuandroid.vectorBuildAdapters.RibbonAdapter;
 import com.example.asuandroid.outfitfragments.AwardFragment;
-import com.example.asuandroid.vectorBuildAdapters.RibbonItem;
+import com.example.asuandroid.vectorItems.RibbonItem;
 
 
 import java.util.ArrayList;

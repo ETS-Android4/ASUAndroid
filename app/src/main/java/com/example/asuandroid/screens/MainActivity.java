@@ -1,46 +1,22 @@
 package com.example.asuandroid.screens;
-import android.annotation.SuppressLint;
-import android.app.ActionBar;
 import android.app.AlertDialog;
-import android.graphics.Bitmap;
-import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.Objects;
-import androidx.fragment.app.DialogFragment;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
-import androidx.appcompat.widget.Toolbar;
-import androidx.appcompat.widget.Toolbar;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 
 import android.content.DialogInterface;
-import android.widget.ArrayAdapter;
 import android.widget.CompoundButton;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.ListView;
 
 import com.example.asuandroid.R;
 
 import com.example.asuandroid.dialogs.Award2Dialog;
-import com.example.asuandroid.outfitAdapters.AwardAdapter;
-import com.example.asuandroid.outfitfragments.AwardFragment;
-import com.example.asuandroid.outfitfragments.AwardItem;
-import com.example.asuandroid.threads.MultithreadingDemo;
 import com.zoomage.ZoomageView;
-
-import static android.app.ActionBar.DISPLAY_SHOW_CUSTOM;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, CompoundButton.OnCheckedChangeListener, Award2Dialog.ExampleDialogListener {

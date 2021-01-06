@@ -39,7 +39,7 @@ android {
     sourceSets {
         main {
             res {
-                srcDirs 'src/main/res', 'src/main/res/layout/ribbons', 'src/main/res/layout/fragments', 'src/main/res/layout/fragmentItems', 'src\\main\\res', 'src\\main\\res\\layouts\\ribbonTemplates', 'src\\main\\res\\layouts\\fragments', 'src\\main\\res\\fragmentItems', 'src\\main\\res\\layouts\\fragmentItems', 'src\\main\\res\\drawables\\ribbons', 'src\\main\\res\\drawables\\badges', 'src\\main\\res\\drawables\\fragmentButtons', 'src\\main\\res\\drawables\\anim', 'src\\main\\res\\drawables\\uniformVectors', 'src\\main\\res\\drawables\\fragmentImages', 'src\\main\\res\\layouts\\uniformTemplates'
+                srcDirs 'src/main/res', 'src/main/res/layout/ribbons', 'src/main/res/layout/fragments', 'src/main/res/layout/fragmentItems', 'src\\main\\res', 'src\\main\\res\\layouts\\ribbonTemplates', 'src\\main\\res\\layouts\\fragments', 'src\\main\\res\\fragmentItems', 'src\\main\\res\\layouts\\fragmentItems', 'src\\main\\res\\drawables\\ribbons', 'src\\main\\res\\drawables\\badges', 'src\\main\\res\\drawables\\fragmentButtons', 'src\\main\\res\\drawables\\anim', 'src\\main\\res\\drawables\\uniformVectors', 'src\\main\\res\\drawables\\fragmentImages', 'src\\main\\res\\layouts\\uniformTemplates', 'src\\main\\res\\layouts\\badgesTemplates', 'src\\main\\res\\layouts\\badgeTemplates'
             }
         }
     }
@@ -61,8 +61,8 @@ dependencies {
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'androidx.fragment:fragment-ktx:1.2.5'
-    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.1'
-    implementation 'androidx.navigation:navigation-ui-ktx:2.3.1'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.2'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.2'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'com.github.markusfisch:ScalingImageView:1.2.0'
     implementation 'com.davemorrissey.labs:subsampling-scale-image-view:3.10.0'
