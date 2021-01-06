@@ -26,7 +26,7 @@ import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
-
+import com.example.asuandroid.vectorItems.RibbonItem;
 import static com.example.asuandroid.outfitfragments.Award2Fragment.context;
 
 import static com.example.asuandroid.outfitfragments.Award2Fragment.context;

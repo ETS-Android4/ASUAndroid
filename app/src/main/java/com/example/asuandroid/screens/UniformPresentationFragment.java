@@ -24,7 +24,7 @@ import com.example.asuandroid.outfitfragments.AwardFragment;
 import com.example.asuandroid.vectorBuildAdapters.RibbonAdapter1;
 import com.example.asuandroid.vectorBuildAdapters.RibbonAdapter2;
 import com.example.asuandroid.vectorBuildAdapters.RibbonAdapter20;
-import com.example.asuandroid.vectorBuildAdapters.RibbonItem;
+import com.example.asuandroid.vectorItems.RibbonItem;
 
 
 import java.util.ArrayList;
