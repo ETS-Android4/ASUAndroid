@@ -29,8 +29,6 @@ import java.util.Set;
 
 import static com.example.asuandroid.outfitfragments.Award2Fragment.context;
 
-import static com.example.asuandroid.outfitfragments.Award2Fragment.context;
-
 public class RibbonAdapter1 extends RecyclerView.Adapter<RecyclerView.ViewHolder>  {
 
     public static ArrayList<RibbonItem> mRibbonList;
@@ -120,10 +118,10 @@ public class RibbonAdapter1 extends RecyclerView.Adapter<RecyclerView.ViewHolder
     }
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
-        if (holder instanceof RibbonAdapter.Ribbon1Holder) {
+        if (holder instanceof RibbonAdapter1.Ribbon1Holder) {
             RibbonItem currentItem = (RibbonItem) mRibbonList.get(position);
-            ((RibbonAdapter.Ribbon1Holder) holder).mImageView1.setImageResource(currentItem.getImageResource1());
-            ((RibbonAdapter.Ribbon1Holder) holder).mImageView1.setOnClickListener(new View.OnClickListener() {
+            ((RibbonAdapter1.Ribbon1Holder) holder).mImageView1.setImageResource(currentItem.getImageResource1());
+            ((RibbonAdapter1.Ribbon1Holder) holder).mImageView1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     System.out.println("Oaks before" + oaks);

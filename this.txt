@@ -1,307 +1,1714 @@
-            <?xml version="1.0" encoding="utf-8"?>
-            <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/ribbonRack"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@android:color/transparent"
-                android:orientation="vertical"
-                app:layout_constraintHorizontal_chainStyle="packed">
-            
-            <ImageView
-                android:id="@+id/ribbon1"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:adjustViewBounds="true"
-                android:scaleType="fitXY"
-                app:layout_constraintEnd_toStartOf="@+id/ribbon2"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
 
-            <ImageView
-                android:id="@+id/ribbon2"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:adjustViewBounds="true"
-                android:scaleType="fitXY"
-                app:layout_constraintEnd_toStartOf="@+id/ribbon3"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/ribbon1"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
-
-            <ImageView
-                android:id="@+id/ribbon3"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:adjustViewBounds="true"
-                android:scaleType="fitXY"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/ribbon2"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_afghanistan_campaign_medal_ribbon" />
-            
-            <ImageView
-                android:id="@+id/ribbon1_2"
-                android:layout_width="@dimen/_18sdp"
-                android:layout_height="@dimen/_18sdp"
-                android:rotation="-10"
-                app:layout_constraintBottom_toBottomOf="@id/ribbon1"
-                app:layout_constraintEnd_toEndOf="@+id/ribbon1"
-                app:layout_constraintStart_toStartOf="@id/ribbon1"
-                app:layout_constraintTop_toTopOf="@id/ribbon1" />
-
-            <ImageView
-                android:id="@+id/ribbon1_3"
-                android:layout_width="@dimen/_18sdp"
-                android:layout_height="@dimen/_18sdp"
-                android:layout_marginStart="@dimen/_11sdp"
-                android:layout_marginLeft="@dimen/_11sdp"
-                android:rotation="-10"
-                app:layout_constraintBottom_toBottomOf="@id/ribbon1"
-                app:layout_constraintEnd_toEndOf="@+id/ribbon1"
-                app:layout_constraintStart_toStartOf="@id/ribbon1"
-                app:layout_constraintTop_toTopOf="@id/ribbon1" />
-
-            <ImageView
-                android:id="@+id/ribbon1_4"
-                android:layout_width="@dimen/_18sdp"
-                android:layout_height="@dimen/_18sdp"
-                android:layout_marginEnd="@dimen/_11sdp"
-                android:layout_marginRight="@dimen/_11sdp"
-                android:rotation="-10"
-                app:layout_constraintBottom_toBottomOf="@id/ribbon1"
-                app:layout_constraintEnd_toEndOf="@+id/ribbon1"
-                app:layout_constraintStart_toStartOf="@id/ribbon1"
-                app:layout_constraintTop_toTopOf="@id/ribbon1" />
-
-            <ImageView
-                android:id="@+id/ribbon1_5"
-                android:layout_width="@dimen/_18sdp"
-                android:layout_height="@dimen/_18sdp"
-                android:layout_marginEnd="@dimen/_22sdp"
-                android:layout_marginRight="@dimen/_22sdp"
-                android:rotation="-10"
-                app:layout_constraintBottom_toBottomOf="@id/ribbon1"
-                app:layout_constraintEnd_toEndOf="@+id/ribbon1"
-                app:layout_constraintStart_toStartOf="@id/ribbon1"
-                app:layout_constraintTop_toTopOf="@id/ribbon1"
-                app:layout_constraintVertical_bias="0.555" />
-
-            <ImageView
-                android:id="@+id/ribbon1_6"
-                android:layout_width="@dimen/_18sdp"
-                android:layout_height="@dimen/_18sdp"
-                android:layout_marginStart="@dimen/_22sdp"
-                android:layout_marginLeft="@dimen/_22sdp"
-                android:rotation="-10"
-                app:layout_constraintBottom_toBottomOf="@id/ribbon1"
-                app:layout_constraintEnd_toEndOf="@+id/ribbon1"
-                app:layout_constraintStart_toStartOf="@id/ribbon1"
-                app:layout_constraintTop_toTopOf="@id/ribbon1" />
-
-            <ImageView
-                android:id="@+id/ribbon1_7"
-                android:layout_width="@dimen/_18sdp"
-                android:layout_height="@dimen/_18sdp"
-                android:layout_marginStart="@dimen/_33sdp"
-                android:layout_marginLeft="@dimen/_33sdp"
-                android:rotation="-10"
-                app:layout_constraintBottom_toBottomOf="@id/ribbon1"
-                app:layout_constraintEnd_toEndOf="@+id/ribbon1"
-                app:layout_constraintHorizontal_bias=".50"
-                app:layout_constraintStart_toStartOf="@id/ribbon1"
-                app:layout_constraintTop_toTopOf="@id/ribbon1" />
-
-            <ImageView
-                android:id="@+id/ribbon1_8"
-                android:layout_width="@dimen/_18sdp"
-                android:layout_height="@dimen/_18sdp"
-                android:layout_marginEnd="@dimen/_33sdp"
-                android:layout_marginRight="@dimen/_33sdp"
-                android:rotation="-10"
-                app:layout_constraintBottom_toBottomOf="@id/ribbon1"
-                app:layout_constraintEnd_toEndOf="@+id/ribbon1"
-                app:layout_constraintHorizontal_bias="0.50"
-                app:layout_constraintStart_toStartOf="@id/ribbon1"
-                app:layout_constraintTop_toTopOf="@id/ribbon1"
-                app:layout_constraintVertical_bias="0.50" />
-                     
-            <ImageView
-                android:id="@+id/ribbon2_2"
-                android:layout_width="@dimen/_18sdp"
-                android:layout_height="@dimen/_18sdp"
-                android:rotation="-10"
-                app:layout_constraintBottom_toBottomOf="@id/ribbon2"
-                app:layout_constraintEnd_toEndOf="@+id/ribbon2"
-                app:layout_constraintStart_toStartOf="@id/ribbon2"
-                app:layout_constraintTop_toTopOf="@id/ribbon2" />
-
-            <ImageView
-                android:id="@+id/ribbon2_3"
-                android:layout_width="@dimen/_18sdp"
-                android:layout_height="@dimen/_18sdp"
-                android:layout_marginStart="@dimen/_11sdp"
-                android:layout_marginLeft="@dimen/_11sdp"
-                android:rotation="-10"
-                app:layout_constraintBottom_toBottomOf="@id/ribbon2"
-                app:layout_constraintEnd_toEndOf="@+id/ribbon2"
-                app:layout_constraintStart_toStartOf="@id/ribbon2"
-                app:layout_constraintTop_toTopOf="@id/ribbon2" />
-
-            <ImageView
-                android:id="@+id/ribbon2_4"
-                android:layout_width="@dimen/_18sdp"
-                android:layout_height="@dimen/_18sdp"
-                android:layout_marginEnd="@dimen/_11sdp"
-                android:layout_marginRight="@dimen/_11sdp"
-                android:rotation="-10"
-                app:layout_constraintBottom_toBottomOf="@id/ribbon2"
-                app:layout_constraintEnd_toEndOf="@+id/ribbon2"
-                app:layout_constraintStart_toStartOf="@id/ribbon2"
-                app:layout_constraintTop_toTopOf="@id/ribbon2" />
-
-            <ImageView
-                android:id="@+id/ribbon2_5"
-                android:layout_width="@dimen/_18sdp"
-                android:layout_height="@dimen/_18sdp"
-                android:layout_marginEnd="@dimen/_22sdp"
-                android:layout_marginRight="@dimen/_22sdp"
-                android:rotation="-10"
-                app:layout_constraintBottom_toBottomOf="@id/ribbon2"
-                app:layout_constraintEnd_toEndOf="@+id/ribbon2"
-                app:layout_constraintStart_toStartOf="@id/ribbon2"
-                app:layout_constraintTop_toTopOf="@id/ribbon2"
-                app:layout_constraintVertical_bias="0.555" />
-
-            <ImageView
-                android:id="@+id/ribbon2_6"
-                android:layout_width="@dimen/_18sdp"
-                android:layout_height="@dimen/_18sdp"
-                android:layout_marginStart="@dimen/_22sdp"
-                android:layout_marginLeft="@dimen/_22sdp"
-                android:rotation="-10"
-                app:layout_constraintBottom_toBottomOf="@id/ribbon2"
-                app:layout_constraintEnd_toEndOf="@+id/ribbon2"
-                app:layout_constraintStart_toStartOf="@id/ribbon2"
-                app:layout_constraintTop_toTopOf="@id/ribbon2" />
-
-            <ImageView
-                android:id="@+id/ribbon2_7"
-                android:layout_width="@dimen/_18sdp"
-                android:layout_height="@dimen/_18sdp"
-                android:layout_marginStart="@dimen/_33sdp"
-                android:layout_marginLeft="@dimen/_33sdp"
-                android:rotation="-10"
-                app:layout_constraintBottom_toBottomOf="@id/ribbon2"
-                app:layout_constraintEnd_toEndOf="@+id/ribbon2"
-                app:layout_constraintHorizontal_bias=".50"
-                app:layout_constraintStart_toStartOf="@id/ribbon2"
-                app:layout_constraintTop_toTopOf="@id/ribbon2" />
-
-            <ImageView
-                android:id="@+id/ribbon2_8"
-                android:layout_width="@dimen/_18sdp"
-                android:layout_height="@dimen/_18sdp"
-                android:layout_marginEnd="@dimen/_33sdp"
-                android:layout_marginRight="@dimen/_33sdp"
-                android:rotation="-10"
-                app:layout_constraintBottom_toBottomOf="@id/ribbon2"
-                app:layout_constraintEnd_toEndOf="@+id/ribbon2"
-                app:layout_constraintHorizontal_bias="0.50"
-                app:layout_constraintStart_toStartOf="@id/ribbon2"
-                app:layout_constraintTop_toTopOf="@id/ribbon2"
-                app:layout_constraintVertical_bias="0.50" />
-                     
-            <ImageView
-                android:id="@+id/ribbon3_2"
-                android:layout_width="@dimen/_18sdp"
-                android:layout_height="@dimen/_18sdp"
-                android:rotation="-10"
-                app:layout_constraintBottom_toBottomOf="@id/ribbon3"
-                app:layout_constraintEnd_toEndOf="@+id/ribbon3"
-                app:layout_constraintStart_toStartOf="@id/ribbon3"
-                app:layout_constraintTop_toTopOf="@id/ribbon3" />
-
-            <ImageView
-                android:id="@+id/ribbon3_3"
-                android:layout_width="@dimen/_18sdp"
-                android:layout_height="@dimen/_18sdp"
-                android:layout_marginStart="@dimen/_11sdp"
-                android:layout_marginLeft="@dimen/_11sdp"
-                android:rotation="-10"
-                app:layout_constraintBottom_toBottomOf="@id/ribbon3"
-                app:layout_constraintEnd_toEndOf="@+id/ribbon3"
-                app:layout_constraintStart_toStartOf="@id/ribbon3"
-                app:layout_constraintTop_toTopOf="@id/ribbon3" />
-
-            <ImageView
-                android:id="@+id/ribbon3_4"
-                android:layout_width="@dimen/_18sdp"
-                android:layout_height="@dimen/_18sdp"
-                android:layout_marginEnd="@dimen/_11sdp"
-                android:layout_marginRight="@dimen/_11sdp"
-                android:rotation="-10"
-                app:layout_constraintBottom_toBottomOf="@id/ribbon3"
-                app:layout_constraintEnd_toEndOf="@+id/ribbon3"
-                app:layout_constraintStart_toStartOf="@id/ribbon3"
-                app:layout_constraintTop_toTopOf="@id/ribbon3" />
-
-            <ImageView
-                android:id="@+id/ribbon3_5"
-                android:layout_width="@dimen/_18sdp"
-                android:layout_height="@dimen/_18sdp"
-                android:layout_marginEnd="@dimen/_22sdp"
-                android:layout_marginRight="@dimen/_22sdp"
-                android:rotation="-10"
-                app:layout_constraintBottom_toBottomOf="@id/ribbon3"
-                app:layout_constraintEnd_toEndOf="@+id/ribbon3"
-                app:layout_constraintStart_toStartOf="@id/ribbon3"
-                app:layout_constraintTop_toTopOf="@id/ribbon3"
-                app:layout_constraintVertical_bias="0.555" />
-
-            <ImageView
-                android:id="@+id/ribbon3_6"
-                android:layout_width="@dimen/_18sdp"
-                android:layout_height="@dimen/_18sdp"
-                android:layout_marginStart="@dimen/_22sdp"
-                android:layout_marginLeft="@dimen/_22sdp"
-                android:rotation="-10"
-                app:layout_constraintBottom_toBottomOf="@id/ribbon3"
-                app:layout_constraintEnd_toEndOf="@+id/ribbon3"
-                app:layout_constraintStart_toStartOf="@id/ribbon3"
-                app:layout_constraintTop_toTopOf="@id/ribbon3" />
-
-            <ImageView
-                android:id="@+id/ribbon3_7"
-                android:layout_width="@dimen/_18sdp"
-                android:layout_height="@dimen/_18sdp"
-                android:layout_marginStart="@dimen/_33sdp"
-                android:layout_marginLeft="@dimen/_33sdp"
-                android:rotation="-10"
-                app:layout_constraintBottom_toBottomOf="@id/ribbon3"
-                app:layout_constraintEnd_toEndOf="@+id/ribbon3"
-                app:layout_constraintHorizontal_bias=".50"
-                app:layout_constraintStart_toStartOf="@id/ribbon3"
-                app:layout_constraintTop_toTopOf="@id/ribbon3" />
-
-            <ImageView
-                android:id="@+id/ribbon3_8"
-                android:layout_width="@dimen/_18sdp"
-                android:layout_height="@dimen/_18sdp"
-                android:layout_marginEnd="@dimen/_33sdp"
-                android:layout_marginRight="@dimen/_33sdp"
-                android:rotation="-10"
-                app:layout_constraintBottom_toBottomOf="@id/ribbon3"
-                app:layout_constraintEnd_toEndOf="@+id/ribbon3"
-                app:layout_constraintHorizontal_bias="0.50"
-                app:layout_constraintStart_toStartOf="@id/ribbon3"
-                app:layout_constraintTop_toTopOf="@id/ribbon3"
-                app:layout_constraintVertical_bias="0.50" />
-                    
-            
-            </androidx.constraintlayout.widget.ConstraintLayout>
+            public static class Ribbon50Holder extends RecyclerView.ViewHolder {
+            private final ArraySet<ImageView> images;
+            private static ArrayList<List<ImageView>> oaks = new ArrayList<>();
+             private final ArraySet<ImageView> oaks1 = new ArraySet<>();
+ public ImageView mImageView1;
+ public ImageView mImageView1_2;
+ public ImageView mImageView1_3;
+ public ImageView mImageView1_4;
+ public ImageView mImageView1_5;
+ public ImageView mImageView1_6;
+ public ImageView mImageView1_7;
+ public ImageView mImageView1_8;
+ private final ArraySet<ImageView> oaks2 = new ArraySet<>();
+ public ImageView mImageView2;
+ public ImageView mImageView2_2;
+ public ImageView mImageView2_3;
+ public ImageView mImageView2_4;
+ public ImageView mImageView2_5;
+ public ImageView mImageView2_6;
+ public ImageView mImageView2_7;
+ public ImageView mImageView2_8;
+ private final ArraySet<ImageView> oaks3 = new ArraySet<>();
+ public ImageView mImageView3;
+ public ImageView mImageView3_2;
+ public ImageView mImageView3_3;
+ public ImageView mImageView3_4;
+ public ImageView mImageView3_5;
+ public ImageView mImageView3_6;
+ public ImageView mImageView3_7;
+ public ImageView mImageView3_8;
+ private final ArraySet<ImageView> oaks4 = new ArraySet<>();
+ public ImageView mImageView4;
+ public ImageView mImageView4_2;
+ public ImageView mImageView4_3;
+ public ImageView mImageView4_4;
+ public ImageView mImageView4_5;
+ public ImageView mImageView4_6;
+ public ImageView mImageView4_7;
+ public ImageView mImageView4_8;
+ private final ArraySet<ImageView> oaks5 = new ArraySet<>();
+ public ImageView mImageView5;
+ public ImageView mImageView5_2;
+ public ImageView mImageView5_3;
+ public ImageView mImageView5_4;
+ public ImageView mImageView5_5;
+ public ImageView mImageView5_6;
+ public ImageView mImageView5_7;
+ public ImageView mImageView5_8;
+ private final ArraySet<ImageView> oaks6 = new ArraySet<>();
+ public ImageView mImageView6;
+ public ImageView mImageView6_2;
+ public ImageView mImageView6_3;
+ public ImageView mImageView6_4;
+ public ImageView mImageView6_5;
+ public ImageView mImageView6_6;
+ public ImageView mImageView6_7;
+ public ImageView mImageView6_8;
+ private final ArraySet<ImageView> oaks7 = new ArraySet<>();
+ public ImageView mImageView7;
+ public ImageView mImageView7_2;
+ public ImageView mImageView7_3;
+ public ImageView mImageView7_4;
+ public ImageView mImageView7_5;
+ public ImageView mImageView7_6;
+ public ImageView mImageView7_7;
+ public ImageView mImageView7_8;
+ private final ArraySet<ImageView> oaks8 = new ArraySet<>();
+ public ImageView mImageView8;
+ public ImageView mImageView8_2;
+ public ImageView mImageView8_3;
+ public ImageView mImageView8_4;
+ public ImageView mImageView8_5;
+ public ImageView mImageView8_6;
+ public ImageView mImageView8_7;
+ public ImageView mImageView8_8;
+ private final ArraySet<ImageView> oaks9 = new ArraySet<>();
+ public ImageView mImageView9;
+ public ImageView mImageView9_2;
+ public ImageView mImageView9_3;
+ public ImageView mImageView9_4;
+ public ImageView mImageView9_5;
+ public ImageView mImageView9_6;
+ public ImageView mImageView9_7;
+ public ImageView mImageView9_8;
+ private final ArraySet<ImageView> oaks10 = new ArraySet<>();
+ public ImageView mImageView10;
+ public ImageView mImageView10_2;
+ public ImageView mImageView10_3;
+ public ImageView mImageView10_4;
+ public ImageView mImageView10_5;
+ public ImageView mImageView10_6;
+ public ImageView mImageView10_7;
+ public ImageView mImageView10_8;
+ private final ArraySet<ImageView> oaks11 = new ArraySet<>();
+ public ImageView mImageView11;
+ public ImageView mImageView11_2;
+ public ImageView mImageView11_3;
+ public ImageView mImageView11_4;
+ public ImageView mImageView11_5;
+ public ImageView mImageView11_6;
+ public ImageView mImageView11_7;
+ public ImageView mImageView11_8;
+ private final ArraySet<ImageView> oaks12 = new ArraySet<>();
+ public ImageView mImageView12;
+ public ImageView mImageView12_2;
+ public ImageView mImageView12_3;
+ public ImageView mImageView12_4;
+ public ImageView mImageView12_5;
+ public ImageView mImageView12_6;
+ public ImageView mImageView12_7;
+ public ImageView mImageView12_8;
+ private final ArraySet<ImageView> oaks13 = new ArraySet<>();
+ public ImageView mImageView13;
+ public ImageView mImageView13_2;
+ public ImageView mImageView13_3;
+ public ImageView mImageView13_4;
+ public ImageView mImageView13_5;
+ public ImageView mImageView13_6;
+ public ImageView mImageView13_7;
+ public ImageView mImageView13_8;
+ private final ArraySet<ImageView> oaks14 = new ArraySet<>();
+ public ImageView mImageView14;
+ public ImageView mImageView14_2;
+ public ImageView mImageView14_3;
+ public ImageView mImageView14_4;
+ public ImageView mImageView14_5;
+ public ImageView mImageView14_6;
+ public ImageView mImageView14_7;
+ public ImageView mImageView14_8;
+ private final ArraySet<ImageView> oaks15 = new ArraySet<>();
+ public ImageView mImageView15;
+ public ImageView mImageView15_2;
+ public ImageView mImageView15_3;
+ public ImageView mImageView15_4;
+ public ImageView mImageView15_5;
+ public ImageView mImageView15_6;
+ public ImageView mImageView15_7;
+ public ImageView mImageView15_8;
+ private final ArraySet<ImageView> oaks16 = new ArraySet<>();
+ public ImageView mImageView16;
+ public ImageView mImageView16_2;
+ public ImageView mImageView16_3;
+ public ImageView mImageView16_4;
+ public ImageView mImageView16_5;
+ public ImageView mImageView16_6;
+ public ImageView mImageView16_7;
+ public ImageView mImageView16_8;
+ private final ArraySet<ImageView> oaks17 = new ArraySet<>();
+ public ImageView mImageView17;
+ public ImageView mImageView17_2;
+ public ImageView mImageView17_3;
+ public ImageView mImageView17_4;
+ public ImageView mImageView17_5;
+ public ImageView mImageView17_6;
+ public ImageView mImageView17_7;
+ public ImageView mImageView17_8;
+ private final ArraySet<ImageView> oaks18 = new ArraySet<>();
+ public ImageView mImageView18;
+ public ImageView mImageView18_2;
+ public ImageView mImageView18_3;
+ public ImageView mImageView18_4;
+ public ImageView mImageView18_5;
+ public ImageView mImageView18_6;
+ public ImageView mImageView18_7;
+ public ImageView mImageView18_8;
+ private final ArraySet<ImageView> oaks19 = new ArraySet<>();
+ public ImageView mImageView19;
+ public ImageView mImageView19_2;
+ public ImageView mImageView19_3;
+ public ImageView mImageView19_4;
+ public ImageView mImageView19_5;
+ public ImageView mImageView19_6;
+ public ImageView mImageView19_7;
+ public ImageView mImageView19_8;
+ private final ArraySet<ImageView> oaks20 = new ArraySet<>();
+ public ImageView mImageView20;
+ public ImageView mImageView20_2;
+ public ImageView mImageView20_3;
+ public ImageView mImageView20_4;
+ public ImageView mImageView20_5;
+ public ImageView mImageView20_6;
+ public ImageView mImageView20_7;
+ public ImageView mImageView20_8;
+ private final ArraySet<ImageView> oaks21 = new ArraySet<>();
+ public ImageView mImageView21;
+ public ImageView mImageView21_2;
+ public ImageView mImageView21_3;
+ public ImageView mImageView21_4;
+ public ImageView mImageView21_5;
+ public ImageView mImageView21_6;
+ public ImageView mImageView21_7;
+ public ImageView mImageView21_8;
+ private final ArraySet<ImageView> oaks22 = new ArraySet<>();
+ public ImageView mImageView22;
+ public ImageView mImageView22_2;
+ public ImageView mImageView22_3;
+ public ImageView mImageView22_4;
+ public ImageView mImageView22_5;
+ public ImageView mImageView22_6;
+ public ImageView mImageView22_7;
+ public ImageView mImageView22_8;
+ private final ArraySet<ImageView> oaks23 = new ArraySet<>();
+ public ImageView mImageView23;
+ public ImageView mImageView23_2;
+ public ImageView mImageView23_3;
+ public ImageView mImageView23_4;
+ public ImageView mImageView23_5;
+ public ImageView mImageView23_6;
+ public ImageView mImageView23_7;
+ public ImageView mImageView23_8;
+ private final ArraySet<ImageView> oaks24 = new ArraySet<>();
+ public ImageView mImageView24;
+ public ImageView mImageView24_2;
+ public ImageView mImageView24_3;
+ public ImageView mImageView24_4;
+ public ImageView mImageView24_5;
+ public ImageView mImageView24_6;
+ public ImageView mImageView24_7;
+ public ImageView mImageView24_8;
+ private final ArraySet<ImageView> oaks25 = new ArraySet<>();
+ public ImageView mImageView25;
+ public ImageView mImageView25_2;
+ public ImageView mImageView25_3;
+ public ImageView mImageView25_4;
+ public ImageView mImageView25_5;
+ public ImageView mImageView25_6;
+ public ImageView mImageView25_7;
+ public ImageView mImageView25_8;
+ private final ArraySet<ImageView> oaks26 = new ArraySet<>();
+ public ImageView mImageView26;
+ public ImageView mImageView26_2;
+ public ImageView mImageView26_3;
+ public ImageView mImageView26_4;
+ public ImageView mImageView26_5;
+ public ImageView mImageView26_6;
+ public ImageView mImageView26_7;
+ public ImageView mImageView26_8;
+ private final ArraySet<ImageView> oaks27 = new ArraySet<>();
+ public ImageView mImageView27;
+ public ImageView mImageView27_2;
+ public ImageView mImageView27_3;
+ public ImageView mImageView27_4;
+ public ImageView mImageView27_5;
+ public ImageView mImageView27_6;
+ public ImageView mImageView27_7;
+ public ImageView mImageView27_8;
+ private final ArraySet<ImageView> oaks28 = new ArraySet<>();
+ public ImageView mImageView28;
+ public ImageView mImageView28_2;
+ public ImageView mImageView28_3;
+ public ImageView mImageView28_4;
+ public ImageView mImageView28_5;
+ public ImageView mImageView28_6;
+ public ImageView mImageView28_7;
+ public ImageView mImageView28_8;
+ private final ArraySet<ImageView> oaks29 = new ArraySet<>();
+ public ImageView mImageView29;
+ public ImageView mImageView29_2;
+ public ImageView mImageView29_3;
+ public ImageView mImageView29_4;
+ public ImageView mImageView29_5;
+ public ImageView mImageView29_6;
+ public ImageView mImageView29_7;
+ public ImageView mImageView29_8;
+ private final ArraySet<ImageView> oaks30 = new ArraySet<>();
+ public ImageView mImageView30;
+ public ImageView mImageView30_2;
+ public ImageView mImageView30_3;
+ public ImageView mImageView30_4;
+ public ImageView mImageView30_5;
+ public ImageView mImageView30_6;
+ public ImageView mImageView30_7;
+ public ImageView mImageView30_8;
+ private final ArraySet<ImageView> oaks31 = new ArraySet<>();
+ public ImageView mImageView31;
+ public ImageView mImageView31_2;
+ public ImageView mImageView31_3;
+ public ImageView mImageView31_4;
+ public ImageView mImageView31_5;
+ public ImageView mImageView31_6;
+ public ImageView mImageView31_7;
+ public ImageView mImageView31_8;
+ private final ArraySet<ImageView> oaks32 = new ArraySet<>();
+ public ImageView mImageView32;
+ public ImageView mImageView32_2;
+ public ImageView mImageView32_3;
+ public ImageView mImageView32_4;
+ public ImageView mImageView32_5;
+ public ImageView mImageView32_6;
+ public ImageView mImageView32_7;
+ public ImageView mImageView32_8;
+ private final ArraySet<ImageView> oaks33 = new ArraySet<>();
+ public ImageView mImageView33;
+ public ImageView mImageView33_2;
+ public ImageView mImageView33_3;
+ public ImageView mImageView33_4;
+ public ImageView mImageView33_5;
+ public ImageView mImageView33_6;
+ public ImageView mImageView33_7;
+ public ImageView mImageView33_8;
+ private final ArraySet<ImageView> oaks34 = new ArraySet<>();
+ public ImageView mImageView34;
+ public ImageView mImageView34_2;
+ public ImageView mImageView34_3;
+ public ImageView mImageView34_4;
+ public ImageView mImageView34_5;
+ public ImageView mImageView34_6;
+ public ImageView mImageView34_7;
+ public ImageView mImageView34_8;
+ private final ArraySet<ImageView> oaks35 = new ArraySet<>();
+ public ImageView mImageView35;
+ public ImageView mImageView35_2;
+ public ImageView mImageView35_3;
+ public ImageView mImageView35_4;
+ public ImageView mImageView35_5;
+ public ImageView mImageView35_6;
+ public ImageView mImageView35_7;
+ public ImageView mImageView35_8;
+ private final ArraySet<ImageView> oaks36 = new ArraySet<>();
+ public ImageView mImageView36;
+ public ImageView mImageView36_2;
+ public ImageView mImageView36_3;
+ public ImageView mImageView36_4;
+ public ImageView mImageView36_5;
+ public ImageView mImageView36_6;
+ public ImageView mImageView36_7;
+ public ImageView mImageView36_8;
+ private final ArraySet<ImageView> oaks37 = new ArraySet<>();
+ public ImageView mImageView37;
+ public ImageView mImageView37_2;
+ public ImageView mImageView37_3;
+ public ImageView mImageView37_4;
+ public ImageView mImageView37_5;
+ public ImageView mImageView37_6;
+ public ImageView mImageView37_7;
+ public ImageView mImageView37_8;
+ private final ArraySet<ImageView> oaks38 = new ArraySet<>();
+ public ImageView mImageView38;
+ public ImageView mImageView38_2;
+ public ImageView mImageView38_3;
+ public ImageView mImageView38_4;
+ public ImageView mImageView38_5;
+ public ImageView mImageView38_6;
+ public ImageView mImageView38_7;
+ public ImageView mImageView38_8;
+ private final ArraySet<ImageView> oaks39 = new ArraySet<>();
+ public ImageView mImageView39;
+ public ImageView mImageView39_2;
+ public ImageView mImageView39_3;
+ public ImageView mImageView39_4;
+ public ImageView mImageView39_5;
+ public ImageView mImageView39_6;
+ public ImageView mImageView39_7;
+ public ImageView mImageView39_8;
+ private final ArraySet<ImageView> oaks40 = new ArraySet<>();
+ public ImageView mImageView40;
+ public ImageView mImageView40_2;
+ public ImageView mImageView40_3;
+ public ImageView mImageView40_4;
+ public ImageView mImageView40_5;
+ public ImageView mImageView40_6;
+ public ImageView mImageView40_7;
+ public ImageView mImageView40_8;
+ private final ArraySet<ImageView> oaks41 = new ArraySet<>();
+ public ImageView mImageView41;
+ public ImageView mImageView41_2;
+ public ImageView mImageView41_3;
+ public ImageView mImageView41_4;
+ public ImageView mImageView41_5;
+ public ImageView mImageView41_6;
+ public ImageView mImageView41_7;
+ public ImageView mImageView41_8;
+ private final ArraySet<ImageView> oaks42 = new ArraySet<>();
+ public ImageView mImageView42;
+ public ImageView mImageView42_2;
+ public ImageView mImageView42_3;
+ public ImageView mImageView42_4;
+ public ImageView mImageView42_5;
+ public ImageView mImageView42_6;
+ public ImageView mImageView42_7;
+ public ImageView mImageView42_8;
+ private final ArraySet<ImageView> oaks43 = new ArraySet<>();
+ public ImageView mImageView43;
+ public ImageView mImageView43_2;
+ public ImageView mImageView43_3;
+ public ImageView mImageView43_4;
+ public ImageView mImageView43_5;
+ public ImageView mImageView43_6;
+ public ImageView mImageView43_7;
+ public ImageView mImageView43_8;
+ private final ArraySet<ImageView> oaks44 = new ArraySet<>();
+ public ImageView mImageView44;
+ public ImageView mImageView44_2;
+ public ImageView mImageView44_3;
+ public ImageView mImageView44_4;
+ public ImageView mImageView44_5;
+ public ImageView mImageView44_6;
+ public ImageView mImageView44_7;
+ public ImageView mImageView44_8;
+ private final ArraySet<ImageView> oaks45 = new ArraySet<>();
+ public ImageView mImageView45;
+ public ImageView mImageView45_2;
+ public ImageView mImageView45_3;
+ public ImageView mImageView45_4;
+ public ImageView mImageView45_5;
+ public ImageView mImageView45_6;
+ public ImageView mImageView45_7;
+ public ImageView mImageView45_8;
+ private final ArraySet<ImageView> oaks46 = new ArraySet<>();
+ public ImageView mImageView46;
+ public ImageView mImageView46_2;
+ public ImageView mImageView46_3;
+ public ImageView mImageView46_4;
+ public ImageView mImageView46_5;
+ public ImageView mImageView46_6;
+ public ImageView mImageView46_7;
+ public ImageView mImageView46_8;
+ private final ArraySet<ImageView> oaks47 = new ArraySet<>();
+ public ImageView mImageView47;
+ public ImageView mImageView47_2;
+ public ImageView mImageView47_3;
+ public ImageView mImageView47_4;
+ public ImageView mImageView47_5;
+ public ImageView mImageView47_6;
+ public ImageView mImageView47_7;
+ public ImageView mImageView47_8;
+ private final ArraySet<ImageView> oaks48 = new ArraySet<>();
+ public ImageView mImageView48;
+ public ImageView mImageView48_2;
+ public ImageView mImageView48_3;
+ public ImageView mImageView48_4;
+ public ImageView mImageView48_5;
+ public ImageView mImageView48_6;
+ public ImageView mImageView48_7;
+ public ImageView mImageView48_8;
+ private final ArraySet<ImageView> oaks49 = new ArraySet<>();
+ public ImageView mImageView49;
+ public ImageView mImageView49_2;
+ public ImageView mImageView49_3;
+ public ImageView mImageView49_4;
+ public ImageView mImageView49_5;
+ public ImageView mImageView49_6;
+ public ImageView mImageView49_7;
+ public ImageView mImageView49_8;
+ private final ArraySet<ImageView> oaks50 = new ArraySet<>();
+ public ImageView mImageView50;
+ public ImageView mImageView50_2;
+ public ImageView mImageView50_3;
+ public ImageView mImageView50_4;
+ public ImageView mImageView50_5;
+ public ImageView mImageView50_6;
+ public ImageView mImageView50_7;
+ public ImageView mImageView50_8;
+ 
+            public Ribbon50Holder(View itemView, OnItemClickListener listener, ArraySet<ImageView> images, ArrayList<List<ImageView>> oaks) {
+ super(itemView);
+ 
+            this.images = images;
+            this.oaks = oaks;
+             List<ImageView> oaks1 = new ArrayList<>();
+ mImageView1 = itemView.findViewById(R.id.ribbon1);
+ this.images.add(mImageView1);
+ oaks1.add(mImageView1_2 = itemView.findViewById(R.id.ribbon1_2));
+ oaks1.add(mImageView1_3 = itemView.findViewById(R.id.ribbon1_3));
+ oaks1.add(mImageView1_4 = itemView.findViewById(R.id.ribbon1_4));
+ oaks1.add(mImageView1_5 = itemView.findViewById(R.id.ribbon1_5));
+ oaks1.add(mImageView1_6 = itemView.findViewById(R.id.ribbon1_6));
+ oaks1.add(mImageView1_7 = itemView.findViewById(R.id.ribbon1_7));
+ oaks1.add(mImageView1_8 = itemView.findViewById(R.id.ribbon1_8));
+ List<ImageView> oaks2 = new ArrayList<>();
+ mImageView2 = itemView.findViewById(R.id.ribbon2);
+ this.images.add(mImageView2);
+ oaks2.add(mImageView2_2 = itemView.findViewById(R.id.ribbon2_2));
+ oaks2.add(mImageView2_3 = itemView.findViewById(R.id.ribbon2_3));
+ oaks2.add(mImageView2_4 = itemView.findViewById(R.id.ribbon2_4));
+ oaks2.add(mImageView2_5 = itemView.findViewById(R.id.ribbon2_5));
+ oaks2.add(mImageView2_6 = itemView.findViewById(R.id.ribbon2_6));
+ oaks2.add(mImageView2_7 = itemView.findViewById(R.id.ribbon2_7));
+ oaks2.add(mImageView2_8 = itemView.findViewById(R.id.ribbon2_8));
+ List<ImageView> oaks3 = new ArrayList<>();
+ mImageView3 = itemView.findViewById(R.id.ribbon3);
+ this.images.add(mImageView3);
+ oaks3.add(mImageView3_2 = itemView.findViewById(R.id.ribbon3_2));
+ oaks3.add(mImageView3_3 = itemView.findViewById(R.id.ribbon3_3));
+ oaks3.add(mImageView3_4 = itemView.findViewById(R.id.ribbon3_4));
+ oaks3.add(mImageView3_5 = itemView.findViewById(R.id.ribbon3_5));
+ oaks3.add(mImageView3_6 = itemView.findViewById(R.id.ribbon3_6));
+ oaks3.add(mImageView3_7 = itemView.findViewById(R.id.ribbon3_7));
+ oaks3.add(mImageView3_8 = itemView.findViewById(R.id.ribbon3_8));
+ List<ImageView> oaks4 = new ArrayList<>();
+ mImageView4 = itemView.findViewById(R.id.ribbon4);
+ this.images.add(mImageView4);
+ oaks4.add(mImageView4_2 = itemView.findViewById(R.id.ribbon4_2));
+ oaks4.add(mImageView4_3 = itemView.findViewById(R.id.ribbon4_3));
+ oaks4.add(mImageView4_4 = itemView.findViewById(R.id.ribbon4_4));
+ oaks4.add(mImageView4_5 = itemView.findViewById(R.id.ribbon4_5));
+ oaks4.add(mImageView4_6 = itemView.findViewById(R.id.ribbon4_6));
+ oaks4.add(mImageView4_7 = itemView.findViewById(R.id.ribbon4_7));
+ oaks4.add(mImageView4_8 = itemView.findViewById(R.id.ribbon4_8));
+ List<ImageView> oaks5 = new ArrayList<>();
+ mImageView5 = itemView.findViewById(R.id.ribbon5);
+ this.images.add(mImageView5);
+ oaks5.add(mImageView5_2 = itemView.findViewById(R.id.ribbon5_2));
+ oaks5.add(mImageView5_3 = itemView.findViewById(R.id.ribbon5_3));
+ oaks5.add(mImageView5_4 = itemView.findViewById(R.id.ribbon5_4));
+ oaks5.add(mImageView5_5 = itemView.findViewById(R.id.ribbon5_5));
+ oaks5.add(mImageView5_6 = itemView.findViewById(R.id.ribbon5_6));
+ oaks5.add(mImageView5_7 = itemView.findViewById(R.id.ribbon5_7));
+ oaks5.add(mImageView5_8 = itemView.findViewById(R.id.ribbon5_8));
+ List<ImageView> oaks6 = new ArrayList<>();
+ mImageView6 = itemView.findViewById(R.id.ribbon6);
+ this.images.add(mImageView6);
+ oaks6.add(mImageView6_2 = itemView.findViewById(R.id.ribbon6_2));
+ oaks6.add(mImageView6_3 = itemView.findViewById(R.id.ribbon6_3));
+ oaks6.add(mImageView6_4 = itemView.findViewById(R.id.ribbon6_4));
+ oaks6.add(mImageView6_5 = itemView.findViewById(R.id.ribbon6_5));
+ oaks6.add(mImageView6_6 = itemView.findViewById(R.id.ribbon6_6));
+ oaks6.add(mImageView6_7 = itemView.findViewById(R.id.ribbon6_7));
+ oaks6.add(mImageView6_8 = itemView.findViewById(R.id.ribbon6_8));
+ List<ImageView> oaks7 = new ArrayList<>();
+ mImageView7 = itemView.findViewById(R.id.ribbon7);
+ this.images.add(mImageView7);
+ oaks7.add(mImageView7_2 = itemView.findViewById(R.id.ribbon7_2));
+ oaks7.add(mImageView7_3 = itemView.findViewById(R.id.ribbon7_3));
+ oaks7.add(mImageView7_4 = itemView.findViewById(R.id.ribbon7_4));
+ oaks7.add(mImageView7_5 = itemView.findViewById(R.id.ribbon7_5));
+ oaks7.add(mImageView7_6 = itemView.findViewById(R.id.ribbon7_6));
+ oaks7.add(mImageView7_7 = itemView.findViewById(R.id.ribbon7_7));
+ oaks7.add(mImageView7_8 = itemView.findViewById(R.id.ribbon7_8));
+ List<ImageView> oaks8 = new ArrayList<>();
+ mImageView8 = itemView.findViewById(R.id.ribbon8);
+ this.images.add(mImageView8);
+ oaks8.add(mImageView8_2 = itemView.findViewById(R.id.ribbon8_2));
+ oaks8.add(mImageView8_3 = itemView.findViewById(R.id.ribbon8_3));
+ oaks8.add(mImageView8_4 = itemView.findViewById(R.id.ribbon8_4));
+ oaks8.add(mImageView8_5 = itemView.findViewById(R.id.ribbon8_5));
+ oaks8.add(mImageView8_6 = itemView.findViewById(R.id.ribbon8_6));
+ oaks8.add(mImageView8_7 = itemView.findViewById(R.id.ribbon8_7));
+ oaks8.add(mImageView8_8 = itemView.findViewById(R.id.ribbon8_8));
+ List<ImageView> oaks9 = new ArrayList<>();
+ mImageView9 = itemView.findViewById(R.id.ribbon9);
+ this.images.add(mImageView9);
+ oaks9.add(mImageView9_2 = itemView.findViewById(R.id.ribbon9_2));
+ oaks9.add(mImageView9_3 = itemView.findViewById(R.id.ribbon9_3));
+ oaks9.add(mImageView9_4 = itemView.findViewById(R.id.ribbon9_4));
+ oaks9.add(mImageView9_5 = itemView.findViewById(R.id.ribbon9_5));
+ oaks9.add(mImageView9_6 = itemView.findViewById(R.id.ribbon9_6));
+ oaks9.add(mImageView9_7 = itemView.findViewById(R.id.ribbon9_7));
+ oaks9.add(mImageView9_8 = itemView.findViewById(R.id.ribbon9_8));
+ List<ImageView> oaks10 = new ArrayList<>();
+ mImageView10 = itemView.findViewById(R.id.ribbon10);
+ this.images.add(mImageView10);
+ oaks10.add(mImageView10_2 = itemView.findViewById(R.id.ribbon10_2));
+ oaks10.add(mImageView10_3 = itemView.findViewById(R.id.ribbon10_3));
+ oaks10.add(mImageView10_4 = itemView.findViewById(R.id.ribbon10_4));
+ oaks10.add(mImageView10_5 = itemView.findViewById(R.id.ribbon10_5));
+ oaks10.add(mImageView10_6 = itemView.findViewById(R.id.ribbon10_6));
+ oaks10.add(mImageView10_7 = itemView.findViewById(R.id.ribbon10_7));
+ oaks10.add(mImageView10_8 = itemView.findViewById(R.id.ribbon10_8));
+ List<ImageView> oaks11 = new ArrayList<>();
+ mImageView11 = itemView.findViewById(R.id.ribbon11);
+ this.images.add(mImageView11);
+ oaks11.add(mImageView11_2 = itemView.findViewById(R.id.ribbon11_2));
+ oaks11.add(mImageView11_3 = itemView.findViewById(R.id.ribbon11_3));
+ oaks11.add(mImageView11_4 = itemView.findViewById(R.id.ribbon11_4));
+ oaks11.add(mImageView11_5 = itemView.findViewById(R.id.ribbon11_5));
+ oaks11.add(mImageView11_6 = itemView.findViewById(R.id.ribbon11_6));
+ oaks11.add(mImageView11_7 = itemView.findViewById(R.id.ribbon11_7));
+ oaks11.add(mImageView11_8 = itemView.findViewById(R.id.ribbon11_8));
+ List<ImageView> oaks12 = new ArrayList<>();
+ mImageView12 = itemView.findViewById(R.id.ribbon12);
+ this.images.add(mImageView12);
+ oaks12.add(mImageView12_2 = itemView.findViewById(R.id.ribbon12_2));
+ oaks12.add(mImageView12_3 = itemView.findViewById(R.id.ribbon12_3));
+ oaks12.add(mImageView12_4 = itemView.findViewById(R.id.ribbon12_4));
+ oaks12.add(mImageView12_5 = itemView.findViewById(R.id.ribbon12_5));
+ oaks12.add(mImageView12_6 = itemView.findViewById(R.id.ribbon12_6));
+ oaks12.add(mImageView12_7 = itemView.findViewById(R.id.ribbon12_7));
+ oaks12.add(mImageView12_8 = itemView.findViewById(R.id.ribbon12_8));
+ List<ImageView> oaks13 = new ArrayList<>();
+ mImageView13 = itemView.findViewById(R.id.ribbon13);
+ this.images.add(mImageView13);
+ oaks13.add(mImageView13_2 = itemView.findViewById(R.id.ribbon13_2));
+ oaks13.add(mImageView13_3 = itemView.findViewById(R.id.ribbon13_3));
+ oaks13.add(mImageView13_4 = itemView.findViewById(R.id.ribbon13_4));
+ oaks13.add(mImageView13_5 = itemView.findViewById(R.id.ribbon13_5));
+ oaks13.add(mImageView13_6 = itemView.findViewById(R.id.ribbon13_6));
+ oaks13.add(mImageView13_7 = itemView.findViewById(R.id.ribbon13_7));
+ oaks13.add(mImageView13_8 = itemView.findViewById(R.id.ribbon13_8));
+ List<ImageView> oaks14 = new ArrayList<>();
+ mImageView14 = itemView.findViewById(R.id.ribbon14);
+ this.images.add(mImageView14);
+ oaks14.add(mImageView14_2 = itemView.findViewById(R.id.ribbon14_2));
+ oaks14.add(mImageView14_3 = itemView.findViewById(R.id.ribbon14_3));
+ oaks14.add(mImageView14_4 = itemView.findViewById(R.id.ribbon14_4));
+ oaks14.add(mImageView14_5 = itemView.findViewById(R.id.ribbon14_5));
+ oaks14.add(mImageView14_6 = itemView.findViewById(R.id.ribbon14_6));
+ oaks14.add(mImageView14_7 = itemView.findViewById(R.id.ribbon14_7));
+ oaks14.add(mImageView14_8 = itemView.findViewById(R.id.ribbon14_8));
+ List<ImageView> oaks15 = new ArrayList<>();
+ mImageView15 = itemView.findViewById(R.id.ribbon15);
+ this.images.add(mImageView15);
+ oaks15.add(mImageView15_2 = itemView.findViewById(R.id.ribbon15_2));
+ oaks15.add(mImageView15_3 = itemView.findViewById(R.id.ribbon15_3));
+ oaks15.add(mImageView15_4 = itemView.findViewById(R.id.ribbon15_4));
+ oaks15.add(mImageView15_5 = itemView.findViewById(R.id.ribbon15_5));
+ oaks15.add(mImageView15_6 = itemView.findViewById(R.id.ribbon15_6));
+ oaks15.add(mImageView15_7 = itemView.findViewById(R.id.ribbon15_7));
+ oaks15.add(mImageView15_8 = itemView.findViewById(R.id.ribbon15_8));
+ List<ImageView> oaks16 = new ArrayList<>();
+ mImageView16 = itemView.findViewById(R.id.ribbon16);
+ this.images.add(mImageView16);
+ oaks16.add(mImageView16_2 = itemView.findViewById(R.id.ribbon16_2));
+ oaks16.add(mImageView16_3 = itemView.findViewById(R.id.ribbon16_3));
+ oaks16.add(mImageView16_4 = itemView.findViewById(R.id.ribbon16_4));
+ oaks16.add(mImageView16_5 = itemView.findViewById(R.id.ribbon16_5));
+ oaks16.add(mImageView16_6 = itemView.findViewById(R.id.ribbon16_6));
+ oaks16.add(mImageView16_7 = itemView.findViewById(R.id.ribbon16_7));
+ oaks16.add(mImageView16_8 = itemView.findViewById(R.id.ribbon16_8));
+ List<ImageView> oaks17 = new ArrayList<>();
+ mImageView17 = itemView.findViewById(R.id.ribbon17);
+ this.images.add(mImageView17);
+ oaks17.add(mImageView17_2 = itemView.findViewById(R.id.ribbon17_2));
+ oaks17.add(mImageView17_3 = itemView.findViewById(R.id.ribbon17_3));
+ oaks17.add(mImageView17_4 = itemView.findViewById(R.id.ribbon17_4));
+ oaks17.add(mImageView17_5 = itemView.findViewById(R.id.ribbon17_5));
+ oaks17.add(mImageView17_6 = itemView.findViewById(R.id.ribbon17_6));
+ oaks17.add(mImageView17_7 = itemView.findViewById(R.id.ribbon17_7));
+ oaks17.add(mImageView17_8 = itemView.findViewById(R.id.ribbon17_8));
+ List<ImageView> oaks18 = new ArrayList<>();
+ mImageView18 = itemView.findViewById(R.id.ribbon18);
+ this.images.add(mImageView18);
+ oaks18.add(mImageView18_2 = itemView.findViewById(R.id.ribbon18_2));
+ oaks18.add(mImageView18_3 = itemView.findViewById(R.id.ribbon18_3));
+ oaks18.add(mImageView18_4 = itemView.findViewById(R.id.ribbon18_4));
+ oaks18.add(mImageView18_5 = itemView.findViewById(R.id.ribbon18_5));
+ oaks18.add(mImageView18_6 = itemView.findViewById(R.id.ribbon18_6));
+ oaks18.add(mImageView18_7 = itemView.findViewById(R.id.ribbon18_7));
+ oaks18.add(mImageView18_8 = itemView.findViewById(R.id.ribbon18_8));
+ List<ImageView> oaks19 = new ArrayList<>();
+ mImageView19 = itemView.findViewById(R.id.ribbon19);
+ this.images.add(mImageView19);
+ oaks19.add(mImageView19_2 = itemView.findViewById(R.id.ribbon19_2));
+ oaks19.add(mImageView19_3 = itemView.findViewById(R.id.ribbon19_3));
+ oaks19.add(mImageView19_4 = itemView.findViewById(R.id.ribbon19_4));
+ oaks19.add(mImageView19_5 = itemView.findViewById(R.id.ribbon19_5));
+ oaks19.add(mImageView19_6 = itemView.findViewById(R.id.ribbon19_6));
+ oaks19.add(mImageView19_7 = itemView.findViewById(R.id.ribbon19_7));
+ oaks19.add(mImageView19_8 = itemView.findViewById(R.id.ribbon19_8));
+ List<ImageView> oaks20 = new ArrayList<>();
+ mImageView20 = itemView.findViewById(R.id.ribbon20);
+ this.images.add(mImageView20);
+ oaks20.add(mImageView20_2 = itemView.findViewById(R.id.ribbon20_2));
+ oaks20.add(mImageView20_3 = itemView.findViewById(R.id.ribbon20_3));
+ oaks20.add(mImageView20_4 = itemView.findViewById(R.id.ribbon20_4));
+ oaks20.add(mImageView20_5 = itemView.findViewById(R.id.ribbon20_5));
+ oaks20.add(mImageView20_6 = itemView.findViewById(R.id.ribbon20_6));
+ oaks20.add(mImageView20_7 = itemView.findViewById(R.id.ribbon20_7));
+ oaks20.add(mImageView20_8 = itemView.findViewById(R.id.ribbon20_8));
+ List<ImageView> oaks21 = new ArrayList<>();
+ mImageView21 = itemView.findViewById(R.id.ribbon21);
+ this.images.add(mImageView21);
+ oaks21.add(mImageView21_2 = itemView.findViewById(R.id.ribbon21_2));
+ oaks21.add(mImageView21_3 = itemView.findViewById(R.id.ribbon21_3));
+ oaks21.add(mImageView21_4 = itemView.findViewById(R.id.ribbon21_4));
+ oaks21.add(mImageView21_5 = itemView.findViewById(R.id.ribbon21_5));
+ oaks21.add(mImageView21_6 = itemView.findViewById(R.id.ribbon21_6));
+ oaks21.add(mImageView21_7 = itemView.findViewById(R.id.ribbon21_7));
+ oaks21.add(mImageView21_8 = itemView.findViewById(R.id.ribbon21_8));
+ List<ImageView> oaks22 = new ArrayList<>();
+ mImageView22 = itemView.findViewById(R.id.ribbon22);
+ this.images.add(mImageView22);
+ oaks22.add(mImageView22_2 = itemView.findViewById(R.id.ribbon22_2));
+ oaks22.add(mImageView22_3 = itemView.findViewById(R.id.ribbon22_3));
+ oaks22.add(mImageView22_4 = itemView.findViewById(R.id.ribbon22_4));
+ oaks22.add(mImageView22_5 = itemView.findViewById(R.id.ribbon22_5));
+ oaks22.add(mImageView22_6 = itemView.findViewById(R.id.ribbon22_6));
+ oaks22.add(mImageView22_7 = itemView.findViewById(R.id.ribbon22_7));
+ oaks22.add(mImageView22_8 = itemView.findViewById(R.id.ribbon22_8));
+ List<ImageView> oaks23 = new ArrayList<>();
+ mImageView23 = itemView.findViewById(R.id.ribbon23);
+ this.images.add(mImageView23);
+ oaks23.add(mImageView23_2 = itemView.findViewById(R.id.ribbon23_2));
+ oaks23.add(mImageView23_3 = itemView.findViewById(R.id.ribbon23_3));
+ oaks23.add(mImageView23_4 = itemView.findViewById(R.id.ribbon23_4));
+ oaks23.add(mImageView23_5 = itemView.findViewById(R.id.ribbon23_5));
+ oaks23.add(mImageView23_6 = itemView.findViewById(R.id.ribbon23_6));
+ oaks23.add(mImageView23_7 = itemView.findViewById(R.id.ribbon23_7));
+ oaks23.add(mImageView23_8 = itemView.findViewById(R.id.ribbon23_8));
+ List<ImageView> oaks24 = new ArrayList<>();
+ mImageView24 = itemView.findViewById(R.id.ribbon24);
+ this.images.add(mImageView24);
+ oaks24.add(mImageView24_2 = itemView.findViewById(R.id.ribbon24_2));
+ oaks24.add(mImageView24_3 = itemView.findViewById(R.id.ribbon24_3));
+ oaks24.add(mImageView24_4 = itemView.findViewById(R.id.ribbon24_4));
+ oaks24.add(mImageView24_5 = itemView.findViewById(R.id.ribbon24_5));
+ oaks24.add(mImageView24_6 = itemView.findViewById(R.id.ribbon24_6));
+ oaks24.add(mImageView24_7 = itemView.findViewById(R.id.ribbon24_7));
+ oaks24.add(mImageView24_8 = itemView.findViewById(R.id.ribbon24_8));
+ List<ImageView> oaks25 = new ArrayList<>();
+ mImageView25 = itemView.findViewById(R.id.ribbon25);
+ this.images.add(mImageView25);
+ oaks25.add(mImageView25_2 = itemView.findViewById(R.id.ribbon25_2));
+ oaks25.add(mImageView25_3 = itemView.findViewById(R.id.ribbon25_3));
+ oaks25.add(mImageView25_4 = itemView.findViewById(R.id.ribbon25_4));
+ oaks25.add(mImageView25_5 = itemView.findViewById(R.id.ribbon25_5));
+ oaks25.add(mImageView25_6 = itemView.findViewById(R.id.ribbon25_6));
+ oaks25.add(mImageView25_7 = itemView.findViewById(R.id.ribbon25_7));
+ oaks25.add(mImageView25_8 = itemView.findViewById(R.id.ribbon25_8));
+ List<ImageView> oaks26 = new ArrayList<>();
+ mImageView26 = itemView.findViewById(R.id.ribbon26);
+ this.images.add(mImageView26);
+ oaks26.add(mImageView26_2 = itemView.findViewById(R.id.ribbon26_2));
+ oaks26.add(mImageView26_3 = itemView.findViewById(R.id.ribbon26_3));
+ oaks26.add(mImageView26_4 = itemView.findViewById(R.id.ribbon26_4));
+ oaks26.add(mImageView26_5 = itemView.findViewById(R.id.ribbon26_5));
+ oaks26.add(mImageView26_6 = itemView.findViewById(R.id.ribbon26_6));
+ oaks26.add(mImageView26_7 = itemView.findViewById(R.id.ribbon26_7));
+ oaks26.add(mImageView26_8 = itemView.findViewById(R.id.ribbon26_8));
+ List<ImageView> oaks27 = new ArrayList<>();
+ mImageView27 = itemView.findViewById(R.id.ribbon27);
+ this.images.add(mImageView27);
+ oaks27.add(mImageView27_2 = itemView.findViewById(R.id.ribbon27_2));
+ oaks27.add(mImageView27_3 = itemView.findViewById(R.id.ribbon27_3));
+ oaks27.add(mImageView27_4 = itemView.findViewById(R.id.ribbon27_4));
+ oaks27.add(mImageView27_5 = itemView.findViewById(R.id.ribbon27_5));
+ oaks27.add(mImageView27_6 = itemView.findViewById(R.id.ribbon27_6));
+ oaks27.add(mImageView27_7 = itemView.findViewById(R.id.ribbon27_7));
+ oaks27.add(mImageView27_8 = itemView.findViewById(R.id.ribbon27_8));
+ List<ImageView> oaks28 = new ArrayList<>();
+ mImageView28 = itemView.findViewById(R.id.ribbon28);
+ this.images.add(mImageView28);
+ oaks28.add(mImageView28_2 = itemView.findViewById(R.id.ribbon28_2));
+ oaks28.add(mImageView28_3 = itemView.findViewById(R.id.ribbon28_3));
+ oaks28.add(mImageView28_4 = itemView.findViewById(R.id.ribbon28_4));
+ oaks28.add(mImageView28_5 = itemView.findViewById(R.id.ribbon28_5));
+ oaks28.add(mImageView28_6 = itemView.findViewById(R.id.ribbon28_6));
+ oaks28.add(mImageView28_7 = itemView.findViewById(R.id.ribbon28_7));
+ oaks28.add(mImageView28_8 = itemView.findViewById(R.id.ribbon28_8));
+ List<ImageView> oaks29 = new ArrayList<>();
+ mImageView29 = itemView.findViewById(R.id.ribbon29);
+ this.images.add(mImageView29);
+ oaks29.add(mImageView29_2 = itemView.findViewById(R.id.ribbon29_2));
+ oaks29.add(mImageView29_3 = itemView.findViewById(R.id.ribbon29_3));
+ oaks29.add(mImageView29_4 = itemView.findViewById(R.id.ribbon29_4));
+ oaks29.add(mImageView29_5 = itemView.findViewById(R.id.ribbon29_5));
+ oaks29.add(mImageView29_6 = itemView.findViewById(R.id.ribbon29_6));
+ oaks29.add(mImageView29_7 = itemView.findViewById(R.id.ribbon29_7));
+ oaks29.add(mImageView29_8 = itemView.findViewById(R.id.ribbon29_8));
+ List<ImageView> oaks30 = new ArrayList<>();
+ mImageView30 = itemView.findViewById(R.id.ribbon30);
+ this.images.add(mImageView30);
+ oaks30.add(mImageView30_2 = itemView.findViewById(R.id.ribbon30_2));
+ oaks30.add(mImageView30_3 = itemView.findViewById(R.id.ribbon30_3));
+ oaks30.add(mImageView30_4 = itemView.findViewById(R.id.ribbon30_4));
+ oaks30.add(mImageView30_5 = itemView.findViewById(R.id.ribbon30_5));
+ oaks30.add(mImageView30_6 = itemView.findViewById(R.id.ribbon30_6));
+ oaks30.add(mImageView30_7 = itemView.findViewById(R.id.ribbon30_7));
+ oaks30.add(mImageView30_8 = itemView.findViewById(R.id.ribbon30_8));
+ List<ImageView> oaks31 = new ArrayList<>();
+ mImageView31 = itemView.findViewById(R.id.ribbon31);
+ this.images.add(mImageView31);
+ oaks31.add(mImageView31_2 = itemView.findViewById(R.id.ribbon31_2));
+ oaks31.add(mImageView31_3 = itemView.findViewById(R.id.ribbon31_3));
+ oaks31.add(mImageView31_4 = itemView.findViewById(R.id.ribbon31_4));
+ oaks31.add(mImageView31_5 = itemView.findViewById(R.id.ribbon31_5));
+ oaks31.add(mImageView31_6 = itemView.findViewById(R.id.ribbon31_6));
+ oaks31.add(mImageView31_7 = itemView.findViewById(R.id.ribbon31_7));
+ oaks31.add(mImageView31_8 = itemView.findViewById(R.id.ribbon31_8));
+ List<ImageView> oaks32 = new ArrayList<>();
+ mImageView32 = itemView.findViewById(R.id.ribbon32);
+ this.images.add(mImageView32);
+ oaks32.add(mImageView32_2 = itemView.findViewById(R.id.ribbon32_2));
+ oaks32.add(mImageView32_3 = itemView.findViewById(R.id.ribbon32_3));
+ oaks32.add(mImageView32_4 = itemView.findViewById(R.id.ribbon32_4));
+ oaks32.add(mImageView32_5 = itemView.findViewById(R.id.ribbon32_5));
+ oaks32.add(mImageView32_6 = itemView.findViewById(R.id.ribbon32_6));
+ oaks32.add(mImageView32_7 = itemView.findViewById(R.id.ribbon32_7));
+ oaks32.add(mImageView32_8 = itemView.findViewById(R.id.ribbon32_8));
+ List<ImageView> oaks33 = new ArrayList<>();
+ mImageView33 = itemView.findViewById(R.id.ribbon33);
+ this.images.add(mImageView33);
+ oaks33.add(mImageView33_2 = itemView.findViewById(R.id.ribbon33_2));
+ oaks33.add(mImageView33_3 = itemView.findViewById(R.id.ribbon33_3));
+ oaks33.add(mImageView33_4 = itemView.findViewById(R.id.ribbon33_4));
+ oaks33.add(mImageView33_5 = itemView.findViewById(R.id.ribbon33_5));
+ oaks33.add(mImageView33_6 = itemView.findViewById(R.id.ribbon33_6));
+ oaks33.add(mImageView33_7 = itemView.findViewById(R.id.ribbon33_7));
+ oaks33.add(mImageView33_8 = itemView.findViewById(R.id.ribbon33_8));
+ List<ImageView> oaks34 = new ArrayList<>();
+ mImageView34 = itemView.findViewById(R.id.ribbon34);
+ this.images.add(mImageView34);
+ oaks34.add(mImageView34_2 = itemView.findViewById(R.id.ribbon34_2));
+ oaks34.add(mImageView34_3 = itemView.findViewById(R.id.ribbon34_3));
+ oaks34.add(mImageView34_4 = itemView.findViewById(R.id.ribbon34_4));
+ oaks34.add(mImageView34_5 = itemView.findViewById(R.id.ribbon34_5));
+ oaks34.add(mImageView34_6 = itemView.findViewById(R.id.ribbon34_6));
+ oaks34.add(mImageView34_7 = itemView.findViewById(R.id.ribbon34_7));
+ oaks34.add(mImageView34_8 = itemView.findViewById(R.id.ribbon34_8));
+ List<ImageView> oaks35 = new ArrayList<>();
+ mImageView35 = itemView.findViewById(R.id.ribbon35);
+ this.images.add(mImageView35);
+ oaks35.add(mImageView35_2 = itemView.findViewById(R.id.ribbon35_2));
+ oaks35.add(mImageView35_3 = itemView.findViewById(R.id.ribbon35_3));
+ oaks35.add(mImageView35_4 = itemView.findViewById(R.id.ribbon35_4));
+ oaks35.add(mImageView35_5 = itemView.findViewById(R.id.ribbon35_5));
+ oaks35.add(mImageView35_6 = itemView.findViewById(R.id.ribbon35_6));
+ oaks35.add(mImageView35_7 = itemView.findViewById(R.id.ribbon35_7));
+ oaks35.add(mImageView35_8 = itemView.findViewById(R.id.ribbon35_8));
+ List<ImageView> oaks36 = new ArrayList<>();
+ mImageView36 = itemView.findViewById(R.id.ribbon36);
+ this.images.add(mImageView36);
+ oaks36.add(mImageView36_2 = itemView.findViewById(R.id.ribbon36_2));
+ oaks36.add(mImageView36_3 = itemView.findViewById(R.id.ribbon36_3));
+ oaks36.add(mImageView36_4 = itemView.findViewById(R.id.ribbon36_4));
+ oaks36.add(mImageView36_5 = itemView.findViewById(R.id.ribbon36_5));
+ oaks36.add(mImageView36_6 = itemView.findViewById(R.id.ribbon36_6));
+ oaks36.add(mImageView36_7 = itemView.findViewById(R.id.ribbon36_7));
+ oaks36.add(mImageView36_8 = itemView.findViewById(R.id.ribbon36_8));
+ List<ImageView> oaks37 = new ArrayList<>();
+ mImageView37 = itemView.findViewById(R.id.ribbon37);
+ this.images.add(mImageView37);
+ oaks37.add(mImageView37_2 = itemView.findViewById(R.id.ribbon37_2));
+ oaks37.add(mImageView37_3 = itemView.findViewById(R.id.ribbon37_3));
+ oaks37.add(mImageView37_4 = itemView.findViewById(R.id.ribbon37_4));
+ oaks37.add(mImageView37_5 = itemView.findViewById(R.id.ribbon37_5));
+ oaks37.add(mImageView37_6 = itemView.findViewById(R.id.ribbon37_6));
+ oaks37.add(mImageView37_7 = itemView.findViewById(R.id.ribbon37_7));
+ oaks37.add(mImageView37_8 = itemView.findViewById(R.id.ribbon37_8));
+ List<ImageView> oaks38 = new ArrayList<>();
+ mImageView38 = itemView.findViewById(R.id.ribbon38);
+ this.images.add(mImageView38);
+ oaks38.add(mImageView38_2 = itemView.findViewById(R.id.ribbon38_2));
+ oaks38.add(mImageView38_3 = itemView.findViewById(R.id.ribbon38_3));
+ oaks38.add(mImageView38_4 = itemView.findViewById(R.id.ribbon38_4));
+ oaks38.add(mImageView38_5 = itemView.findViewById(R.id.ribbon38_5));
+ oaks38.add(mImageView38_6 = itemView.findViewById(R.id.ribbon38_6));
+ oaks38.add(mImageView38_7 = itemView.findViewById(R.id.ribbon38_7));
+ oaks38.add(mImageView38_8 = itemView.findViewById(R.id.ribbon38_8));
+ List<ImageView> oaks39 = new ArrayList<>();
+ mImageView39 = itemView.findViewById(R.id.ribbon39);
+ this.images.add(mImageView39);
+ oaks39.add(mImageView39_2 = itemView.findViewById(R.id.ribbon39_2));
+ oaks39.add(mImageView39_3 = itemView.findViewById(R.id.ribbon39_3));
+ oaks39.add(mImageView39_4 = itemView.findViewById(R.id.ribbon39_4));
+ oaks39.add(mImageView39_5 = itemView.findViewById(R.id.ribbon39_5));
+ oaks39.add(mImageView39_6 = itemView.findViewById(R.id.ribbon39_6));
+ oaks39.add(mImageView39_7 = itemView.findViewById(R.id.ribbon39_7));
+ oaks39.add(mImageView39_8 = itemView.findViewById(R.id.ribbon39_8));
+ List<ImageView> oaks40 = new ArrayList<>();
+ mImageView40 = itemView.findViewById(R.id.ribbon40);
+ this.images.add(mImageView40);
+ oaks40.add(mImageView40_2 = itemView.findViewById(R.id.ribbon40_2));
+ oaks40.add(mImageView40_3 = itemView.findViewById(R.id.ribbon40_3));
+ oaks40.add(mImageView40_4 = itemView.findViewById(R.id.ribbon40_4));
+ oaks40.add(mImageView40_5 = itemView.findViewById(R.id.ribbon40_5));
+ oaks40.add(mImageView40_6 = itemView.findViewById(R.id.ribbon40_6));
+ oaks40.add(mImageView40_7 = itemView.findViewById(R.id.ribbon40_7));
+ oaks40.add(mImageView40_8 = itemView.findViewById(R.id.ribbon40_8));
+ List<ImageView> oaks41 = new ArrayList<>();
+ mImageView41 = itemView.findViewById(R.id.ribbon41);
+ this.images.add(mImageView41);
+ oaks41.add(mImageView41_2 = itemView.findViewById(R.id.ribbon41_2));
+ oaks41.add(mImageView41_3 = itemView.findViewById(R.id.ribbon41_3));
+ oaks41.add(mImageView41_4 = itemView.findViewById(R.id.ribbon41_4));
+ oaks41.add(mImageView41_5 = itemView.findViewById(R.id.ribbon41_5));
+ oaks41.add(mImageView41_6 = itemView.findViewById(R.id.ribbon41_6));
+ oaks41.add(mImageView41_7 = itemView.findViewById(R.id.ribbon41_7));
+ oaks41.add(mImageView41_8 = itemView.findViewById(R.id.ribbon41_8));
+ List<ImageView> oaks42 = new ArrayList<>();
+ mImageView42 = itemView.findViewById(R.id.ribbon42);
+ this.images.add(mImageView42);
+ oaks42.add(mImageView42_2 = itemView.findViewById(R.id.ribbon42_2));
+ oaks42.add(mImageView42_3 = itemView.findViewById(R.id.ribbon42_3));
+ oaks42.add(mImageView42_4 = itemView.findViewById(R.id.ribbon42_4));
+ oaks42.add(mImageView42_5 = itemView.findViewById(R.id.ribbon42_5));
+ oaks42.add(mImageView42_6 = itemView.findViewById(R.id.ribbon42_6));
+ oaks42.add(mImageView42_7 = itemView.findViewById(R.id.ribbon42_7));
+ oaks42.add(mImageView42_8 = itemView.findViewById(R.id.ribbon42_8));
+ List<ImageView> oaks43 = new ArrayList<>();
+ mImageView43 = itemView.findViewById(R.id.ribbon43);
+ this.images.add(mImageView43);
+ oaks43.add(mImageView43_2 = itemView.findViewById(R.id.ribbon43_2));
+ oaks43.add(mImageView43_3 = itemView.findViewById(R.id.ribbon43_3));
+ oaks43.add(mImageView43_4 = itemView.findViewById(R.id.ribbon43_4));
+ oaks43.add(mImageView43_5 = itemView.findViewById(R.id.ribbon43_5));
+ oaks43.add(mImageView43_6 = itemView.findViewById(R.id.ribbon43_6));
+ oaks43.add(mImageView43_7 = itemView.findViewById(R.id.ribbon43_7));
+ oaks43.add(mImageView43_8 = itemView.findViewById(R.id.ribbon43_8));
+ List<ImageView> oaks44 = new ArrayList<>();
+ mImageView44 = itemView.findViewById(R.id.ribbon44);
+ this.images.add(mImageView44);
+ oaks44.add(mImageView44_2 = itemView.findViewById(R.id.ribbon44_2));
+ oaks44.add(mImageView44_3 = itemView.findViewById(R.id.ribbon44_3));
+ oaks44.add(mImageView44_4 = itemView.findViewById(R.id.ribbon44_4));
+ oaks44.add(mImageView44_5 = itemView.findViewById(R.id.ribbon44_5));
+ oaks44.add(mImageView44_6 = itemView.findViewById(R.id.ribbon44_6));
+ oaks44.add(mImageView44_7 = itemView.findViewById(R.id.ribbon44_7));
+ oaks44.add(mImageView44_8 = itemView.findViewById(R.id.ribbon44_8));
+ List<ImageView> oaks45 = new ArrayList<>();
+ mImageView45 = itemView.findViewById(R.id.ribbon45);
+ this.images.add(mImageView45);
+ oaks45.add(mImageView45_2 = itemView.findViewById(R.id.ribbon45_2));
+ oaks45.add(mImageView45_3 = itemView.findViewById(R.id.ribbon45_3));
+ oaks45.add(mImageView45_4 = itemView.findViewById(R.id.ribbon45_4));
+ oaks45.add(mImageView45_5 = itemView.findViewById(R.id.ribbon45_5));
+ oaks45.add(mImageView45_6 = itemView.findViewById(R.id.ribbon45_6));
+ oaks45.add(mImageView45_7 = itemView.findViewById(R.id.ribbon45_7));
+ oaks45.add(mImageView45_8 = itemView.findViewById(R.id.ribbon45_8));
+ List<ImageView> oaks46 = new ArrayList<>();
+ mImageView46 = itemView.findViewById(R.id.ribbon46);
+ this.images.add(mImageView46);
+ oaks46.add(mImageView46_2 = itemView.findViewById(R.id.ribbon46_2));
+ oaks46.add(mImageView46_3 = itemView.findViewById(R.id.ribbon46_3));
+ oaks46.add(mImageView46_4 = itemView.findViewById(R.id.ribbon46_4));
+ oaks46.add(mImageView46_5 = itemView.findViewById(R.id.ribbon46_5));
+ oaks46.add(mImageView46_6 = itemView.findViewById(R.id.ribbon46_6));
+ oaks46.add(mImageView46_7 = itemView.findViewById(R.id.ribbon46_7));
+ oaks46.add(mImageView46_8 = itemView.findViewById(R.id.ribbon46_8));
+ List<ImageView> oaks47 = new ArrayList<>();
+ mImageView47 = itemView.findViewById(R.id.ribbon47);
+ this.images.add(mImageView47);
+ oaks47.add(mImageView47_2 = itemView.findViewById(R.id.ribbon47_2));
+ oaks47.add(mImageView47_3 = itemView.findViewById(R.id.ribbon47_3));
+ oaks47.add(mImageView47_4 = itemView.findViewById(R.id.ribbon47_4));
+ oaks47.add(mImageView47_5 = itemView.findViewById(R.id.ribbon47_5));
+ oaks47.add(mImageView47_6 = itemView.findViewById(R.id.ribbon47_6));
+ oaks47.add(mImageView47_7 = itemView.findViewById(R.id.ribbon47_7));
+ oaks47.add(mImageView47_8 = itemView.findViewById(R.id.ribbon47_8));
+ List<ImageView> oaks48 = new ArrayList<>();
+ mImageView48 = itemView.findViewById(R.id.ribbon48);
+ this.images.add(mImageView48);
+ oaks48.add(mImageView48_2 = itemView.findViewById(R.id.ribbon48_2));
+ oaks48.add(mImageView48_3 = itemView.findViewById(R.id.ribbon48_3));
+ oaks48.add(mImageView48_4 = itemView.findViewById(R.id.ribbon48_4));
+ oaks48.add(mImageView48_5 = itemView.findViewById(R.id.ribbon48_5));
+ oaks48.add(mImageView48_6 = itemView.findViewById(R.id.ribbon48_6));
+ oaks48.add(mImageView48_7 = itemView.findViewById(R.id.ribbon48_7));
+ oaks48.add(mImageView48_8 = itemView.findViewById(R.id.ribbon48_8));
+ List<ImageView> oaks49 = new ArrayList<>();
+ mImageView49 = itemView.findViewById(R.id.ribbon49);
+ this.images.add(mImageView49);
+ oaks49.add(mImageView49_2 = itemView.findViewById(R.id.ribbon49_2));
+ oaks49.add(mImageView49_3 = itemView.findViewById(R.id.ribbon49_3));
+ oaks49.add(mImageView49_4 = itemView.findViewById(R.id.ribbon49_4));
+ oaks49.add(mImageView49_5 = itemView.findViewById(R.id.ribbon49_5));
+ oaks49.add(mImageView49_6 = itemView.findViewById(R.id.ribbon49_6));
+ oaks49.add(mImageView49_7 = itemView.findViewById(R.id.ribbon49_7));
+ oaks49.add(mImageView49_8 = itemView.findViewById(R.id.ribbon49_8));
+ List<ImageView> oaks50 = new ArrayList<>();
+ mImageView50 = itemView.findViewById(R.id.ribbon50);
+ this.images.add(mImageView50);
+ oaks50.add(mImageView50_2 = itemView.findViewById(R.id.ribbon50_2));
+ oaks50.add(mImageView50_3 = itemView.findViewById(R.id.ribbon50_3));
+ oaks50.add(mImageView50_4 = itemView.findViewById(R.id.ribbon50_4));
+ oaks50.add(mImageView50_5 = itemView.findViewById(R.id.ribbon50_5));
+ oaks50.add(mImageView50_6 = itemView.findViewById(R.id.ribbon50_6));
+ oaks50.add(mImageView50_7 = itemView.findViewById(R.id.ribbon50_7));
+ oaks50.add(mImageView50_8 = itemView.findViewById(R.id.ribbon50_8));
+ oaks.add(oaks1);
+ oaks.add(oaks2);
+ oaks.add(oaks3);
+ oaks.add(oaks4);
+ oaks.add(oaks5);
+ oaks.add(oaks6);
+ oaks.add(oaks7);
+ oaks.add(oaks8);
+ oaks.add(oaks9);
+ oaks.add(oaks10);
+ oaks.add(oaks11);
+ oaks.add(oaks12);
+ oaks.add(oaks13);
+ oaks.add(oaks14);
+ oaks.add(oaks15);
+ oaks.add(oaks16);
+ oaks.add(oaks17);
+ oaks.add(oaks18);
+ oaks.add(oaks19);
+ oaks.add(oaks20);
+ oaks.add(oaks21);
+ oaks.add(oaks22);
+ oaks.add(oaks23);
+ oaks.add(oaks24);
+ oaks.add(oaks25);
+ oaks.add(oaks26);
+ oaks.add(oaks27);
+ oaks.add(oaks28);
+ oaks.add(oaks29);
+ oaks.add(oaks30);
+ oaks.add(oaks31);
+ oaks.add(oaks32);
+ oaks.add(oaks33);
+ oaks.add(oaks34);
+ oaks.add(oaks35);
+ oaks.add(oaks36);
+ oaks.add(oaks37);
+ oaks.add(oaks38);
+ oaks.add(oaks39);
+ oaks.add(oaks40);
+ oaks.add(oaks41);
+ oaks.add(oaks42);
+ oaks.add(oaks43);
+ oaks.add(oaks44);
+ oaks.add(oaks45);
+ oaks.add(oaks46);
+ oaks.add(oaks47);
+ oaks.add(oaks48);
+ oaks.add(oaks49);
+ oaks.add(oaks50);
+ 
+                    mImageView1.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView2.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView3.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView4.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView5.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView6.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView7.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView8.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView9.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView10.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView11.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView12.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView13.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView14.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView15.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView16.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView17.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView18.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView19.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView20.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView21.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView22.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView23.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView24.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView25.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView26.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView27.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView28.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView29.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView30.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView31.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView32.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView33.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView34.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView35.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView36.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView37.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView38.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView39.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView40.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView41.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView42.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView43.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView44.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView45.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView46.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView47.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView48.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView49.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+                    mImageView50.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if ((listener != null)) {
+                            int position = getAdapterPosition();
+                            int ribbon = mRibbonList.get(position).getImageResource1();
+                            if (position != RecyclerView.NO_POSITION) {
+                                listener.onEditRibbonClick(ribbon, position);
+                            }
+                            System.out.println("youclickedme" + ribbon);
+                        }
+                    }
+                });
+                 
+            }
+        }
+        

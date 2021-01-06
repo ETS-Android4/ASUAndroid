@@ -16,9 +16,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.util.ArraySet;
-import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,25 +25,25 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.asuandroid.R;
-import com.example.asuandroid.dialogs.Award2Dialog;
-import com.example.asuandroid.screens.MainActivity;
-import com.example.asuandroid.threads.MultithreadingDemo;
-import com.example.asuandroid.vectorBuildAdapters.RibbonAdapter;
-import com.example.asuandroid.outfitfragments.AwardFragment;
-import com.example.asuandroid.vectorBuildAdapters.RibbonAdapter1;
+import com.example.asuandroid.vectorBuildAdapters.RibbonAdapter50;
 import com.example.asuandroid.vectorBuildAdapters.RibbonItem;
 import com.google.android.flexbox.FlexWrap;
 import com.google.android.flexbox.FlexboxLayoutManager;
+import com.example.asuandroid.vectorBuildAdapters.RibbonAdapter1;
+import com.example.asuandroid.vectorBuildAdapters.RibbonAdapter2;
+import com.example.asuandroid.vectorBuildAdapters.RibbonAdapter20;
 
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Award2Fragment extends Fragment implements PopupMenu.OnMenuItemClickListener {
     public static ArrayList<Integer> fromAward = AwardFragment.finalExport;
     private ArrayList<RibbonItem> mRibbonList;
     private RecyclerView mRecyclerView;
-    private RibbonAdapter mRecyclerViewAdapter;
+    private RibbonAdapter1 mRecyclerViewAdapter1;
+    private RibbonAdapter2 mRecyclerViewAdapter2;
+    private RibbonAdapter20 mRecyclerViewAdapter20;
+    private RibbonAdapter50 mRecyclerViewAdapter50;
     public static ArrayList<Drawable> bitmapDrawableArray = new ArrayList<Drawable>();
     RecyclerView.RecycledViewPool sharedPool = new RecyclerView.RecycledViewPool();
     public static Context context;
@@ -54,37 +52,50 @@ public class Award2Fragment extends Fragment implements PopupMenu.OnMenuItemClic
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
         Bundle savedInstanceState) {
+        assert container != null;
         System.out.println(fromAward);
         fromAward.trimToSize();
         System.out.println(fromAward);
         int tots = fromAward.size();
-        assert container != null;
         context = container.getContext();
         createRibbonList();
         //View v = inflater.inflate(R.id.oak);
         final View view = inflater.inflate(R.layout.fragment_award2, container, false);
         final FragmentActivity c = getActivity();
-        switch (tots){
+        switch(tots) {
             case 1:
-                RibbonAdapter1 mAdapter = new RibbonAdapter1(mRibbonList);
-                mRecyclerViewAdapter = new RibbonAdapter(mRibbonList);
-                final RecyclerView recyclerView = view.findViewById(R.id.recyclerViewRibbonRack);
-                FlexboxLayoutManager layoutManager = new FlexboxLayoutManager(c);
-                layoutManager.setFlexWrap(FlexWrap.WRAP);
-                recyclerView.setLayoutManager(layoutManager);
-                recyclerView.setAdapter(mAdapter);
-                recyclerView.setRecycledViewPool(sharedPool);
-                mAdapter.setOnItemClickListener(new RibbonAdapter1.OnItemClickListener() {
-                    @Override
-                    public void onEditRibbonClick(int ribbon, int position) {
-                        assert c != null;
-                        //showPopup(view);
-                        System.out.println(ribbon);
-                    }
-                });
+                RibbonAdapter1 mAdapter1 = new RibbonAdapter1(mRibbonList);
+                mRecyclerViewAdapter1 = new RibbonAdapter1(mRibbonList);
+                final RecyclerView recyclerView1 = view.findViewById(R.id.recyclerViewRibbonRack);
+                LinearLayoutManager layoutManager1 = new LinearLayoutManager(c);
+                recyclerView1.setLayoutManager(layoutManager1);
+                recyclerView1.setAdapter(mAdapter1);
+                break;
+            case 2:
+                RibbonAdapter2 mAdapter2 = new RibbonAdapter2(mRibbonList);
+                mRecyclerViewAdapter2 = new RibbonAdapter2(mRibbonList);
+                final RecyclerView recyclerView2 = view.findViewById(R.id.recyclerViewRibbonRack);
+                LinearLayoutManager layoutManager2 = new LinearLayoutManager(c);
+                recyclerView2.setLayoutManager(layoutManager2);
+                recyclerView2.setAdapter(mAdapter2);
+                break;
+            case 20:
+                RibbonAdapter20 mAdapter20 = new RibbonAdapter20(mRibbonList);
+                mRecyclerViewAdapter20 = new RibbonAdapter20(mRibbonList);
+                final RecyclerView recyclerView20 = view.findViewById(R.id.recyclerViewRibbonRack);
+                LinearLayoutManager layoutManager20 = new LinearLayoutManager(c);
+                recyclerView20.setLayoutManager(layoutManager20);
+                recyclerView20.setAdapter(mAdapter20);
+                break;
+            case 50:
+                RibbonAdapter50 mAdapter50 = new RibbonAdapter50(mRibbonList);
+                mRecyclerViewAdapter50 = new RibbonAdapter50(mRibbonList);
+                final RecyclerView recyclerView50 = view.findViewById(R.id.recyclerViewRibbonRack);
+                LinearLayoutManager layoutManager50 = new LinearLayoutManager(c);
+                recyclerView50.setLayoutManager(layoutManager50);
+                recyclerView50.setAdapter(mAdapter50);
                 break;
         }
-
         // Inflate the layout for this fragment
         return view;
     }

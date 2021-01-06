@@ -20,8 +20,10 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.asuandroid.R;
-import com.example.asuandroid.vectorBuildAdapters.RibbonAdapter;
 import com.example.asuandroid.outfitfragments.AwardFragment;
+import com.example.asuandroid.vectorBuildAdapters.RibbonAdapter1;
+import com.example.asuandroid.vectorBuildAdapters.RibbonAdapter2;
+import com.example.asuandroid.vectorBuildAdapters.RibbonAdapter20;
 import com.example.asuandroid.vectorBuildAdapters.RibbonItem;
 
 
@@ -31,7 +33,9 @@ public class UniformPresentationFragment extends Fragment{
     public static ArrayList<Integer> fromAward = AwardFragment.finalExport;
     private ArrayList<RibbonItem> mRibbonList;
     private RecyclerView mRecyclerView;
-    private RibbonAdapter mRecyclerViewAdapter;
+    private RibbonAdapter1 mRecyclerViewAdapter1;
+    private RibbonAdapter2 mRecyclerViewAdapter2;
+    private RibbonAdapter20 mRecyclerViewAdapter20;
     public static ArrayList<Drawable> bitmapDrawableArray = new ArrayList<Drawable>();
     public static Context context;
 
@@ -42,21 +46,45 @@ public class UniformPresentationFragment extends Fragment{
         assert container != null;
         context = container.getContext();
         createRibbonList();
+        System.out.println(fromAward);
+        fromAward.trimToSize();
+        System.out.println(fromAward);
+        int tots = fromAward.size();
         final View view = inflater.inflate(R.layout.fragment_uniform_presentation, container, false);
         final FragmentActivity c = getActivity();
-        RibbonAdapter mAdapter = new RibbonAdapter(mRibbonList);
-        mRecyclerViewAdapter = new RibbonAdapter(mRibbonList);
-        final RecyclerView recyclerView = view.findViewById(R.id.recyclerViewRibbonRack);
-        LinearLayoutManager layoutManager = new LinearLayoutManager(c);
-        recyclerView.setLayoutManager(layoutManager);
-        recyclerView.setAdapter(mAdapter);
+        switch(tots) {
+            case 1:
+                RibbonAdapter1 mAdapter1 = new RibbonAdapter1(mRibbonList);
+                mRecyclerViewAdapter1 = new RibbonAdapter1(mRibbonList);
+                final RecyclerView recyclerView1 = view.findViewById(R.id.recyclerViewRibbonRack);
+                LinearLayoutManager layoutManager1 = new LinearLayoutManager(c);
+                recyclerView1.setLayoutManager(layoutManager1);
+                recyclerView1.setAdapter(mAdapter1);
+                break;
+            case 2:
+                RibbonAdapter2 mAdapter2 = new RibbonAdapter2(mRibbonList);
+                mRecyclerViewAdapter2 = new RibbonAdapter2(mRibbonList);
+                final RecyclerView recyclerView2 = view.findViewById(R.id.recyclerViewRibbonRack);
+                LinearLayoutManager layoutManager2 = new LinearLayoutManager(c);
+                recyclerView2.setLayoutManager(layoutManager2);
+                recyclerView2.setAdapter(mAdapter2);
+                break;
+
+            case 20:
+                RibbonAdapter20 mAdapter20 = new RibbonAdapter20(mRibbonList);
+                mRecyclerViewAdapter20 = new RibbonAdapter20(mRibbonList);
+                final RecyclerView recyclerView20 = view.findViewById(R.id.recyclerViewRibbonRack);
+                LinearLayoutManager layoutManager20 = new LinearLayoutManager(c);
+                recyclerView20.setLayoutManager(layoutManager20);
+                recyclerView20.setAdapter(mAdapter20);
+                break;
+        }
         // Inflate the layout for this fragment
         return view;
+
     }
     public void setDrawableZoomage() {
-
     }
-
     public void createRibbonList() {
         mRibbonList = new ArrayList<>();
         //for(int i = 0; i < fromAward.size(); i++)
@@ -77,13 +105,9 @@ public class UniformPresentationFragment extends Fragment{
             case 1:
                 mRibbonList.add(new RibbonItem.RibbonItem1(fromAward));
                 break;
-
-
             case 2:
                 mRibbonList.add(new RibbonItem.RibbonItem2(fromAward));
                 break;
-
-
             case 3:
                 mRibbonList.add(new RibbonItem.RibbonItem3(fromAward));
                 break;
